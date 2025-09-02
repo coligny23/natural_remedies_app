@@ -1,14 +1,31 @@
-gradle-wrapper.jar
-/.gradle
-/captures/
-/gradlew
-/gradlew.bat
-/local.properties
-GeneratedPluginRegistrant.java
-.cxx/
+# Flutter / Dart
+.dart_tool/
+.packages
+build/
+ios/Pods/
+flutter_export_environment.sh
 
-# Remember to never publicly share your keystore.
-# See https://flutter.dev/to/reference-keystore
-key.properties
-**/*.keystore
-**/*.jks
+# VS Code cache
+.vscode/*
+
+# Keep VS Code settings we rely on (uncomment if you want to track them)
+#!.vscode/settings.json
+
+# Android/Gradle noise
+**/local.properties
+**/.gradle/
+**/captures/
+
+# Mac / Windows noise
+.DS_Store
+Thumbs.db
+
+# Data pipeline
+data-pipeline/.venv/
+data-pipeline/models/
+data-pipeline/*.pdf
+data-pipeline/en_chunks.json
+data-pipeline/en_sw_chunks.json
+
+# Don’t ignore app assets (we want these in Git)
+# assets/corpus/**  ← KEEP (these are part of the app)

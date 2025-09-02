@@ -1,0 +1,11 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/assets/corpus/en/*.json",
+        "/assets/corpus/sw/*.json"
+      ],
+      "url": "./tools/schemas/content_pack.schema.json"
+    }
+  ]
+}

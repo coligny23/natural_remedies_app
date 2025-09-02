@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/content_pack.schema.json",
+  "title": "Content Pack",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/ContentItem"
+  },
+  "$defs": {
+    "ContentItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "title", "lang_original", "translation_status"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "minLength": 3,
+          "description": "Stable, URL-safe id (e.g., ginger-basics)"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["article", "chunk", "faq"]
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "section": { "type": "string", "minLength": 0 },
+        "content_en": { "type": ["string", "null"] },
+        "content_sw": { "type": ["string", "null"] },
+        "lang_original": { "type": "string", "enum": ["en", "sw"] },
+        "translation_status": { "type": "string", "enum": ["original", "machine", "human"] },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": false
+        },
+        "source": { "type": ["string", "null"] },
+        "page_range": {
+          "type": ["array", "null"],
+          "minItems": 2,
+          "maxItems": 2,
+          "items": { "type": "integer", "minimum": 1 }
+        }
+      },
+      "allOf": [
+        {
+          "anyOf": [
+            { "required": ["content_en"] },
+            { "required": ["content_sw"] }
+          ]
+        }
+      ]
+    }
+  }
+}
