@@ -24,3 +24,7 @@ data-pipeline/models/
 data-pipeline/*.pdf
 data-pipeline/en_chunks.json
 data-pipeline/en_sw_chunks.json
+data-pipeline/**/pytorch_model.bin
+data-pipeline/**/sentencepiece*.model
+data-pipeline/**/tokenizer*.json
+data-pipeline/**/ctranslate2/**

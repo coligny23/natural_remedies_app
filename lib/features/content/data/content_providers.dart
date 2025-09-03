@@ -1,12 +1,12 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'content_repository.dart';
-import 'content_repository_assets.dart';
+import 'content_repository_assets.dart' as assets;
 import '../models/content_item.dart';
 
 /// App language (toggle in Settings): 'en' or 'sw'
 final appLangProvider = StateProvider<String>((_) => 'en');
 
-final contentRepoProvider = Provider<ContentRepository>((_) => AssetsContentRepository());
+final contentRepoProvider = Provider<ContentRepository>((_) => const assets.AssetsContentRepository());
 
 final allContentProvider = FutureProvider<List<ContentItem>>((ref) {
   final lang = ref.watch(appLangProvider);

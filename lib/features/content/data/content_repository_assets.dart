@@ -1,62 +1,60 @@
 import 'package:flutter/services.dart' show rootBundle;
-import '../models/content_item.dart';
+
+import '../models/content_item.dart';           // or ../model/content_item.dart
 import 'content_repository.dart';
 
 class AssetsContentRepository implements ContentRepository {
-  List<ContentItem>? _en;
-  List<ContentItem>? _sw;
+  const AssetsContentRepository({this.basePath = 'assets/corpus'});
 
-  Future<void> _ensureLoaded() async {
-    if (_en == null) {
-      final enStr = await rootBundle.loadString('assets/corpus/en/sample.json');
-      _en = ContentItem.listFromJsonString(enStr);
-    }
-    if (_sw == null) {
+  final String basePath;
+
+  // naive in-memory cache per language
+  static final Map<String, List<ContentItem>> _cache = {};
+
+  Future<List<ContentItem>> _loadLang(String lang) async {
+    // Try requested lang first, then fall back to EN.
+    final candidates = <String>[
+      '$basePath/$lang/sample.json',
+      '$basePath/en/sample.json',
+    ];
+
+    for (final path in candidates) {
       try {
-        final swStr = await rootBundle.loadString('assets/corpus/sw/sample.json');
-        _sw = ContentItem.listFromJsonString(swStr);
+        final jsonStr = await rootBundle.loadString(path);
+        final list = ContentItem.listFromJsonString(jsonStr);
+        return list;
       } catch (_) {
-        _sw = const [];
+        // try the next candidate
       }
     }
+    return <ContentItem>[];
+  }
+
+  Future<List<ContentItem>> _getOrLoad(String lang) async {
+    if (_cache.containsKey(lang)) return _cache[lang]!;
+    final items = await _loadLang(lang);
+    _cache[lang] = items;
+    return items;
   }
 
   @override
-  Future<List<ContentItem>> getAll({String lang = 'en'}) async {
-    await _ensureLoaded();
-    // lang-first then fallback language appended
-    return lang == 'sw' ? [...?_sw, ...?_en] : [...?_en, ...?_sw];
+  Future<List<ContentItem>> getAll({required String lang}) async {
+    final items = await _getOrLoad(lang);
+    // Return an unmodifiable copy to avoid accidental mutations.
+    return List<ContentItem>.unmodifiable(items);
   }
 
   @override
-Future<ContentItem?> getById(String id, {String lang = 'en'}) async {
-  final all = await getAll(lang: lang);
-  final idx = all.indexWhere((e) => e.id == id);
-  return idx == -1 ? null : all[idx];
-}
-
-
-  @override
-  Future<List<ContentItem>> search(String query, {String lang = 'en', int limit = 50}) async {
-    final all = await getAll(lang: lang);
+  Future<List<ContentItem>> search(String query, {required String lang}) async {
     final q = query.trim().toLowerCase();
-    if (q.isEmpty) return all.take(limit).toList();
+    if (q.isEmpty) return <ContentItem>[];
 
-    bool matches(ContentItem it) {
-      final t = (it.textFor(lang) ?? '').toLowerCase();
-      return it.title.toLowerCase().contains(q)
-          || it.section.toLowerCase().contains(q)
-          || t.contains(q)
-          || it.tags.any((tag) => tag.toLowerCase().contains(q));
-    }
-
-    final res = all.where(matches).toList();
-    // naive priority: title matches first
-    res.sort((a,b) {
-      final at = a.title.toLowerCase().contains(q) ? 0 : 1;
-      final bt = b.title.toLowerCase().contains(q) ? 0 : 1;
-      return at.compareTo(bt);
-    });
-    return res.take(limit).toList();
+    final items = await _getOrLoad(lang);
+    return items.where((it) {
+      final t = it.title.toLowerCase();
+      final en = (it.contentEn ?? '').toLowerCase();
+      final sw = (it.contentSw ?? '').toLowerCase();
+      return t.contains(q) || en.contains(q) || sw.contains(q);
+    }).toList(growable: false);
   }
 }
