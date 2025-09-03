@@ -247,7 +247,8 @@ Configured in `lib/app/routing/app_router.dart`.
 
 ---
 
-## [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+## 📜 License
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 
 MIT License
