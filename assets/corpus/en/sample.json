@@ -1,28 +1,28 @@
 [
   {
-    "id": "ginger-basics",
-    "type": "article",
-    "title": "Ginger for Nausea",
-    "section": "Overview",
-    "content_en": "Ginger (Zingiber officinale) is commonly used to help mild nausea and digestive discomfort. Typical preparations include teas, capsules, and chews. Safety: may interact with anticoagulants; avoid high doses during pregnancy without medical advice.",
+    "id": "herb-ginger-overview",
+    "type": "chunk",
+    "section": "herb",
+    "title": "Ginger — Overview",
+    "content_en": "Ginger (Zingiber officinale) is widely used for nausea, colds, and digestion support.",
     "content_sw": null,
     "lang_original": "en",
     "translation_status": "original",
-    "tags": ["ginger","nausea","digestive"],
-    "source": "Natural Remedies Encyclopedia",
-    "page_range": [12,14]
+    "tags": ["herb"],
+    "page_range": [45, 46],
+    "source": "Natural Remedies Encyclopedia (PDF)"
   },
   {
-    "id": "honey-cough",
+    "id": "herb-cayenne-uses",
     "type": "chunk",
-    "title": "Honey for Cough (Adults)",
-    "section": "Preparation & Dosage",
-    "content_en": "A spoonful of honey in warm water or tea may soothe an acute cough. Avoid in children under 1 year due to infant botulism risk.",
+    "section": "herb",
+    "title": "Cayenne — Uses",
+    "content_en": "Cayenne is used to stimulate circulation and as a warming remedy.",
     "content_sw": null,
     "lang_original": "en",
     "translation_status": "original",
-    "tags": ["honey","cough","respiratory"],
-    "source": "Natural Remedies Encyclopedia",
-    "page_range": [45,46]
+    "tags": ["herb"],
+    "page_range": [47, 48],
+    "source": "Natural Remedies Encyclopedia (PDF)"
   }
 ]

@@ -1,6 +1,7 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
-import '../models/content_item.dart';           // or ../model/content_item.dart
+import '../models/content_item.dart'; // or ../model/content_item.dart
 import 'content_repository.dart';
 
 class AssetsContentRepository implements ContentRepository {
@@ -20,11 +21,13 @@ class AssetsContentRepository implements ContentRepository {
 
     for (final path in candidates) {
       try {
+        if (kDebugMode) debugPrint('Trying asset → $path');
         final jsonStr = await rootBundle.loadString(path);
         final list = ContentItem.listFromJsonString(jsonStr);
+        if (kDebugMode) debugPrint('Loaded ${list.length} items from $path');
         return list;
-      } catch (_) {
-        // try the next candidate
+      } catch (e) {
+        if (kDebugMode) debugPrint('Asset miss for $path → $e');
       }
     }
     return <ContentItem>[];

@@ -13,7 +13,7 @@ dependencies:
   # iOS-like visuals, navigation, state, i18n
   cupertino_icons: ^1.0.6
   go_router: ^14.2.0
-  flutter_riverpod: ^2.5.1
+  flutter_riverpod: ^2.6.1
   intl: ^0.19.0
   google_fonts: ^6.2.1    # Inter on Android; SF on iOS stays system
 
@@ -38,8 +38,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-  # Register app assets (create these folders/files)
   assets:
-    - assets/corpus/
-    - assets/images/
+    - assets/corpus/en/
