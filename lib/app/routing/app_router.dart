@@ -58,7 +58,7 @@ class _RootTabsState extends State<RootTabs> {
     HomeScreen(),
     LearnScreen(),
     // Use SearchPage (or change to SearchScreen if that's your class name)
-    SearchPage(),
+    SearchScreen(),
     SavedScreen(),
     SettingsScreen(),
   ];
