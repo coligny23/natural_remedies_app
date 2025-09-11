@@ -20,17 +20,69 @@ class AppTheme {
     return base.copyWith(
       scaffoldBackgroundColor: const Color(0xFFF7F8FA),
       textTheme: text,
-      appBarTheme: const AppBarTheme(
+
+      // Accessibility defaults
+      visualDensity: VisualDensity.standard,
+
+      appBarTheme: AppBarTheme(
+        backgroundColor: scheme.surface,
+        foregroundColor: scheme.onSurface,
         elevation: 0,
         scrolledUnderElevation: 0,
         centerTitle: true,
       ),
-      // ✅ CardThemeData (not CardTheme)
-      cardTheme: CardThemeData(
+
+      iconButtonTheme: IconButtonThemeData(
+        style: IconButton.styleFrom(
+          minimumSize: const Size(48, 48),
+          padding: const EdgeInsets.all(8),
+          tapTargetSize: MaterialTapTargetSize.padded,
+        ),
+      ),
+
+      listTileTheme: const ListTileThemeData(
+        minLeadingWidth: 24,
+        dense: false,
+        contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      ),
+
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          minimumSize: const Size(48, 48),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          tapTargetSize: MaterialTapTargetSize.padded,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(AppTokens.rXl)),
+          ),
+        ),
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          minimumSize: const Size(48, 48),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          tapTargetSize: MaterialTapTargetSize.padded,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(AppTokens.rXl)),
+          ),
+        ),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          minimumSize: const Size(48, 48),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          tapTargetSize: MaterialTapTargetSize.padded,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(AppTokens.rXl)),
+          ),
+        ),
+      ),
+
+      // Cards
+      cardTheme: const CardThemeData(
         color: Colors.white,
         elevation: 0,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(AppTokens.rXl),
+          borderRadius: BorderRadius.all(Radius.circular(AppTokens.rXl)),
         ),
       ),
     );
@@ -51,12 +103,69 @@ class AppTheme {
 
     return base.copyWith(
       textTheme: text,
-      // ✅ CardThemeData (not CardTheme)
-      cardTheme: CardThemeData(
-        color: const Color(0xFF1C1C1E),
+
+      // Accessibility defaults
+      visualDensity: VisualDensity.standard,
+
+      appBarTheme: AppBarTheme(
+        backgroundColor: scheme.surface,
+        foregroundColor: scheme.onSurface,
+        elevation: 0,
+        scrolledUnderElevation: 0,
+        centerTitle: true,
+      ),
+
+      iconButtonTheme: IconButtonThemeData(
+        style: IconButton.styleFrom(
+          minimumSize: const Size(48, 48),
+          padding: const EdgeInsets.all(8),
+          tapTargetSize: MaterialTapTargetSize.padded,
+        ),
+      ),
+
+      listTileTheme: const ListTileThemeData(
+        minLeadingWidth: 24,
+        dense: false,
+        contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      ),
+
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          minimumSize: const Size(48, 48),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          tapTargetSize: MaterialTapTargetSize.padded,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(AppTokens.rXl)),
+          ),
+        ),
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          minimumSize: const Size(48, 48),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          tapTargetSize: MaterialTapTargetSize.padded,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(AppTokens.rXl)),
+          ),
+        ),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          minimumSize: const Size(48, 48),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          tapTargetSize: MaterialTapTargetSize.padded,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(AppTokens.rXl)),
+          ),
+        ),
+      ),
+
+      // Cards
+      cardTheme: const CardThemeData(
+        color: Color(0xFF1C1C1E),
         elevation: 0,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(AppTokens.rXl),
+          borderRadius: BorderRadius.all(Radius.circular(AppTokens.rXl)),
         ),
       ),
     );
@@ -67,18 +176,19 @@ class AppTheme {
     if (defaultTargetPlatform == TargetPlatform.iOS) {
       return base.copyWith(
         headlineMedium: base.headlineMedium?.copyWith(
-          fontSize: 28, fontWeight: FontWeight.w700, letterSpacing: -0.5),
+            fontSize: 28, fontWeight: FontWeight.w700, letterSpacing: -0.5),
         titleLarge: base.titleLarge?.copyWith(
-          fontSize: 20, fontWeight: FontWeight.w600),
-        bodyLarge: base.bodyLarge?.copyWith(fontSize: 16, height: 1.45),
+            fontSize: 20, fontWeight: FontWeight.w600),
+        bodyLarge:
+            base.bodyLarge?.copyWith(fontSize: 16, height: 1.45),
       );
     }
     final inter = GoogleFonts.interTextTheme(base);
     return inter.copyWith(
       headlineMedium: GoogleFonts.inter(
-        fontSize: 28, fontWeight: FontWeight.w700, letterSpacing: -0.5),
-      titleLarge: GoogleFonts.inter(
-        fontSize: 20, fontWeight: FontWeight.w600),
+          fontSize: 28, fontWeight: FontWeight.w700, letterSpacing: -0.5),
+      titleLarge:
+          GoogleFonts.inter(fontSize: 20, fontWeight: FontWeight.w600),
       bodyLarge: GoogleFonts.inter(fontSize: 16, height: 1.45),
     );
   }
