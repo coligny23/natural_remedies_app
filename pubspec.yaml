@@ -23,7 +23,7 @@ dependencies:
   path_provider: ^2.1.4
 
   # On-device ML
-  tflite_flutter: ^0.10.4
+  tflite_flutter: ^0.11.0
 
   # UI niceties
   flutter_svg: ^2.0.10
