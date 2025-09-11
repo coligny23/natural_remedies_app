@@ -6,6 +6,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'search_providers.dart';
 import '../content/models/content_item.dart';
 
+import '../../shared/ml/qa_providers.dart'; // qaInitProvider / qaAnswerProvider
+
+
 class SearchScreen extends ConsumerStatefulWidget {
   const SearchScreen({super.key});
   @override
@@ -38,6 +41,10 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     final itemsAsync = ref.watch(contentListProvider);
     final total =
         itemsAsync.maybeWhen(data: (it) => it.length, orElse: () => null);
+    // AI answer hook (stub now, TFLite later)
+    final query = ref.watch(searchQueryProvider).trim();
+// Only ask when the user typed something
+    final answerAsync = query.isEmpty ? null : ref.watch(qaAnswerProvider(query));
 
     return Scaffold(
       appBar: AppBar(
@@ -117,6 +124,38 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
           ),
           const SizedBox(height: 4),
 
+          // --- AI Answer card (optional, shows when there's a query) ---
+if (query.isNotEmpty && answerAsync != null) ...[
+  Padding(
+    padding: const EdgeInsets.symmetric(horizontal: 16),
+    child: Card(
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: answerAsync!.when(
+          loading: () => const Text('Thinking…'),
+          error: (e, _) => Text('Could not answer: $e'),
+          data: (ans) => Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text('Answer', style: TextStyle(fontWeight: FontWeight.w600)),
+              const SizedBox(height: 6),
+              Text(ans.text),
+              if (ans.source != null) ...[
+                const SizedBox(height: 8),
+                Text(
+                  'Source: ${ans.source!.title}',
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+              ],
+            ],
+          ),
+        ),
+      ),
+    ),
+  ),
+  const SizedBox(height: 8),
+],
+// --- end Answer card ---
           
           Expanded(
             child: results.isEmpty
