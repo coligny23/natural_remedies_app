@@ -68,19 +68,24 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
-            child: TextField(
-              controller: _controller,
-              onChanged: _onChanged,
-              textInputAction: TextInputAction.search,
-              decoration: InputDecoration(
-                hintText: 'Search natural remedies (e.g., "ginger")',
-                prefixIcon: const Icon(Icons.search),
-                border:
-                    OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-              ),
-            ),
-          ),
+  padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+  child: Semantics(
+    label: 'Search field for natural remedies',
+    hint: 'Type an ingredient or condition, for example ginger',
+    textField: true,
+    child: TextField(
+      controller: _controller,
+      onChanged: _onChanged,
+      textInputAction: TextInputAction.search,
+      decoration: InputDecoration(
+        hintText: 'Search (e.g., "ginger")',
+        prefixIcon: const Icon(Icons.search, semanticLabel: 'Search'),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+      ),
+    ),
+  ),
+),
+
           if (isLoading) const LinearProgressIndicator(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -121,14 +126,25 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                     separatorBuilder: (_, __) => const Divider(height: 1),
                     itemBuilder: (context, index) {
                       final item = results[index];
-                      return ListTile(
-                        title: Text(item.title),
-                        subtitle: _Snippet(
-                            text: item.contentEn ?? item.contentSw ?? ''),
-                        onTap: () {
-                          // TODO: navigate to a detail page later
-                        },
-                      );
+final snippetSrc = (item.contentEn ?? item.contentSw ?? '').replaceAll('\n', ' ');
+final snippet = snippetSrc.length <= 160 ? snippetSrc : '${snippetSrc.substring(0, 160)} …';
+
+// MergeSemantics + exclude child semantics => SR reads our concise label once.
+return MergeSemantics(
+  child: Semantics(
+    excludeSemantics: true,          // replace children semantics with our label
+    button: true,                    // announces as tappable item
+    label: '${item.title}. $snippet. Double tap to open details.',
+    child: ListTile(
+      title: Text(item.title),
+      subtitle: Text(snippet),
+      onTap: () {
+        // TODO: navigate to detail (e.g., context.go('/article/${item.id}'))
+      },
+    ),
+  ),
+);
+
                     },
                   ),
           ),

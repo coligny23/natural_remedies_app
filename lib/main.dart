@@ -8,6 +8,11 @@ import 'app/theme/app_theme.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter(); // boxes come later
+
+  //Open app boxes (sync use later)
+  await Hive.openBox('bookmarks');
+  await Hive.openBox('reading_progress');
+  
   runApp(const ProviderScope(child: App()));
 }
 
