@@ -2,44 +2,36 @@ import 'dart:convert';
 
 class ContentItem {
   final String id;
-  final String type; // "herb" | "condition" | "principle" | "chunk"
   final String title;
-  final String? section; // optional (e.g., "condition")
-  final String? facet; // optional (e.g., "symptoms")
   final String? contentEn;
   final String? contentSw;
 
-  const ContentItem({
+  ContentItem({
     required this.id,
-    required this.type,
     required this.title,
-    this.section,
-    this.facet,
     this.contentEn,
     this.contentSw,
   });
 
-  factory ContentItem.fromJson(Map<String, dynamic> j) => ContentItem(
-        id: j['id'] as String,
-        type: j['type'] as String? ?? 'chunk',
-        title: j['title'] as String? ?? '',
-        section: j['section'] as String?,
-        facet: j['facet'] as String?,
-        contentEn: j['content_en'] as String?,
-        contentSw: j['content_sw'] as String?,
-      );
-
-  static List<ContentItem> listFromJsonString(String jsonStr) {
-    final raw = json.decode(jsonStr) as List;
-    return raw
-        .map((e) => ContentItem.fromJson(e as Map<String, dynamic>))
-        .toList();
+  factory ContentItem.fromJson(Map<String, dynamic> j) {
+    final en = (j['contentEn'] ?? j['content_en']) as String?;
+    final sw = (j['contentSw'] ?? j['content_sw']) as String?;
+    return ContentItem(
+      id: j['id'] as String,
+      title: j['title'] as String,
+      contentEn: en,
+      contentSw: sw,
+    );
   }
 
-  /// Aggregate text for simple search (title + both languages).
-  String get combinedText => [
-        title,
-        contentEn ?? '',
-        contentSw ?? '',
-      ].where((s) => s.isNotEmpty).join(' ').toLowerCase();
+  static List<ContentItem> listFromJsonString(String s) {
+    final data = jsonDecode(s) as List;
+    return data
+        .map((e) => ContentItem.fromJson(e as Map<String, dynamic>))
+        .toList(growable: false);
+  }
+
+  // Convenience for search
+  String get combinedText =>
+      [title, contentEn ?? '', contentSw ?? ''].join(' ');
 }

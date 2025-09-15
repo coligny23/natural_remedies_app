@@ -1,63 +1,69 @@
+import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import '../models/content_item.dart';
 
-import '../models/content_item.dart'; // or ../model/content_item.dart
-import 'content_repository.dart';
+/// Loads all JSON content files under assets/corpus/<lang>/ automatically.
+/// Example files:
+///   assets/corpus/en/principles.json
+///   assets/corpus/en/herbs.json
+///   assets/corpus/en/diseases_a.json
+///   assets/corpus/sw/principles.json (optional, can come later)
+class AssetsContentRepository {
+  const AssetsContentRepository({this.basePrefix = 'assets/corpus'});
 
-class AssetsContentRepository implements ContentRepository {
-  const AssetsContentRepository({this.basePath = 'assets/corpus'});
+  final String basePrefix;
 
-  final String basePath;
-
-  // naive in-memory cache per language
+  // simple in-memory cache keyed by language
   static final Map<String, List<ContentItem>> _cache = {};
 
-  Future<List<ContentItem>> _loadLang(String lang) async {
-    // Try requested lang first, then fall back to EN.
-    final candidates = <String>[
-      '$basePath/$lang/sample.json',
-      '$basePath/en/sample.json',
-    ];
+  Future<List<ContentItem>> load(String lang) async {
+    // use cache if present
+    if (_cache.containsKey(lang)) return _cache[lang]!;
 
-    for (final path in candidates) {
+    // read the asset manifest (maps every asset path).
+    final manifestStr = await rootBundle.loadString('AssetManifest.json');
+    final manifest = (json.decode(manifestStr) as Map).keys.cast<String>();
+
+    // candidate paths for the requested lang
+    final candidates = manifest
+        .where((p) =>
+            p.startsWith('$basePrefix/$lang/') &&
+            p.toLowerCase().endsWith('.json'))
+        .toList();
+
+    // If none for requested lang, try English as fallback
+    final paths = candidates.isNotEmpty
+        ? candidates
+        : manifest
+            .where((p) =>
+                p.startsWith('$basePrefix/en/') &&
+                p.toLowerCase().endsWith('.json'))
+            .toList();
+
+    if (kDebugMode) {
+      debugPrint('AssetsContentRepository: loading ${paths.length} file(s) for lang=$lang');
+      if (paths.isEmpty) debugPrint('⚠️ No content assets found. Did you include assets/corpus/ in pubspec.yaml?');
+    }
+
+    final items = <ContentItem>[];
+    for (final path in paths) {
       try {
-        if (kDebugMode) debugPrint('Trying asset → $path');
-        final jsonStr = await rootBundle.loadString(path);
-        final list = ContentItem.listFromJsonString(jsonStr);
-        if (kDebugMode) debugPrint('Loaded ${list.length} items from $path');
-        return list;
+        final s = await rootBundle.loadString(path);
+        items.addAll(ContentItem.listFromJsonString(s));
       } catch (e) {
-        if (kDebugMode) debugPrint('Asset miss for $path → $e');
+        if (kDebugMode) debugPrint('Failed to parse $path → $e');
       }
     }
-    return <ContentItem>[];
-  }
 
-  Future<List<ContentItem>> _getOrLoad(String lang) async {
-    if (_cache.containsKey(lang)) return _cache[lang]!;
-    final items = await _loadLang(lang);
-    _cache[lang] = items;
-    return items;
-  }
+    // de-duplicate by id (keep first occurrence)
+    final byId = <String, ContentItem>{};
+    for (final it in items) {
+      byId.putIfAbsent(it.id, () => it);
+    }
+    final result = byId.values.toList(growable: false);
 
-  @override
-  Future<List<ContentItem>> getAll({required String lang}) async {
-    final items = await _getOrLoad(lang);
-    // Return an unmodifiable copy to avoid accidental mutations.
-    return List<ContentItem>.unmodifiable(items);
-  }
-
-  @override
-  Future<List<ContentItem>> search(String query, {required String lang}) async {
-    final q = query.trim().toLowerCase();
-    if (q.isEmpty) return <ContentItem>[];
-
-    final items = await _getOrLoad(lang);
-    return items.where((it) {
-      final t = it.title.toLowerCase();
-      final en = (it.contentEn ?? '').toLowerCase();
-      final sw = (it.contentSw ?? '').toLowerCase();
-      return t.contains(q) || en.contains(q) || sw.contains(q);
-    }).toList(growable: false);
+    _cache[lang] = result;
+    return result;
   }
 }
