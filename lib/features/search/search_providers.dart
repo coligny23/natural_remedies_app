@@ -1,39 +1,42 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-// ✅ import the interface AND the implementation (aliased)
-import '../content/data/content_repository.dart';
-import '../content/data/content_repository_assets.dart' as assets;
-
-// If your file is .../model/content_item.dart change this path accordingly
+import '../content/data/content_repository_assets.dart';
 import '../content/models/content_item.dart';
 
-// Language (keep simple for Day 4)
+/// App language (en/sw)
 final languageCodeProvider = StateProvider<String>((_) => 'en');
 
-// Repository (typed to the interface)
-final contentRepositoryProvider = Provider<ContentRepository>(
-  (_) => const assets.AssetsContentRepository(),
+/// Use the concrete assets repo (auto-discovers all assets/corpus/<lang>/*.json)
+final contentRepositoryProvider = Provider<AssetsContentRepository>(
+  (_) => const AssetsContentRepository(),
 );
 
-// Load all content once per language
+/// Load all content for the current language
 final contentListProvider = FutureProvider<List<ContentItem>>((ref) async {
   final repo = ref.watch(contentRepositoryProvider);
   final lang = ref.watch(languageCodeProvider);
-  return repo.getAll(lang: lang); // ✅ use interface method
+  return repo.load(lang);
 });
 
-// Search query
+/// Search UI state
 final searchQueryProvider = StateProvider<String>((_) => '');
 
-// Instant in-memory filtering
+/// Instant in-memory filtering over loaded items
 final searchResultsProvider = Provider<List<ContentItem>>((ref) {
   final q = ref.watch(searchQueryProvider).trim().toLowerCase();
   final itemsAsync = ref.watch(contentListProvider);
+  final lang = ref.watch(languageCodeProvider);
 
-  return itemsAsync.when(
-    data: (items) =>
-        q.isEmpty ? <ContentItem>[] : items.where((it) => it.combinedText.contains(q)).toList(growable: false),
-    loading: () => <ContentItem>[],
-    error: (_, __) => <ContentItem>[],
+  return itemsAsync.maybeWhen(
+    data: (items) {
+      if (q.isEmpty) return <ContentItem>[];
+      return items.where((it) {
+        final body = (lang == 'sw')
+            ? (it.contentSw ?? it.contentEn ?? '')
+            : (it.contentEn ?? it.contentSw ?? '');
+        return it.title.toLowerCase().contains(q) ||
+               body.toLowerCase().contains(q);
+      }).toList(growable: false);
+    },
+    orElse: () => <ContentItem>[],
   );
 });

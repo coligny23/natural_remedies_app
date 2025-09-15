@@ -45,6 +45,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     final query = ref.watch(searchQueryProvider).trim();
 // Only ask when the user typed something
     final answerAsync = query.isEmpty ? null : ref.watch(qaAnswerProvider(query));
+    final lang = ref.watch(languageCodeProvider); // 'en' or 'sw'
 
     return Scaffold(
       appBar: AppBar(
@@ -165,24 +166,36 @@ if (query.isNotEmpty && answerAsync != null) ...[
                     separatorBuilder: (_, __) => const Divider(height: 1),
                     itemBuilder: (context, index) {
                       final item = results[index];
-final snippetSrc = (item.contentEn ?? item.contentSw ?? '').replaceAll('\n', ' ');
+
+// Use current language for snippet
+final bodyText = (lang == 'sw')
+    ? (item.contentSw ?? item.contentEn ?? '')
+    : (item.contentEn ?? item.contentSw ?? '');
+final snippetSrc = bodyText.replaceAll('\n', ' ');
 final snippet = snippetSrc.length <= 160 ? snippetSrc : '${snippetSrc.substring(0, 160)} …';
 
 // MergeSemantics + exclude child semantics => SR reads our concise label once.
 return MergeSemantics(
   child: Semantics(
-    excludeSemantics: true,          // replace children semantics with our label
-    button: true,                    // announces as tappable item
-    label: '${item.title}. $snippet. Double tap to open details.',
+    excludeSemantics: true,
+    button: true,
+    label: '${item.title}. ${snippet.isEmpty ? "Open details" : snippet}. Double tap to open details.',
     child: ListTile(
       title: Text(item.title),
-      subtitle: Text(snippet),
+      // 🔎 Highlight query matches in the snippet
+      subtitle: RichText(
+        text: TextSpan(
+          style: Theme.of(context).textTheme.bodyMedium,
+          children: _highlight(snippet, query),
+        ),
+      ),
       onTap: () {
         // TODO: navigate to detail (e.g., context.go('/article/${item.id}'))
       },
     ),
   ),
 );
+
 
                     },
                   ),
@@ -223,4 +236,25 @@ class _Snippet extends StatelessWidget {
         snippet.length <= 160 ? snippet : '${snippet.substring(0, 160)} …';
     return Text(short);
   }
+}
+
+List<InlineSpan> _highlight(String text, String query) {
+  if (query.trim().isEmpty) return [TextSpan(text: text)];
+  final q = RegExp(RegExp.escape(query.trim()), caseSensitive: false);
+  final spans = <InlineSpan>[];
+  int start = 0;
+  for (final m in q.allMatches(text)) {
+    if (m.start > start) {
+      spans.add(TextSpan(text: text.substring(start, m.start)));
+    }
+    spans.add(TextSpan(
+      text: text.substring(m.start, m.end),
+      style: const TextStyle(fontWeight: FontWeight.w700),
+    ));
+    start = m.end;
+  }
+  if (start < text.length) {
+    spans.add(TextSpan(text: text.substring(start)));
+  }
+  return spans;
 }
