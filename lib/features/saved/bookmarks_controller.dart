@@ -1,36 +1,36 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-/// Internal key inside the 'bookmarks' box
-const _kBookmarkIds = 'ids';
+const _box = 'bookmarks';
+const _key = 'ids';
 
-/// Expose the set of bookmarked content IDs.
-final bookmarksProvider = StateNotifierProvider<BookmarksController, Set<String>>(
-  (ref) => BookmarksController()..load(),
-);
+class BookmarksNotifier extends StateNotifier<Set<String>> {
+  BookmarksNotifier() : super(_read());
 
-class BookmarksController extends StateNotifier<Set<String>> {
-  BookmarksController() : super(<String>{});
-
-  Box get _box => Hive.box('bookmarks');
-
-  void load() {
-    final raw = _box.get(_kBookmarkIds, defaultValue: const <String>[]) as List;
-    state = raw.cast<String>().toSet();
+  static Set<String> _read() {
+    final box = Hive.box(_box);
+    final list = (box.get(_key) as List?)?.cast<String>() ?? const <String>[];
+    return Set<String>.from(list);
   }
 
-  bool isBookmarked(String id) => state.contains(id);
+  void _persist() => Hive.box(_box).put(_key, state.toList(growable: false));
+
+  bool contains(String id) => state.contains(id);
 
   void toggle(String id) {
     final next = Set<String>.from(state);
-    if (!next.remove(id)) next.add(id);
+    next.contains(id) ? next.remove(id) : next.add(id);
     state = next;
-    // Persist as a List
-    _box.put(_kBookmarkIds, next.toList(growable: false));
-    if (kDebugMode) {
-      // ignore: avoid_print
-      print('Bookmarks: ${next.length} items');
-    }
+    _persist();
+  }
+
+  void clear() {
+    state = <String>{};
+    _persist();
   }
 }
+
+final bookmarksProvider =
+    StateNotifierProvider<BookmarksNotifier, Set<String>>(
+  (_) => BookmarksNotifier(),
+);
