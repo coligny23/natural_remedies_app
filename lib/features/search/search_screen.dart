@@ -6,6 +6,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'search_providers.dart';
 import '../content/models/content_item.dart';
 
+
+import 'package:go_router/go_router.dart';
 import '../../shared/ml/qa_providers.dart'; // qaInitProvider / qaAnswerProvider
 
 
@@ -189,9 +191,7 @@ return MergeSemantics(
           children: _highlight(snippet, query),
         ),
       ),
-      onTap: () {
-        // TODO: navigate to detail (e.g., context.go('/article/${item.id}'))
-      },
+      onTap: () => context.go('/article/${item.id}'),
     ),
   ),
 );
