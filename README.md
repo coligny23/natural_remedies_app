@@ -14,7 +14,7 @@ An **offline-first** learning app that helps users **search** and **learn** abou
 
 ## ✨ Features
 
-* 🔍 **Instant offline search** (Day 4)
+* 🔍 **Instant offline search**
 * 📚 Curated **Principles**, **Herbs**, and **Conditions** content
 * 🇬🇧/🇹🇿 **Bilingual** (EN / SW) with graceful fallback
 * 💾 **Local assets** + future Hive caching for bookmarks
