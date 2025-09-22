@@ -29,6 +29,7 @@ dependencies:
   flutter_svg: ^2.0.10
   transparent_image: ^2.0.1
   animations: ^2.0.11
+  share_plus: ^12.0.0
 
 dev_dependencies:
   flutter_test:
