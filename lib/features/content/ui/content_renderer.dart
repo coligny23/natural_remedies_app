@@ -4,6 +4,28 @@ import '../../search/search_providers.dart'; // for title lookup
 import '../models/content_item.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+
+// Add near the top of the file (outside classes)
+
+/// Create a stable fragment id from section title (e.g., "Symptoms & Causes" -> "symptoms-causes")
+String sectionSlug(String title) {
+  final t = title.trim().toLowerCase();
+  final s = t
+      .replaceAll(RegExp(r'[^a-z0-9\s-]'), '')  // remove punctuation
+      .replaceAll(RegExp(r'\s+'), '-')          // spaces -> dashes
+      .replaceAll(RegExp(r'-{2,}'), '-')
+      .replaceAll(RegExp(r'^-|-$'), '');
+  return s.isEmpty ? 'section' : s;
+}
+
+/// Build a TOC from raw text using parseSections()
+List<({String title, String slug})> buildToc(String rawText) {
+  final secs = parseSections(rawText);
+  return [
+    for (final s in secs) (title: s.title, slug: sectionSlug(s.title)),
+  ];
+}
+
 /// A parsed section of the article (e.g., SYMPTOMS:, CAUSES:, TREATMENT:)
 class ArticleSection {
   final String title; // e.g., "Symptoms"
