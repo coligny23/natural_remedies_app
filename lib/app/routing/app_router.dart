@@ -36,7 +36,8 @@ final appRouter = GoRouter(
           name: 'article',
           builder: (_, state) {
             final id = state.pathParameters['id']!;
-            return ArticleScreen(id: id);
+            final section = state.uri.queryParameters['section'];
+            return ContentDetailScreen(id: id, initialSection: section);
           },
         ),
       ],
@@ -89,11 +90,16 @@ class _RootTabsState extends State<RootTabs> {
         currentIndex: _controller.index,
         onTap: (i) => setState(() => _controller.index = i),
         items: const [
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.house), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.square_list), label: 'Learn'),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.search), label: 'Search'),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.bookmark), label: 'Saved'),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.gear), label: 'Settings'),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.house), label: 'Home'),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.square_list), label: 'Learn'),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.search), label: 'Search'),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.bookmark), label: 'Saved'),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.gear), label: 'Settings'),
         ],
       ),
       tabBuilder: (_, i) => CupertinoTabView(builder: (_) => _pages[i]),
