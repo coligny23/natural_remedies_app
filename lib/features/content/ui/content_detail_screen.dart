@@ -4,15 +4,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:flutter/services.dart' show Clipboard, ClipboardData;
-import '../../content/data/reading_progress_repository.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-
-
+import '../../content/data/reading_progress_repository.dart'; // (ok if unused now)
 import 'content_renderer.dart'; // parseSections, maybeBullets, linkifyParagraph, sectionSlug, buildToc
 import '../../search/search_providers.dart'; // languageCodeProvider, contentListProvider
 import '../data/content_lookup_provider.dart'; // contentByIdProvider(id)
 import '../../saved/bookmarks_controller.dart'; // bookmarksProvider
+import '../models/content_item.dart'; // for types in helpers
 
 class ContentDetailScreen extends ConsumerStatefulWidget {
   final String id;
@@ -55,7 +53,8 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
     return itemsAsync.when(
       loading: () => const Scaffold(body: Center(child: CircularProgressIndicator())),
       error: (e, _) => Scaffold(body: Center(child: Text('Error: $e'))),
-      data: (_) {
+      // ⬇ name the loaded list `allItems` so we can compute "Related"
+      data: (allItems) {
         final item = ref.watch(contentByIdProvider(widget.id));
         if (item == null) {
           return const Scaffold(body: Center(child: Text('Not found')));
@@ -162,6 +161,33 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
                           ),
                         ),
                       ),
+
+                      // ⬇⬇⬇ Related block appended below Expanded (after article body)
+                      const SizedBox(height: 16),
+                      Builder(builder: (context) {
+                        final related = _relatedFor(item, allItems, lang, k: 3);
+                        if (related.isEmpty) return const SizedBox.shrink();
+                        return Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Related', style: Theme.of(context).textTheme.titleMedium),
+                            const SizedBox(height: 8),
+                            ...related.map(
+                              (r) => ListTile(
+                                contentPadding: EdgeInsets.zero,
+                                title: Text(r.title),
+                                subtitle: Text(_familyPrefix(r.id)),
+                                onTap: () {
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(builder: (_) => ContentDetailScreen(id: r.id)),
+                                  );
+                                },
+                              ),
+                            ),
+                          ],
+                        );
+                      }),
+                      // ⬆⬆⬆ end Related
                     ],
                   ),
                 ),
@@ -173,7 +199,51 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
     );
   }
 
-  // Smooth scroll to a section slug
+  // --- Related helpers (local; no repo dependency) ---
+
+  String _familyPrefix(String id) => id.split('-').first; // herb-*, disease-*, principle-*
+
+  Set<String> _wordsOf(String s) {
+    final lower = s.toLowerCase();
+    final re = RegExp(r'[a-z0-9]+');
+    return re.allMatches(lower).map((m) => m.group(0)!).toSet();
+  }
+
+  List<ContentItem> _relatedFor(
+    ContentItem it,
+    List<ContentItem> all,
+    String lang, {
+    int k = 3,
+  }) {
+    final family = _familyPrefix(it.id);
+    final baseWords = _wordsOf(it.title);
+
+    final scored = <MapEntry<ContentItem, int>>[];
+    for (final other in all) {
+      if (other.id == it.id) continue;
+      int score = 0;
+
+      // Same family bonus
+      if (_familyPrefix(other.id) == family) score += 2;
+
+      // Title word overlap
+      final overlap = baseWords.intersection(_wordsOf(other.title)).length;
+      if (overlap > 0) score += overlap;
+
+      if (score > 0) scored.add(MapEntry(other, score));
+    }
+
+    scored.sort((a, b) {
+      final byScore = b.value.compareTo(a.value);
+      if (byScore != 0) return byScore;
+      return a.key.title.compareTo(b.key.title);
+    });
+
+    return [for (final e in scored.take(k)) e.key];
+  }
+
+  // --- Scroll/restore/progress as you had ---
+
   void _scrollTo(String slug) {
     final key = _sectionKeys[slug];
     final ctx = key?.currentContext;
@@ -186,7 +256,6 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
     );
   }
 
-  // Restore initial section (deep link) or saved progress once
   Future<void> _maybeRestore(String body) async {
     if (_restoredOnce) return;
     // If we have a deep-linked section, prefer it
@@ -323,7 +392,7 @@ class _SectionBlockState extends State<_SectionBlock> {
                         children: linkifyParagraph(
                           context,
                           text: b,
-                          resolveTitle: (_) => null, // optional; title lookups already in ArticleBody
+                          resolveTitle: (_) => null, // title lookups already in ArticleBody
                           onTapId: widget.onTapLink,
                         ),
                       ),
