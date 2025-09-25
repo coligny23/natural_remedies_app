@@ -35,10 +35,14 @@ class LocalQaTflite implements LocalQaEngine {
   }
 
   @override
-  Future<QaAnswer> answer(String query) async {
-    if (!_ready) return QaAnswer(text: '', source: null);
+  Future<QaAnswer> answer(String query, {List<ContentItem>? shortlist}) async {
+    if (!_ready) return const QaAnswer(text: '', source: null);
 
-    final candidates = _prefilter(query, topK: 8);
+    // Prefer external shortlist (retrieval from provider); fallback to internal prefilter.
+    final candidates = (shortlist != null && shortlist.isNotEmpty)
+        ? shortlist
+        : _prefilter(query, topK: 8);
+
     String bestText = '';
     double bestScore = double.negativeInfinity;
     ContentItem? bestSource;
@@ -64,7 +68,8 @@ class LocalQaTflite implements LocalQaEngine {
         }
       }
     }
-    return QaAnswer(text: bestText, source: bestSource);
+    // You can thread through the whole candidate list if useful:
+    return QaAnswer(text: bestText, source: bestSource, topMatches: candidates);
   }
 
   (int,int,double)? _runOne(QaFeature f) {
