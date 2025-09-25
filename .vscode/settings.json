@@ -1,11 +1,18 @@
 {
   "json.schemas": [
     {
-      "fileMatch": [
-        "/assets/corpus/en/*.json",
-        "/assets/corpus/sw/*.json"
-      ],
-      "url": "./tools/schemas/content_pack.schema.json"
+      "fileMatch": ["assets/corpus/*/synonyms.json"],
+      "schema": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    {
+      "fileMatch": ["assets/corpus/*/*.json"],
+      "schema": { "type": "array" }
     }
   ]
 }

@@ -1,3 +1,4 @@
+// lib/features/search/search_screen.dart
 import 'dart:convert';
 import 'dart:async';
 import 'package:flutter/material.dart';
@@ -5,7 +6,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import 'search_providers.dart';
+import 'search_providers.dart'; // <- includes fastSearchProvider + searchQueryProvider
 import '../content/models/content_item.dart';
 import '../../shared/ml/qa_providers.dart'; // qaInitProvider / qaAnswerProvider
 import '../../shared/telemetry/telemetry_providers.dart'; // <-- telemetry
@@ -45,15 +46,20 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final results = ref.watch(searchResultsProvider);
-    final isLoading = ref.watch(contentListProvider).isLoading;
-
+    // Core data dependencies
     final itemsAsync = ref.watch(contentListProvider);
+    final isLoading = itemsAsync.isLoading;
     final total = itemsAsync.maybeWhen(data: (it) => it.length, orElse: () => null);
 
-    // AI answer hook (stub now, TFLite later)
+    // Query + fast results (ASYNC)
     final query = ref.watch(searchQueryProvider).trim();
-    // Only ask when the user typed something
+    final resultsAsync = ref.watch(fastSearchProvider(query));
+    final resultsCount = resultsAsync.maybeWhen(
+      data: (list) => list.length,
+      orElse: () => null,
+    );
+
+    // AI answer hook (stub now, TFLite later)
     final answerAsync = query.isEmpty ? null : ref.watch(qaAnswerProvider(query));
     final lang = ref.watch(languageCodeProvider); // 'en' or 'sw'
 
@@ -111,7 +117,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text('Loaded: ${total ?? "…"}'),
-                Text('Results: ${results.length}'),
+                Text('Results: ${resultsCount ?? "…"}'),
               ],
             ),
           ),
@@ -171,56 +177,85 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
           // --- end Answer card ---
 
           Expanded(
-            child: results.isEmpty
-                ? const _EmptyState()
-                : ListView.separated(
-                    itemCount: results.length,
-                    separatorBuilder: (_, __) => const Divider(height: 1),
-                    itemBuilder: (context, index) {
-                      final item = results[index];
+            child: resultsAsync.when(
+              loading: () => const _LoadingOrEmpty(queryEmptyMessage: 'Type to search…'),
+              error: (err, st) => Padding(
+                padding: const EdgeInsets.all(16),
+                child: Text('Search error: $err'),
+              ),
+              data: (results) {
+                if (results.isEmpty) {
+                  return const _EmptyState();
+                }
+                return ListView.separated(
+                  itemCount: results.length,
+                  separatorBuilder: (_, __) => const Divider(height: 1),
+                  itemBuilder: (context, index) {
+                    final item = results[index];
 
-                      // Use current language for snippet
-                      final bodyText = (lang == 'sw')
-                          ? (item.contentSw ?? item.contentEn ?? '')
-                          : (item.contentEn ?? item.contentSw ?? '');
-                      final snippetSrc = bodyText.replaceAll('\n', ' ');
-                      final snippet = snippetSrc.length <= 160
-                          ? snippetSrc
-                          : '${snippetSrc.substring(0, 160)} …';
+                    // Use current language for snippet
+                    final bodyText = (lang == 'sw')
+                        ? (item.contentSw ?? item.contentEn ?? '')
+                        : (item.contentEn ?? item.contentSw ?? '');
+                    final snippetSrc = bodyText.replaceAll('\n', ' ');
+                    final snippet = snippetSrc.length <= 160
+                        ? snippetSrc
+                        : '${snippetSrc.substring(0, 160)} …';
 
-                      // MergeSemantics + exclude child semantics => SR reads our concise label once.
-                      return MergeSemantics(
-                        child: Semantics(
-                          excludeSemantics: true,
-                          button: true,
-                          label:
-                              '${item.title}. ${snippet.isEmpty ? "Open details" : snippet}. Double tap to open details.',
-                          child: ListTile(
-                            title: Text(item.title),
-                            // 🔎 Highlight query matches in the snippet
-                            subtitle: RichText(
-                              text: TextSpan(
-                                style: Theme.of(context).textTheme.bodyMedium,
-                                children: _highlight(snippet, query),
-                              ),
+                    // MergeSemantics + exclude child semantics => SR reads our concise label once.
+                    return MergeSemantics(
+                      child: Semantics(
+                        excludeSemantics: true,
+                        button: true,
+                        label:
+                            '${item.title}. ${snippet.isEmpty ? "Open details" : snippet}. Double tap to open details.',
+                        child: ListTile(
+                          title: Text(item.title),
+                          // 🔎 Highlight query matches in the snippet
+                          subtitle: RichText(
+                            text: TextSpan(
+                              style: Theme.of(context).textTheme.bodyMedium,
+                              children: _highlight(snippet, query),
                             ),
-                            onTap: () async {
-                              // --- Telemetry: open_from_search ---
-                              await ref.logEvent('open_from_search', {
-                                'id': item.id,
-                                'title': item.title,
-                                'lang': lang,
-                              });
-                              if (!context.mounted) return;
-                              context.go('/article/${item.id}');
-                            },
                           ),
+                          onTap: () async {
+                            // --- Telemetry: open_from_search ---
+                            await ref.logEvent('open_from_search', {
+                              'id': item.id,
+                              'title': item.title,
+                              'lang': lang,
+                            });
+                            if (!context.mounted) return;
+                            context.go('/article/${item.id}');
+                          },
                         ),
-                      );
-                    },
-                  ),
+                      ),
+                    );
+                  },
+                );
+              },
+            ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _LoadingOrEmpty extends StatelessWidget {
+  final String queryEmptyMessage;
+  const _LoadingOrEmpty({required this.queryEmptyMessage});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(24),
+        child: Text(
+          queryEmptyMessage,
+          textAlign: TextAlign.center,
+          style: Theme.of(context).textTheme.bodyMedium,
+        ),
       ),
     );
   }
@@ -235,7 +270,7 @@ class _EmptyState extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(24),
         child: Text(
-          'Type to search. Example: "ginger", "cayenne", "debility", "symptoms".',
+          'No results yet. Try another term—e.g., "ginger", "cayenne", "debility", "symptoms".',
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.bodyMedium,
         ),
