@@ -2,9 +2,9 @@ import 'package:natural_remedies_app/features/content/models/content_item.dart';
 
 /// Result for a QA call (keep it simple but extensible)
 class QaAnswer {
-  final String text;                      // the answer string
-  final ContentItem? source;              // the best-matching content
-  final List<ContentItem> topMatches;     // optional: other candidates
+  final String text; // the answer string
+  final ContentItem? source; // the best-matching content
+  final List<ContentItem> topMatches; // optional: other candidates
   const QaAnswer({required this.text, this.source, this.topMatches = const []});
 }
 
@@ -17,5 +17,5 @@ abstract class LocalQaEngine {
   });
 
   /// Get an answer for a natural-language query. Returns a best-effort result.
-  Future<QaAnswer> answer(String query);
+  Future<QaAnswer> answer(String query, {List<ContentItem>? shortlist});
 }

@@ -23,7 +23,7 @@ dependencies:
   path_provider: ^2.1.4
 
   # On-device ML
-  tflite_flutter: ^0.11.0
+  tflite_flutter: 0.11.0
 
   # UI niceties
   flutter_svg: ^2.0.10
@@ -43,4 +43,5 @@ flutter:
   assets:
     - assets/corpus/en/
     - assets/corpus/sw/
-    - assets/ml/
+    - assets/ml/mobilebert_qa_float32.tflite
+    - assets/ml/vocab.txt

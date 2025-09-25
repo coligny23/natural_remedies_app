@@ -16,7 +16,7 @@ class LocalQaStub implements LocalQaEngine {
   }
 
   @override
-  Future<QaAnswer> answer(String query) async {
+  Future<QaAnswer> answer(String query, {List<ContentItem>? shortlist}) async {
     final q = _tokenize(query);
     if (q.isEmpty || _items.isEmpty) {
       return const QaAnswer(text: "Nisamehe, siwezi kupata jibu kwa sasa."); // short default

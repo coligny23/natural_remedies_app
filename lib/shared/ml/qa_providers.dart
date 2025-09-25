@@ -9,6 +9,7 @@ import 'local_qa_tflite_web.dart'
 
 import '../../features/search/search_providers.dart';
 import '../../features/settings/feature_flags.dart';
+import '../../features/content/models/content_item.dart';
 
 final qaEngineProvider = Provider<LocalQaEngine>((ref) {
   final useTflite = ref.watch(useTfliteProvider);
@@ -26,5 +27,14 @@ final qaInitProvider = FutureProvider<void>((ref) async {
 final qaAnswerProvider = FutureProvider.family<QaAnswer, String>((ref, q) async {
   await ref.watch(qaInitProvider.future);
   final engine = ref.read(qaEngineProvider);
-  return engine.answer(q);
+
+  final query = q.trim();
+  if (query.isEmpty) return const QaAnswer(text: '');
+
+  // Retrieve top-K best candidates via fastSearch
+  const k = 3;
+  final hits = await ref.read(fastSearchProvider(query).future);
+  final shortlist = hits.take(k).toList(growable: false);
+
+  return engine.answer(query, shortlist: shortlist);
 });
