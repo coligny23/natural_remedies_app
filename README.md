@@ -23,56 +23,6 @@ An **offline-first** learning app that helps users **search** and **learn** abou
 
 ---
 
-## 🧱 Architecture
-
-```
-Flutter (Material3 + Cupertino)
- ├─ GoRouter tabs: Home | Learn | Search | Saved | Settings
- ├─ Riverpod state: language, content, search
- ├─ Assets: /assets/corpus/{en,sw}/sample.json
- └─ (Planned) TFLite on-device reasoning via tflite_flutter
-
-Data Pipeline (Python, local)
- ├─ PDF → curated extraction (principles/herbs/conditions)
- ├─ EN JSON → SW JSON (local HF translation models)
- └─ Emits en_chunks_curated.json → app asset packs
-```
-
----
-
-## 📁 Project Structure (key parts)
-
-```
-natural_remedies_app/
-├─ lib/
-│  ├─ app/
-│  │  ├─ routing/app_router.dart
-│  │  └─ theme/app_theme.dart
-│  ├─ features/
-│  │  ├─ home/home_screen.dart
-│  │  ├─ learn/learn_screen.dart
-│  │  ├─ search/
-│  │  │  ├─ search_page.dart
-│  │  │  └─ search_providers.dart
-│  │  ├─ saved/saved_screen.dart
-│  │  ├─ settings/settings_screen.dart
-│  │  └─ content/
-│  │     ├─ models/content_item.dart
-│  │     └─ data/
-│  │        ├─ content_repository.dart
-│  │        └─ content_repository_assets.dart
-├─ assets/
-│  └─ corpus/
-│     ├─ en/sample.json
-│     └─ sw/sample.json
-└─ data-pipeline/  (local only; not committed)
-   ├─ extract_curated_v2.py
-   ├─ translate_sw_hf_resumable.py
-   ├─ NaturalRemediesEncyclopedia.pdf
-   └─ .venv/  (ignored)
-```
-
----
 
 ## 🚀 Quick Start
 
@@ -125,14 +75,6 @@ flutter run -d chrome
 
 ---
 
-## 🔎 Day 4: Offline Search (what’s in place)
-
-* **Search UI**: `features/search/search_page.dart`
-* **State**: `search_providers.dart` with `contentListProvider`, `searchQueryProvider`, `searchResultsProvider`
-* **Repo**: `AssetsContentRepository` loads JSON from assets and serves basic string-match filtering
-* **DoD**: Searching for **“ginger”** returns results instantly, offline
-
----
 
 ## 🧪 Sample Content Schema
 
@@ -161,7 +103,6 @@ Each item is a compact “card” used for search and display:
 
 ## 🛠 Data Pipeline (Optional, local only)
 
-> Keep these outputs **out of Git** (`.gitignore` includes `.venv`, models, and PDFs).
 
 1. Create a virtual environment and install packages:
 
@@ -217,19 +158,6 @@ Configured in `lib/app/routing/app_router.dart`.
 * **Hive** (planned) for bookmarks & local cache
 * **tflite\_flutter** (planned) for on-device model inference
 * **Python** data-pipeline (pdfplumber, transformers)
-
----
-
-## 🗺️ Roadmap
-
-* [x] App shell + tabs + theming
-* [x] Offline search over local assets (Day 4)
-* [ ] Detail views for Herbs & Conditions with collapsible subsections
-* [ ] Bookmarks (Hive)
-* [ ] Highlight search matches
-* [ ] TFLite model for semantic Q\&A (offline)
-* [ ] Evaluation & instrumentation for learning outcomes
-* [ ] Content packs & simple update mechanism
 
 ---
 
