@@ -48,11 +48,6 @@ final appRouter = GoRouter(
           name: 'saved-answers',
           builder: (_, __) => const SavedAnswersScreen(),
         ),
-        GoRoute(
-          path: '/saved-answers',
-          name: 'saved-answers',
-          builder: (_, __) => const SavedAnswersScreen(),
-        ),
       ],
       
     ),
