@@ -1,5 +1,6 @@
 // lib/features/home/home_screen.dart
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart'; // <-- add this
 import '../progress/continue_learning_card.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -8,7 +9,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Home')),
+      appBar: AppBar(
+        title: const Text('Home'),
+        actions: [
+          IconButton(
+            tooltip: 'Saved Answers',
+            icon: const Icon(Icons.star),
+            onPressed: () => context.go('/saved-answers'), // <-- navigate
+          ),
+        ],
+      ),
       body: ListView(
         children: const [
           // ✅ Continue learning panel at the top (from progress/continue_learning_card.dart)
