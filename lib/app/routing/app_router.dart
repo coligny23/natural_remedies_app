@@ -2,6 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import '../../features/qa/saved_answers_screen.dart'; // add import
 
 import '../../features/content/ui/content_detail_screen.dart';
 import '../../features/home/home_screen.dart';
@@ -12,7 +13,7 @@ import '../../features/saved/saved_screen.dart';
 import '../../features/settings/settings_screen.dart';
 
 final appRouter = GoRouter(
-  routes: [
+    routes: [
     GoRoute(
       path: '/',
       name: 'root',
@@ -22,6 +23,7 @@ final appRouter = GoRouter(
         final initialIndex = int.tryParse(tabStr) ?? 0;
         return RootTabs(initialIndex: initialIndex);
       },
+      
       routes: [
         // Friendly deep links to switch tabs
         GoRoute(path: 'home', redirect: (_, __) => '/?tab=0'),
@@ -40,10 +42,23 @@ final appRouter = GoRouter(
             return ContentDetailScreen(id: id, initialSection: section);
           },
         ),
+        // Inside the 'routes: [ ... ]' under the root GoRoute(path: '/')
+        GoRoute(
+          path: 'saved-answers',
+          name: 'saved-answers',
+          builder: (_, __) => const SavedAnswersScreen(),
+        ),
+        GoRoute(
+          path: '/saved-answers',
+          name: 'saved-answers',
+          builder: (_, __) => const SavedAnswersScreen(),
+        ),
       ],
+      
     ),
   ],
 );
+
 
 class RootTabs extends StatefulWidget {
   final int initialIndex;
