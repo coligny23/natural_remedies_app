@@ -5,6 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'search_history_providers.dart';
+import '/features/qa/saved_answers_providers.dart';
+import 'package:share_plus/share_plus.dart'; // if not already present
+
+
 
 import 'search_providers.dart'; // <- includes fastSearchProvider + searchQueryProvider
 import '../content/models/content_item.dart';
@@ -33,6 +38,10 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     _debounce = Timer(const Duration(milliseconds: 150), () async {
       final q = text.trim();
       ref.read(searchQueryProvider.notifier).state = q;
+      
+      if (q.isNotEmpty) {
+        await ref.read(searchHistoryProvider.notifier).add(q);
+      }
 
       // --- Telemetry: record debounced search (only if non-empty) ---
       if (q.isNotEmpty) {
@@ -58,6 +67,9 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
       data: (list) => list.length,
       orElse: () => null,
     );
+    // add this line with your other locals at the top of build()
+    final history = ref.watch(searchHistoryProvider);
+
 
     // AI answer hook (stub now, TFLite later)
     final answerAsync = query.isEmpty ? null : ref.watch(qaAnswerProvider(query));
@@ -110,6 +122,32 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
             ),
           ),
 
+        // History chips (last 6) — widget-only block inside children[]
+          if (history.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: Wrap(
+                  spacing: 8,
+                  runSpacing: 4,
+                  children: history.take(6).map((q) {
+                    return ActionChip(
+                      label: Text(q),
+                      onPressed: () {
+                        _controller.text = q;
+                        _controller.selection = TextSelection.fromPosition(
+                          TextPosition(offset: q.length),
+                        );
+                        ref.read(searchQueryProvider.notifier).state = q;
+                      },
+                    );
+                  }).toList(),
+                ),
+              ),
+            ),
+
+
           if (isLoading) const LinearProgressIndicator(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -153,21 +191,65 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                   child: answerAsync!.when(
                     loading: () => const Text('Thinking…'),
                     error: (e, _) => Text('Could not answer: $e'),
-                    data: (ans) => Column(
+                    data: (ans) {
+                    final hasText = ans.text.trim().isNotEmpty;
+                    return Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text('Answer', style: TextStyle(fontWeight: FontWeight.w600)),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            const Text('Answer', style: TextStyle(fontWeight: FontWeight.w600)),
+                            Row(
+                              children: [
+                                IconButton(
+                                  tooltip: 'Share answer',
+                                  icon: const Icon(Icons.ios_share),
+                                  onPressed: hasText ? () {
+                                    final src = ans.source;
+                                    final buffer = StringBuffer()
+                                      ..writeln('Q: $query')
+                                      ..writeln('A: ${ans.text}');
+                                    if (src != null) buffer.writeln('Source: ${src.title}');
+                                    Share.share(buffer.toString().trim());
+                                  } : null,
+
+                                ),
+                                IconButton(
+                                  tooltip: 'Save answer',
+                                  icon: const Icon(Icons.star_border),
+                                  onPressed: hasText ? () async {
+                                    await ref.read(savedQaListProvider.notifier).save(
+                                      question: query,
+                                      answerText: ans.text,
+                                      sourceId: ans.source?.id,
+                                      sourceTitle: ans.source?.title,
+                                    );
+                                    if (!context.mounted) return;
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      const SnackBar(content: Text('Saved to Answers')),
+                                    );
+                                    await ref.logEvent('qa_saved', {
+                                      'has_source': ans.source != null,
+                                      'q_len': query.length,
+                                      'a_len': ans.text.length,
+                                    });
+                                  } : null,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                         const SizedBox(height: 6),
                         Text(ans.text),
                         if (ans.source != null) ...[
                           const SizedBox(height: 8),
-                          Text(
-                            'Source: ${ans.source!.title}',
-                            style: Theme.of(context).textTheme.bodySmall,
-                          ),
+                          Text('Source: ${ans.source!.title}', style: Theme.of(context).textTheme.bodySmall),
                         ],
                       ],
-                    ),
+                    );
+                  },
+
                   ),
                 ),
               ),

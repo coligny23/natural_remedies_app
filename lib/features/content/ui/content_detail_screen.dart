@@ -4,6 +4,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:flutter/services.dart' show Clipboard, ClipboardData;
+import '../../progress/progress_tracker.dart';
+
+
 
 import '../../content/data/reading_progress_repository.dart'; // (ok if unused now)
 import 'content_renderer.dart'; // parseSections, maybeBullets, linkifyParagraph, sectionSlug, buildToc
@@ -122,76 +125,80 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
               constraints: const BoxConstraints(maxWidth: 720),
               child: Padding(
                 padding: const EdgeInsets.all(16),
-                child: NotificationListener<ScrollNotification>(
-                  onNotification: (n) {
-                    if (n is ScrollUpdateNotification) {
-                      _saveProgress(widget.id, section: _lastSection, offset: _scroll.offset);
-                    }
-                    return false;
-                  },
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      if (toc.length > 1) ...[
-                        Wrap(
-                          spacing: 8,
-                          runSpacing: 8,
-                          children: [
-                            for (final e in toc)
-                              ActionChip(
-                                label: Text(e.title, maxLines: 1, overflow: TextOverflow.ellipsis),
-                                onPressed: () => _scrollTo(e.slug),
-                              ),
-                          ],
-                        ),
-                        const SizedBox(height: 12),
-                      ],
-                      Expanded(
-                        child: SingleChildScrollView(
-                          controller: _scroll,
-                          child: _ArticleWithKeys(
-                            rawText: body,
-                            registerKey: (slug, key) => _sectionKeys[slug] = key,
-                            onVisibleSection: (slug) => _lastSection = slug,
-                            onTapLink: (id) {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(builder: (_) => ContentDetailScreen(id: id)),
-                              );
-                            },
+                child: ProgressTracker(
+                  articleId: widget.id,               // <-- use the current article id
+                  sectionId: _lastSection,            // <-- optional: current visible section (your field)
+                  child: NotificationListener<ScrollNotification>(
+                    onNotification: (n) {
+                      if (n is ScrollUpdateNotification) {
+                        _saveProgress(widget.id, section: _lastSection, offset: _scroll.offset);
+                      }
+                      return false;
+                    },
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        if (toc.length > 1) ...[
+                          Wrap(
+                            spacing: 8,
+                            runSpacing: 8,
+                            children: [
+                              for (final e in toc)
+                                ActionChip(
+                                  label: Text(e.title, maxLines: 1, overflow: TextOverflow.ellipsis),
+                                  onPressed: () => _scrollTo(e.slug),
+                                ),
+                            ],
+                          ),
+                          const SizedBox(height: 12),
+                        ],
+                        Expanded(
+                          child: SingleChildScrollView(
+                            controller: _scroll,
+                            child: _ArticleWithKeys(
+                              rawText: body,
+                              registerKey: (slug, key) => _sectionKeys[slug] = key,
+                              onVisibleSection: (slug) => _lastSection = slug,
+                              onTapLink: (id) {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(builder: (_) => ContentDetailScreen(id: id)),
+                                );
+                              },
+                            ),
                           ),
                         ),
-                      ),
 
-                      // ⬇⬇⬇ Related block appended below Expanded (after article body)
-                      const SizedBox(height: 16),
-                      Builder(builder: (context) {
-                        final related = _relatedFor(item, allItems, lang, k: 3);
-                        if (related.isEmpty) return const SizedBox.shrink();
-                        return Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text('Related', style: Theme.of(context).textTheme.titleMedium),
-                            const SizedBox(height: 8),
-                            ...related.map(
-                              (r) => ListTile(
-                                contentPadding: EdgeInsets.zero,
-                                title: Text(r.title),
-                                subtitle: Text(_familyPrefix(r.id)),
-                                onTap: () {
-                                  Navigator.of(context).push(
-                                    MaterialPageRoute(builder: (_) => ContentDetailScreen(id: r.id)),
-                                  );
-                                },
+                        // Related block unchanged
+                        const SizedBox(height: 16),
+                        Builder(builder: (context) {
+                          final related = _relatedFor(item, allItems, lang, k: 3);
+                          if (related.isEmpty) return const SizedBox.shrink();
+                          return Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Related', style: Theme.of(context).textTheme.titleMedium),
+                              const SizedBox(height: 8),
+                              ...related.map(
+                                (r) => ListTile(
+                                  contentPadding: EdgeInsets.zero,
+                                  title: Text(r.title),
+                                  subtitle: Text(_familyPrefix(r.id)),
+                                  onTap: () {
+                                    Navigator.of(context).push(
+                                      MaterialPageRoute(builder: (_) => ContentDetailScreen(id: r.id)),
+                                    );
+                                  },
+                                ),
                               ),
-                            ),
-                          ],
-                        );
-                      }),
-                      // ⬆⬆⬆ end Related
-                    ],
+                            ],
+                          );
+                        }),
+                      ],
+                    ),
                   ),
                 ),
-              ),
+              )
+
             ),
           ),
         );
