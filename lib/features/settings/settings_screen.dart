@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:share_plus/share_plus.dart';
 import '../../shared/telemetry/telemetry_providers.dart';
 import '../../shared/telemetry/telemetry.dart';
+import '../settings/reminder_providers.dart';
 
 import '../search/search_providers.dart'; // languageCodeProvider
 import 'feature_flags.dart'; // useTfliteProvider
@@ -13,8 +14,8 @@ class SettingsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final lang = ref.watch(languageCodeProvider);           // 'en' or 'sw'
-    final useTflite = ref.watch(useTfliteProvider);         // bool
+    final lang = ref.watch(languageCodeProvider); // 'en' or 'sw'
+    final useTflite = ref.watch(useTfliteProvider); // bool
     final telemetryOn = ref.watch(telemetryEnabledProvider); // bool
 
     return CupertinoPageScaffold(
@@ -280,3 +281,4 @@ Future<bool?> _confirmDialog(
     ),
   );
 }
+
