@@ -76,6 +76,22 @@ class AssetsContentRepository implements ContentRepository {
     await _ensureLangLoaded(lang);
     return List<ContentItem>.unmodifiable(_cache[lang]!);
   }
+/// Public accessor for the synonyms map used by search.
+/// - Ensures the requested language is loaded
+/// - Falls back to English if the requested language has no synonyms
+  Future<Map<String, List<String>>> getSynonyms({required String lang}) async {
+    // Load requested language caches if not already loaded
+    await _ensureLangLoaded(lang);
+    var map = _synCache[lang] ?? const <String, List<String>>{};
+
+    // Fallback to English if empty and not already English
+    if (map.isEmpty && lang != 'en') {
+      await _ensureLangLoaded('en');
+      map = _synCache['en'] ?? const <String, List<String>>{};
+    }
+
+    return map;
+  }
 
   /// Expand a query with synonyms (EN or SW map depending on `lang`)
   List<String> _expandTerms(String lang, String q) {

@@ -52,6 +52,8 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
       }
     });
   }
+List<String> _tokens(String q) =>
+    q.toLowerCase().split(RegExp(r'[^a-z0-9]+')).where((s) => s.isNotEmpty).toList();
 
   @override
   Widget build(BuildContext context) {
@@ -69,11 +71,31 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     );
     // add this line with your other locals at the top of build()
     final history = ref.watch(searchHistoryProvider);
+    // Synonym suggestions for current query
+final synsAsync = ref.watch(synonymsMapProvider);
+
+final suggestionChips = synsAsync.maybeWhen(
+  data: (syns) {
+    if (query.isEmpty) return const <String>[];
+    final toks = _tokens(query);
+    final out = <String>{};
+    for (final t in toks) {
+      final alts = syns[t] ?? const <String>[];
+      for (final a in alts) {
+        if (a.toLowerCase() != t.toLowerCase()) out.add(a);
+      }
+    }
+    return out.take(6).toList(); // show up to 6
+  },
+  orElse: () => const <String>[],
+);
+
 
 
     // AI answer hook (stub now, TFLite later)
     final answerAsync = query.isEmpty ? null : ref.watch(qaAnswerProvider(query));
     final lang = ref.watch(languageCodeProvider); // 'en' or 'sw'
+
 
     return Scaffold(
       appBar: AppBar(
@@ -147,6 +169,37 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               ),
             ),
 
+            // "Also try" synonym suggestion chips (based on current query)
+          if (suggestionChips.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: Wrap(
+                  spacing: 8,
+                  runSpacing: 4,
+                  children: suggestionChips.map((s) {
+                    return InputChip(
+                      label: Text(s),
+                      onPressed: () async {
+                        final base = query.trim();
+                        final newQ = base.isEmpty ? s : '$base $s';
+                        _controller.text = newQ;
+                        _controller.selection = TextSelection.fromPosition(
+                          TextPosition(offset: newQ.length),
+                        );
+                        ref.read(searchQueryProvider.notifier).state = newQ;
+
+                        // Optional telemetry
+                        await ref.logEvent('search_synonym_chip', {'q': query, 'chip': s});
+                      },
+                    );
+                  }).toList(),
+                ),
+              ),
+            ),
+
+
 
           if (isLoading) const LinearProgressIndicator(),
           Padding(
@@ -188,7 +241,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               child: Card(
                 child: Padding(
                   padding: const EdgeInsets.all(12),
-                  child: answerAsync!.when(
+                  child: answerAsync.when(
                     loading: () => const Text('Thinking…'),
                     error: (e, _) => Text('Could not answer: $e'),
                     data: (ans) {
