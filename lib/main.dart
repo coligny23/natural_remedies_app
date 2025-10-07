@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
 
 import 'app/routing/app_router.dart';
 import 'app/theme/app_theme.dart';
@@ -34,7 +36,9 @@ class _AppState extends ConsumerState<App> {
 
   @override
   Widget build(BuildContext context) {
-    final lang = ref.watch(languageCodeProvider); // 'en' or 'sw'
+    // inside build()
+    final contentLang = ref.watch(languageCodeProvider);
+    final uiLocale = (contentLang == 'sw') ? const Locale('en') : const Locale('en');
 
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
@@ -42,9 +46,18 @@ class _AppState extends ConsumerState<App> {
       theme: AppTheme.light(),
       darkTheme: AppTheme.dark(),
       routerConfig: appRouter,
-      // Day 8 additions:
-      locale: Locale(lang),
-      supportedLocales: const [Locale('en'), Locale('sw')],
+
+      // ✅ add these:
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale('en'),
+        Locale('sw'), // your content language; UI will fall back to en
+      ],
+      locale: uiLocale,
     );
   }
 }

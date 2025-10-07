@@ -1,83 +1,194 @@
+// lib/features/saved/saved_screen.dart
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:hive_flutter/hive_flutter.dart';
+import 'package:go_router/go_router.dart';
 
-import '../search/search_providers.dart';     // contentListProvider
 import '../content/models/content_item.dart';
-import '../content/ui/content_detail_screen.dart';
-import 'bookmarks_controller.dart';
+import '../content/data/content_lookup_provider.dart'; // contentByIdProvider(id)
+import '../search/search_providers.dart';              // contentListProvider, languageCodeProvider
+import 'bookmarks_controller.dart';                    // bookmarksProvider
 
-class SavedScreen extends ConsumerWidget {
+class SavedScreen extends ConsumerStatefulWidget {
   const SavedScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final savedIds = ref.watch(bookmarksProvider);
+  ConsumerState<SavedScreen> createState() => _SavedScreenState();
+}
+
+class _SavedScreenState extends ConsumerState<SavedScreen> {
+  final _filterCtrl = TextEditingController();
+  Timer? _debounce;
+  String _filter = '';
+
+  @override
+  void dispose() {
+    _debounce?.cancel();
+    _filterCtrl.dispose();
+    super.dispose();
+  }
+
+  void _onFilterChanged(String text) {
+    _debounce?.cancel();
+    _debounce = Timer(const Duration(milliseconds: 120), () {
+      setState(() => _filter = text.trim().toLowerCase());
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final bookmarks = ref.watch(bookmarksProvider);
     final itemsAsync = ref.watch(contentListProvider);
+    final lang = ref.watch(languageCodeProvider);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Saved'),
-        actions: [
-          if (savedIds.isNotEmpty)
-            IconButton(
-              tooltip: 'Clear all',
-              icon: const Icon(Icons.delete_outline),
-              onPressed: () {
-                ref.read(bookmarksProvider.notifier).clear();
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Cleared all saved items')),
-                );
-              },
-            ),
-        ],
-      ),
+      appBar: AppBar(title: const Text('Saved Remedies')),
       body: itemsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => Center(child: Text('Error: $e')),
-        data: (all) {
-          final set = savedIds;
-          final progress = Hive.box('reading_progress');
-
-          // Filter
-          final saved = all.where((it) => set.contains(it.id)).toList();
-
-          // Sort (most recently opened first; fallback = very old)
-          DateTime _ts(ContentItem it) =>
-              (progress.get('time_${it.id}') as DateTime?) ??
-              DateTime.fromMillisecondsSinceEpoch(0);
-
-          saved.sort((a, b) => _ts(b).compareTo(_ts(a)));
-
-          if (saved.isEmpty) {
+        data: (_) {
+          if (bookmarks.isEmpty) {
             return const _EmptySaved();
           }
 
-          return ListView.separated(
-            itemCount: saved.length,
-            separatorBuilder: (_, __) => const Divider(height: 1),
-            itemBuilder: (context, i) {
-              final it = saved[i];
-              final last = _ts(it);
-              return Semantics(
-                button: true,
-                label: '${it.title}. Last opened ${_relative(last)}. Double tap to open.',
-                child: ListTile(
-                  title: Text(it.title),
-                  subtitle: Text('Last opened ${_relative(last)}'),
-                  trailing: const Icon(Icons.chevron_right),
-                  onTap: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                      builder: (_) => ContentDetailScreen(id: it.id),
-                    ));
+          // Materialize saved items from in-memory content
+          final savedItems = <ContentItem>[];
+          for (final id in bookmarks) {
+            final it = ref.watch(contentByIdProvider(id));
+            if (it != null) savedItems.add(it);
+          }
+
+          // Filter (optional) — remove this block if you don’t want search
+          List<ContentItem> filtered = savedItems;
+          if (_filter.isNotEmpty) {
+            filtered = savedItems.where((it) {
+              final title = it.title.toLowerCase();
+              final body = (lang == 'sw')
+                  ? (it.contentSw ?? it.contentEn ?? '')
+                  : (it.contentEn ?? it.contentSw ?? '');
+              final snippet = body.toLowerCase();
+              return title.contains(_filter) || snippet.contains(_filter);
+            }).toList(growable: false);
+          }
+
+          if (filtered.isEmpty) {
+            return Column(
+              children: const [
+                _FilterBar(),
+                Expanded(child: _EmptyFiltered()),
+              ],
+            );
+          }
+
+          return Column(
+            children: [
+              const _FilterBar(), // comment out this line to remove the search bar
+              Expanded(
+                child: ListView.separated(
+                  itemCount: filtered.length,
+                  separatorBuilder: (_, __) => const Divider(height: 1),
+                  itemBuilder: (context, i) {
+                    final it = filtered[i];
+                    final bodyText = (lang == 'sw')
+                        ? (it.contentSw ?? it.contentEn ?? '')
+                        : (it.contentEn ?? it.contentSw ?? '');
+                    final oneLine = bodyText.replaceAll('\n', ' ');
+                    final snippet = oneLine.length <= 140
+                        ? oneLine
+                        : '${oneLine.substring(0, 140)} …';
+
+                    return Dismissible(
+                      key: ValueKey('saved_${it.id}'),
+                      direction: DismissDirection.endToStart,
+                      background: Container(
+                        color: Colors.red,
+                        alignment: Alignment.centerRight,
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: const Icon(Icons.delete, color: Colors.white),
+                      ),
+                      confirmDismiss: (_) async {
+                        // Optional confirm; return true to delete silently
+                        return await showDialog<bool>(
+                              context: context,
+                              builder: (_) => AlertDialog(
+                                title: const Text('Remove bookmark?'),
+                                content: Text('Remove “${it.title}” from Saved?'),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () => Navigator.pop(context, false),
+                                    child: const Text('Cancel'),
+                                  ),
+                                  FilledButton(
+                                    onPressed: () => Navigator.pop(context, true),
+                                    child: const Text('Remove'),
+                                  ),
+                                ],
+                              ),
+                            ) ??
+                            false;
+                      },
+                      onDismissed: (_) {
+                        ref.read(bookmarksProvider.notifier).toggle(it.id);
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text('Removed ${it.title}')),
+                        );
+                      },
+                      child: ListTile(
+                        title: Text(it.title),
+                        subtitle: Text(
+                          snippet,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                        onTap: () => context.go('/article/${it.id}'),
+                      ),
+                    );
                   },
                 ),
-              );
-            },
+              ),
+            ],
           );
         },
       ),
     );
+  }
+
+  // Small inline filter bar UI (TextField)—remove if you don’t want filtering
+  Widget _buildFilterField() {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+      child: TextField(
+        controller: _filterCtrl,
+        onChanged: _onFilterChanged,
+        textInputAction: TextInputAction.search,
+        decoration: InputDecoration(
+          hintText: 'Filter saved remedies…',
+          prefixIcon: const Icon(Icons.search),
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+          suffixIcon: _filter.isEmpty
+              ? null
+              : IconButton(
+                  icon: const Icon(Icons.clear),
+                  onPressed: () {
+                    _filterCtrl.clear();
+                    _onFilterChanged('');
+                  },
+                ),
+        ),
+      ),
+    );
+  }
+}
+
+class _FilterBar extends ConsumerWidget {
+  const _FilterBar();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final state = context.findAncestorStateOfType<_SavedScreenState>();
+    if (state == null) return const SizedBox.shrink();
+    return state._buildFilterField();
   }
 }
 
@@ -90,7 +201,7 @@ class _EmptySaved extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(24),
         child: Text(
-          'Nothing saved yet.\nTap the bookmark icon on an article to save it here.',
+          'No saved remedies yet.\nOpen any article and tap the bookmark icon.',
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.bodyMedium,
         ),
@@ -99,12 +210,20 @@ class _EmptySaved extends StatelessWidget {
   }
 }
 
-// Simple relative time ("2h ago", "3d ago")
-String _relative(DateTime t) {
-  final d = DateTime.now().difference(t);
-  if (d.inDays >= 7) return '${(d.inDays / 7).floor()}w ago';
-  if (d.inDays >= 1) return '${d.inDays}d ago';
-  if (d.inHours >= 1) return '${d.inHours}h ago';
-  if (d.inMinutes >= 1) return '${d.inMinutes}m ago';
-  return 'just now';
+class _EmptyFiltered extends StatelessWidget {
+  const _EmptyFiltered();
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(24),
+        child: Text(
+          'No saved remedies match your filter.',
+          textAlign: TextAlign.center,
+          style: Theme.of(context).textTheme.bodyMedium,
+        ),
+      ),
+    );
+  }
 }
