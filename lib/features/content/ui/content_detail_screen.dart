@@ -66,6 +66,11 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
         final body = (lang == 'sw')
             ? (item.contentSw ?? item.contentEn ?? '')
             : (item.contentEn ?? item.contentSw ?? '');
+        // --- Day 24: English fallback badge helpers ---
+        final isSwSelected = (lang == 'sw');
+        final hasSw = (item.contentSw != null && item.contentSw!.trim().isNotEmpty);
+        final isFallback = isSwSelected && !hasSw;
+
 
         final isSaved = ref.watch(bookmarksProvider).contains(item.id);
         final toc = buildToc(body); // [{title, slug}, ...]
@@ -152,6 +157,21 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
                           ),
                           const SizedBox(height: 12),
                         ],
+                        // --- Day 24: show fallback badge when SW selected but article lacks contentSw ---
+                        if (isFallback)
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 8),
+                            child: Card(
+                              color: Colors.amber.shade50,
+                              child: const ListTile(
+                                dense: true,
+                                leading: Icon(Icons.translate),
+                                title: Text('English content shown'),
+                                subtitle: Text('Swahili translation for this article is coming soon.'),
+                              ),
+                            ),
+                          ),
+
                         Expanded(
                           child: SingleChildScrollView(
                             controller: _scroll,
