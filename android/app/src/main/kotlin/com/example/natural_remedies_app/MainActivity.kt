@@ -1,4 +1,4 @@
-package com.example.natural_remedies_app
+package com.example.afyabomba
 
 import io.flutter.embedding.android.FlutterActivity
 
