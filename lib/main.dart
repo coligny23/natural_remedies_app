@@ -14,6 +14,7 @@ Future<void> main() async {
   await Hive.initFlutter();
   await Hive.openBox('bookmarks');
   await Hive.openBox('reading_progress');
+  await Hive.openBox('legal');
   runApp(const ProviderScope(child: App()));
 }
 

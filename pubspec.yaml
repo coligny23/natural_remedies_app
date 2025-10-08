@@ -1,6 +1,7 @@
 name: natural_remedies_app
 description: Offline-first mobile learning app for natural remedies (Flutter + TFLite)
 publish_to: "none"
+version: 0.2.0+2
 
 environment:
   sdk: ">=3.4.0 <4.0.0"

@@ -31,3 +31,7 @@ data-pipeline/__pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# Android
+android/key.properties
+android/my-release-key.jks
