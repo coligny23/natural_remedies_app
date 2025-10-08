@@ -3,10 +3,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../../features/qa/saved_answers_screen.dart'; // add import
-
 import '../../features/content/ui/content_detail_screen.dart';
 import '../../features/home/home_screen.dart';
 import '../../features/learn/learn_screen.dart';
+import '../../features/legal/terms_screen.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+
+
 // Use the file/class you actually have:
 import '../../features/search/search_screen.dart'; // <- was search_screen.dart
 import '../../features/saved/saved_screen.dart';
@@ -15,42 +18,61 @@ import '../../features/settings/settings_screen.dart';
 final appRouter = GoRouter(
     routes: [
     GoRoute(
-      path: '/',
-      name: 'root',
-      // Allow selecting a tab via query: /?tab=2
-      builder: (context, state) {
-        final tabStr = state.uri.queryParameters['tab'] ?? '0';
-        final initialIndex = int.tryParse(tabStr) ?? 0;
-        return RootTabs(initialIndex: initialIndex);
-      },
-      
-      routes: [
-        // Friendly deep links to switch tabs
-        GoRoute(path: 'home', redirect: (_, __) => '/?tab=0'),
-        GoRoute(path: 'learn', redirect: (_, __) => '/?tab=1'),
-        GoRoute(path: 'search', redirect: (_, __) => '/?tab=2'),
-        GoRoute(path: 'saved', redirect: (_, __) => '/?tab=3'),
-        GoRoute(path: 'settings', redirect: (_, __) => '/?tab=4'),
+        path: '/',
+        name: 'root',
 
-        // Example deep-link: /article/ginger
-        GoRoute(
-          path: 'article/:id',
-          name: 'article',
-          builder: (_, state) {
-            final id = state.pathParameters['id']!;
-            final section = state.uri.queryParameters['section'];
-            return ContentDetailScreen(id: id, initialSection: section);
-          },
-        ),
-        // Inside the 'routes: [ ... ]' under the root GoRoute(path: '/')
-        GoRoute(
-          path: 'saved-answers',
-          name: 'saved-answers',
-          builder: (_, __) => const SavedAnswersScreen(),
-        ),
-      ],
-      
-    ),
+        // ✅ Gate on Terms acceptance
+        redirect: (context, state) {
+          final box = Hive.box('legal');              // box is opened in main.dart
+          final accepted = box.get('tosAccepted') == true;
+
+          final here = state.matchedLocation;         // e.g. '/', '/legal', '/article/...'
+          final onLegal = here == '/legal' || here.endsWith('/legal');
+
+          if (!accepted && !onLegal) return '/legal'; // force Terms until accepted
+          if (accepted && onLegal) return '/';        // once accepted, go back to root
+          return null;                                // no change
+        },
+
+        // Allow selecting a tab via query: /?tab=2
+        builder: (context, state) {
+          final tabStr = state.uri.queryParameters['tab'] ?? '0';
+          final initialIndex = int.tryParse(tabStr) ?? 0;
+          return RootTabs(initialIndex: initialIndex);
+        },
+
+        routes: [
+          // Friendly deep links to switch tabs
+          GoRoute(path: 'home', redirect: (_, __) => '/?tab=0'),
+          GoRoute(path: 'learn', redirect: (_, __) => '/?tab=1'),
+          GoRoute(path: 'search', redirect: (_, __) => '/?tab=2'),
+          GoRoute(path: 'saved', redirect: (_, __) => '/?tab=3'),
+          GoRoute(path: 'settings', redirect: (_, __) => '/?tab=4'),
+
+          // Example deep-link: /article/ginger
+          GoRoute(
+            path: 'article/:id',
+            name: 'article',
+            builder: (_, state) {
+              final id = state.pathParameters['id']!;
+              final section = state.uri.queryParameters['section'];
+              return ContentDetailScreen(id: id, initialSection: section);
+            },
+          ),
+
+          GoRoute(
+            path: 'saved-answers',
+            name: 'saved-answers',
+            builder: (_, __) => const SavedAnswersScreen(),
+          ),
+          GoRoute(
+            path: 'legal',
+            name: 'legal',
+            builder: (_, __) => const TermsScreen(),
+          ),
+        ],
+      ),
+  
   ],
 );
 
