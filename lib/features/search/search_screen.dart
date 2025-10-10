@@ -9,8 +9,6 @@ import 'search_history_providers.dart';
 import '/features/qa/saved_answers_providers.dart';
 import 'package:share_plus/share_plus.dart'; // if not already present
 
-
-
 import 'search_providers.dart'; // <- includes fastSearchProvider + searchQueryProvider
 import '../content/models/content_item.dart';
 import '../../shared/ml/qa_providers.dart'; // qaInitProvider / qaAnswerProvider
@@ -38,7 +36,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     _debounce = Timer(const Duration(milliseconds: 150), () async {
       final q = text.trim();
       ref.read(searchQueryProvider.notifier).state = q;
-      
+
       if (q.isNotEmpty) {
         await ref.read(searchHistoryProvider.notifier).add(q);
       }
@@ -52,15 +50,20 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
       }
     });
   }
-List<String> _tokens(String q) =>
-    q.toLowerCase().split(RegExp(r'[^a-z0-9]+')).where((s) => s.isNotEmpty).toList();
+
+  List<String> _tokens(String q) => q
+      .toLowerCase()
+      .split(RegExp(r'[^a-z0-9]+'))
+      .where((s) => s.isNotEmpty)
+      .toList();
 
   @override
   Widget build(BuildContext context) {
     // Core data dependencies
     final itemsAsync = ref.watch(contentListProvider);
     final isLoading = itemsAsync.isLoading;
-    final total = itemsAsync.maybeWhen(data: (it) => it.length, orElse: () => null);
+    final total =
+        itemsAsync.maybeWhen(data: (it) => it.length, orElse: () => null);
 
     // Query + fast results (ASYNC)
     final query = ref.watch(searchQueryProvider).trim();
@@ -72,30 +75,28 @@ List<String> _tokens(String q) =>
     // add this line with your other locals at the top of build()
     final history = ref.watch(searchHistoryProvider);
     // Synonym suggestions for current query
-final synsAsync = ref.watch(synonymsMapProvider);
+    final synsAsync = ref.watch(synonymsMapProvider);
 
-final suggestionChips = synsAsync.maybeWhen(
-  data: (syns) {
-    if (query.isEmpty) return const <String>[];
-    final toks = _tokens(query);
-    final out = <String>{};
-    for (final t in toks) {
-      final alts = syns[t] ?? const <String>[];
-      for (final a in alts) {
-        if (a.toLowerCase() != t.toLowerCase()) out.add(a);
-      }
-    }
-    return out.take(6).toList(); // show up to 6
-  },
-  orElse: () => const <String>[],
-);
-
-
+    final suggestionChips = synsAsync.maybeWhen(
+      data: (syns) {
+        if (query.isEmpty) return const <String>[];
+        final toks = _tokens(query);
+        final out = <String>{};
+        for (final t in toks) {
+          final alts = syns[t] ?? const <String>[];
+          for (final a in alts) {
+            if (a.toLowerCase() != t.toLowerCase()) out.add(a);
+          }
+        }
+        return out.take(6).toList(); // show up to 6
+      },
+      orElse: () => const <String>[],
+    );
 
     // AI answer hook (stub now, TFLite later)
-    final answerAsync = query.isEmpty ? null : ref.watch(qaAnswerProvider(query));
+    final answerAsync =
+        query.isEmpty ? null : ref.watch(qaAnswerProvider(query));
     final lang = ref.watch(languageCodeProvider); // 'en' or 'sw'
-
 
     return Scaffold(
       appBar: AppBar(
@@ -107,10 +108,12 @@ final suggestionChips = synsAsync.maybeWhen(
             onPressed: () async {
               try {
                 // adjust path if you want to probe a different lang/file
-                final s = await rootBundle.loadString('assets/corpus/en/sample.json');
+                final s =
+                    await rootBundle.loadString('assets/corpus/en/sample.json');
                 if (!context.mounted) return;
                 ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Loaded sample.json (${s.length} chars)')),
+                  SnackBar(
+                      content: Text('Loaded sample.json (${s.length} chars)')),
                 );
               } catch (e) {
                 if (!context.mounted) return;
@@ -122,7 +125,6 @@ final suggestionChips = synsAsync.maybeWhen(
           ),
         ],
       ),
-
       body: Column(
         children: [
           Padding(
@@ -138,13 +140,14 @@ final suggestionChips = synsAsync.maybeWhen(
                 decoration: InputDecoration(
                   hintText: 'Search (e.g., "ginger")',
                   prefixIcon: const Icon(Icons.search, semanticLabel: 'Search'),
-                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12)),
                 ),
               ),
             ),
           ),
 
-        // History chips (last 6) — widget-only block inside children[]
+          // History chips (last 6) — widget-only block inside children[]
           if (history.isNotEmpty)
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
@@ -169,7 +172,7 @@ final suggestionChips = synsAsync.maybeWhen(
               ),
             ),
 
-            // "Also try" synonym suggestion chips (based on current query)
+          // "Also try" synonym suggestion chips (based on current query)
           if (suggestionChips.isNotEmpty)
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
@@ -191,15 +194,14 @@ final suggestionChips = synsAsync.maybeWhen(
                         ref.read(searchQueryProvider.notifier).state = newQ;
 
                         // Optional telemetry
-                        await ref.logEvent('search_synonym_chip', {'q': query, 'chip': s});
+                        await ref.logEvent(
+                            'search_synonym_chip', {'q': query, 'chip': s});
                       },
                     );
                   }).toList(),
                 ),
               ),
             ),
-
-
 
           if (isLoading) const LinearProgressIndicator(),
           Padding(
@@ -218,8 +220,13 @@ final suggestionChips = synsAsync.maybeWhen(
             future: rootBundle.loadString('AssetManifest.json'),
             builder: (context, snap) {
               if (!snap.hasData) return const SizedBox.shrink();
-              final keys = (json.decode(snap.data!) as Map<String, dynamic>).keys.toList();
-              final sample = keys.where((k) => k.contains('assets/corpus')).take(5).toList();
+              final keys = (json.decode(snap.data!) as Map<String, dynamic>)
+                  .keys
+                  .toList();
+              final sample = keys
+                  .where((k) => k.contains('assets/corpus'))
+                  .take(5)
+                  .toList();
               return Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Align(
@@ -245,64 +252,79 @@ final suggestionChips = synsAsync.maybeWhen(
                     loading: () => const Text('Thinking…'),
                     error: (e, _) => Text('Could not answer: $e'),
                     data: (ans) {
-                    final hasText = ans.text.trim().isNotEmpty;
-                    return Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            const Text('Answer', style: TextStyle(fontWeight: FontWeight.w600)),
-                            Row(
-                              children: [
-                                IconButton(
-                                  tooltip: 'Share answer',
-                                  icon: const Icon(Icons.ios_share),
-                                  onPressed: hasText ? () {
-                                    final src = ans.source;
-                                    final buffer = StringBuffer()
-                                      ..writeln('Q: $query')
-                                      ..writeln('A: ${ans.text}');
-                                    if (src != null) buffer.writeln('Source: ${src.title}');
-                                    Share.share(buffer.toString().trim());
-                                  } : null,
-
-                                ),
-                                IconButton(
-                                  tooltip: 'Save answer',
-                                  icon: const Icon(Icons.star_border),
-                                  onPressed: hasText ? () async {
-                                    await ref.read(savedQaListProvider.notifier).save(
-                                      question: query,
-                                      answerText: ans.text,
-                                      sourceId: ans.source?.id,
-                                      sourceTitle: ans.source?.title,
-                                    );
-                                    if (!context.mounted) return;
-                                    ScaffoldMessenger.of(context).showSnackBar(
-                                      const SnackBar(content: Text('Saved to Answers')),
-                                    );
-                                    await ref.logEvent('qa_saved', {
-                                      'has_source': ans.source != null,
-                                      'q_len': query.length,
-                                      'a_len': ans.text.length,
-                                    });
-                                  } : null,
-                                ),
-                              ],
-                            ),
+                      final hasText = ans.text.trim().isNotEmpty;
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              const Text('Answer',
+                                  style:
+                                      TextStyle(fontWeight: FontWeight.w600)),
+                              Row(
+                                children: [
+                                  IconButton(
+                                    tooltip: 'Share answer',
+                                    icon: const Icon(Icons.ios_share),
+                                    onPressed: hasText
+                                        ? () {
+                                            final src = ans.source;
+                                            final buffer = StringBuffer()
+                                              ..writeln('Q: $query')
+                                              ..writeln('A: ${ans.text}');
+                                            if (src != null)
+                                              buffer.writeln(
+                                                  'Source: ${src.title}');
+                                            Share.share(
+                                                buffer.toString().trim());
+                                          }
+                                        : null,
+                                  ),
+                                  IconButton(
+                                    tooltip: 'Save answer',
+                                    icon: const Icon(Icons.star_border),
+                                    onPressed: hasText
+                                        ? () async {
+                                            await ref
+                                                .read(savedQaListProvider
+                                                    .notifier)
+                                                .save(
+                                                  question: query,
+                                                  answerText: ans.text,
+                                                  sourceId: ans.source?.id,
+                                                  sourceTitle:
+                                                      ans.source?.title,
+                                                );
+                                            if (!context.mounted) return;
+                                            ScaffoldMessenger.of(context)
+                                                .showSnackBar(
+                                              const SnackBar(
+                                                  content:
+                                                      Text('Saved to Answers')),
+                                            );
+                                            await ref.logEvent('qa_saved', {
+                                              'has_source': ans.source != null,
+                                              'q_len': query.length,
+                                              'a_len': ans.text.length,
+                                            });
+                                          }
+                                        : null,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 6),
+                          Text(ans.text),
+                          if (ans.source != null) ...[
+                            const SizedBox(height: 8),
+                            Text('Source: ${ans.source!.title}',
+                                style: Theme.of(context).textTheme.bodySmall),
                           ],
-                        ),
-                        const SizedBox(height: 6),
-                        Text(ans.text),
-                        if (ans.source != null) ...[
-                          const SizedBox(height: 8),
-                          Text('Source: ${ans.source!.title}', style: Theme.of(context).textTheme.bodySmall),
                         ],
-                      ],
-                    );
-                  },
-
+                      );
+                    },
                   ),
                 ),
               ),
@@ -313,7 +335,8 @@ final suggestionChips = synsAsync.maybeWhen(
 
           Expanded(
             child: resultsAsync.when(
-              loading: () => const _LoadingOrEmpty(queryEmptyMessage: 'Type to search…'),
+              loading: () =>
+                  const _LoadingOrEmpty(queryEmptyMessage: 'Type to search…'),
               error: (err, st) => Padding(
                 padding: const EdgeInsets.all(16),
                 child: Text('Search error: $err'),
@@ -336,6 +359,8 @@ final suggestionChips = synsAsync.maybeWhen(
                     final snippet = snippetSrc.length <= 160
                         ? snippetSrc
                         : '${snippetSrc.substring(0, 160)} …';
+                    // New: does this item have an image?
+                    final hasImage = (item.image ?? '').isNotEmpty;
 
                     // MergeSemantics + exclude child semantics => SR reads our concise label once.
                     return MergeSemantics(
@@ -345,6 +370,25 @@ final suggestionChips = synsAsync.maybeWhen(
                         label:
                             '${item.title}. ${snippet.isEmpty ? "Open details" : snippet}. Double tap to open details.',
                         child: ListTile(
+                          // NEW (optional): nicer spacing for a thumbnail
+                          contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+
+                          // NEW: thumbnail (or a simple placeholder icon)
+                          leading: hasImage
+                              ? ClipRRect(
+                                  borderRadius: BorderRadius.circular(8),
+                                  child: Image.asset(
+                                    item.image!,
+                                    width: 56,
+                                    height: 56,
+                                    fit: BoxFit.cover,
+                                    errorBuilder: (_, __, ___) => const Icon(Icons.image_not_supported),
+                                  ),
+                                )
+                              : const CircleAvatar(
+                                  radius: 28,
+                                  child: Icon(Icons.eco),
+                                ),
                           title: Text(item.title),
                           // 🔎 Highlight query matches in the snippet
                           subtitle: RichText(
@@ -422,7 +466,8 @@ class _Snippet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final snippet = text.replaceAll('\n', ' ');
-    final short = snippet.length <= 160 ? snippet : '${snippet.substring(0, 160)} …';
+    final short =
+        snippet.length <= 160 ? snippet : '${snippet.substring(0, 160)} …';
     return Text(short);
   }
 }
