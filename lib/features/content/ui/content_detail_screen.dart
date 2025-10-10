@@ -66,6 +66,10 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
         final body = (lang == 'sw')
             ? (item.contentSw ?? item.contentEn ?? '')
             : (item.contentEn ?? item.contentSw ?? '');
+        // Day 30 changes
+        final hasImage = (item.image ?? '').isNotEmpty;
+        final credit = item.imageMeta?['credit'] as String?;
+
         // --- Day 24: English fallback badge helpers ---
         final isSwSelected = (lang == 'sw');
         final hasSw = (item.contentSw != null && item.contentSw!.trim().isNotEmpty);
@@ -143,6 +147,33 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        // --- HERO IMAGE (big banner) ---
+                        if (hasImage) ...[
+                          Hero(
+                            tag: 'article-image-${item.id}', // MUST match the tag from the Search thumbnail
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: Image.asset(
+                                item.image!,
+                                height: 220,
+                                width: double.infinity,
+                                fit: BoxFit.cover,
+                                errorBuilder: (_, __, ___) =>
+                                    const SizedBox(height: 220, child: Center(child: Icon(Icons.image_not_supported))),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          if (credit != null && credit.trim().isNotEmpty)
+                            Text(
+                              credit,
+                              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                                    color: Theme.of(context).hintColor,
+                                  ),
+                            ),
+                          const SizedBox(height: 16),
+                        ],
+
                         if (toc.length > 1) ...[
                           Wrap(
                             spacing: 8,
