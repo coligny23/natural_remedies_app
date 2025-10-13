@@ -201,23 +201,115 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
                                 subtitle: Text('Swahili translation for this article is coming soon.'),
                               ),
                             ),
-                          ),
-
-                        Expanded(
-                          child: SingleChildScrollView(
-                            controller: _scroll,
-                            child: _ArticleWithKeys(
-                              rawText: body,
-                              registerKey: (slug, key) => _sectionKeys[slug] = key,
-                              onVisibleSection: (slug) => _lastSection = slug,
-                              onTapLink: (id) {
-                                Navigator.of(context).push(
-                                  MaterialPageRoute(builder: (_) => ContentDetailScreen(id: id)),
-                                );
-                              },
-                            ),
-                          ),
                         ),
+
+// ================== ACCORDION (Treatment / Causes / Symptoms / Overview) ==================
+                          Builder(builder: (context) {
+                            // Prefer labeled-headings split from the raw body:
+                            Map<_Bucket, List<String>> buckets = _extractBucketsFromRaw(body);
+
+                            // If that failed (no labeled headings), fall back to parsed sections:
+                            if (buckets.isEmpty) {
+                              final secs = parseSections(body);
+                              buckets = _categorizeSections(secs);
+                            }
+
+                            final ordered = <_Bucket>[
+                              if (buckets[_Bucket.treatment]?.isNotEmpty == true) _Bucket.treatment,
+                              if (buckets[_Bucket.causes]?.isNotEmpty == true) _Bucket.causes,
+                              if (buckets[_Bucket.symptoms]?.isNotEmpty == true) _Bucket.symptoms,
+                              if (buckets[_Bucket.overview]?.isNotEmpty == true) _Bucket.overview,
+                            ];
+
+                            if (ordered.isEmpty) {
+                              // show nothing here; fallback renderer below will handle it
+                              return const SizedBox.shrink();
+                            }
+
+                            return Card(
+                              elevation: 0,
+                              margin: EdgeInsets.zero,
+                              child: ExpansionPanelList.radio(
+                                expandedHeaderPadding: EdgeInsets.zero,
+                                elevation: 1,
+                                // optional: open Treatment by default if present
+                                initialOpenPanelValue: ordered.contains(_Bucket.treatment) ? 'bucket-${_Bucket.treatment}' : 'bucket-${ordered.first}',
+                                children: [
+                                  for (final b in ordered)
+                                    ExpansionPanelRadio(
+                                      value: 'bucket-$b',
+                                      canTapOnHeader: true,
+                                      headerBuilder: (ctx, isOpen) => ListTile(
+                                        title: Text(_bucketTitleLocalized(b, lang), style: Theme.of(context).textTheme.titleMedium),
+                                        trailing: Icon(isOpen ? Icons.expand_less : Icons.expand_more),
+                                      ),
+                                      body: Padding(
+                                        padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                                        child: _AccordionBody(paragraphs: buckets[b]!),
+                                      ),
+                                    ),
+                                ],
+                              ),
+                            );
+                          }),
+                          const SizedBox(height: 16),
+
+
+                        // If accordion was empty, render your original long article as a fallback:
+                        Builder(builder: (context) {
+                          final secs = parseSections(body);
+                          final buckets = _categorizeSections(secs);
+                          final ordered = <_Bucket>[
+                            if (buckets[_Bucket.treatment]?.isNotEmpty == true) _Bucket.treatment,
+                            if (buckets[_Bucket.causes]?.isNotEmpty == true) _Bucket.causes,
+                            if (buckets[_Bucket.symptoms]?.isNotEmpty == true) _Bucket.symptoms,
+                            if (buckets[_Bucket.overview]?.isNotEmpty == true) _Bucket.overview,
+                          ];
+                          if (ordered.isNotEmpty) {
+                            return const SizedBox.shrink(); // we already showed accordion
+                          }
+
+                          // ---------- ORIGINAL LONG ARTICLE (fallback) ----------
+                          return SizedBox(
+                            height: 400, // placeholder height so Expanded below takes it
+                            child: const SizedBox.shrink(),
+                          );
+                        }),
+                        // =====================================================================
+
+                        // Keep your scrollable long article only when accordion is empty:
+                        Expanded(
+                          child: Builder(builder: (context) {
+                            final secs = parseSections(body);
+                            final buckets = _categorizeSections(secs);
+                            final ordered = <_Bucket>[
+                              if (buckets[_Bucket.treatment]?.isNotEmpty == true) _Bucket.treatment,
+                              if (buckets[_Bucket.causes]?.isNotEmpty == true) _Bucket.causes,
+                              if (buckets[_Bucket.symptoms]?.isNotEmpty == true) _Bucket.symptoms,
+                              if (buckets[_Bucket.overview]?.isNotEmpty == true) _Bucket.overview,
+                            ];
+                            if (ordered.isNotEmpty) {
+                              // Accordion path: nothing else to render below
+                              return const SizedBox.shrink();
+                            }
+
+                            // Fallback to your existing renderer with keys/sections
+                            return SingleChildScrollView(
+                              controller: _scroll,
+                              child: _ArticleWithKeys(
+                                rawText: body,
+                                registerKey: (slug, key) => _sectionKeys[slug] = key,
+                                onVisibleSection: (slug) => _lastSection = slug,
+                                onTapLink: (id) {
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(builder: (_) => ContentDetailScreen(id: id)),
+                                  );
+                                },
+                              ),
+                            );
+                          }),
+                        ),
+
 
                         // Related block unchanged
                         const SizedBox(height: 16),
@@ -482,5 +574,278 @@ class _SectionBlockState extends State<_SectionBlock> {
               ),
       ],
     );
+  }
+}
+
+enum _Bucket { treatment, causes, symptoms, overview }
+
+String _bucketTitle(_Bucket b) {
+  switch (b) {
+    case _Bucket.treatment: return 'Treatment';
+    case _Bucket.causes:    return 'Causes';
+    case _Bucket.symptoms:  return 'Symptoms';
+    case _Bucket.overview:  return 'Overview';
+  }
+}
+
+String _bucketTitleLocalized(_Bucket b, String lang) {
+  final isSw = (lang.toLowerCase() == 'sw');
+  if (isSw) {
+    switch (b) {
+      case _Bucket.treatment: return 'Matibabu';
+      case _Bucket.causes:    return 'Sababu';
+      case _Bucket.symptoms:  return 'Dalili';
+      case _Bucket.overview:  return 'Muhtasari';
+    }
+  } else {
+    switch (b) {
+      case _Bucket.treatment: return 'Treatment';
+      case _Bucket.causes:    return 'Causes';
+      case _Bucket.symptoms:  return 'Symptoms';
+      case _Bucket.overview:  return 'Overview';
+    }
+  }
+}
+
+/// Map parsed sections (title/body) into our 4 buckets.
+/// If nothing useful is found, returns {} so the caller can fall back.
+Map<_Bucket, List<String>> _categorizeSections(List<dynamic> sections) {
+  final map = <_Bucket, List<String>>{
+    _Bucket.treatment: <String>[],
+    _Bucket.causes: <String>[],
+    _Bucket.symptoms: <String>[],
+    _Bucket.overview: <String>[],
+  };
+
+  bool hasAny = false;
+
+  for (final s in sections) {
+    final title = (s.title ?? '').toString();
+    final body  = (s.body  ?? '').toString().trim();
+    if (body.isEmpty) continue;
+
+    final t = title.toLowerCase();
+
+    // Same synonyms we used for the raw-text extractor
+    if (t.contains('treatment') ||
+        t.contains('treatments') ||
+        t.contains('management') ||
+        t.contains('therapy') ||
+        t.contains('care') ||
+        t.contains('remedy') ||
+        t.contains('remedies') ||
+        t.contains('matibabu') ||
+        t.contains('tiba') ||
+        t.contains('huduma') ||
+        t.contains('utunzaji')) {
+      map[_Bucket.treatment]!.add(body);
+      hasAny = true;
+      continue;
+    }
+
+    if (t.contains('cause') ||
+        t.contains('causes') ||
+        t.contains('etiology') ||
+        t.contains('risk factor') ||
+        t.contains('risk factors') ||
+        t.contains('visababishi') ||
+        t.contains('kisababishi') ||
+        t.contains('sababu') ||
+        t.contains('vyanzo')) {
+      map[_Bucket.causes]!.add(body);
+      hasAny = true;
+      continue;
+    }
+
+    if (t.contains('symptom') ||
+        t.contains('symptoms') ||
+        t.contains('sign') ||
+        t.contains('signs') ||
+        t.contains('presentation') ||
+        t.contains('dalili') ||
+        t.contains('viashiria') ||
+        t.contains('ishara')) {
+      map[_Bucket.symptoms]!.add(body);
+      hasAny = true;
+      continue;
+    }
+
+    // Everything else → overview
+    map[_Bucket.overview]!.add(body);
+    hasAny = true;
+  }
+
+  if (!hasAny) return {};
+
+  // Return only non-empty buckets (preserve order)
+  return {
+    for (final b in [
+      _Bucket.treatment,
+      _Bucket.causes,
+      _Bucket.symptoms,
+      _Bucket.overview,
+    ])
+      if (map[b]!.isNotEmpty) b: map[b]!,
+  };
+}
+
+
+/// Heuristic: split a *single raw article string* into labeled sections by scanning for
+/// headings like "Treatment", "Causes", "Symptoms" in EN/SW (with or without colon).
+/// Returns a map of bucket -> list of paragraph blocks. Empty map if nothing found.
+Map<_Bucket, List<String>> _extractBucketsFromRaw(String raw) {
+  final lines = raw.replaceAll('\r\n', '\n').split('\n');
+
+  // EN + SW synonyms (lowercased)
+  final treatmentSyns = <String>{
+    'treatment','treatments','management','therapy','care','remedy','remedies',
+    'matibabu','tiba','huduma','utunzaji'
+  };
+  final causesSyns = <String>{
+    'cause','causes','etiology','risk factor','risk factors',
+    'visababishi','kisababishi','sababu','vyanzo'
+  };
+  final symptomsSyns = <String>{
+    'symptom','symptoms','sign','signs','presentation',
+    'dalili','viashiria','ishara'
+  };
+
+  // Build a detector that tolerates: numbering, punctuation, case, emojis, etc.
+  bool _isHeading(String line, Set<String> syns) {
+    final l = line.trim().toLowerCase();
+    // strip simple numbering & bullets (e.g., "1. Treatment", "- Causes —")
+    final stripped = l.replaceFirst(RegExp(r'^(?:\d+[\).\s-]+|[-–—•]\s*)'), '');
+    // match "word(s)" optionally ending with : - — or nothing, and maybe extra spaces
+    for (final s in syns) {
+      if (RegExp('^$s\\b\\s*[:\\-–—]?\$').hasMatch(stripped)) return true;
+      // also allow "s: ..." on the same line (e.g., "Treatment: give ORS")
+      if (RegExp('^$s\\b\\s*[:\\-–—]').hasMatch(stripped)) return true;
+    }
+    return false;
+  }
+
+  _Bucket? _bucketFor(String line) {
+    if (_isHeading(line, treatmentSyns)) return _Bucket.treatment;
+    if (_isHeading(line, causesSyns))    return _Bucket.causes;
+    if (_isHeading(line, symptomsSyns))  return _Bucket.symptoms;
+    return null;
+  }
+
+  // Scan and collect blocks under current bucket. Default to overview until a heading appears.
+  final out = <_Bucket, List<String>>{
+    _Bucket.treatment: <String>[],
+    _Bucket.causes: <String>[],
+    _Bucket.symptoms: <String>[],
+    _Bucket.overview: <String>[],
+  };
+  _Bucket current = _Bucket.overview;
+  final buffer = StringBuffer();
+
+  void _flush() {
+    final text = buffer.toString().trim();
+    if (text.isNotEmpty) out[current]!.add(text);
+    buffer.clear();
+  }
+
+  for (var i = 0; i < lines.length; i++) {
+    final line = lines[i];
+
+    // Heading on its own line? Flush previous and switch.
+    final maybe = _bucketFor(line);
+    if (maybe != null) {
+      _flush();
+      current = maybe;
+
+      // If heading is like "Treatment: do X" on the SAME line, keep the "after colon" part
+      final m = RegExp(r'[:\-–—]\s*(.+)$').firstMatch(line.trim());
+      if (m != null) {
+        buffer.writeln(m.group(1));
+      }
+      continue;
+    }
+
+    buffer.writeln(line);
+  }
+  _flush();
+
+  // Decide if we actually found labeled sections (≥ 2 non-empty buckets preferred)
+  final nonEmpty = out.entries.where((e) => e.value.isNotEmpty).map((e) => e.key).toList();
+  // If only overview has content, return {} to signal "not found"
+  if (nonEmpty.isEmpty || (nonEmpty.length == 1 && nonEmpty.first == _Bucket.overview)) {
+    return {};
+  }
+
+  // Trim empty buckets at the end (keep only those with text)
+  return {
+    for (final b in [_Bucket.treatment, _Bucket.causes, _Bucket.symptoms, _Bucket.overview])
+      if (out[b]!.isNotEmpty) b: out[b]!,
+  };
+}
+
+/// Renders a list of paragraphs, respecting your bullets & auto-linking
+class _AccordionBody extends StatelessWidget {
+  final List<String> paragraphs;
+  const _AccordionBody({required this.paragraphs});
+
+  @override
+  Widget build(BuildContext context) {
+    final children = <Widget>[];
+
+    for (final raw in paragraphs) {
+      final bullets = maybeBullets(raw);
+      if (bullets.isNotEmpty) {
+        children.addAll(bullets.map((b) => Padding(
+          padding: const EdgeInsets.only(bottom: 6),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text('•  '),
+              Expanded(
+                child: RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.bodyLarge,
+                    children: linkifyParagraph(
+                      context,
+                      text: b,
+                      resolveTitle: (_) => null,
+                      onTapId: (id) {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (_) => ContentDetailScreen(id: id)),
+                        );
+                      },
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        )));
+      } else {
+        // split into paragraphs
+        final paras = raw.split('\n\n').where((p) => p.trim().isNotEmpty);
+        for (final p in paras) {
+          children.add(Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: RichText(
+              text: TextSpan(
+                style: Theme.of(context).textTheme.bodyLarge,
+                children: linkifyParagraph(
+                  context,
+                  text: p.trim(),
+                  resolveTitle: (_) => null,
+                  onTapId: (id) {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (_) => ContentDetailScreen(id: id)),
+                    );
+                  },
+                ),
+              ),
+            ),
+          ));
+        }
+      }
+    }
+
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: children);
   }
 }

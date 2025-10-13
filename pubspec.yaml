@@ -50,5 +50,5 @@ flutter:
     - assets/corpus/sw/
     - assets/ml/mobilebert_qa_float32.tflite
     - assets/ml/vocab.txt
-    - assets/images/articles_optimized/
+    - assets/images/articles_jpg/
     - assets/images/fallbacks/
