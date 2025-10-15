@@ -227,11 +227,12 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
                             }
 
                             return Card(
-                              elevation: 0,
-                              margin: EdgeInsets.zero,
+                              elevation: 1.5,
+                              margin: const EdgeInsets.only(bottom: 8),
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                               child: ExpansionPanelList.radio(
                                 expandedHeaderPadding: EdgeInsets.zero,
-                                elevation: 1,
+                                elevation: 0,
                                 // optional: open Treatment by default if present
                                 initialOpenPanelValue: ordered.contains(_Bucket.treatment) ? 'bucket-${_Bucket.treatment}' : 'bucket-${ordered.first}',
                                 children: [
@@ -239,15 +240,30 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
                                     ExpansionPanelRadio(
                                       value: 'bucket-$b',
                                       canTapOnHeader: true,
-                                      headerBuilder: (ctx, isOpen) => ListTile(
-                                        title: Text(_bucketTitleLocalized(b, lang), style: Theme.of(context).textTheme.titleMedium),
-                                        trailing: Icon(isOpen ? Icons.expand_less : Icons.expand_more),
+                                      headerBuilder: (ctx, isOpen) => Container(
+                                        decoration: BoxDecoration(
+                                          color: _bucketHeaderColor(context, b),
+                                          borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
+                                        ),
+                                        child: ListTile(
+                                          title: Text(
+                                            _bucketTitleLocalized(b, lang),
+                                            style: Theme.of(context).textTheme.titleMedium,
+                                          ),
+                                        ),
                                       ),
-                                      body: Padding(
-                                        padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                                        child: _AccordionBody(paragraphs: buckets[b]!),
+                                      body: Container(
+                                        decoration: BoxDecoration(
+                                          color: _bucketBodyColor(context, b),
+                                          borderRadius: const BorderRadius.vertical(bottom: Radius.circular(12)),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                                          child: _AccordionBody(paragraphs: buckets[b]!),
+                                        ),
                                       ),
                                     ),
+
                                 ],
                               ),
                             );
@@ -604,6 +620,28 @@ String _bucketTitleLocalized(_Bucket b, String lang) {
       case _Bucket.symptoms:  return 'Symptoms';
       case _Bucket.overview:  return 'Overview';
     }
+  }
+}
+
+// Soft, theme-aware colors for headers/bodies
+Color _bucketHeaderColor(BuildContext c, _Bucket b) {
+  final s = Theme.of(c).colorScheme;
+  switch (b) {
+    case _Bucket.treatment: return s.primaryContainer;
+    case _Bucket.causes:    return s.tertiaryContainer;
+    case _Bucket.symptoms:  return s.secondaryContainer;
+    case _Bucket.overview:  return s.surfaceVariant;
+  }
+}
+
+Color _bucketBodyColor(BuildContext c, _Bucket b) {
+  final s = Theme.of(c).colorScheme;
+  // a lighter tint for the body
+  switch (b) {
+    case _Bucket.treatment: return s.primaryContainer.withOpacity(0.25);
+    case _Bucket.causes:    return s.tertiaryContainer.withOpacity(0.25);
+    case _Bucket.symptoms:  return s.secondaryContainer.withOpacity(0.25);
+    case _Bucket.overview:  return s.surfaceVariant.withOpacity(0.20);
   }
 }
 
