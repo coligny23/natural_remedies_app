@@ -227,46 +227,91 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
                             }
 
                             return Card(
-                              elevation: 1.5,
-                              margin: const EdgeInsets.only(bottom: 8),
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                            elevation: 4,
+                            margin: const EdgeInsets.only(bottom: 12),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                            child: Theme(
+                              // hide the default thin divider between panels
+                              data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
                               child: ExpansionPanelList.radio(
+                                animationDuration: const Duration(milliseconds: 220),
                                 expandedHeaderPadding: EdgeInsets.zero,
                                 elevation: 0,
-                                // optional: open Treatment by default if present
-                                initialOpenPanelValue: ordered.contains(_Bucket.treatment) ? 'bucket-${_Bucket.treatment}' : 'bucket-${ordered.first}',
+                                initialOpenPanelValue: ordered.contains(_Bucket.treatment)
+                                    ? 'bucket-${_Bucket.treatment}'
+                                    : 'bucket-${ordered.first}',
                                 children: [
                                   for (final b in ordered)
                                     ExpansionPanelRadio(
                                       value: 'bucket-$b',
                                       canTapOnHeader: true,
-                                      headerBuilder: (ctx, isOpen) => Container(
-                                        decoration: BoxDecoration(
-                                          color: _bucketHeaderColor(context, b),
-                                          borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
-                                        ),
-                                        child: ListTile(
-                                          title: Text(
-                                            _bucketTitleLocalized(b, lang),
-                                            style: Theme.of(context).textTheme.titleMedium,
+                                      headerBuilder: (ctx, isOpen) {
+                                        final grad = _bucketGradient(context, b);
+                                        final on = _onHeader(context);
+                                        return ClipRRect(
+                                          borderRadius: const BorderRadius.vertical(
+                                            top: Radius.circular(14),
                                           ),
-                                        ),
-                                      ),
-                                      body: Container(
+                                          child: Container(
+                                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                                            decoration: BoxDecoration(
+                                              gradient: LinearGradient(
+                                                begin: Alignment.topLeft,
+                                                end: Alignment.bottomRight,
+                                                colors: grad,
+                                              ),
+                                            ),
+                                            child: Row(
+                                              children: [
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: on.withOpacity(0.12),
+                                                    borderRadius: BorderRadius.circular(10),
+                                                  ),
+                                                  padding: const EdgeInsets.all(8),
+                                                  child: Icon(_bucketIcon(b), color: on, size: 20),
+                                                ),
+                                                const SizedBox(width: 12),
+                                                Expanded(
+                                                  child: Text(
+                                                    _bucketTitleLocalized(b, lang),
+                                                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                                                          color: on,
+                                                          fontWeight: FontWeight.w700,
+                                                          letterSpacing: 0.2,
+                                                        ),
+                                                  ),
+                                                ),
+                                                // ← Do NOT add a trailing icon; ExpansionPanel draws its own
+                                              ],
+                                            ),
+                                          ),
+                                        );
+                                      },
+                                      body: AnimatedContainer(
+                                        duration: const Duration(milliseconds: 180),
+                                        curve: Curves.easeOut,
                                         decoration: BoxDecoration(
-                                          color: _bucketBodyColor(context, b),
-                                          borderRadius: const BorderRadius.vertical(bottom: Radius.circular(12)),
+                                          color: Theme.of(context).colorScheme.surface.withOpacity(0.90),
+                                          borderRadius: const BorderRadius.vertical(bottom: Radius.circular(14)),
+                                          boxShadow: [
+                                            BoxShadow(
+                                              color: Colors.black.withOpacity(0.06),
+                                              blurRadius: 10,
+                                              offset: const Offset(0, 4),
+                                            ),
+                                          ],
                                         ),
                                         child: Padding(
-                                          padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                                          child: _AccordionBody(paragraphs: buckets[b]!),
+                                          padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
+                                          child: _FancyBody(paragraphs: buckets[b]!, accent: _bucketGradient(context, b).first),
                                         ),
                                       ),
                                     ),
-
                                 ],
                               ),
-                            );
+                            ),
+                          );
                           }),
                           const SizedBox(height: 16),
 
@@ -645,6 +690,32 @@ Color _bucketBodyColor(BuildContext c, _Bucket b) {
   }
 }
 
+// Icon per bucket
+IconData _bucketIcon(_Bucket b) {
+  switch (b) {
+    case _Bucket.treatment: return Icons.healing;          // or medical_services
+    case _Bucket.causes:    return Icons.biotech;          // or psychology_alt
+    case _Bucket.symptoms:  return Icons.monitor_heart;    // or emergency
+    case _Bucket.overview:  return Icons.menu_book;
+  }
+}
+
+// Gradient colors per bucket (theme-aware)
+List<Color> _bucketGradient(BuildContext c, _Bucket b) {
+  final s = Theme.of(c).colorScheme;
+  switch (b) {
+    case _Bucket.treatment: return [s.primary, s.primaryContainer];
+    case _Bucket.causes:    return [s.tertiary, s.tertiaryContainer];
+    case _Bucket.symptoms:  return [s.secondary, s.secondaryContainer];
+    case _Bucket.overview:  return [s.surfaceTint, s.surfaceVariant];
+  }
+}
+
+// Text color that contrasts with header gradient
+Color _onHeader(BuildContext c) =>
+    Theme.of(c).brightness == Brightness.dark ? Colors.white : Colors.black.withOpacity(0.9);
+
+
 /// Map parsed sections (title/body) into our 4 buckets.
 /// If nothing useful is found, returns {} so the caller can fall back.
 Map<_Bucket, List<String>> _categorizeSections(List<dynamic> sections) {
@@ -819,6 +890,90 @@ Map<_Bucket, List<String>> _extractBucketsFromRaw(String raw) {
       if (out[b]!.isNotEmpty) b: out[b]!,
   };
 }
+
+class _FancyBody extends StatelessWidget {
+  final List<String> paragraphs;
+  final Color accent;
+  const _FancyBody({required this.paragraphs, required this.accent});
+
+  @override
+  Widget build(BuildContext context) {
+    final children = <Widget>[];
+
+    for (final raw in paragraphs) {
+      final bullets = maybeBullets(raw);
+      if (bullets.isNotEmpty) {
+        for (final b in bullets) {
+          children.add(Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  width: 8, height: 8,
+                  margin: const EdgeInsets.only(top: 7, right: 8),
+                  decoration: BoxDecoration(color: accent, shape: BoxShape.circle),
+                ),
+                Expanded(
+                  child: RichText(
+                    text: TextSpan(
+                      style: Theme.of(context).textTheme.bodyLarge,
+                      children: linkifyParagraph(
+                        context,
+                        text: b,
+                        resolveTitle: (_) => null,
+                        onTapId: (id) {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(builder: (_) => ContentDetailScreen(id: id)),
+                          );
+                        },
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ));
+        }
+      } else {
+        final paras = raw.split('\n\n').where((p) => p.trim().isNotEmpty);
+        for (final p in paras) {
+          children.add(Padding(
+            padding: const EdgeInsets.only(bottom: 10),
+            child: RichText(
+              text: TextSpan(
+                style: Theme.of(context).textTheme.bodyLarge,
+                children: linkifyParagraph(
+                  context,
+                  text: p.trim(),
+                  resolveTitle: (_) => null,
+                  onTapId: (id) {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (_) => ContentDetailScreen(id: id)),
+                    );
+                  },
+                ),
+              ),
+            ),
+          ));
+        }
+      }
+
+      // soft divider between blocks
+      children.add(
+        Divider(
+          height: 16,
+          thickness: 0.6,
+          color: Theme.of(context).dividerColor.withOpacity(0.3),
+        ),
+      );
+    }
+
+    if (children.isNotEmpty) children.removeLast(); // drop last divider
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: children);
+  }
+}
+
 
 /// Renders a list of paragraphs, respecting your bullets & auto-linking
 class _AccordionBody extends StatelessWidget {
