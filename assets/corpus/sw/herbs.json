@@ -71,7 +71,15 @@
     "id": "herb-barberry-pleurisy",
     "title": "Barberry Pleurisy",
     "contentEn": "Black root cohosh Red clover",
-    "contentSw": "Mzizi mweusi Cohosh Red Clover"
+    "contentSw": "Mzizi mweusi Cohosh Red Clover",
+    "image": "assets/images/fallbacks/herb.jpg",
+    "imageMeta": {
+      "credit": "Fallback image"
+    },
+    "needsReview": true,
+    "missingFields": [
+      "too_short"
+    ]
   },
   {
     "id": "herb-burdock-red",
@@ -88,19 +96,39 @@
       "width": 5008,
       "height": 3336,
       "credit": "File:On a burdock leaf by the pond - Flickr - conall...jpg — Conall from Downpatrick, Northern Ireland (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": true,
+    "missingFields": [
+      "too_short"
+    ]
   },
   {
     "id": "herb-chickweed-squaw",
     "title": "Chickweed Squaw",
     "contentEn": "Cloves vine",
-    "contentSw": "Mzabibu wa karafuu"
+    "contentSw": "Mzabibu wa karafuu",
+    "image": "assets/images/fallbacks/herb.jpg",
+    "imageMeta": {
+      "credit": "Fallback image"
+    },
+    "needsReview": true,
+    "missingFields": [
+      "too_short"
+    ]
   },
   {
     "id": "herb-cramp-valerian",
     "title": "Cramp Valerian",
     "contentEn": "bark White oak Dandelion bark",
-    "contentSw": "Bark White Oak Dandelion Bark"
+    "contentSw": "Bark White Oak Dandelion Bark",
+    "image": "assets/images/fallbacks/herb.jpg",
+    "imageMeta": {
+      "credit": "Fallback image"
+    },
+    "needsReview": true,
+    "missingFields": [
+      "too_short"
+    ]
   },
   {
     "id": "herb-eyebright-wild",
@@ -117,7 +145,11 @@
       "width": 3648,
       "height": 2432,
       "credit": "File:An eyebright (Grubigstein) (24517727791).jpg — David Short from Windsor, UK (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": true,
+    "missingFields": [
+      "too_short"
+    ]
   },
   {
     "id": "herb-yellow",
@@ -134,7 +166,11 @@
       "width": 4880,
       "height": 3149,
       "credit": "File:Restaurant Amigos de Acapulco (window), Chico.jpg — Photograph:  Radomianin (Public domain) via Wikimedia Commons"
-    }
+    },
+    "needsReview": true,
+    "missingFields": [
+      "too_short"
+    ]
   },
   {
     "id": "herb-most-important-herbs",
@@ -168,7 +204,11 @@
       "width": 5304,
       "height": 5304,
       "credit": "File:Tübingen - Altstadt - Stiftskirche - Chorraum - Gewölbe - Schlussstein Madonna mit Kind.jpg — Roman Eisele (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": true,
+    "missingFields": [
+      "too_short"
+    ]
   },
   {
     "id": "herb-marshmallow",
@@ -185,7 +225,11 @@
       "width": 4032,
       "height": 3024,
       "credit": "File:Chocolate Coated Marshmallows @ Melba’s Chocolate Factory 7Aug23.jpg — RegionVisitor90 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": true,
+    "missingFields": [
+      "too_short"
+    ]
   },
   {
     "id": "herb-gentian",
@@ -202,7 +246,11 @@
       "width": 5182,
       "height": 3766,
       "credit": "File:Anchusa officinalis.jpg — Petar Milošević (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": true,
+    "missingFields": [
+      "too_short"
+    ]
   },
   {
     "id": "herb-ginseng",
@@ -219,13 +267,21 @@
       "width": 4000,
       "height": 3000,
       "credit": "File:First making honey ginseng in home.jpg — Peachyeung316 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": true,
+    "missingFields": [
+      "too_short"
+    ]
   },
   {
     "id": "herb-basic-herbal-principles",
     "title": "Basic Herbal Principles",
     "contentEn": "1 - Storage: Herbs are best stored in glass jars. Do not expose them to the sunlight for long periods of time. 2 - Weight factor: Larger persons require larger dosages than smaller or underweight individuals. Women generally require smaller doses than men, due to their lower average weight. Children and elderly people need smaller doses. 3 - Climate: The medicinal effect of herbs is intensified in hot climates, therefore give less at such times. 4 - People vary in their reactions: Some people are more intolerant to herbs than are others. It is best to initially give a smaller dose and see what the effect is going to be. It is always safe to start with the smaller child's dose, then build up to a larger dose if that seems best. Increase slowly, remaining on each level for 2-3 days, to observe for unusual reactions. 5 - Dosage for children: Here is the formula: Divide 150 (the assumed average adult weight) by the child's weight. Example: A child weighs 50 pounds. This is 1/3 of the adult (of 150 pounds.). Therefore give him only a third of the regular dose. 6 - During pregnancy: Women respond to herbs differently when they are pregnant. At such times, it is best to give smaller herbal doses and observe response. Sometimes mild and nutritive herbs are best. Some herbs should not be given during pregnancy (including diuretics, purgatives, and emmenagogues; all of which are active in the pelvic area and should be avoided.) 7 - Nervous people: Give them smaller doses than robust individuals. 8 - High blood pressure: These people should avoid herbs that stimulate the heart or constrict the blood capillaries and arteries (licorice root, ephedra, and lily of the valley are examples). But cayenne and garlic can be used in normal amounts. 9 - When herbs are combined: Herbs are frequently combined; but, if not done properly, one herb may overpower or neutralize the effects of others. 10 - Laxative herbs: Give slow-acting laxatives in the morning, so not to disturb sleep. They may take 1- 3 days to work; whereas fast-acting ones usually take 4-8 hours. Do not increase the dosage until a 3-day period is over, using the same dosage every day. Then, if the desired result is not obtained, you may increase the dosage. The desired objective is generally 2 bowel movements a day. 11 - Sedatives and antispasmodic herbs: Give them on an empty stomach or just before bedtime. 12 - Astringents and minerals: Astringent herbs should not be taken at the same time as nutritional supplements containing iron. The tannins in astringent herbs will leach calcium, iron, and other important minerals out of the intestines. Therefore, only give astringent herbs for a short period of time. 13 - Blood-purifying herbs: Take these herbs on an empty stomach. 14 - Strong, bitter herbs: To avoid nausea, be sure and give enough water with them. 15 - Powerful herbs: Be careful in giving herbs which have powerful effects. These include lobelia, juniper berries, black cohosh, poke root, aconite, and horsetail (shave grass). 16 - Bitter pills: They have a tonic effect on the stomach, digestion, and related organs. 17 - Herbal temperatures: A hot infusion or decoction is used to help induce sweating. Cool teas are used for tonic effect, and warm teas produce a feeling of relaxation. (Vervain is the best for inducing sweating.) 18 - Tablets vs. capsules: Tablets are easier to work with than capsules in hot climates; the latter tend to stick together. Vegetarians either open and empty capsules or use tablets, since capsules are made from slaughterhouse products. 19 - Herbs at mealtime: To avoid taking too much liquid, capsules or tablets are preferable to teas at mealtime. 20 - Varying the intensity of the dosage: Here are several principles to keep in mind:\n• For a slow, gradual, general effect, give the herbs in small quantities of syrup or milk\nbetween meals. This will retard absorption.\n• To aid the appetite, increase digestive secretions or, for a local effect on stomach or\nintestines, give herbs before meals. Give the herbs in acacia gum or olive oil for a localized effect on stomach or intestines.\n• To reduce the irritation of certain herbs, give them in syrup or soy milk.\n• To increase absorption of the herbs and produce a more rapid effect, give them 1-2 hours\nafter the meal.\n• To reduce the bitter taste of herbs, without reducing the bitterness, take it in a large\nquantity of fluid, syrup, or honey. The bitter taste is often necessary for the proper effect to take place, but the bitterness can be disguised to the taste buds.\n• Fluids which do not taste good can be taken more easily by drinking them cold, followed\nby a drink of plain water. 21 - Weekly rest day: In order for herbs to work best, they should not be taken one day each week. Then, after 2-3 weeks of treatment, no herbs should be taken for 3 days in a row. During this rest period, observe the patient. (1) If his energy remains low during that time or if the symptoms worsen, at the end of the rest period put him back on the herb dosage. (2) If he improves during the rest period, then extend the rest period a day or so and then continue the treatment with smaller doses than were used before. (3) If he seems to completely recover during the rest period, then the treatment can be changed to a more tonic, nutritive, approach. (4) New symptoms or problems may reveal themselves at this time. If so, an herb formula or new therapy should be instituted to meet it. (5) If he seems to get stronger during each rest period, begin reducing therapy and extending the rest periods.",
-    "contentSw": "1 - Hifadhi: Mimea imehifadhiwa vyema kwenye mitungi ya glasi. Usiwaangalie kwa jua kwa muda mrefu. 2 - Sababu ya uzani: Watu wakubwa wanahitaji kipimo kikubwa kuliko watu wadogo au wasio na uzito. Wanawake kwa ujumla wanahitaji dozi ndogo kuliko wanaume, kwa sababu ya uzito wao wa chini. Watoto na wazee wanahitaji dozi ndogo. 3 - Hali ya hewa: Athari ya dawa ya mimea imeongezeka katika hali ya hewa ya moto, kwa hivyo toa kidogo kwa nyakati kama hizo. 4 - Watu hutofautiana katika athari zao: Watu wengine wanavumilia zaidi mimea kuliko wengine. Ni bora hapo awali kutoa kipimo kidogo na uone athari itakuwa nini. Daima ni salama kuanza na kipimo cha mtoto mdogo, kisha ujenge hadi kipimo kikubwa ikiwa hiyo inaonekana bora. Kuongeza polepole, kubaki kwa kila ngazi kwa siku 2-3, kuzingatia athari zisizo za kawaida. 5 - kipimo kwa watoto: Hapa kuna formula: Gawanya 150 (uzani wa wastani wa watu wazima) na uzito wa mtoto. Mfano: Mtoto ana uzito wa pauni 50. Hii ni 1/3 ya watu wazima (wa pauni 150.). Kwa hivyo mpe theluthi ya kipimo cha kawaida. 6 - Wakati wa ujauzito: Wanawake hujibu kwa mimea tofauti wanapokuwa na mjamzito. Kwa nyakati kama hizi, ni bora kutoa dozi ndogo za mitishamba na kuangalia majibu. Wakati mwingine mimea kali na yenye lishe ni bora. Mimea mingine haipaswi kutolewa wakati wa ujauzito (pamoja na diuretics, purgatives, na emmenagogues; yote ambayo ni kazi katika eneo la pelvic na inapaswa kuepukwa.) 7 - watu wa neva: wape kipimo kidogo kuliko watu wenye nguvu. 8 - Shinikizo la damu: Watu hawa wanapaswa kuzuia mimea ambayo huchochea moyo au inasababisha capillaries ya damu na mishipa (mizizi ya licorice, ephedra, na lily ya bonde ni mifano). Lakini cayenne na vitunguu vinaweza kutumika kwa kiwango cha kawaida. 9 - Wakati mimea imejumuishwa: mimea hujumuishwa mara kwa mara; Lakini, ikiwa haijafanywa vizuri, mimea moja inaweza kuzidi au kupunguza athari za wengine. 10 - Mimea ya Laxative: Toa laxatives ya polepole asubuhi, ili usisumbue kulala. Wanaweza kuchukua siku 1- 3 kufanya kazi; wakati wale wanaofanya haraka kawaida huchukua masaa 4-8. Usiongeze kipimo hadi kipindi cha siku 3 kimekwisha, kwa kutumia kipimo sawa kila siku. Halafu, ikiwa matokeo unayotaka hayapatikani, unaweza kuongeza kipimo. Kusudi linalohitajika kwa ujumla ni harakati 2 za matumbo kwa siku. 11 - Sedatives na mimea ya antispasmodic: Wape kwenye tumbo tupu au kabla ya kulala. 12 - Astringents na madini: mimea ya kutu haipaswi kuchukuliwa wakati huo huo kama virutubisho vya lishe vyenye chuma. Tannins katika mimea ya kutuliza itavuja kalsiamu, chuma, na madini mengine muhimu nje ya matumbo. Kwa hivyo, toa mimea ya kutuliza kwa muda mfupi tu. 13 - Mimea ya kusafisha damu: Chukua mimea hii kwenye tumbo tupu. 14 - Mimea yenye nguvu, yenye uchungu: Ili kuepusha kichefuchefu, hakikisha na upe maji ya kutosha nao. 15 - Mimea yenye nguvu: Kuwa mwangalifu katika kutoa mimea ambayo ina athari kubwa. Hii ni pamoja na lobelia, matunda ya juniper, cohosh nyeusi, mzizi wa poke, aconite, na farasi (kunyoa nyasi). 16 - Vidonge vyenye uchungu: Zina athari ya tonic kwenye tumbo, digestion, na viungo vinavyohusiana. 17 - Joto la mitishamba: infusion moto au decoction hutumiwa kusaidia kushawishi jasho. Chai baridi hutumiwa kwa athari ya tonic, na chai ya joto hutoa hisia ya kupumzika. . Mwisho huwa hushikamana pamoja. Wataalam wa mboga ama wazi na vidonge tupu au kutumia vidonge, kwani vidonge hufanywa kutoka kwa bidhaa za kuchinjia. 19 - Mimea wakati wa kula: Ili kuzuia kuchukua kioevu sana, vidonge au vidonge ni vyema kwa chai wakati wa kula. 20 - Kutofautisha kiwango cha kipimo: Hapa kuna kanuni kadhaa za kuzingatia:\n• Kwa athari ya polepole, polepole, ya jumla, toa mimea kwa idadi ndogo ya syrup au maziwa\nkati ya milo. Hii itarudisha kunyonya.\n• Kusaidia hamu, kuongeza secretions ya utumbo au, kwa athari ya ndani juu ya tumbo au\nmatumbo, toa mimea kabla ya milo. Toa mimea katika ufizi wa Acacia au mafuta ya mizeituni kwa athari ya ndani ya tumbo au matumbo.\n• Ili kupunguza kuwasha kwa mimea fulani, wape katika syrup au maziwa ya soya.\n• Kuongeza kunyonya kwa mimea na kutoa athari ya haraka zaidi, wape masaa 1-2\nbaada ya chakula.\n• Ili kupunguza ladha kali ya mimea, bila kupunguza uchungu, ichukue kwa kubwa\nwingi wa maji, syrup, au asali. Ladha yenye uchungu mara nyingi ni muhimu kwa athari sahihi ifanyike, lakini uchungu unaweza kujificha na buds za ladha.\n• Maji ambayo haya ladha nzuri yanaweza kuchukuliwa kwa urahisi zaidi kwa kunywa baridi, ikifuatiwa\nna kinywaji cha maji wazi. 21 - Siku ya kupumzika ya kila wiki: Ili mimea ifanye kazi vizuri, haipaswi kuchukuliwa siku moja kila wiki. Halafu, baada ya wiki 2-3 za matibabu, hakuna mimea inayopaswa kuchukuliwa kwa siku 3 mfululizo. Katika kipindi hiki cha kupumzika, angalia mgonjwa. (1) Ikiwa nishati yake inabaki chini wakati huo au ikiwa dalili zinazidi, mwisho wa kipindi cha kupumzika kilimrudisha kwenye kipimo cha mimea. . (3) Ikiwa anaonekana kupona kabisa wakati wa kupumzika, basi matibabu yanaweza kubadilishwa kuwa njia ya tonic zaidi, yenye lishe. (4) Dalili mpya au shida zinaweza kujifunua kwa wakati huu. Ikiwa ni hivyo, formula ya mimea au tiba mpya inapaswa kuanzishwa ili kukutana nayo. (5) Ikiwa anaonekana kuwa na nguvu katika kila kipindi cha kupumzika, anza kupunguza tiba na kupanua vipindi vya kupumzika."
+    "contentSw": "1 - Hifadhi: Mimea imehifadhiwa vyema kwenye mitungi ya glasi. Usiwaangalie kwa jua kwa muda mrefu. 2 - Sababu ya uzani: Watu wakubwa wanahitaji kipimo kikubwa kuliko watu wadogo au wasio na uzito. Wanawake kwa ujumla wanahitaji dozi ndogo kuliko wanaume, kwa sababu ya uzito wao wa chini. Watoto na wazee wanahitaji dozi ndogo. 3 - Hali ya hewa: Athari ya dawa ya mimea imeongezeka katika hali ya hewa ya moto, kwa hivyo toa kidogo kwa nyakati kama hizo. 4 - Watu hutofautiana katika athari zao: Watu wengine wanavumilia zaidi mimea kuliko wengine. Ni bora hapo awali kutoa kipimo kidogo na uone athari itakuwa nini. Daima ni salama kuanza na kipimo cha mtoto mdogo, kisha ujenge hadi kipimo kikubwa ikiwa hiyo inaonekana bora. Kuongeza polepole, kubaki kwa kila ngazi kwa siku 2-3, kuzingatia athari zisizo za kawaida. 5 - kipimo kwa watoto: Hapa kuna formula: Gawanya 150 (uzani wa wastani wa watu wazima) na uzito wa mtoto. Mfano: Mtoto ana uzito wa pauni 50. Hii ni 1/3 ya watu wazima (wa pauni 150.). Kwa hivyo mpe theluthi ya kipimo cha kawaida. 6 - Wakati wa ujauzito: Wanawake hujibu kwa mimea tofauti wanapokuwa na mjamzito. Kwa nyakati kama hizi, ni bora kutoa dozi ndogo za mitishamba na kuangalia majibu. Wakati mwingine mimea kali na yenye lishe ni bora. Mimea mingine haipaswi kutolewa wakati wa ujauzito (pamoja na diuretics, purgatives, na emmenagogues; yote ambayo ni kazi katika eneo la pelvic na inapaswa kuepukwa.) 7 - watu wa neva: wape kipimo kidogo kuliko watu wenye nguvu. 8 - Shinikizo la damu: Watu hawa wanapaswa kuzuia mimea ambayo huchochea moyo au inasababisha capillaries ya damu na mishipa (mizizi ya licorice, ephedra, na lily ya bonde ni mifano). Lakini cayenne na vitunguu vinaweza kutumika kwa kiwango cha kawaida. 9 - Wakati mimea imejumuishwa: mimea hujumuishwa mara kwa mara; Lakini, ikiwa haijafanywa vizuri, mimea moja inaweza kuzidi au kupunguza athari za wengine. 10 - Mimea ya Laxative: Toa laxatives ya polepole asubuhi, ili usisumbue kulala. Wanaweza kuchukua siku 1- 3 kufanya kazi; wakati wale wanaofanya haraka kawaida huchukua masaa 4-8. Usiongeze kipimo hadi kipindi cha siku 3 kimekwisha, kwa kutumia kipimo sawa kila siku. Halafu, ikiwa matokeo unayotaka hayapatikani, unaweza kuongeza kipimo. Kusudi linalohitajika kwa ujumla ni harakati 2 za matumbo kwa siku. 11 - Sedatives na mimea ya antispasmodic: Wape kwenye tumbo tupu au kabla ya kulala. 12 - Astringents na madini: mimea ya kutu haipaswi kuchukuliwa wakati huo huo kama virutubisho vya lishe vyenye chuma. Tannins katika mimea ya kutuliza itavuja kalsiamu, chuma, na madini mengine muhimu nje ya matumbo. Kwa hivyo, toa mimea ya kutuliza kwa muda mfupi tu. 13 - Mimea ya kusafisha damu: Chukua mimea hii kwenye tumbo tupu. 14 - Mimea yenye nguvu, yenye uchungu: Ili kuepusha kichefuchefu, hakikisha na upe maji ya kutosha nao. 15 - Mimea yenye nguvu: Kuwa mwangalifu katika kutoa mimea ambayo ina athari kubwa. Hii ni pamoja na lobelia, matunda ya juniper, cohosh nyeusi, mzizi wa poke, aconite, na farasi (kunyoa nyasi). 16 - Vidonge vyenye uchungu: Zina athari ya tonic kwenye tumbo, digestion, na viungo vinavyohusiana. 17 - Joto la mitishamba: infusion moto au decoction hutumiwa kusaidia kushawishi jasho. Chai baridi hutumiwa kwa athari ya tonic, na chai ya joto hutoa hisia ya kupumzika. . Mwisho huwa hushikamana pamoja. Wataalam wa mboga ama wazi na vidonge tupu au kutumia vidonge, kwani vidonge hufanywa kutoka kwa bidhaa za kuchinjia. 19 - Mimea wakati wa kula: Ili kuzuia kuchukua kioevu sana, vidonge au vidonge ni vyema kwa chai wakati wa kula. 20 - Kutofautisha kiwango cha kipimo: Hapa kuna kanuni kadhaa za kuzingatia:\n• Kwa athari ya polepole, polepole, ya jumla, toa mimea kwa idadi ndogo ya syrup au maziwa\nkati ya milo. Hii itarudisha kunyonya.\n• Kusaidia hamu, kuongeza secretions ya utumbo au, kwa athari ya ndani juu ya tumbo au\nmatumbo, toa mimea kabla ya milo. Toa mimea katika ufizi wa Acacia au mafuta ya mizeituni kwa athari ya ndani ya tumbo au matumbo.\n• Ili kupunguza kuwasha kwa mimea fulani, wape katika syrup au maziwa ya soya.\n• Kuongeza kunyonya kwa mimea na kutoa athari ya haraka zaidi, wape masaa 1-2\nbaada ya chakula.\n• Ili kupunguza ladha kali ya mimea, bila kupunguza uchungu, ichukue kwa kubwa\nwingi wa maji, syrup, au asali. Ladha yenye uchungu mara nyingi ni muhimu kwa athari sahihi ifanyike, lakini uchungu unaweza kujificha na buds za ladha.\n• Maji ambayo haya ladha nzuri yanaweza kuchukuliwa kwa urahisi zaidi kwa kunywa baridi, ikifuatiwa\nna kinywaji cha maji wazi. 21 - Siku ya kupumzika ya kila wiki: Ili mimea ifanye kazi vizuri, haipaswi kuchukuliwa siku moja kila wiki. Halafu, baada ya wiki 2-3 za matibabu, hakuna mimea inayopaswa kuchukuliwa kwa siku 3 mfululizo. Katika kipindi hiki cha kupumzika, angalia mgonjwa. (1) Ikiwa nishati yake inabaki chini wakati huo au ikiwa dalili zinazidi, mwisho wa kipindi cha kupumzika kilimrudisha kwenye kipimo cha mimea. . (3) Ikiwa anaonekana kupona kabisa wakati wa kupumzika, basi matibabu yanaweza kubadilishwa kuwa njia ya tonic zaidi, yenye lishe. (4) Dalili mpya au shida zinaweza kujifunua kwa wakati huu. Ikiwa ni hivyo, formula ya mimea au tiba mpya inapaswa kuanzishwa ili kukutana nayo. (5) Ikiwa anaonekana kuwa na nguvu katika kila kipindi cha kupumzika, anza kupunguza tiba na kupanua vipindi vya kupumzika.",
+    "image": "assets/images/fallbacks/herb.jpg",
+    "imageMeta": {
+      "credit": "Fallback image"
+    }
   },
   {
     "id": "herb-the-preparation-of-herbs",
@@ -248,7 +304,11 @@
     "id": "herb-nine-useful-poultices",
     "title": "Nine Useful Poultices",
     "contentEn": "1 - Cabbage poultice: Pulverize the leaves and lay it on the skin. This will draw out poisons and pus. When it feels hot, replace it with a fresh one. 2 - Garlic poultice: Crush fresh garlic and add warm water and flour. It relieves pain, pus, and infection. 3 - Potato poultice: Place grated raw potato on bruises, sprains, or boils. 4 - Comfrey poultice: Mash the leaves, then moisten them with comfrey tea. It is good for open sores, wounds, or swellings. 5 - Fig poultice: Heat figs for 3 minutes, cut open, and apply to infected sores. It will bring them to a head. 6 - Oatmeal poultice: Cook oatmeal, cool, then place in a soft, cotton cloth. Put it over inflammations and insect bites, and cover with a dry cloth. Apply a heating pad. 7 - Carrot poultice: Take the pulp remaining after juicing carrots (or finely grate carrots), and place it on bruises, sores, chapped skin, and nipples. 8 - Tofu poultice: Squeeze out the cake, chop it up, add a teaspoon of ginger, then flour till it thickens. This will draw out inflammation and fever. 9 - Clay poultice: Get clay from a place where it is found and sterilize it in the oven. Or buy it at the health food store (either regular clay or bentonite clay). Mix the clay with just enough water or herb tea to make a consistency that is thick, like bread dough. Apply to bruises and infections. Mix clay with crushed cabbage leaves, and place the mixture on boils or tumors. Mix clay with cayenne or ginger and apply to sore arthritic joints.",
-    "contentSw": "1 - Poultice ya kabichi: Punguza majani na uweke kwenye ngozi. Hii itatoa sumu na pus. Wakati inahisi moto, badala yake na mpya. 2 - Poultice ya vitunguu: kuponda vitunguu safi na kuongeza maji ya joto na unga. Inapunguza maumivu, pus, na maambukizi. 3 - Poultice ya Viazi: Weka viazi mbichi kwenye michubuko, sprains, au majipu. 4 - Comfrey Poultice: Mash majani, kisha uimimize na chai ya Comfrey. Ni nzuri kwa vidonda wazi, majeraha, au uvimbe. 5 - Poultice ya Mtini: Matini ya joto kwa dakika 3, kata wazi, na utumie kwa vidonda vilivyoambukizwa. Itawaleta kichwani. 6 - Oatmeal Poultice: kupika oatmeal, baridi, kisha weka kwenye kitambaa laini, pamba. Weka juu ya uchochezi na kuumwa na wadudu, na funika na kitambaa kavu. Omba pedi ya kupokanzwa. 7 - Poultice ya karoti: Chukua mimbari iliyobaki baada ya karoti za juisi (au karoti za wavu), na uweke kwenye michubuko, vidonda, ngozi iliyofungwa, na chuchu. 8 - Tofu Poultice: Punguza keki, ikate, ongeza kijiko cha tangawizi, kisha unga mpaka unene. Hii itatoa uchochezi na homa. 9 - Poultice ya udongo: Pata udongo kutoka mahali ambapo hupatikana na kuiweka kwenye oveni. Au ununue kwenye duka la chakula cha afya (ama udongo wa kawaida au udongo wa bentonite). Changanya udongo na maji ya kutosha au chai ya mimea ili kufanya msimamo ambao ni mnene, kama unga wa mkate. Omba kwa michubuko na maambukizo. Changanya udongo na majani ya kabichi yaliyokaushwa, na weka mchanganyiko kwenye majipu au tumors. Changanya udongo na cayenne au tangawizi na utumie kwa viungo vya ugonjwa wa arthritic."
+    "contentSw": "1 - Poultice ya kabichi: Punguza majani na uweke kwenye ngozi. Hii itatoa sumu na pus. Wakati inahisi moto, badala yake na mpya. 2 - Poultice ya vitunguu: kuponda vitunguu safi na kuongeza maji ya joto na unga. Inapunguza maumivu, pus, na maambukizi. 3 - Poultice ya Viazi: Weka viazi mbichi kwenye michubuko, sprains, au majipu. 4 - Comfrey Poultice: Mash majani, kisha uimimize na chai ya Comfrey. Ni nzuri kwa vidonda wazi, majeraha, au uvimbe. 5 - Poultice ya Mtini: Matini ya joto kwa dakika 3, kata wazi, na utumie kwa vidonda vilivyoambukizwa. Itawaleta kichwani. 6 - Oatmeal Poultice: kupika oatmeal, baridi, kisha weka kwenye kitambaa laini, pamba. Weka juu ya uchochezi na kuumwa na wadudu, na funika na kitambaa kavu. Omba pedi ya kupokanzwa. 7 - Poultice ya karoti: Chukua mimbari iliyobaki baada ya karoti za juisi (au karoti za wavu), na uweke kwenye michubuko, vidonda, ngozi iliyofungwa, na chuchu. 8 - Tofu Poultice: Punguza keki, ikate, ongeza kijiko cha tangawizi, kisha unga mpaka unene. Hii itatoa uchochezi na homa. 9 - Poultice ya udongo: Pata udongo kutoka mahali ambapo hupatikana na kuiweka kwenye oveni. Au ununue kwenye duka la chakula cha afya (ama udongo wa kawaida au udongo wa bentonite). Changanya udongo na maji ya kutosha au chai ya mimea ili kufanya msimamo ambao ni mnene, kama unga wa mkate. Omba kwa michubuko na maambukizo. Changanya udongo na majani ya kabichi yaliyokaushwa, na weka mchanganyiko kwenye majipu au tumors. Changanya udongo na cayenne au tangawizi na utumie kwa viungo vya ugonjwa wa arthritic.",
+    "image": "assets/images/fallbacks/herb.jpg",
+    "imageMeta": {
+      "credit": "Fallback image"
+    }
   },
   {
     "id": "herb-the-healing-crisis",
