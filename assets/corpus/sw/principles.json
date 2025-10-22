@@ -15,7 +15,7 @@
       "height": 2338,
       "credit": "File:Petra Jordan BW 0.jpg — Berthold Werner (CC BY 3.0) via Wikimedia Commons"
     },
-    "needsReview": true,
+    "needsReview": false,
     "missingFields": [
       "too_short"
     ]
@@ -35,12 +35,13 @@
       "width": 6370,
       "height": 4247,
       "credit": "File:987th in Action- Maintaining Operational Readiness at Talisman Sabre 25 (9205102).jpg — U.S. Army photo by Staff Sgt. Mikayla Fritz (Public domain) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "principle-basic-principles-of-health",
     "title": "Basic Principles Of Health",
-    "contentEn": "1 - Regularity in meals. Do not eat them early or late, but maintain a regular schedule. Your stomach is used to eating at certain times each day. 2 - Moderation. Only eat as much as you need. Never overeat. Only eat to satisfy hunger, and then stop. 3 - Take small bites. Only put a small amount in your mouth at a time. You will chew and salivate it better, and tend to eat less at that meal. 4 - Relax and eat slowly. If you are too rushed to eat, then do not eat. Do not be hurried, anxious, worried, fatigued, or angry. 5 - Chew your food well. You will derive far more energy out of less food, if you do this. 6 - Do not eat too many things at a meal. Three or four items (plus a little salt, oil, etc.) are all you need. 7 - Avoid complicated mixtures. Say no to the gravies, vegetable loaves, gluten foods, and all the rest. Keep your meal simple. 8 - Avoid peculiar additives, such as vinegar, monosodium glutamate, etc., which only upset your stomach and slow digestion. 9 - Vary your diet from meal to meal. If you ate oatmeal this morning, try rye or wheat tomorrow. 10 - The food should be palatable. But if it is good food, this should not be hard to do. 11 - Never eat anything prepared in aluminum. Never drink water or juice out of an aluminum container. Alzheimer's is worth avoiding. 12 - Aside from fresh, raw, juices or the green drink, drink all your liquids (water) between meals, not with your meals. 13 - As a rule, eat your fruits at one meal and vegetables at another. Acid fruits (such as citrus) can be eaten with either. 14 - Greens have more compacted vitamins and minerals than other type of food. They only lack vitamin D, which the body can get from sunlight. But they do not have adequate amounts of trace minerals. 15 - Nova Scotia dulse and Norwegian kelp (two types of seaweed) are the only rich source of trace minerals. 16 - Blackstrap molasses is the only very rich source of iron. It is also a very rich source of choline and inositol, the two B vitamins used in the largest quantities. 17 - The best pattern is to rest before the meal, and walk around after it, not vice versa.",
+    "contentEn": "1 - Regularity in meals.…",
     "contentSw": "1 - Utaratibu katika milo. Usila mapema au marehemu, lakini udumishe ratiba ya kawaida. Tumbo lako hutumiwa kula wakati fulani kila siku. 2 - wastani. Kula tu kama vile unahitaji. Kamwe usila. Kula tu kukidhi njaa, na kisha acha. 3 - Chukua kuumwa kidogo. Weka tu kiasi kidogo kinywani mwako kwa wakati mmoja. Utatafuna na kuituliza vizuri, na utakula kidogo kwenye chakula hicho. 4 - Pumzika na kula polepole. Ikiwa umekimbizwa sana kula, basi usile. Usifanye haraka, wasiwasi, wasiwasi, uchovu, au hasira. 5 - kutafuna chakula chako vizuri. Utapata nguvu zaidi kutoka kwa chakula kidogo, ikiwa utafanya hivi. 6 - Usila vitu vingi sana kwenye chakula. Vitu vitatu au vinne (pamoja na chumvi kidogo, mafuta, nk) ndio unahitaji. 7 - Epuka mchanganyiko ngumu. Sema hapana kwa gravies, mikate ya mboga, vyakula vya gluten, na wengine wote. Weka chakula chako rahisi. 8 - Epuka viongezeo vya kipekee, kama siki, glutamate ya monosodium, nk, ambayo inakasirisha tu tumbo lako na digestion polepole. 9 - Changanya lishe yako kutoka kwa chakula hadi chakula. Ikiwa ulikula oatmeal asubuhi ya leo, jaribu rye au ngano kesho. 10 - Chakula kinapaswa kuwa nzuri. Lakini ikiwa ni chakula kizuri, hii haifai kuwa ngumu kufanya. 11 - Kamwe usile chochote kilichoandaliwa katika alumini. Kamwe usinywe maji au juisi nje ya chombo cha alumini. Alzheimer's inafaa kuepusha. 12 - Mbali na safi, mbichi, juisi au kinywaji kijani, kunywa vinywaji vyako vyote (maji) kati ya milo, sio na milo yako. 13 - Kama sheria, kula matunda yako kwenye mlo mmoja na mboga mboga kwa mwingine. Matunda ya asidi (kama machungwa) yanaweza kuliwa na ama. 14 - Greens zina vitamini na madini zaidi kuliko aina nyingine ya chakula. Wanakosa vitamini D tu, ambayo mwili unaweza kupata kutoka kwa jua. Lakini hawana kiwango cha kutosha cha madini ya kuwafuata. 15 - Nova Scotia Dulse na Kelp ya Norwe (aina mbili za mwani) ndio chanzo pekee cha madini ya kuwafuata. 16 - Blackstrap molasses ndio chanzo pekee cha madini. Pia ni chanzo tajiri sana cha choline na inositol, vitamini viwili vya B vinavyotumika kwa idadi kubwa. 17 - Mfano bora ni kupumzika kabla ya chakula, na kutembea baada yake, sio kinyume chake.",
     "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
     "imageMeta": {
@@ -52,7 +53,554 @@
       "width": 5472,
       "height": 3648,
       "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
-    }
+    },
+    "children": [
+      "principle-basic-01-regularity-in-meals",
+      "principle-basic-02-moderation",
+      "principle-basic-03-take-small-bites",
+      "principle-basic-04-relax-and-eat-slowly",
+      "principle-basic-05-chew-your-food-well",
+      "principle-basic-06-do-not-eat-too-many-things-at-a-meal",
+      "principle-basic-07-avoid-complicated-mixtures",
+      "principle-basic-08-avoid-peculiar-additives-such-as-vinegar-monosodium-glutamate-etc",
+      "principle-basic-09-vary-your-diet-from-meal-to-meal",
+      "principle-basic-10-the-food-should-be-palatable",
+      "principle-basic-11-never-eat-anything-prepared-in-aluminum",
+      "principle-basic-12-aside-from-fresh-raw-juices-or-the-green-drink-drink-all-your-liquids-water-between-meals-not-with-your-meals",
+      "principle-basic-13-as-a-rule-eat-your-fruits-at-one-meal-and-vegetables-at-another",
+      "principle-basic-14-greens-have-more-compacted-vitamins-and-minerals-than-other-type-of-food",
+      "principle-basic-15-nova-scotia-dulse-and-norwegian-kelp-two-types-of-seaweed-are-the-only-rich-source-of-trace-minerals",
+      "principle-basic-16-blackstrap-molasses-is-the-only-very-rich-source-of-iron",
+      "principle-basic-17-the-best-pattern-is-to-rest-before-the-meal-and-walk-around-after-it-not-vice-versa"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "principle-basic-01-regularity-in-meals",
+    "title": "Regularity in meals",
+    "contentEn": "Do not eat them early or late, but maintain a regular schedule. Your stomach is used to eating at certain times each day.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "Do not eat them early or late, but maintain a regular schedule. Your stomach is used to eating at certain times each day."
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari\nUsila mapema au marehemu, lakini udumishe ratiba ya kawaida. Tumbo lako hutumiwa kula wakati fulani kila siku.",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Usila mapema au marehemu, lakini udumishe ratiba ya kawaida. Tumbo lako hutumiwa kula wakati fulani kila siku."
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-02-moderation",
+    "title": "Moderation",
+    "contentEn": "Only eat as much as you need. Never overeat. Only eat to satisfy hunger, and then stop.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "Only eat as much as you need. Never overeat. Only eat to satisfy hunger, and then stop."
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari\nKula tu kama vile unahitaji. Kamwe usila. Kula tu kukidhi njaa, na kisha acha.",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Kula tu kama vile unahitaji. Kamwe usila. Kula tu kukidhi njaa, na kisha acha."
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-03-take-small-bites",
+    "title": "Take small bites",
+    "contentEn": "Only put a small amount in your mouth at a time. You will chew and salivate it better, and tend to eat less at that meal.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "Only put a small amount in your mouth at a time. You will chew and salivate it better, and tend to eat less at that meal."
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari\nWeka tu kiasi kidogo kinywani mwako kwa wakati mmoja. Utatafuna na kuituliza vizuri, na utakula kidogo kwenye chakula hicho.",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Weka tu kiasi kidogo kinywani mwako kwa wakati mmoja. Utatafuna na kuituliza vizuri, na utakula kidogo kwenye chakula hicho."
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-04-relax-and-eat-slowly",
+    "title": "Relax and eat slowly",
+    "contentEn": "If you are too rushed to eat, then do not eat. Do not be hurried, anxious, worried, fatigued, or angry.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "If you are too rushed to eat, then do not eat. Do not be hurried, anxious, worried, fatigued, or angry."
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari\nIkiwa umekimbizwa sana kula, basi usile. Usifanye haraka, wasiwasi, wasiwasi, uchovu, au hasira.",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Ikiwa umekimbizwa sana kula, basi usile. Usifanye haraka, wasiwasi, wasiwasi, uchovu, au hasira."
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-05-chew-your-food-well",
+    "title": "Chew your food well",
+    "contentEn": "You will derive far more energy out of less food, if you do this.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "You will derive far more energy out of less food, if you do this."
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari\nUtapata nguvu zaidi kutoka kwa chakula kidogo, ikiwa utafanya hivi.",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Utapata nguvu zaidi kutoka kwa chakula kidogo, ikiwa utafanya hivi."
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-06-do-not-eat-too-many-things-at-a-meal",
+    "title": "Do not eat too many things at a meal",
+    "contentEn": "Three or four items (plus a little salt, oil, etc.) are all you need.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "Three or four items (plus a little salt, oil, etc.) are all you need."
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari\nVitu vitatu au vinne (pamoja na chumvi kidogo, mafuta, nk) ndio unahitaji.",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Vitu vitatu au vinne (pamoja na chumvi kidogo, mafuta, nk) ndio unahitaji."
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-07-avoid-complicated-mixtures",
+    "title": "Avoid complicated mixtures",
+    "contentEn": "Say no to the gravies, vegetable loaves, gluten foods, and all the rest. Keep your meal simple.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "Say no to the gravies, vegetable loaves, gluten foods, and all the rest. Keep your meal simple."
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari\nSema hapana kwa gravies, mikate ya mboga, vyakula vya gluten, na wengine wote. Weka chakula chako rahisi.",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Sema hapana kwa gravies, mikate ya mboga, vyakula vya gluten, na wengine wote. Weka chakula chako rahisi."
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-08-avoid-peculiar-additives-such-as-vinegar-monosodium-glutamate-etc",
+    "title": "Avoid peculiar additives, such as vinegar, monosodium glutamate, etc",
+    "contentEn": ", which only upset your stomach and slow digestion.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": ", which only upset your stomach and slow digestion."
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari\n, ambayo inakasirisha tumbo lako tu na digestion polepole.",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": ", ambayo inakasirisha tumbo lako tu na digestion polepole."
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-09-vary-your-diet-from-meal-to-meal",
+    "title": "Vary your diet from meal to meal",
+    "contentEn": "If you ate oatmeal this morning, try rye or wheat tomorrow.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "If you ate oatmeal this morning, try rye or wheat tomorrow."
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari\nIkiwa ulikula oatmeal asubuhi ya leo, jaribu rye au ngano kesho.",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Ikiwa ulikula oatmeal asubuhi ya leo, jaribu rye au ngano kesho."
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-10-the-food-should-be-palatable",
+    "title": "The food should be palatable",
+    "contentEn": "But if it is good food, this should not be hard to do.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "But if it is good food, this should not be hard to do."
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari\nLakini ikiwa ni chakula kizuri, hii haifai kuwa ngumu kufanya.",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Lakini ikiwa ni chakula kizuri, hii haifai kuwa ngumu kufanya."
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-11-never-eat-anything-prepared-in-aluminum",
+    "title": "Never eat anything prepared in aluminum",
+    "contentEn": "Never drink water or juice out of an aluminum container. Alzheimer's is worth avoiding.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "Never drink water or juice out of an aluminum container. Alzheimer's is worth avoiding."
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari\nKamwe usinywe maji au juisi nje ya chombo cha alumini. Alzheimer's inafaa kuepusha.",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Kamwe usinywe maji au juisi nje ya chombo cha alumini. Alzheimer's inafaa kuepusha."
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-12-aside-from-fresh-raw-juices-or-the-green-drink-drink-all-your-liquids-water-between-meals-not-with-your-meals",
+    "title": "Aside from fresh, raw, juices or the green drink, drink all your liquids (water) between meals, not with your meals",
+    "contentEn": "",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": ""
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": ""
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-13-as-a-rule-eat-your-fruits-at-one-meal-and-vegetables-at-another",
+    "title": "As a rule, eat your fruits at one meal and vegetables at another",
+    "contentEn": "Acid fruits (such as citrus) can be eaten with either.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "Acid fruits (such as citrus) can be eaten with either."
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari\nMatunda ya asidi (kama machungwa) yanaweza kuliwa na ama.",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Matunda ya asidi (kama machungwa) yanaweza kuliwa na ama."
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-14-greens-have-more-compacted-vitamins-and-minerals-than-other-type-of-food",
+    "title": "Greens have more compacted vitamins and minerals than other type of food",
+    "contentEn": "They only lack vitamin D, which the body can get from sunlight. But they do not have adequate amounts of trace minerals.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "They only lack vitamin D, which the body can get from sunlight. But they do not have adequate amounts of trace minerals."
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari\nWanakosa vitamini D tu, ambayo mwili unaweza kupata kutoka kwa jua. Lakini hawana kiwango cha kutosha cha madini ya kuwafuata.",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Wanakosa vitamini D tu, ambayo mwili unaweza kupata kutoka kwa jua. Lakini hawana kiwango cha kutosha cha madini ya kuwafuata."
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-15-nova-scotia-dulse-and-norwegian-kelp-two-types-of-seaweed-are-the-only-rich-source-of-trace-minerals",
+    "title": "Nova scotia dulse and norwegian kelp (two types of seaweed) are the only rich source of trace minerals",
+    "contentEn": "",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": ""
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": ""
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-16-blackstrap-molasses-is-the-only-very-rich-source-of-iron",
+    "title": "Blackstrap molasses is the only very rich source of iron",
+    "contentEn": "It is also a very rich source of choline and inositol, the two B vitamins used in the largest quantities.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "It is also a very rich source of choline and inositol, the two B vitamins used in the largest quantities."
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari\nPia ni chanzo tajiri sana cha choline na inositol, vitamini B mbili zinazotumiwa kwa idadi kubwa.",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Pia ni chanzo tajiri sana cha choline na inositol, vitamini B mbili zinazotumiwa kwa idadi kubwa."
+      }
+    ]
+  },
+  {
+    "id": "principle-basic-17-the-best-pattern-is-to-rest-before-the-meal-and-walk-around-after-it-not-vice-versa",
+    "title": "The best pattern is to rest before the meal, and walk around after it, not vice versa",
+    "contentEn": "",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": ""
+      }
+    ],
+    "parentId": "principle-basic-principles-of-health",
+    "image": "assets/images/articles_jpg/principle-basic-principles-of-health.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=160593634",
+      "author": "U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston",
+      "license": "Public domain",
+      "title": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg",
+      "width": 5472,
+      "height": 3648,
+      "credit": "File:Pacific Pathways conducts civil health engagements in Seaqaqa, Fiji (5642698).jpg — U.S. Army USARPACPAO by Sgt. 1st Class Whitney Houston (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "contentSw": "Muhtasari",
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": ""
+      }
+    ]
   },
   {
     "id": "principle-fruits",
@@ -69,7 +617,8 @@
       "width": 6000,
       "height": 4000,
       "credit": "File:Lychee fruits and seed.jpg — Ivar Leidus (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "principle-vegetables",
@@ -86,7 +635,8 @@
       "width": 6892,
       "height": 5169,
       "credit": "File:Vegetables Shop Simsa Manali Himachal May24 A7CR 00123.jpg — This Photo was taken by Timothy A. Gonsalves.  Feel free to use my photos, but please mention me as the author.  I would much appreciate if you send me an email tagooty@gmail.com or write on my talk page, for my information.  Please contact me before commercial use.\n\n\n\nPlease do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract. (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "principle-grains",
@@ -103,7 +653,8 @@
       "width": 6720,
       "height": 4480,
       "credit": "File:Nottuln, Gladbeck, Grashalm -- 2024 -- 4342.jpg — Dietmar Rabich (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "principle-nuts-and-seeds",
@@ -120,7 +671,8 @@
       "width": 7360,
       "height": 4912,
       "credit": "File:Nuts on Spice Bazaar in Istanbul 01.jpg — Miomir Magdevski (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "principle-fats",
@@ -137,7 +689,8 @@
       "width": 3628,
       "height": 2437,
       "credit": "File:Fats Domino in Amsterdam, Fats tijdens zijn optreden in het Concertgebouw, Bestanddeelnr 914-4776.jpg — Hugo van Gelderen / Anefo (CC0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "principle-sweetening",
@@ -154,7 +707,8 @@
       "width": 3024,
       "height": 4032,
       "credit": "File:Pampilho-bolo.jpg — Abruzzi2 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "principle-other-nutrients",
@@ -171,7 +725,8 @@
       "width": 3264,
       "height": 2448,
       "credit": "File:\"not a significant source of other nutrients\" (33239675964).jpg — Laurel L. Russwurm from Canada (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "principle-vitamins-and-minerals",
@@ -188,7 +743,8 @@
       "width": 4000,
       "height": 2667,
       "credit": "File:Malapascua, Vegetable fried rice, Philippines.jpg — Vyacheslav Argenberg (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "principle-summary",
@@ -205,7 +761,8 @@
       "width": 5017,
       "height": 4084,
       "credit": "File:'Small abstract 02.' - gouache and ink sketch on paper with black brush strokes and ink texture, created by Dutch artist Fons Heijnsbroek in 2004.png — Fons Heijnsbroek (CC0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "principle-things-to-avoid",
@@ -222,7 +779,8 @@
       "width": 4160,
       "height": 3120,
       "credit": "File:Things to do while staying at home.jpg — Kyrstynz (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "principle-non-dietetic-factors",
@@ -232,6 +790,7 @@
     "image": "assets/images/fallbacks/principle.jpg",
     "imageMeta": {
       "credit": "Fallback image"
-    }
+    },
+    "needsReview": false
   }
 ]
