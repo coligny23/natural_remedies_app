@@ -19,6 +19,7 @@ windows/flutter/ephemeral/
 data-pipeline/.venv/
 data-pipeline/__pycache__/
 *.pyc
+.venv311/
 
 # Raw data / large artifacts
 *.pdf
