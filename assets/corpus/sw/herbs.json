@@ -2,7 +2,7 @@
   {
     "id": "herb-the-most-important-herbs",
     "title": "The Most Important Herbs",
-    "contentEn": "A rather complete discussion of herbs had been planned for this book, but it will not be included for three reasons: First, there are many worthwhile herb books available. Second, to cover the subject properly (herbal preparation, properties, and contraindications) would require at least 75 pages, and this book is already too big now. But it did seem well to list the most important herbs and mention a few other basic facts. One problem with herbs is that few of us can afford to keep more than a small collection of them on hand. Since they are not used a lot, purchasing could be a problem, since they are likely to spoil before we used them up. So it would be well to know which ones are the most important! Here is a list prepared by the present writer. Read it, change the list around to suit your own family needs,—and then stock up on a few beneficial herbs, so you will have them on hand when you need them most. HERE ARE THE 12, 20, 50, AND 60 MOST IMPORTANT HERBS:",
+    "contentEn": "A rather complete discussion of herbs had been planned for this book, but it will not be included for three reasons: First, there are many worthwhile herb books available.…",
     "contentSw": "Majadiliano kamili ya mimea yalikuwa yamepangwa kwa kitabu hiki, lakini haitajumuishwa kwa sababu tatu: kwanza, kuna vitabu vingi vya mimea vinavyopatikana. Pili, kufunika mada vizuri (maandalizi ya mitishamba, mali, na contraindication) itahitaji angalau kurasa 75, na kitabu hiki tayari ni kubwa sana sasa. Lakini ilionekana vizuri kuorodhesha mimea muhimu zaidi na kutaja ukweli mwingine wa msingi. Shida moja na mimea ni kwamba wachache wetu wanaweza kumudu kuweka zaidi ya mkusanyiko mdogo wao. Kwa kuwa hazitumiwi sana, ununuzi unaweza kuwa shida, kwani wanaweza kuharibu kabla hatujazitumia. Kwa hivyo itakuwa vizuri kujua ni ipi muhimu zaidi! Hapa kuna orodha iliyoandaliwa na mwandishi wa sasa. Soma, ubadilishe orodha ili kuendana na mahitaji ya familia yako mwenyewe, - kisha uweke mimea michache yenye faida, kwa hivyo utakuwa nazo wakati unazihitaji zaidi. Hapa kuna mimea 12, 20, 50, na 60 muhimu zaidi:",
     "image": "assets/images/articles_jpg/herb-the-most-important-herbs.jpg",
     "imageMeta": {
@@ -14,12 +14,385 @@
       "width": 962,
       "height": 769,
       "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
+  },
+  {
+    "id": "herb-charcoal",
+    "title": "Charcoal",
+    "contentEn": "This is not an herb, yet it is invaluable in a number of ways. Charcoal is pure carbon, and will adsorb (not absorb) 29 of the 30 most dangerous poisons. You can drink it diluted in water, use it as a poultice on wounds, skin infections, etc.",
+    "contentSw": "Muhtasari\nHii sio mimea, lakini ni muhimu sana kwa njia kadhaa. Mkaa ni kaboni safi, na adsorb (sio kunyonya) 29 kati ya sumu 30 hatari zaidi. Unaweza kunywa ndani ya maji, utumie kama kuku kwenye majeraha, maambukizo ya ngozi, nk.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is not an herb, yet it is invaluable in a number of ways. Charcoal is pure carbon, and will adsorb (not absorb) 29 of the 30 most dangerous poisons. You can drink it diluted in water, use it as a poultice on wounds, skin infections, etc."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii sio mimea, lakini ni muhimu sana kwa njia kadhaa. Mkaa ni kaboni safi, na adsorb (sio kunyonya) 29 kati ya sumu 30 hatari zaidi. Unaweza kunywa ndani ya maji, utumie kama kuku kwenye majeraha, maambukizo ya ngozi, nk."
+      }
+    ]
+  },
+  {
+    "id": "herb-cayenne",
+    "title": "Cayenne",
+    "contentEn": "Dr. Christopher, a well-known herbalist of the mid-20th century, said that if he only had two herbs, he would select charcoal and cayenne. Cayenne is powerful in its ability to attract blood to a body part. Since it is the blood which brings healing, this can be an important quality. Internally, it is useful for arteriosclerosis, arthritis, asthma, bleeding, high or low blood pressure, bronchitis, chills, colds, convulsions, coughs, indigestion, infections, jaundice, ulcers, and varicose veins. Externally, it is used for frostbite, painful joints, swellings, and varicose veins. When added to herbal formulas, it stimulates the action of other herbs. It is a preventative for heart attacks, flu, colds, indigestion, and lack of vitality. It is good for treating the spleen, pancreas, kidneys and is effective as a fomentation for rheumatism, inflammation, pleurisy, sores, and wounds. It can be rubbed on toothaches and swellings.",
+    "contentSw": "Muhtasari\nDk Christopher, mtaalam wa mimea anayejulikana wa karne ya 20, alisema kwamba ikiwa alikuwa na mimea miwili tu, angechagua mkaa na Cayenne. Cayenne ana nguvu katika uwezo wake wa kuvutia damu kwa sehemu ya mwili. Kwa kuwa ni damu ambayo huleta uponyaji, hii inaweza kuwa ubora muhimu. Kwa ndani, ni muhimu kwa arteriosclerosis, arthritis, pumu, kutokwa na damu, shinikizo la damu ya juu au ya chini, bronchitis, baridi, homa, mshtuko, kikohozi, kumeza, maambukizo, jaundice, vidonda, na mishipa ya varicose. Kwa nje, hutumiwa kwa frostbite, viungo vyenye chungu, uvimbe, na mishipa ya varicose. Inapoongezwa kwa formula za mitishamba, huchochea hatua ya mimea mingine. Ni kinga ya mshtuko wa moyo, homa, homa, kumeza, na ukosefu wa nguvu. Ni vizuri kwa kutibu wengu, kongosho, figo na ni bora kama fomentation kwa rheumatism, uchochezi, pleurisy, vidonda, na majeraha. Inaweza kusuguliwa kwenye maumivu ya meno na uvimbe.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "Dr. Christopher, a well-known herbalist of the mid-20th century, said that if he only had two herbs, he would select charcoal and cayenne. Cayenne is powerful in its ability to attract blood to a body part. Since it is the blood which brings healing, this can be an important quality. Internally, it is useful for arteriosclerosis, arthritis, asthma, bleeding, high or low blood pressure, bronchitis, chills, colds, convulsions, coughs, indigestion, infections, jaundice, ulcers, and varicose veins. Externally, it is used for frostbite, painful joints, swellings, and varicose veins. When added to herbal formulas, it stimulates the action of other herbs. It is a preventative for heart attacks, flu, colds, indigestion, and lack of vitality. It is good for treating the spleen, pancreas, kidneys and is effective as a fomentation for rheumatism, inflammation, pleurisy, sores, and wounds. It can be rubbed on toothaches and swellings."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Dk Christopher, mtaalam wa mimea anayejulikana wa karne ya 20, alisema kwamba ikiwa alikuwa na mimea miwili tu, angechagua mkaa na Cayenne. Cayenne ana nguvu katika uwezo wake wa kuvutia damu kwa sehemu ya mwili. Kwa kuwa ni damu ambayo huleta uponyaji, hii inaweza kuwa ubora muhimu. Kwa ndani, ni muhimu kwa arteriosclerosis, arthritis, pumu, kutokwa na damu, shinikizo la damu ya juu au ya chini, bronchitis, baridi, homa, mshtuko, kikohozi, kumeza, maambukizo, jaundice, vidonda, na mishipa ya varicose. Kwa nje, hutumiwa kwa frostbite, viungo vyenye chungu, uvimbe, na mishipa ya varicose. Inapoongezwa kwa formula za mitishamba, huchochea hatua ya mimea mingine. Ni kinga ya mshtuko wa moyo, homa, homa, kumeza, na ukosefu wa nguvu. Ni vizuri kwa kutibu wengu, kongosho, figo na ni bora kama fomentation kwa rheumatism, uchochezi, pleurisy, vidonda, na majeraha. Inaweza kusuguliwa kwenye maumivu ya meno na uvimbe."
+      }
+    ]
+  },
+  {
+    "id": "herb-garlic",
+    "title": "Garlic",
+    "contentEn": "This is one of the most powerful antiseptic substances ever discovered. In the 1950s, Soviet scientists found it to be equal to penicillin, yet without the harmful effects of that powerful drug. Internally, it is used for arteriosclerosis, cancer, contagious disease, coughs, cramps, diverticulitis, emphysema, gas, heart problems, high blood pressure, indigestion, liver congestion, parasites, rheumatism, sinus congestion, and ulcers. Externally, it is used for bowel problems, parasites, ringworm, skin parasites, tumors, warts, and yeast infections. Garlic is used for all lung and respiratory ailments, and can be used as a tea or added to syrups for coughs, colds, tuberculosis, fevers, and blood diseases. Use it as a tea in an enema for worms and bowel infections. Use the fresh extract oil or eat the raw cloves.",
+    "contentSw": "Muhtasari\nHii ni moja ya vitu vyenye nguvu zaidi vya antiseptic vilivyowahi kugunduliwa. Mnamo miaka ya 1950, wanasayansi wa Soviet waliona ni sawa na penicillin, lakini bila athari mbaya ya dawa hiyo yenye nguvu. Kwa ndani, hutumiwa kwa arteriosclerosis, saratani, ugonjwa unaoambukiza, kikohozi, tumbo, diverticulitis, emphysema, gesi, shida za moyo, shinikizo la damu, kumeza, msongamano wa ini, vimelea, rheumatism, msongamano wa sinus, na vidonda. Kwa nje, hutumiwa kwa shida za matumbo, vimelea, minyoo, vimelea vya ngozi, tumors, vitunguu, na maambukizo ya chachu. Vitunguu hutumiwa kwa magonjwa yote ya mapafu na ya kupumua, na yanaweza kutumika kama chai au kuongezwa kwa syrups kwa kikohozi, homa, kifua kikuu, magonjwa, na magonjwa ya damu. Tumia kama chai katika enema ya minyoo na maambukizo ya matumbo. Tumia mafuta safi ya dondoo au kula karafuu mbichi.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is one of the most powerful antiseptic substances ever discovered. In the 1950s, Soviet scientists found it to be equal to penicillin, yet without the harmful effects of that powerful drug. Internally, it is used for arteriosclerosis, cancer, contagious disease, coughs, cramps, diverticulitis, emphysema, gas, heart problems, high blood pressure, indigestion, liver congestion, parasites, rheumatism, sinus congestion, and ulcers. Externally, it is used for bowel problems, parasites, ringworm, skin parasites, tumors, warts, and yeast infections. Garlic is used for all lung and respiratory ailments, and can be used as a tea or added to syrups for coughs, colds, tuberculosis, fevers, and blood diseases. Use it as a tea in an enema for worms and bowel infections. Use the fresh extract oil or eat the raw cloves."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni moja ya vitu vyenye nguvu zaidi vya antiseptic vilivyowahi kugunduliwa. Mnamo miaka ya 1950, wanasayansi wa Soviet waliona ni sawa na penicillin, lakini bila athari mbaya ya dawa hiyo yenye nguvu. Kwa ndani, hutumiwa kwa arteriosclerosis, saratani, ugonjwa unaoambukiza, kikohozi, tumbo, diverticulitis, emphysema, gesi, shida za moyo, shinikizo la damu, kumeza, msongamano wa ini, vimelea, rheumatism, msongamano wa sinus, na vidonda. Kwa nje, hutumiwa kwa shida za matumbo, vimelea, minyoo, vimelea vya ngozi, tumors, vitunguu, na maambukizo ya chachu. Vitunguu hutumiwa kwa magonjwa yote ya mapafu na ya kupumua, na yanaweza kutumika kama chai au kuongezwa kwa syrups kwa kikohozi, homa, kifua kikuu, magonjwa, na magonjwa ya damu. Tumia kama chai katika enema ya minyoo na maambukizo ya matumbo. Tumia mafuta safi ya dondoo au kula karafuu mbichi."
+      }
+    ]
+  },
+  {
+    "id": "herb-goldenseal",
+    "title": "Goldenseal",
+    "contentEn": "This is another powerful antiseptic; and, in a sense, it is the first true herb on this list. (The first three can be purchased in the grocery store.) Internally, it is good for alcoholism, allergies, asthma, bad breath, bladder diseases, bronchitis, canker sores, chicken pox, colds, diabetes, eczema, bleeding gums or gum infections, hay fever, heart weakness, hemorrhoids, herpes, indigestion, infections, inflammations, leukorrhea, liver problems, lymph congestion, measles, mammary and ovarian tumors, morning sickness, sore mouth, pyorrhea, tonsillitis, and ulcers. Externally, it is used for burns, canker sores, eye inflammations, bleeding gums, gum infections, herpes sores, leukorrhea, mouth sores, ringworm, skin inflammation, tonsillitis, and wounds. Goldenseal can be used on open sores, inflammations, eczema, ringworm, erysipelas, or itchy skin conditions. It is a specific for all kinds of mucous membrane problems. Snuffed up the nose, it is good for nasal catarrh. Small doses will relieve nausea during pregnancy. It is a douche for vaginal infections, an eyewash, and an antiseptic mouthwash for pyorrhea. Used with cascara sagrada, it is a bowel tonic. As a retention enema, it will reduce swollen hemorrhoids.",
+    "contentSw": "Muhtasari\nHii ni antiseptic nyingine yenye nguvu; Na, kwa maana, ni mimea ya kwanza ya kweli kwenye orodha hii. . Shida za ini, msongamano wa lymph, surua, tumors ya mammary na ovari, ugonjwa wa asubuhi, mdomo wa kidonda, pyorrhea, tonsillitis, na vidonda. Kwa nje, hutumiwa kwa kuchoma, vidonda vya canker, kuvimba kwa jicho, ufizi wa damu, maambukizo ya ufizi, vidonda vya herpes, leukorrhea, vidonda vya mdomo, minyoo, uchochezi wa ngozi, tonsillitis, na vidonda. Goldenseal inaweza kutumika kwenye vidonda wazi, uchochezi, eczema, pete, erysipelas, au hali ya ngozi. Ni maalum kwa kila aina ya shida za membrane ya mucous. Kufungiwa pua, ni nzuri kwa catarrh ya pua. Dozi ndogo zitapunguza kichefuchefu wakati wa ujauzito. Ni douche ya maambukizo ya uke, macho ya macho, na kinywa cha antiseptic kwa pyorrhea. Kutumika na Cascara Sagrada, ni tonic ya matumbo. Kama enema ya kutunza, itapunguza hemorrhoids kuvimba.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is another powerful antiseptic; and, in a sense, it is the first true herb on this list. (The first three can be purchased in the grocery store.) Internally, it is good for alcoholism, allergies, asthma, bad breath, bladder diseases, bronchitis, canker sores, chicken pox, colds, diabetes, eczema, bleeding gums or gum infections, hay fever, heart weakness, hemorrhoids, herpes, indigestion, infections, inflammations, leukorrhea, liver problems, lymph congestion, measles, mammary and ovarian tumors, morning sickness, sore mouth, pyorrhea, tonsillitis, and ulcers. Externally, it is used for burns, canker sores, eye inflammations, bleeding gums, gum infections, herpes sores, leukorrhea, mouth sores, ringworm, skin inflammation, tonsillitis, and wounds. Goldenseal can be used on open sores, inflammations, eczema, ringworm, erysipelas, or itchy skin conditions. It is a specific for all kinds of mucous membrane problems. Snuffed up the nose, it is good for nasal catarrh. Small doses will relieve nausea during pregnancy. It is a douche for vaginal infections, an eyewash, and an antiseptic mouthwash for pyorrhea. Used with cascara sagrada, it is a bowel tonic. As a retention enema, it will reduce swollen hemorrhoids."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni antiseptic nyingine yenye nguvu; Na, kwa maana, ni mimea ya kwanza ya kweli kwenye orodha hii. . Shida za ini, msongamano wa lymph, surua, tumors ya mammary na ovari, ugonjwa wa asubuhi, mdomo wa kidonda, pyorrhea, tonsillitis, na vidonda. Kwa nje, hutumiwa kwa kuchoma, vidonda vya canker, kuvimba kwa jicho, ufizi wa damu, maambukizo ya ufizi, vidonda vya herpes, leukorrhea, vidonda vya mdomo, minyoo, uchochezi wa ngozi, tonsillitis, na vidonda. Goldenseal inaweza kutumika kwenye vidonda wazi, uchochezi, eczema, pete, erysipelas, au hali ya ngozi. Ni maalum kwa kila aina ya shida za membrane ya mucous. Kufungiwa pua, ni nzuri kwa catarrh ya pua. Dozi ndogo zitapunguza kichefuchefu wakati wa ujauzito. Ni douche ya maambukizo ya uke, macho ya macho, na kinywa cha antiseptic kwa pyorrhea. Kutumika na Cascara Sagrada, ni tonic ya matumbo. Kama enema ya kutunza, itapunguza hemorrhoids kuvimba."
+      }
+    ]
+  },
+  {
+    "id": "herb-peppermint",
+    "title": "Peppermint",
+    "contentEn": "This is an old household remedy, and is useful for a variety of conditions. Internally, it is useful for insomnia, measles, menstrual cramps, migraines, morning sickness, muscle spasms, nausea, nervous disorders, chills, colic, fevers, dizziness, gas, nausea, vomiting, diarrhea, dysentery, and hysteria. Externally, it is used for skin itch, toothache, and local anesthetic to local pains and inflamed joints. For example, to open up the sinuses, put 5-10 drops into 2 quarts hot water and breathe it in through the mouth and nostrils. Cover the head with a cloth as you do this.",
+    "contentSw": "Muhtasari\nHii ni suluhisho la zamani la kaya, na ni muhimu kwa hali tofauti. Kwa ndani, ni muhimu kwa kukosa usingizi, surua, tumbo la hedhi, migraines, ugonjwa wa asubuhi, spasms za misuli, kichefuchefu, shida za neva, baridi, colic, fevers, kizunguzungu, gesi, kichefuchefu, kutapika, kuhara, ugonjwa wa meno, na ugonjwa wa hysteria. Kwa nje, hutumiwa kwa kuwasha ngozi, maumivu ya meno, na anesthetic ya ndani kwa maumivu ya ndani na viungo vilivyochomwa. Kwa mfano, kufungua sinuses, weka matone 5-10 ndani ya maji 2 ya moto na uipumue kupitia mdomo na pua. Funika kichwa na kitambaa unapofanya hivi.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is an old household remedy, and is useful for a variety of conditions. Internally, it is useful for insomnia, measles, menstrual cramps, migraines, morning sickness, muscle spasms, nausea, nervous disorders, chills, colic, fevers, dizziness, gas, nausea, vomiting, diarrhea, dysentery, and hysteria. Externally, it is used for skin itch, toothache, and local anesthetic to local pains and inflamed joints. For example, to open up the sinuses, put 5-10 drops into 2 quarts hot water and breathe it in through the mouth and nostrils. Cover the head with a cloth as you do this."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni suluhisho la zamani la kaya, na ni muhimu kwa hali tofauti. Kwa ndani, ni muhimu kwa kukosa usingizi, surua, tumbo la hedhi, migraines, ugonjwa wa asubuhi, spasms za misuli, kichefuchefu, shida za neva, baridi, colic, fevers, kizunguzungu, gesi, kichefuchefu, kutapika, kuhara, ugonjwa wa meno, na ugonjwa wa hysteria. Kwa nje, hutumiwa kwa kuwasha ngozi, maumivu ya meno, na anesthetic ya ndani kwa maumivu ya ndani na viungo vilivyochomwa. Kwa mfano, kufungua sinuses, weka matone 5-10 ndani ya maji 2 ya moto na uipumue kupitia mdomo na pua. Funika kichwa na kitambaa unapofanya hivi."
+      }
+    ]
+  },
+  {
+    "id": "herb-slippery-elm",
+    "title": "Slippery Elm",
+    "contentEn": "This is the inner white bark of the slippery elm tree, and is invaluable to keep on hand. (The outer dark bark is also sold, but is useless.) Internally, it is used for bladder inflammation, bronchitis, colitis, constipation, ovarian cramps, coughs, cystitis, diarrhea, diverticulitis, dysentery, eczema, flu, gas, hemorrhage, hemorrhoids, hoarseness, lung congestion, stomach problems, tonsillitis, ulcers. Externally, it is used for burns, colitis, constipation, diverticulitis, dysentery, gangrenous wounds, hemorrhoids, leukorrhea, open sores, rheumatoid and gouty afflictions, and wounds. Slippery elm is also used to bind materials of suppositories, boluses, lozenges, and unleavened breads together. It makes a nourishing gruel for children, for the elderly with weak stomachs, for those with ulcers and those who are recovering from diseases. If used as a douche or enema, it must be diluted with water so it will not plug the apparatus (since it is a mucilaginous herb).",
+    "contentSw": "Muhtasari\nHii ndio gome nyeupe ya ndani ya mti wa elm unaoteleza, na ni muhimu sana kuendelea. . vidonda. Kwa nje, hutumiwa kwa kuchoma, colitis, kuvimbiwa, diverticulitis, ugonjwa wa meno, majeraha ya gangrenous, hemorrhoids, leukorrhea, vidonda wazi, rheumatoid na shida za gouty, na majeraha. Slippery Elm pia hutumiwa kufunga vifaa vya suppositories, boluses, lozenges, na mikate isiyo na chachu pamoja. Inafanya gruel yenye lishe kwa watoto, kwa wazee walio na tumbo dhaifu, kwa wale walio na vidonda na wale ambao wanapona kutokana na magonjwa. Ikiwa inatumiwa kama douche au enema, lazima ibadilishwe na maji kwa hivyo haitaziba vifaa (kwani ni mimea ya mucilaginous).",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is the inner white bark of the slippery elm tree, and is invaluable to keep on hand. (The outer dark bark is also sold, but is useless.) Internally, it is used for bladder inflammation, bronchitis, colitis, constipation, ovarian cramps, coughs, cystitis, diarrhea, diverticulitis, dysentery, eczema, flu, gas, hemorrhage, hemorrhoids, hoarseness, lung congestion, stomach problems, tonsillitis, ulcers. Externally, it is used for burns, colitis, constipation, diverticulitis, dysentery, gangrenous wounds, hemorrhoids, leukorrhea, open sores, rheumatoid and gouty afflictions, and wounds. Slippery elm is also used to bind materials of suppositories, boluses, lozenges, and unleavened breads together. It makes a nourishing gruel for children, for the elderly with weak stomachs, for those with ulcers and those who are recovering from diseases. If used as a douche or enema, it must be diluted with water so it will not plug the apparatus (since it is a mucilaginous herb)."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ndio gome nyeupe ya ndani ya mti wa elm unaoteleza, na ni muhimu sana kuendelea. . vidonda. Kwa nje, hutumiwa kwa kuchoma, colitis, kuvimbiwa, diverticulitis, ugonjwa wa meno, majeraha ya gangrenous, hemorrhoids, leukorrhea, vidonda wazi, rheumatoid na shida za gouty, na majeraha. Slippery Elm pia hutumiwa kufunga vifaa vya suppositories, boluses, lozenges, na mikate isiyo na chachu pamoja. Inafanya gruel yenye lishe kwa watoto, kwa wazee walio na tumbo dhaifu, kwa wale walio na vidonda na wale ambao wanapona kutokana na magonjwa. Ikiwa inatumiwa kama douche au enema, lazima ibadilishwe na maji kwa hivyo haitaziba vifaa (kwani ni mimea ya mucilaginous)."
+      }
+    ]
+  },
+  {
+    "id": "herb-lobelia",
+    "title": "Lobelia",
+    "contentEn": "This is both a relaxant and stimulant, and a powerful helper. Internally, it is used for allergies, arthritis, asthma, bronchitis, chicken pox, contagious diseases, convulsions, coughs, earache, ear infections, fevers (all kinds), headache, heart palpitation, indigestion, jaundice, pleurisy, pneumonia, food poisoning, St. Vitus dance, teething, toothache. Externally, it is used for snake and insect bites, poison ivy, ringworm, and tumors. Small doses of a tincture of lobelia (5-10 drops) will act as a tonic and stimulant; larger doses will act as a sedative. It relieves spasms and acts as an expectorant. It can be used as a wash on infected or itchy skin conditions. In large doses, it is an excellent emetic. It is especially good in spasmodic coughing of phlegm. Taken in small doses, it relaxes the heart and lowers rapid pulse.",
+    "contentSw": "Muhtasari\nHii ni ya kupumzika na ya kusisimua, na msaidizi mwenye nguvu. Kwa ndani, hutumiwa kwa mzio, ugonjwa wa arthritis, pumu, bronchitis, pox ya kuku, magonjwa yanayoambukiza, mshtuko, kikohozi, maumivu ya sikio, maambukizo ya sikio, fevers (kila aina), maumivu ya kichwa, maumivu ya moyo, kumeza, jaundice, pleurisy, pneumonia, sumu ya chakula, densi ya chakula. Kwa nje, hutumiwa kwa nyoka na kuumwa na wadudu, ivy ya sumu, pete, na tumors. Dozi ndogo ya tincture ya lobelia (matone 5-10) itafanya kama tonic na kichocheo; Dozi kubwa itafanya kama sedative. Inapunguza spasms na hufanya kama mtangazaji. Inaweza kutumika kama safisha kwenye hali ya ngozi iliyoambukizwa au ya kuwasha. Katika kipimo kikubwa, ni emetic bora. Ni nzuri sana katika kukohoa kwa spasmodic ya phlegm. Ikichukuliwa kwa kipimo kidogo, inapumzika moyo na hupunguza mapigo ya haraka.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is both a relaxant and stimulant, and a powerful helper. Internally, it is used for allergies, arthritis, asthma, bronchitis, chicken pox, contagious diseases, convulsions, coughs, earache, ear infections, fevers (all kinds), headache, heart palpitation, indigestion, jaundice, pleurisy, pneumonia, food poisoning, St. Vitus dance, teething, toothache. Externally, it is used for snake and insect bites, poison ivy, ringworm, and tumors. Small doses of a tincture of lobelia (5-10 drops) will act as a tonic and stimulant; larger doses will act as a sedative. It relieves spasms and acts as an expectorant. It can be used as a wash on infected or itchy skin conditions. In large doses, it is an excellent emetic. It is especially good in spasmodic coughing of phlegm. Taken in small doses, it relaxes the heart and lowers rapid pulse."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni ya kupumzika na ya kusisimua, na msaidizi mwenye nguvu. Kwa ndani, hutumiwa kwa mzio, ugonjwa wa arthritis, pumu, bronchitis, pox ya kuku, magonjwa yanayoambukiza, mshtuko, kikohozi, maumivu ya sikio, maambukizo ya sikio, fevers (kila aina), maumivu ya kichwa, maumivu ya moyo, kumeza, jaundice, pleurisy, pneumonia, sumu ya chakula, densi ya chakula. Kwa nje, hutumiwa kwa nyoka na kuumwa na wadudu, ivy ya sumu, pete, na tumors. Dozi ndogo ya tincture ya lobelia (matone 5-10) itafanya kama tonic na kichocheo; Dozi kubwa itafanya kama sedative. Inapunguza spasms na hufanya kama mtangazaji. Inaweza kutumika kama safisha kwenye hali ya ngozi iliyoambukizwa au ya kuwasha. Katika kipimo kikubwa, ni emetic bora. Ni nzuri sana katika kukohoa kwa spasmodic ya phlegm. Ikichukuliwa kwa kipimo kidogo, inapumzika moyo na hupunguza mapigo ya haraka."
+      }
+    ]
+  },
+  {
+    "id": "herb-aloe-vera",
+    "title": "Aloe Vera",
+    "contentEn": "The gel from the leaves of this desert plant is invaluable. It is best used freshly picked from a plant. Keep several plants growing; you cannot have enough! Internally, it is good for chronic constipation, gastritis, hyperacidity, and stomach ulcers. Externally, it is used for abscesses, burns, infection in wounds, insect bites, skin irritations, and ulcers. When applied on the skin for severe burns and skin rashes, it can be left on for two days without changing the application. Do not use it during pregnancy, nor in large doses when there are hemorrhoids.",
+    "contentSw": "Muhtasari\nGel kutoka kwa majani ya mmea huu wa jangwa ni muhimu sana. Inatumika vizuri zaidi kutoka kwa mmea. Weka mimea kadhaa ikikua; Hauwezi kuwa na vya kutosha! Kwa ndani, ni nzuri kwa kuvimbiwa sugu, gastritis, hyperacidity, na vidonda vya tumbo. Kwa nje, hutumiwa kwa abscesses, kuchoma, maambukizi katika majeraha, kuumwa na wadudu, kukasirika kwa ngozi, na vidonda. Inapotumiwa kwenye ngozi kwa kuchoma kali na upele wa ngozi, inaweza kuachwa kwa siku mbili bila kubadilisha programu. Usitumie wakati wa ujauzito, au kwa kipimo kikubwa wakati kuna hemorrhoids.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "The gel from the leaves of this desert plant is invaluable. It is best used freshly picked from a plant. Keep several plants growing; you cannot have enough! Internally, it is good for chronic constipation, gastritis, hyperacidity, and stomach ulcers. Externally, it is used for abscesses, burns, infection in wounds, insect bites, skin irritations, and ulcers. When applied on the skin for severe burns and skin rashes, it can be left on for two days without changing the application. Do not use it during pregnancy, nor in large doses when there are hemorrhoids."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Gel kutoka kwa majani ya mmea huu wa jangwa ni muhimu sana. Inatumika vizuri zaidi kutoka kwa mmea. Weka mimea kadhaa ikikua; Hauwezi kuwa na vya kutosha! Kwa ndani, ni nzuri kwa kuvimbiwa sugu, gastritis, hyperacidity, na vidonda vya tumbo. Kwa nje, hutumiwa kwa abscesses, kuchoma, maambukizi katika majeraha, kuumwa na wadudu, kukasirika kwa ngozi, na vidonda. Inapotumiwa kwenye ngozi kwa kuchoma kali na upele wa ngozi, inaweza kuachwa kwa siku mbili bila kubadilisha programu. Usitumie wakati wa ujauzito, au kwa kipimo kikubwa wakati kuna hemorrhoids."
+      }
+    ]
+  },
+  {
+    "id": "herb-cascara-sagrada",
+    "title": "Cascara Sagrada",
+    "contentEn": "This is one of the safest laxatives for chronic constipation, and is not habit forming. Internally, it is used for constipation, cough, gall bladder disease, gallstones, gastric and intestinal disorders, hemorrhoids, indigestion, and jaundice.",
+    "contentSw": "Muhtasari\nHii ni moja ya laxatives salama kabisa kwa kuvimbiwa sugu, na sio kutengeneza tabia. Kwa ndani, hutumiwa kwa kuvimbiwa, kikohozi, ugonjwa wa kibofu cha nduru, gallstones, shida ya tumbo na matumbo, hemorrhoids, kumeza, na jaundice.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is one of the safest laxatives for chronic constipation, and is not habit forming. Internally, it is used for constipation, cough, gall bladder disease, gallstones, gastric and intestinal disorders, hemorrhoids, indigestion, and jaundice."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni moja ya laxatives salama kabisa kwa kuvimbiwa sugu, na sio kutengeneza tabia. Kwa ndani, hutumiwa kwa kuvimbiwa, kikohozi, ugonjwa wa kibofu cha nduru, gallstones, shida ya tumbo na matumbo, hemorrhoids, kumeza, na jaundice."
+      }
+    ]
+  },
+  {
+    "id": "herb-corn-silk",
+    "title": "Corn Silk",
+    "contentEn": "This is the best single herb for increasing urine flow, thus helping to eliminate kidney and bladder problems. Internally, it is used for bed-wetting, chronic cystitis, inflammation of kidneys and bladder, kidney stones, prostatitis, excess uric acid, and urine retention. It is a good remedy for all inflammatory conditions of the urethra, bladder, prostate, and kidney; it can remove gravel from the kidneys, bladder and prostate. It helps the aged when their urine is scanty and has heavy sediment.",
+    "contentSw": "Muhtasari\nHii ndio mimea moja bora kwa kuongeza mtiririko wa mkojo, na hivyo kusaidia kuondoa shida za figo na kibofu cha mkojo. Kwa ndani, hutumiwa kwa kunyoosha kitanda, cystitis sugu, kuvimba kwa figo na kibofu cha mkojo, mawe ya figo, prostatitis, asidi ya uric zaidi, na uhifadhi wa mkojo. Ni suluhisho nzuri kwa hali zote za uchochezi za urethra, kibofu cha mkojo, kibofu, na figo; Inaweza kuondoa changarawe kutoka kwa figo, kibofu cha mkojo na kibofu. Inasaidia wazee wakati mkojo wao ni mdogo na una sediment nzito.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is the best single herb for increasing urine flow, thus helping to eliminate kidney and bladder problems. Internally, it is used for bed-wetting, chronic cystitis, inflammation of kidneys and bladder, kidney stones, prostatitis, excess uric acid, and urine retention. It is a good remedy for all inflammatory conditions of the urethra, bladder, prostate, and kidney; it can remove gravel from the kidneys, bladder and prostate. It helps the aged when their urine is scanty and has heavy sediment."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ndio mimea moja bora kwa kuongeza mtiririko wa mkojo, na hivyo kusaidia kuondoa shida za figo na kibofu cha mkojo. Kwa ndani, hutumiwa kwa kunyoosha kitanda, cystitis sugu, kuvimba kwa figo na kibofu cha mkojo, mawe ya figo, prostatitis, asidi ya uric zaidi, na uhifadhi wa mkojo. Ni suluhisho nzuri kwa hali zote za uchochezi za urethra, kibofu cha mkojo, kibofu, na figo; Inaweza kuondoa changarawe kutoka kwa figo, kibofu cha mkojo na kibofu. Inasaidia wazee wakati mkojo wao ni mdogo na una sediment nzito."
+      }
+    ]
+  },
+  {
+    "id": "herb-hops",
+    "title": "Hops",
+    "contentEn": "This is an excellent nervine and will produce sleep when insomnia is present. But it also has other uses. Internally, it is used for coughs, fever, headaches, indigestion, insomnia, jaundice, morning sickness, weak nerves, stomach tonic, throat, bronchial tubes, chest ailments, toothache, and ulcers. Externally, it is used for boils, bruises, earaches, inflammations, rheumatic pains, skin ailments, and ulcers. The tea is good for nervous stomach, poor appetite, gas, and intestinal cramps. Cold tea before meals will increase digestion. The dry herb can be placed inside a pillow; it will induce sleep.",
+    "contentSw": "Muhtasari\nHii ni nervine bora na itazaa usingizi wakati kukosa usingizi upo. Lakini pia ina matumizi mengine. Kwa ndani, hutumiwa kwa kikohozi, homa, maumivu ya kichwa, kumeza, kukosa usingizi, jaundice, ugonjwa wa asubuhi, mishipa dhaifu, tonic ya tumbo, koo, zilizopo za bronchi, magonjwa ya kifua, maumivu ya meno, na vidonda. Kwa nje, hutumiwa kwa majipu, michubuko, michoro, uchochezi, maumivu ya rheumatic, maradhi ya ngozi, na vidonda. Chai ni nzuri kwa tumbo la neva, hamu mbaya, gesi, na matumbo ya matumbo. Chai baridi kabla ya milo itaongeza digestion. Mimea kavu inaweza kuwekwa ndani ya mto; itasababisha kulala.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is an excellent nervine and will produce sleep when insomnia is present. But it also has other uses. Internally, it is used for coughs, fever, headaches, indigestion, insomnia, jaundice, morning sickness, weak nerves, stomach tonic, throat, bronchial tubes, chest ailments, toothache, and ulcers. Externally, it is used for boils, bruises, earaches, inflammations, rheumatic pains, skin ailments, and ulcers. The tea is good for nervous stomach, poor appetite, gas, and intestinal cramps. Cold tea before meals will increase digestion. The dry herb can be placed inside a pillow; it will induce sleep."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni nervine bora na itazaa usingizi wakati kukosa usingizi upo. Lakini pia ina matumizi mengine. Kwa ndani, hutumiwa kwa kikohozi, homa, maumivu ya kichwa, kumeza, kukosa usingizi, jaundice, ugonjwa wa asubuhi, mishipa dhaifu, tonic ya tumbo, koo, zilizopo za bronchi, magonjwa ya kifua, maumivu ya meno, na vidonda. Kwa nje, hutumiwa kwa majipu, michubuko, michoro, uchochezi, maumivu ya rheumatic, maradhi ya ngozi, na vidonda. Chai ni nzuri kwa tumbo la neva, hamu mbaya, gesi, na matumbo ya matumbo. Chai baridi kabla ya milo itaongeza digestion. Mimea kavu inaweza kuwekwa ndani ya mto; itasababisha kulala."
+      }
+    ]
+  },
+  {
+    "id": "herb-witch-hazel",
+    "title": "Witch Hazel",
+    "contentEn": "This is an excellent astringent herb and is one of the best remedies for stopping excessive menstruation, hemorrhages from the lungs, stomach, uterus, and bowels. Internally, it is used for diarrhea, diphtheria, hemorrhoids, leukorrhea, prolapsed bowel, varicose veins, and uterine problems. It is used to stop bleeding from the lungs, uterus, and other internal organs. Externally, it is used for burns, bruises, diphtheria, insect bites, leukorrhea, sore breasts, sore muscles, tonsillitis, and varicose veins. Witch hazel can be used as an injection for bleeding piles, vaginal discharges, and infections. As either fomentation or poultice, it is good for wounds, bed sores, sore and inflamed eyes, and oozing skin diseases. It is good for almost any internal or external inflamed condition.",
+    "contentSw": "Muhtasari\nHii ni mimea bora ya kutuliza na ni moja wapo ya tiba bora ya kuzuia hedhi nyingi, kutokwa na damu kutoka kwa mapafu, tumbo, uterasi, na matumbo. Kwa ndani, hutumiwa kwa kuhara, diphtheria, hemorrhoids, leukorrhea, matumbo yaliyoenea, mishipa ya varicose, na shida za uterine. Inatumika kuacha kutokwa na damu kutoka kwa mapafu, uterasi, na viungo vingine vya ndani. Kwa nje, hutumiwa kwa kuchoma, michubuko, diphtheria, kuumwa na wadudu, leukorrhea, matiti ya kidonda, misuli ya kidonda, tonsillitis, na mishipa ya varicose. Hazel ya wachawi inaweza kutumika kama sindano kwa milundo ya kutokwa na damu, kutokwa kwa uke, na maambukizo. Kama ama fomentation au poultice, ni nzuri kwa majeraha, vidonda vya kitanda, macho na macho yaliyochomwa, na magonjwa ya ngozi. Ni nzuri kwa karibu hali yoyote ya ndani au ya nje iliyochomwa.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is an excellent astringent herb and is one of the best remedies for stopping excessive menstruation, hemorrhages from the lungs, stomach, uterus, and bowels. Internally, it is used for diarrhea, diphtheria, hemorrhoids, leukorrhea, prolapsed bowel, varicose veins, and uterine problems. It is used to stop bleeding from the lungs, uterus, and other internal organs. Externally, it is used for burns, bruises, diphtheria, insect bites, leukorrhea, sore breasts, sore muscles, tonsillitis, and varicose veins. Witch hazel can be used as an injection for bleeding piles, vaginal discharges, and infections. As either fomentation or poultice, it is good for wounds, bed sores, sore and inflamed eyes, and oozing skin diseases. It is good for almost any internal or external inflamed condition."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni mimea bora ya kutuliza na ni moja wapo ya tiba bora ya kuzuia hedhi nyingi, kutokwa na damu kutoka kwa mapafu, tumbo, uterasi, na matumbo. Kwa ndani, hutumiwa kwa kuhara, diphtheria, hemorrhoids, leukorrhea, matumbo yaliyoenea, mishipa ya varicose, na shida za uterine. Inatumika kuacha kutokwa na damu kutoka kwa mapafu, uterasi, na viungo vingine vya ndani. Kwa nje, hutumiwa kwa kuchoma, michubuko, diphtheria, kuumwa na wadudu, leukorrhea, matiti ya kidonda, misuli ya kidonda, tonsillitis, na mishipa ya varicose. Hazel ya wachawi inaweza kutumika kama sindano kwa milundo ya kutokwa na damu, kutokwa kwa uke, na maambukizo. Kama ama fomentation au poultice, ni nzuri kwa majeraha, vidonda vya kitanda, macho na macho yaliyochomwa, na magonjwa ya ngozi. Ni nzuri kwa karibu hali yoyote ya ndani au ya nje iliyochomwa."
+      }
+    ]
   },
   {
     "id": "herb-most-important-herbs",
     "title": "Most Important Herbs",
-    "contentEn": "1 - CHARCOAL—This is not an herb, yet it is invaluable in a number of ways. Charcoal is pure carbon, and will adsorb (not absorb) 29 of the 30 most dangerous poisons. You can drink it diluted in water, use it as a poultice on wounds, skin infections, etc. 2 - CAYENNE—Dr. Christopher, a well-known herbalist of the mid-20th century, said that if he only had two herbs, he would select charcoal and cayenne. Cayenne is powerful in its ability to attract blood to a body part. Since it is the blood which brings healing, this can be an important quality. Internally, it is useful for arteriosclerosis, arthritis, asthma, bleeding, high or low blood pressure, bronchitis, chills, colds, convulsions, coughs, indigestion, infections, jaundice, ulcers, and varicose veins. Externally, it is used for frostbite, painful joints, swellings, and varicose veins. When added to herbal formulas, it stimulates the action of other herbs. It is a preventative for heart attacks, flu, colds, indigestion, and lack of vitality. It is good for treating the spleen, pancreas, kidneys and is effective as a fomentation for rheumatism, inflammation, pleurisy, sores, and wounds. It can be rubbed on toothaches and swellings. 3 - GARLIC—This is one of the most powerful antiseptic substances ever discovered. In the 1950s, Soviet scientists found it to be equal to penicillin, yet without the harmful effects of that powerful drug. Internally, it is used for arteriosclerosis, cancer, contagious disease, coughs, cramps, diverticulitis, emphysema, gas, heart problems, high blood pressure, indigestion, liver congestion, parasites, rheumatism, sinus congestion, and ulcers. Externally, it is used for bowel problems, parasites, ringworm, skin parasites, tumors, warts, and yeast infections. Garlic is used for all lung and respiratory ailments, and can be used as a tea or added to syrups for coughs, colds, tuberculosis, fevers, and blood diseases. Use it as a tea in an enema for worms and bowel infections. Use the fresh extract oil or eat the raw cloves. 4 - GOLDENSEAL—This is another powerful antiseptic; and, in a sense, it is the first true herb on this list. (The first three can be purchased in the grocery store.) Internally, it is good for alcoholism, allergies, asthma, bad breath, bladder diseases, bronchitis, canker sores, chicken pox, colds, diabetes, eczema, bleeding gums or gum infections, hay fever, heart weakness, hemorrhoids, herpes, indigestion, infections, inflammations, leukorrhea, liver problems, lymph congestion, measles, mammary and ovarian tumors, morning sickness, sore mouth, pyorrhea, tonsillitis, and ulcers. Externally, it is used for burns, canker sores, eye inflammations, bleeding gums, gum infections, herpes sores, leukorrhea, mouth sores, ringworm, skin inflammation, tonsillitis, and wounds. Goldenseal can be used on open sores, inflammations, eczema, ringworm, erysipelas, or itchy skin conditions. It is a specific for all kinds of mucous membrane problems. Snuffed up the nose, it is good for nasal catarrh. Small doses will relieve nausea during pregnancy. It is a douche for vaginal infections, an eyewash, and an antiseptic mouthwash for pyorrhea. Used with cascara sagrada, it is a bowel tonic. As a retention enema, it will reduce swollen hemorrhoids. 5 - PEPPERMINT—This is an old household remedy, and is useful for a variety of conditions. Internally, it is useful for insomnia, measles, menstrual cramps, migraines, morning sickness, muscle spasms, nausea, nervous disorders, chills, colic, fevers, dizziness, gas, nausea, vomiting, diarrhea, dysentery, and hysteria. Externally, it is used for skin itch, toothache, and local anesthetic to local pains and inflamed joints. For example, to open up the sinuses, put 5-10 drops into 2 quarts hot water and breathe it in through the mouth and nostrils. Cover the head with a cloth as you do this. 6 - SLIPPERY ELM—This is the inner white bark of the slippery elm tree, and is invaluable to keep on hand. (The outer dark bark is also sold, but is useless.) Internally, it is used for bladder inflammation, bronchitis, colitis, constipation, ovarian cramps, coughs, cystitis, diarrhea, diverticulitis, dysentery, eczema, flu, gas, hemorrhage, hemorrhoids, hoarseness, lung congestion, stomach problems, tonsillitis, ulcers. Externally, it is used for burns, colitis, constipation, diverticulitis, dysentery, gangrenous wounds, hemorrhoids, leukorrhea, open sores, rheumatoid and gouty afflictions, and wounds. Slippery elm is also used to bind materials of suppositories, boluses, lozenges, and unleavened breads together. It makes a nourishing gruel for children, for the elderly with weak stomachs, for those with ulcers and those who are recovering from diseases. If used as a douche or enema, it must be diluted with water so it will not plug the apparatus (since it is a mucilaginous herb). 7 - LOBELIA—This is both a relaxant and stimulant, and a powerful helper. Internally, it is used for allergies, arthritis, asthma, bronchitis, chicken pox, contagious diseases, convulsions, coughs, earache, ear infections, fevers (all kinds), headache, heart palpitation, indigestion, jaundice, pleurisy, pneumonia, food poisoning, St. Vitus dance, teething, toothache. Externally, it is used for snake and insect bites, poison ivy, ringworm, and tumors. Small doses of a tincture of lobelia (5-10 drops) will act as a tonic and stimulant; larger doses will act as a sedative. It relieves spasms and acts as an expectorant. It can be used as a wash on infected or itchy skin conditions. In large doses, it is an excellent emetic. It is especially good in spasmodic coughing of phlegm. Taken in small doses, it relaxes the heart and lowers rapid pulse. 8 - ALOE VERA—The gel from the leaves of this desert plant is invaluable. It is best used freshly picked from a plant. Keep several plants growing; you cannot have enough! Internally, it is good for chronic constipation, gastritis, hyperacidity, and stomach ulcers. Externally, it is used for abscesses, burns, infection in wounds, insect bites, skin irritations, and ulcers. When applied on the skin for severe burns and skin rashes, it can be left on for two days without changing the application. Do not use it during pregnancy, nor in large doses when there are hemorrhoids. 9 - CASCARA SAGRADA—This is one of the safest laxatives for chronic constipation, and is not habit forming. Internally, it is used for constipation, cough, gall bladder disease, gallstones, gastric and intestinal disorders, hemorrhoids, indigestion, and jaundice. 10 - CORN SILK—This is the best single herb for increasing urine flow, thus helping to eliminate kidney and bladder problems. Internally, it is used for bed-wetting, chronic cystitis, inflammation of kidneys and bladder, kidney stones, prostatitis, excess uric acid, and urine retention. It is a good remedy for all inflammatory conditions of the urethra, bladder, prostate, and kidney; it can remove gravel from the kidneys, bladder and prostate. It helps the aged when their urine is scanty and has heavy sediment. 11 - HOPS—This is an excellent nervine and will produce sleep when insomnia is present. But it also has other uses. Internally, it is used for coughs, fever, headaches, indigestion, insomnia, jaundice, morning sickness, weak nerves, stomach tonic, throat, bronchial tubes, chest ailments, toothache, and ulcers. Externally, it is used for boils, bruises, earaches, inflammations, rheumatic pains, skin ailments, and ulcers. The tea is good for nervous stomach, poor appetite, gas, and intestinal cramps. Cold tea before meals will increase digestion. The dry herb can be placed inside a pillow; it will induce sleep. 12 - WITCH HAZEL—This is an excellent astringent herb and is one of the best remedies for stopping excessive menstruation, hemorrhages from the lungs, stomach, uterus, and bowels. Internally, it is used for diarrhea, diphtheria, hemorrhoids, leukorrhea, prolapsed bowel, varicose veins, and uterine problems. It is used to stop bleeding from the lungs, uterus, and other internal organs. Externally, it is used for burns, bruises, diphtheria, insect bites, leukorrhea, sore breasts, sore muscles, tonsillitis, and varicose veins. Witch hazel can be used as an injection for bleeding piles, vaginal discharges, and infections. As either fomentation or poultice, it is good for wounds, bed sores, sore and inflamed eyes, and oozing skin diseases. It is good for almost any internal or external inflamed condition.",
+    "contentEn": "1 - CHARCOAL—This is not an herb, yet it is invaluable in a number of ways.…",
     "contentSw": "(Jumla ya mimea sitini ya sitini) hapa kuna mimea kumi ijayo zaidi, jumla ya sitini kwa wote. Hizi kumi za mwisho zimetolewa kupanua, kwa upana kamili, idadi ya shida ambazo unaweza kutumia mimea kushughulikia. Lakini katika kazi yako yote na mimea, kumbuka kuwa kupumzika, kufunga, lishe nyepesi, na matibabu kadhaa ya maji ni muhimu zaidi kuliko tiba ya mitishamba katika kutibu magonjwa mengi.",
     "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
     "imageMeta": {
@@ -31,12 +404,261 @@
       "width": 962,
       "height": 769,
       "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
+  },
+  {
+    "id": "herb-catnip",
+    "title": "Catnip",
+    "contentEn": "This is wonderful for children and infants when gas, stomach cramps, or nervousness occur. This is the children's herb, but it is also helpful to grown-ups. Internally, it is used for colds, bronchitis, dizziness, fevers, gas, diarrhea, headaches, hysteria, insomnia, morning sickness, mumps, smallpox, and urine retention. Externally, it is used for constipation, mumps, and painful swellings. Use catnip as an enema to expel worms. Drink the tea for headaches caused by indigestion.",
+    "contentSw": "Muhtasari\nHii ni nzuri kwa watoto na watoto wachanga wakati gesi, tumbo, au woga hufanyika. Hii ndio mimea ya watoto, lakini pia inasaidia kuwa watu wazima. Kwa ndani, hutumiwa kwa homa, bronchitis, kizunguzungu, fevers, gesi, kuhara, maumivu ya kichwa, ugonjwa wa maumivu, ugonjwa wa kukosa usingizi, ugonjwa wa asubuhi, mumps, ndui, na uhifadhi wa mkojo. Kwa nje, hutumiwa kwa kuvimbiwa, matundu, na uvimbe wenye uchungu. Tumia Catnip kama enema kufukuza minyoo. Kunywa chai kwa maumivu ya kichwa yanayosababishwa na kumeza.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is wonderful for children and infants when gas, stomach cramps, or nervousness occur. This is the children's herb, but it is also helpful to grown-ups. Internally, it is used for colds, bronchitis, dizziness, fevers, gas, diarrhea, headaches, hysteria, insomnia, morning sickness, mumps, smallpox, and urine retention. Externally, it is used for constipation, mumps, and painful swellings. Use catnip as an enema to expel worms. Drink the tea for headaches caused by indigestion."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni nzuri kwa watoto na watoto wachanga wakati gesi, tumbo, au woga hufanyika. Hii ndio mimea ya watoto, lakini pia inasaidia kuwa watu wazima. Kwa ndani, hutumiwa kwa homa, bronchitis, kizunguzungu, fevers, gesi, kuhara, maumivu ya kichwa, ugonjwa wa maumivu, ugonjwa wa kukosa usingizi, ugonjwa wa asubuhi, mumps, ndui, na uhifadhi wa mkojo. Kwa nje, hutumiwa kwa kuvimbiwa, matundu, na uvimbe wenye uchungu. Tumia Catnip kama enema kufukuza minyoo. Kunywa chai kwa maumivu ya kichwa yanayosababishwa na kumeza."
+      }
+    ]
+  },
+  {
+    "id": "herb-comfrey",
+    "title": "Comfrey",
+    "contentEn": "This is an all-around good remedy. Internally, it is used for anemia, arthritis, asthma, internal bleeding, blood purifier, bronchitis, calcium deficiency, colitis, coughs, diarrhea, dysentery, emphysema, gall bladder inflammation. Externally, it is used for boils, bruises, burns, psoriasis, and sprains. Comfrey is excellent for dysentery; one of the best for internal bleeding; excellent for coughs; catarrh; ulcerated bowels, stomach, and lungs. Bruise the fresh leaves and apply as a poultice to wounds, burns, open sores, gangrene, and moist ulcers. The tea can also be put on them. Keep some growing in your garden. Once established, it will keep coming up year after year.",
+    "contentSw": "Muhtasari\nHii ni suluhisho nzuri karibu. Kwa ndani, hutumiwa kwa anemia, arthritis, pumu, kutokwa na damu ndani, utakaso wa damu, bronchitis, upungufu wa kalsiamu, colitis, kikohozi, kuhara, ugonjwa wa meno, emphysema, uchochezi wa kibofu cha nduru. Kwa nje, hutumiwa kwa majipu, michubuko, kuchoma, psoriasis, na sprains. Comfrey ni bora kwa ugonjwa wa meno; moja ya bora kwa kutokwa na damu ya ndani; Bora kwa kikohozi; catarrh; Matumbo ya vidonda, tumbo, na mapafu. Boresha majani safi na kutumika kama kuku kwa majeraha, kuchoma, vidonda wazi, gangrene, na vidonda vyenye unyevu. Chai pia inaweza kuwekwa juu yao. Weka ukuaji katika bustani yako. Mara tu ikiwa imeanzishwa, itaendelea kuja mwaka baada ya mwaka.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is an all-around good remedy. Internally, it is used for anemia, arthritis, asthma, internal bleeding, blood purifier, bronchitis, calcium deficiency, colitis, coughs, diarrhea, dysentery, emphysema, gall bladder inflammation. Externally, it is used for boils, bruises, burns, psoriasis, and sprains. Comfrey is excellent for dysentery; one of the best for internal bleeding; excellent for coughs; catarrh; ulcerated bowels, stomach, and lungs. Bruise the fresh leaves and apply as a poultice to wounds, burns, open sores, gangrene, and moist ulcers. The tea can also be put on them. Keep some growing in your garden. Once established, it will keep coming up year after year."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni suluhisho nzuri karibu. Kwa ndani, hutumiwa kwa anemia, arthritis, pumu, kutokwa na damu ndani, utakaso wa damu, bronchitis, upungufu wa kalsiamu, colitis, kikohozi, kuhara, ugonjwa wa meno, emphysema, uchochezi wa kibofu cha nduru. Kwa nje, hutumiwa kwa majipu, michubuko, kuchoma, psoriasis, na sprains. Comfrey ni bora kwa ugonjwa wa meno; moja ya bora kwa kutokwa na damu ya ndani; Bora kwa kikohozi; catarrh; Matumbo ya vidonda, tumbo, na mapafu. Boresha majani safi na kutumika kama kuku kwa majeraha, kuchoma, vidonda wazi, gangrene, na vidonda vyenye unyevu. Chai pia inaweza kuwekwa juu yao. Weka ukuaji katika bustani yako. Mara tu ikiwa imeanzishwa, itaendelea kuja mwaka baada ya mwaka."
+      }
+    ]
+  },
+  {
+    "id": "herb-echinacea",
+    "title": "Echinacea",
+    "contentEn": "This is a powerful blood cleanser, and is tolerated by the system in fairly large amounts. Internally, it is used for acne, bad breath, bladder infections, blood poisoning, blood purifier, boils, fevers, gangrene, infections, inflammation of mammary glands, intestinal antiseptic, leukopenia (reduction in blood leukocytes), lymphatic congestion, skin diseases, tonsillitis, uremic poisoning, and venereal disease. Externally, it is used for open wounds and painful swellings. Echinacea is an excellent antibiotic, and ranks with goldenseal and red clover. It has been used against syphilis and gonorrhea.",
+    "contentSw": "Muhtasari\nHii ni safi ya damu, na inavumiliwa na mfumo kwa kiwango kikubwa. Kwa ndani, hutumiwa kwa chunusi, pumzi mbaya, maambukizo ya kibofu cha mkojo, sumu ya damu, utakaso wa damu, majipu, fevers, gangrene, maambukizo, uchochezi wa tezi za mamalia, antiseptic ya matumbo, leukopenia (kupunguzwa kwa leukocytes ya damu), ugonjwa wa ugonjwa wa ngozi, ugonjwa wa ngozi, ugonjwa wa ngozi, ugonjwa wa ngozi, ugonjwa wa ngozi, ugonjwa wa ugonjwa wa ngozi, ugonjwa wa ugonjwa wa ngozi, ugonjwa wa ugonjwa wa ngozi, ugonjwa wa ugonjwa wa ngozi, ugonjwa wa sumu, ugonjwa wa sumu, ugonjwa wa uremic, ugonjwa wa ugonjwa, ugonjwa wa ugonjwa wa ngozi, ugonjwa wa vidonda, ugonjwa wa uremic, ugonjwa wa uremic. Kwa nje, hutumiwa kwa majeraha ya wazi na uvimbe wenye uchungu. Echinacea ni dawa bora ya dawa, na safu iliyo na Goldenseal na Red Clover. Imetumika dhidi ya syphilis na kisonono.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is a powerful blood cleanser, and is tolerated by the system in fairly large amounts. Internally, it is used for acne, bad breath, bladder infections, blood poisoning, blood purifier, boils, fevers, gangrene, infections, inflammation of mammary glands, intestinal antiseptic, leukopenia (reduction in blood leukocytes), lymphatic congestion, skin diseases, tonsillitis, uremic poisoning, and venereal disease. Externally, it is used for open wounds and painful swellings. Echinacea is an excellent antibiotic, and ranks with goldenseal and red clover. It has been used against syphilis and gonorrhea."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni safi ya damu, na inavumiliwa na mfumo kwa kiwango kikubwa. Kwa ndani, hutumiwa kwa chunusi, pumzi mbaya, maambukizo ya kibofu cha mkojo, sumu ya damu, utakaso wa damu, majipu, fevers, gangrene, maambukizo, uchochezi wa tezi za mamalia, antiseptic ya matumbo, leukopenia (kupunguzwa kwa leukocytes ya damu), ugonjwa wa ugonjwa wa ngozi, ugonjwa wa ngozi, ugonjwa wa ngozi, ugonjwa wa ngozi, ugonjwa wa ngozi, ugonjwa wa ugonjwa wa ngozi, ugonjwa wa ugonjwa wa ngozi, ugonjwa wa ugonjwa wa ngozi, ugonjwa wa ugonjwa wa ngozi, ugonjwa wa sumu, ugonjwa wa sumu, ugonjwa wa uremic, ugonjwa wa ugonjwa, ugonjwa wa ugonjwa wa ngozi, ugonjwa wa vidonda, ugonjwa wa uremic, ugonjwa wa uremic. Kwa nje, hutumiwa kwa majeraha ya wazi na uvimbe wenye uchungu. Echinacea ni dawa bora ya dawa, na safu iliyo na Goldenseal na Red Clover. Imetumika dhidi ya syphilis na kisonono."
+      }
+    ]
+  },
+  {
+    "id": "herb-flaxseed",
+    "title": "Flaxseed",
+    "contentEn": "This is even more mucilaginous than slippery elm and is good for a variety of problems. Internally, it is used for asthma, bronchitis, catarrh, constipation, coughs, diarrhea, enteritis, flatulence, hemorrhoids, lung and chest problems, pleurisy, and stomach ulcers. In poultices, flaxseed is excellent for sores, boils, inflammations, and tumors. Combine it with slippery elm for boils, oozing sores, and burns. It is also good for all intestinal inflammations.",
+    "contentSw": "Muhtasari\nHii ni mucilaginous zaidi kuliko Elm ya kuteleza na ni nzuri kwa shida mbali mbali. Kwa ndani, hutumiwa kwa pumu, bronchitis, catarrh, kuvimbiwa, kikohozi, kuhara, ertitis, gorofa, hemorrhoids, shida za mapafu na kifua, vidonda vya tumbo, na vidonda vya tumbo. Katika poultices, flaxseed ni bora kwa vidonda, majipu, uchochezi, na tumors. Kuchanganya na elm ya kuteleza kwa majipu, vidonda vya kuoka, na kuchoma. Pia ni nzuri kwa uchochezi wote wa matumbo.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is even more mucilaginous than slippery elm and is good for a variety of problems. Internally, it is used for asthma, bronchitis, catarrh, constipation, coughs, diarrhea, enteritis, flatulence, hemorrhoids, lung and chest problems, pleurisy, and stomach ulcers. In poultices, flaxseed is excellent for sores, boils, inflammations, and tumors. Combine it with slippery elm for boils, oozing sores, and burns. It is also good for all intestinal inflammations."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni mucilaginous zaidi kuliko Elm ya kuteleza na ni nzuri kwa shida mbali mbali. Kwa ndani, hutumiwa kwa pumu, bronchitis, catarrh, kuvimbiwa, kikohozi, kuhara, ertitis, gorofa, hemorrhoids, shida za mapafu na kifua, vidonda vya tumbo, na vidonda vya tumbo. Katika poultices, flaxseed ni bora kwa vidonda, majipu, uchochezi, na tumors. Kuchanganya na elm ya kuteleza kwa majipu, vidonda vya kuoka, na kuchoma. Pia ni nzuri kwa uchochezi wote wa matumbo."
+      }
+    ]
+  },
+  {
+    "id": "herb-ginger",
+    "title": "Ginger",
+    "contentEn": "This is good for bringing heat into the system, stimulating digestion, reversing suppressed menstruation, and scanty urine. Internally, it is used for colds, colon spasms, constipation, contagious diseases, coughs, cramps, indigestion, gas, headache, morning sickness, nausea, sinus congestion, and stomach spasms. Externally, it is used for mumps. Add it to laxative formulas to prevent griping. Taken in frequent doses, it will raise body temperature.",
+    "contentSw": "Muhtasari\nHii ni nzuri kwa kuleta joto ndani ya mfumo, kuchochea digestion, kurudisha nyuma hedhi iliyokandamizwa, na mkojo mdogo. Kwa ndani, hutumiwa kwa homa, spasms za koloni, kuvimbiwa, magonjwa ya kuambukiza, kikohozi, tumbo, kumeza, gesi, maumivu ya kichwa, ugonjwa wa asubuhi, kichefuchefu, msongamano wa sinus, na spasms za tumbo. Kwa nje, hutumiwa kwa mumps. Ongeza kwa fomula za laxative ili kuzuia ujanja. Ikichukuliwa kwa kipimo cha mara kwa mara, itaongeza joto la mwili.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is good for bringing heat into the system, stimulating digestion, reversing suppressed menstruation, and scanty urine. Internally, it is used for colds, colon spasms, constipation, contagious diseases, coughs, cramps, indigestion, gas, headache, morning sickness, nausea, sinus congestion, and stomach spasms. Externally, it is used for mumps. Add it to laxative formulas to prevent griping. Taken in frequent doses, it will raise body temperature."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni nzuri kwa kuleta joto ndani ya mfumo, kuchochea digestion, kurudisha nyuma hedhi iliyokandamizwa, na mkojo mdogo. Kwa ndani, hutumiwa kwa homa, spasms za koloni, kuvimbiwa, magonjwa ya kuambukiza, kikohozi, tumbo, kumeza, gesi, maumivu ya kichwa, ugonjwa wa asubuhi, kichefuchefu, msongamano wa sinus, na spasms za tumbo. Kwa nje, hutumiwa kwa mumps. Ongeza kwa fomula za laxative ili kuzuia ujanja. Ikichukuliwa kwa kipimo cha mara kwa mara, itaongeza joto la mwili."
+      }
+    ]
+  },
+  {
+    "id": "herb-myrrh",
+    "title": "Myrrh",
+    "contentEn": "This is a strong antiseptic, and works well with goldenseal. Mix them in equal parts. Internally, it is used for asthma, bad breath, boils, cankers, chronic catarrh, colitis, coughs, digestive tonic, bleeding gums, herpes, indigestion, infections, leukorrhea, mouth sores, skin disease, thrush, and ulcers. Externally, it is used for cankers, cuts, bleeding gums, leukorrhea, mouth sores, skin disease, thrush, and wounds. Myrrh destroys putrefaction in the intestines and prevents blood absorption of toxins. It is a good wash for wounds and skin diseases. The powder will dry up most skin problems. It is excellent for most problems involving pus, externally or internally. Do not use it in large amounts over a long period of time.",
+    "contentSw": "Muhtasari\nHii ni antiseptic yenye nguvu, na inafanya kazi vizuri na Goldenseal. Mchanganye katika sehemu sawa. Kwa ndani, hutumiwa kwa pumu, pumzi mbaya, majipu, cankers, catarrh sugu, colitis, kikohozi, tonic ya kumengenya, ufizi wa kutokwa na damu, herpes, kumeza, maambukizo, leukorrhea, vidonda vya mdomo, ugonjwa wa ngozi, kutu, na vidonda. Kwa nje, hutumiwa kwa vifungo, kupunguzwa, ufizi wa kutokwa na damu, leukorrhea, vidonda vya mdomo, ugonjwa wa ngozi, kutu, na majeraha. Myrrh huharibu utaftaji wa matumbo na huzuia kunyonya damu kwa sumu. Ni safisha nzuri kwa majeraha na magonjwa ya ngozi. Poda itakauka shida nyingi za ngozi. Ni bora kwa shida nyingi zinazojumuisha PU, nje au ndani. Usitumie kwa kiasi kikubwa kwa muda mrefu.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is a strong antiseptic, and works well with goldenseal. Mix them in equal parts. Internally, it is used for asthma, bad breath, boils, cankers, chronic catarrh, colitis, coughs, digestive tonic, bleeding gums, herpes, indigestion, infections, leukorrhea, mouth sores, skin disease, thrush, and ulcers. Externally, it is used for cankers, cuts, bleeding gums, leukorrhea, mouth sores, skin disease, thrush, and wounds. Myrrh destroys putrefaction in the intestines and prevents blood absorption of toxins. It is a good wash for wounds and skin diseases. The powder will dry up most skin problems. It is excellent for most problems involving pus, externally or internally. Do not use it in large amounts over a long period of time."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni antiseptic yenye nguvu, na inafanya kazi vizuri na Goldenseal. Mchanganye katika sehemu sawa. Kwa ndani, hutumiwa kwa pumu, pumzi mbaya, majipu, cankers, catarrh sugu, colitis, kikohozi, tonic ya kumengenya, ufizi wa kutokwa na damu, herpes, kumeza, maambukizo, leukorrhea, vidonda vya mdomo, ugonjwa wa ngozi, kutu, na vidonda. Kwa nje, hutumiwa kwa vifungo, kupunguzwa, ufizi wa kutokwa na damu, leukorrhea, vidonda vya mdomo, ugonjwa wa ngozi, kutu, na majeraha. Myrrh huharibu utaftaji wa matumbo na huzuia kunyonya damu kwa sumu. Ni safisha nzuri kwa majeraha na magonjwa ya ngozi. Poda itakauka shida nyingi za ngozi. Ni bora kwa shida nyingi zinazojumuisha PU, nje au ndani. Usitumie kwa kiasi kikubwa kwa muda mrefu."
+      }
+    ]
+  },
+  {
+    "id": "herb-skullcap",
+    "title": "Skullcap",
+    "contentEn": "This is very good for almost any nervous problem. Internally, it is used for alcoholism, convulsions, coughs, epilepsy, hysteria, indigestion, insanity, insomnia, nervous tension, and nervous headache. Skullcap has been used to wean people off hard drugs. Combined with ginseng, it is good for alcoholism. Skullcap should be used as fresh as possible, otherwise its activity rather quickly dissipates.",
+    "contentSw": "Muhtasari\nHii ni nzuri sana kwa karibu shida yoyote ya neva. Kwa ndani, hutumiwa kwa ulevi, mshtuko, kikohozi, kifafa, ugonjwa wa mwili, kumeza, ujinga, kukosa usingizi, mvutano wa neva, na maumivu ya kichwa. Skullcap imetumika kuwachosha watu kwenye dawa ngumu. Imechanganywa na ginseng, ni nzuri kwa ulevi. Skullcap inapaswa kutumiwa safi iwezekanavyo, vinginevyo shughuli zake badala ya haraka hutengana.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is very good for almost any nervous problem. Internally, it is used for alcoholism, convulsions, coughs, epilepsy, hysteria, indigestion, insanity, insomnia, nervous tension, and nervous headache. Skullcap has been used to wean people off hard drugs. Combined with ginseng, it is good for alcoholism. Skullcap should be used as fresh as possible, otherwise its activity rather quickly dissipates."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni nzuri sana kwa karibu shida yoyote ya neva. Kwa ndani, hutumiwa kwa ulevi, mshtuko, kikohozi, kifafa, ugonjwa wa mwili, kumeza, ujinga, kukosa usingizi, mvutano wa neva, na maumivu ya kichwa. Skullcap imetumika kuwachosha watu kwenye dawa ngumu. Imechanganywa na ginseng, ni nzuri kwa ulevi. Skullcap inapaswa kutumiwa safi iwezekanavyo, vinginevyo shughuli zake badala ya haraka hutengana."
+      }
+    ]
+  },
+  {
+    "id": "herb-vervain",
+    "title": "Vervain",
+    "contentEn": "This is excellent for inducing sweating and to allay fevers (but large amounts will act as an emetic). Internally, it is used for colds, convulsions, coughs, fevers, headaches, measles, nerve weakness, pain in the bowels, and pleurisy. Externally, it is used for rheumatism, neuralgia, sciatica, and swellings of the spleen. Vervain is good for pneumonia, asthma, and other chest diseases. Put the tea on sores, to aid in healing. Use it for colds, flu, coughs, and upper respiratory inflammations. Now you have the basis for a fine, basic herbal cabinet! Twelve or twenty herbs are good numbers to work with, in keeping your basic herb supply small. If you wish, subtract some from the above list, add more from the following list, or change the list around to meet your special needs. Few of us are in a position to keep a large variety of herbs on hand.",
+    "contentSw": "Muhtasari\nHii ni bora kwa kushawishi jasho na kunyoosha (lakini idadi kubwa itafanya kama emetic). Kwa ndani, hutumiwa kwa homa, kutetemeka, kukohoa, fevers, maumivu ya kichwa, surua, udhaifu wa ujasiri, maumivu kwenye matumbo, na laini. Kwa nje, hutumiwa kwa rheumatism, neuralgia, sciatica, na uvimbe wa wengu. Vervain ni nzuri kwa pneumonia, pumu, na magonjwa mengine ya kifua. Weka chai kwenye vidonda, kusaidia katika uponyaji. Itumie kwa homa, homa, kikohozi, na uchochezi wa juu wa kupumua. Sasa unayo msingi wa baraza la mawaziri la msingi la mitishamba! Mimea kumi na mbili au ishirini ni idadi nzuri ya kufanya kazi nayo, katika kuweka usambazaji wako wa mimea ya msingi. Ikiwa unataka, toa zingine kutoka kwenye orodha hapo juu, ongeza zaidi kutoka kwa orodha ifuatayo, au ubadilishe orodha karibu ili kukidhi mahitaji yako maalum. Wachache wetu wako katika nafasi ya kuweka aina kubwa ya mimea.",
+    "sections": [
+      {
+        "title": "Overview",
+        "body": "This is excellent for inducing sweating and to allay fevers (but large amounts will act as an emetic). Internally, it is used for colds, convulsions, coughs, fevers, headaches, measles, nerve weakness, pain in the bowels, and pleurisy. Externally, it is used for rheumatism, neuralgia, sciatica, and swellings of the spleen. Vervain is good for pneumonia, asthma, and other chest diseases. Put the tea on sores, to aid in healing. Use it for colds, flu, coughs, and upper respiratory inflammations. Now you have the basis for a fine, basic herbal cabinet! Twelve or twenty herbs are good numbers to work with, in keeping your basic herb supply small. If you wish, subtract some from the above list, add more from the following list, or change the list around to meet your special needs. Few of us are in a position to keep a large variety of herbs on hand."
+      }
+    ],
+    "parentId": "herb-the-most-important-herbs",
+    "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
+    "imageMeta": {
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/?curid=40895256",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain",
+      "title": "File:Herb Elliott with son 1960.jpg",
+      "width": 962,
+      "height": 769,
+      "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
+    },
+    "needsReview": false,
+    "sectionsSw": [
+      {
+        "title": "Muhtasari",
+        "body": "Hii ni bora kwa kushawishi jasho na kunyoosha (lakini idadi kubwa itafanya kama emetic). Kwa ndani, hutumiwa kwa homa, kutetemeka, kukohoa, fevers, maumivu ya kichwa, surua, udhaifu wa ujasiri, maumivu kwenye matumbo, na laini. Kwa nje, hutumiwa kwa rheumatism, neuralgia, sciatica, na uvimbe wa wengu. Vervain ni nzuri kwa pneumonia, pumu, na magonjwa mengine ya kifua. Weka chai kwenye vidonda, kusaidia katika uponyaji. Itumie kwa homa, homa, kikohozi, na uchochezi wa juu wa kupumua. Sasa unayo msingi wa baraza la mawaziri la msingi la mitishamba! Mimea kumi na mbili au ishirini ni idadi nzuri ya kufanya kazi nayo, katika kuweka usambazaji wako wa mimea ya msingi. Ikiwa unataka, toa zingine kutoka kwenye orodha hapo juu, ongeza zaidi kutoka kwa orodha ifuatayo, au ubadilishe orodha karibu ili kukidhi mahitaji yako maalum. Wachache wetu wako katika nafasi ya kuweka aina kubwa ya mimea."
+      }
+    ]
   },
   {
     "id": "herb-most-important-herbs",
     "title": "Most Important Herbs",
-    "contentEn": "(A TOTAL OF TWENTY BASIC HERBS) Here are the next eight most important herbs. Added to the above, you will have the twenty most important herbs. 13 - CATNIP—This is wonderful for children and infants when gas, stomach cramps, or nervousness occur. This is the children's herb, but it is also helpful to grown-ups. Internally, it is used for colds, bronchitis, dizziness, fevers, gas, diarrhea, headaches, hysteria, insomnia, morning sickness, mumps, smallpox, and urine retention. Externally, it is used for constipation, mumps, and painful swellings. Use catnip as an enema to expel worms. Drink the tea for headaches caused by indigestion. 14 - COMFREY—This is an all-around good remedy. Internally, it is used for anemia, arthritis, asthma, internal bleeding, blood purifier, bronchitis, calcium deficiency, colitis, coughs, diarrhea, dysentery, emphysema, gall bladder inflammation. Externally, it is used for boils, bruises, burns, psoriasis, and sprains. Comfrey is excellent for dysentery; one of the best for internal bleeding; excellent for coughs; catarrh; ulcerated bowels, stomach, and lungs. Bruise the fresh leaves and apply as a poultice to wounds, burns, open sores, gangrene, and moist ulcers. The tea can also be put on them. Keep some growing in your garden. Once established, it will keep coming up year after year. 15 - ECHINACEA—This is a powerful blood cleanser, and is tolerated by the system in fairly large amounts. Internally, it is used for acne, bad breath, bladder infections, blood poisoning, blood purifier, boils, fevers, gangrene, infections, inflammation of mammary glands, intestinal antiseptic, leukopenia (reduction in blood leukocytes), lymphatic congestion, skin diseases, tonsillitis, uremic poisoning, and venereal disease. Externally, it is used for open wounds and painful swellings. Echinacea is an excellent antibiotic, and ranks with goldenseal and red clover. It has been used against syphilis and gonorrhea. 16 - FLAXSEED—This is even more mucilaginous than slippery elm and is good for a variety of problems. Internally, it is used for asthma, bronchitis, catarrh, constipation, coughs, diarrhea, enteritis, flatulence, hemorrhoids, lung and chest problems, pleurisy, and stomach ulcers. In poultices, flaxseed is excellent for sores, boils, inflammations, and tumors. Combine it with slippery elm for boils, oozing sores, and burns. It is also good for all intestinal inflammations. 17 - GINGER—This is good for bringing heat into the system, stimulating digestion, reversing suppressed menstruation, and scanty urine. Internally, it is used for colds, colon spasms, constipation, contagious diseases, coughs, cramps, indigestion, gas, headache, morning sickness, nausea, sinus congestion, and stomach spasms. Externally, it is used for mumps. Add it to laxative formulas to prevent griping. Taken in frequent doses, it will raise body temperature. 18 - MYRRH—This is a strong antiseptic, and works well with goldenseal. Mix them in equal parts. Internally, it is used for asthma, bad breath, boils, cankers, chronic catarrh, colitis, coughs, digestive tonic, bleeding gums, herpes, indigestion, infections, leukorrhea, mouth sores, skin disease, thrush, and ulcers. Externally, it is used for cankers, cuts, bleeding gums, leukorrhea, mouth sores, skin disease, thrush, and wounds. Myrrh destroys putrefaction in the intestines and prevents blood absorption of toxins. It is a good wash for wounds and skin diseases. The powder will dry up most skin problems. It is excellent for most problems involving pus, externally or internally. Do not use it in large amounts over a long period of time. 19 - SKULLCAP—This is very good for almost any nervous problem. Internally, it is used for alcoholism, convulsions, coughs, epilepsy, hysteria, indigestion, insanity, insomnia, nervous tension, and nervous headache. Skullcap has been used to wean people off hard drugs. Combined with ginseng, it is good for alcoholism. Skullcap should be used as fresh as possible, otherwise its activity rather quickly dissipates. 20 - VERVAIN—This is excellent for inducing sweating and to allay fevers (but large amounts will act as an emetic). Internally, it is used for colds, convulsions, coughs, fevers, headaches, measles, nerve weakness, pain in the bowels, and pleurisy. Externally, it is used for rheumatism, neuralgia, sciatica, and swellings of the spleen. Vervain is good for pneumonia, asthma, and other chest diseases. Put the tea on sores, to aid in healing. Use it for colds, flu, coughs, and upper respiratory inflammations. Now you have the basis for a fine, basic herbal cabinet! Twelve or twenty herbs are good numbers to work with, in keeping your basic herb supply small. If you wish, subtract some from the above list, add more from the following list, or change the list around to meet your special needs. Few of us are in a position to keep a large variety of herbs on hand.",
+    "contentEn": "(A TOTAL OF TWENTY BASIC HERBS) Here are the next eight most important herbs.…",
     "contentSw": "(Jumla ya mimea sitini ya sitini) hapa kuna mimea kumi ijayo zaidi, jumla ya sitini kwa wote. Hizi kumi za mwisho zimetolewa kupanua, kwa upana kamili, idadi ya shida ambazo unaweza kutumia mimea kushughulikia. Lakini katika kazi yako yote na mimea, kumbuka kuwa kupumzika, kufunga, lishe nyepesi, na matibabu kadhaa ya maji ni muhimu zaidi kuliko tiba ya mitishamba katika kutibu magonjwa mengi.",
     "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
     "imageMeta": {
@@ -48,12 +670,13 @@
       "width": 962,
       "height": 769,
       "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "herb-most-important-herbs",
     "title": "Most Important Herbs",
-    "contentEn": "(A TOTAL OF FIFTY BASIC HERBS) The above set of herbs deal with a wide variety of diseases, which a family might encounter. But there are special problems which one or more of the following would be needed for (example: eyebright for the eyes; squaw vine and wild yam for female problems). Here are the next thirty most important herbs. This brings the total up to the fifty most important herbs.",
+    "contentEn": "(A TOTAL OF FIFTY BASIC HERBS) The above set of herbs deal with a wide variety of diseases, which a family might encounter.…",
     "contentSw": "(Jumla ya mimea sitini ya sitini) hapa kuna mimea kumi ijayo zaidi, jumla ya sitini kwa wote. Hizi kumi za mwisho zimetolewa kupanua, kwa upana kamili, idadi ya shida ambazo unaweza kutumia mimea kushughulikia. Lakini katika kazi yako yote na mimea, kumbuka kuwa kupumzika, kufunga, lishe nyepesi, na matibabu kadhaa ya maji ni muhimu zaidi kuliko tiba ya mitishamba katika kutibu magonjwa mengi.",
     "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
     "imageMeta": {
@@ -65,7 +688,8 @@
       "width": 962,
       "height": 769,
       "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "herb-barberry-pleurisy",
@@ -76,7 +700,7 @@
     "imageMeta": {
       "credit": "Fallback image"
     },
-    "needsReview": true,
+    "needsReview": false,
     "missingFields": [
       "too_short"
     ]
@@ -97,7 +721,7 @@
       "height": 3336,
       "credit": "File:On a burdock leaf by the pond - Flickr - conall...jpg — Conall from Downpatrick, Northern Ireland (CC BY 2.0) via Wikimedia Commons"
     },
-    "needsReview": true,
+    "needsReview": false,
     "missingFields": [
       "too_short"
     ]
@@ -111,7 +735,7 @@
     "imageMeta": {
       "credit": "Fallback image"
     },
-    "needsReview": true,
+    "needsReview": false,
     "missingFields": [
       "too_short"
     ]
@@ -125,7 +749,7 @@
     "imageMeta": {
       "credit": "Fallback image"
     },
-    "needsReview": true,
+    "needsReview": false,
     "missingFields": [
       "too_short"
     ]
@@ -146,7 +770,7 @@
       "height": 2432,
       "credit": "File:An eyebright (Grubigstein) (24517727791).jpg — David Short from Windsor, UK (CC BY 2.0) via Wikimedia Commons"
     },
-    "needsReview": true,
+    "needsReview": false,
     "missingFields": [
       "too_short"
     ]
@@ -167,7 +791,7 @@
       "height": 3149,
       "credit": "File:Restaurant Amigos de Acapulco (window), Chico.jpg — Photograph:  Radomianin (Public domain) via Wikimedia Commons"
     },
-    "needsReview": true,
+    "needsReview": false,
     "missingFields": [
       "too_short"
     ]
@@ -175,7 +799,7 @@
   {
     "id": "herb-most-important-herbs",
     "title": "Most Important Herbs",
-    "contentEn": "(A TOTAL OF SIXTY BASIC HERBS) Here are the next ten most important herbs, totaling sixty in all. These last ten are provided to widen, to full width, the number of problems which you can use herbs to deal with. But in all your work with herbs, keep in mind that rest, fasting, a light nourishing diet, and some water treatments are far more important than herbal remedies in treating most illnesses.",
+    "contentEn": "(A TOTAL OF SIXTY BASIC HERBS) Here are the next ten most important herbs, totaling sixty in all.…",
     "contentSw": "(Jumla ya mimea sitini ya sitini) hapa kuna mimea kumi ijayo zaidi, jumla ya sitini kwa wote. Hizi kumi za mwisho zimetolewa kupanua, kwa upana kamili, idadi ya shida ambazo unaweza kutumia mimea kushughulikia. Lakini katika kazi yako yote na mimea, kumbuka kuwa kupumzika, kufunga, lishe nyepesi, na matibabu kadhaa ya maji ni muhimu zaidi kuliko tiba ya mitishamba katika kutibu magonjwa mengi.",
     "image": "assets/images/articles_jpg/herb-most-important-herbs.jpg",
     "imageMeta": {
@@ -187,7 +811,8 @@
       "width": 962,
       "height": 769,
       "credit": "File:Herb Elliott with son 1960.jpg — Unknown (Mondadori Publishers) (Public domain) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "herb-blessed",
@@ -205,7 +830,7 @@
       "height": 5304,
       "credit": "File:Tübingen - Altstadt - Stiftskirche - Chorraum - Gewölbe - Schlussstein Madonna mit Kind.jpg — Roman Eisele (CC BY-SA 4.0) via Wikimedia Commons"
     },
-    "needsReview": true,
+    "needsReview": false,
     "missingFields": [
       "too_short"
     ]
@@ -226,7 +851,7 @@
       "height": 3024,
       "credit": "File:Chocolate Coated Marshmallows @ Melba’s Chocolate Factory 7Aug23.jpg — RegionVisitor90 (CC BY-SA 4.0) via Wikimedia Commons"
     },
-    "needsReview": true,
+    "needsReview": false,
     "missingFields": [
       "too_short"
     ]
@@ -247,7 +872,7 @@
       "height": 3766,
       "credit": "File:Anchusa officinalis.jpg — Petar Milošević (CC BY-SA 4.0) via Wikimedia Commons"
     },
-    "needsReview": true,
+    "needsReview": false,
     "missingFields": [
       "too_short"
     ]
@@ -268,7 +893,7 @@
       "height": 3000,
       "credit": "File:First making honey ginseng in home.jpg — Peachyeung316 (CC BY-SA 4.0) via Wikimedia Commons"
     },
-    "needsReview": true,
+    "needsReview": false,
     "missingFields": [
       "too_short"
     ]
@@ -281,7 +906,8 @@
     "image": "assets/images/fallbacks/herb.jpg",
     "imageMeta": {
       "credit": "Fallback image"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "herb-the-preparation-of-herbs",
@@ -298,7 +924,8 @@
       "width": 5504,
       "height": 8256,
       "credit": "File:Neottia nidus-avis buds - Keila.jpg — Ivar Leidus (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "herb-nine-useful-poultices",
@@ -308,7 +935,8 @@
     "image": "assets/images/fallbacks/herb.jpg",
     "imageMeta": {
       "credit": "Fallback image"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "herb-the-healing-crisis",
@@ -325,7 +953,8 @@
       "width": 4608,
       "height": 3456,
       "credit": "File:4051Typhoon Vamco crisis intervention Hagonoy, Bulacan 01.jpg — Judgefloro (CC0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "herb-water-therapy-principles",
@@ -342,7 +971,8 @@
       "width": 1672,
       "height": 2072,
       "credit": "File:Principles of electro-medicine, electrosurgery and radiology - a practical treatise for students and practitioners. With chapters on mechanical vibration and blood pressure technique (1917) (14760884655).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "herb-the-use-of-drugs",
@@ -359,7 +989,8 @@
       "width": 960,
       "height": 720,
       "credit": "File:Finding Drugs in the Body.jpg — Yu-Hsuan Chen (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   },
   {
     "id": "herb-the-air-you-breathe",
@@ -376,6 +1007,7 @@
       "width": 5874,
       "height": 3916,
       "credit": "File:Breathe Air Collective Evapotree 01.jpg — Clemens Stockner (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "needsReview": false
   }
 ]
