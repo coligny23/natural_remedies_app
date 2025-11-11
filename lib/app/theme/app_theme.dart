@@ -1,4 +1,5 @@
 // lib/app/theme/app_theme.dart
+import 'dart:ui' show ImageFilter;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -24,6 +25,12 @@ class AppTheme {
     final text = _textTheme(base.textTheme);
 
     return base.copyWith(
+      // NEW: register theme extensions
+      extensions: <ThemeExtension<dynamic>>[
+        const AppElevations(small: 3, base: 8, high: 18, modal: 24),
+        GlossyCardTheme.light(scheme),
+      ],
+
       scaffoldBackgroundColor: scheme.surface,
       textTheme: text,
       visualDensity: VisualDensity.standard,
@@ -71,8 +78,7 @@ class AppTheme {
         ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
-        style: OutlinedButton.styleFrom(
-          minimumSize: const Size(48, 48)),
+        style: OutlinedButton.styleFrom(minimumSize: const Size(48, 48)),
       ),
 
       // Cards (polished, “small but classy”)
@@ -117,6 +123,12 @@ class AppTheme {
     final text = _textTheme(base.textTheme);
 
     return base.copyWith(
+      // NEW: register theme extensions
+      extensions: <ThemeExtension<dynamic>>[
+        const AppElevations(small: 3, base: 8, high: 18, modal: 24),
+        GlossyCardTheme.dark(scheme),
+      ],
+
       textTheme: text,
       visualDensity: VisualDensity.standard,
 
@@ -163,8 +175,7 @@ class AppTheme {
         ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
-        style: OutlinedButton.styleFrom(
-          minimumSize: const Size(48, 48)),
+        style: OutlinedButton.styleFrom(minimumSize: const Size(48, 48)),
       ),
 
       // Cards
@@ -209,4 +220,142 @@ class AppTheme {
       bodyLarge: GoogleFonts.inter(fontSize: 16, height: 1.45),
     );
   }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               THEME EXTENSIONS                             */
+/* -------------------------------------------------------------------------- */
+
+@immutable
+class AppElevations extends ThemeExtension<AppElevations> {
+  final double small; // tiny decoration lifts
+  final double base;  // default “card”
+  final double high;  // hero cards / key accents
+  final double modal; // drawers/overlays/fabs
+
+  const AppElevations({
+    required this.small,
+    required this.base,
+    required this.high,
+    required this.modal,
+  });
+
+  @override
+  AppElevations copyWith({double? small, double? base, double? high, double? modal}) {
+    return AppElevations(
+      small: small ?? this.small,
+      base: base ?? this.base,
+      high: high ?? this.high,
+      modal: modal ?? this.modal,
+    );
+  }
+
+  @override
+  AppElevations lerp(ThemeExtension<AppElevations>? other, double t) {
+    if (other is! AppElevations) return this;
+    double _l(double a, double b) => a + (b - a) * t;
+    return AppElevations(
+      small: _l(small, other.small),
+      base: _l(base, other.base),
+      high: _l(high, other.high),
+      modal: _l(modal, other.modal),
+    );
+    }
+}
+
+@immutable
+class GlossyCardTheme extends ThemeExtension<GlossyCardTheme> {
+  final Gradient headerGradient; // for “hero” headers
+  final Color surface;           // card body surface
+  final Color border;            // subtle outline
+  final List<BoxShadow> shadows;
+  final BorderRadius borderRadius;
+  final double blurSigma;        // used with BackdropFilter for glassy feel
+
+  const GlossyCardTheme({
+    required this.headerGradient,
+    required this.surface,
+    required this.border,
+    required this.shadows,
+    required this.borderRadius,
+    required this.blurSigma,
+  });
+
+  factory GlossyCardTheme.light(ColorScheme s) => GlossyCardTheme(
+        headerGradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            s.primary.withOpacity(.14),
+            s.tertiary.withOpacity(.10),
+          ],
+        ),
+        surface: s.surfaceContainerHighest,
+        border: s.outlineVariant,
+        shadows: [
+          BoxShadow(color: Colors.black.withOpacity(.06), blurRadius: 16, offset: const Offset(0, 8)),
+        ],
+        borderRadius: const BorderRadius.all(Radius.circular(AppTokens.rXl)),
+        blurSigma: 10,
+      );
+
+  factory GlossyCardTheme.dark(ColorScheme s) => GlossyCardTheme(
+        headerGradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            s.primary.withOpacity(.24),
+            s.tertiary.withOpacity(.20),
+          ],
+        ),
+        surface: s.surfaceContainerHighest,
+        border: s.outlineVariant.withOpacity(.7),
+        shadows: [
+          BoxShadow(color: Colors.black.withOpacity(.24), blurRadius: 20, offset: const Offset(0, 10)),
+        ],
+        borderRadius: const BorderRadius.all(Radius.circular(AppTokens.rXl)),
+        blurSigma: 12,
+      );
+
+  @override
+  GlossyCardTheme copyWith({
+    Gradient? headerGradient,
+    Color? surface,
+    Color? border,
+    List<BoxShadow>? shadows,
+    BorderRadius? borderRadius,
+    double? blurSigma,
+  }) {
+    return GlossyCardTheme(
+      headerGradient: headerGradient ?? this.headerGradient,
+      surface: surface ?? this.surface,
+      border: border ?? this.border,
+      shadows: shadows ?? this.shadows,
+      borderRadius: borderRadius ?? this.borderRadius,
+      blurSigma: blurSigma ?? this.blurSigma,
+    );
+  }
+
+  @override
+  GlossyCardTheme lerp(ThemeExtension<GlossyCardTheme>? other, double t) {
+    if (other is! GlossyCardTheme) return this;
+    return this; // gradients/shadows don’t lerp nicely—keep simple.
+  }
+
+  /// Convenience: build a decoration for “glossy” bodies.
+  BoxDecoration bodyDecoration() => BoxDecoration(
+        color: surface,
+        borderRadius: borderRadius,
+        border: Border.all(color: border),
+        boxShadow: shadows,
+      );
+
+  /// Convenience: header container with gradient and rounded top corners.
+  BoxDecoration headerDecoration() => BoxDecoration(
+        gradient: headerGradient,
+        borderRadius: BorderRadius.only(
+          topLeft: borderRadius.topLeft,
+          topRight: borderRadius.topRight,
+        ),
+      );
 }

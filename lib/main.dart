@@ -4,6 +4,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 
+import 'package:google_fonts/google_fonts.dart';
 import 'app/routing/app_router.dart';
 import 'app/theme/app_theme.dart';
 import 'features/search/search_providers.dart'; // <-- for languageCodeProvider
