@@ -14,6 +14,8 @@ import 'package:hive_flutter/hive_flutter.dart';
 import '../../features/search/search_screen.dart'; // <- was search_screen.dart
 import '../../features/saved/saved_screen.dart';
 import '../../features/settings/settings_screen.dart';
+import '../../features/diseases/ui/diseases_hub_screen.dart';
+import '../../features/diseases/ui/disease_group_list_screen.dart';
 
 final appRouter = GoRouter(
     routes: [
@@ -58,6 +60,14 @@ final appRouter = GoRouter(
               final section = state.uri.queryParameters['section'];
               return ContentDetailScreen(id: id, initialSection: section);
             },
+          ),
+          GoRoute(
+            path: '/diseases',
+            builder: (ctx, st) => const DiseasesHubScreen(),
+          ),
+          GoRoute(
+            path: '/diseases/:group',
+            builder: (ctx, st) => DiseaseGroupListScreen(groupName: st.pathParameters['group']!),
           ),
 
           GoRoute(

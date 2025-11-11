@@ -12,6 +12,9 @@ import '../progress/streak_providers.dart';
 import '../content/models/content_item.dart';
 import '../search/search_providers.dart'; // contentListProvider, languageCodeProvider
 
+// theme extensions (gloss, elevation)
+import '../../app/theme/app_theme.dart';
+
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
@@ -48,9 +51,18 @@ class HomeScreen extends ConsumerWidget {
               ),
             ],
           ),
+
           body: ListView(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
             children: [
+              // ⭐️ HERO HEADER BAND
+              _HeroHeader(
+                onSearch: () => context.go('/search'),
+                onOpenDiseases: () => context.go('/diseases'),
+                onOpenRemedies: () => context.go('/remedies'),
+              ),
+              const SizedBox(height: 12),
+
               // ✅ Continue learning panel stays on top
               const ContinueLearningCard(),
               const SizedBox(height: 12),
@@ -86,7 +98,7 @@ class HomeScreen extends ConsumerWidget {
                   onTap: () => context.go('/article/${principle.id}'),
                 ),
 
-              const SizedBox(height: 16),
+              const SizedBox(height: 24),
             ],
           ),
         );
@@ -179,9 +191,112 @@ class _QuizController extends StateNotifier<_QuizState> {
   }
 }
 
-/* -------------------- UI Cards -------------------- */
+/* -------------------- UI: Hero Header -------------------- */
 
-class _HomeCard extends StatelessWidget {
+class _HeroHeader extends StatelessWidget {
+  final VoidCallback onSearch;
+  final VoidCallback onOpenDiseases;
+  final VoidCallback onOpenRemedies;
+
+  const _HeroHeader({
+    required this.onSearch,
+    required this.onOpenDiseases,
+    required this.onOpenRemedies,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final s = Theme.of(context).colorScheme;
+    final glossy = Theme.of(context).extension<GlossyCardTheme>()!;
+    final elev = Theme.of(context).extension<AppElevations>()!;
+
+    return Container(
+      decoration: glossy.headerDecoration().copyWith(
+        boxShadow: glossy.shadows
+            .map((sh) => sh.copyWith(blurRadius: sh.blurRadius + elev.high))
+            .toList(),
+      ),
+      padding: const EdgeInsets.fromLTRB(16, 18, 16, 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Title + supporting line
+          Text(
+            'Your daily natural health companion',
+            style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                  fontWeight: FontWeight.w800,
+                  letterSpacing: -0.2,
+                ),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            'Remedies • Principles • Guided learning',
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: s.onSurface.withOpacity(.75),
+                ),
+          ),
+          const SizedBox(height: 12),
+          // Quick actions
+          Row(
+            children: [
+              _PillButton(
+                icon: Icons.search,
+                label: 'Search',
+                onTap: onSearch,
+              ),
+              const SizedBox(width: 10),
+              _PillButton(
+                icon: Icons.medication,
+                label: 'Diseases',
+                onTap: onOpenDiseases,
+              ),
+              const SizedBox(width: 10),
+              _PillButton(
+                icon: Icons.spa,
+                label: 'Remedies',
+                onTap: onOpenRemedies,
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _PillButton extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final VoidCallback onTap;
+  const _PillButton({required this.icon, required this.label, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final s = Theme.of(context).colorScheme;
+    return Material(
+      color: s.secondaryContainer.withOpacity(.6),
+      shape: const StadiumBorder(),
+      child: InkWell(
+        onTap: onTap,
+        customBorder: const StadiumBorder(),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+          child: Row(
+            children: [
+              Icon(icon, size: 18, color: s.onSecondaryContainer),
+              const SizedBox(width: 8),
+              Text(label, style: TextStyle(color: s.onSecondaryContainer, fontWeight: FontWeight.w600)),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/* -------------------- UI Cards (Glass + Motion) -------------------- */
+
+class _HomeCard extends StatefulWidget {
   final String title;
   final String subtitle;
   final String? image;
@@ -197,81 +312,110 @@ class _HomeCard extends StatelessWidget {
   });
 
   @override
+  State<_HomeCard> createState() => _HomeCardState();
+}
+
+class _HomeCardState extends State<_HomeCard> {
+  bool _pressed = false;
+
+  @override
   Widget build(BuildContext context) {
+    final glossy = Theme.of(context).extension<GlossyCardTheme>()!;
+    final elev = Theme.of(context).extension<AppElevations>()!;
     final scheme = Theme.of(context).colorScheme;
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(16),
-      child: Container(
-        decoration: BoxDecoration(
-          color: scheme.surface,
-          borderRadius: BorderRadius.circular(16),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.06),
-              blurRadius: 10,
-              offset: const Offset(0, 6),
-            )
-          ],
-        ),
-        child: Stack(
-          children: [
-            // gradient spine on the left
-            Positioned(
-                left: 0, top: 0, bottom: 0,
-                child: Container(
-                  width: 6,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [color, color.withOpacity(0.6)],
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
+
+    return AnimatedScale(
+      duration: AppTokens.short,
+      scale: _pressed ? 0.985 : 1.0,
+      child: InkWell(
+        onTap: widget.onTap,
+        onTapDown: (_) => setState(() => _pressed = true),
+        onTapCancel: () => setState(() => _pressed = false),
+        onTapUp: (_) => setState(() => _pressed = false),
+        borderRadius: glossy.borderRadius,
+        child: AnimatedContainer(
+          duration: AppTokens.medium,
+          decoration: glossy.bodyDecoration().copyWith(
+            // add a slim accent spine
+            gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: [
+                widget.color.withOpacity(.35),
+                glossy.surface.withOpacity(.90),
+              ],
+            ),
+            boxShadow: glossy.shadows
+                .map((sh) => sh.copyWith(
+                      blurRadius: (_pressed ? elev.small : elev.base) + sh.blurRadius,
+                    ))
+                .toList(),
+          ),
+          child: Stack(
+            children: [
+              // Optional subtle image shimmer/clip
+              if ((widget.image ?? '').isNotEmpty)
+                Positioned(
+                  right: 10,
+                  top: 10,
+                  bottom: 10,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(16),
+                    child: Image.asset(
+                      widget.image!,
+                      width: 92,
+                      fit: BoxFit.cover,
+                      errorBuilder: (_, __, ___) =>
+                          const SizedBox(width: 92, child: Icon(Icons.image_not_supported)),
                     ),
-                    borderRadius: const BorderRadius.horizontal(left: Radius.circular(16)),
                   ),
                 ),
-              ),
-
-            Padding(
-              padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
-              child: Row(
-                children: [
-                  if ((image ?? '').isNotEmpty)
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(12),
-                      child: Image.asset(
-                        image!,
-                        width: 72, height: 72, fit: BoxFit.cover,
-                        errorBuilder: (_, __, ___) => const SizedBox(
-                          width: 72, height: 72, child: Icon(Icons.image_not_supported),
-                        ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+                child: Row(
+                  children: [
+                    // Leading accent chip
+                    Container(
+                      width: 10,
+                      height: 48,
+                      decoration: BoxDecoration(
+                        color: widget.color.withOpacity(.85),
+                        borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                  if ((image ?? '').isNotEmpty) const SizedBox(width: 12),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(title, style: Theme.of(context).textTheme.titleMedium?.copyWith(letterSpacing: 0.2)),
-                        const SizedBox(height: 6),
-                        Text(
-                          subtitle,
-                          style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w700),
-                        ),
-                      ],
+                    const SizedBox(width: 12),
+                    // Titles
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(widget.title,
+                              style: Theme.of(context).textTheme.titleMedium?.copyWith(letterSpacing: 0.2)),
+                          const SizedBox(height: 6),
+                          Text(
+                            widget.subtitle,
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                                  fontWeight: FontWeight.w800,
+                                  letterSpacing: -.1,
+                                ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  const Icon(Icons.arrow_forward_ios, size: 16),
-                ],
+                    const SizedBox(width: 8),
+                    Icon(Icons.arrow_forward_ios, size: 16, color: scheme.onSurface.withOpacity(.6)),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
   }
 }
-
 
 class _QuizCard extends StatelessWidget {
   final _QuizState state;
@@ -289,9 +433,15 @@ class _QuizCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final herbTitle = state.herb?.title ?? '';
-    return Card(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-      color: Theme.of(context).colorScheme.secondaryContainer,
+    final glossy = Theme.of(context).extension<GlossyCardTheme>()!;
+    final elev = Theme.of(context).extension<AppElevations>()!;
+
+    return Container(
+      decoration: glossy.bodyDecoration().copyWith(
+        boxShadow: glossy.shadows
+            .map((s) => s.copyWith(blurRadius: s.blurRadius + elev.base))
+            .toList(),
+      ),
       child: Padding(
         padding: const EdgeInsets.all(12),
         child: Column(
@@ -325,8 +475,8 @@ class _QuizCard extends StatelessWidget {
                   Expanded(
                     child: Text(
                       state.selected == state.correct
-                        ? 'Correct!'
-                        : 'Not quite. The correct answer is highlighted above.',
+                          ? 'Correct!'
+                          : 'Not quite. The correct answer is highlighted above.',
                     ),
                   ),
                 ],
@@ -347,3 +497,12 @@ class _QuizCard extends StatelessWidget {
     );
   }
 }
+
+/* -------------------- Design tokens used in animations -------------------- */
+
+class AppTokens {
+  static const short = Duration(milliseconds: 150);
+  static const medium = Duration(milliseconds: 220);
+}
+
+

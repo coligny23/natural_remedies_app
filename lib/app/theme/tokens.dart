@@ -17,9 +17,9 @@ class AppTokens {
   static const r2Xl = 24.0; // modals
 
   // Motion
-  static const short = Duration(milliseconds: 150);
-  static const medium = Duration(milliseconds: 220);
+  static const s0 = 4.0; // tiny spacing
+  static const long = Duration(milliseconds: 320);
 
   // Color seed (pick one accent and keep it)
-  static const seed = Color(0xFF0EA5A4); // teal-ish
+  static const seed = Color(0xFF1EA37A); // fresh green-teal (optional)
 }

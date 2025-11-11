@@ -5,6 +5,8 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:flutter/services.dart' show Clipboard, ClipboardData;
 import '../../progress/progress_tracker.dart';
+import '../../../app/theme/app_theme.dart'; // AppElevations, GlossyCardTheme
+
 
 
 
@@ -52,6 +54,9 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
   Widget build(BuildContext context) {
     final itemsAsync = ref.watch(contentListProvider);
     final lang = ref.watch(languageCodeProvider);
+    final glossy = Theme.of(context).extension<GlossyCardTheme>()!;
+    final elev   = Theme.of(context).extension<AppElevations>()!;
+
 
     return itemsAsync.when(
       loading: () => const Scaffold(body: Center(child: CircularProgressIndicator())),
@@ -152,16 +157,17 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
                           Hero(
                             tag: 'article-image-${item.id}', // MUST match the tag from the Search thumbnail
                             child: ClipRRect(
-                              borderRadius: BorderRadius.circular(12),
-                              child: Image.asset(
-                                item.image!,
-                                height: 220,
-                                width: double.infinity,
-                                fit: BoxFit.cover,
-                                errorBuilder: (_, __, ___) =>
-                                    const SizedBox(height: 220, child: Center(child: Icon(Icons.image_not_supported))),
+                                borderRadius: glossy.borderRadius,
+                                child: Image.asset(
+                                  item.image!,
+                                  height: 220,
+                                  width: double.infinity,
+                                  fit: BoxFit.cover,
+                                  errorBuilder: (_, __, ___) =>
+                                      const SizedBox(height: 220, child: Center(child: Icon(Icons.image_not_supported))),
+                                ),
                               ),
-                            ),
+
                           ),
                           const SizedBox(height: 8),
                           if (credit != null && credit.trim().isNotEmpty)
@@ -226,92 +232,83 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen> {
                               return const SizedBox.shrink();
                             }
 
-                            return Card(
-                            elevation: 4,
-                            margin: const EdgeInsets.only(bottom: 12),
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-                            child: Theme(
-                              // hide the default thin divider between panels
-                              data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
-                              child: ExpansionPanelList.radio(
-                                animationDuration: const Duration(milliseconds: 220),
-                                expandedHeaderPadding: EdgeInsets.zero,
-                                elevation: 0,
-                                initialOpenPanelValue: ordered.contains(_Bucket.treatment)
-                                    ? 'bucket-${_Bucket.treatment}'
-                                    : 'bucket-${ordered.first}',
-                                children: [
-                                  for (final b in ordered)
-                                    ExpansionPanelRadio(
-                                      value: 'bucket-$b',
-                                      canTapOnHeader: true,
-                                      headerBuilder: (ctx, isOpen) {
-                                        final grad = _bucketGradient(context, b);
-                                        final on = _onHeader(context);
-                                        return ClipRRect(
-                                          borderRadius: const BorderRadius.vertical(
-                                            top: Radius.circular(14),
-                                          ),
-                                          child: Container(
-                                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                                            decoration: BoxDecoration(
-                                              gradient: LinearGradient(
-                                                begin: Alignment.topLeft,
-                                                end: Alignment.bottomRight,
-                                                colors: grad,
+                            return Container(
+                                margin: const EdgeInsets.only(bottom: 12),
+                                decoration: glossy.bodyDecoration().copyWith(
+                                  // give it a smidge more lift using your elevation scale
+                                  boxShadow: glossy.shadows.map((s) => s.copyWith(blurRadius: s.blurRadius + elev.base)).toList(),
+                                ),
+                                child: Theme(
+                                  data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+                                  child: ExpansionPanelList.radio(
+                                    animationDuration: const Duration(milliseconds: 220),
+                                    expandedHeaderPadding: EdgeInsets.zero,
+                                    elevation: 0,
+                                    initialOpenPanelValue: ordered.contains(_Bucket.treatment)
+                                        ? 'bucket-${_Bucket.treatment}'
+                                        : 'bucket-${ordered.first}',
+                                    children: [
+                                      for (final b in ordered)
+                                        ExpansionPanelRadio(
+                                          value: 'bucket-$b',
+                                          canTapOnHeader: true,
+                                          headerBuilder: (ctx, isOpen) {
+                                            final on = _onHeader(context);
+                                            // Use glossy gradient for panel header
+                                            return ClipRRect(
+                                              borderRadius: const BorderRadius.vertical(top: Radius.circular(20)), // safe top rounding
+                                              child: Container(
+                                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                                                decoration: glossy.headerDecoration(),
+                                                child: Row(
+                                                  children: [
+                                                    Container(
+                                                      decoration: BoxDecoration(
+                                                        color: on.withOpacity(0.12),
+                                                        borderRadius: BorderRadius.circular(10),
+                                                      ),
+                                                      padding: const EdgeInsets.all(8),
+                                                      child: Icon(_bucketIcon(b), color: on, size: 20),
+                                                    ),
+                                                    const SizedBox(width: 12),
+                                                    Expanded(
+                                                      child: Text(
+                                                        _bucketTitleLocalized(b, lang),
+                                                        style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                                                              color: on,
+                                                              fontWeight: FontWeight.w700,
+                                                              letterSpacing: 0.2,
+                                                            ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                            );
+                                          },
+                                          // glossy body
+                                          body: AnimatedContainer(
+                                            duration: const Duration(milliseconds: 180),
+                                            curve: Curves.easeOut,
+                                            decoration: glossy.bodyDecoration().copyWith(
+                                              // keep only a gentle inner lift
+                                              boxShadow: glossy.shadows.map((s) => s.copyWith(blurRadius: s.blurRadius + elev.small)).toList(),
+                                              borderRadius: const BorderRadius.vertical(bottom: Radius.circular(20)),
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
+                                              child: _FancyBody(
+                                                paragraphs: buckets[b]!,
+                                                accent: _bucketGradient(context, b).first,
                                               ),
                                             ),
-                                            child: Row(
-                                              children: [
-                                                Container(
-                                                  decoration: BoxDecoration(
-                                                    color: on.withOpacity(0.12),
-                                                    borderRadius: BorderRadius.circular(10),
-                                                  ),
-                                                  padding: const EdgeInsets.all(8),
-                                                  child: Icon(_bucketIcon(b), color: on, size: 20),
-                                                ),
-                                                const SizedBox(width: 12),
-                                                Expanded(
-                                                  child: Text(
-                                                    _bucketTitleLocalized(b, lang),
-                                                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                                                          color: on,
-                                                          fontWeight: FontWeight.w700,
-                                                          letterSpacing: 0.2,
-                                                        ),
-                                                  ),
-                                                ),
-                                                // ← Do NOT add a trailing icon; ExpansionPanel draws its own
-                                              ],
-                                            ),
                                           ),
-                                        );
-                                      },
-                                      body: AnimatedContainer(
-                                        duration: const Duration(milliseconds: 180),
-                                        curve: Curves.easeOut,
-                                        decoration: BoxDecoration(
-                                          color: Theme.of(context).colorScheme.surface.withOpacity(0.90),
-                                          borderRadius: const BorderRadius.vertical(bottom: Radius.circular(14)),
-                                          boxShadow: [
-                                            BoxShadow(
-                                              color: Colors.black.withOpacity(0.06),
-                                              blurRadius: 10,
-                                              offset: const Offset(0, 4),
-                                            ),
-                                          ],
                                         ),
-                                        child: Padding(
-                                          padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
-                                          child: _FancyBody(paragraphs: buckets[b]!, accent: _bucketGradient(context, b).first),
-                                        ),
-                                      ),
-                                    ),
-                                ],
-                              ),
-                            ),
-                          );
+                                    ],
+                                  ),
+                                ),
+                              );
+
                           }),
                           const SizedBox(height: 16),
 
