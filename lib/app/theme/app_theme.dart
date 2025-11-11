@@ -1,13 +1,19 @@
+// lib/app/theme/app_theme.dart
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'tokens.dart';
 
 class AppTheme {
+  /// ---- LIGHT THEME ----
   static ThemeData light() {
     final scheme = ColorScheme.fromSeed(
       seedColor: AppTokens.seed,
       brightness: Brightness.light,
+    ).copyWith(
+      // gentle, modern surfaces
+      surface: const Color(0xFFF7F8FA),
+      surfaceContainerHighest: Colors.white,
     );
 
     final base = ThemeData(
@@ -18,10 +24,8 @@ class AppTheme {
     final text = _textTheme(base.textTheme);
 
     return base.copyWith(
-      scaffoldBackgroundColor: const Color(0xFFF7F8FA),
+      scaffoldBackgroundColor: scheme.surface,
       textTheme: text,
-
-      // Accessibility defaults
       visualDensity: VisualDensity.standard,
 
       appBarTheme: AppBarTheme(
@@ -68,30 +72,41 @@ class AppTheme {
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-          minimumSize: const Size(48, 48),
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          tapTargetSize: MaterialTapTargetSize.padded,
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(AppTokens.rXl)),
-          ),
-        ),
+          minimumSize: const Size(48, 48)),
       ),
 
-      // Cards
-      cardTheme: const CardThemeData(
-        color: Colors.white,
+      // Cards (polished, “small but classy”)
+      cardTheme: CardThemeData(
+        color: scheme.surfaceContainerHighest,
         elevation: 0,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(AppTokens.rXl)),
+          borderRadius: const BorderRadius.all(Radius.circular(AppTokens.rXl)),
+          side: BorderSide(color: scheme.outlineVariant),
         ),
+        margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       ),
+
+      // Chips look vibrant but readable
+      chipTheme: ChipThemeData(
+        shape: const StadiumBorder(),
+        labelStyle: TextStyle(color: scheme.onSecondaryContainer),
+        backgroundColor: scheme.secondaryContainer,
+        selectedColor: scheme.primaryContainer,
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+      ),
+
+      dividerTheme: DividerThemeData(color: scheme.outlineVariant),
     );
   }
 
+  /// ---- DARK THEME ----
   static ThemeData dark() {
     final scheme = ColorScheme.fromSeed(
       seedColor: AppTokens.seed,
       brightness: Brightness.dark,
+    ).copyWith(
+      surface: const Color(0xFF0F1216),
+      surfaceContainerHighest: const Color(0xFF171B21),
     );
 
     final base = ThemeData(
@@ -103,8 +118,6 @@ class AppTheme {
 
     return base.copyWith(
       textTheme: text,
-
-      // Accessibility defaults
       visualDensity: VisualDensity.standard,
 
       appBarTheme: AppBarTheme(
@@ -151,44 +164,48 @@ class AppTheme {
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-          minimumSize: const Size(48, 48),
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          tapTargetSize: MaterialTapTargetSize.padded,
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(AppTokens.rXl)),
-          ),
-        ),
+          minimumSize: const Size(48, 48)),
       ),
 
       // Cards
-      cardTheme: const CardThemeData(
-        color: Color(0xFF1C1C1E),
+      cardTheme: CardThemeData(
+        color: scheme.surfaceContainerHighest,
         elevation: 0,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(AppTokens.rXl)),
+          borderRadius: const BorderRadius.all(Radius.circular(AppTokens.rXl)),
+          side: BorderSide(color: scheme.outlineVariant),
         ),
+        margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       ),
+
+      chipTheme: ChipThemeData(
+        shape: const StadiumBorder(),
+        labelStyle: TextStyle(color: scheme.onSecondaryContainer),
+        backgroundColor: scheme.secondaryContainer.withOpacity(.35),
+        selectedColor: scheme.primaryContainer.withOpacity(.45),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+      ),
+
+      dividerTheme: DividerThemeData(color: scheme.outlineVariant),
     );
   }
 
-  /// iOS uses SF system font; Android gets Inter to feel iOS-clean.
+  /// iOS uses SF system font; Android gets Inter for that clean feel.
   static TextTheme _textTheme(TextTheme base) {
     if (defaultTargetPlatform == TargetPlatform.iOS) {
       return base.copyWith(
         headlineMedium: base.headlineMedium?.copyWith(
-            fontSize: 28, fontWeight: FontWeight.w700, letterSpacing: -0.5),
+          fontSize: 28, fontWeight: FontWeight.w700, letterSpacing: -0.5),
         titleLarge: base.titleLarge?.copyWith(
-            fontSize: 20, fontWeight: FontWeight.w600),
-        bodyLarge:
-            base.bodyLarge?.copyWith(fontSize: 16, height: 1.45),
+          fontSize: 20, fontWeight: FontWeight.w600),
+        bodyLarge: base.bodyLarge?.copyWith(fontSize: 16, height: 1.45),
       );
     }
     final inter = GoogleFonts.interTextTheme(base);
     return inter.copyWith(
       headlineMedium: GoogleFonts.inter(
-          fontSize: 28, fontWeight: FontWeight.w700, letterSpacing: -0.5),
-      titleLarge:
-          GoogleFonts.inter(fontSize: 20, fontWeight: FontWeight.w600),
+        fontSize: 28, fontWeight: FontWeight.w700, letterSpacing: -0.5),
+      titleLarge: GoogleFonts.inter(fontSize: 20, fontWeight: FontWeight.w600),
       bodyLarge: GoogleFonts.inter(fontSize: 16, height: 1.45),
     );
   }
