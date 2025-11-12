@@ -13,16 +13,16 @@ class LearnHubScreen extends StatelessWidget {
     final glossy = Theme.of(context).extension<GlossyCardTheme>()!;
     final elev   = Theme.of(context).extension<AppElevations>()!;
 
-    Widget _tile({
+    Widget tile({
       required IconData icon,
       required String title,
       required String subtitle,
       required VoidCallback onTap,
       List<Color>? grad,
+      String? semanticsLabel,
     }) {
       final header = Container(
         decoration: glossy.headerDecoration().copyWith(
-          // optional: tint per card
           gradient: LinearGradient(
             begin: Alignment.topLeft, end: Alignment.bottomRight,
             colors: grad ?? [s.primary.withOpacity(.14), s.tertiary.withOpacity(.10)],
@@ -37,16 +37,33 @@ class LearnHubScreen extends StatelessWidget {
                 color: Colors.black.withOpacity(0.08),
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: Icon(icon, color: Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black87, size: 22),
+              child: Icon(
+                icon,
+                color: Theme.of(context).brightness == Brightness.dark
+                    ? Colors.white
+                    : Colors.black87,
+                size: 22,
+                semanticLabel: semanticsLabel ?? title,
+              ),
             ),
             const SizedBox(width: 12),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(title, style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700)),
+                  Text(title,
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleMedium
+                          ?.copyWith(fontWeight: FontWeight.w700)),
                   const SizedBox(height: 4),
-                  Text(subtitle, style: Theme.of(context).textTheme.bodySmall?.copyWith(color: s.onSurface.withOpacity(.7))),
+                  Text(
+                    subtitle,
+                    style: Theme.of(context)
+                        .textTheme
+                        .bodySmall
+                        ?.copyWith(color: s.onSurface.withOpacity(.7)),
+                  ),
                 ],
               ),
             ),
@@ -56,7 +73,9 @@ class LearnHubScreen extends StatelessWidget {
 
       final body = Container(
         decoration: glossy.bodyDecoration().copyWith(
-          boxShadow: glossy.shadows.map((b) => b.copyWith(blurRadius: b.blurRadius + elev.base)).toList(),
+          boxShadow: glossy.shadows
+              .map((b) => b.copyWith(blurRadius: b.blurRadius + elev.base))
+              .toList(),
           borderRadius: const BorderRadius.vertical(bottom: Radius.circular(20)),
         ),
         padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
@@ -74,9 +93,14 @@ class LearnHubScreen extends StatelessWidget {
         borderRadius: const BorderRadius.all(Radius.circular(20)),
         child: Stack(
           children: [
-            // subtle glass
             Positioned.fill(
-              child: BackdropFilter(filter: ImageFilter.blur(sigmaX: glossy.blurSigma, sigmaY: glossy.blurSigma), child: const SizedBox()),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(
+                  sigmaX: glossy.blurSigma,
+                  sigmaY: glossy.blurSigma,
+                ),
+                child: const SizedBox(),
+              ),
             ),
             Container(decoration: glossy.bodyDecoration()),
             Column(children: [header, body]),
@@ -90,36 +114,37 @@ class LearnHubScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
         children: [
-          _tile(
+          tile(
             icon: Icons.menu_book_outlined,
             title: 'Principles of Health',
             subtitle: 'Core ideas, prevention, and healthy living.',
-            onTap: () => context.go('/principles'),   // make sure you have this route
+            onTap: () => context.push('/principles'), // was go → push for back-stack
             grad: [s.tertiary, s.tertiaryContainer],
           ),
           const SizedBox(height: 12),
-          _tile(
+          tile(
             icon: Icons.spa_outlined,
             title: 'Important Herbs',
             subtitle: 'Most-used remedies and how to apply them.',
-            onTap: () => context.go('/remedies'),     // your existing remedies list
+            onTap: () => context.push('/remedies'),   // push keeps navigation history
             grad: [s.primary, s.primaryContainer],
           ),
           const SizedBox(height: 12),
-          _tile(
+          tile(
             icon: Icons.medical_services_outlined,
             title: 'Diseases & Conditions',
             subtitle: 'Browse by body system—fast and clear.',
-            onTap: () => context.go('/diseases'),     // your great hub
+            onTap: () => context.push('/diseases'),
             grad: [s.secondary, s.secondaryContainer],
           ),
-          const SizedBox(height: 8),
-          // Optional: a “Browse all articles” thin card
-          ListTile(
-            title: const Text('Browse everything'),
-            subtitle: const Text('Alphabetical list of all content'),
-            trailing: const Icon(Icons.chevron_right),
-            onTap: () => context.go('/learn/all'), // if you have a flat list route
+          const SizedBox(height: 12),
+          // Browse everything A–Z (use glossy to keep visual consistency)
+          tile(
+            icon: Icons.sort_by_alpha,
+            title: 'Browse Everything',
+            subtitle: 'Alphabetical list of all content',
+            onTap: () => context.push('/learn/all'),  // your original LearnScreen route
+            grad: [s.surfaceTint, s.surfaceVariant],
           ),
         ],
       ),

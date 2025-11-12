@@ -22,7 +22,10 @@ class AppTheme {
       colorScheme: scheme,
       brightness: Brightness.light,
     );
-    final text = _textTheme(base.textTheme);
+    final text = _textTheme(base.textTheme).apply(
+      bodyColor: scheme.onSurface,
+      displayColor: scheme.onSurface,
+    );
 
     return base.copyWith(
       // NEW: register theme extensions
@@ -120,7 +123,10 @@ class AppTheme {
       colorScheme: scheme,
       brightness: Brightness.dark,
     );
-    final text = _textTheme(base.textTheme);
+    final text = _textTheme(base.textTheme).apply(
+      bodyColor: scheme.onSurface,
+      displayColor: scheme.onSurface,
+    );
 
     return base.copyWith(
       // NEW: register theme extensions

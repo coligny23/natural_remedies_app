@@ -7,10 +7,11 @@ import 'package:hive_flutter/hive_flutter.dart';
 import '../../features/qa/saved_answers_screen.dart';
 import '../../features/content/ui/content_detail_screen.dart';
 import '../../features/home/home_screen.dart';
-
+import '../../features/remedies/ui/remedies_hub_screen.dart';
+import '../../features/principles/ui/principles_hub_screen.dart';
 
 import '../../features/learn/ui/learn_hub_screen.dart';
-
+import '../../features/learn/learn_screen.dart';
 import '../../features/legal/terms_screen.dart';
 import '../../features/search/search_screen.dart';
 import '../../features/saved/saved_screen.dart';
@@ -29,11 +30,13 @@ final appRouter = GoRouter(
         final box = Hive.box('legal'); // box opened in main.dart
         final accepted = box.get('tosAccepted') == true;
 
-        final here = state.matchedLocation; // e.g. '/', '/legal', '/article/...'
+        final here =
+            state.matchedLocation; // e.g. '/', '/legal', '/article/...'
         final onLegal = here == '/legal' || here.endsWith('/legal');
 
-        if (!accepted && !onLegal) return '/legal'; // force Terms until accepted
-        if (accepted && onLegal) return '/';        // once accepted, go back to root
+        if (!accepted && !onLegal)
+          return '/legal'; // force Terms until accepted
+        if (accepted && onLegal) return '/'; // once accepted, go back to root
         return null;
       },
 
@@ -70,7 +73,22 @@ final appRouter = GoRouter(
         ),
         GoRoute(
           path: 'diseases/:group',
-          builder: (ctx, st) => DiseaseGroupListScreen(groupName: st.pathParameters['group']!),
+          builder: (ctx, st) =>
+              DiseaseGroupListScreen(groupName: st.pathParameters['group']!),
+        ),
+
+        GoRoute(
+          path: 'remedies',
+          builder: (_, __) => const RemediesHubScreen(),
+        ),
+        GoRoute(
+          path: 'principles',
+          builder: (_, __) => const PrinciplesHubScreen(),
+        ),
+        GoRoute(
+          path: 'learn/all',
+          builder: (_, __) =>
+              const LearnScreen(), // ← your original long alphabetical list
         ),
 
         GoRoute(
@@ -102,7 +120,7 @@ class _RootTabsState extends State<RootTabs> {
   // ⬇️ Replace LearnScreen() with LearnHubScreen()
   final _pages = const [
     HomeScreen(),
-    LearnHubScreen(),  // ✅ your new hub
+    LearnHubScreen(), // ✅ your new hub
     SearchScreen(),
     SavedScreen(),
     SettingsScreen(),
@@ -133,11 +151,16 @@ class _RootTabsState extends State<RootTabs> {
         currentIndex: _controller.index,
         onTap: (i) => setState(() => _controller.index = i),
         items: const [
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.house), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.square_list), label: 'Learn'),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.search), label: 'Search'),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.bookmark), label: 'Saved'),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.gear), label: 'Settings'),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.house), label: 'Home'),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.square_list), label: 'Learn'),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.search), label: 'Search'),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.bookmark), label: 'Saved'),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.gear), label: 'Settings'),
         ],
       ),
       tabBuilder: (_, i) => CupertinoTabView(builder: (_) => _pages[i]),
