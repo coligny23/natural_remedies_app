@@ -1,5 +1,4 @@
 // lib/features/content/ui/content_detail_screen.dart
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -95,9 +94,6 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
 
         // Create TabController once per build (or when tab count changes)
         _tab = TabController(length: _tabs.length, vsync: this);
-
-        // If user deep-linked a specific tab via query (optional future),
-        // you can set _tab.index here.
 
         // One-time restore scroll after layout
         WidgetsBinding.instance.addPostFrameCallback((_) => _maybeRestore(body));
@@ -262,8 +258,6 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
     // If everything landed in Overview, we’ll create a single tab in build()
     if (buckets.isEmpty) return [];
 
-    final isSw = lang.toLowerCase() == 'sw';
-
     final order = <_Bucket>[
       _Bucket.overview,
       _Bucket.treatment,
@@ -274,10 +268,14 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
     final titleOf = (_Bucket b) => _bucketTitleLocalized(b, lang);
     final iconOf = (_Bucket b) {
       switch (b) {
-        case _Bucket.overview: return Icons.menu_book;
-        case _Bucket.treatment: return Icons.healing;
-        case _Bucket.causes: return Icons.biotech;
-        case _Bucket.symptoms: return Icons.monitor_heart;
+        case _Bucket.overview:
+          return Icons.menu_book;
+        case _Bucket.treatment:
+          return Icons.healing;
+        case _Bucket.causes:
+          return Icons.biotech;
+        case _Bucket.symptoms:
+          return Icons.monitor_heart;
       }
     };
 
@@ -300,10 +298,14 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
   Color _tabAccent(BuildContext c, String key) {
     final s = Theme.of(c).colorScheme;
     switch (key) {
-      case 'treatment': return s.primary;
-      case 'causes': return s.tertiary;
-      case 'symptoms': return s.secondary;
-      default: return s.surfaceTint;
+      case 'treatment':
+        return s.primary;
+      case 'causes':
+        return s.tertiary;
+      case 'symptoms':
+        return s.secondary;
+      default:
+        return s.surfaceTint;
     }
   }
 
@@ -369,6 +371,9 @@ class _TabBody extends StatelessWidget {
           border: Border.all(color: Theme.of(context).dividerColor.withOpacity(.35)),
         );
 
+    // ✅ Strong base text style for everything inside the card
+    final base = Theme.of(context).textTheme.bodyLarge ?? const TextStyle(fontSize: 16);
+
     return NotificationListener<ScrollNotification>(
       onNotification: (n) {
         if (n is ScrollUpdateNotification) {
@@ -383,32 +388,44 @@ class _TabBody extends StatelessWidget {
         child: Container(
           decoration: cardDeco,
           padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
-          child: _FancyBody(paragraphs: paragraphs, accent: heroAccent),
+
+          // ✅ Force correct base color/typography in light & dark
+          child: DefaultTextStyle.merge(
+            style: base,
+            child: _FancyBody(paragraphs: paragraphs, accent: heroAccent),
+          ),
         ),
       ),
     );
   }
 }
 
-/* ===================== Helpers reused from your file ===================== */
-
+/* ------- Helpers ------- */
 enum _Bucket { treatment, causes, symptoms, overview }
 
 String _bucketTitleLocalized(_Bucket b, String lang) {
   final isSw = (lang.toLowerCase() == 'sw');
   if (isSw) {
     switch (b) {
-      case _Bucket.treatment: return 'Matibabu';
-      case _Bucket.causes: return 'Sababu';
-      case _Bucket.symptoms: return 'Dalili';
-      case _Bucket.overview: return 'Muhtasari';
+      case _Bucket.treatment:
+        return 'Matibabu';
+      case _Bucket.causes:
+        return 'Sababu';
+      case _Bucket.symptoms:
+        return 'Dalili';
+      case _Bucket.overview:
+        return 'Muhtasari';
     }
   } else {
     switch (b) {
-      case _Bucket.treatment: return 'Treatment';
-      case _Bucket.causes: return 'Causes';
-      case _Bucket.symptoms: return 'Symptoms';
-      case _Bucket.overview: return 'Overview';
+      case _Bucket.treatment:
+        return 'Treatment';
+      case _Bucket.causes:
+        return 'Causes';
+      case _Bucket.symptoms:
+        return 'Symptoms';
+      case _Bucket.overview:
+        return 'Overview';
     }
   }
 }
@@ -487,15 +504,38 @@ Map<_Bucket, List<String>> _categorizeSections(List<dynamic> sections) {
 Map<_Bucket, List<String>> _extractBucketsFromRaw(String raw) {
   final lines = raw.replaceAll('\r\n', '\n').split('\n');
   final treatmentSyns = <String>{
-    'treatment','treatments','management','therapy','care','remedy','remedies',
-    'matibabu','tiba','huduma','utunzaji'
+    'treatment',
+    'treatments',
+    'management',
+    'therapy',
+    'care',
+    'remedy',
+    'remedies',
+    'matibabu',
+    'tiba',
+    'huduma',
+    'utunzaji'
   };
   final causesSyns = <String>{
-    'cause','causes','etiology','risk factor','risk factors',
-    'visababishi','kisababishi','sababu','vyanzo'
+    'cause',
+    'causes',
+    'etiology',
+    'risk factor',
+    'risk factors',
+    'visababishi',
+    'kisababishi',
+    'sababu',
+    'vyanzo'
   };
   final symptomsSyns = <String>{
-    'symptom','symptoms','sign','signs','presentation','dalili','viashiria','ishara'
+    'symptom',
+    'symptoms',
+    'sign',
+    'signs',
+    'presentation',
+    'dalili',
+    'viashiria',
+    'ishara'
   };
 
   bool _isHeading(String line, Set<String> syns) {
@@ -560,6 +600,9 @@ class _FancyBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ✅ Strong base to ensure correct color in any theme
+    final base = Theme.of(context).textTheme.bodyLarge ?? const TextStyle(fontSize: 16);
+
     final children = <Widget>[];
     for (final raw in paragraphs) {
       final bullets = maybeBullets(raw);
@@ -579,7 +622,7 @@ class _FancyBody extends StatelessWidget {
                 Expanded(
                   child: RichText(
                     text: TextSpan(
-                      style: Theme.of(context).textTheme.bodyLarge,
+                      style: base, // ✅ bullet text inherits correct color
                       children: linkifyParagraph(
                         context,
                         text: b,
@@ -604,7 +647,7 @@ class _FancyBody extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 10),
             child: RichText(
               text: TextSpan(
-                style: Theme.of(context).textTheme.bodyLarge,
+                style: base, // ✅ paragraph text inherits correct color
                 children: linkifyParagraph(
                   context,
                   text: p.trim(),
