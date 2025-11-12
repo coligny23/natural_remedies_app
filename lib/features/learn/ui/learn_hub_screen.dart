@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../../../app/theme/app_theme.dart'; // GlossyCardTheme, AppElevations
+import '../../../widgets/app_background.dart'; // ✅ background wrapper
 
 class LearnHubScreen extends StatelessWidget {
   const LearnHubScreen({super.key});
@@ -110,43 +111,46 @@ class LearnHubScreen extends StatelessWidget {
     }
 
     return Scaffold(
+      backgroundColor: Colors.transparent, // ✅ let background show
       appBar: AppBar(title: const Text('Learn')),
-      body: ListView(
-        padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
-        children: [
-          tile(
-            icon: Icons.menu_book_outlined,
-            title: 'Principles of Health',
-            subtitle: 'Core ideas, prevention, and healthy living.',
-            onTap: () => context.push('/principles'), // was go → push for back-stack
-            grad: [s.tertiary, s.tertiaryContainer],
-          ),
-          const SizedBox(height: 12),
-          tile(
-            icon: Icons.spa_outlined,
-            title: 'Important Herbs',
-            subtitle: 'Most-used remedies and how to apply them.',
-            onTap: () => context.push('/remedies'),   // push keeps navigation history
-            grad: [s.primary, s.primaryContainer],
-          ),
-          const SizedBox(height: 12),
-          tile(
-            icon: Icons.medical_services_outlined,
-            title: 'Diseases & Conditions',
-            subtitle: 'Browse by body system—fast and clear.',
-            onTap: () => context.push('/diseases'),
-            grad: [s.secondary, s.secondaryContainer],
-          ),
-          const SizedBox(height: 12),
-          // Browse everything A–Z (use glossy to keep visual consistency)
-          tile(
-            icon: Icons.sort_by_alpha,
-            title: 'Browse Everything',
-            subtitle: 'Alphabetical list of all content',
-            onTap: () => context.push('/learn/all'),  // your original LearnScreen route
-            grad: [s.surfaceTint, s.surfaceVariant],
-          ),
-        ],
+      body: AppBackground(
+        asset: 'assets/images/articles_jpg/imageone.jpg',                     // ✅ wrap the page body
+        child: ListView(
+          padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
+          children: [
+            tile(
+              icon: Icons.menu_book_outlined,
+              title: 'Principles of Health',
+              subtitle: 'Core ideas, prevention, and healthy living.',
+              onTap: () => context.push('/principles'),
+              grad: [s.tertiary, s.tertiaryContainer],
+            ),
+            const SizedBox(height: 12),
+            tile(
+              icon: Icons.spa_outlined,
+              title: 'Important Herbs',
+              subtitle: 'Most-used remedies and how to apply them.',
+              onTap: () => context.push('/remedies'),
+              grad: [s.primary, s.primaryContainer],
+            ),
+            const SizedBox(height: 12),
+            tile(
+              icon: Icons.medical_services_outlined,
+              title: 'Diseases & Conditions',
+              subtitle: 'Browse by body system—fast and clear.',
+              onTap: () => context.push('/diseases'),
+              grad: [s.secondary, s.secondaryContainer],
+            ),
+            const SizedBox(height: 12),
+            tile(
+              icon: Icons.sort_by_alpha,
+              title: 'Browse Everything',
+              subtitle: 'Alphabetical list of all content',
+              onTap: () => context.push('/learn/all'),
+              grad: [s.surfaceTint, s.surfaceVariant],
+            ),
+          ],
+        ),
       ),
     );
   }

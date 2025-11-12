@@ -7,6 +7,9 @@ import 'package:go_router/go_router.dart';
 
 import '../data/diseases_grouping.dart'; // DiseaseGroup, diseasesByGroupProvider, groupLabel()
 
+// ✅ Background wrapper
+import '../../../widgets/app_background.dart';
+
 class DiseasesHubScreen extends ConsumerWidget {
   const DiseasesHubScreen({super.key});
 
@@ -20,32 +23,36 @@ class DiseasesHubScreen extends ConsumerWidget {
     final s = Theme.of(context).colorScheme;
 
     return Scaffold(
+      backgroundColor: Colors.transparent,        // ✅ let background show
       appBar: AppBar(title: const Text('Diseases')),
-      body: Padding(
-        padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
-        child: MasonryGridView.count(
-          crossAxisCount: 2,
-          mainAxisSpacing: 12,
-          crossAxisSpacing: 12,
-          itemCount: groups.length,
-          itemBuilder: (context, i) {
-            final g = groups[i];
-            final items = grouped[g]!;
-            final label = groupLabel(g);
+      body: AppBackground(  
+        asset: 'assets/images/articles_jpg/imageone.jpg',                       // ✅ wrap content
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
+          child: MasonryGridView.count(
+            crossAxisCount: 2,
+            mainAxisSpacing: 12,
+            crossAxisSpacing: 12,
+            itemCount: groups.length,
+            itemBuilder: (context, i) {
+              final g = groups[i];
+              final items = grouped[g]!;
+              final label = groupLabel(g);
 
-            // Vary the height slightly for a “masonry” feel (repeat pattern)
-            final pattern = <double>[150, 190, 170, 210];
-            final height = pattern[i % pattern.length];
+              // Vary the height slightly for a “masonry” feel (repeat pattern)
+              final pattern = <double>[150, 190, 170, 210];
+              final height = pattern[i % pattern.length];
 
-            return _GroupCard(
-              label: label,
-              count: items.length,
-              emoji: _groupEmoji(g),
-              accent: _groupAccentColor(s, g),
-              height: height,
-              onTap: () => context.go('/diseases/${g.name}'),
-            );
-          },
+              return _GroupCard(
+                label: label,
+                count: items.length,
+                emoji: _groupEmoji(g),
+                accent: _groupAccentColor(s, g),
+                height: height,
+                onTap: () => context.go('/diseases/${g.name}'),
+              );
+            },
+          ),
         ),
       ),
     );
@@ -55,21 +62,18 @@ class DiseasesHubScreen extends ConsumerWidget {
 /// Fun emoji per category (tweak freely)
 String _groupEmoji(DiseaseGroup g) {
   switch (g) {
-    case DiseaseGroup.digestive:      return '🍽️';
-    case DiseaseGroup.respiratory:    return '🌬️';
-    case DiseaseGroup.musculoskeletal:return '🦴';
-    case DiseaseGroup.skin:           return '🧴';
-    case DiseaseGroup.urinary:        return '🚰';
-    case DiseaseGroup.reproductive:   return '🧬';
-    case DiseaseGroup.head:           return '🧠';
-    case DiseaseGroup.general:        return '🩺';
-    default:                          return '📚';
+    case DiseaseGroup.digestive:       return '🍽️';
+    case DiseaseGroup.respiratory:     return '🌬️';
+    case DiseaseGroup.musculoskeletal: return '🦴';
+    case DiseaseGroup.skin:            return '🧴';
+    case DiseaseGroup.urinary:         return '🚰';
+    case DiseaseGroup.reproductive:    return '🧬';
+    case DiseaseGroup.head:            return '🧠';
+    case DiseaseGroup.general:         return '🩺';
   }
 }
 
-/// Subtle accent that pairs with theme
 Color _groupAccentColor(ColorScheme s, DiseaseGroup g) {
-  // simple spread across scheme hues
   switch (g) {
     case DiseaseGroup.digestive:       return s.primaryContainer;
     case DiseaseGroup.respiratory:     return s.secondaryContainer;
@@ -79,7 +83,6 @@ Color _groupAccentColor(ColorScheme s, DiseaseGroup g) {
     case DiseaseGroup.reproductive:    return s.primaryContainer;
     case DiseaseGroup.head:            return s.surfaceVariant;
     case DiseaseGroup.general:         return s.primaryContainer;
-    default:                           return s.surfaceVariant;
   }
 }
 

@@ -14,6 +14,9 @@ import '../content/models/content_item.dart';
 import '../../shared/ml/qa_providers.dart'; // qaInitProvider / qaAnswerProvider
 import '../../shared/telemetry/telemetry_providers.dart'; // <-- telemetry
 
+// ✅ Background wrapper
+import '../../widgets/app_background.dart';
+
 class SearchScreen extends ConsumerStatefulWidget {
   const SearchScreen({super.key});
   @override
@@ -99,6 +102,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     final lang = ref.watch(languageCodeProvider); // 'en' or 'sw'
 
     return Scaffold(
+      backgroundColor: Colors.transparent, // ✅ let global bg show
       appBar: AppBar(
         title: const Text('Search'),
         actions: [
@@ -125,297 +129,294 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
-            child: Semantics(
-              label: 'Search field for natural remedies',
-              hint: 'Type an ingredient or condition, for example ginger',
-              textField: true,
-              child: TextField(
-                controller: _controller,
-                onChanged: _onChanged,
-                textInputAction: TextInputAction.search,
-                decoration: InputDecoration(
-                  hintText: 'Search (e.g., "ginger")',
-                  prefixIcon: const Icon(Icons.search, semanticLabel: 'Search'),
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12)),
-                ),
-              ),
-            ),
-          ),
-
-          // History chips (last 6) — widget-only block inside children[]
-          if (history.isNotEmpty)
+      body: AppBackground(
+        asset: 'assets/images/articles_jpg/imageone.jpg', // ✅ wrap whole page content
+        child: Column(
+          children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Wrap(
-                  spacing: 8,
-                  runSpacing: 4,
-                  children: history.take(6).map((q) {
-                    return ActionChip(
-                      label: Text(q),
-                      onPressed: () {
-                        _controller.text = q;
-                        _controller.selection = TextSelection.fromPosition(
-                          TextPosition(offset: q.length),
-                        );
-                        ref.read(searchQueryProvider.notifier).state = q;
-                      },
-                    );
-                  }).toList(),
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+              child: Semantics(
+                label: 'Search field for natural remedies',
+                hint: 'Type an ingredient or condition, for example ginger',
+                textField: true,
+                child: TextField(
+                  controller: _controller,
+                  onChanged: _onChanged,
+                  textInputAction: TextInputAction.search,
+                  decoration: InputDecoration(
+                    hintText: 'Search (e.g., "ginger")',
+                    prefixIcon:
+                        const Icon(Icons.search, semanticLabel: 'Search'),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12)),
+                  ),
                 ),
               ),
             ),
 
-          // "Also try" synonym suggestion chips (based on current query)
-          if (suggestionChips.isNotEmpty)
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Wrap(
-                  spacing: 8,
-                  runSpacing: 4,
-                  children: suggestionChips.map((s) {
-                    return InputChip(
-                      label: Text(s),
-                      onPressed: () async {
-                        final base = query.trim();
-                        final newQ = base.isEmpty ? s : '$base $s';
-                        _controller.text = newQ;
-                        _controller.selection = TextSelection.fromPosition(
-                          TextPosition(offset: newQ.length),
-                        );
-                        ref.read(searchQueryProvider.notifier).state = newQ;
-
-                        // Optional telemetry
-                        await ref.logEvent(
-                            'search_synonym_chip', {'q': query, 'chip': s});
-                      },
-                    );
-                  }).toList(),
-                ),
-              ),
-            ),
-
-          if (isLoading) const LinearProgressIndicator(),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text('Loaded: ${total ?? "…"}'),
-                Text('Results: ${resultsCount ?? "…"}'),
-              ],
-            ),
-          ),
-          const SizedBox(height: 8),
-
-          FutureBuilder<String>(
-            future: rootBundle.loadString('AssetManifest.json'),
-            builder: (context, snap) {
-              if (!snap.hasData) return const SizedBox.shrink();
-              final keys = (json.decode(snap.data!) as Map<String, dynamic>)
-                  .keys
-                  .toList();
-              final sample = keys
-                  .where((k) => k.contains('assets/corpus'))
-                  .take(5)
-                  .toList();
-              return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
+            // History chips (last 6)
+            if (history.isNotEmpty)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
                 child: Align(
                   alignment: Alignment.centerLeft,
-                  child: Text(
-                    'Manifest sample: ${sample.isEmpty ? "(none)" : sample.join(", ")}',
-                    style: Theme.of(context).textTheme.bodySmall,
+                  child: Wrap(
+                    spacing: 8,
+                    runSpacing: 4,
+                    children: history.take(6).map((q) {
+                      return ActionChip(
+                        label: Text(q),
+                        onPressed: () {
+                          _controller.text = q;
+                          _controller.selection = TextSelection.fromPosition(
+                            TextPosition(offset: q.length),
+                          );
+                          ref.read(searchQueryProvider.notifier).state = q;
+                        },
+                      );
+                    }).toList(),
                   ),
                 ),
-              );
-            },
-          ),
-          const SizedBox(height: 4),
+              ),
 
-          // --- AI Answer card (optional, shows when there's a query) ---
-          if (query.isNotEmpty && answerAsync != null) ...[
+            // "Also try" synonym suggestion chips
+            if (suggestionChips.isNotEmpty)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Wrap(
+                    spacing: 8,
+                    runSpacing: 4,
+                    children: suggestionChips.map((s) {
+                      return InputChip(
+                        label: Text(s),
+                        onPressed: () async {
+                          final base = query.trim();
+                          final newQ = base.isEmpty ? s : '$base $s';
+                          _controller.text = newQ;
+                          _controller.selection = TextSelection.fromPosition(
+                            TextPosition(offset: newQ.length),
+                          );
+                          ref.read(searchQueryProvider.notifier).state = newQ;
+
+                          // Optional telemetry
+                          await ref.logEvent(
+                              'search_synonym_chip', {'q': query, 'chip': s});
+                        },
+                      );
+                    }).toList(),
+                  ),
+                ),
+              ),
+
+            if (isLoading) const LinearProgressIndicator(),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(12),
-                  child: answerAsync.when(
-                    loading: () => const Text('Thinking…'),
-                    error: (e, _) => Text('Could not answer: $e'),
-                    data: (ans) {
-                      final hasText = ans.text.trim().isNotEmpty;
-                      return Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              const Text('Answer',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.w600)),
-                              Row(
-                                children: [
-                                  IconButton(
-                                    tooltip: 'Share answer',
-                                    icon: const Icon(Icons.ios_share),
-                                    onPressed: hasText
-                                        ? () {
-                                            final src = ans.source;
-                                            final buffer = StringBuffer()
-                                              ..writeln('Q: $query')
-                                              ..writeln('A: ${ans.text}');
-                                            if (src != null)
-                                              buffer.writeln(
-                                                  'Source: ${src.title}');
-                                            Share.share(
-                                                buffer.toString().trim());
-                                          }
-                                        : null,
-                                  ),
-                                  IconButton(
-                                    tooltip: 'Save answer',
-                                    icon: const Icon(Icons.star_border),
-                                    onPressed: hasText
-                                        ? () async {
-                                            await ref
-                                                .read(savedQaListProvider
-                                                    .notifier)
-                                                .save(
-                                                  question: query,
-                                                  answerText: ans.text,
-                                                  sourceId: ans.source?.id,
-                                                  sourceTitle:
-                                                      ans.source?.title,
-                                                );
-                                            if (!context.mounted) return;
-                                            ScaffoldMessenger.of(context)
-                                                .showSnackBar(
-                                              const SnackBar(
-                                                  content:
-                                                      Text('Saved to Answers')),
-                                            );
-                                            await ref.logEvent('qa_saved', {
-                                              'has_source': ans.source != null,
-                                              'q_len': query.length,
-                                              'a_len': ans.text.length,
-                                            });
-                                          }
-                                        : null,
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 6),
-                          Text(ans.text),
-                          if (ans.source != null) ...[
-                            const SizedBox(height: 8),
-                            Text('Source: ${ans.source!.title}',
-                                style: Theme.of(context).textTheme.bodySmall),
-                          ],
-                        ],
-                      );
-                    },
-                  ),
-                ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Loaded: ${total ?? "…"}'),
+                  Text('Results: ${resultsCount ?? "…"}'),
+                ],
               ),
             ),
             const SizedBox(height: 8),
-          ],
-          // --- end Answer card ---
 
-          Expanded(
-            child: resultsAsync.when(
-              loading: () =>
-                  const _LoadingOrEmpty(queryEmptyMessage: 'Type to search…'),
-              error: (err, st) => Padding(
-                padding: const EdgeInsets.all(16),
-                child: Text('Search error: $err'),
-              ),
-              data: (results) {
-                if (results.isEmpty) {
-                  return const _EmptyState();
-                }
-                return ListView.separated(
-                  itemCount: results.length,
-                  separatorBuilder: (_, __) => const Divider(height: 1),
-                  itemBuilder: (context, index) {
-                    final item = results[index];
-
-                    // Use current language for snippet
-                    final bodyText = (lang == 'sw')
-                        ? (item.contentSw ?? item.contentEn ?? '')
-                        : (item.contentEn ?? item.contentSw ?? '');
-                    final snippetSrc = bodyText.replaceAll('\n', ' ');
-                    final snippet = snippetSrc.length <= 160
-                        ? snippetSrc
-                        : '${snippetSrc.substring(0, 160)} …';
-                    // New: does this item have an image?
-                    final hasImage = (item.image ?? '').isNotEmpty;
-
-                    // MergeSemantics + exclude child semantics => SR reads our concise label once.
-                    return MergeSemantics(
-                      child: Semantics(
-                        excludeSemantics: true,
-                        button: true,
-                        label:
-                            '${item.title}. ${snippet.isEmpty ? "Open details" : snippet}. Double tap to open details.',
-                        child: ListTile(
-                          // NEW (optional): nicer spacing for a thumbnail
-                          contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-
-                          // NEW: thumbnail (or a simple placeholder icon)
-                          leading: hasImage
-                              ? ClipRRect(
-                                  borderRadius: BorderRadius.circular(8),
-                                  child: Image.asset(
-                                    item.image!,
-                                    width: 56,
-                                    height: 56,
-                                    fit: BoxFit.cover,
-                                    errorBuilder: (_, __, ___) => const Icon(Icons.image_not_supported),
-                                  ),
-                                )
-                              : const CircleAvatar(
-                                  radius: 28,
-                                  child: Icon(Icons.eco),
-                                ),
-                          title: Text(item.title),
-                          // 🔎 Highlight query matches in the snippet
-                          subtitle: RichText(
-                            text: TextSpan(
-                              style: Theme.of(context).textTheme.bodyMedium,
-                              children: _highlight(snippet, query),
-                            ),
-                          ),
-                          onTap: () async {
-                            // --- Telemetry: open_from_search ---
-                            await ref.logEvent('open_from_search', {
-                              'id': item.id,
-                              'title': item.title,
-                              'lang': lang,
-                            });
-                            if (!context.mounted) return;
-                            context.go('/article/${item.id}');
-                          },
-                        ),
-                      ),
-                    );
-                  },
+            FutureBuilder<String>(
+              future: rootBundle.loadString('AssetManifest.json'),
+              builder: (context, snap) {
+                if (!snap.hasData) return const SizedBox.shrink();
+                final keys =
+                    (json.decode(snap.data!) as Map<String, dynamic>).keys.toList();
+                final sample = keys
+                    .where((k) => k.contains('assets/corpus'))
+                    .take(5)
+                    .toList();
+                return Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      'Manifest sample: ${sample.isEmpty ? "(none)" : sample.join(", ")}',
+                      style: Theme.of(context).textTheme.bodySmall,
+                    ),
+                  ),
                 );
               },
             ),
-          ),
-        ],
+            const SizedBox(height: 4),
+
+            // --- AI Answer card (optional, shows when there's a query) ---
+            if (query.isNotEmpty && answerAsync != null) ...[
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: answerAsync.when(
+                      loading: () => const Text('Thinking…'),
+                      error: (e, _) => Text('Could not answer: $e'),
+                      data: (ans) {
+                        final hasText = ans.text.trim().isNotEmpty;
+                        return Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                const Text('Answer',
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.w600)),
+                                Row(
+                                  children: [
+                                    IconButton(
+                                      tooltip: 'Share answer',
+                                      icon: const Icon(Icons.ios_share),
+                                      onPressed: hasText
+                                          ? () {
+                                              final src = ans.source;
+                                              final buffer = StringBuffer()
+                                                ..writeln('Q: $query')
+                                                ..writeln('A: ${ans.text}');
+                                              if (src != null) {
+                                                buffer.writeln(
+                                                    'Source: ${src.title}');
+                                              }
+                                              Share.share(buffer.toString().trim());
+                                            }
+                                          : null,
+                                    ),
+                                    IconButton(
+                                      tooltip: 'Save answer',
+                                      icon: const Icon(Icons.star_border),
+                                      onPressed: hasText
+                                          ? () async {
+                                              await ref
+                                                  .read(savedQaListProvider.notifier)
+                                                  .save(
+                                                    question: query,
+                                                    answerText: ans.text,
+                                                    sourceId: ans.source?.id,
+                                                    sourceTitle:
+                                                        ans.source?.title,
+                                                  );
+                                              if (!context.mounted) return;
+                                              ScaffoldMessenger.of(context)
+                                                  .showSnackBar(
+                                                const SnackBar(
+                                                    content:
+                                                        Text('Saved to Answers')),
+                                              );
+                                              await ref.logEvent('qa_saved', {
+                                                'has_source': ans.source != null,
+                                                'q_len': query.length,
+                                                'a_len': ans.text.length,
+                                              });
+                                            }
+                                          : null,
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 6),
+                            Text(ans.text),
+                            if (ans.source != null) ...[
+                              const SizedBox(height: 8),
+                              Text('Source: ${ans.source!.title}',
+                                  style:
+                                      Theme.of(context).textTheme.bodySmall),
+                            ],
+                          ],
+                        );
+                      },
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 8),
+            ],
+            // --- end Answer card ---
+
+            Expanded(
+              child: resultsAsync.when(
+                loading: () =>
+                    const _LoadingOrEmpty(queryEmptyMessage: 'Type to search…'),
+                error: (err, st) => Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Text('Search error: $err'),
+                ),
+                data: (results) {
+                  if (results.isEmpty) {
+                    return const _EmptyState();
+                  }
+                  return ListView.separated(
+                    itemCount: results.length,
+                    separatorBuilder: (_, __) => const Divider(height: 1),
+                    itemBuilder: (context, index) {
+                      final item = results[index];
+
+                      final bodyText = (lang == 'sw')
+                          ? (item.contentSw ?? item.contentEn ?? '')
+                          : (item.contentEn ?? item.contentSw ?? '');
+                      final snippetSrc = bodyText.replaceAll('\n', ' ');
+                      final snippet = snippetSrc.length <= 160
+                          ? snippetSrc
+                          : '${snippetSrc.substring(0, 160)} …';
+                      final hasImage = (item.image ?? '').isNotEmpty;
+
+                      return MergeSemantics(
+                        child: Semantics(
+                          excludeSemantics: true,
+                          button: true,
+                          label:
+                              '${item.title}. ${snippet.isEmpty ? "Open details" : snippet}. Double tap to open details.',
+                          child: ListTile(
+                            contentPadding: const EdgeInsets.symmetric(
+                                horizontal: 12, vertical: 8),
+                            leading: hasImage
+                                ? ClipRRect(
+                                    borderRadius: BorderRadius.circular(8),
+                                    child: Image.asset(
+                                      item.image!,
+                                      width: 56,
+                                      height: 56,
+                                      fit: BoxFit.cover,
+                                      errorBuilder: (_, __, ___) =>
+                                          const Icon(Icons.image_not_supported),
+                                    ),
+                                  )
+                                : const CircleAvatar(
+                                    radius: 28,
+                                    child: Icon(Icons.eco),
+                                  ),
+                            title: Text(item.title),
+                            subtitle: RichText(
+                              text: TextSpan(
+                                style: Theme.of(context).textTheme.bodyMedium,
+                                children: _highlight(snippet, query),
+                              ),
+                            ),
+                            onTap: () async {
+                              await ref.logEvent('open_from_search', {
+                                'id': item.id,
+                                'title': item.title,
+                                'lang': lang,
+                              });
+                              if (!context.mounted) return;
+                              context.go('/article/${item.id}');
+                            },
+                          ),
+                        ),
+                      );
+                    },
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

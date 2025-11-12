@@ -9,6 +9,9 @@ import '../settings/reminder_providers.dart';
 import '../search/search_providers.dart'; // languageCodeProvider
 import 'feature_flags.dart'; // useTfliteProvider
 
+// ✅ Global background wrapper
+import '../../widgets/app_background.dart';
+
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
 
@@ -19,134 +22,139 @@ class SettingsScreen extends ConsumerWidget {
     final telemetryOn = ref.watch(telemetryEnabledProvider); // bool
 
     return CupertinoPageScaffold(
+      backgroundColor: const Color(0x00000000), // ✅ transparent to let background show
       navigationBar: const CupertinoNavigationBar(
         middle: Text('Settings'),
       ),
-      child: SafeArea(
-        bottom: false,
-        child: ListView(
-          padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
-          children: [
-            // ------------ Language ------------
-            const _SectionHeader('Language'),
-            const SizedBox(height: 8),
-            CupertinoSegmentedControl<String>(
-              groupValue: lang,
-              onValueChanged: (v) =>
-                  ref.read(languageCodeProvider.notifier).state = v,
-              children: const {
-                'en': Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                  child: Text('English'),
-                ),
-                'sw': Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                  child: Text('Kiswahili'),
-                ),
-              },
-            ),
-
-            const SizedBox(height: 24),
-
-            // ------------ Experimental ------------
-            const _SectionHeader('Experimental'),
-            const SizedBox(height: 8),
-            _ToggleTile(
-              title: 'Use experimental ML engine (TFLite)',
-              subtitle:
-                  'For on-device QA. On web, it automatically falls back to the stub.',
-              value: useTflite,
-              onChanged: (v) => ref.read(useTfliteProvider.notifier).state = v,
-            ),
-            const SizedBox(height: 8),
-            const Text(
-              'Note: This switch prepares the app to use a local TFLite model. '
-              'It currently delegates to the stub until you add the real model.',
-              style: TextStyle(
-                fontSize: 13,
-                color: CupertinoColors.secondaryLabel,
+      child: AppBackground(
+        asset: 'assets/images/articles_jpg/imageone.jpg', // ✅ wrap whole page content
+        child: SafeArea(
+          bottom: false,
+          child: ListView(
+            padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+            children: [
+              // ------------ Language ------------
+              const _SectionHeader('Language'),
+              const SizedBox(height: 8),
+              CupertinoSegmentedControl<String>(
+                groupValue: lang,
+                onValueChanged: (v) =>
+                    ref.read(languageCodeProvider.notifier).state = v,
+                children: const {
+                  'en': Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    child: Text('English'),
+                  ),
+                  'sw': Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    child: Text('Kiswahili'),
+                  ),
+                },
               ),
-            ),
 
-            const SizedBox(height: 24),
+              const SizedBox(height: 24),
 
-            // ------------ Privacy & Telemetry ------------
-            const _SectionHeader('Privacy & Telemetry'),
-            const SizedBox(height: 8),
-            _ToggleTile(
-              title: 'Allow anonymous usage logs',
-              subtitle:
-                  'Events are stored locally (offline). You can export or clear them anytime.',
-              value: telemetryOn,
-              onChanged: (v) =>
-                  ref.read(telemetryEnabledProvider.notifier).state = v,
-            ),
-            const SizedBox(height: 12),
+              // ------------ Experimental ------------
+              const _SectionHeader('Experimental'),
+              const SizedBox(height: 8),
+              _ToggleTile(
+                title: 'Use experimental ML engine (TFLite)',
+                subtitle:
+                    'For on-device QA. On web, it automatically falls back to the stub.',
+                value: useTflite,
+                onChanged: (v) =>
+                    ref.read(useTfliteProvider.notifier).state = v,
+              ),
+              const SizedBox(height: 8),
+              const Text(
+                'Note: This switch prepares the app to use a local TFLite model. '
+                'It currently delegates to the stub until you add the real model.',
+                style: TextStyle(
+                  fontSize: 13,
+                  color: CupertinoColors.secondaryLabel,
+                ),
+              ),
 
-            // Export / Clear buttons
-            Row(
-              children: [
-                Expanded(
-                  child: CupertinoButton.filled(
-                    onPressed: () async {
-                      final repo = ref.read(telemetryRepoProvider);
-                      final lines = await repo.dumpLines();
-                      final content = lines.join('\n');
-                      if (content.isEmpty) {
+              const SizedBox(height: 24),
+
+              // ------------ Privacy & Telemetry ------------
+              const _SectionHeader('Privacy & Telemetry'),
+              const SizedBox(height: 8),
+              _ToggleTile(
+                title: 'Allow anonymous usage logs',
+                subtitle:
+                    'Events are stored locally (offline). You can export or clear them anytime.',
+                value: telemetryOn,
+                onChanged: (v) =>
+                    ref.read(telemetryEnabledProvider.notifier).state = v,
+              ),
+              const SizedBox(height: 12),
+
+              // Export / Clear buttons
+              Row(
+                children: [
+                  Expanded(
+                    child: CupertinoButton.filled(
+                      onPressed: () async {
+                        final repo = ref.read(telemetryRepoProvider);
+                        final lines = await repo.dumpLines();
+                        final content = lines.join('\n');
+                        if (content.isEmpty) {
+                          await _showInfoDialog(
+                            context,
+                            title: 'Nothing to export',
+                            message: 'No logs available yet.',
+                          );
+                          return;
+                        }
+                        await SharePlus.instance.share(
+                          ShareParams(
+                            text: content,
+                            subject: 'telemetry.jsonl',
+                          ),
+                        );
+                      },
+                      child: const Text('Export logs'),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: CupertinoButton(
+                      color: CupertinoColors.systemRed,
+                      onPressed: () async {
+                        final confirm = await _confirmDialog(
+                          context,
+                          title: 'Clear logs?',
+                          message:
+                              'This will delete all locally stored usage logs. This cannot be undone.',
+                          okText: 'Clear',
+                        );
+                        if (confirm != true) return;
+                        final repo = ref.read(telemetryRepoProvider);
+                        await repo.clear();
                         await _showInfoDialog(
                           context,
-                          title: 'Nothing to export',
-                          message: 'No logs available yet.',
+                          title: 'Done',
+                          message: 'Logs cleared.',
                         );
-                        return;
-                      }
-                      await SharePlus.instance.share(
-                        ShareParams(
-                          text: content,
-                          subject: 'telemetry.jsonl',
-                        ),
-                      );
-                    },
-                    child: const Text('Export logs'),
+                      },
+                      child: const Text('Clear logs'),
+                    ),
                   ),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: CupertinoButton(
-                    color: CupertinoColors.systemRed,
-                    onPressed: () async {
-                      final confirm = await _confirmDialog(
-                        context,
-                        title: 'Clear logs?',
-                        message:
-                            'This will delete all locally stored usage logs. This cannot be undone.',
-                        okText: 'Clear',
-                      );
-                      if (confirm != true) return;
-                      final repo = ref.read(telemetryRepoProvider);
-                      await repo.clear();
-                      await _showInfoDialog(
-                        context,
-                        title: 'Done',
-                        message: 'Logs cleared.',
-                      );
-                    },
-                    child: const Text('Clear logs'),
-                  ),
-                ),
-              ],
-            ),
-
-            const SizedBox(height: 12),
-            const Text(
-              'No personal data is collected. Logs contain only anonymous events '
-              '(e.g., “opened article”, “saved”, “search query length”).',
-              style: TextStyle(
-                fontSize: 13,
-                color: CupertinoColors.secondaryLabel,
+                ],
               ),
-            ),
-          ],
+
+              const SizedBox(height: 12),
+              const Text(
+                'No personal data is collected. Logs contain only anonymous events '
+                '(e.g., “opened article”, “saved”, “search query length”).',
+                style: TextStyle(
+                  fontSize: 13,
+                  color: CupertinoColors.secondaryLabel,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -281,4 +289,3 @@ Future<bool?> _confirmDialog(
     ),
   );
 }
-

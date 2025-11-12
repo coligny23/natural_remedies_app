@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../widgets/app_background.dart';
+
 // keep your existing imports
 import '../progress/continue_learning_card.dart';
 import '../progress/streak_providers.dart';
@@ -33,75 +35,76 @@ class HomeScreen extends ConsumerWidget {
         final quiz = ref.watch(quizModelProvider);
 
         return Scaffold(
-          appBar: AppBar(
-            title: const Text('Home'),
-            actions: [
-              if (streak > 0)
-                Padding(
-                  padding: const EdgeInsets.only(right: 4),
-                  child: Chip(
-                    avatar: const Icon(Icons.local_fire_department, size: 18),
-                    label: Text('${streak}d'),
+            backgroundColor: Colors.transparent, // let the background show through
+            appBar: AppBar(
+              title: const Text('Home'),
+              actions: [
+                if (streak > 0)
+                  Padding(
+                    padding: const EdgeInsets.only(right: 4),
+                    child: Chip(
+                      avatar: const Icon(Icons.local_fire_department, size: 18),
+                      label: Text('${streak}d'),
+                    ),
                   ),
+                IconButton(
+                  tooltip: 'Saved Answers',
+                  icon: const Icon(Icons.star),
+                  onPressed: () => context.go('/saved-answers'),
                 ),
-              IconButton(
-                tooltip: 'Saved Answers',
-                icon: const Icon(Icons.star),
-                onPressed: () => context.go('/saved-answers'),
+              ],
+            ),
+
+            // ✅ Only change: wrap your existing ListView in AppBackground
+            body: AppBackground(
+              asset: 'assets/images/articles_jpg/imageone.jpg',
+              child: ListView(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+                children: [
+                  _HeroHeader(
+                    onSearch: () => context.go('/search'),
+                    onOpenDiseases: () => context.go('/diseases'),
+                    onOpenRemedies: () => context.go('/remedies'),
+                  ),
+                  const SizedBox(height: 12),
+
+                  const ContinueLearningCard(),
+                  const SizedBox(height: 12),
+
+                  if (remedy != null)
+                    _HomeCard(
+                      color: Theme.of(context).colorScheme.primaryContainer,
+                      title: lang == 'sw' ? 'Dawa ya Mimea ya Leo' : 'Remedy of the Day',
+                      subtitle: remedy.title,
+                      image: remedy.image,
+                      onTap: () => context.go('/article/${remedy.id}'),
+                    ),
+                  if (remedy != null) const SizedBox(height: 12),
+
+                  if (quiz.herb != null)
+                    _QuizCard(
+                      state: quiz,
+                      onSelect: (i) => ref.read(quizModelProvider.notifier).select(i),
+                      onNext: () => ref.read(quizModelProvider.notifier).next(),
+                      title: lang == 'sw' ? 'Mfahamu mmea' : 'Get to know a remedy',
+                    ),
+                  if (quiz.herb != null) const SizedBox(height: 12),
+
+                  if (principle != null)
+                    _HomeCard(
+                      color: Theme.of(context).colorScheme.tertiaryContainer,
+                      title: lang == 'sw' ? 'Kanuni ya Afya ya Leo' : 'Principle of Health',
+                      subtitle: principle.title,
+                      image: principle.image,
+                      onTap: () => context.go('/article/${principle.id}'),
+                    ),
+
+                  const SizedBox(height: 24),
+                ],
               ),
-            ],
-          ),
+            ),
+          );
 
-          body: ListView(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
-            children: [
-              // ⭐️ HERO HEADER BAND
-              _HeroHeader(
-                onSearch: () => context.go('/search'),
-                onOpenDiseases: () => context.go('/diseases'),
-                onOpenRemedies: () => context.go('/remedies'),
-              ),
-              const SizedBox(height: 12),
-
-              // ✅ Continue learning panel stays on top
-              const ContinueLearningCard(),
-              const SizedBox(height: 12),
-
-              // 🌿 Remedy of the Day
-              if (remedy != null)
-                _HomeCard(
-                  color: Theme.of(context).colorScheme.primaryContainer,
-                  title: lang == 'sw' ? 'Dawa ya Mimea ya Leo' : 'Remedy of the Day',
-                  subtitle: remedy.title,
-                  image: remedy.image,
-                  onTap: () => context.go('/article/${remedy.id}'),
-                ),
-              if (remedy != null) const SizedBox(height: 12),
-
-              // 🧩 Quick quiz
-              if (quiz.herb != null)
-                _QuizCard(
-                  state: quiz,
-                  onSelect: (i) => ref.read(quizModelProvider.notifier).select(i),
-                  onNext: () => ref.read(quizModelProvider.notifier).next(),
-                  title: lang == 'sw' ? 'Mfahamu mmea' : 'Get to know a remedy',
-                ),
-              if (quiz.herb != null) const SizedBox(height: 12),
-
-              // ❤️ Principle of Health of the Day
-              if (principle != null)
-                _HomeCard(
-                  color: Theme.of(context).colorScheme.tertiaryContainer,
-                  title: lang == 'sw' ? 'Kanuni ya Afya ya Leo' : 'Principle of Health',
-                  subtitle: principle.title,
-                  image: principle.image,
-                  onTap: () => context.go('/article/${principle.id}'),
-                ),
-
-              const SizedBox(height: 24),
-            ],
-          ),
-        );
       },
     );
   }
