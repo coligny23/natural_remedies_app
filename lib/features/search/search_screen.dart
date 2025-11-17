@@ -130,7 +130,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
         ],
       ),
       body: AppBackground(
-        asset: 'assets/images/articles_jpg/imageone.jpg', // ✅ wrap whole page content
+         // ✅ wrap whole page content
         child: Column(
           children: [
             Padding(

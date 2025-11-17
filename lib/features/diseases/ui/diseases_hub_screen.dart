@@ -25,8 +25,7 @@ class DiseasesHubScreen extends ConsumerWidget {
     return Scaffold(
       backgroundColor: Colors.transparent,        // ✅ let background show
       appBar: AppBar(title: const Text('Diseases')),
-      body: AppBackground(  
-        asset: 'assets/images/articles_jpg/imageone.jpg',                       // ✅ wrap content
+      body: AppBackground(                         // ✅ wrap content
         child: Padding(
           padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
           child: MasonryGridView.count(

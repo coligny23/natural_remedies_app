@@ -1,35 +1,58 @@
 // lib/app/widgets/app_background.dart
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import '../../app/theme/app_theme.dart';
+
 
 class AppBackground extends StatelessWidget {
   final Widget child;
-  final String asset; // e.g. 'assets/bg/leaves.jpg'
-  const AppBackground({super.key, required this.child, required this.asset});
+  final Widget? overlay; // optional extra overlay if you ever need it
+  const AppBackground({super.key, required this.child, this.overlay});
 
   @override
   Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final theme = Theme.of(context);
+    final imgs = theme.extension<BackgroundImages>();
+    final isDark = theme.brightness == Brightness.dark;
+    final asset = isDark ? imgs?.darkAsset : imgs?.lightAsset;
+
     return Stack(
+      fit: StackFit.expand,
       children: [
-        Positioned.fill(
-          child: Image.asset(
+        // Fallback: plain color/gradient when no asset is configured
+        if (asset == null) Container(color: theme.colorScheme.surface),
+
+        if (asset != null)
+          // The image itself
+          Image.asset(
             asset,
-            fit: BoxFit.cover,
-            alignment: Alignment.topCenter,
+            fit: imgs?.fit ?? BoxFit.cover,
           ),
-        ),
-        // soften + tint to preserve contrast
-        Positioned.fill(
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
-            child: Container(
-              color: isDark
-                  ? Colors.black.withOpacity(0.35)
-                  : Colors.white.withOpacity(0.30),
+
+        // Soft scrim to guarantee contrast for text/content (tuned per theme)
+        IgnorePointer(
+          child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter, end: Alignment.bottomCenter,
+                colors: isDark
+                    ? [
+                        Colors.black.withOpacity(0.20),
+                        Colors.black.withOpacity(0.40),
+                      ]
+                    : [
+                        Colors.white.withOpacity(0.06),
+                        Colors.white.withOpacity(0.10),
+                      ],
+              ),
             ),
           ),
         ),
+
+        // Optional extra overlay (blur, vignette, etc.)
+        if (overlay != null) overlay!,
+
+        // Your page content
         child,
       ],
     );
