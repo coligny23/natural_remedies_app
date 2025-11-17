@@ -32,6 +32,12 @@ class AppTheme {
       extensions: <ThemeExtension<dynamic>>[
         const AppElevations(small: 3, base: 8, high: 18, modal: 24),
         GlossyCardTheme.light(scheme),
+        const BackgroundImages(
+          lightAsset: 'assets/images/articles_jpg/imagetwo.jpg', // <- your light image
+          darkAsset:  'assets/images/articles_jpg/imageone.jpg',  // safe to keep here too
+          fit: BoxFit.cover,
+          opacity: 1.0,
+    ),
       ],
 
       scaffoldBackgroundColor: scheme.surface,
@@ -133,6 +139,12 @@ class AppTheme {
       extensions: <ThemeExtension<dynamic>>[
         const AppElevations(small: 3, base: 8, high: 18, modal: 24),
         GlossyCardTheme.dark(scheme),
+        const BackgroundImages(
+          lightAsset: 'assets/images/articles_jpg/imagetwo.jpg', // <- your light image
+          darkAsset:  'assets/images/articles_jpg/imageone.jpg',  // safe to keep here too
+          fit: BoxFit.cover,
+          opacity: 0.95,
+        )
       ],
 
       textTheme: text,
@@ -364,4 +376,45 @@ class GlossyCardTheme extends ThemeExtension<GlossyCardTheme> {
           topRight: borderRadius.topRight,
         ),
       );
+}
+
+@immutable
+class BackgroundImages extends ThemeExtension<BackgroundImages> {
+  final String? lightAsset;
+  final String? darkAsset;
+  final BoxFit fit;
+  final double opacity; // apply a subtle opacity so content stays readable
+
+  const BackgroundImages({
+    this.lightAsset,
+    this.darkAsset,
+    this.fit = BoxFit.cover,
+    this.opacity = 1.0,
+  });
+
+  @override
+  BackgroundImages copyWith({
+    String? lightAsset,
+    String? darkAsset,
+    BoxFit? fit,
+    double? opacity,
+  }) {
+    return BackgroundImages(
+      lightAsset: lightAsset ?? this.lightAsset,
+      darkAsset: darkAsset ?? this.darkAsset,
+      fit: fit ?? this.fit,
+      opacity: opacity ?? this.opacity,
+    );
+  }
+
+  @override
+  BackgroundImages lerp(ThemeExtension<BackgroundImages>? other, double t) {
+    if (other is! BackgroundImages) return this;
+    return BackgroundImages(
+      lightAsset: t < .5 ? lightAsset : other.lightAsset,
+      darkAsset: t < .5 ? darkAsset : other.darkAsset,
+      fit: fit,
+      opacity: opacity + (other.opacity - opacity) * t,
+    );
+  }
 }

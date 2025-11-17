@@ -48,7 +48,7 @@ class _SavedScreenState extends ConsumerState<SavedScreen> {
       backgroundColor: Colors.transparent, // ✅ let the global background show
       appBar: AppBar(title: const Text('Saved Remedies')),
       body: AppBackground(
-        asset: 'assets/images/articles_jpg/imageone.jpg', // ✅ wrap the whole page body
+         // ✅ wrap the whole page body
         child: itemsAsync.when(
           loading: () => const Center(child: CircularProgressIndicator()),
           error: (e, _) => Center(child: Text('Error: $e')),

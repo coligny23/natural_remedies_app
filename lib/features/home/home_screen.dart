@@ -57,7 +57,6 @@ class HomeScreen extends ConsumerWidget {
 
             // ✅ Only change: wrap your existing ListView in AppBackground
             body: AppBackground(
-              asset: 'assets/images/articles_jpg/imageone.jpg',
               child: ListView(
                 padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
                 children: [

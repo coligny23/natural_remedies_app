@@ -114,7 +114,7 @@ class LearnHubScreen extends StatelessWidget {
       backgroundColor: Colors.transparent, // ✅ let background show
       appBar: AppBar(title: const Text('Learn')),
       body: AppBackground(
-        asset: 'assets/images/articles_jpg/imageone.jpg',                     // ✅ wrap the page body
+                             // ✅ wrap the page body
         child: ListView(
           padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
           children: [

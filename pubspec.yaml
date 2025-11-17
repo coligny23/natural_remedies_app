@@ -52,3 +52,5 @@ flutter:
     - assets/ml/vocab.txt
     - assets/images/articles_jpg/
     - assets/images/fallbacks/
+    - assets/images/articles_jpg/imagetwo.jpg
+    - assets/images/articles_jpg/imageone.jpg

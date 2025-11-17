@@ -27,7 +27,7 @@ class SettingsScreen extends ConsumerWidget {
         middle: Text('Settings'),
       ),
       child: AppBackground(
-        asset: 'assets/images/articles_jpg/imageone.jpg', // ✅ wrap whole page content
+         // ✅ wrap whole page content
         child: SafeArea(
           bottom: false,
           child: ListView(
