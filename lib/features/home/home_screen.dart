@@ -13,9 +13,14 @@ import '../progress/streak_providers.dart';
 // pull content + language from your existing providers
 import '../content/models/content_item.dart';
 import '../search/search_providers.dart'; // contentListProvider, languageCodeProvider
+import '../content/data/content_lookup_provider.dart'; // contentByIdProvider
 
 // theme extensions (gloss, elevation)
 import '../../app/theme/app_theme.dart';
+
+// ✅ ML personalization (For You)
+import '../../shared/ml/ml_providers.dart'; // forYouIdsProvider
+import '../settings/feature_flags.dart'; // useTfliteProvider
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -26,6 +31,10 @@ class HomeScreen extends ConsumerWidget {
     final lang = ref.watch(languageCodeProvider);
     final itemsAsync = ref.watch(contentListProvider);
 
+    // ✅ ML toggle + candidates for "For You"
+    final useTfl = ref.watch(useTfliteProvider);
+    final forYouIdsAsync = ref.watch(forYouIdsProvider);
+
     return itemsAsync.when(
       loading: () => const Scaffold(body: Center(child: CircularProgressIndicator())),
       error: (e, _) => Scaffold(body: Center(child: Text('Error: $e'))),
@@ -35,75 +44,99 @@ class HomeScreen extends ConsumerWidget {
         final quiz = ref.watch(quizModelProvider);
 
         return Scaffold(
-            backgroundColor: Colors.transparent, // let the background show through
-            appBar: AppBar(
-              title: const Text('Home'),
-              actions: [
-                if (streak > 0)
-                  Padding(
-                    padding: const EdgeInsets.only(right: 4),
-                    child: Chip(
-                      avatar: const Icon(Icons.local_fire_department, size: 18),
-                      label: Text('${streak}d'),
-                    ),
+          backgroundColor: Colors.transparent, // let the background show through
+          appBar: AppBar(
+            title: const Text('Home'),
+            actions: [
+              if (streak > 0)
+                Padding(
+                  padding: const EdgeInsets.only(right: 4),
+                  child: Chip(
+                    avatar: const Icon(Icons.local_fire_department, size: 18),
+                    label: Text('${streak}d'),
                   ),
-                IconButton(
-                  tooltip: 'Saved Answers',
-                  icon: const Icon(Icons.star),
-                  onPressed: () => context.go('/saved-answers'),
                 ),
+              IconButton(
+                tooltip: 'Saved Answers',
+                icon: const Icon(Icons.star),
+                onPressed: () => context.go('/saved-answers'),
+              ),
+            ],
+          ),
+
+          // ✅ Only change: wrap your existing ListView in AppBackground
+          body: AppBackground(
+            child: ListView(
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+              children: [
+                _HeroHeader(
+                  onSearch: () => context.go('/search'),
+                  onOpenDiseases: () => context.go('/diseases'),
+                  onOpenRemedies: () => context.go('/remedies'),
+                ),
+                const SizedBox(height: 12),
+
+                const ContinueLearningCard(),
+                const SizedBox(height: 12),
+
+                // ✅ NEW: "For You" rail (optional; shows only when toggle ON and we have profile-based IDs)
+                if (useTfl)
+                  forYouIdsAsync.when(
+                    loading: () => const SizedBox.shrink(),
+                    error: (_, __) => const SizedBox.shrink(),
+                    data: (ids) {
+                      // Map IDs to items (skip any that aren't loaded)
+                      final items = <ContentItem>[];
+                      for (final id in ids) {
+                        final it = ref.watch(contentByIdProvider(id));
+                        if (it != null) items.add(it);
+                      }
+                      if (items.isEmpty) return const SizedBox.shrink();
+
+                      return _ForYouRail(
+                        title: lang == 'sw' ? 'Kwa Ajili Yako' : 'For You',
+                        items: items,
+                        onOpen: (id) => context.go('/article/$id'),
+                      );
+                    },
+                  ),
+
+                // 🌿 Remedy of the Day
+                if (remedy != null)
+                  _HomeCard(
+                    color: Theme.of(context).colorScheme.primaryContainer,
+                    title: lang == 'sw' ? 'Dawa ya Mimea ya Leo' : 'Remedy of the Day',
+                    subtitle: remedy.title,
+                    image: remedy.image,
+                    onTap: () => context.go('/article/${remedy.id}'),
+                  ),
+                if (remedy != null) const SizedBox(height: 12),
+
+                // 🧩 Quick quiz
+                if (quiz.herb != null)
+                  _QuizCard(
+                    state: quiz,
+                    onSelect: (i) => ref.read(quizModelProvider.notifier).select(i),
+                    onNext: () => ref.read(quizModelProvider.notifier).next(),
+                    title: lang == 'sw' ? 'Mfahamu mmea' : 'Get to know a remedy',
+                  ),
+                if (quiz.herb != null) const SizedBox(height: 12),
+
+                // ❤️ Principle of Health of the Day
+                if (principle != null)
+                  _HomeCard(
+                    color: Theme.of(context).colorScheme.tertiaryContainer,
+                    title: lang == 'sw' ? 'Kanuni ya Afya ya Leo' : 'Principle of Health',
+                    subtitle: principle.title,
+                    image: principle.image,
+                    onTap: () => context.go('/article/${principle.id}'),
+                  ),
+
+                const SizedBox(height: 24),
               ],
             ),
-
-            // ✅ Only change: wrap your existing ListView in AppBackground
-            body: AppBackground(
-              child: ListView(
-                padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
-                children: [
-                  _HeroHeader(
-                    onSearch: () => context.go('/search'),
-                    onOpenDiseases: () => context.go('/diseases'),
-                    onOpenRemedies: () => context.go('/remedies'),
-                  ),
-                  const SizedBox(height: 12),
-
-                  const ContinueLearningCard(),
-                  const SizedBox(height: 12),
-
-                  if (remedy != null)
-                    _HomeCard(
-                      color: Theme.of(context).colorScheme.primaryContainer,
-                      title: lang == 'sw' ? 'Dawa ya Mimea ya Leo' : 'Remedy of the Day',
-                      subtitle: remedy.title,
-                      image: remedy.image,
-                      onTap: () => context.go('/article/${remedy.id}'),
-                    ),
-                  if (remedy != null) const SizedBox(height: 12),
-
-                  if (quiz.herb != null)
-                    _QuizCard(
-                      state: quiz,
-                      onSelect: (i) => ref.read(quizModelProvider.notifier).select(i),
-                      onNext: () => ref.read(quizModelProvider.notifier).next(),
-                      title: lang == 'sw' ? 'Mfahamu mmea' : 'Get to know a remedy',
-                    ),
-                  if (quiz.herb != null) const SizedBox(height: 12),
-
-                  if (principle != null)
-                    _HomeCard(
-                      color: Theme.of(context).colorScheme.tertiaryContainer,
-                      title: lang == 'sw' ? 'Kanuni ya Afya ya Leo' : 'Principle of Health',
-                      subtitle: principle.title,
-                      image: principle.image,
-                      onTap: () => context.go('/article/${principle.id}'),
-                    ),
-
-                  const SizedBox(height: 24),
-                ],
-              ),
-            ),
-          );
-
+          ),
+        );
       },
     );
   }
@@ -500,11 +533,130 @@ class _QuizCard extends StatelessWidget {
   }
 }
 
+/* -------------------- NEW: For You rail -------------------- */
+
+class _ForYouRail extends StatelessWidget {
+  final String title;
+  final List<ContentItem> items;
+  final void Function(String id) onOpen;
+
+  const _ForYouRail({
+    required this.title,
+    required this.items,
+    required this.onOpen,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final s = Theme.of(context).colorScheme;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(4, 0, 4, 8),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(title, style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700)),
+              Icon(Icons.auto_awesome, size: 18, color: s.primary),
+            ],
+          ),
+        ),
+        SizedBox(
+          height: 148,
+          child: ListView.separated(
+            scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.symmetric(horizontal: 4),
+            itemCount: items.length,
+            separatorBuilder: (_, __) => const SizedBox(width: 10),
+            itemBuilder: (context, i) {
+              final it = items[i];
+              return _ForYouCard(
+                title: it.title,
+                image: it.image,
+                onTap: () => onOpen(it.id),
+              );
+            },
+          ),
+        ),
+        const SizedBox(height: 16),
+      ],
+    );
+  }
+}
+
+class _ForYouCard extends StatelessWidget {
+  final String title;
+  final String? image;
+  final VoidCallback onTap;
+  const _ForYouCard({required this.title, this.image, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final glossy = Theme.of(context).extension<GlossyCardTheme>();
+    final elevation = Theme.of(context).extension<AppElevations>()?.base ?? 8;
+    final deco = (glossy?.bodyDecoration().copyWith(
+          boxShadow: glossy?.shadows
+              .map((s) => s.copyWith(blurRadius: s.blurRadius + elevation))
+              .toList(),
+        )) ??
+        BoxDecoration(
+          color: Theme.of(context).colorScheme.surface,
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: Theme.of(context).dividerColor.withOpacity(.35)),
+        );
+
+    return InkWell(
+      onTap: onTap,
+      borderRadius: glossy?.borderRadius ?? BorderRadius.circular(16),
+      child: Container(
+        width: 220,
+        decoration: deco,
+        clipBehavior: Clip.antiAlias,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // thumbnail
+            if ((image ?? '').isNotEmpty)
+              AspectRatio(
+                aspectRatio: 16 / 9,
+                child: Image.asset(
+                  image!,
+                  fit: BoxFit.cover,
+                  errorBuilder: (_, __, ___) => const ColoredBox(
+                    color: Colors.black26,
+                    child: Center(child: Icon(Icons.image_not_supported)),
+                  ),
+                ),
+              )
+            else
+              const AspectRatio(
+                aspectRatio: 16 / 9,
+                child: ColoredBox(
+                  color: Colors.black12,
+                  child: Center(child: Icon(Icons.eco)),
+                ),
+              ),
+            // title
+            Padding(
+              padding: const EdgeInsets.fromLTRB(12, 10, 12, 12),
+              child: Text(
+                title,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 /* -------------------- Design tokens used in animations -------------------- */
 
 class AppTokens {
   static const short = Duration(milliseconds: 150);
   static const medium = Duration(milliseconds: 220);
 }
-
-

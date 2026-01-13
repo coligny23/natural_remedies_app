@@ -14,6 +14,9 @@ import '../content/models/content_item.dart';
 import '../../shared/ml/qa_providers.dart'; // qaInitProvider / qaAnswerProvider
 import '../../shared/telemetry/telemetry_providers.dart'; // <-- telemetry
 
+// ✅ ML (semantic blending)
+import '../../shared/ml/ml_providers.dart'; // semanticScoresProvider
+
 // ✅ Background wrapper
 import '../../widgets/app_background.dart';
 
@@ -75,8 +78,9 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
       data: (list) => list.length,
       orElse: () => null,
     );
-    // add this line with your other locals at the top of build()
+    // History
     final history = ref.watch(searchHistoryProvider);
+
     // Synonym suggestions for current query
     final synsAsync = ref.watch(synonymsMapProvider);
 
@@ -100,6 +104,9 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     final answerAsync =
         query.isEmpty ? null : ref.watch(qaAnswerProvider(query));
     final lang = ref.watch(languageCodeProvider); // 'en' or 'sw'
+
+    // ✅ Semantic scores (cosine from 0..1) for this query (gated by your feature flag)
+    final semScoresAsync = ref.watch(semanticScoresProvider(query));
 
     return Scaffold(
       backgroundColor: Colors.transparent, // ✅ let global bg show
@@ -130,7 +137,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
         ],
       ),
       body: AppBackground(
-         // ✅ wrap whole page content
+        // ✅ wrap whole page content
         child: Column(
           children: [
             Padding(
@@ -339,6 +346,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
             ],
             // --- end Answer card ---
 
+            // ======================== RESULTS (WITH BLENDING) ========================
             Expanded(
               child: resultsAsync.when(
                 loading: () =>
@@ -347,77 +355,185 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                   padding: const EdgeInsets.all(16),
                   child: Text('Search error: $err'),
                 ),
-                data: (results) {
-                  if (results.isEmpty) {
+                data: (keywordResults) {
+                  if (keywordResults.isEmpty) {
                     return const _EmptyState();
                   }
-                  return ListView.separated(
-                    itemCount: results.length,
-                    separatorBuilder: (_, __) => const Divider(height: 1),
-                    itemBuilder: (context, index) {
-                      final item = results[index];
 
-                      final bodyText = (lang == 'sw')
-                          ? (item.contentSw ?? item.contentEn ?? '')
-                          : (item.contentEn ?? item.contentSw ?? '');
-                      final snippetSrc = bodyText.replaceAll('\n', ' ');
-                      final snippet = snippetSrc.length <= 160
-                          ? snippetSrc
-                          : '${snippetSrc.substring(0, 160)} …';
-                      final hasImage = (item.image ?? '').isNotEmpty;
+                  // Wait for semantic scores, then blend & sort.
+                  return semScoresAsync.when(
+                    loading: () {
+                      // While semantic is loading, display pure keyword results.
+                      return _ResultsList(
+                        items: keywordResults,
+                        lang: lang,
+                        query: query,
+                        blendedBadge: null,
+                        onTap: (it) async {
+                          await ref.logEvent('open_from_search', {
+                            'id': it.id,
+                            'title': it.title,
+                            'lang': lang,
+                          });
+                          if (!context.mounted) return;
+                          context.go('/article/${it.id}');
+                        },
+                      );
+                    },
+                    error: (_, __) {
+                      // On semantic error, fallback to keyword results.
+                      return _ResultsList(
+                        items: keywordResults,
+                        lang: lang,
+                        query: query,
+                        blendedBadge: null,
+                        onTap: (it) async {
+                          await ref.logEvent('open_from_search', {
+                            'id': it.id,
+                            'title': it.title,
+                            'lang': lang,
+                          });
+                          if (!context.mounted) return;
+                          context.go('/article/${it.id}');
+                        },
+                      );
+                    },
+                    data: (semScores) {
+                      // Compute blended scores:
+                      // keyword_score = 1.0 for rank1, down to ~0 for the last item
+                      // semantic_score = semScores[item.id] in [0..1] (if present)
+                      // final = 0.6*keyword + 0.4*semantic
+                      final n = keywordResults.length.toDouble();
+                      final blended = <({ContentItem item, double finalScore, double k, double s})>[];
 
-                      return MergeSemantics(
-                        child: Semantics(
-                          excludeSemantics: true,
-                          button: true,
-                          label:
-                              '${item.title}. ${snippet.isEmpty ? "Open details" : snippet}. Double tap to open details.',
-                          child: ListTile(
-                            contentPadding: const EdgeInsets.symmetric(
-                                horizontal: 12, vertical: 8),
-                            leading: hasImage
-                                ? ClipRRect(
-                                    borderRadius: BorderRadius.circular(8),
-                                    child: Image.asset(
-                                      item.image!,
-                                      width: 56,
-                                      height: 56,
-                                      fit: BoxFit.cover,
-                                      errorBuilder: (_, __, ___) =>
-                                          const Icon(Icons.image_not_supported),
-                                    ),
-                                  )
-                                : const CircleAvatar(
-                                    radius: 28,
-                                    child: Icon(Icons.eco),
-                                  ),
-                            title: Text(item.title),
-                            subtitle: RichText(
-                              text: TextSpan(
-                                style: Theme.of(context).textTheme.bodyMedium,
-                                children: _highlight(snippet, query),
-                              ),
-                            ),
-                            onTap: () async {
-                              await ref.logEvent('open_from_search', {
-                                'id': item.id,
-                                'title': item.title,
-                                'lang': lang,
-                              });
-                              if (!context.mounted) return;
-                              context.go('/article/${item.id}');
-                            },
-                          ),
-                        ),
+                      for (var i = 0; i < keywordResults.length; i++) {
+                        final it = keywordResults[i];
+                        final k = (n - i) / n; // inverse rank
+                        final s = (semScores[it.id] ?? 0.0).clamp(0.0, 1.0);
+                        final score = 0.6 * k + 0.4 * s;
+                        blended.add((item: it, finalScore: score, k: k, s: s));
+                      }
+
+                      blended.sort((a, b) => b.finalScore.compareTo(a.finalScore));
+
+                      // Extract items in new order
+                      final ordered = blended.map((e) => e.item).toList();
+
+                      // Optional tiny badge to visualize scores (for debugging)
+                      String _badgeOf(ContentItem it) {
+                        final b = blended.firstWhere((e) => e.item.id == it.id);
+                        // show final score with small components
+                        return '★ ${(b.finalScore).toStringAsFixed(2)}  k:${b.k.toStringAsFixed(2)} s:${b.s.toStringAsFixed(2)}';
+                      }
+
+                      return _ResultsList(
+                        items: ordered,
+                        lang: lang,
+                        query: query,
+                        blendedBadge: _badgeOf, // set to null to hide badges
+                        onTap: (it) async {
+                          await ref.logEvent('open_from_search', {
+                            'id': it.id,
+                            'title': it.title,
+                            'lang': lang,
+                          });
+                          if (!context.mounted) return;
+                          context.go('/article/${it.id}');
+                        },
                       );
                     },
                   );
                 },
               ),
             ),
+            // ====================== END RESULTS (WITH BLENDING) ======================
           ],
         ),
       ),
+    );
+  }
+}
+
+class _ResultsList extends StatelessWidget {
+  final List<ContentItem> items;
+  final String lang;
+  final String query;
+  final void Function(ContentItem) onTap;
+  /// Optional: show a small trailing badge per row with the blended score.
+  final String Function(ContentItem)? blendedBadge;
+
+  const _ResultsList({
+    required this.items,
+    required this.lang,
+    required this.query,
+    required this.onTap,
+    this.blendedBadge,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.separated(
+      itemCount: items.length,
+      separatorBuilder: (_, __) => const Divider(height: 1),
+      itemBuilder: (context, index) {
+        final item = items[index];
+
+        final bodyText = (lang == 'sw')
+            ? (item.contentSw ?? item.contentEn ?? '')
+            : (item.contentEn ?? item.contentSw ?? '');
+        final snippetSrc = bodyText.replaceAll('\n', ' ');
+        final snippet =
+            snippetSrc.length <= 160 ? snippetSrc : '${snippetSrc.substring(0, 160)} …';
+        final hasImage = (item.image ?? '').isNotEmpty;
+
+        final badge = blendedBadge?.call(item);
+
+        return MergeSemantics(
+          child: Semantics(
+            excludeSemantics: true,
+            button: true,
+            label:
+                '${item.title}. ${snippet.isEmpty ? "Open details" : snippet}. Double tap to open details.',
+            child: ListTile(
+              contentPadding:
+                  const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              leading: hasImage
+                  ? ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: Image.asset(
+                        item.image!,
+                        width: 56,
+                        height: 56,
+                        fit: BoxFit.cover,
+                        errorBuilder: (_, __, ___) =>
+                            const Icon(Icons.image_not_supported),
+                      ),
+                    )
+                  : const CircleAvatar(
+                      radius: 28,
+                      child: Icon(Icons.eco),
+                    ),
+              title: Text(item.title),
+              subtitle: RichText(
+                text: TextSpan(
+                  style: Theme.of(context).textTheme.bodyMedium,
+                  children: _highlight(snippet, query),
+                ),
+              ),
+              trailing: (badge == null)
+                  ? null
+                  : Text(
+                      badge,
+                      style: Theme.of(context)
+                          .textTheme
+                          .labelSmall
+                          ?.copyWith(color: Theme.of(context).colorScheme.primary),
+                    ),
+              onTap: () => onTap(item),
+            ),
+          ),
+        );
+      },
     );
   }
 }

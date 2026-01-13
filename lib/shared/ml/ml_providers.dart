@@ -65,3 +65,55 @@ final profileVecProvider = FutureProvider<List<double>?>((ref) async {
   await repo.init();
   return repo.readVec();
 });
+
+// ===== Adjustments made: scored semantic results + "For You" =====
+
+/// Return semantic scores as a map {id -> cosine [0..1]} for the given query.
+/// Gated by the feature flag.
+final semanticScoresProvider = FutureProvider.family<Map<String, double>, String>((ref, query) async {
+  final useTfl = ref.watch(useTfliteProvider);
+  if (!useTfl) return const {};
+
+  final q = query.trim();
+  if (q.isEmpty) return const {};
+
+  final idx = await ref.watch(embeddingIndexProvider.future);
+  final qv = ref.read(embedTextProvider(q));
+
+  // Compute cosine scores (brute force)
+  final scores = <String, double>{};
+  for (var i = 0; i < idx.n; i++) {
+    final cos = cosineF32(qv, idx.vecs[i]);
+    // Keep non-negative portion for blending (optional)
+    scores[idx.meta[i].id] = cos.clamp(0.0, 1.0);
+  }
+
+  // Return top 200 only (keep memory/merge small)
+  final entries = scores.entries.toList()
+    ..sort((a, b) => b.value.compareTo(a.value));
+  final capped = entries.take(200);
+  return {for (final e in capped) e.key: e.value};
+});
+
+/// "For You" index rows derived from profile vector (EMA-updated elsewhere).
+/// Returns top N IDs by cosine(profile, item).
+final forYouIdsProvider = FutureProvider<List<String>>((ref) async {
+  final useTfl = ref.watch(useTfliteProvider);
+  if (!useTfl) return const <String>[];
+
+  final profile = await ref.watch(profileVecProvider.future);
+  if (profile == null || profile.isEmpty) return const <String>[];
+
+  final idx = await ref.watch(embeddingIndexProvider.future);
+
+// Named record version
+final scored = <({int i, double s})>[];
+for (var i = 0; i < idx.n; i++) {
+  final s = cosineF32(profile, idx.vecs[i]);
+  scored.add((i: i, s: s));
+}
+scored.sort((a, b) => b.s.compareTo(a.s));
+final top = scored.take(8).map((t) => idx.meta[t.i].id).toList();
+
+  return top;
+});

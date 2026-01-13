@@ -16,6 +16,10 @@ import '../data/content_lookup_provider.dart'; // contentByIdProvider(id)
 import '../../saved/bookmarks_controller.dart'; // bookmarksProvider
 import '../models/content_item.dart';
 
+// ✅ ML personalization (Day 4)
+import '../../../shared/ml/ml_providers.dart'; // profileRepoProvider, profileVecProvider, embedTextProvider
+import '../../settings/feature_flags.dart'; // useTfliteProvider
+
 class ContentDetailScreen extends ConsumerStatefulWidget {
   final String id;
   final String? initialSection;
@@ -34,6 +38,9 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
 
   // cache built tabs per article id
   List<_TabSpec> _tabs = const [];
+
+  // ✅ guard so we only update profile once per open
+  bool _profileUpdatedOnce = false;
 
   @override
   void initState() {
@@ -76,6 +83,14 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
         final hasImage = (item.image ?? '').isNotEmpty;
         final credit = item.imageMeta?['credit'] as String?;
         final isSaved = ref.watch(bookmarksProvider).contains(item.id);
+
+        // ✅ bump profile vector once when this page opens
+        if (!_profileUpdatedOnce && body.trim().isNotEmpty) {
+          _profileUpdatedOnce = true;
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            _bumpProfileVector(ref, title: item.title, body: body);
+          });
+        }
 
         // Build buckets → tabs (Overview/Treatment/Causes/Symptoms)
         _tabs = _buildTabs(context, body, lang);
@@ -244,6 +259,40 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
         );
       },
     );
+  }
+
+  // ✅ Day 4: Update profile vector (EMA) once per open
+  Future<void> _bumpProfileVector(
+    WidgetRef ref, {
+    required String title,
+    required String body,
+  }) async {
+    // Respect feature flag—only personalize when the user opted in.
+    final useTfl = ref.read(useTfliteProvider);
+    if (!useTfl) return;
+
+    final repo = ref.read(profileRepoProvider);
+    await repo.init();
+
+    final vOld = await ref.read(profileVecProvider.future) ?? const <double>[];
+    final text = '$title\n$body';
+
+    // Embed current article
+    final vNew = ref.read(embedTextProvider(text));
+
+    // EMA: p = 0.85 * old + 0.15 * new
+    List<double> _ema(List<double> a, List<double> b) {
+      if (a.isEmpty) return b;
+      final len = b.length;
+      final out = List<double>.filled(len, 0.0, growable: false);
+      for (var i = 0; i < len; i++) {
+        final ao = (i < a.length) ? a[i] : 0.0;
+        out[i] = 0.85 * ao + 0.15 * b[i];
+      }
+      return out;
+    }
+
+    await repo.writeVec(_ema(vOld, vNew));
   }
 
   // --- Build tab specs from raw text using your existing heuristics ---
