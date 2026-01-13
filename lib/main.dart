@@ -7,7 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'app/routing/app_router.dart';
 import 'app/theme/app_theme.dart';
 import 'features/search/search_providers.dart'; // <-- for languageCodeProvider
-import 'features/progress/streak_providers.dart'; // <-- ADD THIS
+import 'features/progress/streak_providers.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,6 +15,7 @@ Future<void> main() async {
   await Hive.openBox('bookmarks');
   await Hive.openBox('reading_progress');
   await Hive.openBox('legal');
+  await Hive.openBox('ml_profile');
   runApp(const ProviderScope(child: App()));
 }
 

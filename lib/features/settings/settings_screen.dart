@@ -5,6 +5,8 @@ import 'package:share_plus/share_plus.dart';
 import '../../shared/telemetry/telemetry_providers.dart';
 import '../../shared/telemetry/telemetry.dart';
 import '../settings/reminder_providers.dart';
+import '../../shared/ml/profile_repository.dart';
+
 
 import '../search/search_providers.dart'; // languageCodeProvider
 import 'feature_flags.dart'; // useTfliteProvider
@@ -76,6 +78,35 @@ class SettingsScreen extends ConsumerWidget {
               ),
 
               const SizedBox(height: 24),
+              
+              // ------------ Personalization ------------
+              const _SectionHeader('Personalization'),
+              const SizedBox(height: 8),
+              CupertinoButton(
+                color: CupertinoColors.systemGrey2,
+                onPressed: () async {
+                  final confirm = await _confirmDialog(
+                    context,
+                    title: 'Reset personalization?',
+                    message: 'This clears your on-device profile vector so recommendations and semantic tailoring relearn from scratch.',
+                    okText: 'Reset',
+                  );
+                  if (confirm != true) return;
+
+                  final repo = ProfileRepo();
+                  await repo.init();
+                  await repo.clear();
+
+                  await _showInfoDialog(
+                    context,
+                    title: 'Done',
+                    message: 'Personalization has been reset.',
+                  );
+                },
+                child: const Text('Reset personalization'),
+              ),
+              const SizedBox(height: 24),
+
 
               // ------------ Privacy & Telemetry ------------
               const _SectionHeader('Privacy & Telemetry'),
