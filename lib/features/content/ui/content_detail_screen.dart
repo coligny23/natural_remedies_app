@@ -5,6 +5,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:flutter/services.dart' show Clipboard, ClipboardData;
 
+import '../../../shared/ml/embedder/minilm_embedder.dart' as minilm;
 import '../../progress/progress_tracker.dart';
 import '../../../app/theme/app_theme.dart'; // AppElevations, GlossyCardTheme (ThemeExtensions)
 
@@ -278,7 +279,8 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
     final text = '$title\n$body';
 
     // Embed current article
-    final vNew = ref.read(embedTextProvider(text));
+    final vNew = ref.read(minilm.embedTextProvider(text));
+
 
     // EMA: p = 0.85 * old + 0.15 * new
     List<double> _ema(List<double> a, List<double> b) {
