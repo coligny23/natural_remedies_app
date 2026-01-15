@@ -6,7 +6,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../widgets/app_background.dart';
 
-// keep your existing imports
+
 import '../progress/continue_learning_card.dart';
 import '../progress/streak_providers.dart';
 
@@ -27,7 +27,7 @@ class HomeScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final streak = ref.watch(streakProvider); // 🔥 keep your streak badge
+    final streak = ref.watch(streakProvider); 
     final lang = ref.watch(languageCodeProvider);
     final itemsAsync = ref.watch(contentListProvider);
 
