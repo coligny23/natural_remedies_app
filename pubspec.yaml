@@ -53,9 +53,9 @@ flutter:
     - assets/ml/vocab.txt
     - assets/images/articles_jpg/
     - assets/images/fallbacks/
-    - assets/models/
     - assets/models/encoder.tflite
     - assets/models/vocab.txt
-    - assets/embeddings/
+    - assets/embeddings/index.bin
+    - assets/embeddings/meta.json
     - assets/images/articles_jpg/imagetwo.jpg
     - assets/images/articles_jpg/imageone.jpg
