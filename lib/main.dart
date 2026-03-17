@@ -57,9 +57,7 @@ class _AppState extends ConsumerState<App> {
   @override
   Widget build(BuildContext context) {
     final contentLang = ref.watch(languageCodeProvider);
-    final uiLocale =
-        (contentLang == 'sw') ? const Locale('en') : const Locale('en');
-
+    final uiLocale = (contentLang == 'sw') ? const Locale('sw') : const Locale('en');
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,

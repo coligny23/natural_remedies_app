@@ -3,9 +3,9 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import '../../l10n/app_strings.dart';
 
 import '../../widgets/app_background.dart';
-
 
 import '../progress/continue_learning_card.dart';
 import '../progress/streak_providers.dart';
@@ -27,26 +27,31 @@ class HomeScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final streak = ref.watch(streakProvider); 
+    final streak = ref.watch(streakProvider);
     final lang = ref.watch(languageCodeProvider);
     final itemsAsync = ref.watch(contentListProvider);
+    final t = AppStrings.of(context);
 
     // ✅ ML toggle + candidates for "For You"
     final useTfl = ref.watch(useTfliteProvider);
     final forYouIdsAsync = ref.watch(forYouIdsProvider);
 
     return itemsAsync.when(
-      loading: () => const Scaffold(body: Center(child: CircularProgressIndicator())),
-      error: (e, _) => Scaffold(body: Center(child: Text('Error: $e'))),
+      loading: () => Scaffold(
+        body: Center(child: Text(t.loading)),
+      ),
+      error: (e, _) => Scaffold(
+        body: Center(child: Text('${t.errorOccurred}: $e')),
+      ),
       data: (_) {
         final remedy = ref.watch(remedyOfDayProvider);
         final principle = ref.watch(principleOfDayProvider);
         final quiz = ref.watch(quizModelProvider);
 
         return Scaffold(
-          backgroundColor: Colors.transparent, // let the background show through
+          backgroundColor: Colors.transparent,
           appBar: AppBar(
-            title: const Text('Home'),
+            title: Text(t.home),
             actions: [
               if (streak > 0)
                 Padding(
@@ -57,14 +62,12 @@ class HomeScreen extends ConsumerWidget {
                   ),
                 ),
               IconButton(
-                tooltip: 'Saved Answers',
+                tooltip: t.savedAnswers,
                 icon: const Icon(Icons.star),
                 onPressed: () => context.go('/saved-answers'),
               ),
             ],
           ),
-
-          // ✅ Only change: wrap your existing ListView in AppBackground
           body: AppBackground(
             child: ListView(
               padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
@@ -79,13 +82,11 @@ class HomeScreen extends ConsumerWidget {
                 const ContinueLearningCard(),
                 const SizedBox(height: 12),
 
-                // ✅ NEW: "For You" rail (optional; shows only when toggle ON and we have profile-based IDs)
                 if (useTfl)
                   forYouIdsAsync.when(
                     loading: () => const SizedBox.shrink(),
                     error: (_, __) => const SizedBox.shrink(),
                     data: (ids) {
-                      // Map IDs to items (skip any that aren't loaded)
                       final items = <ContentItem>[];
                       for (final id in ids) {
                         final it = ref.watch(contentByIdProvider(id));
@@ -94,39 +95,37 @@ class HomeScreen extends ConsumerWidget {
                       if (items.isEmpty) return const SizedBox.shrink();
 
                       return _ForYouRail(
-                        title: lang == 'sw' ? 'Kwa Ajili Yako' : 'For You',
+                        title: t.forYou,
                         items: items,
                         onOpen: (id) => context.go('/article/$id'),
                       );
                     },
                   ),
 
-                // 🌿 Remedy of the Day
                 if (remedy != null)
                   _HomeCard(
                     color: Theme.of(context).colorScheme.primaryContainer,
-                    title: lang == 'sw' ? 'Dawa ya Mimea ya Leo' : 'Remedy of the Day',
+                    title: t.remedyOfDay,
                     subtitle: remedy.title,
                     image: remedy.image,
                     onTap: () => context.go('/article/${remedy.id}'),
                   ),
                 if (remedy != null) const SizedBox(height: 12),
 
-                // 🧩 Quick quiz
                 if (quiz.herb != null)
                   _QuizCard(
                     state: quiz,
-                    onSelect: (i) => ref.read(quizModelProvider.notifier).select(i),
+                    onSelect: (i) =>
+                        ref.read(quizModelProvider.notifier).select(i),
                     onNext: () => ref.read(quizModelProvider.notifier).next(),
-                    title: lang == 'sw' ? 'Mfahamu mmea' : 'Get to know a remedy',
+                    title: t.getToKnowRemedy,
                   ),
                 if (quiz.herb != null) const SizedBox(height: 12),
 
-                // ❤️ Principle of Health of the Day
                 if (principle != null)
                   _HomeCard(
                     color: Theme.of(context).colorScheme.tertiaryContainer,
-                    title: lang == 'sw' ? 'Kanuni ya Afya ya Leo' : 'Principle of Health',
+                    title: t.principleOfHealth,
                     subtitle: principle.title,
                     image: principle.image,
                     onTap: () => context.go('/article/${principle.id}'),
@@ -146,13 +145,14 @@ class HomeScreen extends ConsumerWidget {
 
 final _todaySeedProvider = Provider<int>((ref) {
   final now = DateTime.now();
-  // deterministic daily seed (changes at midnight)
   final day0 = DateTime(now.year, now.month, now.day);
   return day0.millisecondsSinceEpoch ~/ (24 * 3600 * 1000);
 });
 
 final remedyOfDayProvider = Provider<ContentItem?>((ref) {
-  final items = ref.watch(contentListProvider).maybeWhen(data: (l) => l, orElse: () => <ContentItem>[]);
+  final items = ref
+      .watch(contentListProvider)
+      .maybeWhen(data: (l) => l, orElse: () => <ContentItem>[]);
   final herbs = items.where((it) => it.id.startsWith('herb-')).toList();
   if (herbs.isEmpty) return null;
   final seed = ref.watch(_todaySeedProvider);
@@ -160,37 +160,51 @@ final remedyOfDayProvider = Provider<ContentItem?>((ref) {
 });
 
 final principleOfDayProvider = Provider<ContentItem?>((ref) {
-  final items = ref.watch(contentListProvider).maybeWhen(data: (l) => l, orElse: () => <ContentItem>[]);
-  final principles = items.where((it) => it.id.startsWith('principle-')).toList();
+  final items = ref
+      .watch(contentListProvider)
+      .maybeWhen(data: (l) => l, orElse: () => <ContentItem>[]);
+  final principles =
+      items.where((it) => it.id.startsWith('principle-')).toList();
   if (principles.isEmpty) return null;
-  final seed = ref.watch(_todaySeedProvider) + 17; // offset so it differs from remedy
+  final seed = ref.watch(_todaySeedProvider) + 17;
   return principles[seed % principles.length];
 });
 
 /* -------------------- Quiz -------------------- */
 
-final quizModelProvider = StateNotifierProvider<_QuizController, _QuizState>((ref) {
-  final items = ref.watch(contentListProvider).maybeWhen(data: (l) => l, orElse: () => <ContentItem>[]);
+final quizModelProvider =
+    StateNotifierProvider<_QuizController, _QuizState>((ref) {
+  final items = ref
+      .watch(contentListProvider)
+      .maybeWhen(data: (l) => l, orElse: () => <ContentItem>[]);
   final herbs = items.where((it) => it.id.startsWith('herb-')).toList();
   return _QuizController(herbs);
 });
 
 class _QuizState {
   final ContentItem? herb;
-  final List<String> options; // 4 options
-  final int? selected;        // tapped index
-  final int correct;          // index of correct answer
-  const _QuizState({this.herb, this.options = const [], this.selected, this.correct = 0});
+  final List<String> options;
+  final int? selected;
+  final int correct;
+  const _QuizState({
+    this.herb,
+    this.options = const [],
+    this.selected,
+    this.correct = 0,
+  });
 }
 
 class _QuizController extends StateNotifier<_QuizState> {
-  _QuizController(this.herbs) : super(const _QuizState()) { next(); }
+  _QuizController(this.herbs) : super(const _QuizState()) {
+    next();
+  }
 
   final List<ContentItem> herbs;
   final _rand = Random();
 
   String _firstSentence(ContentItem it) {
-    final text = (it.contentEn ?? it.contentSw ?? '').replaceAll('\n', ' ').trim();
+    final text =
+        (it.contentEn ?? it.contentSw ?? '').replaceAll('\n', ' ').trim();
     if (text.isEmpty) return '—';
     final m = RegExp(r'[\.!?]').firstMatch(text);
     final cutoff = m != null ? m.end : (text.length > 120 ? 120 : text.length);
@@ -199,7 +213,10 @@ class _QuizController extends StateNotifier<_QuizState> {
   }
 
   void next() {
-    if (herbs.length < 4) { state = const _QuizState(); return; }
+    if (herbs.length < 4) {
+      state = const _QuizState();
+      return;
+    }
     final correctHerb = herbs[_rand.nextInt(herbs.length)];
     final distractors = <ContentItem>{};
     while (distractors.length < 3) {
@@ -244,20 +261,20 @@ class _HeroHeader extends StatelessWidget {
     final s = Theme.of(context).colorScheme;
     final glossy = Theme.of(context).extension<GlossyCardTheme>()!;
     final elev = Theme.of(context).extension<AppElevations>()!;
+    final t = AppStrings.of(context);
 
     return Container(
       decoration: glossy.headerDecoration().copyWith(
-        boxShadow: glossy.shadows
-            .map((sh) => sh.copyWith(blurRadius: sh.blurRadius + elev.high))
-            .toList(),
-      ),
+            boxShadow: glossy.shadows
+                .map((sh) => sh.copyWith(blurRadius: sh.blurRadius + elev.high))
+                .toList(),
+          ),
       padding: const EdgeInsets.fromLTRB(16, 18, 16, 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Title + supporting line
           Text(
-            'Your daily natural health companion',
+            t.dailyNaturalHealthCompanion,
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
                   fontWeight: FontWeight.w800,
                   letterSpacing: -0.2,
@@ -265,30 +282,29 @@ class _HeroHeader extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Remedies • Principles • Guided learning',
+            t.heroSubtitle,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: s.onSurface.withOpacity(.75),
                 ),
           ),
           const SizedBox(height: 12),
-          // Quick actions
           Row(
             children: [
               _PillButton(
                 icon: Icons.search,
-                label: 'Search',
+                label: t.search,
                 onTap: onSearch,
               ),
               const SizedBox(width: 10),
               _PillButton(
                 icon: Icons.medication,
-                label: 'Diseases',
+                label: t.diseases,
                 onTap: onOpenDiseases,
               ),
               const SizedBox(width: 10),
               _PillButton(
                 icon: Icons.spa,
-                label: 'Remedies',
+                label: t.remedies,
                 onTap: onOpenRemedies,
               ),
             ],
@@ -303,7 +319,11 @@ class _PillButton extends StatelessWidget {
   final IconData icon;
   final String label;
   final VoidCallback onTap;
-  const _PillButton({required this.icon, required this.label, required this.onTap});
+  const _PillButton({
+    required this.icon,
+    required this.label,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -320,7 +340,13 @@ class _PillButton extends StatelessWidget {
             children: [
               Icon(icon, size: 18, color: s.onSecondaryContainer),
               const SizedBox(width: 8),
-              Text(label, style: TextStyle(color: s.onSecondaryContainer, fontWeight: FontWeight.w600)),
+              Text(
+                label,
+                style: TextStyle(
+                  color: s.onSecondaryContainer,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
             ],
           ),
         ),
@@ -371,24 +397,23 @@ class _HomeCardState extends State<_HomeCard> {
         child: AnimatedContainer(
           duration: AppTokens.medium,
           decoration: glossy.bodyDecoration().copyWith(
-            // add a slim accent spine
-            gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: [
-                widget.color.withOpacity(.35),
-                glossy.surface.withOpacity(.90),
-              ],
-            ),
-            boxShadow: glossy.shadows
-                .map((sh) => sh.copyWith(
-                      blurRadius: (_pressed ? elev.small : elev.base) + sh.blurRadius,
-                    ))
-                .toList(),
-          ),
+                gradient: LinearGradient(
+                  begin: Alignment.centerLeft,
+                  end: Alignment.centerRight,
+                  colors: [
+                    widget.color.withOpacity(.35),
+                    glossy.surface.withOpacity(.90),
+                  ],
+                ),
+                boxShadow: glossy.shadows
+                    .map((sh) => sh.copyWith(
+                          blurRadius: (_pressed ? elev.small : elev.base) +
+                              sh.blurRadius,
+                        ))
+                    .toList(),
+              ),
           child: Stack(
             children: [
-              // Optional subtle image shimmer/clip
               if ((widget.image ?? '').isNotEmpty)
                 Positioned(
                   right: 10,
@@ -400,8 +425,10 @@ class _HomeCardState extends State<_HomeCard> {
                       widget.image!,
                       width: 92,
                       fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) =>
-                          const SizedBox(width: 92, child: Icon(Icons.image_not_supported)),
+                      errorBuilder: (_, __, ___) => const SizedBox(
+                        width: 92,
+                        child: Icon(Icons.image_not_supported),
+                      ),
                     ),
                   ),
                 ),
@@ -409,7 +436,6 @@ class _HomeCardState extends State<_HomeCard> {
                 padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
                 child: Row(
                   children: [
-                    // Leading accent chip
                     Container(
                       width: 10,
                       height: 48,
@@ -419,19 +445,26 @@ class _HomeCardState extends State<_HomeCard> {
                       ),
                     ),
                     const SizedBox(width: 12),
-                    // Titles
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(widget.title,
-                              style: Theme.of(context).textTheme.titleMedium?.copyWith(letterSpacing: 0.2)),
+                          Text(
+                            widget.title,
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleMedium
+                                ?.copyWith(letterSpacing: 0.2),
+                          ),
                           const SizedBox(height: 6),
                           Text(
                             widget.subtitle,
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
-                            style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleLarge
+                                ?.copyWith(
                                   fontWeight: FontWeight.w800,
                                   letterSpacing: -.1,
                                 ),
@@ -440,7 +473,11 @@ class _HomeCardState extends State<_HomeCard> {
                       ),
                     ),
                     const SizedBox(width: 8),
-                    Icon(Icons.arrow_forward_ios, size: 16, color: scheme.onSurface.withOpacity(.6)),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      size: 16,
+                      color: scheme.onSurface.withOpacity(.6),
+                    ),
                   ],
                 ),
               ),
@@ -470,13 +507,14 @@ class _QuizCard extends StatelessWidget {
     final herbTitle = state.herb?.title ?? '';
     final glossy = Theme.of(context).extension<GlossyCardTheme>()!;
     final elev = Theme.of(context).extension<AppElevations>()!;
+    final t = AppStrings.of(context);
 
     return Container(
       decoration: glossy.bodyDecoration().copyWith(
-        boxShadow: glossy.shadows
-            .map((s) => s.copyWith(blurRadius: s.blurRadius + elev.base))
-            .toList(),
-      ),
+            boxShadow: glossy.shadows
+                .map((s) => s.copyWith(blurRadius: s.blurRadius + elev.base))
+                .toList(),
+          ),
       child: Padding(
         padding: const EdgeInsets.all(12),
         child: Column(
@@ -485,7 +523,7 @@ class _QuizCard extends StatelessWidget {
             Text(title, style: Theme.of(context).textTheme.titleMedium),
             const SizedBox(height: 6),
             Text(
-              'Which short description best matches "$herbTitle"?',
+              t.quizQuestion(herbTitle),
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             const SizedBox(height: 12),
@@ -503,15 +541,19 @@ class _QuizCard extends StatelessWidget {
               Row(
                 children: [
                   Icon(
-                    state.selected == state.correct ? Icons.check_circle : Icons.cancel,
-                    color: state.selected == state.correct ? Colors.green : Colors.red,
+                    state.selected == state.correct
+                        ? Icons.check_circle
+                        : Icons.cancel,
+                    color: state.selected == state.correct
+                        ? Colors.green
+                        : Colors.red,
                   ),
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
                       state.selected == state.correct
-                          ? 'Correct!'
-                          : 'Not quite. The correct answer is highlighted above.',
+                          ? t.correct
+                          : t.notQuite,
                     ),
                   ),
                 ],
@@ -521,7 +563,7 @@ class _QuizCard extends StatelessWidget {
                 alignment: Alignment.centerRight,
                 child: ElevatedButton.icon(
                   icon: const Icon(Icons.refresh),
-                  label: const Text('Next'),
+                  label: Text(t.next),
                   onPressed: onNext,
                 ),
               ),
@@ -557,7 +599,13 @@ class _ForYouRail extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(title, style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700)),
+              Text(
+                title,
+                style: Theme.of(context)
+                    .textTheme
+                    .titleMedium
+                    ?.copyWith(fontWeight: FontWeight.w700),
+              ),
               Icon(Icons.auto_awesome, size: 18, color: s.primary),
             ],
           ),
@@ -589,21 +637,27 @@ class _ForYouCard extends StatelessWidget {
   final String title;
   final String? image;
   final VoidCallback onTap;
-  const _ForYouCard({required this.title, this.image, required this.onTap});
+  const _ForYouCard({
+    required this.title,
+    this.image,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
     final glossy = Theme.of(context).extension<GlossyCardTheme>();
     final elevation = Theme.of(context).extension<AppElevations>()?.base ?? 8;
     final deco = (glossy?.bodyDecoration().copyWith(
-          boxShadow: glossy?.shadows
-              .map((s) => s.copyWith(blurRadius: s.blurRadius + elevation))
-              .toList(),
-        )) ??
+              boxShadow: glossy?.shadows
+                  .map((s) => s.copyWith(blurRadius: s.blurRadius + elevation))
+                  .toList(),
+            )) ??
         BoxDecoration(
           color: Theme.of(context).colorScheme.surface,
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: Theme.of(context).dividerColor.withOpacity(.35)),
+          border: Border.all(
+            color: Theme.of(context).dividerColor.withOpacity(.35),
+          ),
         );
 
     return InkWell(
@@ -616,7 +670,6 @@ class _ForYouCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // thumbnail
             if ((image ?? '').isNotEmpty)
               AspectRatio(
                 aspectRatio: 16 / 9,
@@ -637,14 +690,16 @@ class _ForYouCard extends StatelessWidget {
                   child: Center(child: Icon(Icons.eco)),
                 ),
               ),
-            // title
             Padding(
               padding: const EdgeInsets.fromLTRB(12, 10, 12, 12),
               child: Text(
                 title,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+                style: Theme.of(context)
+                    .textTheme
+                    .titleSmall
+                    ?.copyWith(fontWeight: FontWeight.w700),
               ),
             ),
           ],

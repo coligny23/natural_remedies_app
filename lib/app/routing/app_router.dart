@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import '../../l10n/app_strings.dart';
 
 import '../../features/qa/saved_answers_screen.dart';
 import '../../features/content/ui/content_detail_screen.dart';
@@ -145,25 +146,39 @@ class _RootTabsState extends State<RootTabs> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppStrings.of(context);
+
     return CupertinoTabScaffold(
       controller: _controller,
       tabBar: CupertinoTabBar(
         currentIndex: _controller.index,
         onTap: (i) => setState(() => _controller.index = i),
-        items: const [
+        items: [
           BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.house), label: 'Home'),
+            icon: const Icon(CupertinoIcons.house),
+            label: t.home,
+          ),
           BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.square_list), label: 'Learn'),
+            icon: const Icon(CupertinoIcons.square_list),
+            label: t.learn,
+          ),
           BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.search), label: 'Search'),
+            icon: const Icon(CupertinoIcons.search),
+            label: t.search,
+          ),
           BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.bookmark), label: 'Saved'),
+            icon: const Icon(CupertinoIcons.bookmark),
+            label: t.saved,
+          ),
           BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.gear), label: 'Settings'),
+            icon: const Icon(CupertinoIcons.gear),
+            label: t.settings,
+          ),
         ],
       ),
-      tabBuilder: (_, i) => CupertinoTabView(builder: (_) => _pages[i]),
+      tabBuilder: (_, i) => CupertinoTabView(
+        builder: (_) => _pages[i],
+      ),
     );
   }
 }
