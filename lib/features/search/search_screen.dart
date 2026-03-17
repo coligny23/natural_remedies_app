@@ -5,17 +5,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:share_plus/share_plus.dart';
+
+import '../../l10n/app_strings.dart';
 import 'search_history_providers.dart';
 import '/features/qa/saved_answers_providers.dart';
-import 'package:share_plus/share_plus.dart'; // if not already present
-
-import 'search_providers.dart'; // <- includes fastSearchProvider + searchQueryProvider
+import 'search_providers.dart';
 import '../content/models/content_item.dart';
-import '../../shared/ml/qa_providers.dart'; // qaInitProvider / qaAnswerProvider
-import '../../shared/telemetry/telemetry_providers.dart'; // <-- telemetry
+import '../../shared/ml/qa_providers.dart';
+import '../../shared/telemetry/telemetry_providers.dart';
 
 // ✅ ML (semantic blending)
-import '../../shared/ml/ml_providers.dart'; // semanticScoresProvider
+import '../../shared/ml/ml_providers.dart';
 
 // ✅ Background wrapper
 import '../../widgets/app_background.dart';
@@ -47,7 +48,6 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
         await ref.read(searchHistoryProvider.notifier).add(q);
       }
 
-      // --- Telemetry: record debounced search (only if non-empty) ---
       if (q.isNotEmpty) {
         await ref.logEvent('search', {
           'q': q,
@@ -65,23 +65,26 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppStrings.of(context);
+
     // Core data dependencies
     final itemsAsync = ref.watch(contentListProvider);
     final isLoading = itemsAsync.isLoading;
     final total =
         itemsAsync.maybeWhen(data: (it) => it.length, orElse: () => null);
 
-    // Query + fast results (ASYNC)
+    // Query + fast results
     final query = ref.watch(searchQueryProvider).trim();
     final resultsAsync = ref.watch(fastSearchProvider(query));
     final resultsCount = resultsAsync.maybeWhen(
       data: (list) => list.length,
       orElse: () => null,
     );
+
     // History
     final history = ref.watch(searchHistoryProvider);
 
-    // Synonym suggestions for current query
+    // Synonym suggestions
     final synsAsync = ref.watch(synonymsMapProvider);
 
     final suggestionChips = synsAsync.maybeWhen(
@@ -89,47 +92,51 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
         if (query.isEmpty) return const <String>[];
         final toks = _tokens(query);
         final out = <String>{};
-        for (final t in toks) {
-          final alts = syns[t] ?? const <String>[];
-          for (final a in alts) {
-            if (a.toLowerCase() != t.toLowerCase()) out.add(a);
+        for (final token in toks) {
+          final alts = syns[token] ?? const <String>[];
+          for (final alt in alts) {
+            if (alt.toLowerCase() != token.toLowerCase()) {
+              out.add(alt);
+            }
           }
         }
-        return out.take(6).toList(); // show up to 6
+        return out.take(6).toList();
       },
       orElse: () => const <String>[],
     );
 
-    // AI answer hook (stub now, TFLite later)
+    // AI answer hook
     final answerAsync =
         query.isEmpty ? null : ref.watch(qaAnswerProvider(query));
-    final lang = ref.watch(languageCodeProvider); // 'en' or 'sw'
+    final lang = ref.watch(languageCodeProvider);
 
-    // ✅ Semantic scores (cosine from 0..1) for this query (gated by your feature flag)
+    // Semantic scores
     final semScoresAsync = ref.watch(semanticScoresProvider(query));
 
     return Scaffold(
-      backgroundColor: Colors.transparent, // ✅ let global bg show
+      backgroundColor: Colors.transparent,
       appBar: AppBar(
-        title: const Text('Search'),
+        title: Text(t.search),
         actions: [
           IconButton(
             icon: const Icon(Icons.bug_report_outlined),
-            tooltip: 'Probe asset',
+            tooltip: t.probeAsset,
             onPressed: () async {
               try {
-                // adjust path if you want to probe a different lang/file
                 final s =
                     await rootBundle.loadString('assets/corpus/en/sample.json');
                 if (!context.mounted) return;
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
-                      content: Text('Loaded sample.json (${s.length} chars)')),
+                    content: Text(t.loadedSampleJson(s.length)),
+                  ),
                 );
               } catch (e) {
                 if (!context.mounted) return;
                 ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Failed to load asset: $e')),
+                  SnackBar(
+                    content: Text(t.failedToLoadAsset(e.toString())),
+                  ),
                 );
               }
             },
@@ -137,31 +144,32 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
         ],
       ),
       body: AppBackground(
-        // ✅ wrap whole page content
         child: Column(
           children: [
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
               child: Semantics(
-                label: 'Search field for natural remedies',
-                hint: 'Type an ingredient or condition, for example ginger',
+                label: t.searchFieldLabel,
+                hint: t.searchFieldHint,
                 textField: true,
                 child: TextField(
                   controller: _controller,
                   onChanged: _onChanged,
                   textInputAction: TextInputAction.search,
                   decoration: InputDecoration(
-                    hintText: 'Search (e.g., "ginger")',
-                    prefixIcon:
-                        const Icon(Icons.search, semanticLabel: 'Search'),
+                    hintText: t.searchExampleHint,
+                    prefixIcon: Icon(
+                      Icons.search,
+                      semanticLabel: t.search,
+                    ),
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12)),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
                   ),
                 ),
               ),
             ),
 
-            // History chips (last 6)
             if (history.isNotEmpty)
               Padding(
                 padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
@@ -186,7 +194,6 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                 ),
               ),
 
-            // "Also try" synonym suggestion chips
             if (suggestionChips.isNotEmpty)
               Padding(
                 padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
@@ -207,9 +214,10 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                           );
                           ref.read(searchQueryProvider.notifier).state = newQ;
 
-                          // Optional telemetry
-                          await ref.logEvent(
-                              'search_synonym_chip', {'q': query, 'chip': s});
+                          await ref.logEvent('search_synonym_chip', {
+                            'q': query,
+                            'chip': s,
+                          });
                         },
                       );
                     }).toList(),
@@ -218,13 +226,14 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               ),
 
             if (isLoading) const LinearProgressIndicator(),
+
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Loaded: ${total ?? "…"}'),
-                  Text('Results: ${resultsCount ?? "…"}'),
+                  Text(t.loadedCount(total)),
+                  Text(t.resultsCount(resultsCount)),
                 ],
               ),
             ),
@@ -240,12 +249,15 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                     .where((k) => k.contains('assets/corpus'))
                     .take(5)
                     .toList();
+
                 return Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      'Manifest sample: ${sample.isEmpty ? "(none)" : sample.join(", ")}',
+                      t.manifestSample(
+                        sample.isEmpty ? t.none : sample.join(', '),
+                      ),
                       style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ),
@@ -254,7 +266,6 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
             ),
             const SizedBox(height: 4),
 
-            // --- AI Answer card (optional, shows when there's a query) ---
             if (query.isNotEmpty && answerAsync != null) ...[
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -262,23 +273,27 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                   child: Padding(
                     padding: const EdgeInsets.all(12),
                     child: answerAsync.when(
-                      loading: () => const Text('Thinking…'),
-                      error: (e, _) => Text('Could not answer: $e'),
+                      loading: () => Text(t.thinking),
+                      error: (e, _) => Text(t.couldNotAnswer(e.toString())),
                       data: (ans) {
                         final hasText = ans.text.trim().isNotEmpty;
+
                         return Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                const Text('Answer',
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.w600)),
+                                Text(
+                                  t.answer,
+                                  style: const TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
                                 Row(
                                   children: [
                                     IconButton(
-                                      tooltip: 'Share answer',
+                                      tooltip: t.shareAnswer,
                                       icon: const Icon(Icons.ios_share),
                                       onPressed: hasText
                                           ? () {
@@ -288,14 +303,17 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                                                 ..writeln('A: ${ans.text}');
                                               if (src != null) {
                                                 buffer.writeln(
-                                                    'Source: ${src.title}');
+                                                  '${t.source}: ${src.title}',
+                                                );
                                               }
-                                              Share.share(buffer.toString().trim());
+                                              Share.share(
+                                                buffer.toString().trim(),
+                                              );
                                             }
                                           : null,
                                     ),
                                     IconButton(
-                                      tooltip: 'Save answer',
+                                      tooltip: t.saveAnswer,
                                       icon: const Icon(Icons.star_border),
                                       onPressed: hasText
                                           ? () async {
@@ -305,16 +323,17 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                                                     question: query,
                                                     answerText: ans.text,
                                                     sourceId: ans.source?.id,
-                                                    sourceTitle:
-                                                        ans.source?.title,
+                                                    sourceTitle: ans.source?.title,
                                                   );
+
                                               if (!context.mounted) return;
                                               ScaffoldMessenger.of(context)
                                                   .showSnackBar(
-                                                const SnackBar(
-                                                    content:
-                                                        Text('Saved to Answers')),
+                                                SnackBar(
+                                                  content: Text(t.savedToAnswers),
+                                                ),
                                               );
+
                                               await ref.logEvent('qa_saved', {
                                                 'has_source': ans.source != null,
                                                 'q_len': query.length,
@@ -331,9 +350,10 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                             Text(ans.text),
                             if (ans.source != null) ...[
                               const SizedBox(height: 8),
-                              Text('Source: ${ans.source!.title}',
-                                  style:
-                                      Theme.of(context).textTheme.bodySmall),
+                              Text(
+                                '${t.source}: ${ans.source!.title}',
+                                style: Theme.of(context).textTheme.bodySmall,
+                              ),
                             ],
                           ],
                         );
@@ -344,30 +364,29 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               ),
               const SizedBox(height: 8),
             ],
-            // --- end Answer card ---
 
-            // ======================== RESULTS (WITH BLENDING) ========================
             Expanded(
               child: resultsAsync.when(
-                loading: () =>
-                    const _LoadingOrEmpty(queryEmptyMessage: 'Type to search…'),
+                loading: () => _LoadingOrEmpty(
+                  queryEmptyMessage: t.typeToSearch,
+                ),
                 error: (err, st) => Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text('Search error: $err'),
+                  child: Text('${t.searchError}: $err'),
                 ),
                 data: (keywordResults) {
                   if (keywordResults.isEmpty) {
                     return const _EmptyState();
                   }
 
-                  // Wait for semantic scores, then blend & sort.
                   return semScoresAsync.when(
                     loading: () {
-                      // While semantic is loading, display pure keyword results.
                       return _ResultsList(
                         items: keywordResults,
                         lang: lang,
                         query: query,
+                        onTapLabel: t.openDetails,
+                        onTapAction: t.doubleTapToOpenDetails,
                         blendedBadge: null,
                         onTap: (it) async {
                           await ref.logEvent('open_from_search', {
@@ -381,11 +400,12 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                       );
                     },
                     error: (_, __) {
-                      // On semantic error, fallback to keyword results.
                       return _ResultsList(
                         items: keywordResults,
                         lang: lang,
                         query: query,
+                        onTapLabel: t.openDetails,
+                        onTapAction: t.doubleTapToOpenDetails,
                         blendedBadge: null,
                         onTap: (it) async {
                           await ref.logEvent('open_from_search', {
@@ -399,38 +419,38 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                       );
                     },
                     data: (semScores) {
-                      // Compute blended scores:
-                      // keyword_score = 1.0 for rank1, down to ~0 for the last item
-                      // semantic_score = semScores[item.id] in [0..1] (if present)
-                      // final = 0.6*keyword + 0.4*semantic
                       final n = keywordResults.length.toDouble();
-                      final blended = <({ContentItem item, double finalScore, double k, double s})>[];
+                      final blended =
+                          <({ContentItem item, double finalScore, double k, double s})>[];
 
                       for (var i = 0; i < keywordResults.length; i++) {
                         final it = keywordResults[i];
-                        final k = (n - i) / n; // inverse rank
+                        final k = (n - i) / n;
                         final s = (semScores[it.id] ?? 0.0).clamp(0.0, 1.0);
                         final score = 0.6 * k + 0.4 * s;
-                        blended.add((item: it, finalScore: score, k: k, s: s));
+                        blended.add((
+                          item: it,
+                          finalScore: score,
+                          k: k,
+                          s: s,
+                        ));
                       }
 
                       blended.sort((a, b) => b.finalScore.compareTo(a.finalScore));
-
-                      // Extract items in new order
                       final ordered = blended.map((e) => e.item).toList();
 
-                      // Optional tiny badge to visualize scores (for debugging)
-                      String _badgeOf(ContentItem it) {
+                      String badgeOf(ContentItem it) {
                         final b = blended.firstWhere((e) => e.item.id == it.id);
-                        // show final score with small components
-                        return '★ ${(b.finalScore).toStringAsFixed(2)}  k:${b.k.toStringAsFixed(2)} s:${b.s.toStringAsFixed(2)}';
+                        return '★ ${b.finalScore.toStringAsFixed(2)}  k:${b.k.toStringAsFixed(2)} s:${b.s.toStringAsFixed(2)}';
                       }
 
                       return _ResultsList(
                         items: ordered,
                         lang: lang,
                         query: query,
-                        blendedBadge: _badgeOf, // set to null to hide badges
+                        onTapLabel: t.openDetails,
+                        onTapAction: t.doubleTapToOpenDetails,
+                        blendedBadge: badgeOf,
                         onTap: (it) async {
                           await ref.logEvent('open_from_search', {
                             'id': it.id,
@@ -446,7 +466,6 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                 },
               ),
             ),
-            // ====================== END RESULTS (WITH BLENDING) ======================
           ],
         ),
       ),
@@ -459,14 +478,17 @@ class _ResultsList extends StatelessWidget {
   final String lang;
   final String query;
   final void Function(ContentItem) onTap;
-  /// Optional: show a small trailing badge per row with the blended score.
   final String Function(ContentItem)? blendedBadge;
+  final String onTapLabel;
+  final String onTapAction;
 
   const _ResultsList({
     required this.items,
     required this.lang,
     required this.query,
     required this.onTap,
+    required this.onTapLabel,
+    required this.onTapAction,
     this.blendedBadge,
   });
 
@@ -482,8 +504,9 @@ class _ResultsList extends StatelessWidget {
             ? (item.contentSw ?? item.contentEn ?? '')
             : (item.contentEn ?? item.contentSw ?? '');
         final snippetSrc = bodyText.replaceAll('\n', ' ');
-        final snippet =
-            snippetSrc.length <= 160 ? snippetSrc : '${snippetSrc.substring(0, 160)} …';
+        final snippet = snippetSrc.length <= 160
+            ? snippetSrc
+            : '${snippetSrc.substring(0, 160)} …';
         final hasImage = (item.image ?? '').isNotEmpty;
 
         final badge = blendedBadge?.call(item);
@@ -493,7 +516,7 @@ class _ResultsList extends StatelessWidget {
             excludeSemantics: true,
             button: true,
             label:
-                '${item.title}. ${snippet.isEmpty ? "Open details" : snippet}. Double tap to open details.',
+                '${item.title}. ${snippet.isEmpty ? onTapLabel : snippet}. $onTapAction.',
             child: ListTile(
               contentPadding:
                   const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -520,14 +543,16 @@ class _ResultsList extends StatelessWidget {
                   children: _highlight(snippet, query),
                 ),
               ),
-              trailing: (badge == null)
+              trailing: badge == null
                   ? null
                   : Text(
                       badge,
                       style: Theme.of(context)
                           .textTheme
                           .labelSmall
-                          ?.copyWith(color: Theme.of(context).colorScheme.primary),
+                          ?.copyWith(
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
                     ),
               onTap: () => onTap(item),
             ),
@@ -562,11 +587,13 @@ class _EmptyState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppStrings.of(context);
+
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(24),
         child: Text(
-          'No results yet. Try another term—e.g., "ginger", "cayenne", "debility", "symptoms".',
+          t.noResultsTryAnother,
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.bodyMedium,
         ),
@@ -598,10 +625,12 @@ List<InlineSpan> _highlight(String text, String query) {
     if (m.start > start) {
       spans.add(TextSpan(text: text.substring(start, m.start)));
     }
-    spans.add(TextSpan(
-      text: text.substring(m.start, m.end),
-      style: const TextStyle(fontWeight: FontWeight.w700),
-    ));
+    spans.add(
+      TextSpan(
+        text: text.substring(m.start, m.end),
+        style: const TextStyle(fontWeight: FontWeight.w700),
+      ),
+    );
     start = m.end;
   }
   if (start < text.length) {
