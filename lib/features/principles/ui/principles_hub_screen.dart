@@ -1,25 +1,43 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../content/models/content_item.dart';
-import '../../search/search_providers.dart'; // contentListProvider
 import 'package:go_router/go_router.dart';
+import '../../../l10n/app_strings.dart';
+import '../../content/models/content_item.dart';
+import '../../search/search_providers.dart';
 
 class PrinciplesHubScreen extends ConsumerWidget {
   const PrinciplesHubScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final t = AppStrings.of(context);
     final itemsAsync = ref.watch(contentListProvider);
+
     return itemsAsync.when(
-      loading: () => const Scaffold(body: Center(child: CircularProgressIndicator())),
-      error: (e, _) => Scaffold(body: Center(child: Text('Error: $e'))),
+      loading: () => Scaffold(
+        body: Center(
+          child: Text(t.loading),
+        ),
+      ),
+      error: (e, _) => Scaffold(
+        body: Center(
+          child: Text('${t.errorOccurred}: $e'),
+        ),
+      ),
       data: (all) {
-        final principles = all.where((it) => it.id.startsWith('principle-')).toList()
-          ..sort((a, b) => a.title.toLowerCase().compareTo(b.title.toLowerCase()));
+        final principles = all
+            .where((it) => it.id.startsWith('principle-'))
+            .toList()
+          ..sort(
+            (a, b) => a.title.toLowerCase().compareTo(b.title.toLowerCase()),
+          );
+
         final grouped = _groupByInitial(principles);
 
         return Scaffold(
-          appBar: AppBar(title: const Text('Principles (A–Z)')),
+          appBar: AppBar(
+            title: Text(t.principlesAZ),
+          ),
           body: ListView.builder(
             padding: const EdgeInsets.fromLTRB(12, 8, 12, 24),
             itemCount: grouped.length,
@@ -37,7 +55,8 @@ class PrinciplesHubScreen extends ConsumerWidget {
   Map<String, List<ContentItem>> _groupByInitial(List<ContentItem> src) {
     final map = <String, List<ContentItem>>{};
     for (final it in src) {
-      final ch = it.title.trim().isEmpty ? '#' : it.title.trim()[0].toUpperCase();
+      final ch =
+          it.title.trim().isEmpty ? '#' : it.title.trim()[0].toUpperCase();
       final key = RegExp(r'[A-Z]').hasMatch(ch) ? ch : '#';
       map.putIfAbsent(key, () => []).add(it);
     }
@@ -49,7 +68,11 @@ class PrinciplesHubScreen extends ConsumerWidget {
 class _LetterSection extends StatelessWidget {
   final String letter;
   final List<ContentItem> items;
-  const _LetterSection({required this.letter, required this.items});
+
+  const _LetterSection({
+    required this.letter,
+    required this.items,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -60,13 +83,18 @@ class _LetterSection extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(letter, style: Theme.of(context).textTheme.titleLarge),
+            Text(
+              letter,
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
             const SizedBox(height: 6),
-            ...items.map((it) => ListTile(
-                  title: Text(it.title),
-                  trailing: const Icon(Icons.chevron_right),
-                  onTap: () => context.push('/article/${it.id}'),
-                )),
+            ...items.map(
+              (it) => ListTile(
+                title: Text(it.title),
+                trailing: const Icon(Icons.chevron_right),
+                onTap: () => context.push('/article/${it.id}'),
+              ),
+            ),
           ],
         ),
       ),

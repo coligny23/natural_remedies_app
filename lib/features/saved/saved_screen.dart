@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../l10n/app_strings.dart';
 import '../content/models/content_item.dart';
-import '../content/data/content_lookup_provider.dart'; // contentByIdProvider(id)
-import '../search/search_providers.dart';              // contentListProvider, languageCodeProvider
-import 'bookmarks_controller.dart';                    // bookmarksProvider
+import '../content/data/content_lookup_provider.dart';
+import '../search/search_providers.dart';
+import 'bookmarks_controller.dart';
 
-// ✅ Add the background wrapper
 import '../../widgets/app_background.dart';
 
 class SavedScreen extends ConsumerStatefulWidget {
@@ -40,31 +40,35 @@ class _SavedScreenState extends ConsumerState<SavedScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppStrings.of(context);
     final bookmarks = ref.watch(bookmarksProvider);
     final itemsAsync = ref.watch(contentListProvider);
     final lang = ref.watch(languageCodeProvider);
 
     return Scaffold(
-      backgroundColor: Colors.transparent, // ✅ let the global background show
-      appBar: AppBar(title: const Text('Saved Remedies')),
+      backgroundColor: Colors.transparent,
+      appBar: AppBar(
+        title: Text(t.savedRemedies),
+      ),
       body: AppBackground(
-         // ✅ wrap the whole page body
         child: itemsAsync.when(
-          loading: () => const Center(child: CircularProgressIndicator()),
-          error: (e, _) => Center(child: Text('Error: $e')),
+          loading: () => Center(
+            child: Text(t.loading),
+          ),
+          error: (e, _) => Center(
+            child: Text('${t.errorOccurred}: $e'),
+          ),
           data: (_) {
             if (bookmarks.isEmpty) {
               return const _EmptySaved();
             }
 
-            // Materialize saved items from in-memory content
             final savedItems = <ContentItem>[];
             for (final id in bookmarks) {
               final it = ref.watch(contentByIdProvider(id));
               if (it != null) savedItems.add(it);
             }
 
-            // Filter (optional)
             List<ContentItem> filtered = savedItems;
             if (_filter.isNotEmpty) {
               filtered = savedItems.where((it) {
@@ -88,7 +92,7 @@ class _SavedScreenState extends ConsumerState<SavedScreen> {
 
             return Column(
               children: [
-                const _FilterBar(), // comment out to remove search bar
+                const _FilterBar(),
                 Expanded(
                   child: ListView.separated(
                     itemCount: filtered.length,
@@ -116,16 +120,19 @@ class _SavedScreenState extends ConsumerState<SavedScreen> {
                           return await showDialog<bool>(
                                 context: context,
                                 builder: (_) => AlertDialog(
-                                  title: const Text('Remove bookmark?'),
-                                  content: Text('Remove “${it.title}” from Saved?'),
+                                  title: Text(t.removeBookmarkTitle),
+                                  content:
+                                      Text(t.removeFromSavedMessage(it.title)),
                                   actions: [
                                     TextButton(
-                                      onPressed: () => Navigator.pop(context, false),
-                                      child: const Text('Cancel'),
+                                      onPressed: () =>
+                                          Navigator.pop(context, false),
+                                      child: Text(t.cancel),
                                     ),
                                     FilledButton(
-                                      onPressed: () => Navigator.pop(context, true),
-                                      child: const Text('Remove'),
+                                      onPressed: () =>
+                                          Navigator.pop(context, true),
+                                      child: Text(t.remove),
                                     ),
                                   ],
                                 ),
@@ -135,7 +142,9 @@ class _SavedScreenState extends ConsumerState<SavedScreen> {
                         onDismissed: (_) {
                           ref.read(bookmarksProvider.notifier).toggle(it.id);
                           ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(content: Text('Removed ${it.title}')),
+                            SnackBar(
+                              content: Text(t.removedItem(it.title)),
+                            ),
                           );
                         },
                         child: ListTile(
@@ -145,7 +154,8 @@ class _SavedScreenState extends ConsumerState<SavedScreen> {
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                           ),
-                          trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                          trailing:
+                              const Icon(Icons.arrow_forward_ios, size: 16),
                           onTap: () => context.go('/article/${it.id}'),
                         ),
                       );
@@ -160,8 +170,9 @@ class _SavedScreenState extends ConsumerState<SavedScreen> {
     );
   }
 
-  // Small inline filter bar UI (TextField)—remove if you don’t want filtering
   Widget _buildFilterField() {
+    final t = AppStrings.of(context);
+
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
       child: TextField(
@@ -169,13 +180,19 @@ class _SavedScreenState extends ConsumerState<SavedScreen> {
         onChanged: _onFilterChanged,
         textInputAction: TextInputAction.search,
         decoration: InputDecoration(
-          hintText: 'Filter saved remedies…',
-          prefixIcon: const Icon(Icons.search),
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+          hintText: t.filterSavedRemedies,
+          prefixIcon: Icon(
+            Icons.search,
+            semanticLabel: t.search,
+          ),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
           suffixIcon: _filter.isEmpty
               ? null
               : IconButton(
                   icon: const Icon(Icons.clear),
+                  tooltip: t.clear,
                   onPressed: () {
                     _filterCtrl.clear();
                     _onFilterChanged('');
@@ -203,11 +220,13 @@ class _EmptySaved extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppStrings.of(context);
+
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(24),
         child: Text(
-          'No saved remedies yet.\nOpen any article and tap the bookmark icon.',
+          t.noSavedRemediesYet,
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.bodyMedium,
         ),
@@ -221,11 +240,13 @@ class _EmptyFiltered extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppStrings.of(context);
+
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(24),
         child: Text(
-          'No saved remedies match your filter.',
+          t.noSavedRemediesMatchFilter,
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.bodyMedium,
         ),
