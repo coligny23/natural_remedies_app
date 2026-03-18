@@ -2,17 +2,19 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import '../../../app/theme/app_theme.dart'; // GlossyCardTheme, AppElevations
-import '../../../widgets/app_background.dart'; // ✅ background wrapper
+import '../../../l10n/app_strings.dart';
+import '../../../app/theme/app_theme.dart';
+import '../../../widgets/app_background.dart';
 
 class LearnHubScreen extends StatelessWidget {
   const LearnHubScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final t = AppStrings.of(context);
     final s = Theme.of(context).colorScheme;
     final glossy = Theme.of(context).extension<GlossyCardTheme>()!;
-    final elev   = Theme.of(context).extension<AppElevations>()!;
+    final elev = Theme.of(context).extension<AppElevations>()!;
 
     Widget tile({
       required IconData icon,
@@ -25,8 +27,11 @@ class LearnHubScreen extends StatelessWidget {
       final header = Container(
         decoration: glossy.headerDecoration().copyWith(
           gradient: LinearGradient(
-            begin: Alignment.topLeft, end: Alignment.bottomRight,
-            colors: grad ?? [s.primary.withOpacity(.14), s.tertiary.withOpacity(.10)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors:
+                grad ??
+                [s.primary.withOpacity(.14), s.tertiary.withOpacity(.10)],
           ),
         ),
         padding: const EdgeInsets.fromLTRB(16, 18, 16, 14),
@@ -52,18 +57,20 @@ class LearnHubScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(title,
-                      style: Theme.of(context)
-                          .textTheme
-                          .titleMedium
-                          ?.copyWith(fontWeight: FontWeight.w700)),
+                  Text(
+                    title,
+                    style: Theme.of(
+                      context,
+                    ).textTheme.titleMedium?.copyWith(
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
                   const SizedBox(height: 4),
                   Text(
                     subtitle,
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodySmall
-                        ?.copyWith(color: s.onSurface.withOpacity(.7)),
+                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                      color: s.onSurface.withOpacity(.7),
+                    ),
                   ),
                 ],
               ),
@@ -77,7 +84,9 @@ class LearnHubScreen extends StatelessWidget {
           boxShadow: glossy.shadows
               .map((b) => b.copyWith(blurRadius: b.blurRadius + elev.base))
               .toList(),
-          borderRadius: const BorderRadius.vertical(bottom: Radius.circular(20)),
+          borderRadius: const BorderRadius.vertical(
+            bottom: Radius.circular(20),
+          ),
         ),
         padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
         child: Align(
@@ -85,7 +94,7 @@ class LearnHubScreen extends StatelessWidget {
           child: TextButton.icon(
             onPressed: onTap,
             icon: const Icon(Icons.arrow_forward),
-            label: const Text('Open'),
+            label: Text(t.open),
           ),
         ),
       );
@@ -111,41 +120,42 @@ class LearnHubScreen extends StatelessWidget {
     }
 
     return Scaffold(
-      backgroundColor: Colors.transparent, // ✅ let background show
-      appBar: AppBar(title: const Text('Learn')),
+      backgroundColor: Colors.transparent,
+      appBar: AppBar(
+        title: Text(t.learn),
+      ),
       body: AppBackground(
-                             // ✅ wrap the page body
         child: ListView(
           padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
           children: [
             tile(
               icon: Icons.menu_book_outlined,
-              title: 'Principles of Health',
-              subtitle: 'Core ideas, prevention, and healthy living.',
+              title: t.principlesOfHealth,
+              subtitle: t.principlesOfHealthSubtitle,
               onTap: () => context.push('/principles'),
               grad: [s.tertiary, s.tertiaryContainer],
             ),
             const SizedBox(height: 12),
             tile(
               icon: Icons.spa_outlined,
-              title: 'Important Herbs',
-              subtitle: 'Most-used remedies and how to apply them.',
+              title: t.importantHerbs,
+              subtitle: t.importantHerbsSubtitle,
               onTap: () => context.push('/remedies'),
               grad: [s.primary, s.primaryContainer],
             ),
             const SizedBox(height: 12),
             tile(
               icon: Icons.medical_services_outlined,
-              title: 'Diseases & Conditions',
-              subtitle: 'Browse by body system—fast and clear.',
+              title: t.diseasesConditions,
+              subtitle: t.diseasesConditionsSubtitle,
               onTap: () => context.push('/diseases'),
               grad: [s.secondary, s.secondaryContainer],
             ),
             const SizedBox(height: 12),
             tile(
               icon: Icons.sort_by_alpha,
-              title: 'Browse Everything',
-              subtitle: 'Alphabetical list of all content',
+              title: t.browseEverything,
+              subtitle: t.browseEverythingSubtitle,
               onTap: () => context.push('/learn/all'),
               grad: [s.surfaceTint, s.surfaceVariant],
             ),

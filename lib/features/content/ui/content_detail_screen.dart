@@ -5,21 +5,22 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:flutter/services.dart' show Clipboard, ClipboardData;
 
+import '../../../l10n/app_strings.dart';
 import '../../../shared/ml/embedder/minilm_embedder.dart' as minilm;
 import '../../progress/progress_tracker.dart';
-import '../../../app/theme/app_theme.dart'; // AppElevations, GlossyCardTheme (ThemeExtensions)
+import '../../../app/theme/app_theme.dart';
 
 // content/render + data
-import '../../content/data/reading_progress_repository.dart'; // ok if unused
-import 'content_renderer.dart'; // parseSections, maybeBullets, linkifyParagraph, sectionSlug
-import '../../search/search_providers.dart'; // languageCodeProvider, contentListProvider
-import '../data/content_lookup_provider.dart'; // contentByIdProvider(id)
-import '../../saved/bookmarks_controller.dart'; // bookmarksProvider
+import '../../content/data/reading_progress_repository.dart';
+import 'content_renderer.dart';
+import '../../search/search_providers.dart';
+import '../data/content_lookup_provider.dart';
+import '../../saved/bookmarks_controller.dart';
 import '../models/content_item.dart';
 
-// ✅ ML personalization (Day 4)
-import '../../../shared/ml/ml_providers.dart'; // profileRepoProvider, profileVecProvider, embedTextProvider
-import '../../settings/feature_flags.dart'; // useTfliteProvider
+// ✅ ML personalization
+import '../../../shared/ml/ml_providers.dart';
+import '../../settings/feature_flags.dart';
 
 class ContentDetailScreen extends ConsumerStatefulWidget {
   final String id;
@@ -27,7 +28,8 @@ class ContentDetailScreen extends ConsumerStatefulWidget {
   const ContentDetailScreen({super.key, required this.id, this.initialSection});
 
   @override
-  ConsumerState<ContentDetailScreen> createState() => _ContentDetailScreenState();
+  ConsumerState<ContentDetailScreen> createState() =>
+      _ContentDetailScreenState();
 }
 
 class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
@@ -37,10 +39,7 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
   String? _lastSection;
   bool _restoredOnce = false;
 
-  // cache built tabs per article id
   List<_TabSpec> _tabs = const [];
-
-  // ✅ guard so we only update profile once per open
   bool _profileUpdatedOnce = false;
 
   @override
@@ -63,21 +62,28 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
 
   @override
   Widget build(BuildContext context) {
+    final t = AppStrings.of(context);
     final itemsAsync = ref.watch(contentListProvider);
     final lang = ref.watch(languageCodeProvider);
     final glossy = Theme.of(context).extension<GlossyCardTheme>();
     final elev = Theme.of(context).extension<AppElevations>();
 
     return itemsAsync.when(
-      loading: () => const Scaffold(body: Center(child: CircularProgressIndicator())),
-      error: (e, _) => Scaffold(body: Center(child: Text('Error: $e'))),
+      loading: () => Scaffold(
+        body: Center(child: Text(t.loading)),
+      ),
+      error: (e, _) => Scaffold(
+        body: Center(child: Text('${t.errorOccurred}: $e')),
+      ),
       data: (allItems) {
         final item = ref.watch(contentByIdProvider(widget.id));
         if (item == null) {
-          return const Scaffold(body: Center(child: Text('Not found')));
+          return Scaffold(
+            body: Center(child: Text(t.notFound)),
+          );
         }
 
-        final isSw = (lang == 'sw');
+        final isSw = lang == 'sw';
         final body = isSw
             ? (item.contentSw ?? item.contentEn ?? '')
             : (item.contentEn ?? item.contentSw ?? '');
@@ -85,7 +91,6 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
         final credit = item.imageMeta?['credit'] as String?;
         final isSaved = ref.watch(bookmarksProvider).contains(item.id);
 
-        // ✅ bump profile vector once when this page opens
         if (!_profileUpdatedOnce && body.trim().isNotEmpty) {
           _profileUpdatedOnce = true;
           WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -93,25 +98,21 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
           });
         }
 
-        // Build buckets → tabs (Overview/Treatment/Causes/Symptoms)
         _tabs = _buildTabs(context, body, lang);
 
-        // Ensure at least one tab exists (fallback to Overview with whole body)
         if (_tabs.isEmpty) {
           _tabs = [
             _TabSpec(
               key: 'overview',
-              title: isSw ? 'Muhtasari' : 'Overview',
+              title: t.overview,
               icon: Icons.menu_book,
               paragraphs: [body],
             ),
           ];
         }
 
-        // Create TabController once per build (or when tab count changes)
         _tab = TabController(length: _tabs.length, vsync: this);
 
-        // One-time restore scroll after layout
         WidgetsBinding.instance.addPostFrameCallback((_) => _maybeRestore(body));
 
         return Scaffold(
@@ -131,13 +132,19 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
                     expandedHeight: hasImage ? 260 : 0,
                     actions: [
                       IconButton(
-                        tooltip: isSaved ? 'Remove bookmark' : 'Add bookmark',
-                        icon: Icon(isSaved ? Icons.bookmark : Icons.bookmark_border),
+                        tooltip: isSaved ? t.removeBookmark : t.addBookmark,
+                        icon: Icon(
+                          isSaved ? Icons.bookmark : Icons.bookmark_border,
+                        ),
                         onPressed: () {
                           ref.read(bookmarksProvider.notifier).toggle(item.id);
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
-                              content: Text(isSaved ? 'Removed from Saved' : 'Saved for later'),
+                              content: Text(
+                                isSaved
+                                    ? t.removedFromSaved
+                                    : t.savedForLater,
+                              ),
                               behavior: SnackBarBehavior.floating,
                               duration: const Duration(seconds: 2),
                             ),
@@ -145,7 +152,7 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
                         },
                       ),
                       IconButton(
-                        tooltip: isSw ? 'Nakili' : 'Copy',
+                        tooltip: t.copy,
                         icon: const Icon(Icons.copy),
                         onPressed: () async {
                           await Clipboard.setData(
@@ -154,18 +161,21 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
                           if (!context.mounted) return;
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
-                              content: Text(isSw ? 'Imenakiliwa' : 'Copied to clipboard'),
+                              content: Text(t.copiedToClipboard),
                             ),
                           );
                         },
                       ),
                       IconButton(
-                        tooltip: isSw ? 'Shiriki' : 'Share',
+                        tooltip: t.share,
                         icon: const Icon(Icons.ios_share),
                         onPressed: () {
                           final deepPath = '/article/${item.id}';
                           SharePlus.instance.share(
-                            ShareParams(text: '${item.title}\n$deepPath\n\n$body', subject: item.title),
+                            ShareParams(
+                              text: '${item.title}\n$deepPath\n\n$body',
+                              subject: item.title,
+                            ),
                           );
                         },
                       ),
@@ -184,13 +194,18 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
                                   child: Image.asset(
                                     item.image!,
                                     fit: BoxFit.cover,
-                                    errorBuilder: (_, __, ___) => const ColoredBox(
+                                    errorBuilder: (_, __, ___) =>
+                                        const ColoredBox(
                                       color: Colors.black26,
-                                      child: Center(child: Icon(Icons.image_not_supported, size: 48)),
+                                      child: Center(
+                                        child: Icon(
+                                          Icons.image_not_supported,
+                                          size: 48,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
-                                // subtle gradient overlay for legibility
                                 Container(
                                   decoration: BoxDecoration(
                                     gradient: LinearGradient(
@@ -209,9 +224,17 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
                                     bottom: 12,
                                     child: Text(
                                       credit,
-                                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .bodySmall
+                                          ?.copyWith(
                                             color: Colors.white.withOpacity(.9),
-                                            shadows: const [Shadow(blurRadius: 2, color: Colors.black)],
+                                            shadows: const [
+                                              Shadow(
+                                                blurRadius: 2,
+                                                color: Colors.black,
+                                              )
+                                            ],
                                           ),
                                     ),
                                   ),
@@ -220,8 +243,6 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
                           )
                         : null,
                   ),
-
-                  // Sticky TabBar
                   SliverPersistentHeader(
                     pinned: true,
                     delegate: _TabBarHeaderDelegate(
@@ -230,10 +251,10 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
                         isScrollable: true,
                         tabAlignment: TabAlignment.start,
                         tabs: [
-                          for (final t in _tabs)
+                          for (final tab in _tabs)
                             Tab(
-                              icon: Icon(t.icon, size: 18),
-                              text: t.title,
+                              icon: Icon(tab.icon, size: 18),
+                              text: tab.title,
                             ),
                         ],
                       ),
@@ -241,15 +262,13 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
                   ),
                 ];
               },
-
-              // Tab views
               body: TabBarView(
                 controller: _tab,
                 children: [
-                  for (final t in _tabs)
+                  for (final tab in _tabs)
                     _TabBody(
-                      paragraphs: t.paragraphs,
-                      heroAccent: _tabAccent(context, t.key),
+                      paragraphs: tab.paragraphs,
+                      heroAccent: _tabAccent(context, tab.key),
                       glossy: glossy,
                       elev: elev,
                     ),
@@ -262,13 +281,11 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
     );
   }
 
-  // ✅ Day 4: Update profile vector (EMA) once per open
   Future<void> _bumpProfileVector(
     WidgetRef ref, {
     required String title,
     required String body,
   }) async {
-    // Respect feature flag—only personalize when the user opted in.
     final useTfl = ref.read(useTfliteProvider);
     if (!useTfl) return;
 
@@ -277,36 +294,29 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
 
     final vOld = await ref.read(profileVecProvider.future) ?? const <double>[];
     final text = '$title\n$body';
-
-    // Embed current article
     final vNew = ref.read(minilm.embedTextProvider(text));
 
-
-    // EMA: p = 0.85 * old + 0.15 * new
-    List<double> _ema(List<double> a, List<double> b) {
+    List<double> ema(List<double> a, List<double> b) {
       if (a.isEmpty) return b;
       final len = b.length;
       final out = List<double>.filled(len, 0.0, growable: false);
       for (var i = 0; i < len; i++) {
-        final ao = (i < a.length) ? a[i] : 0.0;
+        final ao = i < a.length ? a[i] : 0.0;
         out[i] = 0.85 * ao + 0.15 * b[i];
       }
       return out;
     }
 
-    await repo.writeVec(_ema(vOld, vNew));
+    await repo.writeVec(ema(vOld, vNew));
   }
 
-  // --- Build tab specs from raw text using your existing heuristics ---
   List<_TabSpec> _buildTabs(BuildContext context, String raw, String lang) {
-    // Prefer labeled blocks from raw → else parsed headings
     Map<_Bucket, List<String>> buckets = _extractBucketsFromRaw(raw);
     if (buckets.isEmpty) {
       final secs = parseSections(raw);
       buckets = _categorizeSections(secs);
     }
 
-    // If everything landed in Overview, we’ll create a single tab in build()
     if (buckets.isEmpty) return [];
 
     final order = <_Bucket>[
@@ -316,7 +326,7 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
       _Bucket.symptoms,
     ];
 
-    final titleOf = (_Bucket b) => _bucketTitleLocalized(b, lang);
+    final titleOf = (_Bucket b) => _bucketTitleLocalized(context, b, lang);
     final iconOf = (_Bucket b) {
       switch (b) {
         case _Bucket.overview:
@@ -345,7 +355,6 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
     return tabs;
   }
 
-  // Optional: themed accent per tab for bullets
   Color _tabAccent(BuildContext c, String key) {
     final s = Theme.of(c).colorScheme;
     switch (key) {
@@ -371,13 +380,13 @@ class _ContentDetailScreenState extends ConsumerState<ContentDetailScreen>
   }
 }
 
-/// Small sticky header delegate for TabBar
 class _TabBarHeaderDelegate extends SliverPersistentHeaderDelegate {
   final TabBar tabBar;
   _TabBarHeaderDelegate(this.tabBar);
 
   @override
   double get minExtent => tabBar.preferredSize.height;
+
   @override
   double get maxExtent => tabBar.preferredSize.height;
 
@@ -395,7 +404,6 @@ class _TabBarHeaderDelegate extends SliverPersistentHeaderDelegate {
   bool shouldRebuild(covariant _TabBarHeaderDelegate oldDelegate) => false;
 }
 
-/// One tab page; respects your linkify/bullets and adds a soft glossy card body
 class _TabBody extends StatelessWidget {
   final List<String> paragraphs;
   final Color heroAccent;
@@ -412,23 +420,26 @@ class _TabBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cardDeco = (glossy?.bodyDecoration().copyWith(
-          boxShadow: glossy?.shadows
-              .map((s) => s.copyWith(blurRadius: s.blurRadius + (elev?.small ?? 1)))
-              .toList(),
-        )) ??
+              boxShadow: glossy?.shadows
+                  .map((s) => s.copyWith(
+                        blurRadius: s.blurRadius + (elev?.small ?? 1),
+                      ))
+                  .toList(),
+            )) ??
         BoxDecoration(
           color: Theme.of(context).colorScheme.surface,
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: Theme.of(context).dividerColor.withOpacity(.35)),
+          border: Border.all(
+            color: Theme.of(context).dividerColor.withOpacity(.35),
+          ),
         );
 
-    // ✅ Strong base text style for everything inside the card
-    final base = Theme.of(context).textTheme.bodyLarge ?? const TextStyle(fontSize: 16);
+    final base =
+        Theme.of(context).textTheme.bodyLarge ?? const TextStyle(fontSize: 16);
 
     return NotificationListener<ScrollNotification>(
       onNotification: (n) {
         if (n is ScrollUpdateNotification) {
-          // You can persist per-tab offsets if you want; for now, save main scroll
           final box = Hive.box('reading_progress');
           box.put('pos_tab_offset', n.metrics.pixels);
         }
@@ -439,8 +450,6 @@ class _TabBody extends StatelessWidget {
         child: Container(
           decoration: cardDeco,
           padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
-
-          // ✅ Force correct base color/typography in light & dark
           child: DefaultTextStyle.merge(
             style: base,
             child: _FancyBody(paragraphs: paragraphs, accent: heroAccent),
@@ -451,37 +460,22 @@ class _TabBody extends StatelessWidget {
   }
 }
 
-/* ------- Helpers ------- */
 enum _Bucket { treatment, causes, symptoms, overview }
 
-String _bucketTitleLocalized(_Bucket b, String lang) {
-  final isSw = (lang.toLowerCase() == 'sw');
-  if (isSw) {
-    switch (b) {
-      case _Bucket.treatment:
-        return 'Matibabu';
-      case _Bucket.causes:
-        return 'Sababu';
-      case _Bucket.symptoms:
-        return 'Dalili';
-      case _Bucket.overview:
-        return 'Muhtasari';
-    }
-  } else {
-    switch (b) {
-      case _Bucket.treatment:
-        return 'Treatment';
-      case _Bucket.causes:
-        return 'Causes';
-      case _Bucket.symptoms:
-        return 'Symptoms';
-      case _Bucket.overview:
-        return 'Overview';
-    }
+String _bucketTitleLocalized(BuildContext context, _Bucket b, String lang) {
+  final t = AppStrings.of(context);
+  switch (b) {
+    case _Bucket.treatment:
+      return t.treatment;
+    case _Bucket.causes:
+      return t.causes;
+    case _Bucket.symptoms:
+      return t.symptoms;
+    case _Bucket.overview:
+      return t.overview;
   }
 }
 
-// Parse-section → buckets
 Map<_Bucket, List<String>> _categorizeSections(List<dynamic> sections) {
   final map = <_Bucket, List<String>>{
     _Bucket.treatment: <String>[],
@@ -546,12 +540,16 @@ Map<_Bucket, List<String>> _categorizeSections(List<dynamic> sections) {
 
   if (!hasAny) return {};
   return {
-    for (final b in [_Bucket.overview, _Bucket.treatment, _Bucket.causes, _Bucket.symptoms])
+    for (final b in [
+      _Bucket.overview,
+      _Bucket.treatment,
+      _Bucket.causes,
+      _Bucket.symptoms
+    ])
       if (map[b]!.isNotEmpty) b: map[b]!,
   };
 }
 
-// Raw → buckets by scanning headings in EN/SW
 Map<_Bucket, List<String>> _extractBucketsFromRaw(String raw) {
   final lines = raw.replaceAll('\r\n', '\n').split('\n');
   final treatmentSyns = <String>{
@@ -589,9 +587,12 @@ Map<_Bucket, List<String>> _extractBucketsFromRaw(String raw) {
     'ishara'
   };
 
-  bool _isHeading(String line, Set<String> syns) {
+  bool isHeading(String line, Set<String> syns) {
     final l = line.trim().toLowerCase();
-    final stripped = l.replaceFirst(RegExp(r'^(?:\d+[\).\s-]+|[-–—•]\s*)'), '');
+    final stripped = l.replaceFirst(
+      RegExp(r'^(?:\d+[\).\s-]+|[-–—•]\s*)'),
+      '',
+    );
     for (final s in syns) {
       if (RegExp('^$s\\b\\s*[:\\-–—]?\$').hasMatch(stripped)) return true;
       if (RegExp('^$s\\b\\s*[:\\-–—]').hasMatch(stripped)) return true;
@@ -599,10 +600,10 @@ Map<_Bucket, List<String>> _extractBucketsFromRaw(String raw) {
     return false;
   }
 
-  _Bucket? _bucketFor(String line) {
-    if (_isHeading(line, treatmentSyns)) return _Bucket.treatment;
-    if (_isHeading(line, causesSyns)) return _Bucket.causes;
-    if (_isHeading(line, symptomsSyns)) return _Bucket.symptoms;
+  _Bucket? bucketFor(String line) {
+    if (isHeading(line, treatmentSyns)) return _Bucket.treatment;
+    if (isHeading(line, causesSyns)) return _Bucket.causes;
+    if (isHeading(line, symptomsSyns)) return _Bucket.symptoms;
     return null;
   }
 
@@ -615,16 +616,16 @@ Map<_Bucket, List<String>> _extractBucketsFromRaw(String raw) {
   _Bucket current = _Bucket.overview;
   final buffer = StringBuffer();
 
-  void _flush() {
+  void flush() {
     final text = buffer.toString().trim();
     if (text.isNotEmpty) out[current]!.add(text);
     buffer.clear();
   }
 
   for (final line in lines) {
-    final maybe = _bucketFor(line);
+    final maybe = bucketFor(line);
     if (maybe != null) {
-      _flush();
+      flush();
       current = maybe;
       final m = RegExp(r'[:\-–—]\s*(.+)$').firstMatch(line.trim());
       if (m != null) buffer.writeln(m.group(1));
@@ -632,14 +633,23 @@ Map<_Bucket, List<String>> _extractBucketsFromRaw(String raw) {
     }
     buffer.writeln(line);
   }
-  _flush();
+  flush();
 
-  final nonEmptyKeys = out.entries.where((e) => e.value.isNotEmpty).map((e) => e.key).toList();
-  if (nonEmptyKeys.isEmpty || (nonEmptyKeys.length == 1 && nonEmptyKeys.first == _Bucket.overview)) {
+  final nonEmptyKeys = out.entries
+      .where((e) => e.value.isNotEmpty)
+      .map((e) => e.key)
+      .toList();
+  if (nonEmptyKeys.isEmpty ||
+      (nonEmptyKeys.length == 1 && nonEmptyKeys.first == _Bucket.overview)) {
     return {};
   }
   return {
-    for (final b in [_Bucket.overview, _Bucket.treatment, _Bucket.causes, _Bucket.symptoms])
+    for (final b in [
+      _Bucket.overview,
+      _Bucket.treatment,
+      _Bucket.causes,
+      _Bucket.symptoms
+    ])
       if (out[b]!.isNotEmpty) b: out[b]!,
   };
 }
@@ -651,77 +661,93 @@ class _FancyBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // ✅ Strong base to ensure correct color in any theme
-    final base = Theme.of(context).textTheme.bodyLarge ?? const TextStyle(fontSize: 16);
+    final base =
+        Theme.of(context).textTheme.bodyLarge ?? const TextStyle(fontSize: 16);
 
     final children = <Widget>[];
     for (final raw in paragraphs) {
       final bullets = maybeBullets(raw);
       if (bullets.isNotEmpty) {
         for (final b in bullets) {
-          children.add(Padding(
-            padding: const EdgeInsets.only(bottom: 8),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  width: 8,
-                  height: 8,
-                  margin: const EdgeInsets.only(top: 7, right: 8),
-                  decoration: BoxDecoration(color: accent, shape: BoxShape.circle),
-                ),
-                Expanded(
-                  child: RichText(
-                    text: TextSpan(
-                      style: base, // ✅ bullet text inherits correct color
-                      children: linkifyParagraph(
-                        context,
-                        text: b,
-                        resolveTitle: (_) => null,
-                        onTapId: (id) {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(builder: (_) => ContentDetailScreen(id: id)),
-                          );
-                        },
+          children.add(
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 8,
+                    height: 8,
+                    margin: const EdgeInsets.only(top: 7, right: 8),
+                    decoration: BoxDecoration(
+                      color: accent,
+                      shape: BoxShape.circle,
+                    ),
+                  ),
+                  Expanded(
+                    child: RichText(
+                      text: TextSpan(
+                        style: base,
+                        children: linkifyParagraph(
+                          context,
+                          text: b,
+                          resolveTitle: (_) => null,
+                          onTapId: (id) {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => ContentDetailScreen(id: id),
+                              ),
+                            );
+                          },
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ));
+          );
         }
       } else {
         final paras = raw.split('\n\n').where((p) => p.trim().isNotEmpty);
         for (final p in paras) {
-          children.add(Padding(
-            padding: const EdgeInsets.only(bottom: 10),
-            child: RichText(
-              text: TextSpan(
-                style: base, // ✅ paragraph text inherits correct color
-                children: linkifyParagraph(
-                  context,
-                  text: p.trim(),
-                  resolveTitle: (_) => null,
-                  onTapId: (id) {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => ContentDetailScreen(id: id)),
-                    );
-                  },
+          children.add(
+            Padding(
+              padding: const EdgeInsets.only(bottom: 10),
+              child: RichText(
+                text: TextSpan(
+                  style: base,
+                  children: linkifyParagraph(
+                    context,
+                    text: p.trim(),
+                    resolveTitle: (_) => null,
+                    onTapId: (id) {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => ContentDetailScreen(id: id),
+                        ),
+                      );
+                    },
+                  ),
                 ),
               ),
             ),
-          ));
+          );
         }
       }
-      children.add(Divider(
-        height: 16,
-        thickness: 0.6,
-        color: Theme.of(context).dividerColor.withOpacity(0.3),
-      ));
+      children.add(
+        Divider(
+          height: 16,
+          thickness: 0.6,
+          color: Theme.of(context).dividerColor.withOpacity(0.3),
+        ),
+      );
     }
     if (children.isNotEmpty) children.removeLast();
-    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: children);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: children,
+    );
   }
 }
 

@@ -1,11 +1,11 @@
 // lib/features/diseases/ui/diseases_hub_screen.dart
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:go_router/go_router.dart';
 
-import '../data/diseases_grouping.dart'; // DiseaseGroup, diseasesByGroupProvider, groupLabel()
+import '../../../l10n/app_strings.dart';
+import '../data/diseases_grouping.dart';
 
 // ✅ Background wrapper
 import '../../../widgets/app_background.dart';
@@ -15,6 +15,7 @@ class DiseasesHubScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final t = AppStrings.of(context);
     final grouped = ref.watch(diseasesByGroupProvider);
     final groups = DiseaseGroup.values
         .where((g) => (grouped[g]?.isNotEmpty ?? false))
@@ -23,9 +24,9 @@ class DiseasesHubScreen extends ConsumerWidget {
     final s = Theme.of(context).colorScheme;
 
     return Scaffold(
-      backgroundColor: Colors.transparent,        // ✅ let background show
-      appBar: AppBar(title: const Text('Diseases')),
-      body: AppBackground(                         // ✅ wrap content
+      backgroundColor: Colors.transparent,
+      appBar: AppBar(title: Text(t.diseases)),
+      body: AppBackground(
         child: Padding(
           padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
           child: MasonryGridView.count(
@@ -36,9 +37,8 @@ class DiseasesHubScreen extends ConsumerWidget {
             itemBuilder: (context, i) {
               final g = groups[i];
               final items = grouped[g]!;
-              final label = groupLabel(g);
+              final label = _groupLabelLocalized(context, g);
 
-              // Vary the height slightly for a “masonry” feel (repeat pattern)
               final pattern = <double>[150, 190, 170, 210];
               final height = pattern[i % pattern.length];
 
@@ -58,30 +58,68 @@ class DiseasesHubScreen extends ConsumerWidget {
   }
 }
 
-/// Fun emoji per category (tweak freely)
+/// Fun emoji per category
 String _groupEmoji(DiseaseGroup g) {
   switch (g) {
-    case DiseaseGroup.digestive:       return '🍽️';
-    case DiseaseGroup.respiratory:     return '🌬️';
-    case DiseaseGroup.musculoskeletal: return '🦴';
-    case DiseaseGroup.skin:            return '🧴';
-    case DiseaseGroup.urinary:         return '🚰';
-    case DiseaseGroup.reproductive:    return '🧬';
-    case DiseaseGroup.head:            return '🧠';
-    case DiseaseGroup.general:         return '🩺';
+    case DiseaseGroup.digestive:
+      return '🍽️';
+    case DiseaseGroup.respiratory:
+      return '🌬️';
+    case DiseaseGroup.musculoskeletal:
+      return '🦴';
+    case DiseaseGroup.skin:
+      return '🧴';
+    case DiseaseGroup.urinary:
+      return '🚰';
+    case DiseaseGroup.reproductive:
+      return '🧬';
+    case DiseaseGroup.head:
+      return '🧠';
+    case DiseaseGroup.general:
+      return '🩺';
+  }
+}
+
+String _groupLabelLocalized(BuildContext context, DiseaseGroup g) {
+  final t = AppStrings.of(context);
+  switch (g) {
+    case DiseaseGroup.digestive:
+      return t.digestive;
+    case DiseaseGroup.respiratory:
+      return t.respiratory;
+    case DiseaseGroup.musculoskeletal:
+      return t.musculoskeletal;
+    case DiseaseGroup.skin:
+      return t.skin;
+    case DiseaseGroup.urinary:
+      return t.urinary;
+    case DiseaseGroup.reproductive:
+      return t.reproductive;
+    case DiseaseGroup.head:
+      return t.head;
+    case DiseaseGroup.general:
+      return t.general;
   }
 }
 
 Color _groupAccentColor(ColorScheme s, DiseaseGroup g) {
   switch (g) {
-    case DiseaseGroup.digestive:       return s.primaryContainer;
-    case DiseaseGroup.respiratory:     return s.secondaryContainer;
-    case DiseaseGroup.musculoskeletal: return s.tertiaryContainer;
-    case DiseaseGroup.skin:            return s.surfaceTint;
-    case DiseaseGroup.urinary:         return s.secondaryContainer;
-    case DiseaseGroup.reproductive:    return s.primaryContainer;
-    case DiseaseGroup.head:            return s.surfaceVariant;
-    case DiseaseGroup.general:         return s.primaryContainer;
+    case DiseaseGroup.digestive:
+      return s.primaryContainer;
+    case DiseaseGroup.respiratory:
+      return s.secondaryContainer;
+    case DiseaseGroup.musculoskeletal:
+      return s.tertiaryContainer;
+    case DiseaseGroup.skin:
+      return s.surfaceTint;
+    case DiseaseGroup.urinary:
+      return s.secondaryContainer;
+    case DiseaseGroup.reproductive:
+      return s.primaryContainer;
+    case DiseaseGroup.head:
+      return s.surfaceVariant;
+    case DiseaseGroup.general:
+      return s.primaryContainer;
   }
 }
 
@@ -104,6 +142,7 @@ class _GroupCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppStrings.of(context);
     final s = Theme.of(context).colorScheme;
 
     return InkWell(
@@ -137,7 +176,6 @@ class _GroupCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Emoji badge
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
               decoration: BoxDecoration(
@@ -160,14 +198,17 @@ class _GroupCard extends StatelessWidget {
             const SizedBox(height: 4),
             Row(
               children: [
-                Icon(Icons.folder_open, size: 16, color: s.onSurface.withOpacity(.65)),
+                Icon(
+                  Icons.folder_open,
+                  size: 16,
+                  color: s.onSurface.withOpacity(.65),
+                ),
                 const SizedBox(width: 6),
                 Text(
-                  '$count topics',
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyMedium
-                      ?.copyWith(color: s.onSurface.withOpacity(.7)),
+                  t.topicsCount(count),
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        color: s.onSurface.withOpacity(.7),
+                      ),
                 ),
               ],
             ),

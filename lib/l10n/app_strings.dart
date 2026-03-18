@@ -208,6 +208,113 @@ class AppStrings {
       ? 'Bado hakuna matokeo. Jaribu neno lingine—kwa mfano, "tangawizi", "pilipili ya cayenne", "udhaifu", "dalili".'
       : 'No results yet. Try another term—e.g., "ginger", "cayenne", "debility", "symptoms".';
 
+  String get savedRemedies =>
+    isSw ? 'Tiba Zilizohifadhiwa' : 'Saved Remedies';
+
+  String get filterSavedRemedies =>
+      isSw ? 'Chuja tiba zilizohifadhiwa…' : 'Filter saved remedies…';
+
+  String get removeBookmarkTitle =>
+      isSw ? 'Ondoa kilichohifadhiwa?' : 'Remove bookmark?';
+
+  String removeFromSavedMessage(String title) => isSw
+      ? 'Ondoa “$title” kutoka Vilivyohifadhiwa?'
+      : 'Remove “$title” from Saved?';
+
+  String get remove => isSw ? 'Ondoa' : 'Remove';
+
+  String removedItem(String title) => isSw
+      ? 'Imeondolewa $title'
+      : 'Removed $title';
+
+  String get noSavedRemediesYet => isSw
+      ? 'Bado hakuna tiba zilizohifadhiwa.\nFungua makala yoyote kisha gusa alama ya kuhifadhi.'
+      : 'No saved remedies yet.\nOpen any article and tap the bookmark icon.';
+
+  String get noSavedRemediesMatchFilter => isSw
+      ? 'Hakuna tiba zilizohifadhiwa zinazolingana na kichujio chako.'
+      : 'No saved remedies match your filter.';
+
+  String get clear => isSw ? 'Futa' : 'Clear';
+
+  String get basicPrinciples =>
+    isSw ? 'Kanuni za Msingi' : 'Basic Principles';
+
+  String get importantHerbs =>
+      isSw ? 'Mimea Muhimu' : 'Important Herbs';
+
+  String get diseasesConditions =>
+      isSw ? 'Magonjwa na Hali' : 'Diseases & Conditions';
+
+  String basicPrinciplesCount(int count) =>
+      isSw ? 'Kanuni za Msingi • $count' : 'Basic Principles • $count';
+
+  String importantHerbsCount(int count) =>
+      isSw ? 'Mimea Muhimu • $count' : 'Important Herbs • $count';
+
+  String diseasesConditionsCount(int count) =>
+      isSw ? 'Magonjwa na Hali • $count' : 'Diseases & Conditions • $count';
+
+  String get open => isSw ? 'Fungua' : 'Open';
+
+  String get principlesOfHealth =>
+      isSw ? 'Kanuni za Afya' : 'Principles of Health';
+
+  String get principlesOfHealthSubtitle => isSw
+      ? 'Misingi muhimu, kinga, na maisha yenye afya.'
+      : 'Core ideas, prevention, and healthy living.';
+
+  String get importantHerbsSubtitle => isSw
+      ? 'Tiba zinazotumika zaidi na jinsi ya kuzitumia.'
+      : 'Most-used remedies and how to apply them.';
+
+  String get diseasesConditionsSubtitle => isSw
+      ? 'Vinjari kwa mfumo wa mwili—haraka na kwa uwazi.'
+      : 'Browse by body system—fast and clear.';
+
+  String get browseEverything =>
+      isSw ? 'Vinjari Yote' : 'Browse Everything';
+
+  String get browseEverythingSubtitle => isSw
+      ? 'Orodha ya kialfabeti ya maudhui yote'
+      : 'Alphabetical list of all content';
+
+  String get notFound => isSw ? 'Haijapatikana' : 'Not found';
+
+  String get addBookmark => isSw ? 'Ongeza kwenye vilivyohifadhiwa' : 'Add bookmark';
+  //String get removeBookmark => isSw ? 'Ondoa kwenye vilivyohifadhiwa' : 'Remove bookmark';
+
+  String get removedFromSaved => isSw ? 'Imeondolewa kwenye Vilivyohifadhiwa' : 'Removed from Saved';
+  String get savedForLater => isSw ? 'Imehifadhiwa kwa baadaye' : 'Saved for later';
+
+  String get copy => isSw ? 'Nakili' : 'Copy';
+  String get copiedToClipboard => isSw ? 'Imenakiliwa' : 'Copied to clipboard';
+
+  String get share => isSw ? 'Shiriki' : 'Share';
+
+  String get overview => isSw ? 'Muhtasari' : 'Overview';
+  String get treatment => isSw ? 'Matibabu' : 'Treatment';
+  String get causes => isSw ? 'Sababu' : 'Causes';
+  String get symptoms => isSw ? 'Dalili' : 'Symptoms';
+
+  String get principlesAZ =>
+    isSw ? 'Kanuni (A–Z)' : 'Principles (A–Z)';
+
+  String get digestive => isSw ? 'Mmeng’enyo' : 'Digestive';
+  String get respiratory => isSw ? 'Upumuaji' : 'Respiratory';
+  String get musculoskeletal => isSw ? 'Mifupa na Misuli' : 'Musculoskeletal';
+  String get skin => isSw ? 'Ngozi' : 'Skin';
+  String get urinary => isSw ? 'Haja ndogo' : 'Urinary';
+  String get reproductive => isSw ? 'Uzazi' : 'Reproductive';
+  String get head => isSw ? 'Kichwa' : 'Head';
+  String get general => isSw ? 'Jumla' : 'General';
+
+  String get remediesAZ =>
+      isSw ? 'Tiba (A–Z)' : 'Remedies (A–Z)';
+
+  String topicsCount(int count) =>
+      isSw ? 'mada $count' : '$count topics';  
+
   String get ok => 'OK';
   String get cancel => isSw ? 'Ghairi' : 'Cancel';
 
