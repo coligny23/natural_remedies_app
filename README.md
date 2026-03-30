@@ -1,59 +1,93 @@
-# Natural Remedies (Afya Bomba)
+# 🌿 AfyaBomba Natural Remedies App
 
-A bilingual (English/Swahili), offline-first Flutter app that helps users explore natural remedies and wellness tips — fast search, clean UI, and concise, trustworthy content.
+A modern mobile application that provides **accessible, offline-first health knowledge** using natural remedies — designed for both **English and Swahili users**.
 
+---
+
+![Release](https://img.shields.io/github/v/release/coligny23/natural_remedies_app)
+![Downloads](https://img.shields.io/github/downloads/coligny23/natural_remedies_app/total)
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue)
+
+---
 ## ✨ Features
-- 🔎 Smart search for symptoms & topics (EN + SW)
-- 🌓 Light/Dark theme support
-- 📦 Offline content bundled with the app
-- 🌍 Fully localized content (English & Swahili)
-- 🔒 No sign-in, no tracking, no ads
+
+* 🌍 **Bilingual Support** — English 🇬🇧 & Swahili 🇹🇿
+* 📚 **Offline Access** — No internet required
+* 🔍 **Smart Search** — Quickly find remedies, diseases, and principles
+* 💾 **Save for Later** — Bookmark useful content
+* 🧠 **Personalized Experience** — Learns from what you read
+* 🧩 **Organized Content**
+
+  * Remedies (A–Z)
+  * Diseases by category
+  * Health principles
+
+---
+
+## 📱 Download
+
+Get the latest version of the app:
+
+👉 **[Download APK](https://github.com/coligny23/natural_remedies_app/releases/latest)**
+
+### Available Versions
+
+* Universal APK (Recommended)
+* ARM64 APK
+* ARMv7 APK
+
+---
+
+## 🧱 Built With
+
+* **Flutter** — Cross-platform UI
+* **Riverpod** — State management
+* **Hive** — Local storage
+* **TensorFlow Lite** — On-device personalization
+
+---
+
+## 🎯 Purpose
+
+This app aims to make **health knowledge more accessible**, especially in **low-resource and rural settings**, by combining:
+
+* Localized language support
+* Offline-first design
+* Simple, intuitive user experience
+
+---
 
 ## 📸 Screenshots
-_Add your screenshots here: `screenshots/01.png` …_
 
-## 🛠️ Tech
-- Flutter, Dart
-- JSON content (offline assets)
-- Android release builds with Gradle
+*(Add screenshots here later)*
 
-## 🌐 Localization
-- Article fields stored as bilingual JSON: { "en": "...", "sw": "..." }
+---
 
-- See /tools/ scripts to export/import content for review
+## 🚀 Getting Started (Developers)
 
-## ⚠️ Disclaimer
-This app is informational only and not a substitute for professional medical advice. Always consult a qualified healthcare provider.
-
-## 📜 License
-Copyright (c) 2025 [George Odongo / NM-AIST]
-
-All rights reserved.
-
-This software and its source code are proprietary and confidential.
-You may download, install, and use the application solely for personal
-evaluation and testing purposes as authorized by the developer.
-
-Except as expressly permitted in writing, you may not copy, modify,
-merge, publish, distribute, sublicense, sell, or create derivative
-works of this software or any part thereof.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-OR IMPLIED. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
-FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
-OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-For commercial use or production deployment, a separate written license
-agreement with the developer is required.
-
-## 🚀 Build
 ```bash
-flutter clean
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+cd YOUR_REPO
 flutter pub get
 flutter run
-# Release APKs:
-flutter build apk --release --split-per-abi
-# or Gradle:
-cd android && .\gradlew assembleRelease
+```
 
+---
+
+## 📦 Release Notes
+
+All versions are available here:
+
+👉 https://github.com/coligny23/natural_remedies_app/releases
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and improvements are welcome.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
