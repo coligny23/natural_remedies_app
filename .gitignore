@@ -31,6 +31,22 @@ data-pipeline/__pycache__/
 *.7z
 *.data
 
+# Large generated model artifacts
+assets/models_e5small/*.onnx
+assets/models_e5small/*.onnx.data
+assets/models_e5small/*.tflite
+assets/models_e5small/tf_saved_model/
+assets/models_e5small/saved_model/
+assets/models_multilingual/
+assets/models_afrie5/
+
+# Generated embedding indexes
+assets/embeddings_e5small/*.bin
+assets/embeddings_e5small/*.json
+
+# Evaluation reports
+tools/eval_report*.json
+
 # OS
 .DS_Store
 Thumbs.db
