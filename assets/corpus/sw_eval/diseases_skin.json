@@ -14,7 +14,17 @@
       "width": 3248,
       "height": 2436,
       "credit": "File:Egyptian plague of boils in the Toggenburg Bible.jpg — Unknown authorUnknown author (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Majipu",
+    "aliasesSw": [
+      "Majipu",
+      "skin boils",
+      "Boils",
+      "jipu",
+      "majipu kwenye ngozi",
+      "uvimbe wenye usaha",
+      "furuncles"
+    ]
   },
   {
     "id": "disease-skin-burns",
@@ -31,7 +41,17 @@
       "width": 6000,
       "height": 4000,
       "credit": "File:Burns, Colorado.JPG — Jeffrey Beall (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kuungua",
+    "aliasesSw": [
+      "Kuungua",
+      "skin burns",
+      "Burns",
+      "kuchomwa moto",
+      "majeraha ya moto",
+      "ngozi kuungua",
+      "scalds"
+    ]
   },
   {
     "id": "disease-skin-acne",
@@ -48,7 +68,16 @@
       "width": 8160,
       "height": 6120,
       "credit": "File:Üzdə düyünlü və kistik sızanaqlar (Acne Vulgaris) 13.jpg — Sedef94 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Chunusi",
+    "aliasesSw": [
+      "Chunusi",
+      "skin acne",
+      "Acne",
+      "chunusi usoni",
+      "vipele usoni",
+      "pimples"
+    ]
   },
   {
     "id": "disease-skin-warts",
@@ -65,7 +94,16 @@
       "width": 2117,
       "height": 2117,
       "credit": "File:Warts Day 5.jpg — GalliasM (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Vinyama/vinyama vya ngozi",
+    "aliasesSw": [
+      "Vinyama/vinyama vya ngozi",
+      "skin warts",
+      "Warts",
+      "wart",
+      "vinyama vya ngozi",
+      "sugu kwenye ngozi"
+    ]
   },
   {
     "id": "disease-skin-heat-rash",
@@ -82,7 +120,13 @@
       "width": 4128,
       "height": 3096,
       "credit": "File:Heat rash jock itch.jpg — Gerardolagunes (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Joto upele",
+    "aliasesSw": [
+      "Joto upele",
+      "skin heat rash",
+      "Heat Rash"
+    ]
   },
   {
     "id": "disease-skin-sunburn",
@@ -99,7 +143,12 @@
       "width": 2448,
       "height": 3264,
       "credit": "File:Sunburn - (20190727170341).jpg — Sikander Iqbal (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Sunburn",
+    "aliasesSw": [
+      "skin sunburn",
+      "Sunburn"
+    ]
   },
   {
     "id": "disease-skin-skin-rash",
@@ -116,7 +165,13 @@
       "width": 5568,
       "height": 3594,
       "credit": "File:ISS-66 Atmospheric plume from 2022 Hunga Tonga eruption - edited.jpg — NASA / Kayla Barron (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Ngozi upele",
+    "aliasesSw": [
+      "Ngozi upele",
+      "skin skin rash",
+      "Skin Rash"
+    ]
   },
   {
     "id": "disease-skin-eczema",
@@ -133,7 +188,15 @@
       "width": 1839,
       "height": 1521,
       "credit": "File:Dermatitis2015.jpg — James Heilman, MD (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Eczema",
+    "aliasesSw": [
+      "skin eczema",
+      "Eczema",
+      "ukurutu",
+      "ngozi kuwasha",
+      "upele wa ngozi"
+    ]
   },
   {
     "id": "disease-skin-psoriasis",
@@ -150,7 +213,12 @@
       "width": 1301,
       "height": 930,
       "credit": "File:Psoriasis 1300.jpg — MCvanVeen (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Psoriasis",
+    "aliasesSw": [
+      "skin psoriasis",
+      "Psoriasis"
+    ]
   },
   {
     "id": "disease-skin-frostbite",
@@ -167,7 +235,12 @@
       "width": 3024,
       "height": 4032,
       "credit": "File:Frostbite dorsal surface feet.jpg — CheckDO (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Frostbite",
+    "aliasesSw": [
+      "skin frostbite",
+      "Frostbite"
+    ]
   },
   {
     "id": "disease-skin-burning-feet",
@@ -184,7 +257,12 @@
       "width": 3648,
       "height": 2736,
       "credit": "File:Burning Man 2013 Black Rock City from 25 feet (9657141909).jpg — Dan Rademacher from Oakland, CA, USA (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Burning Feet",
+    "aliasesSw": [
+      "skin burning feet",
+      "Burning Feet"
+    ]
   },
   {
     "id": "disease-skin-diaper-rash",
@@ -201,7 +279,13 @@
       "width": 2265,
       "height": 1673,
       "credit": "File:Irritant diaper dermatitis.jpg — Dailyboth (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Diaper upele",
+    "aliasesSw": [
+      "Diaper upele",
+      "skin diaper rash",
+      "Diaper Rash"
+    ]
   },
   {
     "id": "disease-skin-insect-sting",
@@ -218,7 +302,12 @@
       "width": 4685,
       "height": 3124,
       "credit": "File:Peacock (Aglais io) caterpillars on stinging nettle (Urtica dioica) Ruggeller Riet.jpg — Charles J. Sharp (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Insect Sting",
+    "aliasesSw": [
+      "skin insect sting",
+      "Insect Sting"
+    ]
   },
   {
     "id": "disease-skin-mosquito-bite",
@@ -235,7 +324,12 @@
       "width": 4032,
       "height": 3024,
       "credit": "File:Aedes mosquito bites.jpg — Ant1234567 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Mosquito Bite",
+    "aliasesSw": [
+      "skin mosquito bite",
+      "Mosquito Bite"
+    ]
   },
   {
     "id": "disease-skin-jellyfish-sting",
@@ -252,7 +346,12 @@
       "width": 4928,
       "height": 3264,
       "credit": "File:A Pacific Sea Nettle- stay away from this jellyfish (27823365541).jpg — shankar s. from Dubai, united arab emirates (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Jellyfish Sting",
+    "aliasesSw": [
+      "skin jellyfish sting",
+      "Jellyfish Sting"
+    ]
   },
   {
     "id": "disease-skin-spider-bite",
@@ -269,7 +368,12 @@
       "width": 3072,
       "height": 2304,
       "credit": "File:SWS Bite.JPG — MCV55 (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Spider Bite",
+    "aliasesSw": [
+      "skin spider bite",
+      "Spider Bite"
+    ]
   },
   {
     "id": "disease-skin-snake-bite",
@@ -286,7 +390,12 @@
       "width": 4000,
       "height": 3000,
       "credit": "File:Snake bite 6.jpg — Fyn Kynd Photography from Searsmont, Maine, United States (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Snake Bite",
+    "aliasesSw": [
+      "skin snake bite",
+      "Snake Bite"
+    ]
   },
   {
     "id": "disease-skin-dog-or-animal-bite",
@@ -303,7 +412,12 @@
       "width": 3872,
       "height": 2592,
       "credit": "File:Zora bitten by Pit bull dog.jpg — TijsB (CC BY-SA 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Dog Or Animal Bite",
+    "aliasesSw": [
+      "skin dog or animal bite",
+      "Dog Or Animal Bite"
+    ]
   },
   {
     "id": "disease-skin-drug-rash",
@@ -320,7 +434,13 @@
       "width": 8641,
       "height": 11005,
       "credit": "File:Self-portrait in White Dress - Jacek Malczewski.jpg — Jacek Malczewski (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Drug upele",
+    "aliasesSw": [
+      "Drug upele",
+      "skin drug rash",
+      "Drug Rash"
+    ]
   },
   {
     "id": "disease-skin-fasting",
@@ -337,6 +457,11 @@
       "width": 5232,
       "height": 3790,
       "credit": "File:Postna sarma (vegetarian sarma, Cuisine of Serbia).jpg — Petar Milošević (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Fasting",
+    "aliasesSw": [
+      "skin fasting",
+      "Fasting"
+    ]
   }
 ]

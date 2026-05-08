@@ -14,7 +14,17 @@
       "width": 7939,
       "height": 11161,
       "credit": "File:Hoofland's celebrated German tonic water will cure dyspepsia, liver complaint, debility, indigestion, etc., etc. LCCN2005694438.jpg — Popular Graphic Arts (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Udhaifu wa mwili",
+    "aliasesSw": [
+      "Udhaifu wa mwili",
+      "general debility",
+      "Debility",
+      "mwili dhaifu",
+      "kukosa nguvu",
+      "udhaifu",
+      "uchovu"
+    ]
   },
   {
     "id": "disease-general-emotional-fatigue-syndrome",
@@ -31,7 +41,13 @@
       "width": 1923,
       "height": 1389,
       "credit": "File:Congressman George Miller and Beverly Kyer (6326196845).jpg — George Miller (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kihisia uchovu Syndrome",
+    "aliasesSw": [
+      "Kihisia uchovu Syndrome",
+      "general emotional fatigue syndrome",
+      "Emotional Fatigue Syndrome"
+    ]
   },
   {
     "id": "disease-general-chronic-fatigue",
@@ -48,7 +64,17 @@
       "width": 3227,
       "height": 3009,
       "credit": "File:Myalgic encephalomyelitis-chronic fatigue syndrome.jpg — Arron HE, Marsh BD, Kell DB, Khan MA, Jaeger BR, Pretorius E. (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Uchovu sugu",
+    "aliasesSw": [
+      "Uchovu sugu",
+      "general chronic fatigue",
+      "Chronic Fatigue",
+      "uchovu wa muda mrefu",
+      "uchovu kila wakati",
+      "udhaifu wa mwili",
+      "kukosa nguvu"
+    ]
   },
   {
     "id": "disease-general-epstein-barr-virus",
@@ -65,7 +91,12 @@
       "width": 2700,
       "height": 1800,
       "credit": "File:Epstein-barr virus (ebv).jpg — Unknown photographer (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Epstein Barr Virus",
+    "aliasesSw": [
+      "general epstein barr virus",
+      "Epstein Barr Virus"
+    ]
   },
   {
     "id": "disease-general-candidiasis",
@@ -82,7 +113,18 @@
       "width": 2961,
       "height": 1998,
       "credit": "File:Oral thrush Aphthae Candida albicans. PHIL 1217 lores.jpg — Photo Credit:\nContent Providers(s): CDC (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Candidiasis",
+    "aliasesSw": [
+      "general candidiasis",
+      "Candidiasis",
+      "candida",
+      "maambukizi ya chachu",
+      "thrush",
+      "fangasi",
+      "uke kuwasha",
+      "maambukizi ya candida"
+    ]
   },
   {
     "id": "disease-general-jet-lag",
@@ -99,7 +141,12 @@
       "width": 11475,
       "height": 5825,
       "credit": "File:Countries visited on Jet Lag The Game.png — Spaghettifier (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Jet Lag",
+    "aliasesSw": [
+      "general jet lag",
+      "Jet Lag"
+    ]
   },
   {
     "id": "disease-general-nausea",
@@ -116,7 +163,17 @@
       "width": 2478,
       "height": 2859,
       "credit": "File:Nausea.jpg — Karen Horton, diseño de la cubierta de Alvin Lustig, The New Classics Series publicado por New Directions, c. 1952 (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kichefuchefu",
+    "aliasesSw": [
+      "Kichefuchefu",
+      "general nausea",
+      "Nausea",
+      "kutapika",
+      "kutaka kutapika",
+      "tumbo kuchafuka",
+      "ugonjwa wa mwendo"
+    ]
   },
   {
     "id": "disease-general-fainting",
@@ -133,7 +190,16 @@
       "width": 2949,
       "height": 2370,
       "credit": "File:Pietro Longhi 027.jpg — Pietro Longhi (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kuzimia",
+    "aliasesSw": [
+      "Kuzimia",
+      "general fainting",
+      "Fainting",
+      "syncope",
+      "kupoteza fahamu",
+      "kuanguka na kuzimia"
+    ]
   },
   {
     "id": "disease-general-heat-exhaustion",
@@ -150,7 +216,16 @@
       "width": 2978,
       "height": 2405,
       "credit": "File:Heat Exhaustion Victim Being Evacuated, March 1966 (29050911060).jpg — USMC Archives from Quantico, USA (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kuchoka kwa joto",
+    "aliasesSw": [
+      "Kuchoka kwa joto",
+      "general heat exhaustion",
+      "Heat Exhaustion",
+      "joto kali",
+      "kupungukiwa maji",
+      "uchovu kwa jua"
+    ]
   },
   {
     "id": "disease-general-motion-sickness",
@@ -167,7 +242,17 @@
       "width": 4330,
       "height": 2900,
       "credit": "File:Motion sickness.png — Rahimzadeh G, Tay A, Travica N, Lacy K, Mohamed S, Nahavandi D, Pławiak P, Qazani MC, Asadi H. (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kichefuchefu cha safari",
+    "aliasesSw": [
+      "Kichefuchefu cha safari",
+      "general motion sickness",
+      "Motion Sickness",
+      "car sickness",
+      "sea sickness",
+      "kichefuchefu kwenye gari",
+      "kutapika safarini"
+    ]
   },
   {
     "id": "disease-general-catarrh",
@@ -184,7 +269,17 @@
       "width": 3771,
       "height": 5629,
       "credit": "File:'Lectures on Chronic Catarrh' booklet - DPLA - 5115f4e3d963db7fbabf3846c8c40559 (page 74).jpg — Samuel B. Hartman (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kamasi nyingi",
+    "aliasesSw": [
+      "Kamasi nyingi",
+      "general catarrh",
+      "Catarrh",
+      "mucus",
+      "kamasi",
+      "pua kutoa kamasi",
+      "msongamano wa pua"
+    ]
   },
   {
     "id": "disease-general-chills",
@@ -201,7 +296,16 @@
       "width": 5184,
       "height": 3456,
       "credit": "File:Trees in ICM on Myrstigen hiking trail, Brastad 2.jpg — W.carter (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Baridi kali",
+    "aliasesSw": [
+      "Baridi kali",
+      "general chills",
+      "Chills",
+      "kutetemeka",
+      "baridi mwilini",
+      "mwili kutetemeka"
+    ]
   },
   {
     "id": "disease-general-viral-infections",
@@ -218,7 +322,17 @@
       "width": 3892,
       "height": 3675,
       "credit": "File:Viral infections UA-corr.png — Mikael Häggström. Переклад ― Losth. Допомога з дизайном ― Юлія Севостьян (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Maambukizi ya virusi",
+    "aliasesSw": [
+      "Maambukizi ya virusi",
+      "general viral infections",
+      "Viral Infections",
+      "virusi",
+      "maambukizi ya virus",
+      "homa ya virusi",
+      "mafua ya virusi"
+    ]
   },
   {
     "id": "disease-general-inflammation",
@@ -235,7 +349,17 @@
       "width": 4714,
       "height": 3830,
       "credit": "File:Inflammation detail Robbins.png — doyouseewhy7 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Uvimbe/uchochezi",
+    "aliasesSw": [
+      "Uvimbe/uchochezi",
+      "general inflammation",
+      "Inflammation",
+      "kuvimba",
+      "uchochezi",
+      "uvimbe",
+      "maumivu na kuvimba"
+    ]
   },
   {
     "id": "disease-general-fever",
@@ -252,7 +376,18 @@
       "width": 6871,
       "height": 4544,
       "credit": "File:Fever, thermotaxis, and calorimetry of malarial fever (1889) (14782118644).jpg — Ott, Isaac, 1847-1916 (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Homa",
+    "aliasesSw": [
+      "Homa",
+      "general fever",
+      "Fever",
+      "joto la mwili",
+      "mwili kuwa na joto",
+      "homa kali",
+      "kuungua mwili",
+      "joto kali"
+    ]
   },
   {
     "id": "disease-general-malaria",
@@ -269,7 +404,16 @@
       "width": 2920,
       "height": 2940,
       "credit": "File:Malaria tertiana blood stain.jpg — El*Falaf (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Malaria",
+    "aliasesSw": [
+      "general malaria",
+      "Malaria",
+      "homa ya malaria",
+      "mbu",
+      "baridi na homa",
+      "malaria fever"
+    ]
   },
   {
     "id": "disease-general-typhoid-fever",
@@ -286,7 +430,13 @@
       "width": 6108,
       "height": 4474,
       "credit": "File:Typhoid inoculation2.jpg — John Vachon(w) for the United States Farm Security Administration(w) (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Typhoid homa",
+    "aliasesSw": [
+      "Typhoid homa",
+      "general typhoid fever",
+      "Typhoid Fever"
+    ]
   },
   {
     "id": "disease-general-weakened-autoimmune-system",
@@ -296,7 +446,12 @@
     "image": "assets/images/fallbacks/disease.jpg",
     "imageMeta": {
       "credit": "Fallback image"
-    }
+    },
+    "titleSw": "Weakened Autoimmune System",
+    "aliasesSw": [
+      "general weakened autoimmune system",
+      "Weakened Autoimmune System"
+    ]
   },
   {
     "id": "disease-general-lupus",
@@ -313,7 +468,12 @@
       "width": 4608,
       "height": 3456,
       "credit": "File:Faculté de Médecine Purpan 03.jpg — Caroline Léna Becker (CC BY 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Lupus",
+    "aliasesSw": [
+      "general lupus",
+      "Lupus"
+    ]
   },
   {
     "id": "disease-general-sjogren-s-syndrome",
@@ -330,7 +490,12 @@
       "width": 5120,
       "height": 3413,
       "credit": "File:Hyperbaric Treatment Sjogren's Syndrome.jpg — Intermedichbo (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Sjogren'S Syndrome",
+    "aliasesSw": [
+      "general sjogren s syndrome",
+      "Sjogren'S Syndrome"
+    ]
   },
   {
     "id": "disease-general-aging",
@@ -347,7 +512,12 @@
       "width": 2027,
       "height": 2816,
       "credit": "File:Pompeo Girolamo Batoni - Time orders Old Age to destroy Beauty.jpg — Pompeo Batoni (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Aging",
+    "aliasesSw": [
+      "general aging",
+      "Aging"
+    ]
   },
   {
     "id": "disease-general-skin-problems",
@@ -364,7 +534,13 @@
       "width": 6250,
       "height": 4167,
       "credit": "File:Common causes of dermatitis and skin irritants.jpg — Click2pharmacy.co.uk Images (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Ngozi matatizo",
+    "aliasesSw": [
+      "Ngozi matatizo",
+      "general skin problems",
+      "Skin Problems"
+    ]
   },
   {
     "id": "disease-general-bruising",
@@ -381,7 +557,12 @@
       "width": 4032,
       "height": 3024,
       "credit": "File:Large bruise related to automatic compliance in autism.jpg — MissLunaRose12 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Bruising",
+    "aliasesSw": [
+      "general bruising",
+      "Bruising"
+    ]
   },
   {
     "id": "disease-general-easy-bruising",
@@ -398,7 +579,12 @@
       "width": 6254,
       "height": 4169,
       "credit": "File:Münster, Aasee-Rondell, Gedenkplatte \"Theodor Kiefer\" -- 2023 -- 6512.jpg — Dietmar Rabich (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Easy Bruising",
+    "aliasesSw": [
+      "general easy bruising",
+      "Easy Bruising"
+    ]
   },
   {
     "id": "disease-general-intertrigo",
@@ -415,7 +601,12 @@
       "width": 5077,
       "height": 8016,
       "credit": "File:Intertrigo cum vesiculis, Robert Willis, 1841 Wellcome L0074342.jpg — Fæ (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Intertrigo",
+    "aliasesSw": [
+      "general intertrigo",
+      "Intertrigo"
+    ]
   },
   {
     "id": "disease-general-swelling",
@@ -432,7 +623,12 @@
       "width": 5664,
       "height": 4248,
       "credit": "File:Hojenivazivem.jpg — GALAXY 2018 A7 (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Swelling",
+    "aliasesSw": [
+      "general swelling",
+      "Swelling"
+    ]
   },
   {
     "id": "disease-general-scarring",
@@ -449,7 +645,12 @@
       "width": 5176,
       "height": 3872,
       "credit": "File:Schlafmohn Papaver somniferum 2019-06-17 13-19-31 (C).jpg — Ermell (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Scarring",
+    "aliasesSw": [
+      "general scarring",
+      "Scarring"
+    ]
   },
   {
     "id": "disease-general-blisters",
@@ -466,7 +667,12 @@
       "width": 4032,
       "height": 3024,
       "credit": "File:2nd Degree Burn Blisters on Finger 01.jpg — Sir MemeGod (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Blisters",
+    "aliasesSw": [
+      "general blisters",
+      "Blisters"
+    ]
   },
   {
     "id": "disease-general-canker-sores",
@@ -483,7 +689,12 @@
       "width": 2986,
       "height": 4755,
       "credit": "File:Canker sore mouth ulcer.jpg — Dominiqueflores0514 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Canker Sores",
+    "aliasesSw": [
+      "general canker sores",
+      "Canker Sores"
+    ]
   },
   {
     "id": "disease-general-bed-sores",
@@ -500,7 +711,12 @@
       "width": 1864,
       "height": 1332,
       "credit": "File:Antidekubituskissen1.jpg — --Xocolatl 14:44, 26 July 2007 (UTC) (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Bed Sores",
+    "aliasesSw": [
+      "general bed sores",
+      "Bed Sores"
+    ]
   },
   {
     "id": "disease-general-moles",
@@ -517,7 +733,12 @@
       "width": 5712,
       "height": 3953,
       "credit": "File:Talpa europaea MHNT Tete.jpg — Didier Descouens (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Moles",
+    "aliasesSw": [
+      "general moles",
+      "Moles"
+    ]
   },
   {
     "id": "disease-general-blackheads",
@@ -534,7 +755,12 @@
       "width": 7000,
       "height": 4922,
       "credit": "File:House of Blackheads and St. Peter's Church Tower, Riga, Latvia - Diliff.jpg — Diliff (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Blackheads",
+    "aliasesSw": [
+      "general blackheads",
+      "Blackheads"
+    ]
   },
   {
     "id": "disease-general-age-spots",
@@ -551,7 +777,12 @@
       "width": 3456,
       "height": 2304,
       "credit": "File:Age Spots (2968030195).jpg — Sharon Mollerus (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Age Spots",
+    "aliasesSw": [
+      "general age spots",
+      "Age Spots"
+    ]
   },
   {
     "id": "disease-general-chapped-hands",
@@ -568,7 +799,15 @@
       "width": 4288,
       "height": 2848,
       "credit": "File:Greedy chap, had his hands, nay feet full! (11464312023).jpg — shankar s. from Dubai, united arab emirates (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Mikono kupasuka",
+    "aliasesSw": [
+      "Mikono kupasuka",
+      "general chapped hands",
+      "Chapped Hands",
+      "mikono mikavu",
+      "ngozi ya mikono kupasuka"
+    ]
   },
   {
     "id": "disease-general-chapped-lips",
@@ -585,7 +824,12 @@
       "width": 1704,
       "height": 980,
       "credit": "File:Chapped lips.jpg — Anuj.Lamichhane (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Chapped Lips",
+    "aliasesSw": [
+      "general chapped lips",
+      "Chapped Lips"
+    ]
   },
   {
     "id": "disease-general-scabies",
@@ -602,7 +846,12 @@
       "width": 3024,
       "height": 4032,
       "credit": "File:Scabies hand and fingers 1.jpg — Gzzz (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Scabies",
+    "aliasesSw": [
+      "general scabies",
+      "Scabies"
+    ]
   },
   {
     "id": "disease-general-wens",
@@ -619,7 +868,12 @@
       "width": 7253,
       "height": 12754,
       "credit": "File:TangTaizongP.jpg — Unknown artistUnknown artist (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Wens",
+    "aliasesSw": [
+      "general wens",
+      "Wens"
+    ]
   },
   {
     "id": "disease-general-oily-skin",
@@ -636,7 +890,13 @@
       "width": 3136,
       "height": 2484,
       "credit": "File:The skin; its care and treatment (1914) (14577619218).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Oily ngozi",
+    "aliasesSw": [
+      "Oily ngozi",
+      "general oily skin",
+      "Oily Skin"
+    ]
   },
   {
     "id": "disease-general-prickly-heat",
@@ -653,7 +913,13 @@
       "width": 11000,
       "height": 8600,
       "credit": "File:Gibberula miliaria 01.jpg — H. Zell (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Prickly joto",
+    "aliasesSw": [
+      "Prickly joto",
+      "general prickly heat",
+      "Prickly Heat"
+    ]
   },
   {
     "id": "disease-general-rosacea",
@@ -670,7 +936,12 @@
       "width": 2741,
       "height": 2741,
       "credit": "File:Saint Augustin Church Paris.jpg — Saffron Blaze (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Rosacea",
+    "aliasesSw": [
+      "general rosacea",
+      "Rosacea"
+    ]
   },
   {
     "id": "disease-general-enlarged-pores",
@@ -687,7 +958,12 @@
       "width": 1804,
       "height": 2508,
       "credit": "File:Tylopilus brunneus 38197.jpg — Michael (inski) (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Enlarged Pores",
+    "aliasesSw": [
+      "general enlarged pores",
+      "Enlarged Pores"
+    ]
   },
   {
     "id": "disease-general-wrinkles",
@@ -704,7 +980,12 @@
       "width": 5500,
       "height": 3667,
       "credit": "File:Bearded man smoking pipe-3013924.jpg — ThuyHaBich (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Wrinkles",
+    "aliasesSw": [
+      "general wrinkles",
+      "Wrinkles"
+    ]
   },
   {
     "id": "disease-general-night-sweats",
@@ -721,7 +1002,12 @@
       "width": 1038,
       "height": 692,
       "credit": "File:Nathaniel Rateliff and the Night Sweats 03 (20292270675).jpg — Roberta (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Night Sweats",
+    "aliasesSw": [
+      "general night sweats",
+      "Night Sweats"
+    ]
   },
   {
     "id": "disease-general-body-odor",
@@ -738,7 +1024,12 @@
       "width": 5068,
       "height": 3912,
       "credit": "File:Reuk Odor Smelling (titel op object) Vijf zintuigen (serietitel), RP-P-2003-216.jpg — Rijksmuseum (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Body Odor",
+    "aliasesSw": [
+      "general body odor",
+      "Body Odor"
+    ]
   },
   {
     "id": "disease-general-skin-disorders",
@@ -755,7 +1046,13 @@
       "width": 4157,
       "height": 2807,
       "credit": "File:Autres Médicaments traditionnels pour rouge fesse à Maroua.jpg — Bisna constant (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Ngozi Disorders",
+    "aliasesSw": [
+      "Ngozi Disorders",
+      "general skin disorders",
+      "Skin Disorders"
+    ]
   },
   {
     "id": "disease-general-hives",
@@ -772,7 +1069,17 @@
       "width": 4608,
       "height": 3456,
       "credit": "File:Urticaria12.2024.jpg — מ.י.ש.הו 0 (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Upele wa mzio",
+    "aliasesSw": [
+      "Upele wa mzio",
+      "general hives",
+      "Hives",
+      "urticaria",
+      "mzio wa ngozi",
+      "upele unaowasha",
+      "ngozi kuwasha"
+    ]
   },
   {
     "id": "disease-general-impetigo",
@@ -789,7 +1096,12 @@
       "width": 1936,
       "height": 2576,
       "credit": "File:Impetigo-infected.jpg — Åsa Thörn (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Impetigo",
+    "aliasesSw": [
+      "general impetigo",
+      "Impetigo"
+    ]
   },
   {
     "id": "disease-general-shingles",
@@ -806,7 +1118,12 @@
       "width": 2754,
       "height": 2176,
       "credit": "File:ZOSTAVAX (shingles (herpes zoster) vaccine (live)) (United Kingdom).jpg — Whispyhistory (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Shingles",
+    "aliasesSw": [
+      "general shingles",
+      "Shingles"
+    ]
   },
   {
     "id": "disease-general-keratosis",
@@ -823,7 +1140,12 @@
       "width": 6192,
       "height": 4128,
       "credit": "File:Keratosis Pilaris on Back.jpg — Impetus01 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Keratosis",
+    "aliasesSw": [
+      "general keratosis",
+      "Keratosis"
+    ]
   },
   {
     "id": "disease-general-leukoderma",
@@ -840,7 +1162,12 @@
       "width": 2258,
       "height": 2368,
       "credit": "File:Vitiligo.png — Osidor (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Leukoderma",
+    "aliasesSw": [
+      "general leukoderma",
+      "Leukoderma"
+    ]
   },
   {
     "id": "disease-general-numb-extremities",
@@ -857,7 +1184,12 @@
       "width": 7942,
       "height": 9987,
       "credit": "File:Attend 'Pins and Needles' performance. Washington, D.C., Dec. 6. Secretary of Labor Frances Perkins, and A.F. of L. President William Green as they at the National Theater last night to LCCN2016874495.jpg — Harris &amp; Ewing, photographer (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Numb Extremities",
+    "aliasesSw": [
+      "general numb extremities",
+      "Numb Extremities"
+    ]
   },
   {
     "id": "disease-general-felon",
@@ -874,7 +1206,12 @@
       "width": 3045,
       "height": 1863,
       "credit": "File:Felon, Mairie.jpg — Rauenstein (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Felon",
+    "aliasesSw": [
+      "general felon",
+      "Felon"
+    ]
   },
   {
     "id": "disease-general-erythromelalgia",
@@ -891,7 +1228,12 @@
       "width": 7336,
       "height": 4040,
       "credit": "File:Erythromelalgia in left hand.jpg — Minor (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Erythromelalgia",
+    "aliasesSw": [
+      "general erythromelalgia",
+      "Erythromelalgia"
+    ]
   },
   {
     "id": "disease-general-gangrene",
@@ -908,7 +1250,12 @@
       "width": 3231,
       "height": 2144,
       "credit": "File:Acral gangrene due to plague.jpg — Photo Credit:\nContent Providers(s): CDC\nOriginal uploaderL M123 at en.wikipedia (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Gangrene",
+    "aliasesSw": [
+      "general gangrene",
+      "Gangrene"
+    ]
   },
   {
     "id": "disease-general-raynaud-s-disease",
@@ -925,7 +1272,13 @@
       "width": 5808,
       "height": 4684,
       "credit": "File:Feet of a woman with Raynaud's disease Wellcome L0062238.jpg — Mark, Leonard Portal (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Raynaud'S ugonjwa",
+    "aliasesSw": [
+      "Raynaud'S ugonjwa",
+      "general raynaud s disease",
+      "Raynaud'S Disease"
+    ]
   },
   {
     "id": "disease-general-buerger-s-disease",
@@ -942,7 +1295,13 @@
       "width": 2918,
       "height": 2207,
       "credit": "File:Pathogenesis Buerger's Disease-3.jpg — Intermedichbo (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Buerger'S ugonjwa",
+    "aliasesSw": [
+      "Buerger'S ugonjwa",
+      "general buerger s disease",
+      "Buerger'S Disease"
+    ]
   },
   {
     "id": "disease-general-nail-problems",
@@ -959,7 +1318,13 @@
       "width": 3552,
       "height": 2362,
       "credit": "File:Manual training for the rural schools; a group of farm and farm home woodworking problems (1922) (14596905128).jpg — Roehl, Louis Michael, 1881- (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Nail matatizo",
+    "aliasesSw": [
+      "Nail matatizo",
+      "general nail problems",
+      "Nail Problems"
+    ]
   },
   {
     "id": "disease-general-ingrown-nails",
@@ -976,7 +1341,12 @@
       "width": 2340,
       "height": 4160,
       "credit": "File:Ingrown nail.jpg — Dajo767 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Ingrown Nails",
+    "aliasesSw": [
+      "general ingrown nails",
+      "Ingrown Nails"
+    ]
   },
   {
     "id": "disease-general-foot-problems",
@@ -993,7 +1363,13 @@
       "width": 5784,
       "height": 4152,
       "credit": "File:8-Foot High Speed Tunnel (HST) (LRC-1957-B701 P-00959).tiff — NASA Langley Research Center / NACA (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Foot matatizo",
+    "aliasesSw": [
+      "Foot matatizo",
+      "general foot problems",
+      "Foot Problems"
+    ]
   },
   {
     "id": "disease-general-corns-and-calluses",
@@ -1010,7 +1386,12 @@
       "width": 5182,
       "height": 3454,
       "credit": "File:Leeds Corn Exchange HDR.jpg — Mdbeckwith (CC BY 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Corns And Calluses",
+    "aliasesSw": [
+      "general corns and calluses",
+      "Corns And Calluses"
+    ]
   },
   {
     "id": "disease-general-foot-aches",
@@ -1027,7 +1408,12 @@
       "width": 5718,
       "height": 3812,
       "credit": "File:Mountaintops over the lake (Unsplash).jpg — Lukas Becker lukasbecker (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Foot Aches",
+    "aliasesSw": [
+      "general foot aches",
+      "Foot Aches"
+    ]
   },
   {
     "id": "disease-general-foot-odor",
@@ -1044,7 +1430,12 @@
       "width": 3872,
       "height": 2592,
       "credit": "File:San Agustin feet shower B.jpg — Wouter Hagens (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Foot Odor",
+    "aliasesSw": [
+      "general foot odor",
+      "Foot Odor"
+    ]
   },
   {
     "id": "disease-general-flat-feet",
@@ -1061,7 +1452,12 @@
       "width": 4032,
       "height": 3024,
       "credit": "File:Flat feet (left).jpg — Gzzz (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Flat Feet",
+    "aliasesSw": [
+      "general flat feet",
+      "Flat Feet"
+    ]
   },
   {
     "id": "disease-general-athlete-s-foot",
@@ -1078,7 +1474,12 @@
       "width": 6747,
       "height": 13013,
       "credit": "File:Athlete's foot treatment with Cotrimazole Cream – One week – Image 001.jpg — Lupus in Saxonia (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Athlete'S Foot",
+    "aliasesSw": [
+      "general athlete s foot",
+      "Athlete'S Foot"
+    ]
   },
   {
     "id": "disease-general-dandruff",
@@ -1095,7 +1496,12 @@
       "width": 4032,
       "height": 3024,
       "credit": "File:Dandruff with Hair.jpg — BestShah (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Dandruff",
+    "aliasesSw": [
+      "general dandruff",
+      "Dandruff"
+    ]
   },
   {
     "id": "disease-general-oily-hair",
@@ -1112,7 +1518,12 @@
       "width": 4852,
       "height": 4086,
       "credit": "File:Rosalba Carriera - A Woman Putting Flowers in Her Hair - 1940.1203 - Cleveland Museum of Art.tif — Rosalba Carriera (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Oily Hair",
+    "aliasesSw": [
+      "general oily hair",
+      "Oily Hair"
+    ]
   },
   {
     "id": "disease-general-dry-hair",
@@ -1129,7 +1540,12 @@
       "width": 8160,
       "height": 6120,
       "credit": "File:Hair dryer in a bag in the hotel bathroom.jpg — Ser Amantio di Nicolao (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Dry Hair",
+    "aliasesSw": [
+      "general dry hair",
+      "Dry Hair"
+    ]
   },
   {
     "id": "disease-general-gray-hair",
@@ -1146,7 +1562,12 @@
       "width": 5472,
       "height": 3648,
       "credit": "File:Blond hair going gray 01.jpg — Kritzolina (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Gray Hair",
+    "aliasesSw": [
+      "general gray hair",
+      "Gray Hair"
+    ]
   },
   {
     "id": "disease-general-ingrown-hair",
@@ -1163,7 +1584,12 @@
       "width": 2207,
       "height": 1766,
       "credit": "File:Webysther 20190222031246 - Pelo encravado.jpg — Webysther (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Ingrown Hair",
+    "aliasesSw": [
+      "general ingrown hair",
+      "Ingrown Hair"
+    ]
   },
   {
     "id": "disease-general-farsightedness",
@@ -1180,7 +1606,12 @@
       "width": 1920,
       "height": 1080,
       "credit": "File:Hyperopia comparison.jpg — David Jueng (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Farsightedness",
+    "aliasesSw": [
+      "general farsightedness",
+      "Farsightedness"
+    ]
   },
   {
     "id": "disease-general-amblyopia",
@@ -1197,7 +1628,12 @@
       "width": 4111,
       "height": 3028,
       "credit": "File:Lazy guy with lazy eye (21112839105).jpg — Rolf Dietrich Brecher from Germany (CC BY-SA 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Amblyopia",
+    "aliasesSw": [
+      "general amblyopia",
+      "Amblyopia"
+    ]
   },
   {
     "id": "disease-general-keratomalacia",
@@ -1214,7 +1650,12 @@
       "width": 1397,
       "height": 1054,
       "credit": "File:American journal of ophthalmology. (1891) (14764422775).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Keratomalacia",
+    "aliasesSw": [
+      "general keratomalacia",
+      "Keratomalacia"
+    ]
   },
   {
     "id": "disease-general-color-blindness",
@@ -1235,6 +1676,11 @@
     "needsReview": true,
     "missingFields": [
       "too_short"
+    ],
+    "titleSw": "Color Blindness",
+    "aliasesSw": [
+      "general color blindness",
+      "Color Blindness"
     ]
   },
   {
@@ -1252,7 +1698,12 @@
       "width": 3648,
       "height": 5472,
       "credit": "File:Blind Passenger Nocturnal Culture Night 10 2015 05.jpg — S. Bollmann (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Night Blindness",
+    "aliasesSw": [
+      "general night blindness",
+      "Night Blindness"
+    ]
   },
   {
     "id": "disease-general-cataracts",
@@ -1269,7 +1720,12 @@
       "width": 5936,
       "height": 4552,
       "credit": "File:Man suffering from lamellar cataracts Wellcome L0067004.jpg — Fæ (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Cataracts",
+    "aliasesSw": [
+      "general cataracts",
+      "Cataracts"
+    ]
   },
   {
     "id": "disease-general-sty",
@@ -1286,7 +1742,12 @@
       "width": 4000,
       "height": 3000,
       "credit": "File:20240527 Pigsty from Istebna 18th 19th century Upper Silesian Ethnographic Park.jpg — Abraham (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Sty",
+    "aliasesSw": [
+      "general sty",
+      "Sty"
+    ]
   },
   {
     "id": "disease-general-scotoma",
@@ -1303,7 +1764,12 @@
       "width": 2142,
       "height": 1328,
       "credit": "File:Types of scotomas and the location on the retina.png — Mattimussi (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Scotoma",
+    "aliasesSw": [
+      "general scotoma",
+      "Scotoma"
+    ]
   },
   {
     "id": "disease-general-photophobia",
@@ -1320,7 +1786,12 @@
       "width": 2250,
       "height": 1500,
       "credit": "File:Glavendrup Runestone 2019.jpg — Photophobia.dk (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Photophobia",
+    "aliasesSw": [
+      "general photophobia",
+      "Photophobia"
+    ]
   },
   {
     "id": "disease-general-chalazion",
@@ -1337,7 +1808,12 @@
       "width": 3008,
       "height": 2000,
       "credit": "File:Chalazion.JPG — jd (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Chalazion",
+    "aliasesSw": [
+      "general chalazion",
+      "Chalazion"
+    ]
   },
   {
     "id": "disease-general-conjunctivitis",
@@ -1354,7 +1830,12 @@
       "width": 2506,
       "height": 1926,
       "credit": "File:Allergicconjunctivitis.jpg — James Heilman, MD (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Conjunctivitis",
+    "aliasesSw": [
+      "general conjunctivitis",
+      "Conjunctivitis"
+    ]
   },
   {
     "id": "disease-general-glaucoma",
@@ -1371,7 +1852,12 @@
       "width": 2605,
       "height": 1667,
       "credit": "File:Depiction of vision for a Glaucoma patient.png — https://www.myupchar.com/en (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Glaucoma",
+    "aliasesSw": [
+      "general glaucoma",
+      "Glaucoma"
+    ]
   },
   {
     "id": "disease-general-anosmia",
@@ -1388,7 +1874,12 @@
       "width": 2848,
       "height": 4288,
       "credit": "File:Anosmia - 6866182714.jpg — Jennifer Boyer (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Anosmia",
+    "aliasesSw": [
+      "general anosmia",
+      "Anosmia"
+    ]
   },
   {
     "id": "disease-general-nasal-cuts-and-infections",
@@ -1405,7 +1896,13 @@
       "width": 2994,
       "height": 4327,
       "credit": "File:Texas medical journal (1911) (14584581760).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Nasal Cuts And maambukizi",
+    "aliasesSw": [
+      "Nasal Cuts And maambukizi",
+      "general nasal cuts and infections",
+      "Nasal Cuts And Infections"
+    ]
   },
   {
     "id": "disease-general-meniere-s-syndrome",
@@ -1422,7 +1919,12 @@
       "width": 2400,
       "height": 1600,
       "credit": "File:Alitalia md-82 i-dacz planform arp.jpg — Adrian Pingstone (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Meniere'S Syndrome",
+    "aliasesSw": [
+      "general meniere s syndrome",
+      "Meniere'S Syndrome"
+    ]
   },
   {
     "id": "disease-general-tinnitus",
@@ -1439,7 +1941,12 @@
       "width": 3008,
       "height": 2000,
       "credit": "File:Tinnitus.jpg — Jason Rogers (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Tinnitus",
+    "aliasesSw": [
+      "general tinnitus",
+      "Tinnitus"
+    ]
   },
   {
     "id": "disease-general-pharyngitis",
@@ -1456,7 +1963,12 @@
       "width": 6000,
       "height": 4000,
       "credit": "File:Pharyngitis, COVID-19.jpg — FreeMediaKid! (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Pharyngitis",
+    "aliasesSw": [
+      "general pharyngitis",
+      "Pharyngitis"
+    ]
   },
   {
     "id": "disease-general-snoring",
@@ -1473,7 +1985,12 @@
       "width": 4653,
       "height": 2905,
       "credit": "File:The Street, Great Snoring - geograph.org.uk - 6642368.jpg — JThomas (CC BY-SA 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Snoring",
+    "aliasesSw": [
+      "general snoring",
+      "Snoring"
+    ]
   },
   {
     "id": "disease-general-bruxism",
@@ -1490,7 +2007,12 @@
       "width": 4873,
       "height": 3206,
       "credit": "File:Brux 86 Cour d'école 2012.jpg — JLPC (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Bruxism",
+    "aliasesSw": [
+      "general bruxism",
+      "Bruxism"
+    ]
   },
   {
     "id": "disease-general-calculus",
@@ -1507,7 +2029,12 @@
       "width": 1520,
       "height": 755,
       "credit": "File:MandibularAnteriorCalculus.JPG — DRosenbach at English Wikipedia (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Calculus",
+    "aliasesSw": [
+      "general calculus",
+      "Calculus"
+    ]
   },
   {
     "id": "disease-general-gingivitis",
@@ -1524,7 +2051,12 @@
       "width": 4608,
       "height": 2016,
       "credit": "File:Gingivitis-after.JPG — Onetimeuseaccount (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Gingivitis",
+    "aliasesSw": [
+      "general gingivitis",
+      "Gingivitis"
+    ]
   },
   {
     "id": "disease-general-pyorrhea",
@@ -1541,7 +2073,12 @@
       "width": 5616,
       "height": 3744,
       "credit": "File:Zahnwanderung wegen Periodontitis OK 03.JPG — Bin im Garten (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Pyorrhea",
+    "aliasesSw": [
+      "general pyorrhea",
+      "Pyorrhea"
+    ]
   },
   {
     "id": "disease-general-denture-troubles",
@@ -1551,7 +2088,12 @@
     "image": "assets/images/fallbacks/disease.jpg",
     "imageMeta": {
       "credit": "Fallback image"
-    }
+    },
+    "titleSw": "Denture Troubles",
+    "aliasesSw": [
+      "general denture troubles",
+      "Denture Troubles"
+    ]
   },
   {
     "id": "disease-general-saliva-problems",
@@ -1568,7 +2110,13 @@
       "width": 2000,
       "height": 3000,
       "credit": "File:REME Mobile Testing Unit 2.jpg — UK Ministry of Defence (OGL v1.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Saliva matatizo",
+    "aliasesSw": [
+      "Saliva matatizo",
+      "general saliva problems",
+      "Saliva Problems"
+    ]
   },
   {
     "id": "disease-general-halitosis",
@@ -1585,7 +2133,12 @@
       "width": 2605,
       "height": 1667,
       "credit": "File:Depiction of a person who has Halitosis (or bad breath).png — https://www.myupchar.com/en (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Halitosis",
+    "aliasesSw": [
+      "general halitosis",
+      "Halitosis"
+    ]
   },
   {
     "id": "disease-general-cheilosis",
@@ -1602,7 +2155,12 @@
       "width": 2304,
       "height": 3072,
       "credit": "File:Angular Cheilitis.JPG — James Heilman, MD (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Cheilosis",
+    "aliasesSw": [
+      "general cheilosis",
+      "Cheilosis"
+    ]
   },
   {
     "id": "disease-general-hiccup",
@@ -1619,7 +2177,12 @@
       "width": 3816,
       "height": 2832,
       "credit": "File:Hiccup Cosplayer at Comikaze 2015.jpg — Oliver Ayala (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hiccup",
+    "aliasesSw": [
+      "general hiccup",
+      "Hiccup"
+    ]
   },
   {
     "id": "disease-general-belching",
@@ -1636,7 +2199,12 @@
       "width": 3776,
       "height": 2520,
       "credit": "File:Belcher's Bar - geograph.org.uk - 6087539.jpg — Tim Heaton (CC BY-SA 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Belching",
+    "aliasesSw": [
+      "general belching",
+      "Belching"
+    ]
   },
   {
     "id": "disease-general-bloating",
@@ -1653,7 +2221,17 @@
       "width": 5760,
       "height": 3840,
       "credit": "File:Traditional-bloating-of-magic-in-ekpoma.jpg — S.aderogba (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Tumbo kujaa gesi",
+    "aliasesSw": [
+      "Tumbo kujaa gesi",
+      "general bloating",
+      "Bloating",
+      "gesi tumboni",
+      "tumbo kujaa",
+      "tumbo limejaa",
+      "kuvimbiwa na gesi"
+    ]
   },
   {
     "id": "disease-general-hiatal-hernia",
@@ -1670,7 +2248,12 @@
       "width": 2363,
       "height": 1720,
       "credit": "File:Hiatal hernia (రంధ్ర గళనము).jpg — డా. గన్నవరపు నరసింహమూర్తి (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hiatal Hernia",
+    "aliasesSw": [
+      "general hiatal hernia",
+      "Hiatal Hernia"
+    ]
   },
   {
     "id": "disease-general-vomiting",
@@ -1687,7 +2270,16 @@
       "width": 3193,
       "height": 2129,
       "credit": "File:White-patched emesis (Emesis lucinda) male.jpg — Charles J. Sharp (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kutapika",
+    "aliasesSw": [
+      "Kutapika",
+      "general vomiting",
+      "Vomiting",
+      "tapika",
+      "kutapika sana",
+      "kichefuchefu"
+    ]
   },
   {
     "id": "disease-general-dyspepsia",
@@ -1704,7 +2296,12 @@
       "width": 7939,
       "height": 11161,
       "credit": "File:Hoofland's celebrated German tonic water will cure dyspepsia, liver complaint, debility, indigestion, etc., etc. LCCN2005694438.jpg — Popular Graphic Arts (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Dyspepsia",
+    "aliasesSw": [
+      "general dyspepsia",
+      "Dyspepsia"
+    ]
   },
   {
     "id": "disease-general-nervous-dyspepsia",
@@ -1721,7 +2318,12 @@
       "width": 1774,
       "height": 2620,
       "credit": "File:Use Carter's Little Nerve Pills, a cure for nervousness and dyspepsia. \"Don't be nervous\" - DPLA - 5d86a397427c8233c6af1da6a2804407 (page 1).jpg — DPLA bot (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Nervous Dyspepsia",
+    "aliasesSw": [
+      "general nervous dyspepsia",
+      "Nervous Dyspepsia"
+    ]
   },
   {
     "id": "disease-general-achlorhydria",
@@ -1731,7 +2333,12 @@
     "image": "assets/images/fallbacks/disease.jpg",
     "imageMeta": {
       "credit": "Fallback image"
-    }
+    },
+    "titleSw": "Achlorhydria",
+    "aliasesSw": [
+      "general achlorhydria",
+      "Achlorhydria"
+    ]
   },
   {
     "id": "disease-general-hydrochloric-acid-problems",
@@ -1748,7 +2355,13 @@
       "width": 3456,
       "height": 1544,
       "credit": "File:A problem in optical isomerism (1917) (14780452514).jpg — Palmer, Charles Shattuck (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hydrochloric Acid matatizo",
+    "aliasesSw": [
+      "Hydrochloric Acid matatizo",
+      "general hydrochloric acid problems",
+      "Hydrochloric Acid Problems"
+    ]
   },
   {
     "id": "disease-general-pancreatitis",
@@ -1765,7 +2378,12 @@
       "width": 2048,
       "height": 768,
       "credit": "File:Ultrasound abdomen showing focal pancreatitis at its tail.png — Cerevisae (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Pancreatitis",
+    "aliasesSw": [
+      "general pancreatitis",
+      "Pancreatitis"
+    ]
   },
   {
     "id": "disease-general-infectious-jaundice",
@@ -1782,7 +2400,12 @@
       "width": 4608,
       "height": 3072,
       "credit": "File:Leptospirosis screening in Indonesia.png — Evi Susanti Sinaga, Indonesia (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Infectious Jaundice",
+    "aliasesSw": [
+      "general infectious jaundice",
+      "Infectious Jaundice"
+    ]
   },
   {
     "id": "disease-general-dumping-syndrome",
@@ -1799,7 +2422,12 @@
       "width": 3003,
       "height": 3465,
       "credit": "File:Solanum nigrum subsp. nigrum sl26.jpg — Stefan.lefnaer (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Dumping Syndrome",
+    "aliasesSw": [
+      "general dumping syndrome",
+      "Dumping Syndrome"
+    ]
   },
   {
     "id": "disease-general-turista",
@@ -1816,7 +2444,12 @@
       "width": 5126,
       "height": 5967,
       "credit": "File:Kecső (Kečovo), Szlovákia. A Magyar Turista Szövetség Domicahegyi Turistaszállója. Fortepan 71407.jpg — FOTO:Fortepan — ID 71407: Adományozó/Donor: Lissák Tivadar. (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Turista",
+    "aliasesSw": [
+      "general turista",
+      "Turista"
+    ]
   },
   {
     "id": "disease-general-colitis",
@@ -1833,7 +2466,12 @@
       "width": 2848,
       "height": 4272,
       "credit": "File:Cryptitis high mag.jpg — Nephron (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Colitis",
+    "aliasesSw": [
+      "general colitis",
+      "Colitis"
+    ]
   },
   {
     "id": "disease-general-crohn-s-disease",
@@ -1850,7 +2488,13 @@
       "width": 2850,
       "height": 2250,
       "credit": "File:Crohn's Disease Mechanism.png — AdeptLearner123 (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Crohn'S ugonjwa",
+    "aliasesSw": [
+      "Crohn'S ugonjwa",
+      "general crohn s disease",
+      "Crohn'S Disease"
+    ]
   },
   {
     "id": "disease-general-diverticulitis",
@@ -1867,7 +2511,12 @@
       "width": 3508,
       "height": 2479,
       "credit": "File:Complications of diverticulitis of the colon.jpg — Anpol42 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Diverticulitis",
+    "aliasesSw": [
+      "general diverticulitis",
+      "Diverticulitis"
+    ]
   },
   {
     "id": "disease-general-rectal-fissures",
@@ -1884,7 +2533,12 @@
       "width": 2504,
       "height": 1712,
       "credit": "File:Diseases of the rectum and anus- designed for students and practitioners of medicine (1910) (14804513263).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Rectal Fissures",
+    "aliasesSw": [
+      "general rectal fissures",
+      "Rectal Fissures"
+    ]
   },
   {
     "id": "disease-general-rectal-itching",
@@ -1901,7 +2555,13 @@
       "width": 1210,
       "height": 570,
       "credit": "File:The dog as a carrier of parasites and diseases (1915) (20793199272).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Rectal kuwashwa",
+    "aliasesSw": [
+      "Rectal kuwashwa",
+      "general rectal itching",
+      "Rectal Itching"
+    ]
   },
   {
     "id": "disease-general-anorexia-nervosa",
@@ -1918,7 +2578,12 @@
       "width": 4926,
       "height": 3728,
       "credit": "File:Clinical Conditions; Anorexia Nervosa Wellcome L0028211.jpg — Fæ (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Anorexia Nervosa",
+    "aliasesSw": [
+      "general anorexia nervosa",
+      "Anorexia Nervosa"
+    ]
   },
   {
     "id": "disease-general-bulimia",
@@ -1935,7 +2600,12 @@
       "width": 824,
       "height": 480,
       "credit": "File:Bulimia Nervosa.jpg — Johannes Baltasar Hessler, Jörg Heuser, Sandra Schlegl, Tabea Bauman, Martin Greetfeld &amp; Ulrich Voderholzer (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Bulimia",
+    "aliasesSw": [
+      "general bulimia",
+      "Bulimia"
+    ]
   },
   {
     "id": "disease-general-celiac-disease",
@@ -1952,7 +2622,13 @@
       "width": 4272,
       "height": 2848,
       "credit": "File:Celiac disease - high mag.jpg — Nephron (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Celiac ugonjwa",
+    "aliasesSw": [
+      "Celiac ugonjwa",
+      "general celiac disease",
+      "Celiac Disease"
+    ]
   },
   {
     "id": "disease-general-lactose-intolerance",
@@ -1969,7 +2645,12 @@
       "width": 2400,
       "height": 2400,
       "credit": "File:Apollo 15 flag, rover, LM, Irwin.jpg — Astronaut David R. Scott, Apollo 15 commander. (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Lactose Intolerance",
+    "aliasesSw": [
+      "general lactose intolerance",
+      "Lactose Intolerance"
+    ]
   },
   {
     "id": "disease-general-wilson-s-disease",
@@ -1986,7 +2667,13 @@
       "width": 926,
       "height": 838,
       "credit": "File:Wilson's Disease 4.jpg — Sydney S. Gellis and Murray Feingold (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Wilson'S ugonjwa",
+    "aliasesSw": [
+      "Wilson'S ugonjwa",
+      "general wilson s disease",
+      "Wilson'S Disease"
+    ]
   },
   {
     "id": "disease-general-emaciation",
@@ -2003,7 +2690,12 @@
       "width": 2478,
       "height": 3016,
       "credit": "File:A naked man, standing; despite his emaciation, his abdomen i Wellcome V0029472.jpg — Fæ (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Emaciation",
+    "aliasesSw": [
+      "general emaciation",
+      "Emaciation"
+    ]
   },
   {
     "id": "disease-general-pica",
@@ -2020,7 +2712,12 @@
       "width": 5923,
       "height": 3948,
       "credit": "File:Pica Pica in Austevoll.jpg — Marius Vassnes (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Pica",
+    "aliasesSw": [
+      "general pica",
+      "Pica"
+    ]
   },
   {
     "id": "disease-general-malabsorption-syndrome",
@@ -2037,7 +2734,12 @@
       "width": 3781,
       "height": 3147,
       "credit": "File:Cancer-associated cachexia diagram.jpg — Anup K. Biswas and Swarnali Acharyya (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Malabsorption Syndrome",
+    "aliasesSw": [
+      "general malabsorption syndrome",
+      "Malabsorption Syndrome"
+    ]
   },
   {
     "id": "disease-general-beriberi",
@@ -2054,7 +2756,12 @@
       "width": 1561,
       "height": 1801,
       "credit": "File:Heart failure in wet beriberi.jpg — W. Hamilton Jefferys (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Beriberi",
+    "aliasesSw": [
+      "general beriberi",
+      "Beriberi"
+    ]
   },
   {
     "id": "disease-general-pellagra",
@@ -2071,7 +2778,12 @@
       "width": 5178,
       "height": 4085,
       "credit": "File:Two illustrations of Pellagra in hands Wellcome L0068055.jpg — Fæ (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Pellagra",
+    "aliasesSw": [
+      "general pellagra",
+      "Pellagra"
+    ]
   },
   {
     "id": "disease-general-scurvy",
@@ -2088,7 +2800,12 @@
       "width": 5812,
       "height": 4076,
       "credit": "File:Leg of a patient with scorbutus (scurvy), 1887 Wellcome L0062031.jpg — Godart, Thomas (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Scurvy",
+    "aliasesSw": [
+      "general scurvy",
+      "Scurvy"
+    ]
   },
   {
     "id": "disease-general-kwashiorkor",
@@ -2105,7 +2822,12 @@
       "width": 2651,
       "height": 3866,
       "credit": "File:Togo-benin 1985-046 hg.jpg — H. Grobe (CC BY 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kwashiorkor",
+    "aliasesSw": [
+      "general kwashiorkor",
+      "Kwashiorkor"
+    ]
   },
   {
     "id": "disease-general-underweight",
@@ -2122,7 +2844,12 @@
       "width": 5051,
       "height": 5002,
       "credit": "File:Age-standardised combined prevalence of underweight and obesity by country, for adults (age ≥20 years) (part 1).jpg — NCD Risk Factor Collaboration (NCD-RisC) (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Underweight",
+    "aliasesSw": [
+      "general underweight",
+      "Underweight"
+    ]
   },
   {
     "id": "disease-general-cellulite",
@@ -2139,7 +2866,12 @@
       "width": 2043,
       "height": 1440,
       "credit": "File:Cellulite-haut.jpg — Lanzi (CC BY 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Cellulite",
+    "aliasesSw": [
+      "general cellulite",
+      "Cellulite"
+    ]
   },
   {
     "id": "disease-general-urine-problems",
@@ -2156,7 +2888,13 @@
       "width": 4288,
       "height": 2848,
       "credit": "File:Stagnant urine in urine diversion squatting pan due to blockage of urine pipe (5050742477).jpg — SuSanA Secretariat (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Urine matatizo",
+    "aliasesSw": [
+      "Urine matatizo",
+      "general urine problems",
+      "Urine Problems"
+    ]
   },
   {
     "id": "disease-general-urine-retention",
@@ -2173,7 +2911,12 @@
       "width": 4000,
       "height": 3000,
       "credit": "File:Pus in urine in a severe urinary tract infection. (30864898958).jpg — John Campbell (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Urine Retention",
+    "aliasesSw": [
+      "general urine retention",
+      "Urine Retention"
+    ]
   },
   {
     "id": "disease-general-hematuria",
@@ -2190,7 +2933,12 @@
       "width": 1743,
       "height": 1501,
       "credit": "File:MicroHematuria.JPG — Bobjgalindo (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hematuria",
+    "aliasesSw": [
+      "general hematuria",
+      "Hematuria"
+    ]
   },
   {
     "id": "disease-general-bright-s-disease",
@@ -2207,7 +2955,13 @@
       "width": 4763,
       "height": 4300,
       "credit": "File:Tongue of a child with Bright's disease Wellcome L0062736.jpg — Mark, Leonard Portal (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Bright'S ugonjwa",
+    "aliasesSw": [
+      "Bright'S ugonjwa",
+      "general bright s disease",
+      "Bright'S Disease"
+    ]
   },
   {
     "id": "disease-general-edema",
@@ -2224,7 +2978,12 @@
       "width": 2577,
       "height": 3518,
       "credit": "File:Portrait of Gerard Edema MET DP854878.jpg — Mary Beale (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Edema",
+    "aliasesSw": [
+      "general edema",
+      "Edema"
+    ]
   },
   {
     "id": "disease-general-postnasal-drip",
@@ -2234,7 +2993,12 @@
     "image": "assets/images/fallbacks/disease.jpg",
     "imageMeta": {
       "credit": "Fallback image"
-    }
+    },
+    "titleSw": "Postnasal Drip",
+    "aliasesSw": [
+      "general postnasal drip",
+      "Postnasal Drip"
+    ]
   },
   {
     "id": "disease-general-suffocation",
@@ -2251,7 +3015,12 @@
       "width": 5472,
       "height": 3648,
       "credit": "File:Suffocation Summer Breeze Open Air 2017 27.jpg — S. Bollmann (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Suffocation",
+    "aliasesSw": [
+      "general suffocation",
+      "Suffocation"
+    ]
   },
   {
     "id": "disease-general-lung-congestion",
@@ -2268,7 +3037,12 @@
       "width": 2078,
       "height": 1374,
       "credit": "File:Pulmonary edema.jpg — Yale Rosen (CC BY-SA 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Lung Congestion",
+    "aliasesSw": [
+      "general lung congestion",
+      "Lung Congestion"
+    ]
   },
   {
     "id": "disease-general-emphysema",
@@ -2285,7 +3059,12 @@
       "width": 3288,
       "height": 1979,
       "credit": "File:Emphysema low mag.jpg — Nephron (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Emphysema",
+    "aliasesSw": [
+      "general emphysema",
+      "Emphysema"
+    ]
   },
   {
     "id": "disease-general-legionnaire-s-disease",
@@ -2302,7 +3081,13 @@
       "width": 2996,
       "height": 1425,
       "credit": "File:Legionellenpneumonie 44jm - Roe pa und CT LF axial - 0001.jpg — Hellerhoff (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Legionnaire'S ugonjwa",
+    "aliasesSw": [
+      "Legionnaire'S ugonjwa",
+      "general legionnaire s disease",
+      "Legionnaire'S Disease"
+    ]
   },
   {
     "id": "disease-general-q-fever",
@@ -2319,7 +3104,13 @@
       "width": 3553,
       "height": 1675,
       "credit": "File:Q fever.jpg — Tabita Tan , Jane Heller , Simon Firestone , Mark Stevenson Anke Wiethoelter (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Q homa",
+    "aliasesSw": [
+      "Q homa",
+      "general q fever",
+      "Q Fever"
+    ]
   },
   {
     "id": "disease-general-arteriosclerosis",
@@ -2340,6 +3131,11 @@
     "needsReview": true,
     "missingFields": [
       "too_short"
+    ],
+    "titleSw": "Arteriosclerosis",
+    "aliasesSw": [
+      "general arteriosclerosis",
+      "Arteriosclerosis"
     ]
   },
   {
@@ -2357,7 +3153,12 @@
       "width": 1185,
       "height": 982,
       "credit": "File:X-ray of atherosclerosis of the abdominal aorta.png — Jmarchn (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Atherosclerosis",
+    "aliasesSw": [
+      "general atherosclerosis",
+      "Atherosclerosis"
+    ]
   },
   {
     "id": "disease-general-varicose-veins",
@@ -2374,7 +3175,12 @@
       "width": 1204,
       "height": 3069,
       "credit": "File:ఉబ్బు సిరలు ( varicose veins.jpeg — డా. గన్నవరపు నరసింహమూర్తి (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Varicose Veins",
+    "aliasesSw": [
+      "general varicose veins",
+      "Varicose Veins"
+    ]
   },
   {
     "id": "disease-general-poor-circulation-and-chills",
@@ -2391,7 +3197,13 @@
       "width": 1446,
       "height": 1826,
       "credit": "File:Geriatrics - the diseases of old age and their treatment, including physiological old age, home and institutional care, and medico-legal relations (1914) (14776549374).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Poor Circulation And baridi kali",
+    "aliasesSw": [
+      "Poor Circulation And baridi kali",
+      "general poor circulation and chills",
+      "Poor Circulation And Chills"
+    ]
   },
   {
     "id": "disease-general-chlorosis",
@@ -2408,7 +3220,12 @@
       "width": 7270,
       "height": 8987,
       "credit": "File:(Barcelona) Clorosi - Sebastià Junyent - Museu Nacional d'Art de Catalunya.jpg — Didier Descouens (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Chlorosis",
+    "aliasesSw": [
+      "general chlorosis",
+      "Chlorosis"
+    ]
   },
   {
     "id": "disease-general-pernicious-anemia",
@@ -2425,7 +3242,13 @@
       "width": 4000,
       "height": 6000,
       "credit": "File:Metaplastic atrophic gastritis - body - chromogranin A -- intermed mag.jpg — Nephron (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Pernicious upungufu wa damu",
+    "aliasesSw": [
+      "Pernicious upungufu wa damu",
+      "general pernicious anemia",
+      "Pernicious Anemia"
+    ]
   },
   {
     "id": "disease-general-hemorrhage",
@@ -2442,7 +3265,12 @@
       "width": 2448,
       "height": 3264,
       "credit": "File:St John Ambulance diagram illustrating using finger pressure to stop bleeding(GN01773).jpg — State Government Photographer (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hemorrhage",
+    "aliasesSw": [
+      "general hemorrhage",
+      "Hemorrhage"
+    ]
   },
   {
     "id": "disease-general-hemophilia",
@@ -2459,7 +3287,12 @@
       "width": 2605,
       "height": 1667,
       "credit": "File:A woman suffering from Hemophilia.png — https://www.myupchar.com/en (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hemophilia",
+    "aliasesSw": [
+      "general hemophilia",
+      "Hemophilia"
+    ]
   },
   {
     "id": "disease-general-blood-poisoning",
@@ -2476,7 +3309,13 @@
       "width": 3840,
       "height": 2160,
       "credit": "File:Sepsis-Mikrothomben1.JPG — Emergency doc (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Damu Poisoning",
+    "aliasesSw": [
+      "Damu Poisoning",
+      "general blood poisoning",
+      "Blood Poisoning"
+    ]
   },
   {
     "id": "disease-general-vertigo",
@@ -2493,7 +3332,12 @@
       "width": 6000,
       "height": 5000,
       "credit": "File:Vertigo angustior 01.jpg — H. Zell (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Vertigo",
+    "aliasesSw": [
+      "general vertigo",
+      "Vertigo"
+    ]
   },
   {
     "id": "disease-general-chorea",
@@ -2510,7 +3354,12 @@
       "width": 4080,
       "height": 1836,
       "credit": "File:Stavovské divadlo Chorea Bohemica 2.jpg — VitVit (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Chorea",
+    "aliasesSw": [
+      "general chorea",
+      "Chorea"
+    ]
   },
   {
     "id": "disease-general-stress-and-anxiety",
@@ -2527,7 +3376,13 @@
       "width": 3216,
       "height": 2136,
       "credit": "File:Relieving stress and anxiety outdoors 130607-A-WG463-024.jpg — Pfc. Han-byeol Kim (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Msongo And wasiwasi",
+    "aliasesSw": [
+      "Msongo And wasiwasi",
+      "general stress and anxiety",
+      "Stress And Anxiety"
+    ]
   },
   {
     "id": "disease-general-neck-pain",
@@ -2544,7 +3399,13 @@
       "width": 2605,
       "height": 1667,
       "credit": "File:Depiction of a person suffering from neck pain.png — https://www.myupchar.com/en (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Neck maumivu",
+    "aliasesSw": [
+      "Neck maumivu",
+      "general neck pain",
+      "Neck Pain"
+    ]
   },
   {
     "id": "disease-general-bell-s-palsy",
@@ -2561,7 +3422,12 @@
       "width": 3264,
       "height": 2176,
       "credit": "File:Bell's Palsy Symptoms Closed Eyes.jpg — Benjaminginterr (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Bell'S Palsy",
+    "aliasesSw": [
+      "general bell s palsy",
+      "Bell'S Palsy"
+    ]
   },
   {
     "id": "disease-general-tic-douloureux",
@@ -2578,7 +3444,12 @@
       "width": 2665,
       "height": 2671,
       "credit": "File:Algies du trijumeau - Asciatine P-FG-ES-00784.jpg — Donna Nobot (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Tic Douloureux",
+    "aliasesSw": [
+      "general tic douloureux",
+      "Tic Douloureux"
+    ]
   },
   {
     "id": "disease-general-sciatica",
@@ -2595,7 +3466,12 @@
       "width": 1920,
       "height": 1080,
       "credit": "File:3D still showing Sciatica nerve.jpg — www.scientificanimations.com/ (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Sciatica",
+    "aliasesSw": [
+      "general sciatica",
+      "Sciatica"
+    ]
   },
   {
     "id": "disease-general-brachial-neuralgia",
@@ -2612,7 +3488,12 @@
       "width": 3054,
       "height": 1968,
       "credit": "File:Organic and functional nervous diseases; a text-book of neurology (1913) (14781338452).jpg — Starr, M. Allen (Moses Allen), 1854-1932 (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Brachial Neuralgia",
+    "aliasesSw": [
+      "general brachial neuralgia",
+      "Brachial Neuralgia"
+    ]
   },
   {
     "id": "disease-general-multiple-neuritis",
@@ -2629,7 +3510,12 @@
       "width": 1368,
       "height": 2332,
       "credit": "File:A treatise on the nervous diseases of children, for physicians and students (1905) (14598103467).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Multiple Neuritis",
+    "aliasesSw": [
+      "general multiple neuritis",
+      "Multiple Neuritis"
+    ]
   },
   {
     "id": "disease-general-seasonal-affective-syndrome",
@@ -2639,7 +3525,12 @@
     "image": "assets/images/fallbacks/disease.jpg",
     "imageMeta": {
       "credit": "Fallback image"
-    }
+    },
+    "titleSw": "Seasonal Affective Syndrome",
+    "aliasesSw": [
+      "general seasonal affective syndrome",
+      "Seasonal Affective Syndrome"
+    ]
   },
   {
     "id": "disease-general-tennis-elbow",
@@ -2656,7 +3547,12 @@
       "width": 2319,
       "height": 1304,
       "credit": "File:Tennis elbow pain on turning a door handle.jpg — Sgdp (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Tennis Elbow",
+    "aliasesSw": [
+      "general tennis elbow",
+      "Tennis Elbow"
+    ]
   },
   {
     "id": "disease-general-carpal-tunnel-syndrome",
@@ -2673,7 +3569,12 @@
       "width": 3051,
       "height": 2281,
       "credit": "File:Untreated Carpal Tunnel Syndrome.JPG — Dr. Harry Gouvas, MD, PhD (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Carpal Tunnel Syndrome",
+    "aliasesSw": [
+      "general carpal tunnel syndrome",
+      "Carpal Tunnel Syndrome"
+    ]
   },
   {
     "id": "disease-general-convulsions",
@@ -2690,7 +3591,12 @@
       "width": 1211,
       "height": 613,
       "credit": "File:ILAE classification of seizure types 2017.png — Barbora Cvičková (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Convulsions",
+    "aliasesSw": [
+      "general convulsions",
+      "Convulsions"
+    ]
   },
   {
     "id": "disease-general-amyotrophic-lateral-sclerosis",
@@ -2707,7 +3613,12 @@
       "width": 8000,
       "height": 8000,
       "credit": "File:ALS subtypes UMN LMN distribution.png — PaulWicks (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Amyotrophic Lateral Sclerosis",
+    "aliasesSw": [
+      "general amyotrophic lateral sclerosis",
+      "Amyotrophic Lateral Sclerosis"
+    ]
   },
   {
     "id": "disease-general-locomotor-ataxia",
@@ -2724,7 +3635,12 @@
       "width": 6766,
       "height": 2251,
       "credit": "File:Nude man with locomotor ataxia walking (cropped).jpg — Muybridge, Eadweard, 1830-1904 (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Locomotor Ataxia",
+    "aliasesSw": [
+      "general locomotor ataxia",
+      "Locomotor Ataxia"
+    ]
   },
   {
     "id": "disease-general-meningocele",
@@ -2741,7 +3657,12 @@
       "width": 1731,
       "height": 1396,
       "credit": "File:Spina-bifida.jpg — Centers for Disease Control and Prevention (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Meningocele",
+    "aliasesSw": [
+      "general meningocele",
+      "Meningocele"
+    ]
   },
   {
     "id": "disease-general-menke-s-syndrome",
@@ -2758,7 +3679,12 @@
       "width": 1448,
       "height": 705,
       "credit": "File:Neurodegenerative Disease with Monilethrix 2.jpg — Sydney S. Gellis and Murray Feingold (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Menke'S Syndrome",
+    "aliasesSw": [
+      "general menke s syndrome",
+      "Menke'S Syndrome"
+    ]
   },
   {
     "id": "disease-general-multiple-sclerosis",
@@ -2775,7 +3701,12 @@
       "width": 3949,
       "height": 5924,
       "credit": "File:Stem-cell-therapy-for-multiple-sclerosis-1.jpg — href=Alice Pien] (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Multiple Sclerosis",
+    "aliasesSw": [
+      "general multiple sclerosis",
+      "Multiple Sclerosis"
+    ]
   },
   {
     "id": "disease-general-muscular-dystrophy",
@@ -2792,7 +3723,12 @@
       "width": 3402,
       "height": 2323,
       "credit": "File:Emery–Dreifuss muscular dystrophy molecular.png — Gauthier, B.R.; Comaills, V. (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Muscular Dystrophy",
+    "aliasesSw": [
+      "general muscular dystrophy",
+      "Muscular Dystrophy"
+    ]
   },
   {
     "id": "disease-general-myasthenia-gravis",
@@ -2809,7 +3745,12 @@
       "width": 2832,
       "height": 1715,
       "credit": "File:MG PA 6 Race, 1300 cm³, Bj. 1936 (2008-06-28 Sp).jpg — Spurzem – Lothar Spurzem (edited by Alchemist-hp) (CC BY-SA 2.0 de) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Myasthenia Gravis",
+    "aliasesSw": [
+      "general myasthenia gravis",
+      "Myasthenia Gravis"
+    ]
   },
   {
     "id": "disease-general-parkinson-s-disease",
@@ -2826,7 +3767,13 @@
       "width": 2407,
       "height": 2048,
       "credit": "File:The hidden face of Parkinson's (CC BY Sparks).png — Verbeeldingskr8 a.k.a. Sparks (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Parkinson'S ugonjwa",
+    "aliasesSw": [
+      "Parkinson'S ugonjwa",
+      "general parkinson s disease",
+      "Parkinson'S Disease"
+    ]
   },
   {
     "id": "disease-general-polio",
@@ -2843,7 +3790,12 @@
       "width": 2016,
       "height": 1689,
       "credit": "File:Polio Virus - 52287171002.jpg — NIAID (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Polio",
+    "aliasesSw": [
+      "general polio",
+      "Polio"
+    ]
   },
   {
     "id": "disease-general-post-polio-syndrome",
@@ -2860,7 +3812,13 @@
       "width": 1890,
       "height": 3033,
       "credit": "File:PPS-mag.jpg — DL24 (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Post Polio Syndrome",
+    "aliasesSw": [
+      "Post Polio Syndrome",
+      "general post polio syndrome",
+      "Post-Polio Syndrome"
+    ]
   },
   {
     "id": "disease-general-kuru",
@@ -2877,7 +3835,12 @@
       "width": 6016,
       "height": 4000,
       "credit": "File:Kuru mänd.JPG — Ivo Kruusamägi (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kuru",
+    "aliasesSw": [
+      "general kuru",
+      "Kuru"
+    ]
   },
   {
     "id": "disease-general-memory-problems",
@@ -2894,7 +3857,13 @@
       "width": 5331,
       "height": 2921,
       "credit": "File:The Shoreline of Forgetfulness, by Eugen Bracht, 1889, oil on canvas - Hessisches Landesmuseum Darmstadt - Darmstadt, Germany - DSC01224.jpg — Daderot (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Memory matatizo",
+    "aliasesSw": [
+      "Memory matatizo",
+      "general memory problems",
+      "Memory Problems"
+    ]
   },
   {
     "id": "disease-general-korsakoff-s-syndrome",
@@ -2911,7 +3880,12 @@
       "width": 5184,
       "height": 3456,
       "credit": "File:Korsakoff (1).JPG — User:JoeJoeJoe93 (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Korsakoff'S Syndrome",
+    "aliasesSw": [
+      "general korsakoff s syndrome",
+      "Korsakoff'S Syndrome"
+    ]
   },
   {
     "id": "disease-general-alzheimer-s-disease",
@@ -2928,7 +3902,13 @@
       "width": 3984,
       "height": 1800,
       "credit": "File:Alzheimer's disease brain comparison-ar.jpg — Original: Garrondo (talk)\nDerivative: باسم (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Alzheimer'S ugonjwa",
+    "aliasesSw": [
+      "Alzheimer'S ugonjwa",
+      "general alzheimer s disease",
+      "Alzheimer'S Disease"
+    ]
   },
   {
     "id": "disease-general-senility",
@@ -2945,7 +3925,12 @@
       "width": 3984,
       "height": 1800,
       "credit": "File:تخریب عصبی مغز در بیماری آلزایمر.jpg — Farsi labels: Pereoptic\nderivative work: Garrondo (talk)\nSEVERESLICE_HIGH.JPG: ADEAR:  \"Alzheimer's Disease Education and Referral Center, a service of the National Institute on Aging.\"\nPRECLINICALSLICE_HIGH.JPG: ADEAR:  \"Alzheimer's Disease Education and Referral Center, a service of the National Institute on Aging.\" (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Senility",
+    "aliasesSw": [
+      "general senility",
+      "Senility"
+    ]
   },
   {
     "id": "disease-general-organic-brain-disorder",
@@ -2962,7 +3947,12 @@
       "width": 1300,
       "height": 1318,
       "credit": "File:Organic and functional nervous diseases; a text-book of neurology (1913) (14779462474).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Organic Brain Disorder",
+    "aliasesSw": [
+      "general organic brain disorder",
+      "Organic Brain Disorder"
+    ]
   },
   {
     "id": "disease-general-hyperactivity",
@@ -2979,7 +3969,12 @@
       "width": 2400,
       "height": 1600,
       "credit": "File:ADHD Word Cloud in Blue.png — MissLunaRose12 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hyperactivity",
+    "aliasesSw": [
+      "general hyperactivity",
+      "Hyperactivity"
+    ]
   },
   {
     "id": "disease-general-dyslexia",
@@ -2996,7 +3991,12 @@
       "width": 2048,
       "height": 1536,
       "credit": "File:להקת דיסלקציה.jpg — Eldar741 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Dyslexia",
+    "aliasesSw": [
+      "general dyslexia",
+      "Dyslexia"
+    ]
   },
   {
     "id": "disease-general-nightmares",
@@ -3013,7 +4013,12 @@
       "width": 3261,
       "height": 2051,
       "credit": "File:Releasing the Nightmares (8548507398).jpg — Marines from Arlington, VA, United States (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Nightmares",
+    "aliasesSw": [
+      "general nightmares",
+      "Nightmares"
+    ]
   },
   {
     "id": "disease-general-hyperventilation",
@@ -3030,7 +4035,12 @@
       "width": 1920,
       "height": 1080,
       "credit": "File:Hyperventilation vs Hyperpnea.jpg — http://www.scientificanimations.com (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hyperventilation",
+    "aliasesSw": [
+      "general hyperventilation",
+      "Hyperventilation"
+    ]
   },
   {
     "id": "disease-general-depression",
@@ -3047,7 +4057,16 @@
       "width": 2544,
       "height": 1908,
       "credit": "File:DEPRESSION graffiti.jpg — R (CC BY-SA 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Unyogovu",
+    "aliasesSw": [
+      "Unyogovu",
+      "general depression",
+      "Depression",
+      "huzuni nyingi",
+      "kukata tamaa",
+      "msongo wa mawazo"
+    ]
   },
   {
     "id": "disease-general-manic-depression",
@@ -3064,7 +4083,13 @@
       "width": 6893,
       "height": 3880,
       "credit": "File:Bipolar disorder (hy).png — Թորոսյան Աննա (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Manic unyogovu",
+    "aliasesSw": [
+      "Manic unyogovu",
+      "general manic depression",
+      "Manic Depression"
+    ]
   },
   {
     "id": "disease-general-mania",
@@ -3081,7 +4106,12 @@
       "width": 8192,
       "height": 1856,
       "credit": "File:1505 Łódź Srebrzyńska Jęczmienna Zdrowie-Mania EL.jpg — Mateusz War. (Email) (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Mania",
+    "aliasesSw": [
+      "general mania",
+      "Mania"
+    ]
   },
   {
     "id": "disease-general-mental-illness",
@@ -3098,7 +4128,12 @@
       "width": 4800,
       "height": 7200,
       "credit": "File:Substance use & mental illness in US adults 18 years and older.jpg — SAMHSA (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Mental Illness",
+    "aliasesSw": [
+      "general mental illness",
+      "Mental Illness"
+    ]
   },
   {
     "id": "disease-general-insanities",
@@ -3115,7 +4150,12 @@
       "width": 3264,
       "height": 2448,
       "credit": "File:Stratosphere Las Vegas 6 2013-06-25.jpg — FASTILY (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Insanities",
+    "aliasesSw": [
+      "general insanities",
+      "Insanities"
+    ]
   },
   {
     "id": "disease-general-schizophrenia",
@@ -3132,7 +4172,12 @@
       "width": 3100,
       "height": 2121,
       "credit": "File:Schizophrenia symptoms.png — Sameem Arif (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Schizophrenia",
+    "aliasesSw": [
+      "general schizophrenia",
+      "Schizophrenia"
+    ]
   },
   {
     "id": "disease-general-broken-rib",
@@ -3149,7 +4194,12 @@
       "width": 5184,
       "height": 2912,
       "credit": "File:Broken Rib ^ the western end of Wast Water - geograph.org.uk - 7935062.jpg — Colin Park (CC BY-SA 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Broken Rib",
+    "aliasesSw": [
+      "general broken rib",
+      "Broken Rib"
+    ]
   },
   {
     "id": "disease-general-osteoporosis",
@@ -3166,7 +4216,12 @@
       "width": 10240,
       "height": 5760,
       "credit": "File:Osteoporosis -- Smart-Servier.jpg — Laboratoires Servier (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Osteoporosis",
+    "aliasesSw": [
+      "general osteoporosis",
+      "Osteoporosis"
+    ]
   },
   {
     "id": "disease-general-rickets",
@@ -3183,7 +4238,12 @@
       "width": 2112,
       "height": 732,
       "credit": "File:Rahhidi algmargid lastes.jpg — AleksandraIvanov (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Rickets",
+    "aliasesSw": [
+      "general rickets",
+      "Rickets"
+    ]
   },
   {
     "id": "disease-general-bursitis",
@@ -3200,7 +4260,12 @@
       "width": 3024,
       "height": 4032,
       "credit": "File:Left knee prepatellar bursitis.jpg — CheckDO (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Bursitis",
+    "aliasesSw": [
+      "general bursitis",
+      "Bursitis"
+    ]
   },
   {
     "id": "disease-general-ankylosing-spondylitis",
@@ -3217,7 +4282,12 @@
       "width": 1545,
       "height": 1548,
       "credit": "File:Ankylosing process.jpg — http://en.wikipedia.org/wiki/User:Senseiwa (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Ankylosing Spondylitis",
+    "aliasesSw": [
+      "general ankylosing spondylitis",
+      "Ankylosing Spondylitis"
+    ]
   },
   {
     "id": "disease-general-shin-splints",
@@ -3234,7 +4304,12 @@
       "width": 4500,
       "height": 4500,
       "credit": "File:Tibia - frontal view2.png — Anatomography (CC BY-SA 2.1 jp) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Shin Splints",
+    "aliasesSw": [
+      "general shin splints",
+      "Shin Splints"
+    ]
   },
   {
     "id": "disease-general-tendonitis",
@@ -3251,7 +4326,12 @@
       "width": 10240,
       "height": 5760,
       "credit": "File:Tendonitis Tendon rupture -- Smart-Servier.jpg — Laboratoires Servier (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Tendonitis",
+    "aliasesSw": [
+      "general tendonitis",
+      "Tendonitis"
+    ]
   },
   {
     "id": "disease-general-restless-leg-syndrome",
@@ -3268,7 +4348,13 @@
       "width": 4000,
       "height": 2672,
       "credit": "File:Het Wed P1140328.jpg — G.Lanting (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Restless mguu Syndrome",
+    "aliasesSw": [
+      "Restless mguu Syndrome",
+      "general restless leg syndrome",
+      "Restless Leg Syndrome"
+    ]
   },
   {
     "id": "disease-general-claudication",
@@ -3285,7 +4371,12 @@
       "width": 4409,
       "height": 6113,
       "credit": "File:Pseudoathletic appearance of calf muscle hypertrophy.png — WikEric7 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Claudication",
+    "aliasesSw": [
+      "general claudication",
+      "Claudication"
+    ]
   },
   {
     "id": "disease-general-side-stitches",
@@ -3302,7 +4393,12 @@
       "width": 12391,
       "height": 5777,
       "credit": "File:Taj Mahal Sunset.jpg — Muhammad Mahdi Karim, Stitching assisted by Benh (GFDL 1.2) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Side Stitches",
+    "aliasesSw": [
+      "general side stitches",
+      "Side Stitches"
+    ]
   },
   {
     "id": "disease-general-fibromyalgia-syndrome",
@@ -3319,7 +4415,12 @@
       "width": 4160,
       "height": 3120,
       "credit": "File:Afije Jerez - IMG 20191007 140159 697.jpg — El Pantera (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Fibromyalgia Syndrome",
+    "aliasesSw": [
+      "general fibromyalgia syndrome",
+      "Fibromyalgia Syndrome"
+    ]
   },
   {
     "id": "disease-general-myelitis",
@@ -3336,7 +4437,12 @@
       "width": 2197,
       "height": 1288,
       "credit": "File:Paralysie flasque aiguë acute flaccid myelitis US CDC graph 2018 fr.png — Lamiot (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Myelitis",
+    "aliasesSw": [
+      "general myelitis",
+      "Myelitis"
+    ]
   },
   {
     "id": "disease-general-hernia",
@@ -3353,7 +4459,12 @@
       "width": 1623,
       "height": 1075,
       "credit": "File:Inguinal hernia front view.jpg — IkeTheSloth (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hernia",
+    "aliasesSw": [
+      "general hernia",
+      "Hernia"
+    ]
   },
   {
     "id": "disease-general-umbilical-hernia",
@@ -3370,7 +4481,12 @@
       "width": 6508,
       "height": 4888,
       "credit": "File:Congenital umbilical hernia Wellcome L0061628.jpg — Godart, Thomas (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Umbilical Hernia",
+    "aliasesSw": [
+      "general umbilical hernia",
+      "Umbilical Hernia"
+    ]
   },
   {
     "id": "disease-general-pelvic-congestion",
@@ -3387,7 +4503,12 @@
       "width": 1416,
       "height": 1354,
       "credit": "File:Pelvic inflammation in women (1921) (14766013522).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Pelvic Congestion",
+    "aliasesSw": [
+      "general pelvic congestion",
+      "Pelvic Congestion"
+    ]
   },
   {
     "id": "disease-general-pelvic-pain",
@@ -3404,7 +4525,16 @@
       "width": 4590,
       "height": 3072,
       "credit": "File:Atlas and epitome of gynecology (1900) (14761632364).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Maumivu ya nyonga",
+    "aliasesSw": [
+      "Maumivu ya nyonga",
+      "general pelvic pain",
+      "Pelvic Pain",
+      "maumivu chini ya tumbo",
+      "nyonga kuuma",
+      "maumivu ya kiuno"
+    ]
   },
   {
     "id": "disease-general-hypoglycemia",
@@ -3421,7 +4551,12 @@
       "width": 1920,
       "height": 1080,
       "credit": "File:Hypoglycemia.jpg — http://www.scientificanimations.com (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hypoglycemia",
+    "aliasesSw": [
+      "general hypoglycemia",
+      "Hypoglycemia"
+    ]
   },
   {
     "id": "disease-general-addison-s-disease",
@@ -3438,7 +4573,13 @@
       "width": 3972,
       "height": 4436,
       "credit": "File:Knees of a woman with Addison's disease Wellcome L0061740.jpg — Mark, Leonard Portal (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Addison'S ugonjwa",
+    "aliasesSw": [
+      "Addison'S ugonjwa",
+      "general addison s disease",
+      "Addison'S Disease"
+    ]
   },
   {
     "id": "disease-general-cushing-s-disease",
@@ -3455,7 +4596,13 @@
       "width": 1841,
       "height": 1764,
       "credit": "File:Management algorithm of Cushing's disease.png — Fleseriu M, Auchus R, Bancos I, Ben-Shlomo A, Bertherat J, Biermasz NR (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Cushing'S ugonjwa",
+    "aliasesSw": [
+      "Cushing'S ugonjwa",
+      "general cushing s disease",
+      "Cushing'S Disease"
+    ]
   },
   {
     "id": "disease-general-cystic-fibrosis",
@@ -3472,7 +4619,12 @@
       "width": 2331,
       "height": 1743,
       "credit": "File:ClubbingCF.JPG — Jerry Nick, M.D. (CC BY 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Cystic Fibrosis",
+    "aliasesSw": [
+      "general cystic fibrosis",
+      "Cystic Fibrosis"
+    ]
   },
   {
     "id": "disease-general-hypothyroidism",
@@ -3489,7 +4641,12 @@
       "width": 3029,
       "height": 2742,
       "credit": "File:Signs and symptoms of hypothyroidism-ar.png — Original: Mikael Häggström.\nWhen using this image in external works, it may be cited as:\n\nHäggström, Mikael (2014). \"Medical gallery of Mikael Häggström 2014\". WikiJournal of Medicine 1 (2). DOI:10.15347/wjm/2014.008. ISSN 2002-4436. Public Domain.\nor\n\nBy Mikael Häggström, used with permission.\nDerivative: باسم (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hypothyroidism",
+    "aliasesSw": [
+      "general hypothyroidism",
+      "Hypothyroidism"
+    ]
   },
   {
     "id": "disease-general-hyperthyroidism",
@@ -3506,7 +4663,12 @@
       "width": 1056,
       "height": 1664,
       "credit": "File:Hyperthyroidism 2.jpg — William Seaman Bainbridge (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hyperthyroidism",
+    "aliasesSw": [
+      "general hyperthyroidism",
+      "Hyperthyroidism"
+    ]
   },
   {
     "id": "disease-general-swollen-glands",
@@ -3523,7 +4685,12 @@
       "width": 3120,
       "height": 4160,
       "credit": "File:Dog swollen in the face salivary gland blockage 03.jpg — Gerardolagunes (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Swollen Glands",
+    "aliasesSw": [
+      "general swollen glands",
+      "Swollen Glands"
+    ]
   },
   {
     "id": "disease-general-lymphangitis",
@@ -3540,7 +4707,12 @@
       "width": 2433,
       "height": 3925,
       "credit": "File:A treatise on epizootic lymphangitis BHL18615345.jpg — Pallin, William Alfred (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Lymphangitis",
+    "aliasesSw": [
+      "general lymphangitis",
+      "Lymphangitis"
+    ]
   },
   {
     "id": "disease-general-hodgkin-s-disease",
@@ -3557,7 +4729,13 @@
       "width": 4040,
       "height": 2456,
       "credit": "File:Hodgkin lymphoma cytology small.jpg — Nephron (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hodgkin'S ugonjwa",
+    "aliasesSw": [
+      "Hodgkin'S ugonjwa",
+      "general hodgkin s disease",
+      "Hodgkin'S Disease"
+    ]
   },
   {
     "id": "disease-general-mononucleosis",
@@ -3574,7 +4752,12 @@
       "width": 4928,
       "height": 3264,
       "credit": "File:Mono Lake South Tufa August 2013 014.jpg — King of Hearts (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Mononucleosis",
+    "aliasesSw": [
+      "general mononucleosis",
+      "Mononucleosis"
+    ]
   },
   {
     "id": "disease-general-menopause",
@@ -3591,7 +4774,13 @@
       "width": 2048,
       "height": 2048,
       "credit": "File:Menopause symbol.jpg — Adam Harangozó (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kukoma hedhi",
+    "aliasesSw": [
+      "Kukoma hedhi",
+      "general menopause",
+      "Menopause"
+    ]
   },
   {
     "id": "disease-general-pelvic-inflammatory-disease",
@@ -3608,7 +4797,13 @@
       "width": 4924,
       "height": 3555,
       "credit": "File:Purulent anterior parametritis Wellcome L0062139.jpg — Godart, Thomas (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Pelvic Inflammatory ugonjwa",
+    "aliasesSw": [
+      "Pelvic Inflammatory ugonjwa",
+      "general pelvic inflammatory disease",
+      "Pelvic Inflammatory Disease"
+    ]
   },
   {
     "id": "disease-general-vaginitis",
@@ -3625,7 +4820,13 @@
       "width": 3008,
       "height": 2000,
       "credit": "File:Aerobic vaginitis phase contrast microscopy.jpg — Dr Graham Beards (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Maambukizi ya uke",
+    "aliasesSw": [
+      "Maambukizi ya uke",
+      "general vaginitis",
+      "Vaginitis"
+    ]
   },
   {
     "id": "disease-general-leukorrhea",
@@ -3642,7 +4843,12 @@
       "width": 3024,
       "height": 2964,
       "credit": "File:Discharge (1).jpg — Б.Раданова (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Leukorrhea",
+    "aliasesSw": [
+      "general leukorrhea",
+      "Leukorrhea"
+    ]
   },
   {
     "id": "disease-general-toxic-shock-syndrome",
@@ -3659,7 +4865,12 @@
       "width": 2107,
       "height": 3223,
       "credit": "File:Toxic shock syndrome is so rare you might forget it can happen - (6946668685).jpg — National Library of Medicine - History of Medicine (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Toxic Shock Syndrome",
+    "aliasesSw": [
+      "general toxic shock syndrome",
+      "Toxic Shock Syndrome"
+    ]
   },
   {
     "id": "disease-general-hysterectomy",
@@ -3676,7 +4887,12 @@
       "width": 4229,
       "height": 2518,
       "credit": "File:Adenomyosis, Hysterectomy Specimen (640264025).jpg — Ed Uthman from Houston, TX, USA (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hysterectomy",
+    "aliasesSw": [
+      "general hysterectomy",
+      "Hysterectomy"
+    ]
   },
   {
     "id": "disease-general-frigidity",
@@ -3693,7 +4909,12 @@
       "width": 3742,
       "height": 1902,
       "credit": "File:Grand Prix of ISD 2015.jpg — OpenStreetMap contributors, Jérémy-Günther-Heinz Jähnick, d'après une carte réalisé par les organisateurs du Grand Prix ISD 2015.OpenStreetMap contributors (CC BY-SA 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Frigidity",
+    "aliasesSw": [
+      "general frigidity",
+      "Frigidity"
+    ]
   },
   {
     "id": "disease-general-female-stress-syndrome",
@@ -3710,7 +4931,13 @@
       "width": 4409,
       "height": 6113,
       "credit": "File:Pseudoathletic appearance of calf muscle hypertrophy.png — WikEric7 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Female msongo Syndrome",
+    "aliasesSw": [
+      "Female msongo Syndrome",
+      "general female stress syndrome",
+      "Female Stress Syndrome"
+    ]
   },
   {
     "id": "disease-general-morning-sickness",
@@ -3727,7 +4954,13 @@
       "width": 4202,
       "height": 2594,
       "credit": "File:DFB HG 3-4 Gletsch.jpg — Kabelleger (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Morning ugonjwa",
+    "aliasesSw": [
+      "Morning ugonjwa",
+      "general morning sickness",
+      "Morning Sickness"
+    ]
   },
   {
     "id": "disease-general-miscarriage",
@@ -3744,7 +4977,12 @@
       "width": 2098,
       "height": 3146,
       "credit": "File:Medical talisman against miscarriage (Chinese MS) Wellcome L0039759.jpg — Faebot (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Miscarriage",
+    "aliasesSw": [
+      "general miscarriage",
+      "Miscarriage"
+    ]
   },
   {
     "id": "disease-general-mastitis",
@@ -3761,7 +4999,12 @@
       "width": 8000,
       "height": 6000,
       "credit": "File:Mama con drenaje.jpg — Arturoborrero (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Mastitis",
+    "aliasesSw": [
+      "general mastitis",
+      "Mastitis"
+    ]
   },
   {
     "id": "disease-general-birth-defects",
@@ -3778,7 +5021,12 @@
       "width": 4608,
       "height": 3456,
       "credit": "File:2219Boys of the Philippines with congenital childhood blindness and amputation birth defect 03.jpg — Judgefloro (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Birth Defects",
+    "aliasesSw": [
+      "general birth defects",
+      "Birth Defects"
+    ]
   },
   {
     "id": "disease-general-cerebral-palsy",
@@ -3795,7 +5043,12 @@
       "width": 1278,
       "height": 648,
       "credit": "File:Cerebral palsy forms.jpg — Δρ. Χαράλαμπος Γκούβας (Harrygouvas) (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Cerebral Palsy",
+    "aliasesSw": [
+      "general cerebral palsy",
+      "Cerebral Palsy"
+    ]
   },
   {
     "id": "disease-general-down-syndrome",
@@ -3812,7 +5065,12 @@
       "width": 2470,
       "height": 3559,
       "credit": "File:Down Syndrome Child.jpg — NadineLive (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Down Syndrome",
+    "aliasesSw": [
+      "general down syndrome",
+      "Down Syndrome"
+    ]
   },
   {
     "id": "disease-general-cradle-cap",
@@ -3829,7 +5087,12 @@
       "width": 2500,
       "height": 1866,
       "credit": "File:Rembrandt Harmensz van Rijn - A baby in a cap sleeping in a cradle (in mount).jpg — Rembrandt (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Cradle Cap",
+    "aliasesSw": [
+      "general cradle cap",
+      "Cradle Cap"
+    ]
   },
   {
     "id": "disease-general-colic-in-infants",
@@ -3846,7 +5109,17 @@
       "width": 4256,
       "height": 2832,
       "credit": "File:Glass feeding bottle, England, 1858-1900 Wellcome L0057648.jpg — Fæ (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Colic kwa watoto wachanga",
+    "aliasesSw": [
+      "Colic kwa watoto wachanga",
+      "general colic in infants",
+      "Colic In Infants",
+      "mtoto kulia sana",
+      "tumbo la mtoto",
+      "colic",
+      "maumivu ya tumbo kwa mtoto"
+    ]
   },
   {
     "id": "disease-general-teething",
@@ -3863,7 +5136,12 @@
       "width": 4368,
       "height": 2912,
       "credit": "File:Teething.jpg — Daniel Schwen (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Teething",
+    "aliasesSw": [
+      "general teething",
+      "Teething"
+    ]
   },
   {
     "id": "disease-general-neonatal-jaundice",
@@ -3880,7 +5158,12 @@
       "width": 1920,
       "height": 4160,
       "credit": "File:Ictericia neonatal.jpg — Muago (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Neonatal Jaundice",
+    "aliasesSw": [
+      "general neonatal jaundice",
+      "Neonatal Jaundice"
+    ]
   },
   {
     "id": "disease-general-infantile-convulsions",
@@ -3897,7 +5180,12 @@
       "width": 1984,
       "height": 2976,
       "credit": "File:Acu-moxa chart; Infantile convulsions, Chinese MS, c. 1911 Wellcome L0037954.jpg — Fæ (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Infantile Convulsions",
+    "aliasesSw": [
+      "general infantile convulsions",
+      "Infantile Convulsions"
+    ]
   },
   {
     "id": "disease-general-cholera-infantum",
@@ -3914,7 +5202,12 @@
       "width": 3000,
       "height": 3000,
       "credit": "File:Single \"Cholera\" by Syncerus.jpg — Syncerus band (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Cholera Infantum",
+    "aliasesSw": [
+      "general cholera infantum",
+      "Cholera Infantum"
+    ]
   },
   {
     "id": "disease-general-sudden-infant-death-syndrome",
@@ -3931,7 +5224,12 @@
       "width": 3600,
       "height": 1542,
       "credit": "File:The development of anterior open bite as a combined effect of both a small jaw (anterior mandibular hypoplasia) and adaptive thumb sucking.jpg — ReasonableEditor (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Sudden Infant Death Syndrome",
+    "aliasesSw": [
+      "general sudden infant death syndrome",
+      "Sudden Infant Death Syndrome"
+    ]
   },
   {
     "id": "disease-general-colic-in-children",
@@ -3948,7 +5246,12 @@
       "width": 5616,
       "height": 3744,
       "credit": "File:Providing check-ups for newborn children at a Save the Children clinic in Lebanons Bekaa Valley (11174159186).jpg — DFID - UK Department for International Development (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Colic In Children",
+    "aliasesSw": [
+      "general colic in children",
+      "Colic In Children"
+    ]
   },
   {
     "id": "disease-general-ringworm",
@@ -3965,7 +5268,12 @@
       "width": 4032,
       "height": 3024,
       "credit": "File:Dermatophytosis 20190815-02ASD.jpg — Asurnipal (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Ringworm",
+    "aliasesSw": [
+      "general ringworm",
+      "Ringworm"
+    ]
   },
   {
     "id": "disease-general-childhood-diseases",
@@ -3982,7 +5290,15 @@
       "width": 2892,
       "height": 4646,
       "credit": "File:The diseases of infancy and childhood (1910) (14577539167).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Magonjwa ya watoto",
+    "aliasesSw": [
+      "Magonjwa ya watoto",
+      "general childhood diseases",
+      "Childhood Diseases",
+      "magonjwa ya mtoto",
+      "matatizo ya watoto"
+    ]
   },
   {
     "id": "disease-general-adenoids",
@@ -3999,7 +5315,12 @@
       "width": 1978,
       "height": 1965,
       "credit": "File:Adenoids (PSF).png — Pearson Scott Foresman (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Adenoids",
+    "aliasesSw": [
+      "general adenoids",
+      "Adenoids"
+    ]
   },
   {
     "id": "disease-general-chickenpox",
@@ -4016,7 +5337,12 @@
       "width": 3264,
       "height": 2448,
       "credit": "File:Chickenpox on a 1 year old- 2013-10-20 22-04.jpg — User:MarcoRoatan (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Chickenpox",
+    "aliasesSw": [
+      "general chickenpox",
+      "Chickenpox"
+    ]
   },
   {
     "id": "disease-general-growing-pains",
@@ -4033,7 +5359,12 @@
       "width": 2832,
       "height": 4256,
       "credit": "File:Small flint nodule used as an amulet against teething pains, Wellcome L0057580.jpg — Fæ (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Growing Pains",
+    "aliasesSw": [
+      "general growing pains",
+      "Growing Pains"
+    ]
   },
   {
     "id": "disease-general-growth-problems",
@@ -4050,7 +5381,13 @@
       "width": 1588,
       "height": 876,
       "credit": "File:The problem of age, growth, and death; a study of cytomorphosis, based on lectures at the Lowell Institute, March 1907 (1908) (14592026319).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Growth matatizo",
+    "aliasesSw": [
+      "Growth matatizo",
+      "general growth problems",
+      "Growth Problems"
+    ]
   },
   {
     "id": "disease-general-vaccination-problems",
@@ -4067,7 +5404,13 @@
       "width": 5616,
       "height": 3744,
       "credit": "File:Impfzentrum Ilsfeld-Auenstein, 2021 (02).jpg — Robin Müller (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Vaccination matatizo",
+    "aliasesSw": [
+      "Vaccination matatizo",
+      "general vaccination problems",
+      "Vaccination Problems"
+    ]
   },
   {
     "id": "disease-general-venereal-diseases",
@@ -4084,7 +5427,13 @@
       "width": 2544,
       "height": 1696,
       "credit": "File:DAA visits theSTI (Sexually Transmitted Infection Center) in Timur (5267845254).jpg — USAID Indonesia (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Venereal magonjwa",
+    "aliasesSw": [
+      "Venereal magonjwa",
+      "general venereal diseases",
+      "Venereal Diseases"
+    ]
   },
   {
     "id": "disease-general-gonorrhea",
@@ -4101,7 +5450,12 @@
       "width": 1774,
       "height": 1158,
       "credit": "File:Neisseria gonorrhoeae PHIL 3693 lores.jpg — Photo Credit:\nContent Providers(s): CDC/ Dr. Norman Jacobs (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Gonorrhea",
+    "aliasesSw": [
+      "general gonorrhea",
+      "Gonorrhea"
+    ]
   },
   {
     "id": "disease-general-syphilis",
@@ -4118,7 +5472,12 @@
       "width": 9844,
       "height": 7961,
       "credit": "File:La Syphilis, maladie héréditaire assassine la race. Femmes combattez la!.jpg — Unknown authorUnknown author\n\nVerleger :  Tolmer Imp., 13 quai d'Anjou (Paris) (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Syphilis",
+    "aliasesSw": [
+      "general syphilis",
+      "Syphilis"
+    ]
   },
   {
     "id": "disease-general-chlamydia",
@@ -4135,7 +5494,12 @@
       "width": 2513,
       "height": 2513,
       "credit": "File:Chlamydia-22Feb25.jpg — Bondarev.gal (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Chlamydia",
+    "aliasesSw": [
+      "general chlamydia",
+      "Chlamydia"
+    ]
   },
   {
     "id": "disease-general-genital-herpes",
@@ -4152,7 +5516,12 @@
       "width": 2816,
       "height": 2112,
       "credit": "File:Genital herpes female.jpg — Me (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Genital Herpes",
+    "aliasesSw": [
+      "general genital herpes",
+      "Genital Herpes"
+    ]
   },
   {
     "id": "disease-general-aids",
@@ -4169,7 +5538,12 @@
       "width": 4878,
       "height": 6583,
       "credit": "File:A boy chasing a girl with a message indicating that AIDS Wellcome L0052398.jpg — Department of Health and Human Services (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Aids",
+    "aliasesSw": [
+      "general aids",
+      "Aids"
+    ]
   },
   {
     "id": "disease-general-urticaria",
@@ -4186,7 +5560,12 @@
       "width": 4608,
       "height": 3456,
       "credit": "File:Urticaria12.2024.jpg — מ.י.ש.הו 0 (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Urticaria",
+    "aliasesSw": [
+      "general urticaria",
+      "Urticaria"
+    ]
   },
   {
     "id": "disease-general-chiggers",
@@ -4203,7 +5582,12 @@
       "width": 3648,
       "height": 2736,
       "credit": "File:Pipistrellus kuhlii - Trombiculidae - Ph. Karol Tabarelli de Fatis.jpg — Karol Tabarelli de Fatis/MUSE\n\n\n\n\nThis file was uploaded by MUSE - Science Museum of Trento in cooperation with Wikimedia Italia. (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Chiggers",
+    "aliasesSw": [
+      "general chiggers",
+      "Chiggers"
+    ]
   },
   {
     "id": "disease-general-itch-mite",
@@ -4220,7 +5604,12 @@
       "width": 6292,
       "height": 1880,
       "credit": "File:Sarcoptes scabiei and Acarus siro (Goeze, 1786).png — Johann August Ephraim Goeze (1731-1793) (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Itch Mite",
+    "aliasesSw": [
+      "general itch mite",
+      "Itch Mite"
+    ]
   },
   {
     "id": "disease-general-lice",
@@ -4237,7 +5626,12 @@
       "width": 4160,
       "height": 3120,
       "credit": "File:Lice on my head 01.jpg — KittensMittens2 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Lice",
+    "aliasesSw": [
+      "general lice",
+      "Lice"
+    ]
   },
   {
     "id": "disease-general-typhus",
@@ -4254,7 +5648,12 @@
       "width": 4000,
       "height": 3000,
       "credit": "File:Scrub typhus IgM Positive.jpg — Ajay Kumar Chaurasiya (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Typhus",
+    "aliasesSw": [
+      "general typhus",
+      "Typhus"
+    ]
   },
   {
     "id": "disease-general-rocky-mountain-spotted-fever",
@@ -4271,7 +5670,13 @@
       "width": 2988,
       "height": 5312,
       "credit": "File:Conjunctival injection due to Rocky Mountain spotted fever.jpg — Krundale (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Rocky Mountain Spotted homa",
+    "aliasesSw": [
+      "Rocky Mountain Spotted homa",
+      "general rocky mountain spotted fever",
+      "Rocky Mountain Spotted Fever"
+    ]
   },
   {
     "id": "disease-general-lyme-disease",
@@ -4288,7 +5693,13 @@
       "width": 2836,
       "height": 2205,
       "credit": "File:Lyme Disease Bacteria, Borrelia burgdorferi - 1.jpg — NIAID (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Lyme ugonjwa",
+    "aliasesSw": [
+      "Lyme ugonjwa",
+      "general lyme disease",
+      "Lyme Disease"
+    ]
   },
   {
     "id": "disease-general-bubonic-plague",
@@ -4305,7 +5716,12 @@
       "width": 2877,
       "height": 2028,
       "credit": "File:Plague -buboes.jpg — Photo Credit:\nContent Providers(s): CDC (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Bubonic Plague",
+    "aliasesSw": [
+      "general bubonic plague",
+      "Bubonic Plague"
+    ]
   },
   {
     "id": "disease-general-rabies",
@@ -4322,7 +5738,12 @@
       "width": 4096,
       "height": 2992,
       "credit": "File:Rabies Virus - 54025744743.jpg — NIAID (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Rabies",
+    "aliasesSw": [
+      "general rabies",
+      "Rabies"
+    ]
   },
   {
     "id": "disease-general-tularemia",
@@ -4339,7 +5760,12 @@
       "width": 700,
       "height": 466,
       "credit": "File:Tularemia lesion.jpg — Consequentially (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Tularemia",
+    "aliasesSw": [
+      "general tularemia",
+      "Tularemia"
+    ]
   },
   {
     "id": "disease-general-cat-coccidia",
@@ -4356,7 +5782,12 @@
       "width": 941,
       "height": 616,
       "credit": "File:Coccidia.JPG — Joel Mills (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Cat Coccidia",
+    "aliasesSw": [
+      "general cat coccidia",
+      "Cat Coccidia"
+    ]
   },
   {
     "id": "disease-general-allergies",
@@ -4373,7 +5804,17 @@
       "width": 5184,
       "height": 3456,
       "credit": "File:Allergies 2018.jpg — Stock Catalog (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Mzio",
+    "aliasesSw": [
+      "Mzio",
+      "general allergies",
+      "Allergies",
+      "allergy",
+      "mzio wa chakula",
+      "mzio wa ngozi",
+      "kupiga chafya kwa mzio"
+    ]
   },
   {
     "id": "disease-general-hay-fever",
@@ -4390,7 +5831,13 @@
       "width": 2605,
       "height": 1667,
       "credit": "File:Depiction of a person suffering from Allergic Rhinitis.png — https://www.myupchar.com/en (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hay homa",
+    "aliasesSw": [
+      "Hay homa",
+      "general hay fever",
+      "Hay Fever"
+    ]
   },
   {
     "id": "disease-general-food-poisoning",
@@ -4407,7 +5854,13 @@
       "width": 4128,
       "height": 2322,
       "credit": "File:Foodborne Illness Outbreak Investigation - Cambodia (16868390768).jpg — CDC Global (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Chakula Poisoning",
+    "aliasesSw": [
+      "Chakula Poisoning",
+      "general food poisoning",
+      "Food Poisoning"
+    ]
   },
   {
     "id": "disease-general-poison-ivy",
@@ -4424,7 +5877,12 @@
       "width": 3822,
       "height": 5572,
       "credit": "File:Brussels Expo - Poison Ivy 1.jpg — Miguel Discart &amp; Kiri Karma (CC BY-SA 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Poison Ivy",
+    "aliasesSw": [
+      "general poison ivy",
+      "Poison Ivy"
+    ]
   },
   {
     "id": "disease-general-worms",
@@ -4441,7 +5899,16 @@
       "width": 4928,
       "height": 3264,
       "credit": "File:Worms, NE.jpg — Jared Winkler (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Minyoo",
+    "aliasesSw": [
+      "Minyoo",
+      "general worms",
+      "Worms",
+      "vimelea tumboni",
+      "minyoo ya tumbo",
+      "intestinal worms"
+    ]
   },
   {
     "id": "disease-general-fungus-growth",
@@ -4458,7 +5925,12 @@
       "width": 6000,
       "height": 8000,
       "credit": "File:Sporothrix schenckii growth on SDA.jpg — Ajay Kumar Chaurasiya (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Fungus Growth",
+    "aliasesSw": [
+      "general fungus growth",
+      "Fungus Growth"
+    ]
   },
   {
     "id": "disease-general-tetanus",
@@ -4475,7 +5947,12 @@
       "width": 1806,
       "height": 1205,
       "credit": "File:PHIL tetanus.jpg — Photo Credit:\nContent Providers(s): CDC (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Tetanus",
+    "aliasesSw": [
+      "general tetanus",
+      "Tetanus"
+    ]
   },
   {
     "id": "disease-general-parrot-fever",
@@ -4492,7 +5969,13 @@
       "width": 1792,
       "height": 1192,
       "credit": "File:Chlamydophila psittaci FA stain.jpg — Photo Credit:\nContent Providers(s): CDC/Dr. Vester Lewis (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Parrot homa",
+    "aliasesSw": [
+      "Parrot homa",
+      "general parrot fever",
+      "Parrot Fever"
+    ]
   },
   {
     "id": "disease-general-poisoning",
@@ -4509,7 +5992,12 @@
       "width": 4571,
       "height": 3428,
       "credit": "File:Herring gull with lead poisoning in Prospect Park (63059).jpg — Rhododendrites (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Poisoning",
+    "aliasesSw": [
+      "general poisoning",
+      "Poisoning"
+    ]
   },
   {
     "id": "disease-general-chemical-poisoning",
@@ -4526,7 +6014,12 @@
       "width": 3888,
       "height": 2592,
       "credit": "File:Mercury Poisoning Linked to Skin Products (6819019484).jpg — The U.S. Food and Drug Administration (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Chemical Poisoning",
+    "aliasesSw": [
+      "general chemical poisoning",
+      "Chemical Poisoning"
+    ]
   },
   {
     "id": "disease-general-aluminum-poisoning",
@@ -4543,7 +6036,12 @@
       "width": 4063,
       "height": 3158,
       "credit": "File:INEEL 58-1360 HAER ID-33-D-64 195650pu.jpg — Jack L. Anderson. - Idaho National Engineering Laboratory, Army Reactors Experimental Area, Scoville, Butte County, ID (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Aluminum Poisoning",
+    "aliasesSw": [
+      "general aluminum poisoning",
+      "Aluminum Poisoning"
+    ]
   },
   {
     "id": "disease-general-arsenic-poisoning",
@@ -4560,7 +6058,12 @@
       "width": 964,
       "height": 669,
       "credit": "File:T3DB-arsenic-toxicity.png — Creativefinch (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Arsenic Poisoning",
+    "aliasesSw": [
+      "general arsenic poisoning",
+      "Arsenic Poisoning"
+    ]
   },
   {
     "id": "disease-general-cadmium-poisoning",
@@ -4577,7 +6080,12 @@
       "width": 4063,
       "height": 3158,
       "credit": "File:INEEL 58-1360 HAER ID-33-D-64 195650pu.jpg — Jack L. Anderson. - Idaho National Engineering Laboratory, Army Reactors Experimental Area, Scoville, Butte County, ID (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Cadmium Poisoning",
+    "aliasesSw": [
+      "general cadmium poisoning",
+      "Cadmium Poisoning"
+    ]
   },
   {
     "id": "disease-general-copper-poisoning",
@@ -4594,7 +6102,12 @@
       "width": 2862,
       "height": 2450,
       "credit": "File:Copper ecotoxicity on grave 2.JPG — Lamiot (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Copper Poisoning",
+    "aliasesSw": [
+      "general copper poisoning",
+      "Copper Poisoning"
+    ]
   },
   {
     "id": "disease-general-ddt-poisoning",
@@ -4611,7 +6124,12 @@
       "width": 7952,
       "height": 5304,
       "credit": "File:Osprey (53412534453).jpg — evergladesnps (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Ddt Poisoning",
+    "aliasesSw": [
+      "general ddt poisoning",
+      "Ddt Poisoning"
+    ]
   },
   {
     "id": "disease-general-lead-poisoning",
@@ -4628,7 +6146,12 @@
       "width": 4571,
       "height": 3428,
       "credit": "File:Herring gull with lead poisoning in Prospect Park (63059).jpg — Rhododendrites (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Lead Poisoning",
+    "aliasesSw": [
+      "general lead poisoning",
+      "Lead Poisoning"
+    ]
   },
   {
     "id": "disease-general-mercury-poisoning",
@@ -4645,7 +6168,12 @@
       "width": 3888,
       "height": 2592,
       "credit": "File:Mercury Poisoning Linked to Skin Products (6819019484).jpg — The U.S. Food and Drug Administration (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Mercury Poisoning",
+    "aliasesSw": [
+      "general mercury poisoning",
+      "Mercury Poisoning"
+    ]
   },
   {
     "id": "disease-general-nickel-poisoning",
@@ -4662,7 +6190,12 @@
       "width": 3600,
       "height": 1632,
       "credit": "File:Annual report (1902) (14783865933).jpg — Ontario. Dept. of Mines (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Nickel Poisoning",
+    "aliasesSw": [
+      "general nickel poisoning",
+      "Nickel Poisoning"
+    ]
   },
   {
     "id": "disease-general-radiation-poisoning",
@@ -4679,7 +6212,12 @@
       "width": 1059,
       "height": 1200,
       "credit": "File:Radiation Sickness.png — BruceBlaus (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Radiation Poisoning",
+    "aliasesSw": [
+      "general radiation poisoning",
+      "Radiation Poisoning"
+    ]
   },
   {
     "id": "disease-general-toxemia",
@@ -4696,7 +6234,12 @@
       "width": 6016,
       "height": 4000,
       "credit": "File:Réplica en yeso de un bazo bovino carbuncoso (Colección Squadrone).jpg — Museo de Ciencias Naturales “Dr. José Squadrone” (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Toxemia",
+    "aliasesSw": [
+      "general toxemia",
+      "Toxemia"
+    ]
   },
   {
     "id": "disease-general-tobacco-withdrawal",
@@ -4713,7 +6256,12 @@
       "width": 1372,
       "height": 1600,
       "credit": "File:The London Merchants Triumphant (BM 1868,0808.3564).jpg — Copyfraud (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Tobacco Withdrawal",
+    "aliasesSw": [
+      "general tobacco withdrawal",
+      "Tobacco Withdrawal"
+    ]
   },
   {
     "id": "disease-general-alcohol-withdrawal",
@@ -4730,7 +6278,12 @@
       "width": 4231,
       "height": 6056,
       "credit": "File:An alcoholic man with delirium Wellcome L0060780 (level correction).jpg — Ubcule (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Alcohol Withdrawal",
+    "aliasesSw": [
+      "general alcohol withdrawal",
+      "Alcohol Withdrawal"
+    ]
   },
   {
     "id": "disease-general-coffee-withdrawal",
@@ -4747,7 +6300,12 @@
       "width": 5184,
       "height": 3456,
       "credit": "File:Too Early (16230481837).jpg — Jim  Bendon from Karratha, Australia (CC BY-SA 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Coffee Withdrawal",
+    "aliasesSw": [
+      "general coffee withdrawal",
+      "Coffee Withdrawal"
+    ]
   },
   {
     "id": "disease-general-drug-withdrawal",
@@ -4764,7 +6322,12 @@
       "width": 4000,
       "height": 3000,
       "credit": "File:Withdrawal Support (38867724635).jpg — The U.S. Food and Drug Administration (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Drug Withdrawal",
+    "aliasesSw": [
+      "general drug withdrawal",
+      "Drug Withdrawal"
+    ]
   },
   {
     "id": "disease-general-cysts-and-polyps",
@@ -4781,7 +6344,12 @@
       "width": 4272,
       "height": 2848,
       "credit": "File:Fundic gland polyp, intermed. mag.jpg — CoRus13 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Cysts And Polyps",
+    "aliasesSw": [
+      "general cysts and polyps",
+      "Cysts And Polyps"
+    ]
   },
   {
     "id": "disease-general-tumors",
@@ -4798,7 +6366,12 @@
       "width": 2048,
       "height": 1134,
       "credit": "File:Brain Tumor MRI.jpg — Oshwah (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Tumors",
+    "aliasesSw": [
+      "general tumors",
+      "Tumors"
+    ]
   },
   {
     "id": "disease-general-skin-cancer",
@@ -4815,7 +6388,13 @@
       "width": 3456,
       "height": 2304,
       "credit": "File:Mus musculus melanoma skin cancer cells in UFV.jpg — Mateus Figueiredo (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Ngozi Cancer",
+    "aliasesSw": [
+      "Ngozi Cancer",
+      "general skin cancer",
+      "Skin Cancer"
+    ]
   },
   {
     "id": "disease-general-cancer",
@@ -4832,7 +6411,15 @@
       "width": 2816,
       "height": 1876,
       "credit": "File:Cancer prostate, with bladder involvement.jpg — Narraburra (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Saratani",
+    "aliasesSw": [
+      "Saratani",
+      "general cancer",
+      "Cancer",
+      "uvimbe wa saratani",
+      "saratani mwilini"
+    ]
   },
   {
     "id": "disease-general-leukemia",
@@ -4849,7 +6436,12 @@
       "width": 2480,
       "height": 3507,
       "credit": "File:Leukemia death rates in EU countries (hy).png — Աննա Ավագիան (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Leukemia",
+    "aliasesSw": [
+      "general leukemia",
+      "Leukemia"
+    ]
   },
   {
     "id": "disease-general-leprosy",
@@ -4866,7 +6458,12 @@
       "width": 1870,
       "height": 2505,
       "credit": "File:Leprosy diagnosis, 16th century.jpg — Hans von Gersdorff (c.1455-1529) (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Leprosy",
+    "aliasesSw": [
+      "general leprosy",
+      "Leprosy"
+    ]
   },
   {
     "id": "disease-general-special-risk-factors",
@@ -4883,7 +6480,12 @@
       "width": 7000,
       "height": 4570,
       "credit": "File:Factors and Brokers Cotton Compressing Co. - Plat 168 (A. Whipple & Co.'s insurance maps, 2nd Series. Special Risks. 1872. Vol. 1) Page 41 - DPLA - 86d6a2f5d36db38da309f02fd2aa21ac.jpg — Whipple, Alphonse (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Special Risk Factors",
+    "aliasesSw": [
+      "general special risk factors",
+      "Special Risk Factors"
+    ]
   },
   {
     "id": "disease-general-miscellaneous-preventative-factors",
@@ -4893,7 +6495,12 @@
     "image": "assets/images/fallbacks/disease.jpg",
     "imageMeta": {
       "credit": "Fallback image"
-    }
+    },
+    "titleSw": "Miscellaneous Preventative Factors",
+    "aliasesSw": [
+      "general miscellaneous preventative factors",
+      "Miscellaneous Preventative Factors"
+    ]
   },
   {
     "id": "disease-general-general-preventative-factors",
@@ -4910,7 +6517,12 @@
       "width": 4644,
       "height": 3136,
       "credit": "File:Western Regional Medical Command Summit focuses on 'Zero Preventable Harm' 150304-A-TG995-841.jpg — Sgt. Ryan Hallock (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "General Preventative Factors",
+    "aliasesSw": [
+      "general general preventative factors",
+      "General Preventative Factors"
+    ]
   },
   {
     "id": "disease-general-deep-breathing-and-exercise",
@@ -4927,7 +6539,13 @@
       "width": 3744,
       "height": 2292,
       "credit": "File:Physical training for business men; basic rules and simple exercises for gaining assured control of the physical self (1917) (14781817181).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Deep Breathing And mazoezi",
+    "aliasesSw": [
+      "Deep Breathing And mazoezi",
+      "general deep breathing and exercise",
+      "Deep Breathing And Exercise"
+    ]
   },
   {
     "id": "disease-general-organs-of-elimination",
@@ -4944,7 +6562,12 @@
       "width": 1480,
       "height": 428,
       "credit": "File:Outlines of comparative physiology touching the structure and development of the races of animals, living and extinct - for the use of schools and colleges (1870) (14802610283).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Organs Of Elimination",
+    "aliasesSw": [
+      "general organs of elimination",
+      "Organs Of Elimination"
+    ]
   },
   {
     "id": "disease-general-chemical-food-additives",
@@ -4961,7 +6584,13 @@
       "width": 1761,
       "height": 1112,
       "credit": "File:Calcium erythorbate.png — Edgar181 (talk) (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Chemical chakula Additives",
+    "aliasesSw": [
+      "Chemical chakula Additives",
+      "general chemical food additives",
+      "Chemical Food Additives"
+    ]
   },
   {
     "id": "disease-general-other-chemicals",
@@ -4978,7 +6607,12 @@
       "width": 1600,
       "height": 1071,
       "credit": "File:Yorkshire Chemicals site - geograph.org.uk - 2737999.jpg — Rick Carn (CC BY-SA 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Other Chemicals",
+    "aliasesSw": [
+      "general other chemicals",
+      "Other Chemicals"
+    ]
   },
   {
     "id": "disease-general-radiation",
@@ -4995,7 +6629,12 @@
       "width": 6000,
       "height": 4000,
       "credit": "File:Radiation detection.jpg — Digitalboyare (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Radiation",
+    "aliasesSw": [
+      "general radiation",
+      "Radiation"
+    ]
   },
   {
     "id": "disease-general-protein",
@@ -5012,7 +6651,12 @@
       "width": 3000,
       "height": 2100,
       "credit": "File:CHOP protein structure.png — Mashaalx (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Protein",
+    "aliasesSw": [
+      "general protein",
+      "Protein"
+    ]
   },
   {
     "id": "disease-general-meat",
@@ -5029,7 +6673,12 @@
       "width": 5178,
       "height": 3882,
       "credit": "File:Meat burek (GAK bakery, Belgrade, Serbia).jpg — Petar Milošević (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Meat",
+    "aliasesSw": [
+      "general meat",
+      "Meat"
+    ]
   },
   {
     "id": "disease-general-dairy-products",
@@ -5046,7 +6695,12 @@
       "width": 6000,
       "height": 4000,
       "credit": "File:2023 Wisconsin State Fair 62 (Wisconsin Products Pavilion--Dairy Products Contest Winners).jpg — Michael Barera (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Dairy Products",
+    "aliasesSw": [
+      "general dairy products",
+      "Dairy Products"
+    ]
   },
   {
     "id": "disease-general-fats-and-rancid-oil",
@@ -5063,7 +6717,12 @@
       "width": 2153,
       "height": 2956,
       "credit": "File:Youth's educator for home and society (1896) (14763568311).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Fats And Rancid Oil",
+    "aliasesSw": [
+      "general fats and rancid oil",
+      "Fats And Rancid Oil"
+    ]
   },
   {
     "id": "disease-general-diet-and-nutrition",
@@ -5080,7 +6739,12 @@
       "width": 3984,
       "height": 2656,
       "credit": "File:EU2024BE Ensuring healthy diets for better nutrition for all (53663367762).jpg — Belgian Presidency of the Council of the EU 2024 from Belgium (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Diet And Nutrition",
+    "aliasesSw": [
+      "general diet and nutrition",
+      "Diet And Nutrition"
+    ]
   },
   {
     "id": "disease-general-cooking",
@@ -5097,7 +6761,12 @@
       "width": 4608,
       "height": 3456,
       "credit": "File:2276Home cooking in the Philippines 59.jpg — Judgefloro (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Cooking",
+    "aliasesSw": [
+      "general cooking",
+      "Cooking"
+    ]
   },
   {
     "id": "disease-general-problem-foods",
@@ -5114,7 +6783,13 @@
       "width": 8064,
       "height": 6144,
       "credit": "File:No Problem STK on the Food Hall at SM City Cebu (2025-01-20).jpg — Wide Awake! (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Tatizo Foods",
+    "aliasesSw": [
+      "Tatizo Foods",
+      "general problem foods",
+      "Problem Foods"
+    ]
   },
   {
     "id": "disease-general-good-foods",
@@ -5131,7 +6806,12 @@
       "width": 4864,
       "height": 2736,
       "credit": "File:Good Foods, Zwolle (2019) 01.jpg — Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Original publication 📤: --Donald Trung 『徵國單』 (No Fake News 💬) (WikiProject Numismatics 💴) (Articles 📚) 09:49, 1 September 2019 (UTC) (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Good Foods",
+    "aliasesSw": [
+      "general good foods",
+      "Good Foods"
+    ]
   },
   {
     "id": "disease-general-vitamins",
@@ -5148,7 +6828,12 @@
       "width": 3543,
       "height": 4742,
       "credit": "File:Crystals of vitamin C.jpg — Doc. RNDr. Josef Reischig, CSc. (CC BY 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Vitamins",
+    "aliasesSw": [
+      "general vitamins",
+      "Vitamins"
+    ]
   },
   {
     "id": "disease-general-minerals",
@@ -5165,7 +6850,12 @@
       "width": 4713,
       "height": 3142,
       "credit": "File:Botryoidal Purple Grape Agate Chalcedony from Indonesia.jpg — JJ Harrison (https://www.jjharrison.com.au/) (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Minerals",
+    "aliasesSw": [
+      "general minerals",
+      "Minerals"
+    ]
   },
   {
     "id": "disease-general-other-nutrients",
@@ -5182,7 +6872,12 @@
       "width": 3264,
       "height": 2448,
       "credit": "File:\"not a significant source of other nutrients\" (33239675964).jpg — Laurel L. Russwurm from Canada (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Other Nutrients",
+    "aliasesSw": [
+      "general other nutrients",
+      "Other Nutrients"
+    ]
   },
   {
     "id": "disease-general-amino-acids",
@@ -5199,7 +6894,12 @@
       "width": 8000,
       "height": 8000,
       "credit": "File:Amino acids chart JPG.jpg — Biochemlife (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Amino Acids",
+    "aliasesSw": [
+      "general amino acids",
+      "Amino Acids"
+    ]
   },
   {
     "id": "disease-general-preventing-cancer",
@@ -5216,6 +6916,11 @@
       "width": 2695,
       "height": 1833,
       "credit": "File:You can play a role in cancer prevention exhibit (1).jpg — National Cancer Institute (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Preventing Cancer",
+    "aliasesSw": [
+      "general preventing cancer",
+      "Preventing Cancer"
+    ]
   }
 ]

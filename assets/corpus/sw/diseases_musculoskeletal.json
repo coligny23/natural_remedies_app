@@ -14,7 +14,17 @@
       "width": 10240,
       "height": 5760,
       "credit": "File:Kind of fractures - Closed fracture Open fracture -- Smart-Servier.jpg — Laboratoires Servier (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Mfupa kuvunjika",
+    "aliasesSw": [
+      "Mfupa kuvunjika",
+      "musculoskeletal fracture",
+      "Fracture",
+      "broken bone",
+      "mfupa uliovunjika",
+      "jeraha la mfupa",
+      "kuvunjika mfupa"
+    ]
   },
   {
     "id": "disease-musculoskeletal-bone-spur",
@@ -31,7 +41,16 @@
       "width": 4896,
       "height": 3672,
       "credit": "File:Bentley Flying Spur V8S (2017) (50037164263).jpg — Andrew Bone (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Mfupa kuchomoza",
+    "aliasesSw": [
+      "Mfupa kuchomoza",
+      "musculoskeletal bone spur",
+      "Bone Spur",
+      "kisigino kuuma",
+      "heel spur",
+      "uvimbe wa mfupa"
+    ]
   },
   {
     "id": "disease-musculoskeletal-chronic-rheumatism",
@@ -48,7 +67,13 @@
       "width": 1643,
       "height": 2708,
       "credit": "File:And I want you to bring home some of Mitchell's Rheumatic Plasters. I find them the best remedy for my old chronic rheumatism. Yes Hubby I recognize your dear voice. - DPLA - 511bdc20bdf071559104ef8e3a4447d4.jpg — DPLA bot (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Sugu rheumatism",
+    "aliasesSw": [
+      "Sugu rheumatism",
+      "musculoskeletal chronic rheumatism",
+      "Chronic Rheumatism"
+    ]
   },
   {
     "id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
@@ -65,7 +90,12 @@
       "width": 2048,
       "height": 1365,
       "credit": "File:PT-TMD Airbus A319 TAM in Retro C-s (8164364944).jpg — Aeroprints.com (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Temporomandibular Joint Syndrome",
+    "aliasesSw": [
+      "musculoskeletal temporomandibular joint syndrome",
+      "Temporomandibular Joint Syndrome"
+    ]
   },
   {
     "id": "disease-musculoskeletal-muscle-cramps",
@@ -82,7 +112,12 @@
       "width": 2440,
       "height": 2452,
       "credit": "File:LHC July 11 2013.jpg — WaltFletcher (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Muscle Cramps",
+    "aliasesSw": [
+      "musculoskeletal muscle cramps",
+      "Muscle Cramps"
+    ]
   },
   {
     "id": "disease-musculoskeletal-muscle-injuries",
@@ -99,7 +134,12 @@
       "width": 5312,
       "height": 2988,
       "credit": "File:First ride after muscle injury 20180621 132443 (41126101360).jpg — LeDucky (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Muscle Injuries",
+    "aliasesSw": [
+      "musculoskeletal muscle injuries",
+      "Muscle Injuries"
+    ]
   },
   {
     "id": "disease-musculoskeletal-backache",
@@ -116,7 +156,16 @@
       "width": 4016,
       "height": 6016,
       "credit": "File:Back view of senior woman in uniform experiencing spine pain at home - 51519393372.jpg — Nenad Stojkovic (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Maumivu ya mgongo",
+    "aliasesSw": [
+      "Maumivu ya mgongo",
+      "musculoskeletal backache",
+      "Backache",
+      "mgongo kuuma",
+      "maumivu ya kiuno",
+      "back pain"
+    ]
   },
   {
     "id": "disease-musculoskeletal-rheumatic-fever",
@@ -133,6 +182,12 @@
       "width": 5770,
       "height": 1982,
       "credit": "File:Rheumatic fever temperature chart Wellcome M0018835.jpg — Fæ (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Rheumatic homa",
+    "aliasesSw": [
+      "Rheumatic homa",
+      "musculoskeletal rheumatic fever",
+      "Rheumatic Fever"
+    ]
   }
 ]

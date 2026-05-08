@@ -4,7 +4,6 @@ evaluate_e5small_hybrid_retrieval.py
 
 Evaluates E5 semantic retrieval with optional lightweight lexical/title reranking.
 
-
 """
 
 import argparse

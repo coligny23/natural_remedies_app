@@ -14,7 +14,18 @@
       "width": 3264,
       "height": 1836,
       "credit": "File:Traitement de la sinusite-1.jpg — MBATAKA (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Sinusitis",
+    "aliasesSw": [
+      "head sinusitis",
+      "Sinusitis",
+      "shida ya sinus",
+      "sinus",
+      "pua kuziba",
+      "maumivu ya uso",
+      "sinus kuvimba",
+      "mafua sugu"
+    ]
   },
   {
     "id": "disease-head-eye-problems",
@@ -31,7 +42,17 @@
       "width": 2224,
       "height": 1366,
       "credit": "File:Fiji-its problems and resources (1921) (14580151547).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Matatizo ya macho",
+    "aliasesSw": [
+      "Matatizo ya macho",
+      "head eye problems",
+      "Eye Problems",
+      "macho",
+      "macho kuuma",
+      "kuona vibaya",
+      "macho kuwasha"
+    ]
   },
   {
     "id": "disease-head-eye-inflammation",
@@ -48,7 +69,13 @@
       "width": 4056,
       "height": 3600,
       "credit": "File:Naked man with spots; woman with red eyes, 14th C Wellcome L0037335.jpg — Fæ (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Jicho uvimbe",
+    "aliasesSw": [
+      "Jicho uvimbe",
+      "head eye inflammation",
+      "Eye Inflammation"
+    ]
   },
   {
     "id": "disease-head-eyestrain",
@@ -65,7 +92,12 @@
       "width": 2768,
       "height": 1664,
       "credit": "File:The health-care of the growing child; (1919) (14594814847).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Eyestrain",
+    "aliasesSw": [
+      "head eyestrain",
+      "Eyestrain"
+    ]
   },
   {
     "id": "disease-head-nearsightedness",
@@ -82,7 +114,12 @@
       "width": 1800,
       "height": 1500,
       "credit": "File:Eye disease simulation, myopia.jpg — National Eye Institute, National Institutes of Health (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Nearsightedness",
+    "aliasesSw": [
+      "head nearsightedness",
+      "Nearsightedness"
+    ]
   },
   {
     "id": "disease-head-yellow-eyes",
@@ -99,7 +136,13 @@
       "width": 3055,
       "height": 2144,
       "credit": "File:Gray cat with yellow eyes.jpg — Nancy Wong (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Yellow macho",
+    "aliasesSw": [
+      "Yellow macho",
+      "head yellow eyes",
+      "Yellow Eyes"
+    ]
   },
   {
     "id": "disease-head-red-eyes",
@@ -116,7 +159,13 @@
       "width": 3592,
       "height": 5304,
       "credit": "File:Veiled in Red.jpg — Charlie Marshall from Bristol UK, United Kingdom. thank you to Gordon (Owlnet Photography) for the idea. (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Red macho",
+    "aliasesSw": [
+      "Red macho",
+      "head red eyes",
+      "Red Eyes"
+    ]
   },
   {
     "id": "disease-head-itchy-eyes",
@@ -133,7 +182,13 @@
       "width": 6016,
       "height": 3384,
       "credit": "File:VOG (37382787455).jpg — Jason Jacobs from Honolulu, USA (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Itchy macho",
+    "aliasesSw": [
+      "Itchy macho",
+      "head itchy eyes",
+      "Itchy Eyes"
+    ]
   },
   {
     "id": "disease-head-dry-tear-ducts",
@@ -150,7 +205,12 @@
       "width": 1608,
       "height": 1852,
       "credit": "File:Florists' review (microform) (16680368905).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Dry Tear Ducts",
+    "aliasesSw": [
+      "head dry tear ducts",
+      "Dry Tear Ducts"
+    ]
   },
   {
     "id": "disease-head-black-eye",
@@ -167,7 +227,13 @@
       "width": 7000,
       "height": 7000,
       "credit": "File:Turquoise Swirls in the Black Sea.jpg — Norman Kuring / NASA (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Black jicho",
+    "aliasesSw": [
+      "Black jicho",
+      "head black eye",
+      "Black Eye"
+    ]
   },
   {
     "id": "disease-head-ulcerated-eye-and-lid",
@@ -184,7 +250,13 @@
       "width": 2204,
       "height": 1806,
       "credit": "File:The elements of surgery - in which are contained all the essential and necessary principles of the art; with an account of the nature and treatment of chirurgical disorders, and a description of the (14763915221).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Ulcerated jicho And Lid",
+    "aliasesSw": [
+      "Ulcerated jicho And Lid",
+      "head ulcerated eye and lid",
+      "Ulcerated Eye And Lid"
+    ]
   },
   {
     "id": "disease-head-mucous-in-eye",
@@ -201,7 +273,13 @@
       "width": 3546,
       "height": 2679,
       "credit": "File:Rabbit with jaundice (eye).jpg — Rabbit Vet (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Mucous In jicho",
+    "aliasesSw": [
+      "Mucous In jicho",
+      "head mucous in eye",
+      "Mucous In Eye"
+    ]
   },
   {
     "id": "disease-head-nosebleed",
@@ -218,7 +296,12 @@
       "width": 3184,
       "height": 2244,
       "credit": "File:Dona Mercedes Velasco's recovery from nosebleed after prayer Wellcome V0017458.jpg — Fæ (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Nosebleed",
+    "aliasesSw": [
+      "head nosebleed",
+      "Nosebleed"
+    ]
   },
   {
     "id": "disease-head-ear-congestion",
@@ -235,7 +318,13 @@
       "width": 2992,
       "height": 1802,
       "credit": "File:Pediatrics - the hygienic and medical treatment of children (1917) (14596071720).jpg — Dunn, Charles Hunter, 1875-1926;\n\nRotch, Thomas Morgan, 1849-1914 (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Sikio Congestion",
+    "aliasesSw": [
+      "Sikio Congestion",
+      "head ear congestion",
+      "Ear Congestion"
+    ]
   },
   {
     "id": "disease-head-earwax",
@@ -252,7 +341,12 @@
       "width": 1920,
       "height": 1080,
       "credit": "File:S1040001.jpg — Fidodog14 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Earwax",
+    "aliasesSw": [
+      "head earwax",
+      "Earwax"
+    ]
   },
   {
     "id": "disease-head-swimmer-s-ear",
@@ -269,7 +363,13 @@
       "width": 3648,
       "height": 2736,
       "credit": "File:Otitis externa.jpg — Klaus D. Peter, Wiehl, Germany (CC BY 3.0 de) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Swimmer'S sikio",
+    "aliasesSw": [
+      "Swimmer'S sikio",
+      "head swimmer s ear",
+      "Swimmer'S Ear"
+    ]
   },
   {
     "id": "disease-head-hearing-loss",
@@ -286,7 +386,12 @@
       "width": 2048,
       "height": 2048,
       "credit": "File:Disabled Furries - hearing impairment.png — GabrielGreenWolf (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hearing Loss",
+    "aliasesSw": [
+      "head hearing loss",
+      "Hearing Loss"
+    ]
   },
   {
     "id": "disease-head-sore-throat",
@@ -303,7 +408,17 @@
       "width": 3008,
       "height": 1960,
       "credit": "File:US Navy 040113-N-4614W-005 Capt. Wan Mun Chin examines a patient suffering from a sore throat and high fever.jpg — U.S. Navy photo by Journalist 1st Class Jeremy L. Wood. (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Koo kuuma",
+    "aliasesSw": [
+      "Koo kuuma",
+      "head sore throat",
+      "Sore Throat",
+      "maumivu ya koo",
+      "koo kuwasha",
+      "tonsils",
+      "tonsillitis"
+    ]
   },
   {
     "id": "disease-head-tooth-decay",
@@ -320,7 +435,12 @@
       "width": 3456,
       "height": 2304,
       "credit": "File:Dental Caries Cavity 2.JPG — Suyash.dwivedi (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Tooth Decay",
+    "aliasesSw": [
+      "head tooth decay",
+      "Tooth Decay"
+    ]
   },
   {
     "id": "disease-head-heartburn",
@@ -337,7 +457,12 @@
       "width": 6016,
       "height": 4016,
       "credit": "File:Pyrosis wangi (40485279452).jpg — LiCheng Shih (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Heartburn",
+    "aliasesSw": [
+      "head heartburn",
+      "Heartburn"
+    ]
   },
   {
     "id": "disease-head-reye-s-syndrome",
@@ -354,7 +479,12 @@
       "width": 2096,
       "height": 2744,
       "credit": "File:Rx for flu or chicken pox- kindness (4647271145).jpg — National Library of Medicine - History of Medicine (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Reye'S Syndrome",
+    "aliasesSw": [
+      "head reye s syndrome",
+      "Reye'S Syndrome"
+    ]
   },
   {
     "id": "disease-head-sorrow-of-the-heart",
@@ -371,6 +501,11 @@
       "width": 5667,
       "height": 3376,
       "credit": "File:Garcia Mallarini presenting 'Melody of a Sorrow Heart'.jpg — Madmancreativelab (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Sorrow Of The Heart",
+    "aliasesSw": [
+      "head sorrow of the heart",
+      "Sorrow Of The Heart"
+    ]
   }
 ]

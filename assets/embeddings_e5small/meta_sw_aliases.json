@@ -1,0 +1,6251 @@
+[
+  {
+    "id": "disease-digestive-leg-ulcers",
+    "title": "Leg Ulcers",
+    "titleSw": "Vidonda vya miguu",
+    "aliasesSw": [
+      "Vidonda vya miguu",
+      "digestive leg ulcers",
+      "Leg Ulcers",
+      "vidonda miguuni",
+      "vidonda vya wazi miguuni",
+      "vidonda vya ngozi miguuni",
+      "mzunguko mbaya wa damu miguuni"
+    ],
+    "source_file": "diseases_digestive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-indigestion",
+    "title": "Indigestion",
+    "titleSw": "Kumeza chakula vibaya",
+    "aliasesSw": [
+      "Kumeza chakula vibaya",
+      "digestive indigestion",
+      "Indigestion",
+      "dyspepsia",
+      "gesi tumboni",
+      "tumbo kujaa",
+      "tumbo kujaa gesi",
+      "kiungulia",
+      "belching",
+      "bloating",
+      "heartburn",
+      "chakula hakishuki vizuri",
+      "kushindwa kumeng’enya chakula",
+      "kushindwa kumeng'enya chakula"
+    ],
+    "source_file": "diseases_digestive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-enlarged-stomach",
+    "title": "Enlarged Stomach",
+    "titleSw": "Enlarged tumbo",
+    "aliasesSw": [
+      "Enlarged tumbo",
+      "digestive enlarged stomach",
+      "Enlarged Stomach"
+    ],
+    "source_file": "diseases_digestive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-stomach-inflammation",
+    "title": "Stomach Inflammation",
+    "titleSw": "Uvimbe wa tumbo",
+    "aliasesSw": [
+      "Uvimbe wa tumbo",
+      "digestive stomach inflammation",
+      "Stomach Inflammation",
+      "gastritis",
+      "gastric catarrh",
+      "tumbo kuvimba",
+      "tumbo linauma",
+      "maumivu ya tumbo",
+      "uchochezi wa tumbo",
+      "kuvimba kwa tumbo"
+    ],
+    "source_file": "diseases_digestive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-gastroenteritis",
+    "title": "Gastroenteritis",
+    "titleSw": "Gastroenteritis",
+    "aliasesSw": [
+      "digestive gastroenteritis",
+      "Gastroenteritis",
+      "tumbo kuharibika",
+      "kuhara na kutapika",
+      "maambukizi ya tumbo",
+      "kuharisha",
+      "kutapika",
+      "stomach flu",
+      "ugonjwa wa tumbo"
+    ],
+    "source_file": "diseases_digestive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-chronic-gastritis",
+    "title": "Chronic Gastritis",
+    "titleSw": "Gastritis ya muda mrefu",
+    "aliasesSw": [
+      "Gastritis ya muda mrefu",
+      "digestive chronic gastritis",
+      "Chronic Gastritis",
+      "gastritis sugu",
+      "maumivu ya tumbo ya muda mrefu",
+      "tumbo kuuma muda mrefu",
+      "uchochezi wa tumbo sugu"
+    ],
+    "source_file": "diseases_digestive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-hepatitis",
+    "title": "Hepatitis",
+    "titleSw": "Hepatitis",
+    "aliasesSw": [
+      "digestive hepatitis",
+      "Hepatitis",
+      "maambukizi ya ini",
+      "ugonjwa wa ini",
+      "ini kuvimba",
+      "uvimbe wa ini",
+      "hepatitis ya ini"
+    ],
+    "source_file": "diseases_digestive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-gallbladder-inflammation",
+    "title": "Gallbladder Inflammation",
+    "titleSw": "Uvimbe wa nyongo",
+    "aliasesSw": [
+      "Uvimbe wa nyongo",
+      "digestive gallbladder inflammation",
+      "Gallbladder Inflammation",
+      "nyongo kuvimba",
+      "uvimbe wa gallbladder",
+      "maumivu ya nyongo",
+      "kibofu cha nyongo"
+    ],
+    "source_file": "diseases_digestive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-chronic-diarrhea",
+    "title": "Chronic Diarrhea",
+    "titleSw": "Kuhara kwa muda mrefu",
+    "aliasesSw": [
+      "Kuhara kwa muda mrefu",
+      "digestive chronic diarrhea",
+      "Chronic Diarrhea",
+      "kuharisha muda mrefu",
+      "kuhara sugu",
+      "choo cha maji kwa muda mrefu",
+      "dawa ya kuharisha"
+    ],
+    "source_file": "diseases_digestive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-irritable-bowel-syndrome",
+    "title": "Irritable Bowel Syndrome",
+    "titleSw": "Irritable Bowel Syndrome",
+    "aliasesSw": [
+      "digestive irritable bowel syndrome",
+      "Irritable Bowel Syndrome",
+      "IBS",
+      "utumbo wenye hasira",
+      "tumbo linauma na gesi",
+      "gesi tumboni",
+      "maumivu ya tumbo",
+      "utumbo kukasirika"
+    ],
+    "source_file": "diseases_digestive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-diarrhea-in-infants",
+    "title": "Diarrhea In Infants",
+    "titleSw": "Kuhara kwa watoto wachanga",
+    "aliasesSw": [
+      "Kuhara kwa watoto wachanga",
+      "digestive diarrhea in infants",
+      "Diarrhea In Infants",
+      "mtoto mchanga kuharisha",
+      "kuhara kwa mtoto",
+      "kuharisha kwa mtoto mchanga",
+      "infant diarrhea",
+      "choo cha maji kwa mtoto"
+    ],
+    "source_file": "diseases_digestive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-debility",
+    "title": "Debility",
+    "titleSw": "Udhaifu wa mwili",
+    "aliasesSw": [
+      "Udhaifu wa mwili",
+      "general debility",
+      "Debility",
+      "mwili dhaifu",
+      "kukosa nguvu",
+      "udhaifu",
+      "uchovu"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-emotional-fatigue-syndrome",
+    "title": "Emotional Fatigue Syndrome",
+    "titleSw": "Kihisia uchovu Syndrome",
+    "aliasesSw": [
+      "Kihisia uchovu Syndrome",
+      "general emotional fatigue syndrome",
+      "Emotional Fatigue Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chronic-fatigue",
+    "title": "Chronic Fatigue",
+    "titleSw": "Uchovu sugu",
+    "aliasesSw": [
+      "Uchovu sugu",
+      "general chronic fatigue",
+      "Chronic Fatigue",
+      "uchovu wa muda mrefu",
+      "uchovu kila wakati",
+      "udhaifu wa mwili",
+      "kukosa nguvu"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-epstein-barr-virus",
+    "title": "Epstein Barr Virus",
+    "titleSw": "Epstein Barr Virus",
+    "aliasesSw": [
+      "general epstein barr virus",
+      "Epstein Barr Virus"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-candidiasis",
+    "title": "Candidiasis",
+    "titleSw": "Candidiasis",
+    "aliasesSw": [
+      "general candidiasis",
+      "Candidiasis",
+      "candida",
+      "maambukizi ya chachu",
+      "thrush",
+      "fangasi",
+      "uke kuwasha",
+      "maambukizi ya candida"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-jet-lag",
+    "title": "Jet Lag",
+    "titleSw": "Jet Lag",
+    "aliasesSw": [
+      "general jet lag",
+      "Jet Lag"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-nausea",
+    "title": "Nausea",
+    "titleSw": "Kichefuchefu",
+    "aliasesSw": [
+      "Kichefuchefu",
+      "general nausea",
+      "Nausea",
+      "kutapika",
+      "kutaka kutapika",
+      "tumbo kuchafuka",
+      "ugonjwa wa mwendo"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-fainting",
+    "title": "Fainting",
+    "titleSw": "Kuzimia",
+    "aliasesSw": [
+      "Kuzimia",
+      "general fainting",
+      "Fainting",
+      "syncope",
+      "kupoteza fahamu",
+      "kuanguka na kuzimia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-heat-exhaustion",
+    "title": "Heat Exhaustion",
+    "titleSw": "Kuchoka kwa joto",
+    "aliasesSw": [
+      "Kuchoka kwa joto",
+      "general heat exhaustion",
+      "Heat Exhaustion",
+      "joto kali",
+      "kupungukiwa maji",
+      "uchovu kwa jua"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-motion-sickness",
+    "title": "Motion Sickness",
+    "titleSw": "Kichefuchefu cha safari",
+    "aliasesSw": [
+      "Kichefuchefu cha safari",
+      "general motion sickness",
+      "Motion Sickness",
+      "car sickness",
+      "sea sickness",
+      "kichefuchefu kwenye gari",
+      "kutapika safarini"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-catarrh",
+    "title": "Catarrh",
+    "titleSw": "Kamasi nyingi",
+    "aliasesSw": [
+      "Kamasi nyingi",
+      "general catarrh",
+      "Catarrh",
+      "mucus",
+      "kamasi",
+      "pua kutoa kamasi",
+      "msongamano wa pua"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chills",
+    "title": "Chills",
+    "titleSw": "Baridi kali",
+    "aliasesSw": [
+      "Baridi kali",
+      "general chills",
+      "Chills",
+      "kutetemeka",
+      "baridi mwilini",
+      "mwili kutetemeka"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-viral-infections",
+    "title": "Viral Infections",
+    "titleSw": "Maambukizi ya virusi",
+    "aliasesSw": [
+      "Maambukizi ya virusi",
+      "general viral infections",
+      "Viral Infections",
+      "virusi",
+      "maambukizi ya virus",
+      "homa ya virusi",
+      "mafua ya virusi"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-inflammation",
+    "title": "Inflammation",
+    "titleSw": "Uvimbe/uchochezi",
+    "aliasesSw": [
+      "Uvimbe/uchochezi",
+      "general inflammation",
+      "Inflammation",
+      "kuvimba",
+      "uchochezi",
+      "uvimbe",
+      "maumivu na kuvimba"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-fever",
+    "title": "Fever",
+    "titleSw": "Homa",
+    "aliasesSw": [
+      "Homa",
+      "general fever",
+      "Fever",
+      "joto la mwili",
+      "mwili kuwa na joto",
+      "homa kali",
+      "kuungua mwili",
+      "joto kali"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-malaria",
+    "title": "Malaria",
+    "titleSw": "Malaria",
+    "aliasesSw": [
+      "general malaria",
+      "Malaria",
+      "homa ya malaria",
+      "mbu",
+      "baridi na homa",
+      "malaria fever"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-typhoid-fever",
+    "title": "Typhoid Fever",
+    "titleSw": "Typhoid homa",
+    "aliasesSw": [
+      "Typhoid homa",
+      "general typhoid fever",
+      "Typhoid Fever"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-weakened-autoimmune-system",
+    "title": "Weakened Autoimmune System",
+    "titleSw": "Weakened Autoimmune System",
+    "aliasesSw": [
+      "general weakened autoimmune system",
+      "Weakened Autoimmune System"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-lupus",
+    "title": "Lupus",
+    "titleSw": "Lupus",
+    "aliasesSw": [
+      "general lupus",
+      "Lupus"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-sjogren-s-syndrome",
+    "title": "Sjogren'S Syndrome",
+    "titleSw": "Sjogren'S Syndrome",
+    "aliasesSw": [
+      "general sjogren s syndrome",
+      "Sjogren'S Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-aging",
+    "title": "Aging",
+    "titleSw": "Aging",
+    "aliasesSw": [
+      "general aging",
+      "Aging"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-skin-problems",
+    "title": "Skin Problems",
+    "titleSw": "Ngozi matatizo",
+    "aliasesSw": [
+      "Ngozi matatizo",
+      "general skin problems",
+      "Skin Problems"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bruising",
+    "title": "Bruising",
+    "titleSw": "Bruising",
+    "aliasesSw": [
+      "general bruising",
+      "Bruising"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-easy-bruising",
+    "title": "Easy Bruising",
+    "titleSw": "Easy Bruising",
+    "aliasesSw": [
+      "general easy bruising",
+      "Easy Bruising"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-intertrigo",
+    "title": "Intertrigo",
+    "titleSw": "Intertrigo",
+    "aliasesSw": [
+      "general intertrigo",
+      "Intertrigo"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-swelling",
+    "title": "Swelling",
+    "titleSw": "Swelling",
+    "aliasesSw": [
+      "general swelling",
+      "Swelling"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-scarring",
+    "title": "Scarring",
+    "titleSw": "Scarring",
+    "aliasesSw": [
+      "general scarring",
+      "Scarring"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-blisters",
+    "title": "Blisters",
+    "titleSw": "Blisters",
+    "aliasesSw": [
+      "general blisters",
+      "Blisters"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-canker-sores",
+    "title": "Canker Sores",
+    "titleSw": "Canker Sores",
+    "aliasesSw": [
+      "general canker sores",
+      "Canker Sores"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bed-sores",
+    "title": "Bed Sores",
+    "titleSw": "Bed Sores",
+    "aliasesSw": [
+      "general bed sores",
+      "Bed Sores"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-moles",
+    "title": "Moles",
+    "titleSw": "Moles",
+    "aliasesSw": [
+      "general moles",
+      "Moles"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-blackheads",
+    "title": "Blackheads",
+    "titleSw": "Blackheads",
+    "aliasesSw": [
+      "general blackheads",
+      "Blackheads"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-age-spots",
+    "title": "Age Spots",
+    "titleSw": "Age Spots",
+    "aliasesSw": [
+      "general age spots",
+      "Age Spots"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chapped-hands",
+    "title": "Chapped Hands",
+    "titleSw": "Mikono kupasuka",
+    "aliasesSw": [
+      "Mikono kupasuka",
+      "general chapped hands",
+      "Chapped Hands",
+      "mikono mikavu",
+      "ngozi ya mikono kupasuka"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chapped-lips",
+    "title": "Chapped Lips",
+    "titleSw": "Chapped Lips",
+    "aliasesSw": [
+      "general chapped lips",
+      "Chapped Lips"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-scabies",
+    "title": "Scabies",
+    "titleSw": "Scabies",
+    "aliasesSw": [
+      "general scabies",
+      "Scabies"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-wens",
+    "title": "Wens",
+    "titleSw": "Wens",
+    "aliasesSw": [
+      "general wens",
+      "Wens"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-oily-skin",
+    "title": "Oily Skin",
+    "titleSw": "Oily ngozi",
+    "aliasesSw": [
+      "Oily ngozi",
+      "general oily skin",
+      "Oily Skin"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-prickly-heat",
+    "title": "Prickly Heat",
+    "titleSw": "Prickly joto",
+    "aliasesSw": [
+      "Prickly joto",
+      "general prickly heat",
+      "Prickly Heat"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-rosacea",
+    "title": "Rosacea",
+    "titleSw": "Rosacea",
+    "aliasesSw": [
+      "general rosacea",
+      "Rosacea"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-enlarged-pores",
+    "title": "Enlarged Pores",
+    "titleSw": "Enlarged Pores",
+    "aliasesSw": [
+      "general enlarged pores",
+      "Enlarged Pores"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-wrinkles",
+    "title": "Wrinkles",
+    "titleSw": "Wrinkles",
+    "aliasesSw": [
+      "general wrinkles",
+      "Wrinkles"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-night-sweats",
+    "title": "Night Sweats",
+    "titleSw": "Night Sweats",
+    "aliasesSw": [
+      "general night sweats",
+      "Night Sweats"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-body-odor",
+    "title": "Body Odor",
+    "titleSw": "Body Odor",
+    "aliasesSw": [
+      "general body odor",
+      "Body Odor"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-skin-disorders",
+    "title": "Skin Disorders",
+    "titleSw": "Ngozi Disorders",
+    "aliasesSw": [
+      "Ngozi Disorders",
+      "general skin disorders",
+      "Skin Disorders"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hives",
+    "title": "Hives",
+    "titleSw": "Upele wa mzio",
+    "aliasesSw": [
+      "Upele wa mzio",
+      "general hives",
+      "Hives",
+      "urticaria",
+      "mzio wa ngozi",
+      "upele unaowasha",
+      "ngozi kuwasha"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-impetigo",
+    "title": "Impetigo",
+    "titleSw": "Impetigo",
+    "aliasesSw": [
+      "general impetigo",
+      "Impetigo"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-shingles",
+    "title": "Shingles",
+    "titleSw": "Shingles",
+    "aliasesSw": [
+      "general shingles",
+      "Shingles"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-keratosis",
+    "title": "Keratosis",
+    "titleSw": "Keratosis",
+    "aliasesSw": [
+      "general keratosis",
+      "Keratosis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-leukoderma",
+    "title": "Leukoderma",
+    "titleSw": "Leukoderma",
+    "aliasesSw": [
+      "general leukoderma",
+      "Leukoderma"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-numb-extremities",
+    "title": "Numb Extremities",
+    "titleSw": "Numb Extremities",
+    "aliasesSw": [
+      "general numb extremities",
+      "Numb Extremities"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-felon",
+    "title": "Felon",
+    "titleSw": "Felon",
+    "aliasesSw": [
+      "general felon",
+      "Felon"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-erythromelalgia",
+    "title": "Erythromelalgia",
+    "titleSw": "Erythromelalgia",
+    "aliasesSw": [
+      "general erythromelalgia",
+      "Erythromelalgia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-gangrene",
+    "title": "Gangrene",
+    "titleSw": "Gangrene",
+    "aliasesSw": [
+      "general gangrene",
+      "Gangrene"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-raynaud-s-disease",
+    "title": "Raynaud'S Disease",
+    "titleSw": "Raynaud'S ugonjwa",
+    "aliasesSw": [
+      "Raynaud'S ugonjwa",
+      "general raynaud s disease",
+      "Raynaud'S Disease"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-buerger-s-disease",
+    "title": "Buerger'S Disease",
+    "titleSw": "Buerger'S ugonjwa",
+    "aliasesSw": [
+      "Buerger'S ugonjwa",
+      "general buerger s disease",
+      "Buerger'S Disease"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-nail-problems",
+    "title": "Nail Problems",
+    "titleSw": "Nail matatizo",
+    "aliasesSw": [
+      "Nail matatizo",
+      "general nail problems",
+      "Nail Problems"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-ingrown-nails",
+    "title": "Ingrown Nails",
+    "titleSw": "Ingrown Nails",
+    "aliasesSw": [
+      "general ingrown nails",
+      "Ingrown Nails"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-foot-problems",
+    "title": "Foot Problems",
+    "titleSw": "Foot matatizo",
+    "aliasesSw": [
+      "Foot matatizo",
+      "general foot problems",
+      "Foot Problems"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-corns-and-calluses",
+    "title": "Corns And Calluses",
+    "titleSw": "Corns And Calluses",
+    "aliasesSw": [
+      "general corns and calluses",
+      "Corns And Calluses"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-foot-aches",
+    "title": "Foot Aches",
+    "titleSw": "Foot Aches",
+    "aliasesSw": [
+      "general foot aches",
+      "Foot Aches"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-foot-odor",
+    "title": "Foot Odor",
+    "titleSw": "Foot Odor",
+    "aliasesSw": [
+      "general foot odor",
+      "Foot Odor"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-flat-feet",
+    "title": "Flat Feet",
+    "titleSw": "Flat Feet",
+    "aliasesSw": [
+      "general flat feet",
+      "Flat Feet"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-athlete-s-foot",
+    "title": "Athlete'S Foot",
+    "titleSw": "Athlete'S Foot",
+    "aliasesSw": [
+      "general athlete s foot",
+      "Athlete'S Foot"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-dandruff",
+    "title": "Dandruff",
+    "titleSw": "Dandruff",
+    "aliasesSw": [
+      "general dandruff",
+      "Dandruff"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-oily-hair",
+    "title": "Oily Hair",
+    "titleSw": "Oily Hair",
+    "aliasesSw": [
+      "general oily hair",
+      "Oily Hair"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-dry-hair",
+    "title": "Dry Hair",
+    "titleSw": "Dry Hair",
+    "aliasesSw": [
+      "general dry hair",
+      "Dry Hair"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-gray-hair",
+    "title": "Gray Hair",
+    "titleSw": "Gray Hair",
+    "aliasesSw": [
+      "general gray hair",
+      "Gray Hair"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-ingrown-hair",
+    "title": "Ingrown Hair",
+    "titleSw": "Ingrown Hair",
+    "aliasesSw": [
+      "general ingrown hair",
+      "Ingrown Hair"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-farsightedness",
+    "title": "Farsightedness",
+    "titleSw": "Farsightedness",
+    "aliasesSw": [
+      "general farsightedness",
+      "Farsightedness"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-amblyopia",
+    "title": "Amblyopia",
+    "titleSw": "Amblyopia",
+    "aliasesSw": [
+      "general amblyopia",
+      "Amblyopia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-keratomalacia",
+    "title": "Keratomalacia",
+    "titleSw": "Keratomalacia",
+    "aliasesSw": [
+      "general keratomalacia",
+      "Keratomalacia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-night-blindness",
+    "title": "Night Blindness",
+    "titleSw": "Night Blindness",
+    "aliasesSw": [
+      "general night blindness",
+      "Night Blindness"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cataracts",
+    "title": "Cataracts",
+    "titleSw": "Cataracts",
+    "aliasesSw": [
+      "general cataracts",
+      "Cataracts"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-sty",
+    "title": "Sty",
+    "titleSw": "Sty",
+    "aliasesSw": [
+      "general sty",
+      "Sty"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-scotoma",
+    "title": "Scotoma",
+    "titleSw": "Scotoma",
+    "aliasesSw": [
+      "general scotoma",
+      "Scotoma"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-photophobia",
+    "title": "Photophobia",
+    "titleSw": "Photophobia",
+    "aliasesSw": [
+      "general photophobia",
+      "Photophobia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chalazion",
+    "title": "Chalazion",
+    "titleSw": "Chalazion",
+    "aliasesSw": [
+      "general chalazion",
+      "Chalazion"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-conjunctivitis",
+    "title": "Conjunctivitis",
+    "titleSw": "Conjunctivitis",
+    "aliasesSw": [
+      "general conjunctivitis",
+      "Conjunctivitis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-glaucoma",
+    "title": "Glaucoma",
+    "titleSw": "Glaucoma",
+    "aliasesSw": [
+      "general glaucoma",
+      "Glaucoma"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-anosmia",
+    "title": "Anosmia",
+    "titleSw": "Anosmia",
+    "aliasesSw": [
+      "general anosmia",
+      "Anosmia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-nasal-cuts-and-infections",
+    "title": "Nasal Cuts And Infections",
+    "titleSw": "Nasal Cuts And maambukizi",
+    "aliasesSw": [
+      "Nasal Cuts And maambukizi",
+      "general nasal cuts and infections",
+      "Nasal Cuts And Infections"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-meniere-s-syndrome",
+    "title": "Meniere'S Syndrome",
+    "titleSw": "Meniere'S Syndrome",
+    "aliasesSw": [
+      "general meniere s syndrome",
+      "Meniere'S Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tinnitus",
+    "title": "Tinnitus",
+    "titleSw": "Tinnitus",
+    "aliasesSw": [
+      "general tinnitus",
+      "Tinnitus"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pharyngitis",
+    "title": "Pharyngitis",
+    "titleSw": "Pharyngitis",
+    "aliasesSw": [
+      "general pharyngitis",
+      "Pharyngitis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-snoring",
+    "title": "Snoring",
+    "titleSw": "Snoring",
+    "aliasesSw": [
+      "general snoring",
+      "Snoring"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bruxism",
+    "title": "Bruxism",
+    "titleSw": "Bruxism",
+    "aliasesSw": [
+      "general bruxism",
+      "Bruxism"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-calculus",
+    "title": "Calculus",
+    "titleSw": "Calculus",
+    "aliasesSw": [
+      "general calculus",
+      "Calculus"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-gingivitis",
+    "title": "Gingivitis",
+    "titleSw": "Gingivitis",
+    "aliasesSw": [
+      "general gingivitis",
+      "Gingivitis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pyorrhea",
+    "title": "Pyorrhea",
+    "titleSw": "Pyorrhea",
+    "aliasesSw": [
+      "general pyorrhea",
+      "Pyorrhea"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-denture-troubles",
+    "title": "Denture Troubles",
+    "titleSw": "Denture Troubles",
+    "aliasesSw": [
+      "general denture troubles",
+      "Denture Troubles"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-saliva-problems",
+    "title": "Saliva Problems",
+    "titleSw": "Saliva matatizo",
+    "aliasesSw": [
+      "Saliva matatizo",
+      "general saliva problems",
+      "Saliva Problems"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-halitosis",
+    "title": "Halitosis",
+    "titleSw": "Halitosis",
+    "aliasesSw": [
+      "general halitosis",
+      "Halitosis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cheilosis",
+    "title": "Cheilosis",
+    "titleSw": "Cheilosis",
+    "aliasesSw": [
+      "general cheilosis",
+      "Cheilosis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hiccup",
+    "title": "Hiccup",
+    "titleSw": "Hiccup",
+    "aliasesSw": [
+      "general hiccup",
+      "Hiccup"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-belching",
+    "title": "Belching",
+    "titleSw": "Belching",
+    "aliasesSw": [
+      "general belching",
+      "Belching"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bloating",
+    "title": "Bloating",
+    "titleSw": "Tumbo kujaa gesi",
+    "aliasesSw": [
+      "Tumbo kujaa gesi",
+      "general bloating",
+      "Bloating",
+      "gesi tumboni",
+      "tumbo kujaa",
+      "tumbo limejaa",
+      "kuvimbiwa na gesi"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hiatal-hernia",
+    "title": "Hiatal Hernia",
+    "titleSw": "Hiatal Hernia",
+    "aliasesSw": [
+      "general hiatal hernia",
+      "Hiatal Hernia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-vomiting",
+    "title": "Vomiting",
+    "titleSw": "Kutapika",
+    "aliasesSw": [
+      "Kutapika",
+      "general vomiting",
+      "Vomiting",
+      "tapika",
+      "kutapika sana",
+      "kichefuchefu"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-dyspepsia",
+    "title": "Dyspepsia",
+    "titleSw": "Dyspepsia",
+    "aliasesSw": [
+      "general dyspepsia",
+      "Dyspepsia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-nervous-dyspepsia",
+    "title": "Nervous Dyspepsia",
+    "titleSw": "Nervous Dyspepsia",
+    "aliasesSw": [
+      "general nervous dyspepsia",
+      "Nervous Dyspepsia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-achlorhydria",
+    "title": "Achlorhydria",
+    "titleSw": "Achlorhydria",
+    "aliasesSw": [
+      "general achlorhydria",
+      "Achlorhydria"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hydrochloric-acid-problems",
+    "title": "Hydrochloric Acid Problems",
+    "titleSw": "Hydrochloric Acid matatizo",
+    "aliasesSw": [
+      "Hydrochloric Acid matatizo",
+      "general hydrochloric acid problems",
+      "Hydrochloric Acid Problems"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pancreatitis",
+    "title": "Pancreatitis",
+    "titleSw": "Pancreatitis",
+    "aliasesSw": [
+      "general pancreatitis",
+      "Pancreatitis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-infectious-jaundice",
+    "title": "Infectious Jaundice",
+    "titleSw": "Infectious Jaundice",
+    "aliasesSw": [
+      "general infectious jaundice",
+      "Infectious Jaundice"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-dumping-syndrome",
+    "title": "Dumping Syndrome",
+    "titleSw": "Dumping Syndrome",
+    "aliasesSw": [
+      "general dumping syndrome",
+      "Dumping Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-turista",
+    "title": "Turista",
+    "titleSw": "Turista",
+    "aliasesSw": [
+      "general turista",
+      "Turista"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-colitis",
+    "title": "Colitis",
+    "titleSw": "Colitis",
+    "aliasesSw": [
+      "general colitis",
+      "Colitis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-crohn-s-disease",
+    "title": "Crohn'S Disease",
+    "titleSw": "Crohn'S ugonjwa",
+    "aliasesSw": [
+      "Crohn'S ugonjwa",
+      "general crohn s disease",
+      "Crohn'S Disease"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-diverticulitis",
+    "title": "Diverticulitis",
+    "titleSw": "Diverticulitis",
+    "aliasesSw": [
+      "general diverticulitis",
+      "Diverticulitis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-rectal-fissures",
+    "title": "Rectal Fissures",
+    "titleSw": "Rectal Fissures",
+    "aliasesSw": [
+      "general rectal fissures",
+      "Rectal Fissures"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-rectal-itching",
+    "title": "Rectal Itching",
+    "titleSw": "Rectal kuwashwa",
+    "aliasesSw": [
+      "Rectal kuwashwa",
+      "general rectal itching",
+      "Rectal Itching"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-anorexia-nervosa",
+    "title": "Anorexia Nervosa",
+    "titleSw": "Anorexia Nervosa",
+    "aliasesSw": [
+      "general anorexia nervosa",
+      "Anorexia Nervosa"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bulimia",
+    "title": "Bulimia",
+    "titleSw": "Bulimia",
+    "aliasesSw": [
+      "general bulimia",
+      "Bulimia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-celiac-disease",
+    "title": "Celiac Disease",
+    "titleSw": "Celiac ugonjwa",
+    "aliasesSw": [
+      "Celiac ugonjwa",
+      "general celiac disease",
+      "Celiac Disease"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-lactose-intolerance",
+    "title": "Lactose Intolerance",
+    "titleSw": "Lactose Intolerance",
+    "aliasesSw": [
+      "general lactose intolerance",
+      "Lactose Intolerance"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-wilson-s-disease",
+    "title": "Wilson'S Disease",
+    "titleSw": "Wilson'S ugonjwa",
+    "aliasesSw": [
+      "Wilson'S ugonjwa",
+      "general wilson s disease",
+      "Wilson'S Disease"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-emaciation",
+    "title": "Emaciation",
+    "titleSw": "Emaciation",
+    "aliasesSw": [
+      "general emaciation",
+      "Emaciation"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pica",
+    "title": "Pica",
+    "titleSw": "Pica",
+    "aliasesSw": [
+      "general pica",
+      "Pica"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-malabsorption-syndrome",
+    "title": "Malabsorption Syndrome",
+    "titleSw": "Malabsorption Syndrome",
+    "aliasesSw": [
+      "general malabsorption syndrome",
+      "Malabsorption Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-beriberi",
+    "title": "Beriberi",
+    "titleSw": "Beriberi",
+    "aliasesSw": [
+      "general beriberi",
+      "Beriberi"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pellagra",
+    "title": "Pellagra",
+    "titleSw": "Pellagra",
+    "aliasesSw": [
+      "general pellagra",
+      "Pellagra"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-scurvy",
+    "title": "Scurvy",
+    "titleSw": "Scurvy",
+    "aliasesSw": [
+      "general scurvy",
+      "Scurvy"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-kwashiorkor",
+    "title": "Kwashiorkor",
+    "titleSw": "Kwashiorkor",
+    "aliasesSw": [
+      "general kwashiorkor",
+      "Kwashiorkor"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-underweight",
+    "title": "Underweight",
+    "titleSw": "Underweight",
+    "aliasesSw": [
+      "general underweight",
+      "Underweight"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cellulite",
+    "title": "Cellulite",
+    "titleSw": "Cellulite",
+    "aliasesSw": [
+      "general cellulite",
+      "Cellulite"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-urine-problems",
+    "title": "Urine Problems",
+    "titleSw": "Urine matatizo",
+    "aliasesSw": [
+      "Urine matatizo",
+      "general urine problems",
+      "Urine Problems"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-urine-retention",
+    "title": "Urine Retention",
+    "titleSw": "Urine Retention",
+    "aliasesSw": [
+      "general urine retention",
+      "Urine Retention"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hematuria",
+    "title": "Hematuria",
+    "titleSw": "Hematuria",
+    "aliasesSw": [
+      "general hematuria",
+      "Hematuria"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bright-s-disease",
+    "title": "Bright'S Disease",
+    "titleSw": "Bright'S ugonjwa",
+    "aliasesSw": [
+      "Bright'S ugonjwa",
+      "general bright s disease",
+      "Bright'S Disease"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-edema",
+    "title": "Edema",
+    "titleSw": "Edema",
+    "aliasesSw": [
+      "general edema",
+      "Edema"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-postnasal-drip",
+    "title": "Postnasal Drip",
+    "titleSw": "Postnasal Drip",
+    "aliasesSw": [
+      "general postnasal drip",
+      "Postnasal Drip"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-suffocation",
+    "title": "Suffocation",
+    "titleSw": "Suffocation",
+    "aliasesSw": [
+      "general suffocation",
+      "Suffocation"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-lung-congestion",
+    "title": "Lung Congestion",
+    "titleSw": "Lung Congestion",
+    "aliasesSw": [
+      "general lung congestion",
+      "Lung Congestion"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-emphysema",
+    "title": "Emphysema",
+    "titleSw": "Emphysema",
+    "aliasesSw": [
+      "general emphysema",
+      "Emphysema"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-legionnaire-s-disease",
+    "title": "Legionnaire'S Disease",
+    "titleSw": "Legionnaire'S ugonjwa",
+    "aliasesSw": [
+      "Legionnaire'S ugonjwa",
+      "general legionnaire s disease",
+      "Legionnaire'S Disease"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-q-fever",
+    "title": "Q Fever",
+    "titleSw": "Q homa",
+    "aliasesSw": [
+      "Q homa",
+      "general q fever",
+      "Q Fever"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-atherosclerosis",
+    "title": "Atherosclerosis",
+    "titleSw": "Atherosclerosis",
+    "aliasesSw": [
+      "general atherosclerosis",
+      "Atherosclerosis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-varicose-veins",
+    "title": "Varicose Veins",
+    "titleSw": "Varicose Veins",
+    "aliasesSw": [
+      "general varicose veins",
+      "Varicose Veins"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-poor-circulation-and-chills",
+    "title": "Poor Circulation And Chills",
+    "titleSw": "Poor Circulation And baridi kali",
+    "aliasesSw": [
+      "Poor Circulation And baridi kali",
+      "general poor circulation and chills",
+      "Poor Circulation And Chills"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chlorosis",
+    "title": "Chlorosis",
+    "titleSw": "Chlorosis",
+    "aliasesSw": [
+      "general chlorosis",
+      "Chlorosis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pernicious-anemia",
+    "title": "Pernicious Anemia",
+    "titleSw": "Pernicious upungufu wa damu",
+    "aliasesSw": [
+      "Pernicious upungufu wa damu",
+      "general pernicious anemia",
+      "Pernicious Anemia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hemorrhage",
+    "title": "Hemorrhage",
+    "titleSw": "Hemorrhage",
+    "aliasesSw": [
+      "general hemorrhage",
+      "Hemorrhage"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hemophilia",
+    "title": "Hemophilia",
+    "titleSw": "Hemophilia",
+    "aliasesSw": [
+      "general hemophilia",
+      "Hemophilia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-blood-poisoning",
+    "title": "Blood Poisoning",
+    "titleSw": "Damu Poisoning",
+    "aliasesSw": [
+      "Damu Poisoning",
+      "general blood poisoning",
+      "Blood Poisoning"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-vertigo",
+    "title": "Vertigo",
+    "titleSw": "Vertigo",
+    "aliasesSw": [
+      "general vertigo",
+      "Vertigo"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chorea",
+    "title": "Chorea",
+    "titleSw": "Chorea",
+    "aliasesSw": [
+      "general chorea",
+      "Chorea"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-stress-and-anxiety",
+    "title": "Stress And Anxiety",
+    "titleSw": "Msongo And wasiwasi",
+    "aliasesSw": [
+      "Msongo And wasiwasi",
+      "general stress and anxiety",
+      "Stress And Anxiety"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-neck-pain",
+    "title": "Neck Pain",
+    "titleSw": "Neck maumivu",
+    "aliasesSw": [
+      "Neck maumivu",
+      "general neck pain",
+      "Neck Pain"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bell-s-palsy",
+    "title": "Bell'S Palsy",
+    "titleSw": "Bell'S Palsy",
+    "aliasesSw": [
+      "general bell s palsy",
+      "Bell'S Palsy"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tic-douloureux",
+    "title": "Tic Douloureux",
+    "titleSw": "Tic Douloureux",
+    "aliasesSw": [
+      "general tic douloureux",
+      "Tic Douloureux"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-sciatica",
+    "title": "Sciatica",
+    "titleSw": "Sciatica",
+    "aliasesSw": [
+      "general sciatica",
+      "Sciatica"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-brachial-neuralgia",
+    "title": "Brachial Neuralgia",
+    "titleSw": "Brachial Neuralgia",
+    "aliasesSw": [
+      "general brachial neuralgia",
+      "Brachial Neuralgia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-multiple-neuritis",
+    "title": "Multiple Neuritis",
+    "titleSw": "Multiple Neuritis",
+    "aliasesSw": [
+      "general multiple neuritis",
+      "Multiple Neuritis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-seasonal-affective-syndrome",
+    "title": "Seasonal Affective Syndrome",
+    "titleSw": "Seasonal Affective Syndrome",
+    "aliasesSw": [
+      "general seasonal affective syndrome",
+      "Seasonal Affective Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tennis-elbow",
+    "title": "Tennis Elbow",
+    "titleSw": "Tennis Elbow",
+    "aliasesSw": [
+      "general tennis elbow",
+      "Tennis Elbow"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-carpal-tunnel-syndrome",
+    "title": "Carpal Tunnel Syndrome",
+    "titleSw": "Carpal Tunnel Syndrome",
+    "aliasesSw": [
+      "general carpal tunnel syndrome",
+      "Carpal Tunnel Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-convulsions",
+    "title": "Convulsions",
+    "titleSw": "Convulsions",
+    "aliasesSw": [
+      "general convulsions",
+      "Convulsions"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-amyotrophic-lateral-sclerosis",
+    "title": "Amyotrophic Lateral Sclerosis",
+    "titleSw": "Amyotrophic Lateral Sclerosis",
+    "aliasesSw": [
+      "general amyotrophic lateral sclerosis",
+      "Amyotrophic Lateral Sclerosis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-locomotor-ataxia",
+    "title": "Locomotor Ataxia",
+    "titleSw": "Locomotor Ataxia",
+    "aliasesSw": [
+      "general locomotor ataxia",
+      "Locomotor Ataxia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-meningocele",
+    "title": "Meningocele",
+    "titleSw": "Meningocele",
+    "aliasesSw": [
+      "general meningocele",
+      "Meningocele"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-menke-s-syndrome",
+    "title": "Menke'S Syndrome",
+    "titleSw": "Menke'S Syndrome",
+    "aliasesSw": [
+      "general menke s syndrome",
+      "Menke'S Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-multiple-sclerosis",
+    "title": "Multiple Sclerosis",
+    "titleSw": "Multiple Sclerosis",
+    "aliasesSw": [
+      "general multiple sclerosis",
+      "Multiple Sclerosis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-muscular-dystrophy",
+    "title": "Muscular Dystrophy",
+    "titleSw": "Muscular Dystrophy",
+    "aliasesSw": [
+      "general muscular dystrophy",
+      "Muscular Dystrophy"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-myasthenia-gravis",
+    "title": "Myasthenia Gravis",
+    "titleSw": "Myasthenia Gravis",
+    "aliasesSw": [
+      "general myasthenia gravis",
+      "Myasthenia Gravis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-parkinson-s-disease",
+    "title": "Parkinson'S Disease",
+    "titleSw": "Parkinson'S ugonjwa",
+    "aliasesSw": [
+      "Parkinson'S ugonjwa",
+      "general parkinson s disease",
+      "Parkinson'S Disease"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-polio",
+    "title": "Polio",
+    "titleSw": "Polio",
+    "aliasesSw": [
+      "general polio",
+      "Polio"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-post-polio-syndrome",
+    "title": "Post-Polio Syndrome",
+    "titleSw": "Post Polio Syndrome",
+    "aliasesSw": [
+      "Post Polio Syndrome",
+      "general post polio syndrome",
+      "Post-Polio Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-kuru",
+    "title": "Kuru",
+    "titleSw": "Kuru",
+    "aliasesSw": [
+      "general kuru",
+      "Kuru"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-memory-problems",
+    "title": "Memory Problems",
+    "titleSw": "Memory matatizo",
+    "aliasesSw": [
+      "Memory matatizo",
+      "general memory problems",
+      "Memory Problems"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-korsakoff-s-syndrome",
+    "title": "Korsakoff'S Syndrome",
+    "titleSw": "Korsakoff'S Syndrome",
+    "aliasesSw": [
+      "general korsakoff s syndrome",
+      "Korsakoff'S Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-alzheimer-s-disease",
+    "title": "Alzheimer'S Disease",
+    "titleSw": "Alzheimer'S ugonjwa",
+    "aliasesSw": [
+      "Alzheimer'S ugonjwa",
+      "general alzheimer s disease",
+      "Alzheimer'S Disease"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-senility",
+    "title": "Senility",
+    "titleSw": "Senility",
+    "aliasesSw": [
+      "general senility",
+      "Senility"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-organic-brain-disorder",
+    "title": "Organic Brain Disorder",
+    "titleSw": "Organic Brain Disorder",
+    "aliasesSw": [
+      "general organic brain disorder",
+      "Organic Brain Disorder"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hyperactivity",
+    "title": "Hyperactivity",
+    "titleSw": "Hyperactivity",
+    "aliasesSw": [
+      "general hyperactivity",
+      "Hyperactivity"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-dyslexia",
+    "title": "Dyslexia",
+    "titleSw": "Dyslexia",
+    "aliasesSw": [
+      "general dyslexia",
+      "Dyslexia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-nightmares",
+    "title": "Nightmares",
+    "titleSw": "Nightmares",
+    "aliasesSw": [
+      "general nightmares",
+      "Nightmares"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hyperventilation",
+    "title": "Hyperventilation",
+    "titleSw": "Hyperventilation",
+    "aliasesSw": [
+      "general hyperventilation",
+      "Hyperventilation"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-depression",
+    "title": "Depression",
+    "titleSw": "Unyogovu",
+    "aliasesSw": [
+      "Unyogovu",
+      "general depression",
+      "Depression",
+      "huzuni nyingi",
+      "kukata tamaa",
+      "msongo wa mawazo"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-manic-depression",
+    "title": "Manic Depression",
+    "titleSw": "Manic unyogovu",
+    "aliasesSw": [
+      "Manic unyogovu",
+      "general manic depression",
+      "Manic Depression"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-mania",
+    "title": "Mania",
+    "titleSw": "Mania",
+    "aliasesSw": [
+      "general mania",
+      "Mania"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-mental-illness",
+    "title": "Mental Illness",
+    "titleSw": "Mental Illness",
+    "aliasesSw": [
+      "general mental illness",
+      "Mental Illness"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-insanities",
+    "title": "Insanities",
+    "titleSw": "Insanities",
+    "aliasesSw": [
+      "general insanities",
+      "Insanities"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-schizophrenia",
+    "title": "Schizophrenia",
+    "titleSw": "Schizophrenia",
+    "aliasesSw": [
+      "general schizophrenia",
+      "Schizophrenia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-broken-rib",
+    "title": "Broken Rib",
+    "titleSw": "Broken Rib",
+    "aliasesSw": [
+      "general broken rib",
+      "Broken Rib"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-osteoporosis",
+    "title": "Osteoporosis",
+    "titleSw": "Osteoporosis",
+    "aliasesSw": [
+      "general osteoporosis",
+      "Osteoporosis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-rickets",
+    "title": "Rickets",
+    "titleSw": "Rickets",
+    "aliasesSw": [
+      "general rickets",
+      "Rickets"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bursitis",
+    "title": "Bursitis",
+    "titleSw": "Bursitis",
+    "aliasesSw": [
+      "general bursitis",
+      "Bursitis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-ankylosing-spondylitis",
+    "title": "Ankylosing Spondylitis",
+    "titleSw": "Ankylosing Spondylitis",
+    "aliasesSw": [
+      "general ankylosing spondylitis",
+      "Ankylosing Spondylitis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-shin-splints",
+    "title": "Shin Splints",
+    "titleSw": "Shin Splints",
+    "aliasesSw": [
+      "general shin splints",
+      "Shin Splints"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tendonitis",
+    "title": "Tendonitis",
+    "titleSw": "Tendonitis",
+    "aliasesSw": [
+      "general tendonitis",
+      "Tendonitis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-restless-leg-syndrome",
+    "title": "Restless Leg Syndrome",
+    "titleSw": "Restless mguu Syndrome",
+    "aliasesSw": [
+      "Restless mguu Syndrome",
+      "general restless leg syndrome",
+      "Restless Leg Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-claudication",
+    "title": "Claudication",
+    "titleSw": "Claudication",
+    "aliasesSw": [
+      "general claudication",
+      "Claudication"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-side-stitches",
+    "title": "Side Stitches",
+    "titleSw": "Side Stitches",
+    "aliasesSw": [
+      "general side stitches",
+      "Side Stitches"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-fibromyalgia-syndrome",
+    "title": "Fibromyalgia Syndrome",
+    "titleSw": "Fibromyalgia Syndrome",
+    "aliasesSw": [
+      "general fibromyalgia syndrome",
+      "Fibromyalgia Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-myelitis",
+    "title": "Myelitis",
+    "titleSw": "Myelitis",
+    "aliasesSw": [
+      "general myelitis",
+      "Myelitis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hernia",
+    "title": "Hernia",
+    "titleSw": "Hernia",
+    "aliasesSw": [
+      "general hernia",
+      "Hernia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-umbilical-hernia",
+    "title": "Umbilical Hernia",
+    "titleSw": "Umbilical Hernia",
+    "aliasesSw": [
+      "general umbilical hernia",
+      "Umbilical Hernia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pelvic-congestion",
+    "title": "Pelvic Congestion",
+    "titleSw": "Pelvic Congestion",
+    "aliasesSw": [
+      "general pelvic congestion",
+      "Pelvic Congestion"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pelvic-pain",
+    "title": "Pelvic Pain",
+    "titleSw": "Maumivu ya nyonga",
+    "aliasesSw": [
+      "Maumivu ya nyonga",
+      "general pelvic pain",
+      "Pelvic Pain",
+      "maumivu chini ya tumbo",
+      "nyonga kuuma",
+      "maumivu ya kiuno"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hypoglycemia",
+    "title": "Hypoglycemia",
+    "titleSw": "Hypoglycemia",
+    "aliasesSw": [
+      "general hypoglycemia",
+      "Hypoglycemia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-addison-s-disease",
+    "title": "Addison'S Disease",
+    "titleSw": "Addison'S ugonjwa",
+    "aliasesSw": [
+      "Addison'S ugonjwa",
+      "general addison s disease",
+      "Addison'S Disease"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cushing-s-disease",
+    "title": "Cushing'S Disease",
+    "titleSw": "Cushing'S ugonjwa",
+    "aliasesSw": [
+      "Cushing'S ugonjwa",
+      "general cushing s disease",
+      "Cushing'S Disease"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cystic-fibrosis",
+    "title": "Cystic Fibrosis",
+    "titleSw": "Cystic Fibrosis",
+    "aliasesSw": [
+      "general cystic fibrosis",
+      "Cystic Fibrosis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hypothyroidism",
+    "title": "Hypothyroidism",
+    "titleSw": "Hypothyroidism",
+    "aliasesSw": [
+      "general hypothyroidism",
+      "Hypothyroidism"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hyperthyroidism",
+    "title": "Hyperthyroidism",
+    "titleSw": "Hyperthyroidism",
+    "aliasesSw": [
+      "general hyperthyroidism",
+      "Hyperthyroidism"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-swollen-glands",
+    "title": "Swollen Glands",
+    "titleSw": "Swollen Glands",
+    "aliasesSw": [
+      "general swollen glands",
+      "Swollen Glands"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-lymphangitis",
+    "title": "Lymphangitis",
+    "titleSw": "Lymphangitis",
+    "aliasesSw": [
+      "general lymphangitis",
+      "Lymphangitis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hodgkin-s-disease",
+    "title": "Hodgkin'S Disease",
+    "titleSw": "Hodgkin'S ugonjwa",
+    "aliasesSw": [
+      "Hodgkin'S ugonjwa",
+      "general hodgkin s disease",
+      "Hodgkin'S Disease"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-mononucleosis",
+    "title": "Mononucleosis",
+    "titleSw": "Mononucleosis",
+    "aliasesSw": [
+      "general mononucleosis",
+      "Mononucleosis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-menopause",
+    "title": "Menopause",
+    "titleSw": "Kukoma hedhi",
+    "aliasesSw": [
+      "Kukoma hedhi",
+      "general menopause",
+      "Menopause"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pelvic-inflammatory-disease",
+    "title": "Pelvic Inflammatory Disease",
+    "titleSw": "Pelvic Inflammatory ugonjwa",
+    "aliasesSw": [
+      "Pelvic Inflammatory ugonjwa",
+      "general pelvic inflammatory disease",
+      "Pelvic Inflammatory Disease"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-vaginitis",
+    "title": "Vaginitis",
+    "titleSw": "Maambukizi ya uke",
+    "aliasesSw": [
+      "Maambukizi ya uke",
+      "general vaginitis",
+      "Vaginitis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-leukorrhea",
+    "title": "Leukorrhea",
+    "titleSw": "Leukorrhea",
+    "aliasesSw": [
+      "general leukorrhea",
+      "Leukorrhea"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-toxic-shock-syndrome",
+    "title": "Toxic Shock Syndrome",
+    "titleSw": "Toxic Shock Syndrome",
+    "aliasesSw": [
+      "general toxic shock syndrome",
+      "Toxic Shock Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hysterectomy",
+    "title": "Hysterectomy",
+    "titleSw": "Hysterectomy",
+    "aliasesSw": [
+      "general hysterectomy",
+      "Hysterectomy"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-frigidity",
+    "title": "Frigidity",
+    "titleSw": "Frigidity",
+    "aliasesSw": [
+      "general frigidity",
+      "Frigidity"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-female-stress-syndrome",
+    "title": "Female Stress Syndrome",
+    "titleSw": "Female msongo Syndrome",
+    "aliasesSw": [
+      "Female msongo Syndrome",
+      "general female stress syndrome",
+      "Female Stress Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-morning-sickness",
+    "title": "Morning Sickness",
+    "titleSw": "Morning ugonjwa",
+    "aliasesSw": [
+      "Morning ugonjwa",
+      "general morning sickness",
+      "Morning Sickness"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-miscarriage",
+    "title": "Miscarriage",
+    "titleSw": "Miscarriage",
+    "aliasesSw": [
+      "general miscarriage",
+      "Miscarriage"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-mastitis",
+    "title": "Mastitis",
+    "titleSw": "Mastitis",
+    "aliasesSw": [
+      "general mastitis",
+      "Mastitis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-birth-defects",
+    "title": "Birth Defects",
+    "titleSw": "Birth Defects",
+    "aliasesSw": [
+      "general birth defects",
+      "Birth Defects"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cerebral-palsy",
+    "title": "Cerebral Palsy",
+    "titleSw": "Cerebral Palsy",
+    "aliasesSw": [
+      "general cerebral palsy",
+      "Cerebral Palsy"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-down-syndrome",
+    "title": "Down Syndrome",
+    "titleSw": "Down Syndrome",
+    "aliasesSw": [
+      "general down syndrome",
+      "Down Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cradle-cap",
+    "title": "Cradle Cap",
+    "titleSw": "Cradle Cap",
+    "aliasesSw": [
+      "general cradle cap",
+      "Cradle Cap"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-colic-in-infants",
+    "title": "Colic In Infants",
+    "titleSw": "Colic kwa watoto wachanga",
+    "aliasesSw": [
+      "Colic kwa watoto wachanga",
+      "general colic in infants",
+      "Colic In Infants",
+      "mtoto kulia sana",
+      "tumbo la mtoto",
+      "colic",
+      "maumivu ya tumbo kwa mtoto"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-teething",
+    "title": "Teething",
+    "titleSw": "Teething",
+    "aliasesSw": [
+      "general teething",
+      "Teething"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-neonatal-jaundice",
+    "title": "Neonatal Jaundice",
+    "titleSw": "Neonatal Jaundice",
+    "aliasesSw": [
+      "general neonatal jaundice",
+      "Neonatal Jaundice"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-infantile-convulsions",
+    "title": "Infantile Convulsions",
+    "titleSw": "Infantile Convulsions",
+    "aliasesSw": [
+      "general infantile convulsions",
+      "Infantile Convulsions"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cholera-infantum",
+    "title": "Cholera Infantum",
+    "titleSw": "Cholera Infantum",
+    "aliasesSw": [
+      "general cholera infantum",
+      "Cholera Infantum"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-sudden-infant-death-syndrome",
+    "title": "Sudden Infant Death Syndrome",
+    "titleSw": "Sudden Infant Death Syndrome",
+    "aliasesSw": [
+      "general sudden infant death syndrome",
+      "Sudden Infant Death Syndrome"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-colic-in-children",
+    "title": "Colic In Children",
+    "titleSw": "Colic In Children",
+    "aliasesSw": [
+      "general colic in children",
+      "Colic In Children"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-ringworm",
+    "title": "Ringworm",
+    "titleSw": "Ringworm",
+    "aliasesSw": [
+      "general ringworm",
+      "Ringworm"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-childhood-diseases",
+    "title": "Childhood Diseases",
+    "titleSw": "Magonjwa ya watoto",
+    "aliasesSw": [
+      "Magonjwa ya watoto",
+      "general childhood diseases",
+      "Childhood Diseases",
+      "magonjwa ya mtoto",
+      "matatizo ya watoto"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-adenoids",
+    "title": "Adenoids",
+    "titleSw": "Adenoids",
+    "aliasesSw": [
+      "general adenoids",
+      "Adenoids"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chickenpox",
+    "title": "Chickenpox",
+    "titleSw": "Chickenpox",
+    "aliasesSw": [
+      "general chickenpox",
+      "Chickenpox"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-growing-pains",
+    "title": "Growing Pains",
+    "titleSw": "Growing Pains",
+    "aliasesSw": [
+      "general growing pains",
+      "Growing Pains"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-growth-problems",
+    "title": "Growth Problems",
+    "titleSw": "Growth matatizo",
+    "aliasesSw": [
+      "Growth matatizo",
+      "general growth problems",
+      "Growth Problems"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-vaccination-problems",
+    "title": "Vaccination Problems",
+    "titleSw": "Vaccination matatizo",
+    "aliasesSw": [
+      "Vaccination matatizo",
+      "general vaccination problems",
+      "Vaccination Problems"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-venereal-diseases",
+    "title": "Venereal Diseases",
+    "titleSw": "Venereal magonjwa",
+    "aliasesSw": [
+      "Venereal magonjwa",
+      "general venereal diseases",
+      "Venereal Diseases"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-gonorrhea",
+    "title": "Gonorrhea",
+    "titleSw": "Gonorrhea",
+    "aliasesSw": [
+      "general gonorrhea",
+      "Gonorrhea"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-syphilis",
+    "title": "Syphilis",
+    "titleSw": "Syphilis",
+    "aliasesSw": [
+      "general syphilis",
+      "Syphilis"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chlamydia",
+    "title": "Chlamydia",
+    "titleSw": "Chlamydia",
+    "aliasesSw": [
+      "general chlamydia",
+      "Chlamydia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-genital-herpes",
+    "title": "Genital Herpes",
+    "titleSw": "Genital Herpes",
+    "aliasesSw": [
+      "general genital herpes",
+      "Genital Herpes"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-aids",
+    "title": "Aids",
+    "titleSw": "Aids",
+    "aliasesSw": [
+      "general aids",
+      "Aids"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-urticaria",
+    "title": "Urticaria",
+    "titleSw": "Urticaria",
+    "aliasesSw": [
+      "general urticaria",
+      "Urticaria"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chiggers",
+    "title": "Chiggers",
+    "titleSw": "Chiggers",
+    "aliasesSw": [
+      "general chiggers",
+      "Chiggers"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-itch-mite",
+    "title": "Itch Mite",
+    "titleSw": "Itch Mite",
+    "aliasesSw": [
+      "general itch mite",
+      "Itch Mite"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-lice",
+    "title": "Lice",
+    "titleSw": "Lice",
+    "aliasesSw": [
+      "general lice",
+      "Lice"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-typhus",
+    "title": "Typhus",
+    "titleSw": "Typhus",
+    "aliasesSw": [
+      "general typhus",
+      "Typhus"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-rocky-mountain-spotted-fever",
+    "title": "Rocky Mountain Spotted Fever",
+    "titleSw": "Rocky Mountain Spotted homa",
+    "aliasesSw": [
+      "Rocky Mountain Spotted homa",
+      "general rocky mountain spotted fever",
+      "Rocky Mountain Spotted Fever"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-lyme-disease",
+    "title": "Lyme Disease",
+    "titleSw": "Lyme ugonjwa",
+    "aliasesSw": [
+      "Lyme ugonjwa",
+      "general lyme disease",
+      "Lyme Disease"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bubonic-plague",
+    "title": "Bubonic Plague",
+    "titleSw": "Bubonic Plague",
+    "aliasesSw": [
+      "general bubonic plague",
+      "Bubonic Plague"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-rabies",
+    "title": "Rabies",
+    "titleSw": "Rabies",
+    "aliasesSw": [
+      "general rabies",
+      "Rabies"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tularemia",
+    "title": "Tularemia",
+    "titleSw": "Tularemia",
+    "aliasesSw": [
+      "general tularemia",
+      "Tularemia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cat-coccidia",
+    "title": "Cat Coccidia",
+    "titleSw": "Cat Coccidia",
+    "aliasesSw": [
+      "general cat coccidia",
+      "Cat Coccidia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-allergies",
+    "title": "Allergies",
+    "titleSw": "Mzio",
+    "aliasesSw": [
+      "Mzio",
+      "general allergies",
+      "Allergies",
+      "allergy",
+      "mzio wa chakula",
+      "mzio wa ngozi",
+      "kupiga chafya kwa mzio"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hay-fever",
+    "title": "Hay Fever",
+    "titleSw": "Hay homa",
+    "aliasesSw": [
+      "Hay homa",
+      "general hay fever",
+      "Hay Fever"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-food-poisoning",
+    "title": "Food Poisoning",
+    "titleSw": "Chakula Poisoning",
+    "aliasesSw": [
+      "Chakula Poisoning",
+      "general food poisoning",
+      "Food Poisoning"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-poison-ivy",
+    "title": "Poison Ivy",
+    "titleSw": "Poison Ivy",
+    "aliasesSw": [
+      "general poison ivy",
+      "Poison Ivy"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-worms",
+    "title": "Worms",
+    "titleSw": "Minyoo",
+    "aliasesSw": [
+      "Minyoo",
+      "general worms",
+      "Worms",
+      "vimelea tumboni",
+      "minyoo ya tumbo",
+      "intestinal worms"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-fungus-growth",
+    "title": "Fungus Growth",
+    "titleSw": "Fungus Growth",
+    "aliasesSw": [
+      "general fungus growth",
+      "Fungus Growth"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tetanus",
+    "title": "Tetanus",
+    "titleSw": "Tetanus",
+    "aliasesSw": [
+      "general tetanus",
+      "Tetanus"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-parrot-fever",
+    "title": "Parrot Fever",
+    "titleSw": "Parrot homa",
+    "aliasesSw": [
+      "Parrot homa",
+      "general parrot fever",
+      "Parrot Fever"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-poisoning",
+    "title": "Poisoning",
+    "titleSw": "Poisoning",
+    "aliasesSw": [
+      "general poisoning",
+      "Poisoning"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chemical-poisoning",
+    "title": "Chemical Poisoning",
+    "titleSw": "Chemical Poisoning",
+    "aliasesSw": [
+      "general chemical poisoning",
+      "Chemical Poisoning"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-aluminum-poisoning",
+    "title": "Aluminum Poisoning",
+    "titleSw": "Aluminum Poisoning",
+    "aliasesSw": [
+      "general aluminum poisoning",
+      "Aluminum Poisoning"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-arsenic-poisoning",
+    "title": "Arsenic Poisoning",
+    "titleSw": "Arsenic Poisoning",
+    "aliasesSw": [
+      "general arsenic poisoning",
+      "Arsenic Poisoning"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cadmium-poisoning",
+    "title": "Cadmium Poisoning",
+    "titleSw": "Cadmium Poisoning",
+    "aliasesSw": [
+      "general cadmium poisoning",
+      "Cadmium Poisoning"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-copper-poisoning",
+    "title": "Copper Poisoning",
+    "titleSw": "Copper Poisoning",
+    "aliasesSw": [
+      "general copper poisoning",
+      "Copper Poisoning"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-ddt-poisoning",
+    "title": "Ddt Poisoning",
+    "titleSw": "Ddt Poisoning",
+    "aliasesSw": [
+      "general ddt poisoning",
+      "Ddt Poisoning"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-lead-poisoning",
+    "title": "Lead Poisoning",
+    "titleSw": "Lead Poisoning",
+    "aliasesSw": [
+      "general lead poisoning",
+      "Lead Poisoning"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-mercury-poisoning",
+    "title": "Mercury Poisoning",
+    "titleSw": "Mercury Poisoning",
+    "aliasesSw": [
+      "general mercury poisoning",
+      "Mercury Poisoning"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-nickel-poisoning",
+    "title": "Nickel Poisoning",
+    "titleSw": "Nickel Poisoning",
+    "aliasesSw": [
+      "general nickel poisoning",
+      "Nickel Poisoning"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-radiation-poisoning",
+    "title": "Radiation Poisoning",
+    "titleSw": "Radiation Poisoning",
+    "aliasesSw": [
+      "general radiation poisoning",
+      "Radiation Poisoning"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-toxemia",
+    "title": "Toxemia",
+    "titleSw": "Toxemia",
+    "aliasesSw": [
+      "general toxemia",
+      "Toxemia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tobacco-withdrawal",
+    "title": "Tobacco Withdrawal",
+    "titleSw": "Tobacco Withdrawal",
+    "aliasesSw": [
+      "general tobacco withdrawal",
+      "Tobacco Withdrawal"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-alcohol-withdrawal",
+    "title": "Alcohol Withdrawal",
+    "titleSw": "Alcohol Withdrawal",
+    "aliasesSw": [
+      "general alcohol withdrawal",
+      "Alcohol Withdrawal"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-coffee-withdrawal",
+    "title": "Coffee Withdrawal",
+    "titleSw": "Coffee Withdrawal",
+    "aliasesSw": [
+      "general coffee withdrawal",
+      "Coffee Withdrawal"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-drug-withdrawal",
+    "title": "Drug Withdrawal",
+    "titleSw": "Drug Withdrawal",
+    "aliasesSw": [
+      "general drug withdrawal",
+      "Drug Withdrawal"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cysts-and-polyps",
+    "title": "Cysts And Polyps",
+    "titleSw": "Cysts And Polyps",
+    "aliasesSw": [
+      "general cysts and polyps",
+      "Cysts And Polyps"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tumors",
+    "title": "Tumors",
+    "titleSw": "Tumors",
+    "aliasesSw": [
+      "general tumors",
+      "Tumors"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-skin-cancer",
+    "title": "Skin Cancer",
+    "titleSw": "Ngozi Cancer",
+    "aliasesSw": [
+      "Ngozi Cancer",
+      "general skin cancer",
+      "Skin Cancer"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cancer",
+    "title": "Cancer",
+    "titleSw": "Saratani",
+    "aliasesSw": [
+      "Saratani",
+      "general cancer",
+      "Cancer",
+      "uvimbe wa saratani",
+      "saratani mwilini"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-leukemia",
+    "title": "Leukemia",
+    "titleSw": "Leukemia",
+    "aliasesSw": [
+      "general leukemia",
+      "Leukemia"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-leprosy",
+    "title": "Leprosy",
+    "titleSw": "Leprosy",
+    "aliasesSw": [
+      "general leprosy",
+      "Leprosy"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-special-risk-factors",
+    "title": "Special Risk Factors",
+    "titleSw": "Special Risk Factors",
+    "aliasesSw": [
+      "general special risk factors",
+      "Special Risk Factors"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-miscellaneous-preventative-factors",
+    "title": "Miscellaneous Preventative Factors",
+    "titleSw": "Miscellaneous Preventative Factors",
+    "aliasesSw": [
+      "general miscellaneous preventative factors",
+      "Miscellaneous Preventative Factors"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-general-preventative-factors",
+    "title": "General Preventative Factors",
+    "titleSw": "General Preventative Factors",
+    "aliasesSw": [
+      "general general preventative factors",
+      "General Preventative Factors"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-deep-breathing-and-exercise",
+    "title": "Deep Breathing And Exercise",
+    "titleSw": "Deep Breathing And mazoezi",
+    "aliasesSw": [
+      "Deep Breathing And mazoezi",
+      "general deep breathing and exercise",
+      "Deep Breathing And Exercise"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-organs-of-elimination",
+    "title": "Organs Of Elimination",
+    "titleSw": "Organs Of Elimination",
+    "aliasesSw": [
+      "general organs of elimination",
+      "Organs Of Elimination"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chemical-food-additives",
+    "title": "Chemical Food Additives",
+    "titleSw": "Chemical chakula Additives",
+    "aliasesSw": [
+      "Chemical chakula Additives",
+      "general chemical food additives",
+      "Chemical Food Additives"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-other-chemicals",
+    "title": "Other Chemicals",
+    "titleSw": "Other Chemicals",
+    "aliasesSw": [
+      "general other chemicals",
+      "Other Chemicals"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-radiation",
+    "title": "Radiation",
+    "titleSw": "Radiation",
+    "aliasesSw": [
+      "general radiation",
+      "Radiation"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-protein",
+    "title": "Protein",
+    "titleSw": "Protein",
+    "aliasesSw": [
+      "general protein",
+      "Protein"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-meat",
+    "title": "Meat",
+    "titleSw": "Meat",
+    "aliasesSw": [
+      "general meat",
+      "Meat"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-dairy-products",
+    "title": "Dairy Products",
+    "titleSw": "Dairy Products",
+    "aliasesSw": [
+      "general dairy products",
+      "Dairy Products"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-fats-and-rancid-oil",
+    "title": "Fats And Rancid Oil",
+    "titleSw": "Fats And Rancid Oil",
+    "aliasesSw": [
+      "general fats and rancid oil",
+      "Fats And Rancid Oil"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-diet-and-nutrition",
+    "title": "Diet And Nutrition",
+    "titleSw": "Diet And Nutrition",
+    "aliasesSw": [
+      "general diet and nutrition",
+      "Diet And Nutrition"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cooking",
+    "title": "Cooking",
+    "titleSw": "Cooking",
+    "aliasesSw": [
+      "general cooking",
+      "Cooking"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-problem-foods",
+    "title": "Problem Foods",
+    "titleSw": "Tatizo Foods",
+    "aliasesSw": [
+      "Tatizo Foods",
+      "general problem foods",
+      "Problem Foods"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-good-foods",
+    "title": "Good Foods",
+    "titleSw": "Good Foods",
+    "aliasesSw": [
+      "general good foods",
+      "Good Foods"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-vitamins",
+    "title": "Vitamins",
+    "titleSw": "Vitamins",
+    "aliasesSw": [
+      "general vitamins",
+      "Vitamins"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-minerals",
+    "title": "Minerals",
+    "titleSw": "Minerals",
+    "aliasesSw": [
+      "general minerals",
+      "Minerals"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-other-nutrients",
+    "title": "Other Nutrients",
+    "titleSw": "Other Nutrients",
+    "aliasesSw": [
+      "general other nutrients",
+      "Other Nutrients"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-amino-acids",
+    "title": "Amino Acids",
+    "titleSw": "Amino Acids",
+    "aliasesSw": [
+      "general amino acids",
+      "Amino Acids"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-preventing-cancer",
+    "title": "Preventing Cancer",
+    "titleSw": "Preventing Cancer",
+    "aliasesSw": [
+      "general preventing cancer",
+      "Preventing Cancer"
+    ],
+    "source_file": "diseases_general.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-sinusitis",
+    "title": "Sinusitis",
+    "titleSw": "Sinusitis",
+    "aliasesSw": [
+      "head sinusitis",
+      "Sinusitis",
+      "shida ya sinus",
+      "sinus",
+      "pua kuziba",
+      "maumivu ya uso",
+      "sinus kuvimba",
+      "mafua sugu"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-eye-problems",
+    "title": "Eye Problems",
+    "titleSw": "Matatizo ya macho",
+    "aliasesSw": [
+      "Matatizo ya macho",
+      "head eye problems",
+      "Eye Problems",
+      "macho",
+      "macho kuuma",
+      "kuona vibaya",
+      "macho kuwasha"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-eye-inflammation",
+    "title": "Eye Inflammation",
+    "titleSw": "Jicho uvimbe",
+    "aliasesSw": [
+      "Jicho uvimbe",
+      "head eye inflammation",
+      "Eye Inflammation"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-eyestrain",
+    "title": "Eyestrain",
+    "titleSw": "Eyestrain",
+    "aliasesSw": [
+      "head eyestrain",
+      "Eyestrain"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-nearsightedness",
+    "title": "Nearsightedness",
+    "titleSw": "Nearsightedness",
+    "aliasesSw": [
+      "head nearsightedness",
+      "Nearsightedness"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-yellow-eyes",
+    "title": "Yellow Eyes",
+    "titleSw": "Yellow macho",
+    "aliasesSw": [
+      "Yellow macho",
+      "head yellow eyes",
+      "Yellow Eyes"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-red-eyes",
+    "title": "Red Eyes",
+    "titleSw": "Red macho",
+    "aliasesSw": [
+      "Red macho",
+      "head red eyes",
+      "Red Eyes"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-itchy-eyes",
+    "title": "Itchy Eyes",
+    "titleSw": "Itchy macho",
+    "aliasesSw": [
+      "Itchy macho",
+      "head itchy eyes",
+      "Itchy Eyes"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-dry-tear-ducts",
+    "title": "Dry Tear Ducts",
+    "titleSw": "Dry Tear Ducts",
+    "aliasesSw": [
+      "head dry tear ducts",
+      "Dry Tear Ducts"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-black-eye",
+    "title": "Black Eye",
+    "titleSw": "Black jicho",
+    "aliasesSw": [
+      "Black jicho",
+      "head black eye",
+      "Black Eye"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-ulcerated-eye-and-lid",
+    "title": "Ulcerated Eye And Lid",
+    "titleSw": "Ulcerated jicho And Lid",
+    "aliasesSw": [
+      "Ulcerated jicho And Lid",
+      "head ulcerated eye and lid",
+      "Ulcerated Eye And Lid"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-mucous-in-eye",
+    "title": "Mucous In Eye",
+    "titleSw": "Mucous In jicho",
+    "aliasesSw": [
+      "Mucous In jicho",
+      "head mucous in eye",
+      "Mucous In Eye"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-nosebleed",
+    "title": "Nosebleed",
+    "titleSw": "Nosebleed",
+    "aliasesSw": [
+      "head nosebleed",
+      "Nosebleed"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-ear-congestion",
+    "title": "Ear Congestion",
+    "titleSw": "Sikio Congestion",
+    "aliasesSw": [
+      "Sikio Congestion",
+      "head ear congestion",
+      "Ear Congestion"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-earwax",
+    "title": "Earwax",
+    "titleSw": "Earwax",
+    "aliasesSw": [
+      "head earwax",
+      "Earwax"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-swimmer-s-ear",
+    "title": "Swimmer'S Ear",
+    "titleSw": "Swimmer'S sikio",
+    "aliasesSw": [
+      "Swimmer'S sikio",
+      "head swimmer s ear",
+      "Swimmer'S Ear"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-hearing-loss",
+    "title": "Hearing Loss",
+    "titleSw": "Hearing Loss",
+    "aliasesSw": [
+      "head hearing loss",
+      "Hearing Loss"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-sore-throat",
+    "title": "Sore Throat",
+    "titleSw": "Koo kuuma",
+    "aliasesSw": [
+      "Koo kuuma",
+      "head sore throat",
+      "Sore Throat",
+      "maumivu ya koo",
+      "koo kuwasha",
+      "tonsils",
+      "tonsillitis"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-tooth-decay",
+    "title": "Tooth Decay",
+    "titleSw": "Tooth Decay",
+    "aliasesSw": [
+      "head tooth decay",
+      "Tooth Decay"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-heartburn",
+    "title": "Heartburn",
+    "titleSw": "Heartburn",
+    "aliasesSw": [
+      "head heartburn",
+      "Heartburn"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-reye-s-syndrome",
+    "title": "Reye'S Syndrome",
+    "titleSw": "Reye'S Syndrome",
+    "aliasesSw": [
+      "head reye s syndrome",
+      "Reye'S Syndrome"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-sorrow-of-the-heart",
+    "title": "Sorrow Of The Heart",
+    "titleSw": "Sorrow Of The Heart",
+    "aliasesSw": [
+      "head sorrow of the heart",
+      "Sorrow Of The Heart"
+    ],
+    "source_file": "diseases_head.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-fracture",
+    "title": "Fracture",
+    "titleSw": "Mfupa kuvunjika",
+    "aliasesSw": [
+      "Mfupa kuvunjika",
+      "musculoskeletal fracture",
+      "Fracture",
+      "broken bone",
+      "mfupa uliovunjika",
+      "jeraha la mfupa",
+      "kuvunjika mfupa"
+    ],
+    "source_file": "diseases_musculoskeletal.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-bone-spur",
+    "title": "Bone Spur",
+    "titleSw": "Mfupa kuchomoza",
+    "aliasesSw": [
+      "Mfupa kuchomoza",
+      "musculoskeletal bone spur",
+      "Bone Spur",
+      "kisigino kuuma",
+      "heel spur",
+      "uvimbe wa mfupa"
+    ],
+    "source_file": "diseases_musculoskeletal.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-chronic-rheumatism",
+    "title": "Chronic Rheumatism",
+    "titleSw": "Sugu rheumatism",
+    "aliasesSw": [
+      "Sugu rheumatism",
+      "musculoskeletal chronic rheumatism",
+      "Chronic Rheumatism"
+    ],
+    "source_file": "diseases_musculoskeletal.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+    "title": "Temporomandibular Joint Syndrome",
+    "titleSw": "Temporomandibular Joint Syndrome",
+    "aliasesSw": [
+      "musculoskeletal temporomandibular joint syndrome",
+      "Temporomandibular Joint Syndrome"
+    ],
+    "source_file": "diseases_musculoskeletal.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-muscle-cramps",
+    "title": "Muscle Cramps",
+    "titleSw": "Muscle Cramps",
+    "aliasesSw": [
+      "musculoskeletal muscle cramps",
+      "Muscle Cramps"
+    ],
+    "source_file": "diseases_musculoskeletal.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-muscle-injuries",
+    "title": "Muscle Injuries",
+    "titleSw": "Muscle Injuries",
+    "aliasesSw": [
+      "musculoskeletal muscle injuries",
+      "Muscle Injuries"
+    ],
+    "source_file": "diseases_musculoskeletal.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-backache",
+    "title": "Backache",
+    "titleSw": "Maumivu ya mgongo",
+    "aliasesSw": [
+      "Maumivu ya mgongo",
+      "musculoskeletal backache",
+      "Backache",
+      "mgongo kuuma",
+      "maumivu ya kiuno",
+      "back pain"
+    ],
+    "source_file": "diseases_musculoskeletal.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-rheumatic-fever",
+    "title": "Rheumatic Fever",
+    "titleSw": "Rheumatic homa",
+    "aliasesSw": [
+      "Rheumatic homa",
+      "musculoskeletal rheumatic fever",
+      "Rheumatic Fever"
+    ],
+    "source_file": "diseases_musculoskeletal.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-breast-discomfort",
+    "title": "Breast Discomfort",
+    "titleSw": "Usumbufu wa matiti",
+    "aliasesSw": [
+      "Usumbufu wa matiti",
+      "reproductive breast discomfort",
+      "Breast Discomfort",
+      "matiti kuuma",
+      "maumivu ya matiti",
+      "breast tenderness"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-breast-inflammation",
+    "title": "Breast Inflammation",
+    "titleSw": "Uvimbe wa matiti",
+    "aliasesSw": [
+      "Uvimbe wa matiti",
+      "reproductive breast inflammation",
+      "Breast Inflammation",
+      "matiti kuvimba",
+      "mastitis",
+      "maumivu na uvimbe wa matiti"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-breast-cyst",
+    "title": "Breast Cyst",
+    "titleSw": "Uvimbe/kivimbe cha titi",
+    "aliasesSw": [
+      "Uvimbe/kivimbe cha titi",
+      "reproductive breast cyst",
+      "Breast Cyst",
+      "cyst ya matiti",
+      "uvimbe kwenye titi",
+      "kivimbe kwenye titi"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-premenstrual-syndrome",
+    "title": "Premenstrual Syndrome",
+    "titleSw": "Premenstrual Syndrome",
+    "aliasesSw": [
+      "reproductive premenstrual syndrome",
+      "Premenstrual Syndrome"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-menstrual-disorders",
+    "title": "Menstrual Disorders",
+    "titleSw": "Hedhi Disorders",
+    "aliasesSw": [
+      "Hedhi Disorders",
+      "reproductive menstrual disorders",
+      "Menstrual Disorders"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-lack-of-menstruation",
+    "title": "Lack Of Menstruation",
+    "titleSw": "Lack Of hedhi",
+    "aliasesSw": [
+      "Lack Of hedhi",
+      "reproductive lack of menstruation",
+      "Lack Of Menstruation"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-painful-menstruation",
+    "title": "Painful Menstruation",
+    "titleSw": "Maumivu ya hedhi",
+    "aliasesSw": [
+      "Maumivu ya hedhi",
+      "reproductive painful menstruation",
+      "Painful Menstruation",
+      "period pain",
+      "menstrual pain",
+      "maumivu wakati wa hedhi",
+      "dysmenorrhea",
+      "hedhi yenye maumivu"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-uterine-bleeding",
+    "title": "Uterine Bleeding",
+    "titleSw": "Uterine Bleeding",
+    "aliasesSw": [
+      "reproductive uterine bleeding",
+      "Uterine Bleeding"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-uterine-fibroids",
+    "title": "Uterine Fibroids",
+    "titleSw": "Uterine Fibroids",
+    "aliasesSw": [
+      "reproductive uterine fibroids",
+      "Uterine Fibroids"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-prostate-disorders",
+    "title": "Prostate Disorders",
+    "titleSw": "Prostate Disorders",
+    "aliasesSw": [
+      "reproductive prostate disorders",
+      "Prostate Disorders"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-prostatitis",
+    "title": "Prostatitis",
+    "titleSw": "Prostatitis",
+    "aliasesSw": [
+      "reproductive prostatitis",
+      "Prostatitis"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-testicular-atrophy",
+    "title": "Testicular Atrophy",
+    "titleSw": "Testicular Atrophy",
+    "aliasesSw": [
+      "reproductive testicular atrophy",
+      "Testicular Atrophy"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-pregnancy-related-problems",
+    "title": "Pregnancy Related Problems",
+    "titleSw": "Ujauzito Related matatizo",
+    "aliasesSw": [
+      "Ujauzito Related matatizo",
+      "reproductive pregnancy related problems",
+      "Pregnancy Related Problems"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-premature-labor",
+    "title": "Premature Labor",
+    "titleSw": "Premature Labor",
+    "aliasesSw": [
+      "reproductive premature labor",
+      "Premature Labor"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-breast-cancer",
+    "title": "Breast Cancer",
+    "titleSw": "Matiti Cancer",
+    "aliasesSw": [
+      "Matiti Cancer",
+      "reproductive breast cancer",
+      "Breast Cancer"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-prostate-cancer",
+    "title": "Prostate Cancer",
+    "titleSw": "Prostate Cancer",
+    "aliasesSw": [
+      "reproductive prostate cancer",
+      "Prostate Cancer"
+    ],
+    "source_file": "diseases_reproductive.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-common-cold",
+    "title": "Common Cold",
+    "titleSw": "Mafua",
+    "aliasesSw": [
+      "Mafua",
+      "respiratory common cold",
+      "Common Cold",
+      "baridi",
+      "pua kutiririka",
+      "kamasi",
+      "homa ya mafua",
+      "koo kuuma",
+      "cold"
+    ],
+    "source_file": "diseases_respiratory.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-coughs",
+    "title": "Coughs",
+    "titleSw": "Kikohozi",
+    "aliasesSw": [
+      "Kikohozi",
+      "respiratory coughs",
+      "Coughs",
+      "cough",
+      "kukohoa",
+      "kifua kubana",
+      "kikohozi kikavu",
+      "kikohozi cha makohozi"
+    ],
+    "source_file": "diseases_respiratory.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-cold-sores",
+    "title": "Cold Sores",
+    "titleSw": "Vidonda vya homa mdomoni",
+    "aliasesSw": [
+      "Vidonda vya homa mdomoni",
+      "respiratory cold sores",
+      "Cold Sores",
+      "vidonda mdomoni",
+      "herpes",
+      "malengelenge mdomoni"
+    ],
+    "source_file": "diseases_respiratory.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-cold-extremities",
+    "title": "Cold Extremities",
+    "titleSw": "Mafua Extremities",
+    "aliasesSw": [
+      "Mafua Extremities",
+      "respiratory cold extremities",
+      "Cold Extremities"
+    ],
+    "source_file": "diseases_respiratory.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-cold-feet",
+    "title": "Cold Feet",
+    "titleSw": "Mafua Feet",
+    "aliasesSw": [
+      "Mafua Feet",
+      "respiratory cold feet",
+      "Cold Feet"
+    ],
+    "source_file": "diseases_respiratory.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-bronchiectasis",
+    "title": "Bronchiectasis",
+    "titleSw": "Bronchiectasis",
+    "aliasesSw": [
+      "respiratory bronchiectasis",
+      "Bronchiectasis"
+    ],
+    "source_file": "diseases_respiratory.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-pneumonia",
+    "title": "Pneumonia",
+    "titleSw": "Nimonia",
+    "aliasesSw": [
+      "Nimonia",
+      "respiratory pneumonia",
+      "Pneumonia",
+      "maambukizi ya mapafu",
+      "mapafu kuvimba"
+    ],
+    "source_file": "diseases_respiratory.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-broncho-pneumonia",
+    "title": "Broncho-Pneumonia",
+    "titleSw": "Broncho nimonia",
+    "aliasesSw": [
+      "Broncho nimonia",
+      "respiratory broncho pneumonia",
+      "Broncho-Pneumonia"
+    ],
+    "source_file": "diseases_respiratory.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-lobar-pneumonia",
+    "title": "Lobar Pneumonia",
+    "titleSw": "Lobar nimonia",
+    "aliasesSw": [
+      "Lobar nimonia",
+      "respiratory lobar pneumonia",
+      "Lobar Pneumonia"
+    ],
+    "source_file": "diseases_respiratory.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-fluoride-poisoning",
+    "title": "Fluoride Poisoning",
+    "titleSw": "Fluoride Poisoning",
+    "aliasesSw": [
+      "respiratory fluoride poisoning",
+      "Fluoride Poisoning"
+    ],
+    "source_file": "diseases_respiratory.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-boils",
+    "title": "Boils",
+    "titleSw": "Majipu",
+    "aliasesSw": [
+      "Majipu",
+      "skin boils",
+      "Boils",
+      "jipu",
+      "majipu kwenye ngozi",
+      "uvimbe wenye usaha",
+      "furuncles"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-burns",
+    "title": "Burns",
+    "titleSw": "Kuungua",
+    "aliasesSw": [
+      "Kuungua",
+      "skin burns",
+      "Burns",
+      "kuchomwa moto",
+      "majeraha ya moto",
+      "ngozi kuungua",
+      "scalds"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-acne",
+    "title": "Acne",
+    "titleSw": "Chunusi",
+    "aliasesSw": [
+      "Chunusi",
+      "skin acne",
+      "Acne",
+      "chunusi usoni",
+      "vipele usoni",
+      "pimples"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-warts",
+    "title": "Warts",
+    "titleSw": "Vinyama/vinyama vya ngozi",
+    "aliasesSw": [
+      "Vinyama/vinyama vya ngozi",
+      "skin warts",
+      "Warts",
+      "wart",
+      "vinyama vya ngozi",
+      "sugu kwenye ngozi"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-heat-rash",
+    "title": "Heat Rash",
+    "titleSw": "Joto upele",
+    "aliasesSw": [
+      "Joto upele",
+      "skin heat rash",
+      "Heat Rash"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-sunburn",
+    "title": "Sunburn",
+    "titleSw": "Sunburn",
+    "aliasesSw": [
+      "skin sunburn",
+      "Sunburn"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-skin-rash",
+    "title": "Skin Rash",
+    "titleSw": "Ngozi upele",
+    "aliasesSw": [
+      "Ngozi upele",
+      "skin skin rash",
+      "Skin Rash"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-eczema",
+    "title": "Eczema",
+    "titleSw": "Eczema",
+    "aliasesSw": [
+      "skin eczema",
+      "Eczema",
+      "ukurutu",
+      "ngozi kuwasha",
+      "upele wa ngozi"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-psoriasis",
+    "title": "Psoriasis",
+    "titleSw": "Psoriasis",
+    "aliasesSw": [
+      "skin psoriasis",
+      "Psoriasis"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-frostbite",
+    "title": "Frostbite",
+    "titleSw": "Frostbite",
+    "aliasesSw": [
+      "skin frostbite",
+      "Frostbite"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-burning-feet",
+    "title": "Burning Feet",
+    "titleSw": "Burning Feet",
+    "aliasesSw": [
+      "skin burning feet",
+      "Burning Feet"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-diaper-rash",
+    "title": "Diaper Rash",
+    "titleSw": "Diaper upele",
+    "aliasesSw": [
+      "Diaper upele",
+      "skin diaper rash",
+      "Diaper Rash"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-insect-sting",
+    "title": "Insect Sting",
+    "titleSw": "Insect Sting",
+    "aliasesSw": [
+      "skin insect sting",
+      "Insect Sting"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-mosquito-bite",
+    "title": "Mosquito Bite",
+    "titleSw": "Mosquito Bite",
+    "aliasesSw": [
+      "skin mosquito bite",
+      "Mosquito Bite"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-jellyfish-sting",
+    "title": "Jellyfish Sting",
+    "titleSw": "Jellyfish Sting",
+    "aliasesSw": [
+      "skin jellyfish sting",
+      "Jellyfish Sting"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-spider-bite",
+    "title": "Spider Bite",
+    "titleSw": "Spider Bite",
+    "aliasesSw": [
+      "skin spider bite",
+      "Spider Bite"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-snake-bite",
+    "title": "Snake Bite",
+    "titleSw": "Snake Bite",
+    "aliasesSw": [
+      "skin snake bite",
+      "Snake Bite"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-dog-or-animal-bite",
+    "title": "Dog Or Animal Bite",
+    "titleSw": "Dog Or Animal Bite",
+    "aliasesSw": [
+      "skin dog or animal bite",
+      "Dog Or Animal Bite"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-drug-rash",
+    "title": "Drug Rash",
+    "titleSw": "Drug upele",
+    "aliasesSw": [
+      "Drug upele",
+      "skin drug rash",
+      "Drug Rash"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-fasting",
+    "title": "Fasting",
+    "titleSw": "Fasting",
+    "aliasesSw": [
+      "skin fasting",
+      "Fasting"
+    ],
+    "source_file": "diseases_skin.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-urinary-kidney-problems",
+    "title": "Kidney Problems",
+    "titleSw": "Matatizo ya figo",
+    "aliasesSw": [
+      "Matatizo ya figo",
+      "urinary kidney problems",
+      "Kidney Problems",
+      "figo",
+      "maumivu ya figo",
+      "kusafisha figo",
+      "matatizo ya kidney"
+    ],
+    "source_file": "diseases_urinary.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-urinary-renal-colic",
+    "title": "Renal Colic",
+    "titleSw": "Maumivu makali ya figo",
+    "aliasesSw": [
+      "Maumivu makali ya figo",
+      "urinary renal colic",
+      "Renal Colic",
+      "kidney pain",
+      "maumivu ya figo",
+      "mawe ya figo",
+      "kidney stones"
+    ],
+    "source_file": "diseases_urinary.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-urinary-bladder-problems",
+    "title": "Bladder Problems",
+    "titleSw": "Kibofu cha mkojo matatizo",
+    "aliasesSw": [
+      "Kibofu cha mkojo matatizo",
+      "urinary bladder problems",
+      "Bladder Problems"
+    ],
+    "source_file": "diseases_urinary.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-urinary-autism",
+    "title": "Autism",
+    "titleSw": "Autism",
+    "aliasesSw": [
+      "urinary autism",
+      "Autism"
+    ],
+    "source_file": "diseases_urinary.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-the-most-important-herbs",
+    "title": "The Most Important Herbs",
+    "titleSw": "The Most Important Herbs",
+    "aliasesSw": [
+      "the most important herbs"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-charcoal",
+    "title": "Charcoal",
+    "titleSw": "Mkaa",
+    "aliasesSw": [
+      "Mkaa",
+      "charcoal",
+      "activated charcoal",
+      "mkaa wa dawa",
+      "mkaa kwa sumu",
+      "mkaa kwa majeraha",
+      "mkaa kwa tumbo"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-cayenne",
+    "title": "Cayenne",
+    "titleSw": "Pilipili kali ya Cayenne",
+    "aliasesSw": [
+      "Pilipili kali ya Cayenne",
+      "cayenne",
+      "pilipili kali",
+      "pilipili ya dawa",
+      "cayenne pepper"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-garlic",
+    "title": "Garlic",
+    "titleSw": "Kitunguu saumu",
+    "aliasesSw": [
+      "Kitunguu saumu",
+      "garlic",
+      "vitunguu swaumu",
+      "kitunguu swaumu",
+      "vitunguu saumu",
+      "garlic kwa mafua",
+      "garlic kwa presha"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-goldenseal",
+    "title": "Goldenseal",
+    "titleSw": "Goldenseal",
+    "aliasesSw": [
+      "goldenseal",
+      "muhuri wa dhahabu",
+      "chai ya goldenseal",
+      "mimea ya maambukizi"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-peppermint",
+    "title": "Peppermint",
+    "titleSw": "Peppermint",
+    "aliasesSw": [
+      "peppermint",
+      "mint",
+      "minti",
+      "peppermint tea",
+      "chai ya mint",
+      "chai ya mnanaa"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-slippery-elm",
+    "title": "Slippery Elm",
+    "titleSw": "Slippery elm",
+    "aliasesSw": [
+      "slippery elm",
+      "koo kuuma",
+      "tumbo",
+      "mucus"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-lobelia",
+    "title": "Lobelia",
+    "titleSw": "Lobelia",
+    "aliasesSw": [
+      "lobelia"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-aloe-vera",
+    "title": "Aloe Vera",
+    "titleSw": "Aloe vera",
+    "aliasesSw": [
+      "aloe vera",
+      "aloe",
+      "shubiri",
+      "aloe kwa ngozi",
+      "shubiri kwa kuungua"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-cascara-sagrada",
+    "title": "Cascara Sagrada",
+    "titleSw": "Cascara Sagrada",
+    "aliasesSw": [
+      "cascara sagrada"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-corn-silk",
+    "title": "Corn Silk",
+    "titleSw": "Corn Silk",
+    "aliasesSw": [
+      "corn silk"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-hops",
+    "title": "Hops",
+    "titleSw": "Hops",
+    "aliasesSw": [
+      "hops"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-witch-hazel",
+    "title": "Witch Hazel",
+    "titleSw": "Witch Hazel",
+    "aliasesSw": [
+      "witch hazel"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-most-important-herbs",
+    "title": "Most Important Herbs",
+    "titleSw": "Most Important Herbs",
+    "aliasesSw": [
+      "most important herbs"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-catnip",
+    "title": "Catnip",
+    "titleSw": "Catnip",
+    "aliasesSw": [
+      "catnip"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-comfrey",
+    "title": "Comfrey",
+    "titleSw": "Comfrey",
+    "aliasesSw": [
+      "comfrey",
+      "mfupa kuvunjika",
+      "majeraha",
+      "uponyaji"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-echinacea",
+    "title": "Echinacea",
+    "titleSw": "Echinacea",
+    "aliasesSw": [
+      "echinacea",
+      "kinga ya mwili",
+      "mimea ya maambukizi"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-flaxseed",
+    "title": "Flaxseed",
+    "titleSw": "Flaxseed",
+    "aliasesSw": [
+      "flaxseed"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-ginger",
+    "title": "Ginger",
+    "titleSw": "Tangawizi",
+    "aliasesSw": [
+      "Tangawizi",
+      "ginger",
+      "mizizi ya tangawizi",
+      "tangawizi kwa kichefuchefu",
+      "tangawizi kwa mafua",
+      "tangawizi kwa tumbo"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-myrrh",
+    "title": "Myrrh",
+    "titleSw": "Myrrh",
+    "aliasesSw": [
+      "myrrh"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-skullcap",
+    "title": "Skullcap",
+    "titleSw": "Skullcap",
+    "aliasesSw": [
+      "skullcap"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-vervain",
+    "title": "Vervain",
+    "titleSw": "Vervain",
+    "aliasesSw": [
+      "vervain"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-most-important-herbs",
+    "title": "Most Important Herbs",
+    "titleSw": "Most Important Herbs",
+    "aliasesSw": [
+      "most important herbs"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-most-important-herbs",
+    "title": "Most Important Herbs",
+    "titleSw": "Most Important Herbs",
+    "aliasesSw": [
+      "most important herbs"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-most-important-herbs",
+    "title": "Most Important Herbs",
+    "titleSw": "Most Important Herbs",
+    "aliasesSw": [
+      "most important herbs"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-basic-herbal-principles",
+    "title": "Basic Herbal Principles",
+    "titleSw": "Msingi Herbal kanuni",
+    "aliasesSw": [
+      "Msingi Herbal kanuni",
+      "basic herbal principles"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-the-preparation-of-herbs",
+    "title": "The Preparation Of Herbs",
+    "titleSw": "The Preparation Of Herbs",
+    "aliasesSw": [
+      "the preparation of herbs"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-nine-useful-poultices",
+    "title": "Nine Useful Poultices",
+    "titleSw": "Nine Useful Poultices",
+    "aliasesSw": [
+      "nine useful poultices"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-the-healing-crisis",
+    "title": "The Healing Crisis",
+    "titleSw": "The Healing Crisis",
+    "aliasesSw": [
+      "the healing crisis"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-water-therapy-principles",
+    "title": "Water Therapy Principles",
+    "titleSw": "Maji Therapy kanuni",
+    "aliasesSw": [
+      "Maji Therapy kanuni",
+      "water therapy principles"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-the-use-of-drugs",
+    "title": "The Use Of Drugs",
+    "titleSw": "The Use Of Drugs",
+    "aliasesSw": [
+      "the use of drugs"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-the-air-you-breathe",
+    "title": "The Air You Breathe",
+    "titleSw": "The hewa You Breathe",
+    "aliasesSw": [
+      "The hewa You Breathe",
+      "the air you breathe"
+    ],
+    "source_file": "herbs.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-maintaining-health",
+    "title": "Maintaining Health",
+    "titleSw": "Kutunza afya",
+    "aliasesSw": [
+      "Kutunza afya",
+      "maintaining health",
+      "kuishi kwa afya",
+      "afya bora",
+      "kanuni za afya"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-principles-of-health",
+    "title": "Basic Principles Of Health",
+    "titleSw": "Kanuni za msingi za afya",
+    "aliasesSw": [
+      "Kanuni za msingi za afya",
+      "basic principles of health",
+      "kanuni za afya",
+      "maisha yenye afya",
+      "lishe bora"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-01-regularity-in-meals",
+    "title": "Regularity in meals",
+    "titleSw": "Utaratibu wa milo",
+    "aliasesSw": [
+      "Utaratibu wa milo",
+      "basic 01 regularity in meals",
+      "Regularity in meals",
+      "kula kwa ratiba",
+      "ratiba ya chakula",
+      "regular meals"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-02-moderation",
+    "title": "Moderation",
+    "titleSw": "Kiasi katika kula",
+    "aliasesSw": [
+      "Kiasi katika kula",
+      "basic 02 moderation",
+      "Moderation",
+      "kula kwa kiasi",
+      "usile kupita kiasi"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-03-take-small-bites",
+    "title": "Take small bites",
+    "titleSw": "Kula kwa vipande vidogo",
+    "aliasesSw": [
+      "Kula kwa vipande vidogo",
+      "basic 03 take small bites",
+      "Take small bites",
+      "small bites",
+      "kuumwa kidogo",
+      "tafuna vizuri"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-04-relax-and-eat-slowly",
+    "title": "Relax and eat slowly",
+    "titleSw": "Pumzika na kula taratibu",
+    "aliasesSw": [
+      "Pumzika na kula taratibu",
+      "basic 04 relax and eat slowly",
+      "Relax and eat slowly",
+      "eat slowly",
+      "kula polepole",
+      "pumzika kabla ya kula"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-06-do-not-eat-too-many-things-at-a-meal",
+    "title": "Do not eat too many things at a meal",
+    "titleSw": "Do not kula too many things at a meal",
+    "aliasesSw": [
+      "Do not kula too many things at a meal",
+      "basic 06 do not eat too many things at a meal",
+      "Do not eat too many things at a meal"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-07-avoid-complicated-mixtures",
+    "title": "Avoid complicated mixtures",
+    "titleSw": "Avoid complicated mixtures",
+    "aliasesSw": [
+      "basic 07 avoid complicated mixtures",
+      "Avoid complicated mixtures"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-11-never-eat-anything-prepared-in-aluminum",
+    "title": "Never eat anything prepared in aluminum",
+    "titleSw": "Never kula anything prepared in aluminum",
+    "aliasesSw": [
+      "Never kula anything prepared in aluminum",
+      "basic 11 never eat anything prepared in aluminum",
+      "Never eat anything prepared in aluminum"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-14-greens-have-more-compacted-vitamins-and-minerals-than-other-type-of-food",
+    "title": "Greens have more compacted vitamins and minerals than other type of food",
+    "titleSw": "Greens have more compacted vitamins and minerals than other type of chakula",
+    "aliasesSw": [
+      "Greens have more compacted vitamins and minerals than other type of chakula",
+      "basic 14 greens have more compacted vitamins and minerals than other type of food",
+      "Greens have more compacted vitamins and minerals than other type of food"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-16-blackstrap-molasses-is-the-only-very-rich-source-of-iron",
+    "title": "Blackstrap molasses is the only very rich source of iron",
+    "titleSw": "Blackstrap molasses is the only very rich source of iron",
+    "aliasesSw": [
+      "basic 16 blackstrap molasses is the only very rich source of iron",
+      "Blackstrap molasses is the only very rich source of iron"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-fruits",
+    "title": "Fruits",
+    "titleSw": "Fruits",
+    "aliasesSw": [
+      "fruits"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-vegetables",
+    "title": "Vegetables",
+    "titleSw": "Vegetables",
+    "aliasesSw": [
+      "vegetables"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-grains",
+    "title": "Grains",
+    "titleSw": "Grains",
+    "aliasesSw": [
+      "grains"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-nuts-and-seeds",
+    "title": "Nuts And Seeds",
+    "titleSw": "Nuts And Seeds",
+    "aliasesSw": [
+      "nuts and seeds"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-fats",
+    "title": "Fats",
+    "titleSw": "Fats",
+    "aliasesSw": [
+      "fats"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-sweetening",
+    "title": "Sweetening",
+    "titleSw": "Sweetening",
+    "aliasesSw": [
+      "sweetening"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-other-nutrients",
+    "title": "Other Nutrients",
+    "titleSw": "Other Nutrients",
+    "aliasesSw": [
+      "other nutrients"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-vitamins-and-minerals",
+    "title": "Vitamins And Minerals",
+    "titleSw": "Vitamins And Minerals",
+    "aliasesSw": [
+      "vitamins and minerals"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-summary",
+    "title": "Summary",
+    "titleSw": "Summary",
+    "aliasesSw": [
+      "summary"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-things-to-avoid",
+    "title": "Things To Avoid",
+    "titleSw": "Things To Avoid",
+    "aliasesSw": [
+      "things to avoid"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-non-dietetic-factors",
+    "title": "Non-Dietetic Factors",
+    "titleSw": "Non Dietetic Factors",
+    "aliasesSw": [
+      "Non Dietetic Factors",
+      "Non-Dietetic Factors"
+    ],
+    "source_file": "principles.json",
+    "lang": "sw",
+    "model": "intfloat/multilingual-e5-small",
+    "vector_dim": 384
+  }
+]

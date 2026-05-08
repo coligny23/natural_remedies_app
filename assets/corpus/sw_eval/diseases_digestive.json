@@ -14,7 +14,17 @@
       "width": 3784,
       "height": 5536,
       "credit": "File:Healing ulcers on the lower leg Wellcome L0061513.jpg — Fæ (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Vidonda vya miguu",
+    "aliasesSw": [
+      "Vidonda vya miguu",
+      "digestive leg ulcers",
+      "Leg Ulcers",
+      "vidonda miguuni",
+      "vidonda vya wazi miguuni",
+      "vidonda vya ngozi miguuni",
+      "mzunguko mbaya wa damu miguuni"
+    ]
   },
   {
     "id": "disease-digestive-indigestion",
@@ -31,7 +41,24 @@
       "width": 7939,
       "height": 11161,
       "credit": "File:Hoofland's celebrated German tonic water will cure dyspepsia, liver complaint, debility, indigestion, etc., etc. LCCN2005694438.jpg — Popular Graphic Arts (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kumeza chakula vibaya",
+    "aliasesSw": [
+      "Kumeza chakula vibaya",
+      "digestive indigestion",
+      "Indigestion",
+      "dyspepsia",
+      "gesi tumboni",
+      "tumbo kujaa",
+      "tumbo kujaa gesi",
+      "kiungulia",
+      "belching",
+      "bloating",
+      "heartburn",
+      "chakula hakishuki vizuri",
+      "kushindwa kumeng’enya chakula",
+      "kushindwa kumeng'enya chakula"
+    ]
   },
   {
     "id": "disease-digestive-enlarged-stomach",
@@ -48,7 +75,13 @@
       "width": 7088,
       "height": 5005,
       "credit": "File:High-resolution CT scan of paratype of Brachycephalus curupira.png — Ribeiro LF, Blackburn DC, Stanley EL, Pie MR, Bornschein MR. (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Enlarged tumbo",
+    "aliasesSw": [
+      "Enlarged tumbo",
+      "digestive enlarged stomach",
+      "Enlarged Stomach"
+    ]
   },
   {
     "id": "disease-digestive-stomach-inflammation",
@@ -65,7 +98,20 @@
       "width": 4272,
       "height": 2848,
       "credit": "File:Lymphocytic gastritis, low mag.jpg — CoRus13 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Uvimbe wa tumbo",
+    "aliasesSw": [
+      "Uvimbe wa tumbo",
+      "digestive stomach inflammation",
+      "Stomach Inflammation",
+      "gastritis",
+      "gastric catarrh",
+      "tumbo kuvimba",
+      "tumbo linauma",
+      "maumivu ya tumbo",
+      "uchochezi wa tumbo",
+      "kuvimba kwa tumbo"
+    ]
   },
   {
     "id": "disease-digestive-gastroenteritis",
@@ -82,7 +128,19 @@
       "width": 1920,
       "height": 1080,
       "credit": "File:Gastroenteritis.jpg — https://www.scientificanimations.com/ (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Gastroenteritis",
+    "aliasesSw": [
+      "digestive gastroenteritis",
+      "Gastroenteritis",
+      "tumbo kuharibika",
+      "kuhara na kutapika",
+      "maambukizi ya tumbo",
+      "kuharisha",
+      "kutapika",
+      "stomach flu",
+      "ugonjwa wa tumbo"
+    ]
   },
   {
     "id": "disease-digestive-chronic-gastritis",
@@ -99,7 +157,17 @@
       "width": 4272,
       "height": 2848,
       "credit": "File:Chronic gastritis -- very high mag.jpg — Nephron (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Gastritis ya muda mrefu",
+    "aliasesSw": [
+      "Gastritis ya muda mrefu",
+      "digestive chronic gastritis",
+      "Chronic Gastritis",
+      "gastritis sugu",
+      "maumivu ya tumbo ya muda mrefu",
+      "tumbo kuuma muda mrefu",
+      "uchochezi wa tumbo sugu"
+    ]
   },
   {
     "id": "disease-digestive-hepatitis",
@@ -116,7 +184,17 @@
       "width": 3045,
       "height": 2005,
       "credit": "File:Hepatitis B virus 01.jpg — Splintercellguy (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hepatitis",
+    "aliasesSw": [
+      "digestive hepatitis",
+      "Hepatitis",
+      "maambukizi ya ini",
+      "ugonjwa wa ini",
+      "ini kuvimba",
+      "uvimbe wa ini",
+      "hepatitis ya ini"
+    ]
   },
   {
     "id": "disease-digestive-gallbladder-inflammation",
@@ -133,7 +211,17 @@
       "width": 4000,
       "height": 6000,
       "credit": "File:Eosinophilic cholecystitis -- intermed mag.jpg — Nephron (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Uvimbe wa nyongo",
+    "aliasesSw": [
+      "Uvimbe wa nyongo",
+      "digestive gallbladder inflammation",
+      "Gallbladder Inflammation",
+      "nyongo kuvimba",
+      "uvimbe wa gallbladder",
+      "maumivu ya nyongo",
+      "kibofu cha nyongo"
+    ]
   },
   {
     "id": "disease-digestive-chronic-diarrhea",
@@ -150,7 +238,17 @@
       "width": 4320,
       "height": 3240,
       "credit": "File:Kidney stones ( renal calculi ), Бубрежни камења 6.JPG — Jakupica (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kuhara kwa muda mrefu",
+    "aliasesSw": [
+      "Kuhara kwa muda mrefu",
+      "digestive chronic diarrhea",
+      "Chronic Diarrhea",
+      "kuharisha muda mrefu",
+      "kuhara sugu",
+      "choo cha maji kwa muda mrefu",
+      "dawa ya kuharisha"
+    ]
   },
   {
     "id": "disease-digestive-irritable-bowel-syndrome",
@@ -167,7 +265,18 @@
       "width": 2605,
       "height": 1667,
       "credit": "File:Depiction of a person suffering from Irritable Bowel Syndrome (IBS).png — https://www.myupchar.com/en (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Irritable Bowel Syndrome",
+    "aliasesSw": [
+      "digestive irritable bowel syndrome",
+      "Irritable Bowel Syndrome",
+      "IBS",
+      "utumbo wenye hasira",
+      "tumbo linauma na gesi",
+      "gesi tumboni",
+      "maumivu ya tumbo",
+      "utumbo kukasirika"
+    ]
   },
   {
     "id": "disease-digestive-diarrhea-in-infants",
@@ -184,6 +293,17 @@
       "width": 3785,
       "height": 2401,
       "credit": "File:Diseases of infancy and childhood (1914) (14771968905).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kuhara kwa watoto wachanga",
+    "aliasesSw": [
+      "Kuhara kwa watoto wachanga",
+      "digestive diarrhea in infants",
+      "Diarrhea In Infants",
+      "mtoto mchanga kuharisha",
+      "kuhara kwa mtoto",
+      "kuharisha kwa mtoto mchanga",
+      "infant diarrhea",
+      "choo cha maji kwa mtoto"
+    ]
   }
 ]

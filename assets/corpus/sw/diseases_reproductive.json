@@ -14,7 +14,16 @@
       "width": 3456,
       "height": 2304,
       "credit": "File:Woman in Surf - Copacabana Beach - Rio de Janeiro - Brazil (5984385853).jpg — Adam Jones from Kelowna, BC, Canada (CC BY-SA 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Usumbufu wa matiti",
+    "aliasesSw": [
+      "Usumbufu wa matiti",
+      "reproductive breast discomfort",
+      "Breast Discomfort",
+      "matiti kuuma",
+      "maumivu ya matiti",
+      "breast tenderness"
+    ]
   },
   {
     "id": "disease-reproductive-breast-inflammation",
@@ -31,7 +40,16 @@
       "width": 8000,
       "height": 6000,
       "credit": "File:Mama con drenaje.jpg — Arturoborrero (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Uvimbe wa matiti",
+    "aliasesSw": [
+      "Uvimbe wa matiti",
+      "reproductive breast inflammation",
+      "Breast Inflammation",
+      "matiti kuvimba",
+      "mastitis",
+      "maumivu na uvimbe wa matiti"
+    ]
   },
   {
     "id": "disease-reproductive-breast-cyst",
@@ -48,7 +66,16 @@
       "width": 2048,
       "height": 1536,
       "credit": "File:Breast AdenoidCysticCarcinoma LP CTR.jpg — Sarahkayb (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Uvimbe/kivimbe cha titi",
+    "aliasesSw": [
+      "Uvimbe/kivimbe cha titi",
+      "reproductive breast cyst",
+      "Breast Cyst",
+      "cyst ya matiti",
+      "uvimbe kwenye titi",
+      "kivimbe kwenye titi"
+    ]
   },
   {
     "id": "disease-reproductive-premenstrual-syndrome",
@@ -65,7 +92,12 @@
       "width": 4027,
       "height": 2230,
       "credit": "File:PMS kreuzlingen.jpg — Pingelig (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Premenstrual Syndrome",
+    "aliasesSw": [
+      "reproductive premenstrual syndrome",
+      "Premenstrual Syndrome"
+    ]
   },
   {
     "id": "disease-reproductive-menstrual-disorders",
@@ -82,7 +114,13 @@
       "width": 2841,
       "height": 2918,
       "credit": "File:MenstrualCramps.jpg — Chidiebere Ibe (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Hedhi Disorders",
+    "aliasesSw": [
+      "Hedhi Disorders",
+      "reproductive menstrual disorders",
+      "Menstrual Disorders"
+    ]
   },
   {
     "id": "disease-reproductive-lack-of-menstruation",
@@ -99,7 +137,13 @@
       "width": 5675,
       "height": 7817,
       "credit": "File:Kotex Advertisement - DPLA - 41e63fe8415e5a4566bd30af0c58b25c.jpg — Kotex (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Lack Of hedhi",
+    "aliasesSw": [
+      "Lack Of hedhi",
+      "reproductive lack of menstruation",
+      "Lack Of Menstruation"
+    ]
   },
   {
     "id": "disease-reproductive-painful-menstruation",
@@ -116,7 +160,18 @@
       "width": 2268,
       "height": 3256,
       "credit": "File:... Woman in girlhood, wifehood, motherhood; her responsibilities and her duties at all periods of life; a guide in the maintenance of her health and that of her children (1906) (14770664831).jpg — Solis-Cohen, Myer (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Maumivu ya hedhi",
+    "aliasesSw": [
+      "Maumivu ya hedhi",
+      "reproductive painful menstruation",
+      "Painful Menstruation",
+      "period pain",
+      "menstrual pain",
+      "maumivu wakati wa hedhi",
+      "dysmenorrhea",
+      "hedhi yenye maumivu"
+    ]
   },
   {
     "id": "disease-reproductive-uterine-bleeding",
@@ -133,7 +188,12 @@
       "width": 3008,
       "height": 2000,
       "credit": "File:Alot sonk matrice.jpg — Lucyin (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Uterine Bleeding",
+    "aliasesSw": [
+      "reproductive uterine bleeding",
+      "Uterine Bleeding"
+    ]
   },
   {
     "id": "disease-reproductive-uterine-fibroids",
@@ -150,7 +210,12 @@
       "width": 2826,
       "height": 1817,
       "credit": "File:Myomectomy- Uterine fibroids.jpg — Yapa Wijeratne (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Uterine Fibroids",
+    "aliasesSw": [
+      "reproductive uterine fibroids",
+      "Uterine Fibroids"
+    ]
   },
   {
     "id": "disease-reproductive-prostate-disorders",
@@ -167,7 +232,12 @@
       "width": 2816,
       "height": 1876,
       "credit": "File:Benign hyperplasia prostate; evidence or bladder neck obstruction.jpg — Narraburra (CC0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Prostate Disorders",
+    "aliasesSw": [
+      "reproductive prostate disorders",
+      "Prostate Disorders"
+    ]
   },
   {
     "id": "disease-reproductive-prostatitis",
@@ -184,7 +254,12 @@
       "width": 4272,
       "height": 2848,
       "credit": "File:Prostate carcinoma with inflammation -- intermed mag.jpg — Nephron (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Prostatitis",
+    "aliasesSw": [
+      "reproductive prostatitis",
+      "Prostatitis"
+    ]
   },
   {
     "id": "disease-reproductive-testicular-atrophy",
@@ -201,7 +276,12 @@
       "width": 1616,
       "height": 1218,
       "credit": "File:The diseases of the genital organs of domestic animals (1921) (20976394231).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Testicular Atrophy",
+    "aliasesSw": [
+      "reproductive testicular atrophy",
+      "Testicular Atrophy"
+    ]
   },
   {
     "id": "disease-reproductive-pregnancy-related-problems",
@@ -218,7 +298,13 @@
       "width": 3400,
       "height": 2400,
       "credit": "File:Lifetime-risk-of-maternal-death.png — MDWiki(from Our World In Data) (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Ujauzito Related matatizo",
+    "aliasesSw": [
+      "Ujauzito Related matatizo",
+      "reproductive pregnancy related problems",
+      "Pregnancy Related Problems"
+    ]
   },
   {
     "id": "disease-reproductive-premature-labor",
@@ -235,7 +321,12 @@
       "width": 5000,
       "height": 3419,
       "credit": "File:Rosy Phillips. Fifteen year old spinner in a Dallas cotton mill. She was far from 'rosy' - thin, anaemic. Prematurely old. Her brother Exie (?) twelve years old who helps her some on LOC nclc.02859.tif — Hine, Lewis Wickes; National Child Labor Committee Collection (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Premature Labor",
+    "aliasesSw": [
+      "reproductive premature labor",
+      "Premature Labor"
+    ]
   },
   {
     "id": "disease-reproductive-breast-cancer",
@@ -252,7 +343,13 @@
       "width": 2000,
       "height": 1333,
       "credit": "File:Himeji Castle Lite up in pink, in October for Breast cancer awareness month.jpg — Lifes Legacy (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Matiti Cancer",
+    "aliasesSw": [
+      "Matiti Cancer",
+      "reproductive breast cancer",
+      "Breast Cancer"
+    ]
   },
   {
     "id": "disease-reproductive-prostate-cancer",
@@ -269,6 +366,11 @@
       "width": 4096,
       "height": 3008,
       "credit": "File:Adenocarcinoma of the prostate.jpg — Endolysosome (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Prostate Cancer",
+    "aliasesSw": [
+      "reproductive prostate cancer",
+      "Prostate Cancer"
+    ]
   }
 ]

@@ -14,7 +14,19 @@
       "width": 3220,
       "height": 2444,
       "credit": "File:Treatments for the Common Cold (37652567755).jpg — NIAID (CC BY 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Mafua",
+    "aliasesSw": [
+      "Mafua",
+      "respiratory common cold",
+      "Common Cold",
+      "baridi",
+      "pua kutiririka",
+      "kamasi",
+      "homa ya mafua",
+      "koo kuuma",
+      "cold"
+    ]
   },
   {
     "id": "disease-respiratory-coughs",
@@ -31,7 +43,18 @@
       "width": 2115,
       "height": 3000,
       "credit": "File:\"Cover Coughs, Cover Sneezes\" - NARA - 514081.jpg — Unknown authorUnknown author or not provided (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kikohozi",
+    "aliasesSw": [
+      "Kikohozi",
+      "respiratory coughs",
+      "Coughs",
+      "cough",
+      "kukohoa",
+      "kifua kubana",
+      "kikohozi kikavu",
+      "kikohozi cha makohozi"
+    ]
   },
   {
     "id": "disease-respiratory-cold-sores",
@@ -48,7 +71,16 @@
       "width": 2288,
       "height": 1712,
       "credit": "File:Cold sore.jpg — Vanished user fijtji34toksdcknqrjn54yoimascj (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Vidonda vya homa mdomoni",
+    "aliasesSw": [
+      "Vidonda vya homa mdomoni",
+      "respiratory cold sores",
+      "Cold Sores",
+      "vidonda mdomoni",
+      "herpes",
+      "malengelenge mdomoni"
+    ]
   },
   {
     "id": "disease-respiratory-cold-extremities",
@@ -65,7 +97,13 @@
       "width": 2083,
       "height": 3125,
       "credit": "File:C14 Chinese medication chart; Balancing and warming Wellcome L0039601.jpg — Faebot (CC BY 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Mafua Extremities",
+    "aliasesSw": [
+      "Mafua Extremities",
+      "respiratory cold extremities",
+      "Cold Extremities"
+    ]
   },
   {
     "id": "disease-respiratory-cold-feet",
@@ -82,7 +120,13 @@
       "width": 860,
       "height": 410,
       "credit": "File:Cold Feet (1922) - 3.jpg — Christie Film Company / Educational Film Exchanges (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Mafua Feet",
+    "aliasesSw": [
+      "Mafua Feet",
+      "respiratory cold feet",
+      "Cold Feet"
+    ]
   },
   {
     "id": "disease-respiratory-bronchiectasis",
@@ -99,7 +143,12 @@
       "width": 1499,
       "height": 879,
       "credit": "File:Bronchiectasis (3705951816).jpg — Yale Rosen from USA (CC BY-SA 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Bronchiectasis",
+    "aliasesSw": [
+      "respiratory bronchiectasis",
+      "Bronchiectasis"
+    ]
   },
   {
     "id": "disease-respiratory-pneumonia",
@@ -116,7 +165,15 @@
       "width": 1032,
       "height": 690,
       "credit": "File:Acute bronchopneumonia Case 102 (3677946033).jpg — Yale Rosen from USA (CC BY-SA 2.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Nimonia",
+    "aliasesSw": [
+      "Nimonia",
+      "respiratory pneumonia",
+      "Pneumonia",
+      "maambukizi ya mapafu",
+      "mapafu kuvimba"
+    ]
   },
   {
     "id": "disease-respiratory-broncho-pneumonia",
@@ -133,7 +190,13 @@
       "width": 5202,
       "height": 6384,
       "credit": "File:Fig. 4- Early stage of broncho-pneumonia, 3 days after gassing. - DPLA - e7dd781658a253e5dde9bf480f1ef9c9.jpg — Winternitz, M. C. (Milton C.) (Public domain) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Broncho nimonia",
+    "aliasesSw": [
+      "Broncho nimonia",
+      "respiratory broncho pneumonia",
+      "Broncho-Pneumonia"
+    ]
   },
   {
     "id": "disease-respiratory-lobar-pneumonia",
@@ -150,7 +213,13 @@
       "width": 862,
       "height": 649,
       "credit": "File:Lung biopsy showing lobar pneumonia 10X.jpg — Department of Pathology, Calicut Medical College (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Lobar nimonia",
+    "aliasesSw": [
+      "Lobar nimonia",
+      "respiratory lobar pneumonia",
+      "Lobar Pneumonia"
+    ]
   },
   {
     "id": "disease-respiratory-fluoride-poisoning",
@@ -160,6 +229,11 @@
     "image": "assets/images/fallbacks/disease.jpg",
     "imageMeta": {
       "credit": "Fallback image"
-    }
+    },
+    "titleSw": "Fluoride Poisoning",
+    "aliasesSw": [
+      "respiratory fluoride poisoning",
+      "Fluoride Poisoning"
+    ]
   }
 ]

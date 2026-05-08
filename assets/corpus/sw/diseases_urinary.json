@@ -14,7 +14,17 @@
       "width": 2605,
       "height": 1667,
       "credit": "File:Depiction of types of kidney disease.png — https://www.myupchar.com/en (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Matatizo ya figo",
+    "aliasesSw": [
+      "Matatizo ya figo",
+      "urinary kidney problems",
+      "Kidney Problems",
+      "figo",
+      "maumivu ya figo",
+      "kusafisha figo",
+      "matatizo ya kidney"
+    ]
   },
   {
     "id": "disease-urinary-renal-colic",
@@ -31,7 +41,17 @@
       "width": 2448,
       "height": 3264,
       "credit": "File:Renal colic presentation.jpeg — User:kaekae99 (CC BY-SA 3.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Maumivu makali ya figo",
+    "aliasesSw": [
+      "Maumivu makali ya figo",
+      "urinary renal colic",
+      "Renal Colic",
+      "kidney pain",
+      "maumivu ya figo",
+      "mawe ya figo",
+      "kidney stones"
+    ]
   },
   {
     "id": "disease-urinary-bladder-problems",
@@ -48,7 +68,13 @@
       "width": 2458,
       "height": 1286,
       "credit": "File:The Survey April-September 1920 (1920) (14762053464).jpg — Internet Archive Book Images (No restrictions) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Kibofu cha mkojo matatizo",
+    "aliasesSw": [
+      "Kibofu cha mkojo matatizo",
+      "urinary bladder problems",
+      "Bladder Problems"
+    ]
   },
   {
     "id": "disease-urinary-autism",
@@ -65,6 +91,11 @@
       "width": 1200,
       "height": 800,
       "credit": "File:Autism Doodle Stimming 2.png — MissLunaRose12 (CC BY-SA 4.0) via Wikimedia Commons"
-    }
+    },
+    "titleSw": "Autism",
+    "aliasesSw": [
+      "urinary autism",
+      "Autism"
+    ]
   }
 ]
