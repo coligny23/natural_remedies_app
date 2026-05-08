@@ -1,0 +1,5280 @@
+{
+  "model": "intfloat/multilingual-e5-small",
+  "index": "assets\\embeddings_e5small\\index_sw.bin",
+  "meta": "assets\\embeddings_e5small\\meta_sw.json",
+  "queries": "tools\\eval_queries_sw.json",
+  "total_queries": 135,
+  "top_1_hits": 34,
+  "top_3_hits": 64,
+  "top_5_hits": 75,
+  "top_1_accuracy": 0.2518518518518518,
+  "top_3_accuracy": 0.4740740740740741,
+  "top_5_accuracy": 0.5555555555555556,
+  "details": [
+    {
+      "query": "nini kinaweza kusaidia kumeza chakula vibaya na gesi tumboni baada ya kula",
+      "expected_id": "disease-digestive-indigestion",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-irritable-bowel-syndrome",
+          "title": "Irritable Bowel Syndrome",
+          "score": 0.8513938784599304
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-fasting",
+          "title": "Fasting",
+          "score": 0.8498655557632446
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-bloating",
+          "title": "Bloating",
+          "score": 0.848229169845581
+        },
+        {
+          "rank": 4,
+          "id": "principle-basic-08-avoid-peculiar-additives-such-as-vinegar-monosodium-glutamate-etc",
+          "title": "Avoid peculiar additives, such as vinegar, monosodium glutamate, etc",
+          "score": 0.8476811647415161
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-amino-acids",
+          "title": "Amino Acids",
+          "score": 0.8457776308059692
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "tumbo langu linauma na linaonekana kuvimba",
+      "expected_id": "disease-digestive-stomach-inflammation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8523324728012085
+        },
+        {
+          "rank": 2,
+          "id": "herb-yellow",
+          "title": "Yellow",
+          "score": 0.8127906918525696
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8125967383384705
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8115270733833313
+        },
+        {
+          "rank": 5,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8096579909324646
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "msaada wa asili kwa gastroenteritis na tumbo kuharibika",
+      "expected_id": "disease-digestive-gastroenteritis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-gastroenteritis",
+          "title": "Gastroenteritis",
+          "score": 0.8493314981460571
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-turista",
+          "title": "Turista",
+          "score": 0.8413833379745483
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-typhoid-fever",
+          "title": "Typhoid Fever",
+          "score": 0.838700532913208
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-food-poisoning",
+          "title": "Food Poisoning",
+          "score": 0.8373611569404602
+        },
+        {
+          "rank": 5,
+          "id": "herb-garlic",
+          "title": "Garlic",
+          "score": 0.836932897567749
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "tiba ya asili kwa gastritis ya muda mrefu",
+      "expected_id": "disease-digestive-chronic-gastritis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-garlic",
+          "title": "Garlic",
+          "score": 0.842393159866333
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-warts",
+          "title": "Warts",
+          "score": 0.8417737483978271
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-achlorhydria",
+          "title": "Achlorhydria",
+          "score": 0.8404204845428467
+        },
+        {
+          "rank": 4,
+          "id": "herb-aloe-vera",
+          "title": "Aloe Vera",
+          "score": 0.8394607305526733
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-chronic-gastritis",
+          "title": "Chronic Gastritis",
+          "score": 0.8379814624786377
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "nini husaidia hepatitis na maambukizi ya ini",
+      "expected_id": "disease-digestive-hepatitis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-hepatitis",
+          "title": "Hepatitis",
+          "score": 0.8400055766105652
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-viral-infections",
+          "title": "Viral Infections",
+          "score": 0.838625431060791
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-amino-acids",
+          "title": "Amino Acids",
+          "score": 0.8385575413703918
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-meniere-s-syndrome",
+          "title": "Meniere'S Syndrome",
+          "score": 0.8317630290985107
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-organs-of-elimination",
+          "title": "Organs Of Elimination",
+          "score": 0.8277565240859985
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "tiba ya asili kwa uvimbe wa gallbladder au nyongo",
+      "expected_id": "disease-digestive-gallbladder-inflammation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-garlic",
+          "title": "Garlic",
+          "score": 0.8369436264038086
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-gallbladder-inflammation",
+          "title": "Gallbladder Inflammation",
+          "score": 0.8346108794212341
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-renal-colic",
+          "title": "Renal Colic",
+          "score": 0.8332034945487976
+        },
+        {
+          "rank": 4,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.828134298324585
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-neonatal-jaundice",
+          "title": "Neonatal Jaundice",
+          "score": 0.8280915021896362
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "dawa ya kuharisha kwa muda mrefu na ushauri wa chakula",
+      "expected_id": "disease-digestive-chronic-diarrhea",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-fasting",
+          "title": "Fasting",
+          "score": 0.8430343866348267
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-candidiasis",
+          "title": "Candidiasis",
+          "score": 0.839958906173706
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-food-poisoning",
+          "title": "Food Poisoning",
+          "score": 0.8362596035003662
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-childhood-diseases",
+          "title": "Childhood Diseases",
+          "score": 0.835565984249115
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8352792263031006
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "maumivu ya tumbo gesi na irritable bowel syndrome",
+      "expected_id": "disease-digestive-irritable-bowel-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-irritable-bowel-syndrome",
+          "title": "Irritable Bowel Syndrome",
+          "score": 0.8640791177749634
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-hemorrhage",
+          "title": "Hemorrhage",
+          "score": 0.8445286154747009
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-infantile-convulsions",
+          "title": "Infantile Convulsions",
+          "score": 0.8419872522354126
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-malabsorption-syndrome",
+          "title": "Malabsorption Syndrome",
+          "score": 0.84130859375
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-stomach-inflammation",
+          "title": "Stomach Inflammation",
+          "score": 0.8381090760231018
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mtoto mchanga ana kuharisha nifanye nini",
+      "expected_id": "disease-digestive-diarrhea-in-infants",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8224375247955322
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-hyperactivity",
+          "title": "Hyperactivity",
+          "score": 0.8208553791046143
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-chickenpox",
+          "title": "Chickenpox",
+          "score": 0.8207783699035645
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-childhood-diseases",
+          "title": "Childhood Diseases",
+          "score": 0.8196859359741211
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.817283034324646
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "vidonda vya wazi miguuni kutokana na mzunguko mbaya wa damu",
+      "expected_id": "disease-digestive-leg-ulcers",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8561185002326965
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8536876440048218
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-cataracts",
+          "title": "Cataracts",
+          "score": 0.8324981927871704
+        },
+        {
+          "rank": 4,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8311731815338135
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-claudication",
+          "title": "Claudication",
+          "score": 0.8307163715362549
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "uchovu wa kila wakati na udhaifu wa mwili",
+      "expected_id": "disease-general-chronic-fatigue",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8496291637420654
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8351836204528809
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-mania",
+          "title": "Mania",
+          "score": 0.8265672922134399
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-claudication",
+          "title": "Claudication",
+          "score": 0.8224420547485352
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-hyperactivity",
+          "title": "Hyperactivity",
+          "score": 0.8222308158874512
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "msongo wa mawazo wasiwasi na uchovu wa mwili",
+      "expected_id": "disease-general-emotional-fatigue-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8520789742469788
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8419187664985657
+        },
+        {
+          "rank": 3,
+          "id": "disease-head-sorrow-of-the-heart",
+          "title": "Sorrow Of The Heart",
+          "score": 0.8253213763237
+        },
+        {
+          "rank": 4,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8213646411895752
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-mental-illness",
+          "title": "Mental Illness",
+          "score": 0.8213528990745544
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "maambukizi ya yeast candida na thrush tiba yake",
+      "expected_id": "disease-general-candidiasis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-candidiasis",
+          "title": "Candidiasis",
+          "score": 0.854340672492981
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-amino-acids",
+          "title": "Amino Acids",
+          "score": 0.825907826423645
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-lupus",
+          "title": "Lupus",
+          "score": 0.8231042623519897
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-coughs",
+          "title": "Coughs",
+          "score": 0.8230084180831909
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-toxemia",
+          "title": "Toxemia",
+          "score": 0.8188982009887695
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "nahisi kichefuchefu na tumbo haliko vizuri",
+      "expected_id": "disease-general-nausea",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8636493682861328
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.828255295753479
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8277332782745361
+        },
+        {
+          "rank": 4,
+          "id": "herb-yellow",
+          "title": "Yellow",
+          "score": 0.8250554800033569
+        },
+        {
+          "rank": 5,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.821842610836029
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "nifanye nini mtu akizimia au kupoteza fahamu",
+      "expected_id": "disease-general-fainting",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8336752653121948
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8316936492919922
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8236391544342041
+        },
+        {
+          "rank": 4,
+          "id": "principle-basic-04-relax-and-eat-slowly",
+          "title": "Relax and eat slowly",
+          "score": 0.8148990869522095
+        },
+        {
+          "rank": 5,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8130584955215454
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "uchovu wa joto kutokana na jua upungufu wa maji na udhaifu",
+      "expected_id": "disease-general-heat-exhaustion",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8121542930603027
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-polio",
+          "title": "Polio",
+          "score": 0.8056228160858154
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-heat-exhaustion",
+          "title": "Heat Exhaustion",
+          "score": 0.8042594194412231
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-general-preventative-factors",
+          "title": "General Preventative Factors",
+          "score": 0.8038318157196045
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-tic-douloureux",
+          "title": "Tic Douloureux",
+          "score": 0.8025606870651245
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kichefuchefu wakati wa safari ugonjwa wa gari au bahari",
+      "expected_id": "disease-general-motion-sickness",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8598116636276245
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8419991135597229
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.837897539138794
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-motion-sickness",
+          "title": "Motion Sickness",
+          "score": 0.8270897269248962
+        },
+        {
+          "rank": 5,
+          "id": "principle-basic-17-the-best-pattern-is-to-rest-before-the-meal-and-walk-around-after-it-not-vice-versa",
+          "title": "The best pattern is to rest before the meal, and walk around after it, not vice versa",
+          "score": 0.8217613697052002
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "kamasi nyingi catarrh na pua kutiririka",
+      "expected_id": "disease-general-catarrh",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8460223078727722
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8257957696914673
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8216646313667297
+        },
+        {
+          "rank": 4,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8213977217674255
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-catarrh",
+          "title": "Catarrh",
+          "score": 0.8203901052474976
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "baridi kutetemeka na kuhisi baridi wakati wa maambukizi",
+      "expected_id": "disease-general-chills",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8426201343536377
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8402363061904907
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8269312977790833
+        },
+        {
+          "rank": 4,
+          "id": "principle-basic-17-the-best-pattern-is-to-rest-before-the-meal-and-walk-around-after-it-not-vice-versa",
+          "title": "The best pattern is to rest before the meal, and walk around after it, not vice versa",
+          "score": 0.8208283185958862
+        },
+        {
+          "rank": 5,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8187650442123413
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "maambukizi ya virusi homa maumivu ya mwili na kichwa",
+      "expected_id": "disease-general-viral-infections",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8567537069320679
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-viral-infections",
+          "title": "Viral Infections",
+          "score": 0.8380116820335388
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-epstein-barr-virus",
+          "title": "Epstein Barr Virus",
+          "score": 0.836438775062561
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-mononucleosis",
+          "title": "Mononucleosis",
+          "score": 0.8363812565803528
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-chills",
+          "title": "Chills",
+          "score": 0.8340533971786499
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "uvimbe joto na maumivu katika tishu za mwili",
+      "expected_id": "disease-general-inflammation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8639529347419739
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8481321930885315
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8396807312965393
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-amino-acids",
+          "title": "Amino Acids",
+          "score": 0.8372782468795776
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-convulsions",
+          "title": "Convulsions",
+          "score": 0.8361417055130005
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "joto la mwili likiwa juu homa na huduma ya asili",
+      "expected_id": "disease-general-fever",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.862019956111908
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8468539714813232
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8330807089805603
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-amino-acids",
+          "title": "Amino Acids",
+          "score": 0.8248136639595032
+        },
+        {
+          "rank": 5,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.824208676815033
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "malaria baridi na kutokwa jasho kila baada ya muda",
+      "expected_id": "disease-general-malaria",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8579915165901184
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-malaria",
+          "title": "Malaria",
+          "score": 0.8462845087051392
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-meniere-s-syndrome",
+          "title": "Meniere'S Syndrome",
+          "score": 0.8350787162780762
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8307088017463684
+        },
+        {
+          "rank": 5,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8263142108917236
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "homa ya typhoid na taarifa za afya ya asili",
+      "expected_id": "disease-general-typhoid-fever",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8473598957061768
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-typhoid-fever",
+          "title": "Typhoid Fever",
+          "score": 0.8464091420173645
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8438305854797363
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-typhus",
+          "title": "Typhus",
+          "score": 0.8294740915298462
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-amino-acids",
+          "title": "Amino Acids",
+          "score": 0.8266028165817261
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kinga ya mwili kuwa dhaifu na kuugua mara kwa mara",
+      "expected_id": "disease-general-weakened-autoimmune-system",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.873631477355957
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8509167432785034
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8314133882522583
+        },
+        {
+          "rank": 4,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.8303776979446411
+        },
+        {
+          "rank": 5,
+          "id": "principle-basic-01-regularity-in-meals",
+          "title": "Regularity in meals",
+          "score": 0.8290603160858154
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "stress wasiwasi mawazo mengi na tension ya neva",
+      "expected_id": "disease-general-stress-and-anxiety",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8445667028427124
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-sorrow-of-the-heart",
+          "title": "Sorrow Of The Heart",
+          "score": 0.8280678987503052
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-stress-and-anxiety",
+          "title": "Stress And Anxiety",
+          "score": 0.827094554901123
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8210721015930176
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-general-preventative-factors",
+          "title": "General Preventative Factors",
+          "score": 0.8201869130134583
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "unyogovu huzuni na kupoteza hamu ya kufanya mambo",
+      "expected_id": "disease-general-depression",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8447557687759399
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8397178053855896
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8311555981636047
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8237322568893433
+        },
+        {
+          "rank": 5,
+          "id": "herb-yellow",
+          "title": "Yellow",
+          "score": 0.8155304193496704
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "sukari ya damu kuwa chini dalili za hypoglycemia",
+      "expected_id": "disease-general-hypoglycemia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-hypoglycemia",
+          "title": "Hypoglycemia",
+          "score": 0.8510407209396362
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-addison-s-disease",
+          "title": "Addison'S Disease",
+          "score": 0.8370769023895264
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-cushing-s-disease",
+          "title": "Cushing'S Disease",
+          "score": 0.8340049982070923
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.8326433897018433
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-cataracts",
+          "title": "Cataracts",
+          "score": 0.83088618516922
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "harufu mbaya ya mwili na tiba ya asili",
+      "expected_id": "disease-general-body-odor",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8509937524795532
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8383803367614746
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-drug-rash",
+          "title": "Drug Rash",
+          "score": 0.8347986936569214
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-keratosis",
+          "title": "Keratosis",
+          "score": 0.8308541774749756
+        },
+        {
+          "rank": 5,
+          "id": "disease-skin-acne",
+          "title": "Acne",
+          "score": 0.8280967473983765
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "kutokwa jasho usiku wakati wa kulala",
+      "expected_id": "disease-general-night-sweats",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-nightmares",
+          "title": "Nightmares",
+          "score": 0.8354347944259644
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8314028978347778
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8299620747566223
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-tinnitus",
+          "title": "Tinnitus",
+          "score": 0.8257368803024292
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-snoring",
+          "title": "Snoring",
+          "score": 0.8255519270896912
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "mba kichwani ngozi kuwasha na flakes",
+      "expected_id": "disease-general-dandruff",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8421808481216431
+        },
+        {
+          "rank": 2,
+          "id": "herb-chickweed-squaw",
+          "title": "Chickweed Squaw",
+          "score": 0.8329329490661621
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8258461952209473
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8255100250244141
+        },
+        {
+          "rank": 5,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8248844742774963
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "athlete foot fangasi na kuwasha katikati ya vidole vya miguu",
+      "expected_id": "disease-general-athlete-s-foot",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8374444842338562
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-athlete-s-foot",
+          "title": "Athlete'S Foot",
+          "score": 0.8348883390426636
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8289865851402283
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8179103136062622
+        },
+        {
+          "rank": 5,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8176383376121521
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "harufu mbaya ya mdomo halitosis tiba yake",
+      "expected_id": "disease-general-halitosis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-keratosis",
+          "title": "Keratosis",
+          "score": 0.8450071215629578
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.842947244644165
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-drug-rash",
+          "title": "Drug Rash",
+          "score": 0.8352948427200317
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8323805332183838
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-convulsions",
+          "title": "Convulsions",
+          "score": 0.8314080238342285
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "tumbo kujaa gesi na kuvimba",
+      "expected_id": "disease-general-bloating",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8585615158081055
+        },
+        {
+          "rank": 2,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8375862836837769
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.834347665309906
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.832460343837738
+        },
+        {
+          "rank": 5,
+          "id": "herb-yellow",
+          "title": "Yellow",
+          "score": 0.8304674625396729
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "kutapika mara kwa mara na kushindwa kuweka chakula tumboni",
+      "expected_id": "disease-general-vomiting",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8383122086524963
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8375276327133179
+        },
+        {
+          "rank": 3,
+          "id": "principle-basic-02-moderation",
+          "title": "Moderation",
+          "score": 0.8365132808685303
+        },
+        {
+          "rank": 4,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8339852690696716
+        },
+        {
+          "rank": 5,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.8318973779678345
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "colitis uvimbe wa utumbo na maumivu ya tumbo",
+      "expected_id": "disease-general-colitis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8633608818054199
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-hemorrhage",
+          "title": "Hemorrhage",
+          "score": 0.8472000360488892
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-renal-colic",
+          "title": "Renal Colic",
+          "score": 0.8446164131164551
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-colitis",
+          "title": "Colitis",
+          "score": 0.8401390910148621
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-convulsions",
+          "title": "Convulsions",
+          "score": 0.8380047082901001
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "ugonjwa wa figo unaoitwa bright disease",
+      "expected_id": "disease-general-bright-s-disease",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-bright-s-disease",
+          "title": "Bright'S Disease",
+          "score": 0.8350826501846313
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-birth-defects",
+          "title": "Birth Defects",
+          "score": 0.8135623335838318
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-childhood-diseases",
+          "title": "Childhood Diseases",
+          "score": 0.813278317451477
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-crohn-s-disease",
+          "title": "Crohn'S Disease",
+          "score": 0.8101810216903687
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-genital-herpes",
+          "title": "Genital Herpes",
+          "score": 0.8086971044540405
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "emphysema shida ya kupumua na uharibifu wa mapafu",
+      "expected_id": "disease-general-emphysema",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8590892553329468
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8488680124282837
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8325756788253784
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-epstein-barr-virus",
+          "title": "Epstein Barr Virus",
+          "score": 0.819233775138855
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-impetigo",
+          "title": "Impetigo",
+          "score": 0.8175071477890015
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "varicose veins mishipa kuvimba kwenye miguu",
+      "expected_id": "disease-general-varicose-veins",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8498629927635193
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8478646874427795
+        },
+        {
+          "rank": 3,
+          "id": "herb-chickweed-squaw",
+          "title": "Chickweed Squaw",
+          "score": 0.8436139822006226
+        },
+        {
+          "rank": 4,
+          "id": "herb-ginseng",
+          "title": "Ginseng",
+          "score": 0.8387540578842163
+        },
+        {
+          "rank": 5,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8364666700363159
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "sciatica maumivu yanayoshuka mpaka mguuni",
+      "expected_id": "disease-general-sciatica",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8590224981307983
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8442561030387878
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-sciatica",
+          "title": "Sciatica",
+          "score": 0.8405718803405762
+        },
+        {
+          "rank": 4,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8357518911361694
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-brachial-neuralgia",
+          "title": "Brachial Neuralgia",
+          "score": 0.8338616490364075
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "carpal tunnel maumivu ya kifundo cha mkono na vidole kufa ganzi",
+      "expected_id": "disease-general-carpal-tunnel-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-carpal-tunnel-syndrome",
+          "title": "Carpal Tunnel Syndrome",
+          "score": 0.8467285633087158
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8466448783874512
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-felon",
+          "title": "Felon",
+          "score": 0.8324155807495117
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-tennis-elbow",
+          "title": "Tennis Elbow",
+          "score": 0.8320245742797852
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-brachial-neuralgia",
+          "title": "Brachial Neuralgia",
+          "score": 0.8277037739753723
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "osteoporosis mifupa dhaifu na hatari ya kuvunjika",
+      "expected_id": "disease-general-osteoporosis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-osteoporosis",
+          "title": "Osteoporosis",
+          "score": 0.8501061201095581
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-rickets",
+          "title": "Rickets",
+          "score": 0.8500174283981323
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-menopause",
+          "title": "Menopause",
+          "score": 0.8352974653244019
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-aging",
+          "title": "Aging",
+          "score": 0.8314130306243896
+        },
+        {
+          "rank": 5,
+          "id": "disease-musculoskeletal-fracture",
+          "title": "Fracture",
+          "score": 0.830344557762146
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "tezi ya thyroid kufanya kazi chini dalili za hypothyroidism",
+      "expected_id": "disease-general-hypothyroidism",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-hyperthyroidism",
+          "title": "Hyperthyroidism",
+          "score": 0.845544695854187
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-toxemia",
+          "title": "Toxemia",
+          "score": 0.8385653495788574
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-hypothyroidism",
+          "title": "Hypothyroidism",
+          "score": 0.832327127456665
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.8301476836204529
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-night-sweats",
+          "title": "Night Sweats",
+          "score": 0.8272026777267456
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "food poisoning kutapika na kuharisha baada ya kula",
+      "expected_id": "disease-general-food-poisoning",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-food-poisoning",
+          "title": "Food Poisoning",
+          "score": 0.8532224893569946
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8392139673233032
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-amino-acids",
+          "title": "Amino Acids",
+          "score": 0.8377784490585327
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-poisoning",
+          "title": "Poisoning",
+          "score": 0.8369375467300415
+        },
+        {
+          "rank": 5,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8345154523849487
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "sumu ya lead au metali nzito mwilini",
+      "expected_id": "disease-general-lead-poisoning",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8347436189651489
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-miscellaneous-preventative-factors",
+          "title": "Miscellaneous Preventative Factors",
+          "score": 0.8293256759643555
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-lead-poisoning",
+          "title": "Lead Poisoning",
+          "score": 0.8292371034622192
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.825178861618042
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-leukemia",
+          "title": "Leukemia",
+          "score": 0.8206450939178467
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kuzuia cancer na kanuni za afya ya asili",
+      "expected_id": "disease-general-preventing-cancer",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-problem-foods",
+          "title": "Problem Foods",
+          "score": 0.8517103791236877
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-protein",
+          "title": "Protein",
+          "score": 0.8495399355888367
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-fasting",
+          "title": "Fasting",
+          "score": 0.8415918350219727
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-minerals",
+          "title": "Minerals",
+          "score": 0.8410361409187317
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-other-chemicals",
+          "title": "Other Chemicals",
+          "score": 0.8405932188034058
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "maumivu ya sinus pua kuziba na pressure usoni",
+      "expected_id": "disease-head-sinusitis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8560518026351929
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-sinusitis",
+          "title": "Sinusitis",
+          "score": 0.8450803756713867
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.840271532535553
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-postnasal-drip",
+          "title": "Postnasal Drip",
+          "score": 0.8396928310394287
+        },
+        {
+          "rank": 5,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8368362188339233
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "matatizo ya macho huduma ya asili na kuona vibaya",
+      "expected_id": "disease-head-eye-problems",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8411185145378113
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8299431800842285
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-amblyopia",
+          "title": "Amblyopia",
+          "score": 0.8242778778076172
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-farsightedness",
+          "title": "Farsightedness",
+          "score": 0.8213179707527161
+        },
+        {
+          "rank": 5,
+          "id": "disease-head-eye-problems",
+          "title": "Eye Problems",
+          "score": 0.8195441365242004
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "macho mekundu na muwasho wa macho",
+      "expected_id": "disease-head-red-eyes",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8637392520904541
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8494205474853516
+        },
+        {
+          "rank": 3,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8382169008255005
+        },
+        {
+          "rank": 4,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8371933698654175
+        },
+        {
+          "rank": 5,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8339241147041321
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "macho kuwasha allergy na irritation",
+      "expected_id": "disease-head-itchy-eyes",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8467819690704346
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-glaucoma",
+          "title": "Glaucoma",
+          "score": 0.8378225564956665
+        },
+        {
+          "rank": 3,
+          "id": "disease-head-mucous-in-eye",
+          "title": "Mucous In Eye",
+          "score": 0.8374314308166504
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-cushing-s-disease",
+          "title": "Cushing'S Disease",
+          "score": 0.8353854417800903
+        },
+        {
+          "rank": 5,
+          "id": "disease-head-red-eyes",
+          "title": "Red Eyes",
+          "score": 0.8350793123245239
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "pua kutoa damu huduma ya kwanza",
+      "expected_id": "disease-head-nosebleed",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.840521514415741
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8325845003128052
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8228136301040649
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8178951144218445
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-mania",
+          "title": "Mania",
+          "score": 0.8171237111091614
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "earwax kuziba sikio na sikio kufungana",
+      "expected_id": "disease-head-earwax",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8613240718841553
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8527113795280457
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8519003391265869
+        },
+        {
+          "rank": 4,
+          "id": "herb-chickweed-squaw",
+          "title": "Chickweed Squaw",
+          "score": 0.8411591053009033
+        },
+        {
+          "rank": 5,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8404402732849121
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "swimmer ear maji kuingia sikioni na maambukizi",
+      "expected_id": "disease-head-swimmer-s-ear",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8407291769981384
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-swimmer-s-ear",
+          "title": "Swimmer'S Ear",
+          "score": 0.8374655246734619
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8255352973937988
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8220537900924683
+        },
+        {
+          "rank": 5,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8193368911743164
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kupoteza uwezo wa kusikia au kusikia kidogo",
+      "expected_id": "disease-head-hearing-loss",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8524023294448853
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8492355346679688
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8360615968704224
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8305464386940002
+        },
+        {
+          "rank": 5,
+          "id": "disease-head-hearing-loss",
+          "title": "Hearing Loss",
+          "score": 0.8078979253768921
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "koo kuuma na maumivu wakati wa kumeza",
+      "expected_id": "disease-head-sore-throat",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8516765832901001
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8456847667694092
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8447972536087036
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8350644111633301
+        },
+        {
+          "rank": 5,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8236178159713745
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "meno kuoza cavities na matatizo ya meno",
+      "expected_id": "disease-head-tooth-decay",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8550145626068115
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8407377004623413
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-meniere-s-syndrome",
+          "title": "Meniere'S Syndrome",
+          "score": 0.8357527256011963
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+          "title": "Temporomandibular Joint Syndrome",
+          "score": 0.8328210115432739
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-tinnitus",
+          "title": "Tinnitus",
+          "score": 0.8295866847038269
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "heartburn kifua kuwaka baada ya kula",
+      "expected_id": "disease-head-heartburn",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-heartburn",
+          "title": "Heartburn",
+          "score": 0.848892092704773
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8478075265884399
+        },
+        {
+          "rank": 3,
+          "id": "disease-digestive-chronic-gastritis",
+          "title": "Chronic Gastritis",
+          "score": 0.8449448347091675
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8423197269439697
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.840076744556427
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mfupa kuvunjika fracture huduma ya kwanza na uponyaji",
+      "expected_id": "disease-musculoskeletal-fracture",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8215582370758057
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8197019696235657
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8184815645217896
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8151012659072876
+        },
+        {
+          "rank": 5,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8148379325866699
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "heel spur au bone spur maumivu ya kisigino",
+      "expected_id": "disease-musculoskeletal-bone-spur",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.86445152759552
+        },
+        {
+          "rank": 2,
+          "id": "herb-chickweed-squaw",
+          "title": "Chickweed Squaw",
+          "score": 0.8458755612373352
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8455694913864136
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8419492244720459
+        },
+        {
+          "rank": 5,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.840884268283844
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "rheumatism ya muda mrefu na maumivu ya viungo",
+      "expected_id": "disease-musculoskeletal-chronic-rheumatism",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.8658477067947388
+        },
+        {
+          "rank": 2,
+          "id": "disease-musculoskeletal-chronic-rheumatism",
+          "title": "Chronic Rheumatism",
+          "score": 0.8555663228034973
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-ankylosing-spondylitis",
+          "title": "Ankylosing Spondylitis",
+          "score": 0.8493117690086365
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-claudication",
+          "title": "Claudication",
+          "score": 0.84921795129776
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-buerger-s-disease",
+          "title": "Buerger'S Disease",
+          "score": 0.8477972745895386
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "maumivu ya taya na temporomandibular joint syndrome",
+      "expected_id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+          "title": "Temporomandibular Joint Syndrome",
+          "score": 0.8675491809844971
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-bruxism",
+          "title": "Bruxism",
+          "score": 0.8398754596710205
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-meniere-s-syndrome",
+          "title": "Meniere'S Syndrome",
+          "score": 0.8370532989501953
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8356531858444214
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-sjogren-s-syndrome",
+          "title": "Sjogren'S Syndrome",
+          "score": 0.8354669809341431
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "misuli kukakamaa na cramps zenye maumivu",
+      "expected_id": "disease-musculoskeletal-muscle-cramps",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8739233613014221
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8455809354782104
+        },
+        {
+          "rank": 3,
+          "id": "herb-chickweed-squaw",
+          "title": "Chickweed Squaw",
+          "score": 0.8362558484077454
+        },
+        {
+          "rank": 4,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8362312316894531
+        },
+        {
+          "rank": 5,
+          "id": "disease-musculoskeletal-muscle-cramps",
+          "title": "Muscle Cramps",
+          "score": 0.8311777710914612
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "jeraha la misuli strain na soreness",
+      "expected_id": "disease-musculoskeletal-muscle-injuries",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8455804586410522
+        },
+        {
+          "rank": 2,
+          "id": "disease-musculoskeletal-muscle-injuries",
+          "title": "Muscle Injuries",
+          "score": 0.8371760845184326
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-childhood-diseases",
+          "title": "Childhood Diseases",
+          "score": 0.8324815034866333
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-myasthenia-gravis",
+          "title": "Myasthenia Gravis",
+          "score": 0.8296145796775818
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-amyotrophic-lateral-sclerosis",
+          "title": "Amyotrophic Lateral Sclerosis",
+          "score": 0.8293871879577637
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "maumivu ya mgongo wa chini tiba ya asili",
+      "expected_id": "disease-musculoskeletal-backache",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-coughs",
+          "title": "Coughs",
+          "score": 0.829451858997345
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-convulsions",
+          "title": "Convulsions",
+          "score": 0.8283282518386841
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-genital-herpes",
+          "title": "Genital Herpes",
+          "score": 0.8262872099876404
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-infantile-convulsions",
+          "title": "Infantile Convulsions",
+          "score": 0.8225067853927612
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-tetanus",
+          "title": "Tetanus",
+          "score": 0.8220953941345215
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "rheumatic fever maumivu ya viungo na homa",
+      "expected_id": "disease-musculoskeletal-rheumatic-fever",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.8690510392189026
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8580710887908936
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-hay-fever",
+          "title": "Hay Fever",
+          "score": 0.8492223024368286
+        },
+        {
+          "rank": 4,
+          "id": "disease-head-reye-s-syndrome",
+          "title": "Reye'S Syndrome",
+          "score": 0.8461093902587891
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-hemorrhage",
+          "title": "Hemorrhage",
+          "score": 0.8450484275817871
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "maumivu na usumbufu wa matiti kabla ya hedhi",
+      "expected_id": "disease-reproductive-breast-discomfort",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-mastitis",
+          "title": "Mastitis",
+          "score": 0.8483856916427612
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-premature-labor",
+          "title": "Premature Labor",
+          "score": 0.8338379859924316
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-miscarriage",
+          "title": "Miscarriage",
+          "score": 0.8317837119102478
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8295186758041382
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-insanities",
+          "title": "Insanities",
+          "score": 0.829152524471283
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "matiti kuvimba kuwa magumu na kuuma",
+      "expected_id": "disease-reproductive-breast-inflammation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8468854427337646
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8270111083984375
+        },
+        {
+          "rank": 3,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8240829706192017
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8238146901130676
+        },
+        {
+          "rank": 5,
+          "id": "principle-basic-02-moderation",
+          "title": "Moderation",
+          "score": 0.8207159042358398
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "breast cyst uvimbe au lump kwenye titi na maumivu",
+      "expected_id": "disease-reproductive-breast-cyst",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8543586730957031
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-breast-cyst",
+          "title": "Breast Cyst",
+          "score": 0.850369930267334
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-breast-discomfort",
+          "title": "Breast Discomfort",
+          "score": 0.8489173650741577
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-breast-inflammation",
+          "title": "Breast Inflammation",
+          "score": 0.8432130217552185
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-mastitis",
+          "title": "Mastitis",
+          "score": 0.8425552845001221
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "PMS mabadiliko ya mood na maumivu ya matiti kabla ya hedhi",
+      "expected_id": "disease-reproductive-premenstrual-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8526052236557007
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8396351337432861
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-premenstrual-syndrome",
+          "title": "Premenstrual Syndrome",
+          "score": 0.8267990350723267
+        },
+        {
+          "rank": 4,
+          "id": "principle-basic-17-the-best-pattern-is-to-rest-before-the-meal-and-walk-around-after-it-not-vice-versa",
+          "title": "The best pattern is to rest before the meal, and walk around after it, not vice versa",
+          "score": 0.8221706748008728
+        },
+        {
+          "rank": 5,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8187624216079712
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "matatizo ya hedhi na period kuwa irregular",
+      "expected_id": "disease-reproductive-menstrual-disorders",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-premenstrual-syndrome",
+          "title": "Premenstrual Syndrome",
+          "score": 0.8426554203033447
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-menstrual-disorders",
+          "title": "Menstrual Disorders",
+          "score": 0.8376891613006592
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8358229398727417
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-frigidity",
+          "title": "Frigidity",
+          "score": 0.8340679407119751
+        },
+        {
+          "rank": 5,
+          "id": "disease-urinary-bladder-problems",
+          "title": "Bladder Problems",
+          "score": 0.8336160182952881
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kukosa hedhi au period kuchelewa",
+      "expected_id": "disease-reproductive-lack-of-menstruation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8658045530319214
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8542056083679199
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8394447565078735
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-premenstrual-syndrome",
+          "title": "Premenstrual Syndrome",
+          "score": 0.8316478729248047
+        },
+        {
+          "rank": 5,
+          "id": "herb-chickweed-squaw",
+          "title": "Chickweed Squaw",
+          "score": 0.8309137225151062
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "maumivu makali ya hedhi cramps na tiba yake",
+      "expected_id": "disease-reproductive-painful-menstruation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8709323406219482
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8411010503768921
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-uterine-bleeding",
+          "title": "Uterine Bleeding",
+          "score": 0.8321308493614197
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-miscarriage",
+          "title": "Miscarriage",
+          "score": 0.8316531181335449
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-hemorrhage",
+          "title": "Hemorrhage",
+          "score": 0.8316155076026917
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "kutokwa damu kwenye uterus au bleeding isiyo ya kawaida",
+      "expected_id": "disease-reproductive-uterine-bleeding",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8704690933227539
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8430823683738708
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8396923542022705
+        },
+        {
+          "rank": 4,
+          "id": "herb-chickweed-squaw",
+          "title": "Chickweed Squaw",
+          "score": 0.8275257349014282
+        },
+        {
+          "rank": 5,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8266801834106445
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "uterine fibroids na taarifa za afya ya asili",
+      "expected_id": "disease-reproductive-uterine-fibroids",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8636062741279602
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8611754775047302
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-uterine-fibroids",
+          "title": "Uterine Fibroids",
+          "score": 0.8362985849380493
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-special-risk-factors",
+          "title": "Special Risk Factors",
+          "score": 0.8293768167495728
+        },
+        {
+          "rank": 5,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8292326927185059
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "matatizo ya prostate kukojoa na afya ya mwanaume",
+      "expected_id": "disease-reproductive-prostate-disorders",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-prostate-cancer",
+          "title": "Prostate Cancer",
+          "score": 0.8577214479446411
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-prostate-disorders",
+          "title": "Prostate Disorders",
+          "score": 0.8551979064941406
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-chlamydia",
+          "title": "Chlamydia",
+          "score": 0.8306453227996826
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-gonorrhea",
+          "title": "Gonorrhea",
+          "score": 0.8270178437232971
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8233577013015747
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "prostatitis uvimbe wa prostate",
+      "expected_id": "disease-reproductive-prostatitis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-prostate-disorders",
+          "title": "Prostate Disorders",
+          "score": 0.858454167842865
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-chlamydia",
+          "title": "Chlamydia",
+          "score": 0.851083517074585
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-prostate-cancer",
+          "title": "Prostate Cancer",
+          "score": 0.8462784290313721
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-prostatitis",
+          "title": "Prostatitis",
+          "score": 0.8451563715934753
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-bright-s-disease",
+          "title": "Bright'S Disease",
+          "score": 0.8429347276687622
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "matatizo yanayohusiana na ujauzito na huduma ya asili",
+      "expected_id": "disease-reproductive-pregnancy-related-problems",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8330998420715332
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-growth-problems",
+          "title": "Growth Problems",
+          "score": 0.8209227323532104
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-mental-illness",
+          "title": "Mental Illness",
+          "score": 0.8173376321792603
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8163882493972778
+        },
+        {
+          "rank": 5,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.8149117231369019
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "mafua pua kutiririka na koo kuuma",
+      "expected_id": "disease-respiratory-common-cold",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8544477224349976
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.851219892501831
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8495944738388062
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8364782929420471
+        },
+        {
+          "rank": 5,
+          "id": "herb-yellow",
+          "title": "Yellow",
+          "score": 0.8206751346588135
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "kikohozi tiba ya asili na muwasho wa kifua",
+      "expected_id": "disease-respiratory-coughs",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8242670297622681
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8229220509529114
+        },
+        {
+          "rank": 3,
+          "id": "herb-lobelia",
+          "title": "Lobelia",
+          "score": 0.8197180032730103
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-amino-acids",
+          "title": "Amino Acids",
+          "score": 0.8167200088500977
+        },
+        {
+          "rank": 5,
+          "id": "herb-garlic",
+          "title": "Garlic",
+          "score": 0.8159145712852478
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "cold sores vidonda kuzunguka mdomo",
+      "expected_id": "disease-respiratory-cold-sores",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8423277139663696
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8409385681152344
+        },
+        {
+          "rank": 3,
+          "id": "herb-chickweed-squaw",
+          "title": "Chickweed Squaw",
+          "score": 0.8340563774108887
+        },
+        {
+          "rank": 4,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8334461450576782
+        },
+        {
+          "rank": 5,
+          "id": "disease-respiratory-cold-sores",
+          "title": "Cold Sores",
+          "score": 0.829674243927002
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "mikono na miguu kuwa baridi kutokana na mzunguko duni wa damu",
+      "expected_id": "disease-respiratory-cold-extremities",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8531801700592041
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8359227180480957
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-felon",
+          "title": "Felon",
+          "score": 0.8317369222640991
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-hives",
+          "title": "Hives",
+          "score": 0.8315540552139282
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-bursitis",
+          "title": "Bursitis",
+          "score": 0.8265126943588257
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "miguu kuwa baridi na mzunguko mbaya wa damu",
+      "expected_id": "disease-respiratory-cold-feet",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8706536293029785
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8504949808120728
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8318585157394409
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-leukemia",
+          "title": "Leukemia",
+          "score": 0.8298486471176147
+        },
+        {
+          "rank": 5,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8259471654891968
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "bronchiectasis hali ya mapafu yenye kamasi nyingi",
+      "expected_id": "disease-respiratory-bronchiectasis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-bronchiectasis",
+          "title": "Bronchiectasis",
+          "score": 0.8417326807975769
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-typhus",
+          "title": "Typhus",
+          "score": 0.833465576171875
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8332281708717346
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8289662599563599
+        },
+        {
+          "rank": 5,
+          "id": "disease-respiratory-lobar-pneumonia",
+          "title": "Lobar Pneumonia",
+          "score": 0.8251981139183044
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "pneumonia maambukizi ya mapafu na homa",
+      "expected_id": "disease-respiratory-pneumonia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8518879413604736
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-broncho-pneumonia",
+          "title": "Broncho-Pneumonia",
+          "score": 0.8422559499740601
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8417125344276428
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-pneumonia",
+          "title": "Pneumonia",
+          "score": 0.8415215015411377
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-lung-congestion",
+          "title": "Lung Congestion",
+          "score": 0.8365659713745117
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "broncho pneumonia maambukizi ya kupumua",
+      "expected_id": "disease-respiratory-broncho-pneumonia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-broncho-pneumonia",
+          "title": "Broncho-Pneumonia",
+          "score": 0.8556878566741943
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-lobar-pneumonia",
+          "title": "Lobar Pneumonia",
+          "score": 0.8447090983390808
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-pneumonia",
+          "title": "Pneumonia",
+          "score": 0.8420144319534302
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-bronchiectasis",
+          "title": "Bronchiectasis",
+          "score": 0.8410873413085938
+        },
+        {
+          "rank": 5,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8400779962539673
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "lobar pneumonia uvimbe wa mapafu",
+      "expected_id": "disease-respiratory-lobar-pneumonia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-lobar-pneumonia",
+          "title": "Lobar Pneumonia",
+          "score": 0.8521577715873718
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-broncho-pneumonia",
+          "title": "Broncho-Pneumonia",
+          "score": 0.8431196808815002
+        },
+        {
+          "rank": 3,
+          "id": "herb-lobelia",
+          "title": "Lobelia",
+          "score": 0.8404608964920044
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-toxic-shock-syndrome",
+          "title": "Toxic Shock Syndrome",
+          "score": 0.837252140045166
+        },
+        {
+          "rank": 5,
+          "id": "disease-respiratory-pneumonia",
+          "title": "Pneumonia",
+          "score": 0.8318151235580444
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "sumu ya fluoride na dalili zake",
+      "expected_id": "disease-respiratory-fluoride-poisoning",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-fluoride-poisoning",
+          "title": "Fluoride Poisoning",
+          "score": 0.8376418948173523
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-pyorrhea",
+          "title": "Pyorrhea",
+          "score": 0.8098754286766052
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8098085522651672
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-legionnaire-s-disease",
+          "title": "Legionnaire'S Disease",
+          "score": 0.8071368932723999
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-chemical-poisoning",
+          "title": "Chemical Poisoning",
+          "score": 0.8067548274993896
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "majipu kwenye ngozi yenye usaha",
+      "expected_id": "disease-skin-boils",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8385329246520996
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8377041816711426
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8328792452812195
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8181377649307251
+        },
+        {
+          "rank": 5,
+          "id": "herb-yellow",
+          "title": "Yellow",
+          "score": 0.8118525147438049
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "burns kuchomwa huduma ya kwanza na aloe vera",
+      "expected_id": "disease-skin-burns",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-burns",
+          "title": "Burns",
+          "score": 0.8457926511764526
+        },
+        {
+          "rank": 2,
+          "id": "herb-aloe-vera",
+          "title": "Aloe Vera",
+          "score": 0.8210363388061523
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-sunburn",
+          "title": "Sunburn",
+          "score": 0.8130455613136292
+        },
+        {
+          "rank": 4,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8114602565765381
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-bed-sores",
+          "title": "Bed Sores",
+          "score": 0.8066412210464478
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "acne chunusi usoni",
+      "expected_id": "disease-skin-acne",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8590877056121826
+        },
+        {
+          "rank": 2,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8540811538696289
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8457268476486206
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-amino-acids",
+          "title": "Amino Acids",
+          "score": 0.8452566266059875
+        },
+        {
+          "rank": 5,
+          "id": "disease-skin-acne",
+          "title": "Acne",
+          "score": 0.8426601886749268
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "warts vipele vigumu kwenye ngozi tiba ya asili",
+      "expected_id": "disease-skin-warts",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8371962308883667
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-warts",
+          "title": "Warts",
+          "score": 0.8314600586891174
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-toxic-shock-syndrome",
+          "title": "Toxic Shock Syndrome",
+          "score": 0.8201533555984497
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-vaccination-problems",
+          "title": "Vaccination Problems",
+          "score": 0.819521963596344
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-muscular-dystrophy",
+          "title": "Muscular Dystrophy",
+          "score": 0.8181428909301758
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "heat rash upele wa joto na kuwasha",
+      "expected_id": "disease-skin-heat-rash",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-heat-rash",
+          "title": "Heat Rash",
+          "score": 0.8464980721473694
+        },
+        {
+          "rank": 2,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8332080841064453
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-heat-exhaustion",
+          "title": "Heat Exhaustion",
+          "score": 0.8325795531272888
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-toxemia",
+          "title": "Toxemia",
+          "score": 0.8324260115623474
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-fainting",
+          "title": "Fainting",
+          "score": 0.8324138522148132
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "sunburn ngozi kuungua na jua",
+      "expected_id": "disease-skin-sunburn",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-sunburn",
+          "title": "Sunburn",
+          "score": 0.8281372785568237
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-radiation",
+          "title": "Radiation",
+          "score": 0.8148799538612366
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-special-risk-factors",
+          "title": "Special Risk Factors",
+          "score": 0.8093398809432983
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-neonatal-jaundice",
+          "title": "Neonatal Jaundice",
+          "score": 0.8089794516563416
+        },
+        {
+          "rank": 5,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8068981170654297
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "upele wa ngozi kuwasha na wekundu",
+      "expected_id": "disease-skin-skin-rash",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.842616856098175
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8408029079437256
+        },
+        {
+          "rank": 3,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8303970098495483
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.823462188243866
+        },
+        {
+          "rank": 5,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8227668404579163
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "eczema ngozi kukauka na kuwasha",
+      "expected_id": "disease-skin-eczema",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-eczema",
+          "title": "Eczema",
+          "score": 0.8414645195007324
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.841264545917511
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-impetigo",
+          "title": "Impetigo",
+          "score": 0.8323220014572144
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-toxic-shock-syndrome",
+          "title": "Toxic Shock Syndrome",
+          "score": 0.8281072974205017
+        },
+        {
+          "rank": 5,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8276212811470032
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "psoriasis mabaka ya ngozi yenye magamba",
+      "expected_id": "disease-skin-psoriasis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-psoriasis",
+          "title": "Psoriasis",
+          "score": 0.8420604467391968
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-special-risk-factors",
+          "title": "Special Risk Factors",
+          "score": 0.8221502304077148
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8218353390693665
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-rosacea",
+          "title": "Rosacea",
+          "score": 0.8211274147033691
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-miscellaneous-preventative-factors",
+          "title": "Miscellaneous Preventative Factors",
+          "score": 0.8173887729644775
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "frostbite kutokana na baridi kali",
+      "expected_id": "disease-skin-frostbite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8417262434959412
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-frostbite",
+          "title": "Frostbite",
+          "score": 0.84151691198349
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8351622819900513
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8343791961669922
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-malaria",
+          "title": "Malaria",
+          "score": 0.8215240240097046
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "miguu kuwaka moto au burning feet",
+      "expected_id": "disease-skin-burning-feet",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.853150486946106
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8467941284179688
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8452234864234924
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8422414660453796
+        },
+        {
+          "rank": 5,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8352513313293457
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "diaper rash upele wa nepi kwa mtoto",
+      "expected_id": "disease-skin-diaper-rash",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-diaper-rash",
+          "title": "Diaper Rash",
+          "score": 0.851294755935669
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-reye-s-syndrome",
+          "title": "Reye'S Syndrome",
+          "score": 0.834579586982727
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8337376117706299
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-neonatal-jaundice",
+          "title": "Neonatal Jaundice",
+          "score": 0.8275141716003418
+        },
+        {
+          "rank": 5,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8267027139663696
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kuumwa na mdudu uvimbe na maumivu",
+      "expected_id": "disease-skin-insect-sting",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8742132186889648
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8596264123916626
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8574773073196411
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8396604061126709
+        },
+        {
+          "rank": 5,
+          "id": "herb-chickweed-squaw",
+          "title": "Chickweed Squaw",
+          "score": 0.8264310956001282
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "kuumwa na mbu na kuwasha",
+      "expected_id": "disease-skin-mosquito-bite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8649188280105591
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8585163950920105
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.852328896522522
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8461604118347168
+        },
+        {
+          "rank": 5,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.830783486366272
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "kuumwa na buibui huduma ya kwanza ya asili",
+      "expected_id": "disease-skin-spider-bite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8140795230865479
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8139921426773071
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-convulsions",
+          "title": "Convulsions",
+          "score": 0.8130515217781067
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8121933937072754
+        },
+        {
+          "rank": 5,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.810002326965332
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "kuumwa na nyoka huduma ya dharura",
+      "expected_id": "disease-skin-snake-bite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8611079454421997
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8507522344589233
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8428173065185547
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8323312401771545
+        },
+        {
+          "rank": 5,
+          "id": "herb-chickweed-squaw",
+          "title": "Chickweed Squaw",
+          "score": 0.830342710018158
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "kuumwa na mbwa au mnyama huduma ya kwanza",
+      "expected_id": "disease-skin-dog-or-animal-bite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-rabies",
+          "title": "Rabies",
+          "score": 0.8233489394187927
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.821152925491333
+        },
+        {
+          "rank": 3,
+          "id": "herb-chickweed-squaw",
+          "title": "Chickweed Squaw",
+          "score": 0.8181015253067017
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8145228624343872
+        },
+        {
+          "rank": 5,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8137345910072327
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "matatizo ya figo na kusafisha figo",
+      "expected_id": "disease-urinary-kidney-problems",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8562953472137451
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.852261483669281
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-frigidity",
+          "title": "Frigidity",
+          "score": 0.8277350664138794
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-fibromyalgia-syndrome",
+          "title": "Fibromyalgia Syndrome",
+          "score": 0.8276174068450928
+        },
+        {
+          "rank": 5,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8273992538452148
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "renal colic maumivu makali ya figo",
+      "expected_id": "disease-urinary-renal-colic",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.860689640045166
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8590049147605896
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-renal-colic",
+          "title": "Renal Colic",
+          "score": 0.8520586490631104
+        },
+        {
+          "rank": 4,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8481086492538452
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-insanities",
+          "title": "Insanities",
+          "score": 0.8409438133239746
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "matatizo ya bladder na urinary infection",
+      "expected_id": "disease-urinary-bladder-problems",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-urinary-bladder-problems",
+          "title": "Bladder Problems",
+          "score": 0.8801754713058472
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-hematuria",
+          "title": "Hematuria",
+          "score": 0.8606923222541809
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.8597630858421326
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-urine-retention",
+          "title": "Urine Retention",
+          "score": 0.8571127653121948
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-chlamydia",
+          "title": "Chlamydia",
+          "score": 0.8566101789474487
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "autism taarifa za afya ya asili",
+      "expected_id": "disease-urinary-autism",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8658684492111206
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8564455509185791
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-autism",
+          "title": "Autism",
+          "score": 0.8474706411361694
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-myasthenia-gravis",
+          "title": "Myasthenia Gravis",
+          "score": 0.8358923196792603
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-mental-illness",
+          "title": "Mental Illness",
+          "score": 0.8291335105895996
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mkaa kwa sumu na poultice kwenye majeraha",
+      "expected_id": "herb-charcoal",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8407173156738281
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8354999423027039
+        },
+        {
+          "rank": 3,
+          "id": "herb-chickweed-squaw",
+          "title": "Chickweed Squaw",
+          "score": 0.8259360790252686
+        },
+        {
+          "rank": 4,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8255027532577515
+        },
+        {
+          "rank": 5,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8249673843383789
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "cayenne pilipili kali kwa mzunguko wa damu na kuongeza joto",
+      "expected_id": "herb-cayenne",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8401786684989929
+        },
+        {
+          "rank": 2,
+          "id": "herb-cayenne",
+          "title": "Cayenne",
+          "score": 0.8354382514953613
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-meniere-s-syndrome",
+          "title": "Meniere'S Syndrome",
+          "score": 0.8328400254249573
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-amino-acids",
+          "title": "Amino Acids",
+          "score": 0.8322263360023499
+        },
+        {
+          "rank": 5,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8293258547782898
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kitunguu saumu kwa kikohozi mafua na maambukizi",
+      "expected_id": "herb-garlic",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8536441326141357
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8396215438842773
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8379760980606079
+        },
+        {
+          "rank": 4,
+          "id": "herb-barberry-pleurisy",
+          "title": "Barberry Pleurisy",
+          "score": 0.8257662057876587
+        },
+        {
+          "rank": 5,
+          "id": "herb-chickweed-squaw",
+          "title": "Chickweed Squaw",
+          "score": 0.8231995105743408
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "goldenseal kama antiseptic herb kwa maambukizi",
+      "expected_id": "herb-goldenseal",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-goldenseal",
+          "title": "Goldenseal",
+          "score": 0.8863621950149536
+        },
+        {
+          "rank": 2,
+          "id": "herb-myrrh",
+          "title": "Myrrh",
+          "score": 0.8618937134742737
+        },
+        {
+          "rank": 3,
+          "id": "herb-echinacea",
+          "title": "Echinacea",
+          "score": 0.8361507654190063
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-food-poisoning",
+          "title": "Food Poisoning",
+          "score": 0.8314166069030762
+        },
+        {
+          "rank": 5,
+          "id": "herb-slippery-elm",
+          "title": "Slippery Elm",
+          "score": 0.8301355242729187
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "peppermint tea kwa digestion na kutuliza tumbo",
+      "expected_id": "herb-peppermint",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-peppermint",
+          "title": "Peppermint",
+          "score": 0.8613553047180176
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-coughs",
+          "title": "Coughs",
+          "score": 0.8467186689376831
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-dyspepsia",
+          "title": "Dyspepsia",
+          "score": 0.8405918478965759
+        },
+        {
+          "rank": 4,
+          "id": "herb-hops",
+          "title": "Hops",
+          "score": 0.8339418172836304
+        },
+        {
+          "rank": 5,
+          "id": "herb-lobelia",
+          "title": "Lobelia",
+          "score": 0.8321540355682373
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "slippery elm kwa kutuliza tishu zilizokasirika",
+      "expected_id": "herb-slippery-elm",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8450040817260742
+        },
+        {
+          "rank": 2,
+          "id": "herb-slippery-elm",
+          "title": "Slippery Elm",
+          "score": 0.834454357624054
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.829798698425293
+        },
+        {
+          "rank": 4,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8280957937240601
+        },
+        {
+          "rank": 5,
+          "id": "herb-chickweed-squaw",
+          "title": "Chickweed Squaw",
+          "score": 0.8268898725509644
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "aloe vera kwa burns na kuponya ngozi",
+      "expected_id": "herb-aloe-vera",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-aloe-vera",
+          "title": "Aloe Vera",
+          "score": 0.8544188141822815
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-burns",
+          "title": "Burns",
+          "score": 0.8454234004020691
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8349198698997498
+        },
+        {
+          "rank": 4,
+          "id": "herb-lobelia",
+          "title": "Lobelia",
+          "score": 0.8253087997436523
+        },
+        {
+          "rank": 5,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8236895799636841
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "corn silk tea kwa mtiririko wa mkojo na figo",
+      "expected_id": "herb-corn-silk",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-corn-silk",
+          "title": "Corn Silk",
+          "score": 0.8384627103805542
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-coughs",
+          "title": "Coughs",
+          "score": 0.8287605047225952
+        },
+        {
+          "rank": 3,
+          "id": "herb-hops",
+          "title": "Hops",
+          "score": 0.827878475189209
+        },
+        {
+          "rank": 4,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8276002407073975
+        },
+        {
+          "rank": 5,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.82674640417099
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "echinacea kwa kusaidia kinga ya mwili",
+      "expected_id": "herb-echinacea",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8538355827331543
+        },
+        {
+          "rank": 2,
+          "id": "herb-echinacea",
+          "title": "Echinacea",
+          "score": 0.8532610535621643
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8408147692680359
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-amino-acids",
+          "title": "Amino Acids",
+          "score": 0.8354009985923767
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8267127275466919
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "tangawizi kwa kichefuchefu mafua na digestion",
+      "expected_id": "herb-ginger",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.866970956325531
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8611220717430115
+        },
+        {
+          "rank": 3,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8555011749267578
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8374847173690796
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8351925611495972
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "comfrey kwa majeraha na uponyaji",
+      "expected_id": "herb-comfrey",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.845152735710144
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.842384934425354
+        },
+        {
+          "rank": 3,
+          "id": "herb-comfrey",
+          "title": "Comfrey",
+          "score": 0.8272335529327393
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8212728500366211
+        },
+        {
+          "rank": 5,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8195388317108154
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "flaxseed poultice na matumizi ya tiba ya asili",
+      "expected_id": "herb-flaxseed",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-flaxseed",
+          "title": "Flaxseed",
+          "score": 0.8575378060340881
+        },
+        {
+          "rank": 2,
+          "id": "herb-nine-useful-poultices",
+          "title": "Nine Useful Poultices",
+          "score": 0.8317161798477173
+        },
+        {
+          "rank": 3,
+          "id": "herb-lobelia",
+          "title": "Lobelia",
+          "score": 0.8275395631790161
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8214784860610962
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-corns-and-calluses",
+          "title": "Corns And Calluses",
+          "score": 0.8209446668624878
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kanuni za msingi za kuishi kwa afya",
+      "expected_id": "principle-basic-principles-of-health",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8871169686317444
+        },
+        {
+          "rank": 2,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.8803718686103821
+        },
+        {
+          "rank": 3,
+          "id": "principle-maintaining-health",
+          "title": "Maintaining Health",
+          "score": 0.8779159784317017
+        },
+        {
+          "rank": 4,
+          "id": "principle-non-dietetic-factors",
+          "title": "Non-Dietetic Factors",
+          "score": 0.8579378724098206
+        },
+        {
+          "rank": 5,
+          "id": "principle-vegetables",
+          "title": "Vegetables",
+          "score": 0.8441452383995056
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "ratiba ya kawaida ya kula na muda wa milo",
+      "expected_id": "principle-basic-01-regularity-in-meals",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-basic-01-regularity-in-meals",
+          "title": "Regularity in meals",
+          "score": 0.8530148267745972
+        },
+        {
+          "rank": 2,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.8488588929176331
+        },
+        {
+          "rank": 3,
+          "id": "principle-basic-02-moderation",
+          "title": "Moderation",
+          "score": 0.8451678156852722
+        },
+        {
+          "rank": 4,
+          "id": "principle-grains",
+          "title": "Grains",
+          "score": 0.8406683802604675
+        },
+        {
+          "rank": 5,
+          "id": "principle-basic-17-the-best-pattern-is-to-rest-before-the-meal-and-walk-around-after-it-not-vice-versa",
+          "title": "The best pattern is to rest before the meal, and walk around after it, not vice versa",
+          "score": 0.8406238555908203
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "epuka kula kupita kiasi na tumia kiasi",
+      "expected_id": "principle-basic-02-moderation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-basic-02-moderation",
+          "title": "Moderation",
+          "score": 0.8627798557281494
+        },
+        {
+          "rank": 2,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.861815333366394
+        },
+        {
+          "rank": 3,
+          "id": "principle-basic-07-avoid-complicated-mixtures",
+          "title": "Avoid complicated mixtures",
+          "score": 0.8583948016166687
+        },
+        {
+          "rank": 4,
+          "id": "principle-basic-04-relax-and-eat-slowly",
+          "title": "Relax and eat slowly",
+          "score": 0.8518146872520447
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8504810929298401
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "tafuna chakula vizuri kabla ya kumeza",
+      "expected_id": "principle-basic-05-chew-your-food-well",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-basic-10-the-food-should-be-palatable",
+          "title": "The food should be palatable",
+          "score": 0.8411232829093933
+        },
+        {
+          "rank": 2,
+          "id": "principle-basic-17-the-best-pattern-is-to-rest-before-the-meal-and-walk-around-after-it-not-vice-versa",
+          "title": "The best pattern is to rest before the meal, and walk around after it, not vice versa",
+          "score": 0.8376938104629517
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8372647762298584
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8324639797210693
+        },
+        {
+          "rank": 5,
+          "id": "principle-fruits",
+          "title": "Fruits",
+          "score": 0.8286417722702026
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "kunywa maji kati ya milo sio pamoja na chakula",
+      "expected_id": "principle-basic-12-aside-from-fresh-raw-juices-or-the-green-drink-drink-all-your-liquids-water-between-meals-not-with-your-meals",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-basic-12-aside-from-fresh-raw-juices-or-the-green-drink-drink-all-your-liquids-water-between-meals-not-with-your-meals",
+          "title": "Aside from fresh, raw, juices or the green drink, drink all your liquids (water) between meals, not with your meals",
+          "score": 0.8726404905319214
+        },
+        {
+          "rank": 2,
+          "id": "principle-basic-10-the-food-should-be-palatable",
+          "title": "The food should be palatable",
+          "score": 0.8368221521377563
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.835444450378418
+        },
+        {
+          "rank": 4,
+          "id": "principle-basic-17-the-best-pattern-is-to-rest-before-the-meal-and-walk-around-after-it-not-vice-versa",
+          "title": "The best pattern is to rest before the meal, and walk around after it, not vice versa",
+          "score": 0.8348097801208496
+        },
+        {
+          "rank": 5,
+          "id": "principle-basic-13-as-a-rule-eat-your-fruits-at-one-meal-and-vegetables-at-another",
+          "title": "As a rule, eat your fruits at one meal and vegetables at another",
+          "score": 0.8336217403411865
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "matunda katika lishe yenye afya",
+      "expected_id": "principle-fruits",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8743396997451782
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.85270094871521
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8513245582580566
+        },
+        {
+          "rank": 4,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.8318992853164673
+        },
+        {
+          "rank": 5,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8303413391113281
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "mboga kwa maisha yenye afya",
+      "expected_id": "principle-vegetables",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.856137752532959
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8561035394668579
+        },
+        {
+          "rank": 3,
+          "id": "herb-ginseng",
+          "title": "Ginseng",
+          "score": 0.8329859972000122
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8282768726348877
+        },
+        {
+          "rank": 5,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.827104926109314
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "vitamini na madini katika kanuni za afya",
+      "expected_id": "principle-vitamins-and-minerals",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8565542101860046
+        },
+        {
+          "rank": 2,
+          "id": "principle-vitamins-and-minerals",
+          "title": "Vitamins And Minerals",
+          "score": 0.8410719633102417
+        },
+        {
+          "rank": 3,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.8404183387756348
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-vitamins",
+          "title": "Vitamins",
+          "score": 0.8402074575424194
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-senility",
+          "title": "Senility",
+          "score": 0.8389449119567871
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mambo ya kuepuka ili kuboresha afya",
+      "expected_id": "principle-things-to-avoid",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8659761548042297
+        },
+        {
+          "rank": 2,
+          "id": "principle-things-to-avoid",
+          "title": "Things To Avoid",
+          "score": 0.841503381729126
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-allergies",
+          "title": "Allergies",
+          "score": 0.8401333093643188
+        },
+        {
+          "rank": 4,
+          "id": "disease-skin-fasting",
+          "title": "Fasting",
+          "score": 0.8379649519920349
+        },
+        {
+          "rank": 5,
+          "id": "principle-basic-02-moderation",
+          "title": "Moderation",
+          "score": 0.8363125920295715
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mambo yasiyo ya chakula yanayoathiri afya",
+      "expected_id": "principle-non-dietetic-factors",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8550112247467041
+        },
+        {
+          "rank": 2,
+          "id": "principle-things-to-avoid",
+          "title": "Things To Avoid",
+          "score": 0.8492726683616638
+        },
+        {
+          "rank": 3,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8462181687355042
+        },
+        {
+          "rank": 4,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.8416721224784851
+        },
+        {
+          "rank": 5,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.841050922870636
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "pernicious anemia udhaifu na upungufu wa vitamini",
+      "expected_id": "disease-general-pernicious-anemia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-pernicious-anemia",
+          "title": "Pernicious Anemia",
+          "score": 0.8908513784408569
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-beriberi",
+          "title": "Beriberi",
+          "score": 0.8507113456726074
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-anorexia-nervosa",
+          "title": "Anorexia Nervosa",
+          "score": 0.8485062122344971
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-insanities",
+          "title": "Insanities",
+          "score": 0.8434293270111084
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-pellagra",
+          "title": "Pellagra",
+          "score": 0.8387483954429626
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "blood poisoning maambukizi kusambaa mwilini",
+      "expected_id": "disease-general-blood-poisoning",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-blood-poisoning",
+          "title": "Blood Poisoning",
+          "score": 0.8460274934768677
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8397653102874756
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-toxic-shock-syndrome",
+          "title": "Toxic Shock Syndrome",
+          "score": 0.8397344350814819
+        },
+        {
+          "rank": 4,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8391216993331909
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-food-poisoning",
+          "title": "Food Poisoning",
+          "score": 0.8382543921470642
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "underweight mwili kuwa mwembamba sana",
+      "expected_id": "disease-general-underweight",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-underweight",
+          "title": "Underweight",
+          "score": 0.8527661561965942
+        },
+        {
+          "rank": 2,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8491407632827759
+        },
+        {
+          "rank": 3,
+          "id": "principle-basic-02-moderation",
+          "title": "Moderation",
+          "score": 0.83555006980896
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-bulimia",
+          "title": "Bulimia",
+          "score": 0.8338053822517395
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-cellulite",
+          "title": "Cellulite",
+          "score": 0.8337578773498535
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "minyoo na parasites wa matumbo",
+      "expected_id": "disease-general-worms",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.853986918926239
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.8454513549804688
+        },
+        {
+          "rank": 3,
+          "id": "herb-blessed",
+          "title": "Blessed",
+          "score": 0.8408236503601074
+        },
+        {
+          "rank": 4,
+          "id": "herb-gentian",
+          "title": "Gentian",
+          "score": 0.8259110450744629
+        },
+        {
+          "rank": 5,
+          "id": "herb-burdock-red",
+          "title": "Burdock Red",
+          "score": 0.8244308829307556
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "mzunguko mbaya wa damu na baridi mikononi na miguuni",
+      "expected_id": "disease-general-poor-circulation-and-chills",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-arteriosclerosis",
+          "title": "Arteriosclerosis",
+          "score": 0.871052622795105
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-felon",
+          "title": "Felon",
+          "score": 0.8465784192085266
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-buerger-s-disease",
+          "title": "Buerger'S Disease",
+          "score": 0.8403903245925903
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-hives",
+          "title": "Hives",
+          "score": 0.8402214050292969
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-convulsions",
+          "title": "Convulsions",
+          "score": 0.8392617702484131
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    }
+  ]
+}

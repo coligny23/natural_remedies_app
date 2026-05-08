@@ -1,0 +1,5280 @@
+{
+  "model": "intfloat/multilingual-e5-small",
+  "index": "assets\\embeddings_e5small\\index_en.bin",
+  "meta": "assets\\embeddings_e5small\\meta_en.json",
+  "queries": "tools\\eval_queries_en.json",
+  "total_queries": 135,
+  "top_1_hits": 104,
+  "top_3_hits": 127,
+  "top_5_hits": 131,
+  "top_1_accuracy": 0.7703703703703704,
+  "top_3_accuracy": 0.9407407407407408,
+  "top_5_accuracy": 0.9703703703703703,
+  "details": [
+    {
+      "query": "what can help with indigestion and stomach gas after eating",
+      "expected_id": "disease-digestive-indigestion",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.9013500213623047
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-bloating",
+          "title": "Bloating",
+          "score": 0.8967088460922241
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-dyspepsia",
+          "title": "Dyspepsia",
+          "score": 0.8960919380187988
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-achlorhydria",
+          "title": "Achlorhydria",
+          "score": 0.8929928541183472
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-stomach-inflammation",
+          "title": "Stomach Inflammation",
+          "score": 0.8924532532691956
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "my stomach feels inflamed and painful",
+      "expected_id": "disease-digestive-stomach-inflammation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8937000036239624
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-stomach-inflammation",
+          "title": "Stomach Inflammation",
+          "score": 0.8936780095100403
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-colic-in-children",
+          "title": "Colic In Children",
+          "score": 0.887592077255249
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8862850666046143
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-side-stitches",
+          "title": "Side Stitches",
+          "score": 0.8844561576843262
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "natural care for gastroenteritis and upset stomach",
+      "expected_id": "disease-digestive-gastroenteritis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-gastroenteritis",
+          "title": "Gastroenteritis",
+          "score": 0.8839647769927979
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-dyspepsia",
+          "title": "Dyspepsia",
+          "score": 0.871015191078186
+        },
+        {
+          "rank": 3,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8697584271430969
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-achlorhydria",
+          "title": "Achlorhydria",
+          "score": 0.8676403164863586
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-colitis",
+          "title": "Colitis",
+          "score": 0.8665255904197693
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "long term gastritis natural remedy information",
+      "expected_id": "disease-digestive-chronic-gastritis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-gastroenteritis",
+          "title": "Gastroenteritis",
+          "score": 0.8911933898925781
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-chronic-gastritis",
+          "title": "Chronic Gastritis",
+          "score": 0.8882780075073242
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-warts",
+          "title": "Warts",
+          "score": 0.8866033554077148
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-bloating",
+          "title": "Bloating",
+          "score": 0.8840160965919495
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-achlorhydria",
+          "title": "Achlorhydria",
+          "score": 0.8836730718612671
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "what helps with hepatitis and liver infection",
+      "expected_id": "disease-digestive-hepatitis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-viral-infections",
+          "title": "Viral Infections",
+          "score": 0.9073721170425415
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-hepatitis",
+          "title": "Hepatitis",
+          "score": 0.898102879524231
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-age-spots",
+          "title": "Age Spots",
+          "score": 0.8856724500656128
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-epstein-barr-virus",
+          "title": "Epstein Barr Virus",
+          "score": 0.8798351287841797
+        },
+        {
+          "rank": 5,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.8788294792175293
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "gallbladder inflammation natural treatment",
+      "expected_id": "disease-digestive-gallbladder-inflammation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-gallbladder-inflammation",
+          "title": "Gallbladder Inflammation",
+          "score": 0.9099586009979248
+        },
+        {
+          "rank": 2,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.8724302053451538
+        },
+        {
+          "rank": 3,
+          "id": "disease-digestive-irritable-bowel-syndrome",
+          "title": "Irritable Bowel Syndrome",
+          "score": 0.8721487522125244
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-chronic-gastritis",
+          "title": "Chronic Gastritis",
+          "score": 0.8712263703346252
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8699425458908081
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "chronic diarrhea remedy and diet advice",
+      "expected_id": "disease-digestive-chronic-diarrhea",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-colitis",
+          "title": "Colitis",
+          "score": 0.9038337469100952
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-celiac-disease",
+          "title": "Celiac Disease",
+          "score": 0.9034708738327026
+        },
+        {
+          "rank": 3,
+          "id": "disease-digestive-irritable-bowel-syndrome",
+          "title": "Irritable Bowel Syndrome",
+          "score": 0.9012822508811951
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-dyspepsia",
+          "title": "Dyspepsia",
+          "score": 0.8985228538513184
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-candidiasis",
+          "title": "Candidiasis",
+          "score": 0.8975051641464233
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "irritable bowel syndrome stomach cramps and bowel trouble",
+      "expected_id": "disease-digestive-irritable-bowel-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-irritable-bowel-syndrome",
+          "title": "Irritable Bowel Syndrome",
+          "score": 0.9005855321884155
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-malabsorption-syndrome",
+          "title": "Malabsorption Syndrome",
+          "score": 0.8956124782562256
+        },
+        {
+          "rank": 3,
+          "id": "disease-digestive-stomach-inflammation",
+          "title": "Stomach Inflammation",
+          "score": 0.8917781114578247
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8835930824279785
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-dumping-syndrome",
+          "title": "Dumping Syndrome",
+          "score": 0.8808750510215759
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "diarrhea in infants what should be done",
+      "expected_id": "disease-digestive-diarrhea-in-infants",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-diarrhea-in-infants",
+          "title": "Diarrhea In Infants",
+          "score": 0.9260365962982178
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-gastroenteritis",
+          "title": "Gastroenteritis",
+          "score": 0.8997474908828735
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-cholera-infantum",
+          "title": "Cholera Infantum",
+          "score": 0.8960025906562805
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-celiac-disease",
+          "title": "Celiac Disease",
+          "score": 0.8945783376693726
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-neonatal-jaundice",
+          "title": "Neonatal Jaundice",
+          "score": 0.8932812213897705
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "open sores on the legs due to poor circulation",
+      "expected_id": "disease-digestive-leg-ulcers",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-leg-ulcers",
+          "title": "Leg Ulcers",
+          "score": 0.908005952835083
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.8854539394378662
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-gangrene",
+          "title": "Gangrene",
+          "score": 0.8790079951286316
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-muscle-cramps",
+          "title": "Muscle Cramps",
+          "score": 0.8756039142608643
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-restless-leg-syndrome",
+          "title": "Restless Leg Syndrome",
+          "score": 0.8730076551437378
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "constant tiredness and weakness natural health advice",
+      "expected_id": "disease-general-chronic-fatigue",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-foot-aches",
+          "title": "Foot Aches",
+          "score": 0.8858422636985779
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-debility",
+          "title": "Debility",
+          "score": 0.8856569528579712
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-restless-leg-syndrome",
+          "title": "Restless Leg Syndrome",
+          "score": 0.8844082951545715
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-chronic-fatigue",
+          "title": "Chronic Fatigue",
+          "score": 0.8820436596870422
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-emphysema",
+          "title": "Emphysema",
+          "score": 0.8814198970794678
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "emotional stress anxiety and physical fatigue",
+      "expected_id": "disease-general-emotional-fatigue-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-emotional-fatigue-syndrome",
+          "title": "Emotional Fatigue Syndrome",
+          "score": 0.9076189398765564
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-chronic-fatigue",
+          "title": "Chronic Fatigue",
+          "score": 0.8825313448905945
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-stress-and-anxiety",
+          "title": "Stress And Anxiety",
+          "score": 0.8719004988670349
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-female-stress-syndrome",
+          "title": "Female Stress Syndrome",
+          "score": 0.8672841787338257
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-hyperventilation",
+          "title": "Hyperventilation",
+          "score": 0.8672207593917847
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "yeast infection candida and thrush remedy",
+      "expected_id": "disease-general-candidiasis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-candidiasis",
+          "title": "Candidiasis",
+          "score": 0.9059836864471436
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-vaginitis",
+          "title": "Vaginitis",
+          "score": 0.8768728971481323
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-fungus-growth",
+          "title": "Fungus Growth",
+          "score": 0.8701004981994629
+        },
+        {
+          "rank": 4,
+          "id": "disease-skin-warts",
+          "title": "Warts",
+          "score": 0.8694069385528564
+        },
+        {
+          "rank": 5,
+          "id": "disease-respiratory-coughs",
+          "title": "Coughs",
+          "score": 0.8681514263153076
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "feeling sick in the stomach with nausea",
+      "expected_id": "disease-general-nausea",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-nausea",
+          "title": "Nausea",
+          "score": 0.9024332165718079
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-morning-sickness",
+          "title": "Morning Sickness",
+          "score": 0.8871785998344421
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-colic-in-children",
+          "title": "Colic In Children",
+          "score": 0.8827832937240601
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-gastroenteritis",
+          "title": "Gastroenteritis",
+          "score": 0.8814164400100708
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8804285526275635
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "what to do when someone faints or passes out",
+      "expected_id": "disease-general-fainting",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-fainting",
+          "title": "Fainting",
+          "score": 0.8681907057762146
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-emotional-fatigue-syndrome",
+          "title": "Emotional Fatigue Syndrome",
+          "score": 0.8506284952163696
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-fibromyalgia-syndrome",
+          "title": "Fibromyalgia Syndrome",
+          "score": 0.8462934494018555
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-poisoning",
+          "title": "Poisoning",
+          "score": 0.8445901870727539
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-stress-and-anxiety",
+          "title": "Stress And Anxiety",
+          "score": 0.8440154194831848
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "heat exhaustion from sun dehydration and weakness",
+      "expected_id": "disease-general-heat-exhaustion",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-heat-exhaustion",
+          "title": "Heat Exhaustion",
+          "score": 0.9117603898048401
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-sunburn",
+          "title": "Sunburn",
+          "score": 0.8689970970153809
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-heat-rash",
+          "title": "Heat Rash",
+          "score": 0.8654903769493103
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-debility",
+          "title": "Debility",
+          "score": 0.8622485399246216
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-prickly-heat",
+          "title": "Prickly Heat",
+          "score": 0.8618447780609131
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "car sickness sea sickness nausea during travel",
+      "expected_id": "disease-general-motion-sickness",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-motion-sickness",
+          "title": "Motion Sickness",
+          "score": 0.897788941860199
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-turista",
+          "title": "Turista",
+          "score": 0.8637683391571045
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-nausea",
+          "title": "Nausea",
+          "score": 0.8522616624832153
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-gastroenteritis",
+          "title": "Gastroenteritis",
+          "score": 0.8424417972564697
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-bright-s-disease",
+          "title": "Bright'S Disease",
+          "score": 0.8417190313339233
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "excess mucus catarrh and runny nose",
+      "expected_id": "disease-general-catarrh",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-catarrh",
+          "title": "Catarrh",
+          "score": 0.8882592916488647
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-nosebleed",
+          "title": "Nosebleed",
+          "score": 0.8686978220939636
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-postnasal-drip",
+          "title": "Postnasal Drip",
+          "score": 0.8622265458106995
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-buerger-s-disease",
+          "title": "Buerger'S Disease",
+          "score": 0.8602249622344971
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-hay-fever",
+          "title": "Hay Fever",
+          "score": 0.8582773804664612
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "chills shaking and feeling cold during infection",
+      "expected_id": "disease-general-chills",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-chills",
+          "title": "Chills",
+          "score": 0.9107418060302734
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8962370157241821
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-cold-extremities",
+          "title": "Cold Extremities",
+          "score": 0.8877506256103516
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-bronchiectasis",
+          "title": "Bronchiectasis",
+          "score": 0.8859006762504578
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-lung-congestion",
+          "title": "Lung Congestion",
+          "score": 0.8832639455795288
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "viral infection fever body aches and headache",
+      "expected_id": "disease-general-viral-infections",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-viral-infections",
+          "title": "Viral Infections",
+          "score": 0.8885524868965149
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-typhoid-fever",
+          "title": "Typhoid Fever",
+          "score": 0.8791955709457397
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-chills",
+          "title": "Chills",
+          "score": 0.8788982033729553
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.8729404211044312
+        },
+        {
+          "rank": 5,
+          "id": "disease-head-ear-congestion",
+          "title": "Ear Congestion",
+          "score": 0.872063398361206
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "inflammation swelling heat and pain in body tissues",
+      "expected_id": "disease-general-inflammation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.9039672613143921
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-breast-inflammation",
+          "title": "Breast Inflammation",
+          "score": 0.895214855670929
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-infantile-convulsions",
+          "title": "Infantile Convulsions",
+          "score": 0.8848261833190918
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-swelling",
+          "title": "Swelling",
+          "score": 0.8845506906509399
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-lymphangitis",
+          "title": "Lymphangitis",
+          "score": 0.8837475776672363
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "high body temperature fever natural care",
+      "expected_id": "disease-general-fever",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-mania",
+          "title": "Mania",
+          "score": 0.8765782117843628
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-fever",
+          "title": "Fever",
+          "score": 0.8761227130889893
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-typhoid-fever",
+          "title": "Typhoid Fever",
+          "score": 0.8720754981040955
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-hay-fever",
+          "title": "Hay Fever",
+          "score": 0.8719890713691711
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-rocky-mountain-spotted-fever",
+          "title": "Rocky Mountain Spotted Fever",
+          "score": 0.8651326894760132
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "malaria chills and sweating every few days",
+      "expected_id": "disease-general-malaria",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-malaria",
+          "title": "Malaria",
+          "score": 0.9070274233818054
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-chills",
+          "title": "Chills",
+          "score": 0.8686110377311707
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-body-odor",
+          "title": "Body Odor",
+          "score": 0.8669278025627136
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-night-sweats",
+          "title": "Night Sweats",
+          "score": 0.864294171333313
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-bubonic-plague",
+          "title": "Bubonic Plague",
+          "score": 0.8642172813415527
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "typhoid fever natural health information",
+      "expected_id": "disease-general-typhoid-fever",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-typhoid-fever",
+          "title": "Typhoid Fever",
+          "score": 0.9219332933425903
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-typhus",
+          "title": "Typhus",
+          "score": 0.8965379595756531
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-rocky-mountain-spotted-fever",
+          "title": "Rocky Mountain Spotted Fever",
+          "score": 0.8938955664634705
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-hay-fever",
+          "title": "Hay Fever",
+          "score": 0.8834976553916931
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-lyme-disease",
+          "title": "Lyme Disease",
+          "score": 0.8829972743988037
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "weakened immune system and frequent sickness",
+      "expected_id": "disease-general-weakened-autoimmune-system",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-weakened-autoimmune-system",
+          "title": "Weakened Autoimmune System",
+          "score": 0.9099521636962891
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-morning-sickness",
+          "title": "Morning Sickness",
+          "score": 0.877300500869751
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-chronic-fatigue",
+          "title": "Chronic Fatigue",
+          "score": 0.8750261068344116
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-typhus",
+          "title": "Typhus",
+          "score": 0.873898446559906
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-epstein-barr-virus",
+          "title": "Epstein Barr Virus",
+          "score": 0.8733605146408081
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "stress anxiety worry and nervous tension",
+      "expected_id": "disease-general-stress-and-anxiety",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-stress-and-anxiety",
+          "title": "Stress And Anxiety",
+          "score": 0.8742183446884155
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-emotional-fatigue-syndrome",
+          "title": "Emotional Fatigue Syndrome",
+          "score": 0.8632159233093262
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-hyperventilation",
+          "title": "Hyperventilation",
+          "score": 0.8611873388290405
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-female-stress-syndrome",
+          "title": "Female Stress Syndrome",
+          "score": 0.860623836517334
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-tinnitus",
+          "title": "Tinnitus",
+          "score": 0.8572523593902588
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "depression low mood and loss of interest",
+      "expected_id": "disease-general-depression",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-seasonal-affective-syndrome",
+          "title": "Seasonal Affective Syndrome",
+          "score": 0.8714814186096191
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-depression",
+          "title": "Depression",
+          "score": 0.8631186485290527
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-manic-depression",
+          "title": "Manic Depression",
+          "score": 0.8528180122375488
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-emotional-fatigue-syndrome",
+          "title": "Emotional Fatigue Syndrome",
+          "score": 0.8481162786483765
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-amyotrophic-lateral-sclerosis",
+          "title": "Amyotrophic Lateral Sclerosis",
+          "score": 0.8473907113075256
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "low blood sugar hypoglycemia symptoms",
+      "expected_id": "disease-general-hypoglycemia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-hypoglycemia",
+          "title": "Hypoglycemia",
+          "score": 0.8975973725318909
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-nightmares",
+          "title": "Nightmares",
+          "score": 0.8744526505470276
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-seasonal-affective-syndrome",
+          "title": "Seasonal Affective Syndrome",
+          "score": 0.8683919310569763
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8671561479568481
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.8656530976295471
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "body odor and unpleasant smell natural remedy",
+      "expected_id": "disease-general-body-odor",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-body-odor",
+          "title": "Body Odor",
+          "score": 0.8901026844978333
+        },
+        {
+          "rank": 2,
+          "id": "herb-peppermint",
+          "title": "Peppermint",
+          "score": 0.8815097808837891
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-foot-odor",
+          "title": "Foot Odor",
+          "score": 0.8713834285736084
+        },
+        {
+          "rank": 4,
+          "id": "disease-skin-boils",
+          "title": "Boils",
+          "score": 0.867775559425354
+        },
+        {
+          "rank": 5,
+          "id": "disease-skin-drug-rash",
+          "title": "Drug Rash",
+          "score": 0.8649439811706543
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "night sweats while sleeping",
+      "expected_id": "disease-general-night-sweats",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-night-sweats",
+          "title": "Night Sweats",
+          "score": 0.9057823419570923
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-snoring",
+          "title": "Snoring",
+          "score": 0.8830459117889404
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-body-odor",
+          "title": "Body Odor",
+          "score": 0.8799036145210266
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-urine-problems",
+          "title": "Urine Problems",
+          "score": 0.8697978258132935
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-nightmares",
+          "title": "Nightmares",
+          "score": 0.8657301664352417
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "dandruff itchy scalp and flakes",
+      "expected_id": "disease-general-dandruff",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-dandruff",
+          "title": "Dandruff",
+          "score": 0.8928683996200562
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-oily-hair",
+          "title": "Oily Hair",
+          "score": 0.8742431402206421
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-cradle-cap",
+          "title": "Cradle Cap",
+          "score": 0.872044563293457
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-scabies",
+          "title": "Scabies",
+          "score": 0.8649765849113464
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-syphilis",
+          "title": "Syphilis",
+          "score": 0.8623083829879761
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "athlete foot fungal itching between toes",
+      "expected_id": "disease-general-athlete-s-foot",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-athlete-s-foot",
+          "title": "Athlete'S Foot",
+          "score": 0.9092050790786743
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-fungus-growth",
+          "title": "Fungus Growth",
+          "score": 0.8856147527694702
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-foot-odor",
+          "title": "Foot Odor",
+          "score": 0.8681614398956299
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-felon",
+          "title": "Felon",
+          "score": 0.857145369052887
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-ingrown-nails",
+          "title": "Ingrown Nails",
+          "score": 0.8542202115058899
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "bad breath halitosis remedy",
+      "expected_id": "disease-general-halitosis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-halitosis",
+          "title": "Halitosis",
+          "score": 0.8869530558586121
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-bright-s-disease",
+          "title": "Bright'S Disease",
+          "score": 0.8674634695053101
+        },
+        {
+          "rank": 3,
+          "id": "herb-peppermint",
+          "title": "Peppermint",
+          "score": 0.8666038513183594
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-bloating",
+          "title": "Bloating",
+          "score": 0.8666013479232788
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-postnasal-drip",
+          "title": "Postnasal Drip",
+          "score": 0.8644810914993286
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "bloating gas and swollen stomach",
+      "expected_id": "disease-general-bloating",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-bloating",
+          "title": "Bloating",
+          "score": 0.9029519557952881
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-belching",
+          "title": "Belching",
+          "score": 0.8958448767662048
+        },
+        {
+          "rank": 3,
+          "id": "disease-digestive-irritable-bowel-syndrome",
+          "title": "Irritable Bowel Syndrome",
+          "score": 0.8891332745552063
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-achlorhydria",
+          "title": "Achlorhydria",
+          "score": 0.8878782987594604
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8843656182289124
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "vomiting and throwing up repeatedly",
+      "expected_id": "disease-general-vomiting",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-vomiting",
+          "title": "Vomiting",
+          "score": 0.881260871887207
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8779458999633789
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-typhoid-fever",
+          "title": "Typhoid Fever",
+          "score": 0.8725682497024536
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-gastroenteritis",
+          "title": "Gastroenteritis",
+          "score": 0.8713608980178833
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-food-poisoning",
+          "title": "Food Poisoning",
+          "score": 0.868441104888916
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "colitis bowel inflammation and abdominal pain",
+      "expected_id": "disease-general-colitis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-stomach-inflammation",
+          "title": "Stomach Inflammation",
+          "score": 0.8936241865158081
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-colic-in-infants",
+          "title": "Colic In Infants",
+          "score": 0.8925367593765259
+        },
+        {
+          "rank": 3,
+          "id": "disease-digestive-gallbladder-inflammation",
+          "title": "Gallbladder Inflammation",
+          "score": 0.892309844493866
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-colitis",
+          "title": "Colitis",
+          "score": 0.8897662162780762
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-infantile-convulsions",
+          "title": "Infantile Convulsions",
+          "score": 0.8893271088600159
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "kidney disease called bright disease",
+      "expected_id": "disease-general-bright-s-disease",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-bright-s-disease",
+          "title": "Bright'S Disease",
+          "score": 0.9010769128799438
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-hematuria",
+          "title": "Hematuria",
+          "score": 0.8604993224143982
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-renal-colic",
+          "title": "Renal Colic",
+          "score": 0.8598595261573792
+        },
+        {
+          "rank": 4,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.8597801923751831
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-infectious-jaundice",
+          "title": "Infectious Jaundice",
+          "score": 0.8454004526138306
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "emphysema breathing difficulty and lung damage",
+      "expected_id": "disease-general-emphysema",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-emphysema",
+          "title": "Emphysema",
+          "score": 0.8952304720878601
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-bronchiectasis",
+          "title": "Bronchiectasis",
+          "score": 0.8726389408111572
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-legionnaire-s-disease",
+          "title": "Legionnaire'S Disease",
+          "score": 0.8651745915412903
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-side-stitches",
+          "title": "Side Stitches",
+          "score": 0.8638166189193726
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-lung-congestion",
+          "title": "Lung Congestion",
+          "score": 0.8631467819213867
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "varicose veins swollen veins in the legs",
+      "expected_id": "disease-general-varicose-veins",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-leg-ulcers",
+          "title": "Leg Ulcers",
+          "score": 0.9006167650222778
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-varicose-veins",
+          "title": "Varicose Veins",
+          "score": 0.8988515138626099
+        },
+        {
+          "rank": 3,
+          "id": "disease-musculoskeletal-muscle-cramps",
+          "title": "Muscle Cramps",
+          "score": 0.8641015291213989
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-claudication",
+          "title": "Claudication",
+          "score": 0.8626483082771301
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-bruising",
+          "title": "Bruising",
+          "score": 0.8624845743179321
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "sciatica pain down the leg",
+      "expected_id": "disease-general-sciatica",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-sciatica",
+          "title": "Sciatica",
+          "score": 0.8949881792068481
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-side-stitches",
+          "title": "Side Stitches",
+          "score": 0.8624143600463867
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-brachial-neuralgia",
+          "title": "Brachial Neuralgia",
+          "score": 0.8582916259765625
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-leg-ulcers",
+          "title": "Leg Ulcers",
+          "score": 0.8554659485816956
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-ankylosing-spondylitis",
+          "title": "Ankylosing Spondylitis",
+          "score": 0.8543416261672974
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "carpal tunnel syndrome wrist pain and numb fingers",
+      "expected_id": "disease-general-carpal-tunnel-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-carpal-tunnel-syndrome",
+          "title": "Carpal Tunnel Syndrome",
+          "score": 0.9012660980224609
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-tennis-elbow",
+          "title": "Tennis Elbow",
+          "score": 0.8942288160324097
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-brachial-neuralgia",
+          "title": "Brachial Neuralgia",
+          "score": 0.883269190788269
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-numb-extremities",
+          "title": "Numb Extremities",
+          "score": 0.87026447057724
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-felon",
+          "title": "Felon",
+          "score": 0.8615608215332031
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "osteoporosis weak bones and fracture risk",
+      "expected_id": "disease-general-osteoporosis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-osteoporosis",
+          "title": "Osteoporosis",
+          "score": 0.899837851524353
+        },
+        {
+          "rank": 2,
+          "id": "disease-musculoskeletal-fracture",
+          "title": "Fracture",
+          "score": 0.8928977847099304
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-menopause",
+          "title": "Menopause",
+          "score": 0.8876866102218628
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-rickets",
+          "title": "Rickets",
+          "score": 0.8840393424034119
+        },
+        {
+          "rank": 5,
+          "id": "disease-musculoskeletal-bone-spur",
+          "title": "Bone Spur",
+          "score": 0.8660817742347717
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "thyroid too low hypothyroidism symptoms",
+      "expected_id": "disease-general-hypothyroidism",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-hyperthyroidism",
+          "title": "Hyperthyroidism",
+          "score": 0.8957257270812988
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-night-sweats",
+          "title": "Night Sweats",
+          "score": 0.891019344329834
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.8864456415176392
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-hypothyroidism",
+          "title": "Hypothyroidism",
+          "score": 0.8706303834915161
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-chronic-fatigue",
+          "title": "Chronic Fatigue",
+          "score": 0.8635250329971313
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "food poisoning vomiting diarrhea after food",
+      "expected_id": "disease-general-food-poisoning",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-food-poisoning",
+          "title": "Food Poisoning",
+          "score": 0.9069743752479553
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-poisoning",
+          "title": "Poisoning",
+          "score": 0.8858325481414795
+        },
+        {
+          "rank": 3,
+          "id": "disease-digestive-gastroenteritis",
+          "title": "Gastroenteritis",
+          "score": 0.8850628733634949
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-vomiting",
+          "title": "Vomiting",
+          "score": 0.8844662308692932
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-turista",
+          "title": "Turista",
+          "score": 0.8806215524673462
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "lead poisoning from toxic metals",
+      "expected_id": "disease-general-lead-poisoning",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-lead-poisoning",
+          "title": "Lead Poisoning",
+          "score": 0.9166386127471924
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-mercury-poisoning",
+          "title": "Mercury Poisoning",
+          "score": 0.8782389163970947
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-aluminum-poisoning",
+          "title": "Aluminum Poisoning",
+          "score": 0.8766980171203613
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-chemical-poisoning",
+          "title": "Chemical Poisoning",
+          "score": 0.8707133531570435
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-cadmium-poisoning",
+          "title": "Cadmium Poisoning",
+          "score": 0.8705444931983948
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "cancer prevention and natural health factors",
+      "expected_id": "disease-general-preventing-cancer",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-special-risk-factors",
+          "title": "Special Risk Factors",
+          "score": 0.8957217335700989
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-cancer",
+          "title": "Cancer",
+          "score": 0.893786609172821
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-miscellaneous-preventative-factors",
+          "title": "Miscellaneous Preventative Factors",
+          "score": 0.892319917678833
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-problem-foods",
+          "title": "Problem Foods",
+          "score": 0.8919357061386108
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-general-preventative-factors",
+          "title": "General Preventative Factors",
+          "score": 0.8889055252075195
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "sinus pain blocked nose and facial pressure",
+      "expected_id": "disease-head-sinusitis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-postnasal-drip",
+          "title": "Postnasal Drip",
+          "score": 0.8822132349014282
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-sinusitis",
+          "title": "Sinusitis",
+          "score": 0.8815406560897827
+        },
+        {
+          "rank": 3,
+          "id": "disease-head-nosebleed",
+          "title": "Nosebleed",
+          "score": 0.8773501515388489
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-bell-s-palsy",
+          "title": "Bell'S Palsy",
+          "score": 0.8730409145355225
+        },
+        {
+          "rank": 5,
+          "id": "disease-head-black-eye",
+          "title": "Black Eye",
+          "score": 0.8688641786575317
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "eye problems natural care and poor vision",
+      "expected_id": "disease-head-eye-problems",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-amblyopia",
+          "title": "Amblyopia",
+          "score": 0.8932116031646729
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-eye-problems",
+          "title": "Eye Problems",
+          "score": 0.888320803642273
+        },
+        {
+          "rank": 3,
+          "id": "disease-head-eyestrain",
+          "title": "Eyestrain",
+          "score": 0.887140154838562
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-farsightedness",
+          "title": "Farsightedness",
+          "score": 0.8870881199836731
+        },
+        {
+          "rank": 5,
+          "id": "disease-head-nearsightedness",
+          "title": "Nearsightedness",
+          "score": 0.8825231790542603
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "red eyes and eye irritation",
+      "expected_id": "disease-head-red-eyes",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-red-eyes",
+          "title": "Red Eyes",
+          "score": 0.9088855981826782
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-rosacea",
+          "title": "Rosacea",
+          "score": 0.8761818408966064
+        },
+        {
+          "rank": 3,
+          "id": "disease-head-black-eye",
+          "title": "Black Eye",
+          "score": 0.8741474747657776
+        },
+        {
+          "rank": 4,
+          "id": "disease-head-mucous-in-eye",
+          "title": "Mucous In Eye",
+          "score": 0.8738677501678467
+        },
+        {
+          "rank": 5,
+          "id": "disease-head-ulcerated-eye-and-lid",
+          "title": "Ulcerated Eye And Lid",
+          "score": 0.8728033304214478
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "itchy eyes allergy and irritation",
+      "expected_id": "disease-head-itchy-eyes",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-itchy-eyes",
+          "title": "Itchy Eyes",
+          "score": 0.8915587663650513
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-urticaria",
+          "title": "Urticaria",
+          "score": 0.8716684579849243
+        },
+        {
+          "rank": 3,
+          "id": "disease-head-red-eyes",
+          "title": "Red Eyes",
+          "score": 0.8710070848464966
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-poison-ivy",
+          "title": "Poison Ivy",
+          "score": 0.8629454374313354
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-conjunctivitis",
+          "title": "Conjunctivitis",
+          "score": 0.8613507747650146
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "nose bleeding first aid",
+      "expected_id": "disease-head-nosebleed",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-nosebleed",
+          "title": "Nosebleed",
+          "score": 0.8839470148086548
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-black-eye",
+          "title": "Black Eye",
+          "score": 0.8575966358184814
+        },
+        {
+          "rank": 3,
+          "id": "herb-goldenseal",
+          "title": "Goldenseal",
+          "score": 0.8562948703765869
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-conjunctivitis",
+          "title": "Conjunctivitis",
+          "score": 0.8536049127578735
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-hay-fever",
+          "title": "Hay Fever",
+          "score": 0.8491349220275879
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "earwax blockage and blocked ear",
+      "expected_id": "disease-head-earwax",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-earwax",
+          "title": "Earwax",
+          "score": 0.8845384120941162
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-hearing-loss",
+          "title": "Hearing Loss",
+          "score": 0.8815568685531616
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-tinnitus",
+          "title": "Tinnitus",
+          "score": 0.8665332794189453
+        },
+        {
+          "rank": 4,
+          "id": "disease-head-ear-congestion",
+          "title": "Ear Congestion",
+          "score": 0.8648949861526489
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-meniere-s-syndrome",
+          "title": "Meniere'S Syndrome",
+          "score": 0.8642560243606567
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "swimmer ear water in ear infection",
+      "expected_id": "disease-head-swimmer-s-ear",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-swimmer-s-ear",
+          "title": "Swimmer'S Ear",
+          "score": 0.9319865703582764
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-ear-congestion",
+          "title": "Ear Congestion",
+          "score": 0.8599573373794556
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-malaria",
+          "title": "Malaria",
+          "score": 0.8599036931991577
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-conjunctivitis",
+          "title": "Conjunctivitis",
+          "score": 0.8542377352714539
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-toxemia",
+          "title": "Toxemia",
+          "score": 0.8532148599624634
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "hearing loss and reduced hearing",
+      "expected_id": "disease-head-hearing-loss",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-hearing-loss",
+          "title": "Hearing Loss",
+          "score": 0.8954191207885742
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-tinnitus",
+          "title": "Tinnitus",
+          "score": 0.8700442314147949
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-meniere-s-syndrome",
+          "title": "Meniere'S Syndrome",
+          "score": 0.8627010583877563
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-malaria",
+          "title": "Malaria",
+          "score": 0.8569381237030029
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-vertigo",
+          "title": "Vertigo",
+          "score": 0.8504655957221985
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "sore throat pain when swallowing",
+      "expected_id": "disease-head-sore-throat",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-saliva-problems",
+          "title": "Saliva Problems",
+          "score": 0.8755360841751099
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-breast-inflammation",
+          "title": "Breast Inflammation",
+          "score": 0.8746577501296997
+        },
+        {
+          "rank": 3,
+          "id": "disease-head-sore-throat",
+          "title": "Sore Throat",
+          "score": 0.8726434111595154
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.8720666170120239
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-belching",
+          "title": "Belching",
+          "score": 0.8718734979629517
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "tooth decay cavities and dental problems",
+      "expected_id": "disease-head-tooth-decay",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-tooth-decay",
+          "title": "Tooth Decay",
+          "score": 0.8946049213409424
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-denture-troubles",
+          "title": "Denture Troubles",
+          "score": 0.8762252330780029
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-fluoride-poisoning",
+          "title": "Fluoride Poisoning",
+          "score": 0.8670979738235474
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-calculus",
+          "title": "Calculus",
+          "score": 0.8635668754577637
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-cheilosis",
+          "title": "Cheilosis",
+          "score": 0.8624597787857056
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "heartburn burning chest after eating",
+      "expected_id": "disease-head-heartburn",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-heartburn",
+          "title": "Heartburn",
+          "score": 0.8871733546257019
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8838391304016113
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-hiatal-hernia",
+          "title": "Hiatal Hernia",
+          "score": 0.876851499080658
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-achlorhydria",
+          "title": "Achlorhydria",
+          "score": 0.8749261498451233
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-lung-congestion",
+          "title": "Lung Congestion",
+          "score": 0.8743854761123657
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "broken bone fracture first aid and healing",
+      "expected_id": "disease-musculoskeletal-fracture",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-fracture",
+          "title": "Fracture",
+          "score": 0.8950744867324829
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-broken-rib",
+          "title": "Broken Rib",
+          "score": 0.864201545715332
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-bruising",
+          "title": "Bruising",
+          "score": 0.8638666272163391
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-menopause",
+          "title": "Menopause",
+          "score": 0.8623417615890503
+        },
+        {
+          "rank": 5,
+          "id": "disease-musculoskeletal-bone-spur",
+          "title": "Bone Spur",
+          "score": 0.8566712141036987
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "heel spur bone spur pain",
+      "expected_id": "disease-musculoskeletal-bone-spur",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-bone-spur",
+          "title": "Bone Spur",
+          "score": 0.9214277267456055
+        },
+        {
+          "rank": 2,
+          "id": "disease-musculoskeletal-fracture",
+          "title": "Fracture",
+          "score": 0.865952730178833
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-numb-extremities",
+          "title": "Numb Extremities",
+          "score": 0.8591088652610779
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-shin-splints",
+          "title": "Shin Splints",
+          "score": 0.857418417930603
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-bursitis",
+          "title": "Bursitis",
+          "score": 0.8555779457092285
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "chronic rheumatism joint pain",
+      "expected_id": "disease-musculoskeletal-chronic-rheumatism",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.8929652571678162
+        },
+        {
+          "rank": 2,
+          "id": "disease-musculoskeletal-chronic-rheumatism",
+          "title": "Chronic Rheumatism",
+          "score": 0.8901898264884949
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-ankylosing-spondylitis",
+          "title": "Ankylosing Spondylitis",
+          "score": 0.8765974640846252
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-muscle-cramps",
+          "title": "Muscle Cramps",
+          "score": 0.8733187913894653
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-bursitis",
+          "title": "Bursitis",
+          "score": 0.8703608512878418
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "jaw joint pain temporomandibular joint syndrome",
+      "expected_id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+          "title": "Temporomandibular Joint Syndrome",
+          "score": 0.9033282995223999
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-bruxism",
+          "title": "Bruxism",
+          "score": 0.8714995384216309
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-cheilosis",
+          "title": "Cheilosis",
+          "score": 0.8575834035873413
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-buerger-s-disease",
+          "title": "Buerger'S Disease",
+          "score": 0.8563147187232971
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-ankylosing-spondylitis",
+          "title": "Ankylosing Spondylitis",
+          "score": 0.854463517665863
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "muscle cramps painful spasms",
+      "expected_id": "disease-musculoskeletal-muscle-cramps",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-muscle-cramps",
+          "title": "Muscle Cramps",
+          "score": 0.9080839157104492
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-side-stitches",
+          "title": "Side Stitches",
+          "score": 0.8911949396133423
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-myelitis",
+          "title": "Myelitis",
+          "score": 0.8634480237960815
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-brachial-neuralgia",
+          "title": "Brachial Neuralgia",
+          "score": 0.8633769154548645
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-ankylosing-spondylitis",
+          "title": "Ankylosing Spondylitis",
+          "score": 0.862986147403717
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "muscle injury strain and soreness",
+      "expected_id": "disease-musculoskeletal-muscle-injuries",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-muscle-injuries",
+          "title": "Muscle Injuries",
+          "score": 0.9061022996902466
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-tendonitis",
+          "title": "Tendonitis",
+          "score": 0.8735859990119934
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-tennis-elbow",
+          "title": "Tennis Elbow",
+          "score": 0.8731268048286438
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-muscle-cramps",
+          "title": "Muscle Cramps",
+          "score": 0.8700765371322632
+        },
+        {
+          "rank": 5,
+          "id": "disease-musculoskeletal-backache",
+          "title": "Backache",
+          "score": 0.8679750561714172
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "backache lower back pain natural remedy",
+      "expected_id": "disease-musculoskeletal-backache",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-backache",
+          "title": "Backache",
+          "score": 0.8853909969329834
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-sciatica",
+          "title": "Sciatica",
+          "score": 0.8834905624389648
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-ankylosing-spondylitis",
+          "title": "Ankylosing Spondylitis",
+          "score": 0.8714964389801025
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-neck-pain",
+          "title": "Neck Pain",
+          "score": 0.8688219785690308
+        },
+        {
+          "rank": 5,
+          "id": "herb-peppermint",
+          "title": "Peppermint",
+          "score": 0.8663254976272583
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "rheumatic fever joint pain and fever",
+      "expected_id": "disease-musculoskeletal-rheumatic-fever",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.930894672870636
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-tularemia",
+          "title": "Tularemia",
+          "score": 0.8840525150299072
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-ankylosing-spondylitis",
+          "title": "Ankylosing Spondylitis",
+          "score": 0.8803616166114807
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-rocky-mountain-spotted-fever",
+          "title": "Rocky Mountain Spotted Fever",
+          "score": 0.8766956925392151
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-lymphangitis",
+          "title": "Lymphangitis",
+          "score": 0.8751016855239868
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "breast tenderness and discomfort before period",
+      "expected_id": "disease-reproductive-breast-discomfort",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-breast-discomfort",
+          "title": "Breast Discomfort",
+          "score": 0.9252421259880066
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.8813390135765076
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-menstrual-disorders",
+          "title": "Menstrual Disorders",
+          "score": 0.8738387823104858
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-premenstrual-syndrome",
+          "title": "Premenstrual Syndrome",
+          "score": 0.8713686466217041
+        },
+        {
+          "rank": 5,
+          "id": "disease-reproductive-lack-of-menstruation",
+          "title": "Lack Of Menstruation",
+          "score": 0.8695839643478394
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "swollen painful breast inflammation",
+      "expected_id": "disease-reproductive-breast-inflammation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-breast-inflammation",
+          "title": "Breast Inflammation",
+          "score": 0.9244852662086487
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-breast-discomfort",
+          "title": "Breast Discomfort",
+          "score": 0.8779149055480957
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-swelling",
+          "title": "Swelling",
+          "score": 0.8779113292694092
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8731074333190918
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-infantile-convulsions",
+          "title": "Infantile Convulsions",
+          "score": 0.8648487329483032
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "breast cyst lump and soreness",
+      "expected_id": "disease-reproductive-breast-cyst",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-breast-discomfort",
+          "title": "Breast Discomfort",
+          "score": 0.904924213886261
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-breast-inflammation",
+          "title": "Breast Inflammation",
+          "score": 0.8865504264831543
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-breast-cyst",
+          "title": "Breast Cyst",
+          "score": 0.8742309808731079
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-mastitis",
+          "title": "Mastitis",
+          "score": 0.8733096122741699
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-swollen-glands",
+          "title": "Swollen Glands",
+          "score": 0.8614290952682495
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "premenstrual syndrome mood changes breast tenderness",
+      "expected_id": "disease-reproductive-premenstrual-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-breast-discomfort",
+          "title": "Breast Discomfort",
+          "score": 0.8992940187454224
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-premenstrual-syndrome",
+          "title": "Premenstrual Syndrome",
+          "score": 0.8823438882827759
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-menstrual-disorders",
+          "title": "Menstrual Disorders",
+          "score": 0.8586646318435669
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-female-stress-syndrome",
+          "title": "Female Stress Syndrome",
+          "score": 0.8546193838119507
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-seasonal-affective-syndrome",
+          "title": "Seasonal Affective Syndrome",
+          "score": 0.8518570065498352
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "menstrual disorders irregular periods",
+      "expected_id": "disease-reproductive-menstrual-disorders",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-menstrual-disorders",
+          "title": "Menstrual Disorders",
+          "score": 0.8966122269630432
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-premenstrual-syndrome",
+          "title": "Premenstrual Syndrome",
+          "score": 0.8901916742324829
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.879702091217041
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-lack-of-menstruation",
+          "title": "Lack Of Menstruation",
+          "score": 0.8760547637939453
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-menopause",
+          "title": "Menopause",
+          "score": 0.8702287077903748
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "lack of menstruation missed periods",
+      "expected_id": "disease-reproductive-lack-of-menstruation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-menstrual-disorders",
+          "title": "Menstrual Disorders",
+          "score": 0.8852454423904419
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-lack-of-menstruation",
+          "title": "Lack Of Menstruation",
+          "score": 0.8810397386550903
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-premenstrual-syndrome",
+          "title": "Premenstrual Syndrome",
+          "score": 0.8772289156913757
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.8657206892967224
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-menopause",
+          "title": "Menopause",
+          "score": 0.8642668724060059
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "painful menstruation cramps remedy",
+      "expected_id": "disease-reproductive-painful-menstruation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-menstrual-disorders",
+          "title": "Menstrual Disorders",
+          "score": 0.9011229276657104
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-premenstrual-syndrome",
+          "title": "Premenstrual Syndrome",
+          "score": 0.8859006762504578
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.8845455646514893
+        },
+        {
+          "rank": 4,
+          "id": "herb-peppermint",
+          "title": "Peppermint",
+          "score": 0.8832665085792542
+        },
+        {
+          "rank": 5,
+          "id": "disease-reproductive-lack-of-menstruation",
+          "title": "Lack Of Menstruation",
+          "score": 0.8736463785171509
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "uterine bleeding abnormal bleeding",
+      "expected_id": "disease-reproductive-uterine-bleeding",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-uterine-bleeding",
+          "title": "Uterine Bleeding",
+          "score": 0.8862956762313843
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-uterine-fibroids",
+          "title": "Uterine Fibroids",
+          "score": 0.8849309682846069
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.8840470314025879
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-hemophilia",
+          "title": "Hemophilia",
+          "score": 0.8744526505470276
+        },
+        {
+          "rank": 5,
+          "id": "disease-reproductive-menstrual-disorders",
+          "title": "Menstrual Disorders",
+          "score": 0.8725426197052002
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "uterine fibroids natural health information",
+      "expected_id": "disease-reproductive-uterine-fibroids",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-uterine-fibroids",
+          "title": "Uterine Fibroids",
+          "score": 0.9033381938934326
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-hysterectomy",
+          "title": "Hysterectomy",
+          "score": 0.8711628913879395
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-tumors",
+          "title": "Tumors",
+          "score": 0.8679937124252319
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-special-risk-factors",
+          "title": "Special Risk Factors",
+          "score": 0.8673602342605591
+        },
+        {
+          "rank": 5,
+          "id": "disease-reproductive-menstrual-disorders",
+          "title": "Menstrual Disorders",
+          "score": 0.8662699460983276
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "prostate disorders urinary and male health",
+      "expected_id": "disease-reproductive-prostate-disorders",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-prostate-cancer",
+          "title": "Prostate Cancer",
+          "score": 0.9091467261314392
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-prostate-disorders",
+          "title": "Prostate Disorders",
+          "score": 0.9070915579795837
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-chlamydia",
+          "title": "Chlamydia",
+          "score": 0.887580931186676
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-bright-s-disease",
+          "title": "Bright'S Disease",
+          "score": 0.8804190158843994
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-gonorrhea",
+          "title": "Gonorrhea",
+          "score": 0.879188060760498
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "prostatitis prostate inflammation",
+      "expected_id": "disease-reproductive-prostatitis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-chlamydia",
+          "title": "Chlamydia",
+          "score": 0.8847200274467468
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-prostate-disorders",
+          "title": "Prostate Disorders",
+          "score": 0.8740965127944946
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8714876770973206
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-prostatitis",
+          "title": "Prostatitis",
+          "score": 0.8708171248435974
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-bursitis",
+          "title": "Bursitis",
+          "score": 0.8691034913063049
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "pregnancy related problems natural care",
+      "expected_id": "disease-reproductive-pregnancy-related-problems",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-pregnancy-related-problems",
+          "title": "Pregnancy Related Problems",
+          "score": 0.886252760887146
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-miscarriage",
+          "title": "Miscarriage",
+          "score": 0.8707937002182007
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-morning-sickness",
+          "title": "Morning Sickness",
+          "score": 0.8680472373962402
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-premature-labor",
+          "title": "Premature Labor",
+          "score": 0.8659281730651855
+        },
+        {
+          "rank": 5,
+          "id": "disease-reproductive-menstrual-disorders",
+          "title": "Menstrual Disorders",
+          "score": 0.8635739684104919
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "common cold runny nose and sore throat",
+      "expected_id": "disease-respiratory-common-cold",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.8978335857391357
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-pharyngitis",
+          "title": "Pharyngitis",
+          "score": 0.8767671585083008
+        },
+        {
+          "rank": 3,
+          "id": "disease-head-sore-throat",
+          "title": "Sore Throat",
+          "score": 0.8762191534042358
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.8749476671218872
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-postnasal-drip",
+          "title": "Postnasal Drip",
+          "score": 0.8747196197509766
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "cough natural remedy and chest irritation",
+      "expected_id": "disease-respiratory-coughs",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-coughs",
+          "title": "Coughs",
+          "score": 0.9049569368362427
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-broncho-pneumonia",
+          "title": "Broncho-Pneumonia",
+          "score": 0.8846812844276428
+        },
+        {
+          "rank": 3,
+          "id": "herb-peppermint",
+          "title": "Peppermint",
+          "score": 0.8828521370887756
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-emphysema",
+          "title": "Emphysema",
+          "score": 0.8774879574775696
+        },
+        {
+          "rank": 5,
+          "id": "herb-comfrey",
+          "title": "Comfrey",
+          "score": 0.8763749003410339
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "cold sores around mouth",
+      "expected_id": "disease-respiratory-cold-sores",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-cold-sores",
+          "title": "Cold Sores",
+          "score": 0.9029719829559326
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.87800133228302
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-canker-sores",
+          "title": "Canker Sores",
+          "score": 0.8763469457626343
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-cheilosis",
+          "title": "Cheilosis",
+          "score": 0.8654398918151855
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.8639883995056152
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "cold hands and feet poor circulation",
+      "expected_id": "disease-respiratory-cold-extremities",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.9151561856269836
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-cold-extremities",
+          "title": "Cold Extremities",
+          "score": 0.9102451205253601
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-cold-feet",
+          "title": "Cold Feet",
+          "score": 0.8844255208969116
+        },
+        {
+          "rank": 4,
+          "id": "disease-skin-frostbite",
+          "title": "Frostbite",
+          "score": 0.8796793222427368
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-chills",
+          "title": "Chills",
+          "score": 0.8685522079467773
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "cold feet problem and poor circulation",
+      "expected_id": "disease-respiratory-cold-feet",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.9131796360015869
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-cold-extremities",
+          "title": "Cold Extremities",
+          "score": 0.8989729285240173
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-cold-feet",
+          "title": "Cold Feet",
+          "score": 0.8972970843315125
+        },
+        {
+          "rank": 4,
+          "id": "disease-skin-frostbite",
+          "title": "Frostbite",
+          "score": 0.8781429529190063
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-restless-leg-syndrome",
+          "title": "Restless Leg Syndrome",
+          "score": 0.8750371932983398
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "bronchiectasis lung condition with mucus",
+      "expected_id": "disease-respiratory-bronchiectasis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-bronchiectasis",
+          "title": "Bronchiectasis",
+          "score": 0.9040935635566711
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-broncho-pneumonia",
+          "title": "Broncho-Pneumonia",
+          "score": 0.8675686120986938
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-lobar-pneumonia",
+          "title": "Lobar Pneumonia",
+          "score": 0.8674395680427551
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-typhus",
+          "title": "Typhus",
+          "score": 0.8646469712257385
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-legionnaire-s-disease",
+          "title": "Legionnaire'S Disease",
+          "score": 0.8588664531707764
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "pneumonia lung infection and fever",
+      "expected_id": "disease-respiratory-pneumonia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-pneumonia",
+          "title": "Pneumonia",
+          "score": 0.8955431580543518
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-broncho-pneumonia",
+          "title": "Broncho-Pneumonia",
+          "score": 0.8840434551239014
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-q-fever",
+          "title": "Q Fever",
+          "score": 0.882726788520813
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-lung-congestion",
+          "title": "Lung Congestion",
+          "score": 0.8783202767372131
+        },
+        {
+          "rank": 5,
+          "id": "disease-respiratory-lobar-pneumonia",
+          "title": "Lobar Pneumonia",
+          "score": 0.8780688047409058
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "broncho pneumonia breathing infection",
+      "expected_id": "disease-respiratory-broncho-pneumonia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-broncho-pneumonia",
+          "title": "Broncho-Pneumonia",
+          "score": 0.9058692455291748
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-bronchiectasis",
+          "title": "Bronchiectasis",
+          "score": 0.8937187194824219
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-legionnaire-s-disease",
+          "title": "Legionnaire'S Disease",
+          "score": 0.8798965215682983
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-lobar-pneumonia",
+          "title": "Lobar Pneumonia",
+          "score": 0.878723680973053
+        },
+        {
+          "rank": 5,
+          "id": "disease-respiratory-pneumonia",
+          "title": "Pneumonia",
+          "score": 0.8771713972091675
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "lobar pneumonia lung inflammation",
+      "expected_id": "disease-respiratory-lobar-pneumonia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-broncho-pneumonia",
+          "title": "Broncho-Pneumonia",
+          "score": 0.8951082229614258
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-lobar-pneumonia",
+          "title": "Lobar Pneumonia",
+          "score": 0.8840038776397705
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-pneumonia",
+          "title": "Pneumonia",
+          "score": 0.8611804842948914
+        },
+        {
+          "rank": 4,
+          "id": "herb-lobelia",
+          "title": "Lobelia",
+          "score": 0.8579424023628235
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-toxic-shock-syndrome",
+          "title": "Toxic Shock Syndrome",
+          "score": 0.8572390675544739
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "fluoride poisoning symptoms",
+      "expected_id": "disease-respiratory-fluoride-poisoning",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-fluoride-poisoning",
+          "title": "Fluoride Poisoning",
+          "score": 0.8971804976463318
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-mercury-poisoning",
+          "title": "Mercury Poisoning",
+          "score": 0.8655333518981934
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-rabies",
+          "title": "Rabies",
+          "score": 0.8641770482063293
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-chemical-poisoning",
+          "title": "Chemical Poisoning",
+          "score": 0.8615524768829346
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-arsenic-poisoning",
+          "title": "Arsenic Poisoning",
+          "score": 0.8603578209877014
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "boils pus filled bumps on skin",
+      "expected_id": "disease-skin-boils",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-boils",
+          "title": "Boils",
+          "score": 0.9009948968887329
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-burns",
+          "title": "Burns",
+          "score": 0.8805354833602905
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-sty",
+          "title": "Sty",
+          "score": 0.8785679936408997
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-impetigo",
+          "title": "Impetigo",
+          "score": 0.8769304156303406
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-rosacea",
+          "title": "Rosacea",
+          "score": 0.8745309114456177
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "burns first aid and aloe vera",
+      "expected_id": "disease-skin-burns",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-burns",
+          "title": "Burns",
+          "score": 0.899245023727417
+        },
+        {
+          "rank": 2,
+          "id": "herb-aloe-vera",
+          "title": "Aloe Vera",
+          "score": 0.8816859722137451
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-sunburn",
+          "title": "Sunburn",
+          "score": 0.8733261823654175
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-easy-bruising",
+          "title": "Easy Bruising",
+          "score": 0.8648315668106079
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-poison-ivy",
+          "title": "Poison Ivy",
+          "score": 0.8604283332824707
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "acne pimples on face",
+      "expected_id": "disease-skin-acne",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-rosacea",
+          "title": "Rosacea",
+          "score": 0.8862088918685913
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-acne",
+          "title": "Acne",
+          "score": 0.876259446144104
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-wrinkles",
+          "title": "Wrinkles",
+          "score": 0.8669008016586304
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-blackheads",
+          "title": "Blackheads",
+          "score": 0.8645554780960083
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-enlarged-pores",
+          "title": "Enlarged Pores",
+          "score": 0.8591998219490051
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "warts on skin natural remedy",
+      "expected_id": "disease-skin-warts",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-warts",
+          "title": "Warts",
+          "score": 0.8988636136054993
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-ringworm",
+          "title": "Ringworm",
+          "score": 0.8706146478652954
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-skin-rash",
+          "title": "Skin Rash",
+          "score": 0.8672088384628296
+        },
+        {
+          "rank": 4,
+          "id": "disease-skin-burns",
+          "title": "Burns",
+          "score": 0.8655272126197815
+        },
+        {
+          "rank": 5,
+          "id": "herb-peppermint",
+          "title": "Peppermint",
+          "score": 0.8652433156967163
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "heat rash itchy rash from heat",
+      "expected_id": "disease-skin-heat-rash",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-heat-rash",
+          "title": "Heat Rash",
+          "score": 0.913617730140686
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-urticaria",
+          "title": "Urticaria",
+          "score": 0.8762304186820984
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-skin-rash",
+          "title": "Skin Rash",
+          "score": 0.8709839582443237
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-poison-ivy",
+          "title": "Poison Ivy",
+          "score": 0.8690567016601562
+        },
+        {
+          "rank": 5,
+          "id": "disease-skin-eczema",
+          "title": "Eczema",
+          "score": 0.8686845302581787
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "sunburn skin burned by sun",
+      "expected_id": "disease-skin-sunburn",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-sunburn",
+          "title": "Sunburn",
+          "score": 0.8908541202545166
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-skin-cancer",
+          "title": "Skin Cancer",
+          "score": 0.8757928609848022
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-wrinkles",
+          "title": "Wrinkles",
+          "score": 0.864670991897583
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-skin-problems",
+          "title": "Skin Problems",
+          "score": 0.8637021780014038
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-keratosis",
+          "title": "Keratosis",
+          "score": 0.8636984825134277
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "skin rash itching and redness",
+      "expected_id": "disease-skin-skin-rash",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-skin-rash",
+          "title": "Skin Rash",
+          "score": 0.89593505859375
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-heat-rash",
+          "title": "Heat Rash",
+          "score": 0.8919450044631958
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-eczema",
+          "title": "Eczema",
+          "score": 0.8911313414573669
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-rosacea",
+          "title": "Rosacea",
+          "score": 0.8889775276184082
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-syphilis",
+          "title": "Syphilis",
+          "score": 0.8838198184967041
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "eczema dry itchy skin",
+      "expected_id": "disease-skin-eczema",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-eczema",
+          "title": "Eczema",
+          "score": 0.8717505931854248
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-intertrigo",
+          "title": "Intertrigo",
+          "score": 0.8625919222831726
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-heat-rash",
+          "title": "Heat Rash",
+          "score": 0.8581740856170654
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-skin-problems",
+          "title": "Skin Problems",
+          "score": 0.8580599427223206
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-poison-ivy",
+          "title": "Poison Ivy",
+          "score": 0.8570936322212219
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "psoriasis scaly skin patches",
+      "expected_id": "disease-skin-psoriasis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-psoriasis",
+          "title": "Psoriasis",
+          "score": 0.8805643916130066
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-keratosis",
+          "title": "Keratosis",
+          "score": 0.8583937883377075
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-shingles",
+          "title": "Shingles",
+          "score": 0.8554186820983887
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-cradle-cap",
+          "title": "Cradle Cap",
+          "score": 0.8546358346939087
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-corns-and-calluses",
+          "title": "Corns And Calluses",
+          "score": 0.8521499037742615
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "frostbite from extreme cold",
+      "expected_id": "disease-skin-frostbite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-frostbite",
+          "title": "Frostbite",
+          "score": 0.9125149250030518
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.8633623719215393
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-cold-sores",
+          "title": "Cold Sores",
+          "score": 0.8621536493301392
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-cold-extremities",
+          "title": "Cold Extremities",
+          "score": 0.8597975373268127
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-raynaud-s-disease",
+          "title": "Raynaud'S Disease",
+          "score": 0.8538984060287476
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "burning feet sensation",
+      "expected_id": "disease-skin-burning-feet",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-burning-feet",
+          "title": "Burning Feet",
+          "score": 0.8710087537765503
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-foot-odor",
+          "title": "Foot Odor",
+          "score": 0.8618069887161255
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-cold-feet",
+          "title": "Cold Feet",
+          "score": 0.8533686399459839
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-body-odor",
+          "title": "Body Odor",
+          "score": 0.8523737192153931
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-erythromelalgia",
+          "title": "Erythromelalgia",
+          "score": 0.8481826782226562
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "diaper rash in babies",
+      "expected_id": "disease-skin-diaper-rash",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-diaper-rash",
+          "title": "Diaper Rash",
+          "score": 0.9205712080001831
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-skin-rash",
+          "title": "Skin Rash",
+          "score": 0.86871337890625
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-neonatal-jaundice",
+          "title": "Neonatal Jaundice",
+          "score": 0.8587558269500732
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-diarrhea-in-infants",
+          "title": "Diarrhea In Infants",
+          "score": 0.851042628288269
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-colic-in-children",
+          "title": "Colic In Children",
+          "score": 0.8505803346633911
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "insect sting swelling and pain",
+      "expected_id": "disease-skin-insect-sting",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-insect-sting",
+          "title": "Insect Sting",
+          "score": 0.8988737463951111
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-jellyfish-sting",
+          "title": "Jellyfish Sting",
+          "score": 0.8842707872390747
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-spider-bite",
+          "title": "Spider Bite",
+          "score": 0.8720479011535645
+        },
+        {
+          "rank": 4,
+          "id": "disease-skin-mosquito-bite",
+          "title": "Mosquito Bite",
+          "score": 0.8686712980270386
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-swelling",
+          "title": "Swelling",
+          "score": 0.8656865358352661
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mosquito bite itching",
+      "expected_id": "disease-skin-mosquito-bite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-mosquito-bite",
+          "title": "Mosquito Bite",
+          "score": 0.930632472038269
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-scabies",
+          "title": "Scabies",
+          "score": 0.8753119111061096
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-itch-mite",
+          "title": "Itch Mite",
+          "score": 0.8727085590362549
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-chiggers",
+          "title": "Chiggers",
+          "score": 0.870725154876709
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-rocky-mountain-spotted-fever",
+          "title": "Rocky Mountain Spotted Fever",
+          "score": 0.856734037399292
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "spider bite natural first aid",
+      "expected_id": "disease-skin-spider-bite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-spider-bite",
+          "title": "Spider Bite",
+          "score": 0.8830183744430542
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-mosquito-bite",
+          "title": "Mosquito Bite",
+          "score": 0.8612879514694214
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-lyme-disease",
+          "title": "Lyme Disease",
+          "score": 0.8544851541519165
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-scabies",
+          "title": "Scabies",
+          "score": 0.851966142654419
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-rabies",
+          "title": "Rabies",
+          "score": 0.8498459458351135
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "snake bite emergency care",
+      "expected_id": "disease-skin-snake-bite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-spider-bite",
+          "title": "Spider Bite",
+          "score": 0.8685740828514099
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-snake-bite",
+          "title": "Snake Bite",
+          "score": 0.8638695478439331
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-rabies",
+          "title": "Rabies",
+          "score": 0.8475280404090881
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-scabies",
+          "title": "Scabies",
+          "score": 0.8389039039611816
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-tularemia",
+          "title": "Tularemia",
+          "score": 0.8319774866104126
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "dog bite animal bite first aid",
+      "expected_id": "disease-skin-dog-or-animal-bite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-dog-or-animal-bite",
+          "title": "Dog Or Animal Bite",
+          "score": 0.8750710487365723
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-rabies",
+          "title": "Rabies",
+          "score": 0.8715971112251282
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-spider-bite",
+          "title": "Spider Bite",
+          "score": 0.8574948310852051
+        },
+        {
+          "rank": 4,
+          "id": "disease-skin-snake-bite",
+          "title": "Snake Bite",
+          "score": 0.8530527353286743
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-tularemia",
+          "title": "Tularemia",
+          "score": 0.8444222211837769
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kidney problems and kidney cleansing",
+      "expected_id": "disease-urinary-kidney-problems",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.9097551107406616
+        },
+        {
+          "rank": 2,
+          "id": "disease-urinary-renal-colic",
+          "title": "Renal Colic",
+          "score": 0.8916612863540649
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-bladder-problems",
+          "title": "Bladder Problems",
+          "score": 0.8838382959365845
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-urine-retention",
+          "title": "Urine Retention",
+          "score": 0.8814036846160889
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-bright-s-disease",
+          "title": "Bright'S Disease",
+          "score": 0.8801277875900269
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "renal colic kidney pain attack",
+      "expected_id": "disease-urinary-renal-colic",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-urinary-renal-colic",
+          "title": "Renal Colic",
+          "score": 0.8968309164047241
+        },
+        {
+          "rank": 2,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.8635234832763672
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-insanities",
+          "title": "Insanities",
+          "score": 0.8598668575286865
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-colic-in-children",
+          "title": "Colic In Children",
+          "score": 0.8585538864135742
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-colic-in-infants",
+          "title": "Colic In Infants",
+          "score": 0.8555054664611816
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "bladder problems and urinary infection",
+      "expected_id": "disease-urinary-bladder-problems",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-urinary-bladder-problems",
+          "title": "Bladder Problems",
+          "score": 0.9177913665771484
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-hematuria",
+          "title": "Hematuria",
+          "score": 0.9002021551132202
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-urine-retention",
+          "title": "Urine Retention",
+          "score": 0.8965522050857544
+        },
+        {
+          "rank": 4,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.8959540128707886
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-chlamydia",
+          "title": "Chlamydia",
+          "score": 0.8958420157432556
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "autism natural health information",
+      "expected_id": "disease-urinary-autism",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-urinary-autism",
+          "title": "Autism",
+          "score": 0.8943830728530884
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-myasthenia-gravis",
+          "title": "Myasthenia Gravis",
+          "score": 0.8684149384498596
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-weakened-autoimmune-system",
+          "title": "Weakened Autoimmune System",
+          "score": 0.8555909395217896
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-childhood-diseases",
+          "title": "Childhood Diseases",
+          "score": 0.8545149564743042
+        },
+        {
+          "rank": 5,
+          "id": "disease-reproductive-premenstrual-syndrome",
+          "title": "Premenstrual Syndrome",
+          "score": 0.8522633910179138
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "charcoal for poisoning and poultice on wounds",
+      "expected_id": "herb-charcoal",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-charcoal",
+          "title": "Charcoal",
+          "score": 0.8926708698272705
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-blood-poisoning",
+          "title": "Blood Poisoning",
+          "score": 0.8857814073562622
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-insect-sting",
+          "title": "Insect Sting",
+          "score": 0.8783451318740845
+        },
+        {
+          "rank": 4,
+          "id": "herb-nine-useful-poultices",
+          "title": "Nine Useful Poultices",
+          "score": 0.875475287437439
+        },
+        {
+          "rank": 5,
+          "id": "disease-skin-boils",
+          "title": "Boils",
+          "score": 0.8693711757659912
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "cayenne for circulation and warming remedy",
+      "expected_id": "herb-cayenne",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-cayenne-uses",
+          "title": "Cayenne — Uses",
+          "score": 0.934670627117157
+        },
+        {
+          "rank": 2,
+          "id": "herb-cayenne",
+          "title": "Cayenne",
+          "score": 0.9137125611305237
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.8654032945632935
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-coughs",
+          "title": "Coughs",
+          "score": 0.8614381551742554
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-chills",
+          "title": "Chills",
+          "score": 0.8605517745018005
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "garlic for coughs colds and infections",
+      "expected_id": "herb-garlic",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-garlic",
+          "title": "Garlic",
+          "score": 0.9176188111305237
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-coughs",
+          "title": "Coughs",
+          "score": 0.8846104741096497
+        },
+        {
+          "rank": 3,
+          "id": "herb-vervain",
+          "title": "Vervain",
+          "score": 0.8732739686965942
+        },
+        {
+          "rank": 4,
+          "id": "disease-skin-warts",
+          "title": "Warts",
+          "score": 0.870161771774292
+        },
+        {
+          "rank": 5,
+          "id": "herb-ginger",
+          "title": "Ginger",
+          "score": 0.8693575263023376
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "goldenseal antiseptic herb for infections",
+      "expected_id": "herb-goldenseal",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-goldenseal",
+          "title": "Goldenseal",
+          "score": 0.9298183917999268
+        },
+        {
+          "rank": 2,
+          "id": "herb-myrrh",
+          "title": "Myrrh",
+          "score": 0.9035170078277588
+        },
+        {
+          "rank": 3,
+          "id": "herb-echinacea",
+          "title": "Echinacea",
+          "score": 0.8835574984550476
+        },
+        {
+          "rank": 4,
+          "id": "disease-head-sore-throat",
+          "title": "Sore Throat",
+          "score": 0.8705357313156128
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-blood-poisoning",
+          "title": "Blood Poisoning",
+          "score": 0.8661347031593323
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "peppermint tea for digestion and stomach comfort",
+      "expected_id": "herb-peppermint",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-peppermint",
+          "title": "Peppermint",
+          "score": 0.8916035890579224
+        },
+        {
+          "rank": 2,
+          "id": "herb-hops",
+          "title": "Hops",
+          "score": 0.8780273795127869
+        },
+        {
+          "rank": 3,
+          "id": "herb-catnip",
+          "title": "Catnip",
+          "score": 0.8690667152404785
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-dyspepsia",
+          "title": "Dyspepsia",
+          "score": 0.8658018112182617
+        },
+        {
+          "rank": 5,
+          "id": "disease-respiratory-coughs",
+          "title": "Coughs",
+          "score": 0.862036943435669
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "slippery elm soothing herb for irritated tissues",
+      "expected_id": "herb-slippery-elm",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-slippery-elm",
+          "title": "Slippery Elm",
+          "score": 0.9024230241775513
+        },
+        {
+          "rank": 2,
+          "id": "herb-flaxseed",
+          "title": "Flaxseed",
+          "score": 0.8855572938919067
+        },
+        {
+          "rank": 3,
+          "id": "herb-goldenseal",
+          "title": "Goldenseal",
+          "score": 0.8594290614128113
+        },
+        {
+          "rank": 4,
+          "id": "herb-lobelia",
+          "title": "Lobelia",
+          "score": 0.8586115837097168
+        },
+        {
+          "rank": 5,
+          "id": "herb-vervain",
+          "title": "Vervain",
+          "score": 0.8580382466316223
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "aloe vera for burns and skin healing",
+      "expected_id": "herb-aloe-vera",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-aloe-vera",
+          "title": "Aloe Vera",
+          "score": 0.9077626466751099
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-burns",
+          "title": "Burns",
+          "score": 0.9013853073120117
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-sunburn",
+          "title": "Sunburn",
+          "score": 0.8691639304161072
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-scarring",
+          "title": "Scarring",
+          "score": 0.8578044772148132
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-skin-problems",
+          "title": "Skin Problems",
+          "score": 0.8545620441436768
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "corn silk tea for urine flow and kidneys",
+      "expected_id": "herb-corn-silk",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-corn-silk",
+          "title": "Corn Silk",
+          "score": 0.9317876100540161
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-urine-retention",
+          "title": "Urine Retention",
+          "score": 0.8995476365089417
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-renal-colic",
+          "title": "Renal Colic",
+          "score": 0.8926186561584473
+        },
+        {
+          "rank": 4,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.8833857774734497
+        },
+        {
+          "rank": 5,
+          "id": "disease-urinary-bladder-problems",
+          "title": "Bladder Problems",
+          "score": 0.877737283706665
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "echinacea herb for immune support",
+      "expected_id": "herb-echinacea",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-echinacea",
+          "title": "Echinacea",
+          "score": 0.8949170112609863
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-viral-infections",
+          "title": "Viral Infections",
+          "score": 0.8566293716430664
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-blood-poisoning",
+          "title": "Blood Poisoning",
+          "score": 0.8559322357177734
+        },
+        {
+          "rank": 4,
+          "id": "herb-cayenne",
+          "title": "Cayenne",
+          "score": 0.855689287185669
+        },
+        {
+          "rank": 5,
+          "id": "herb-goldenseal",
+          "title": "Goldenseal",
+          "score": 0.8555521965026855
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "ginger for nausea colds and digestion",
+      "expected_id": "herb-ginger",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-ginger-overview",
+          "title": "Ginger — Overview",
+          "score": 0.9443551301956177
+        },
+        {
+          "rank": 2,
+          "id": "herb-ginger",
+          "title": "Ginger",
+          "score": 0.9191429615020752
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-nausea",
+          "title": "Nausea",
+          "score": 0.8912796974182129
+        },
+        {
+          "rank": 4,
+          "id": "herb-catnip",
+          "title": "Catnip",
+          "score": 0.873614490032196
+        },
+        {
+          "rank": 5,
+          "id": "herb-hops",
+          "title": "Hops",
+          "score": 0.8722200989723206
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "comfrey herb for wounds and healing",
+      "expected_id": "herb-comfrey",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-comfrey",
+          "title": "Comfrey",
+          "score": 0.912517786026001
+        },
+        {
+          "rank": 2,
+          "id": "herb-cayenne",
+          "title": "Cayenne",
+          "score": 0.8604584336280823
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-bed-sores",
+          "title": "Bed Sores",
+          "score": 0.8583338260650635
+        },
+        {
+          "rank": 4,
+          "id": "herb-vervain",
+          "title": "Vervain",
+          "score": 0.8579894304275513
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-tetanus",
+          "title": "Tetanus",
+          "score": 0.8578910827636719
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "flaxseed poultice and natural remedy use",
+      "expected_id": "herb-flaxseed",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-flaxseed",
+          "title": "Flaxseed",
+          "score": 0.9160144925117493
+        },
+        {
+          "rank": 2,
+          "id": "herb-nine-useful-poultices",
+          "title": "Nine Useful Poultices",
+          "score": 0.8811460733413696
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-boils",
+          "title": "Boils",
+          "score": 0.8640173673629761
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-corns-and-calluses",
+          "title": "Corns And Calluses",
+          "score": 0.8633647561073303
+        },
+        {
+          "rank": 5,
+          "id": "disease-respiratory-coughs",
+          "title": "Coughs",
+          "score": 0.8525218963623047
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "basic principles of healthful living",
+      "expected_id": "principle-basic-principles-of-health",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-maintaining-health",
+          "title": "Maintaining Health",
+          "score": 0.914071798324585
+        },
+        {
+          "rank": 2,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.9001436233520508
+        },
+        {
+          "rank": 3,
+          "id": "principle-non-dietetic-factors",
+          "title": "Non-Dietetic Factors",
+          "score": 0.8852007389068604
+        },
+        {
+          "rank": 4,
+          "id": "principle-things-to-avoid",
+          "title": "Things To Avoid",
+          "score": 0.8810709714889526
+        },
+        {
+          "rank": 5,
+          "id": "principle-section-0",
+          "title": "Section 0",
+          "score": 0.8772941827774048
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "regular meal times and eating schedule",
+      "expected_id": "principle-basic-01-regularity-in-meals",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-basic-01-regularity-in-meals",
+          "title": "Regularity in meals",
+          "score": 0.8766484260559082
+        },
+        {
+          "rank": 2,
+          "id": "principle-things-to-avoid",
+          "title": "Things To Avoid",
+          "score": 0.8705427646636963
+        },
+        {
+          "rank": 3,
+          "id": "principle-basic-09-vary-your-diet-from-meal-to-meal",
+          "title": "Vary your diet from meal to meal",
+          "score": 0.8691540956497192
+        },
+        {
+          "rank": 4,
+          "id": "principle-vegetables",
+          "title": "Vegetables",
+          "score": 0.8679063320159912
+        },
+        {
+          "rank": 5,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.867850661277771
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "avoid overeating and practice moderation",
+      "expected_id": "principle-basic-02-moderation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-basic-02-moderation",
+          "title": "Moderation",
+          "score": 0.8919693231582642
+        },
+        {
+          "rank": 2,
+          "id": "principle-things-to-avoid",
+          "title": "Things To Avoid",
+          "score": 0.8860396146774292
+        },
+        {
+          "rank": 3,
+          "id": "principle-basic-07-avoid-complicated-mixtures",
+          "title": "Avoid complicated mixtures",
+          "score": 0.879817008972168
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-underweight",
+          "title": "Underweight",
+          "score": 0.8791860342025757
+        },
+        {
+          "rank": 5,
+          "id": "principle-basic-04-relax-and-eat-slowly",
+          "title": "Relax and eat slowly",
+          "score": 0.8785722255706787
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "chew food well before swallowing",
+      "expected_id": "principle-basic-05-chew-your-food-well",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-grains",
+          "title": "Grains",
+          "score": 0.8975976705551147
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-saliva-problems",
+          "title": "Saliva Problems",
+          "score": 0.8848462104797363
+        },
+        {
+          "rank": 3,
+          "id": "principle-summary",
+          "title": "Summary",
+          "score": 0.8848254084587097
+        },
+        {
+          "rank": 4,
+          "id": "principle-basic-03-take-small-bites",
+          "title": "Take small bites",
+          "score": 0.884335458278656
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-crohn-s-disease",
+          "title": "Crohn'S Disease",
+          "score": 0.8803977966308594
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "drink water between meals not with meals",
+      "expected_id": "principle-basic-12-aside-from-fresh-raw-juices-or-the-green-drink-drink-all-your-liquids-water-between-meals-not-with-your-meals",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-basic-12-aside-from-fresh-raw-juices-or-the-green-drink-drink-all-your-liquids-water-between-meals-not-with-your-meals",
+          "title": "Aside from fresh, raw, juices or the green drink, drink all your liquids (water) between meals, not with your meals",
+          "score": 0.9196919798851013
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-bloating",
+          "title": "Bloating",
+          "score": 0.8703343868255615
+        },
+        {
+          "rank": 3,
+          "id": "principle-vegetables",
+          "title": "Vegetables",
+          "score": 0.8683199882507324
+        },
+        {
+          "rank": 4,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.867561936378479
+        },
+        {
+          "rank": 5,
+          "id": "principle-basic-13-as-a-rule-eat-your-fruits-at-one-meal-and-vegetables-at-another",
+          "title": "As a rule, eat your fruits at one meal and vegetables at another",
+          "score": 0.8671427369117737
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "fruits and vegetables as part of healthy diet",
+      "expected_id": "principle-fruits",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-fruits",
+          "title": "Fruits",
+          "score": 0.8968886733055115
+        },
+        {
+          "rank": 2,
+          "id": "principle-basic-13-as-a-rule-eat-your-fruits-at-one-meal-and-vegetables-at-another",
+          "title": "As a rule, eat your fruits at one meal and vegetables at another",
+          "score": 0.8829931020736694
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-good-foods",
+          "title": "Good Foods",
+          "score": 0.8760201930999756
+        },
+        {
+          "rank": 4,
+          "id": "disease-skin-fasting",
+          "title": "Fasting",
+          "score": 0.8748843669891357
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-diet-and-nutrition",
+          "title": "Diet And Nutrition",
+          "score": 0.8745698928833008
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "vegetables for healthy living",
+      "expected_id": "principle-vegetables",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-good-foods",
+          "title": "Good Foods",
+          "score": 0.8755695819854736
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-minerals",
+          "title": "Minerals",
+          "score": 0.8650734424591064
+        },
+        {
+          "rank": 3,
+          "id": "principle-things-to-avoid",
+          "title": "Things To Avoid",
+          "score": 0.860387921333313
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-other-nutrients",
+          "title": "Other Nutrients",
+          "score": 0.8584722280502319
+        },
+        {
+          "rank": 5,
+          "id": "principle-fruits",
+          "title": "Fruits",
+          "score": 0.8578109741210938
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "vitamins and minerals in health principles",
+      "expected_id": "principle-vitamins-and-minerals",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-vitamins-and-minerals",
+          "title": "Vitamins And Minerals",
+          "score": 0.8986884355545044
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-vitamins",
+          "title": "Vitamins",
+          "score": 0.8868528604507446
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-senility",
+          "title": "Senility",
+          "score": 0.8787341117858887
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-menstrual-disorders",
+          "title": "Menstrual Disorders",
+          "score": 0.8772088289260864
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-schizophrenia",
+          "title": "Schizophrenia",
+          "score": 0.8764463663101196
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "things to avoid for better health",
+      "expected_id": "principle-things-to-avoid",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-things-to-avoid",
+          "title": "Things To Avoid",
+          "score": 0.9076991081237793
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-allergies",
+          "title": "Allergies",
+          "score": 0.899979293346405
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.8841015100479126
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-aging",
+          "title": "Aging",
+          "score": 0.8800712823867798
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-multiple-sclerosis",
+          "title": "Multiple Sclerosis",
+          "score": 0.879852831363678
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "non dietetic factors affecting health",
+      "expected_id": "principle-non-dietetic-factors",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-non-dietetic-factors",
+          "title": "Non-Dietetic Factors",
+          "score": 0.8939107060432434
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-special-risk-factors",
+          "title": "Special Risk Factors",
+          "score": 0.8868602514266968
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-diet-and-nutrition",
+          "title": "Diet And Nutrition",
+          "score": 0.8790414333343506
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8779686689376831
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-chronic-fatigue",
+          "title": "Chronic Fatigue",
+          "score": 0.8737509846687317
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "pernicious anemia weakness and vitamin deficiency",
+      "expected_id": "disease-general-pernicious-anemia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-pernicious-anemia",
+          "title": "Pernicious Anemia",
+          "score": 0.9233508706092834
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-beriberi",
+          "title": "Beriberi",
+          "score": 0.8744688034057617
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-weakened-autoimmune-system",
+          "title": "Weakened Autoimmune System",
+          "score": 0.8731750249862671
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-pellagra",
+          "title": "Pellagra",
+          "score": 0.8722265958786011
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-rickets",
+          "title": "Rickets",
+          "score": 0.8669489622116089
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "blood poisoning infection spreading in the body",
+      "expected_id": "disease-general-blood-poisoning",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-blood-poisoning",
+          "title": "Blood Poisoning",
+          "score": 0.8886057138442993
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-felon",
+          "title": "Felon",
+          "score": 0.8828765153884888
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-food-poisoning",
+          "title": "Food Poisoning",
+          "score": 0.8799872398376465
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-toxic-shock-syndrome",
+          "title": "Toxic Shock Syndrome",
+          "score": 0.879848301410675
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-gangrene",
+          "title": "Gangrene",
+          "score": 0.8774471282958984
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "underweight and being too thin",
+      "expected_id": "disease-general-underweight",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-underweight",
+          "title": "Underweight",
+          "score": 0.901634693145752
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-anorexia-nervosa",
+          "title": "Anorexia Nervosa",
+          "score": 0.8720230460166931
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-bulimia",
+          "title": "Bulimia",
+          "score": 0.8706609010696411
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8651688098907471
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-cellulite",
+          "title": "Cellulite",
+          "score": 0.8651255369186401
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "worms and intestinal parasites",
+      "expected_id": "disease-general-worms",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-worms",
+          "title": "Worms",
+          "score": 0.8858199119567871
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-turista",
+          "title": "Turista",
+          "score": 0.8580760359764099
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-ringworm",
+          "title": "Ringworm",
+          "score": 0.8574725389480591
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-food-poisoning",
+          "title": "Food Poisoning",
+          "score": 0.8563166856765747
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-rectal-fissures",
+          "title": "Rectal Fissures",
+          "score": 0.8532724380493164
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "poor circulation and chills in hands and feet",
+      "expected_id": "disease-general-poor-circulation-and-chills",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.92145836353302
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-chills",
+          "title": "Chills",
+          "score": 0.9065003395080566
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-cold-extremities",
+          "title": "Cold Extremities",
+          "score": 0.90339595079422
+        },
+        {
+          "rank": 4,
+          "id": "disease-skin-frostbite",
+          "title": "Frostbite",
+          "score": 0.8825048804283142
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-raynaud-s-disease",
+          "title": "Raynaud'S Disease",
+          "score": 0.8722459077835083
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    }
+  ]
+}

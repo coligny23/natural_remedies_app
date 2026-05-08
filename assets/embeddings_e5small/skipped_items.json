@@ -1,0 +1,94 @@
+[
+  [
+    "disease-general-color-blindness",
+    "too_short"
+  ],
+  [
+    "disease-general-arteriosclerosis",
+    "too_short"
+  ],
+  [
+    "herb-barberry-pleurisy",
+    "too_short"
+  ],
+  [
+    "herb-burdock-red",
+    "too_short"
+  ],
+  [
+    "herb-chickweed-squaw",
+    "too_short"
+  ],
+  [
+    "herb-cramp-valerian",
+    "too_short"
+  ],
+  [
+    "herb-eyebright-wild",
+    "too_short"
+  ],
+  [
+    "herb-yellow",
+    "too_short"
+  ],
+  [
+    "herb-blessed",
+    "too_short"
+  ],
+  [
+    "herb-marshmallow",
+    "too_short"
+  ],
+  [
+    "herb-gentian",
+    "too_short"
+  ],
+  [
+    "herb-ginseng",
+    "too_short"
+  ],
+  [
+    "principle-section-0",
+    "skip-id"
+  ],
+  [
+    "principle-basic-05-chew-your-food-well",
+    "content too short"
+  ],
+  [
+    "principle-basic-08-avoid-peculiar-additives-such-as-vinegar-monosodium-glutamate-etc",
+    "content too short"
+  ],
+  [
+    "principle-basic-09-vary-your-diet-from-meal-to-meal",
+    "content too short"
+  ],
+  [
+    "principle-basic-10-the-food-should-be-palatable",
+    "content too short"
+  ],
+  [
+    "principle-basic-12-aside-from-fresh-raw-juices-or-the-green-drink-drink-all-your-liquids-water-between-meals-not-with-your-meals",
+    "content too short"
+  ],
+  [
+    "principle-basic-13-as-a-rule-eat-your-fruits-at-one-meal-and-vegetables-at-another",
+    "content too short"
+  ],
+  [
+    "principle-basic-15-nova-scotia-dulse-and-norwegian-kelp-two-types-of-seaweed-are-the-only-rich-source-of-trace-minerals",
+    "content too short"
+  ],
+  [
+    "principle-basic-17-the-best-pattern-is-to-rest-before-the-meal-and-walk-around-after-it-not-vice-versa",
+    "content too short"
+  ],
+  [
+    "sw_import.json",
+    "helper/import file"
+  ],
+  [
+    "synonyms.json",
+    "helper/import file"
+  ]
+]

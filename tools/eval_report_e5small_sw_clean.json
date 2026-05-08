@@ -1,0 +1,5280 @@
+{
+  "model": "intfloat/multilingual-e5-small",
+  "index": "assets\\embeddings_e5small\\index_sw_clean.bin",
+  "meta": "assets\\embeddings_e5small\\meta_sw_clean.json",
+  "queries": "tools\\eval_queries_sw.json",
+  "total_queries": 135,
+  "top_1_hits": 85,
+  "top_3_hits": 100,
+  "top_5_hits": 105,
+  "top_1_accuracy": 0.6296296296296297,
+  "top_3_accuracy": 0.7407407407407407,
+  "top_5_accuracy": 0.7777777777777778,
+  "details": [
+    {
+      "query": "nini kinaweza kusaidia kumeza chakula vibaya na gesi tumboni baada ya kula",
+      "expected_id": "disease-digestive-indigestion",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-irritable-bowel-syndrome",
+          "title": "Irritable Bowel Syndrome",
+          "score": 0.8876689672470093
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-bloating",
+          "title": "Bloating",
+          "score": 0.885998010635376
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-cooking",
+          "title": "Cooking",
+          "score": 0.8849761486053467
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-chronic-gastritis",
+          "title": "Chronic Gastritis",
+          "score": 0.883656919002533
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-gastroenteritis",
+          "title": "Gastroenteritis",
+          "score": 0.8807644844055176
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "tumbo langu linauma na linaonekana kuvimba",
+      "expected_id": "disease-digestive-stomach-inflammation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-rocky-mountain-spotted-fever",
+          "title": "Rocky Mountain Spotted Fever",
+          "score": 0.8102005124092102
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-chronic-diarrhea",
+          "title": "Chronic Diarrhea",
+          "score": 0.8076684474945068
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-lung-congestion",
+          "title": "Lung Congestion",
+          "score": 0.8059592247009277
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-rabies",
+          "title": "Rabies",
+          "score": 0.8034413456916809
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-chapped-hands",
+          "title": "Chapped Hands",
+          "score": 0.8033344745635986
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "msaada wa asili kwa gastroenteritis na tumbo kuharibika",
+      "expected_id": "disease-digestive-gastroenteritis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-gallbladder-inflammation",
+          "title": "Gallbladder Inflammation",
+          "score": 0.8891910314559937
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-chronic-gastritis",
+          "title": "Chronic Gastritis",
+          "score": 0.8801409006118774
+        },
+        {
+          "rank": 3,
+          "id": "herb-garlic",
+          "title": "Garlic",
+          "score": 0.8794945478439331
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-malabsorption-syndrome",
+          "title": "Malabsorption Syndrome",
+          "score": 0.8784695863723755
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-gastroenteritis",
+          "title": "Gastroenteritis",
+          "score": 0.8777956962585449
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "tiba ya asili kwa gastritis ya muda mrefu",
+      "expected_id": "disease-digestive-chronic-gastritis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-chronic-gastritis",
+          "title": "Chronic Gastritis",
+          "score": 0.8935813903808594
+        },
+        {
+          "rank": 2,
+          "id": "herb-garlic",
+          "title": "Garlic",
+          "score": 0.8823736906051636
+        },
+        {
+          "rank": 3,
+          "id": "herb-aloe-vera",
+          "title": "Aloe Vera",
+          "score": 0.8796592950820923
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-achlorhydria",
+          "title": "Achlorhydria",
+          "score": 0.8747307062149048
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-gallbladder-inflammation",
+          "title": "Gallbladder Inflammation",
+          "score": 0.8746764659881592
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "nini husaidia hepatitis na maambukizi ya ini",
+      "expected_id": "disease-digestive-hepatitis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-hepatitis",
+          "title": "Hepatitis",
+          "score": 0.898279070854187
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-viral-infections",
+          "title": "Viral Infections",
+          "score": 0.8734216690063477
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-menopause",
+          "title": "Menopause",
+          "score": 0.865983247756958
+        },
+        {
+          "rank": 4,
+          "id": "herb-peppermint",
+          "title": "Peppermint",
+          "score": 0.8654100298881531
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-hives",
+          "title": "Hives",
+          "score": 0.86487877368927
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "tiba ya asili kwa uvimbe wa gallbladder au nyongo",
+      "expected_id": "disease-digestive-gallbladder-inflammation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-gallbladder-inflammation",
+          "title": "Gallbladder Inflammation",
+          "score": 0.8911306858062744
+        },
+        {
+          "rank": 2,
+          "id": "herb-garlic",
+          "title": "Garlic",
+          "score": 0.8833650350570679
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-candidiasis",
+          "title": "Candidiasis",
+          "score": 0.8744421601295471
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-infantile-convulsions",
+          "title": "Infantile Convulsions",
+          "score": 0.8734616041183472
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-leg-ulcers",
+          "title": "Leg Ulcers",
+          "score": 0.8712209463119507
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "dawa ya kuharisha kwa muda mrefu na ushauri wa chakula",
+      "expected_id": "disease-digestive-chronic-diarrhea",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-anorexia-nervosa",
+          "title": "Anorexia Nervosa",
+          "score": 0.883144736289978
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-chronic-gastritis",
+          "title": "Chronic Gastritis",
+          "score": 0.8812543749809265
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-age-spots",
+          "title": "Age Spots",
+          "score": 0.8753802180290222
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8752323985099792
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-candidiasis",
+          "title": "Candidiasis",
+          "score": 0.8743641376495361
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "maumivu ya tumbo gesi na irritable bowel syndrome",
+      "expected_id": "disease-digestive-irritable-bowel-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-irritable-bowel-syndrome",
+          "title": "Irritable Bowel Syndrome",
+          "score": 0.9068412184715271
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.8853405714035034
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-pelvic-pain",
+          "title": "Pelvic Pain",
+          "score": 0.8847349882125854
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-side-stitches",
+          "title": "Side Stitches",
+          "score": 0.8836899995803833
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-stomach-inflammation",
+          "title": "Stomach Inflammation",
+          "score": 0.8836665153503418
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mtoto mchanga ana kuharisha nifanye nini",
+      "expected_id": "disease-digestive-diarrhea-in-infants",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-scabies",
+          "title": "Scabies",
+          "score": 0.8606858849525452
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-cradle-cap",
+          "title": "Cradle Cap",
+          "score": 0.8588173389434814
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-childhood-diseases",
+          "title": "Childhood Diseases",
+          "score": 0.8585838079452515
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-colic-in-infants",
+          "title": "Colic In Infants",
+          "score": 0.8570681214332581
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-menke-s-syndrome",
+          "title": "Menke'S Syndrome",
+          "score": 0.8566009998321533
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "vidonda vya wazi miguuni kutokana na mzunguko mbaya wa damu",
+      "expected_id": "disease-digestive-leg-ulcers",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-claudication",
+          "title": "Claudication",
+          "score": 0.8749580383300781
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-leg-ulcers",
+          "title": "Leg Ulcers",
+          "score": 0.8733730912208557
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-hives",
+          "title": "Hives",
+          "score": 0.872355043888092
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-chronic-fatigue",
+          "title": "Chronic Fatigue",
+          "score": 0.8712332248687744
+        },
+        {
+          "rank": 5,
+          "id": "disease-respiratory-cold-sores",
+          "title": "Cold Sores",
+          "score": 0.8709208965301514
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "uchovu wa kila wakati na udhaifu wa mwili",
+      "expected_id": "disease-general-chronic-fatigue",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-chronic-fatigue",
+          "title": "Chronic Fatigue",
+          "score": 0.8758584260940552
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-mania",
+          "title": "Mania",
+          "score": 0.8721144199371338
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-aging",
+          "title": "Aging",
+          "score": 0.8715935945510864
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-body-odor",
+          "title": "Body Odor",
+          "score": 0.8686798810958862
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-pelvic-pain",
+          "title": "Pelvic Pain",
+          "score": 0.8686071634292603
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "msongo wa mawazo wasiwasi na uchovu wa mwili",
+      "expected_id": "disease-general-emotional-fatigue-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-emotional-fatigue-syndrome",
+          "title": "Emotional Fatigue Syndrome",
+          "score": 0.8672703504562378
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-stress-and-anxiety",
+          "title": "Stress And Anxiety",
+          "score": 0.8658080101013184
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-mental-illness",
+          "title": "Mental Illness",
+          "score": 0.8631792664527893
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-depression",
+          "title": "Depression",
+          "score": 0.8583471179008484
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-kuru",
+          "title": "Kuru",
+          "score": 0.858074426651001
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "maambukizi ya yeast candida na thrush tiba yake",
+      "expected_id": "disease-general-candidiasis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-candidiasis",
+          "title": "Candidiasis",
+          "score": 0.8793202638626099
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-leukorrhea",
+          "title": "Leukorrhea",
+          "score": 0.8610899448394775
+        },
+        {
+          "rank": 3,
+          "id": "disease-head-heartburn",
+          "title": "Heartburn",
+          "score": 0.8599110841751099
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8597624897956848
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8585360050201416
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "nahisi kichefuchefu na tumbo haliko vizuri",
+      "expected_id": "disease-general-nausea",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-summary",
+          "title": "Summary",
+          "score": 0.8057835698127747
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-intertrigo",
+          "title": "Intertrigo",
+          "score": 0.8042713403701782
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-motion-sickness",
+          "title": "Motion Sickness",
+          "score": 0.8024409413337708
+        },
+        {
+          "rank": 4,
+          "id": "herb-flaxseed",
+          "title": "Flaxseed",
+          "score": 0.8016259670257568
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-conjunctivitis",
+          "title": "Conjunctivitis",
+          "score": 0.8012564778327942
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "nifanye nini mtu akizimia au kupoteza fahamu",
+      "expected_id": "disease-general-fainting",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-stress-and-anxiety",
+          "title": "Stress And Anxiety",
+          "score": 0.8373720645904541
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-hearing-loss",
+          "title": "Hearing Loss",
+          "score": 0.8328183889389038
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-manic-depression",
+          "title": "Manic Depression",
+          "score": 0.8327034711837769
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-allergies",
+          "title": "Allergies",
+          "score": 0.8306980729103088
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-dyslexia",
+          "title": "Dyslexia",
+          "score": 0.8305327296257019
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "uchovu wa joto kutokana na jua upungufu wa maji na udhaifu",
+      "expected_id": "disease-general-heat-exhaustion",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-heat-exhaustion",
+          "title": "Heat Exhaustion",
+          "score": 0.8948962688446045
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-skin-disorders",
+          "title": "Skin Disorders",
+          "score": 0.8640487194061279
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-fever",
+          "title": "Fever",
+          "score": 0.8634735941886902
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-insanities",
+          "title": "Insanities",
+          "score": 0.8633741140365601
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-toxemia",
+          "title": "Toxemia",
+          "score": 0.8633174300193787
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kichefuchefu wakati wa safari ugonjwa wa gari au bahari",
+      "expected_id": "disease-general-motion-sickness",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-motion-sickness",
+          "title": "Motion Sickness",
+          "score": 0.8700965046882629
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-turista",
+          "title": "Turista",
+          "score": 0.8518592119216919
+        },
+        {
+          "rank": 3,
+          "id": "disease-musculoskeletal-backache",
+          "title": "Backache",
+          "score": 0.847341775894165
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-muscle-cramps",
+          "title": "Muscle Cramps",
+          "score": 0.8464431166648865
+        },
+        {
+          "rank": 5,
+          "id": "disease-reproductive-uterine-bleeding",
+          "title": "Uterine Bleeding",
+          "score": 0.8463906645774841
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kamasi nyingi catarrh na pua kutiririka",
+      "expected_id": "disease-general-catarrh",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-catarrh",
+          "title": "Catarrh",
+          "score": 0.85111403465271
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-intertrigo",
+          "title": "Intertrigo",
+          "score": 0.8468210697174072
+        },
+        {
+          "rank": 3,
+          "id": "herb-myrrh",
+          "title": "Myrrh",
+          "score": 0.8446791172027588
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-skin-problems",
+          "title": "Skin Problems",
+          "score": 0.8430274128913879
+        },
+        {
+          "rank": 5,
+          "id": "disease-skin-fasting",
+          "title": "Fasting",
+          "score": 0.8424627780914307
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "baridi kutetemeka na kuhisi baridi wakati wa maambukizi",
+      "expected_id": "disease-general-chills",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-cold-sores",
+          "title": "Cold Sores",
+          "score": 0.8747708797454834
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.8715072870254517
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-conjunctivitis",
+          "title": "Conjunctivitis",
+          "score": 0.8693485260009766
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-multiple-neuritis",
+          "title": "Multiple Neuritis",
+          "score": 0.8689985275268555
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-hydrochloric-acid-problems",
+          "title": "Hydrochloric Acid Problems",
+          "score": 0.8679778575897217
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "maambukizi ya virusi homa maumivu ya mwili na kichwa",
+      "expected_id": "disease-general-viral-infections",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-viral-infections",
+          "title": "Viral Infections",
+          "score": 0.8986786603927612
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.892844021320343
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-mononucleosis",
+          "title": "Mononucleosis",
+          "score": 0.8920561075210571
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.8914709091186523
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-lymphangitis",
+          "title": "Lymphangitis",
+          "score": 0.8855576515197754
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "uvimbe joto na maumivu katika tishu za mwili",
+      "expected_id": "disease-general-inflammation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-raynaud-s-disease",
+          "title": "Raynaud'S Disease",
+          "score": 0.8885114192962646
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8867264986038208
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-heat-exhaustion",
+          "title": "Heat Exhaustion",
+          "score": 0.8859561681747437
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.8836126327514648
+        },
+        {
+          "rank": 5,
+          "id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+          "title": "Temporomandibular Joint Syndrome",
+          "score": 0.8804329633712769
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "joto la mwili likiwa juu homa na huduma ya asili",
+      "expected_id": "disease-general-fever",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-insanities",
+          "title": "Insanities",
+          "score": 0.8558114171028137
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-lymphangitis",
+          "title": "Lymphangitis",
+          "score": 0.8552884459495544
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-raynaud-s-disease",
+          "title": "Raynaud'S Disease",
+          "score": 0.8550094962120056
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-tendonitis",
+          "title": "Tendonitis",
+          "score": 0.8546633720397949
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-sciatica",
+          "title": "Sciatica",
+          "score": 0.8544642925262451
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "malaria baridi na kutokwa jasho kila baada ya muda",
+      "expected_id": "disease-general-malaria",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-malaria",
+          "title": "Malaria",
+          "score": 0.8826078772544861
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.8718170523643494
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-insanities",
+          "title": "Insanities",
+          "score": 0.8705528378486633
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-cold-sores",
+          "title": "Cold Sores",
+          "score": 0.8691333532333374
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-multiple-neuritis",
+          "title": "Multiple Neuritis",
+          "score": 0.8686957359313965
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "homa ya typhoid na taarifa za afya ya asili",
+      "expected_id": "disease-general-typhoid-fever",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-typhoid-fever",
+          "title": "Typhoid Fever",
+          "score": 0.9001660346984863
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-typhus",
+          "title": "Typhus",
+          "score": 0.8854196071624756
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-rocky-mountain-spotted-fever",
+          "title": "Rocky Mountain Spotted Fever",
+          "score": 0.8836387395858765
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.8777426481246948
+        },
+        {
+          "rank": 5,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.872943103313446
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kinga ya mwili kuwa dhaifu na kuugua mara kwa mara",
+      "expected_id": "disease-general-weakened-autoimmune-system",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-weakened-autoimmune-system",
+          "title": "Weakened Autoimmune System",
+          "score": 0.861282229423523
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-kuru",
+          "title": "Kuru",
+          "score": 0.8568102717399597
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-tularemia",
+          "title": "Tularemia",
+          "score": 0.8551077842712402
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-aging",
+          "title": "Aging",
+          "score": 0.8536566495895386
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-emotional-fatigue-syndrome",
+          "title": "Emotional Fatigue Syndrome",
+          "score": 0.8530019521713257
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "stress wasiwasi mawazo mengi na tension ya neva",
+      "expected_id": "disease-general-stress-and-anxiety",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-stress-and-anxiety",
+          "title": "Stress And Anxiety",
+          "score": 0.8704804182052612
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-female-stress-syndrome",
+          "title": "Female Stress Syndrome",
+          "score": 0.8665121793746948
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-seasonal-affective-syndrome",
+          "title": "Seasonal Affective Syndrome",
+          "score": 0.8562662601470947
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-emotional-fatigue-syndrome",
+          "title": "Emotional Fatigue Syndrome",
+          "score": 0.8549390435218811
+        },
+        {
+          "rank": 5,
+          "id": "disease-skin-acne",
+          "title": "Acne",
+          "score": 0.8492368459701538
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "unyogovu huzuni na kupoteza hamu ya kufanya mambo",
+      "expected_id": "disease-general-depression",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-depression",
+          "title": "Depression",
+          "score": 0.8569887280464172
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-heat-exhaustion",
+          "title": "Heat Exhaustion",
+          "score": 0.8446576595306396
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-stress-and-anxiety",
+          "title": "Stress And Anxiety",
+          "score": 0.8441081047058105
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+          "title": "Temporomandibular Joint Syndrome",
+          "score": 0.8412621021270752
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-seasonal-affective-syndrome",
+          "title": "Seasonal Affective Syndrome",
+          "score": 0.8412034511566162
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "sukari ya damu kuwa chini dalili za hypoglycemia",
+      "expected_id": "disease-general-hypoglycemia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-hypoglycemia",
+          "title": "Hypoglycemia",
+          "score": 0.9000508785247803
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-cataracts",
+          "title": "Cataracts",
+          "score": 0.8830313086509705
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-toxemia",
+          "title": "Toxemia",
+          "score": 0.8724795579910278
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-addison-s-disease",
+          "title": "Addison'S Disease",
+          "score": 0.87236487865448
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-cushing-s-disease",
+          "title": "Cushing'S Disease",
+          "score": 0.8721073865890503
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "harufu mbaya ya mwili na tiba ya asili",
+      "expected_id": "disease-general-body-odor",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-body-odor",
+          "title": "Body Odor",
+          "score": 0.8886338472366333
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-halitosis",
+          "title": "Halitosis",
+          "score": 0.8720137476921082
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-aging",
+          "title": "Aging",
+          "score": 0.8670605421066284
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-corns-and-calluses",
+          "title": "Corns And Calluses",
+          "score": 0.8667675256729126
+        },
+        {
+          "rank": 5,
+          "id": "disease-skin-drug-rash",
+          "title": "Drug Rash",
+          "score": 0.8667577505111694
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kutokwa jasho usiku wakati wa kulala",
+      "expected_id": "disease-general-night-sweats",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-night-sweats",
+          "title": "Night Sweats",
+          "score": 0.8850494623184204
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-nightmares",
+          "title": "Nightmares",
+          "score": 0.8774527311325073
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-snoring",
+          "title": "Snoring",
+          "score": 0.8668293356895447
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-pharyngitis",
+          "title": "Pharyngitis",
+          "score": 0.8662915825843811
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-nervous-dyspepsia",
+          "title": "Nervous Dyspepsia",
+          "score": 0.8661812543869019
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mba kichwani ngozi kuwasha na flakes",
+      "expected_id": "disease-general-dandruff",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-cradle-cap",
+          "title": "Cradle Cap",
+          "score": 0.8621149063110352
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-acne",
+          "title": "Acne",
+          "score": 0.8591939210891724
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-colic-in-infants",
+          "title": "Colic In Infants",
+          "score": 0.8589451313018799
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-rosacea",
+          "title": "Rosacea",
+          "score": 0.8573883771896362
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-wrinkles",
+          "title": "Wrinkles",
+          "score": 0.8566067218780518
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "athlete foot fangasi na kuwasha katikati ya vidole vya miguu",
+      "expected_id": "disease-general-athlete-s-foot",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-athlete-s-foot",
+          "title": "Athlete'S Foot",
+          "score": 0.8668509721755981
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-foot-aches",
+          "title": "Foot Aches",
+          "score": 0.8606961965560913
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-foot-odor",
+          "title": "Foot Odor",
+          "score": 0.8515110015869141
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-flat-feet",
+          "title": "Flat Feet",
+          "score": 0.8447390794754028
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-foot-problems",
+          "title": "Foot Problems",
+          "score": 0.8445294499397278
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "harufu mbaya ya mdomo halitosis tiba yake",
+      "expected_id": "disease-general-halitosis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-halitosis",
+          "title": "Halitosis",
+          "score": 0.9007853269577026
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-foot-odor",
+          "title": "Foot Odor",
+          "score": 0.8779273629188538
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-body-odor",
+          "title": "Body Odor",
+          "score": 0.8762213587760925
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-bronchiectasis",
+          "title": "Bronchiectasis",
+          "score": 0.8736841678619385
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-mania",
+          "title": "Mania",
+          "score": 0.8725119233131409
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "tumbo kujaa gesi na kuvimba",
+      "expected_id": "disease-general-bloating",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-bloating",
+          "title": "Bloating",
+          "score": 0.8319188356399536
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-deep-breathing-and-exercise",
+          "title": "Deep Breathing And Exercise",
+          "score": 0.8311073780059814
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-emphysema",
+          "title": "Emphysema",
+          "score": 0.8302880525588989
+        },
+        {
+          "rank": 4,
+          "id": "herb-the-air-you-breathe",
+          "title": "The Air You Breathe",
+          "score": 0.830061137676239
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-stress-and-anxiety",
+          "title": "Stress And Anxiety",
+          "score": 0.8289077281951904
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kutapika mara kwa mara na kushindwa kuweka chakula tumboni",
+      "expected_id": "disease-general-vomiting",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-dyslexia",
+          "title": "Dyslexia",
+          "score": 0.8505426645278931
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-diet-and-nutrition",
+          "title": "Diet And Nutrition",
+          "score": 0.8487909436225891
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-food-poisoning",
+          "title": "Food Poisoning",
+          "score": 0.8472498655319214
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-anorexia-nervosa",
+          "title": "Anorexia Nervosa",
+          "score": 0.8465995788574219
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-gastroenteritis",
+          "title": "Gastroenteritis",
+          "score": 0.8450953960418701
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "colitis uvimbe wa utumbo na maumivu ya tumbo",
+      "expected_id": "disease-general-colitis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-colitis",
+          "title": "Colitis",
+          "score": 0.9026830196380615
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-colic-in-children",
+          "title": "Colic In Children",
+          "score": 0.8883101940155029
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8882770538330078
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.8864443898200989
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-pelvic-pain",
+          "title": "Pelvic Pain",
+          "score": 0.8860657811164856
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "ugonjwa wa figo unaoitwa bright disease",
+      "expected_id": "disease-general-bright-s-disease",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-bright-s-disease",
+          "title": "Bright'S Disease",
+          "score": 0.896742582321167
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-birth-defects",
+          "title": "Birth Defects",
+          "score": 0.8651368021965027
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-renal-colic",
+          "title": "Renal Colic",
+          "score": 0.86199551820755
+        },
+        {
+          "rank": 4,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.8617566227912903
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-wilson-s-disease",
+          "title": "Wilson'S Disease",
+          "score": 0.8573318719863892
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "emphysema shida ya kupumua na uharibifu wa mapafu",
+      "expected_id": "disease-general-emphysema",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-emphysema",
+          "title": "Emphysema",
+          "score": 0.8727090954780579
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-copper-poisoning",
+          "title": "Copper Poisoning",
+          "score": 0.8623780012130737
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-multiple-neuritis",
+          "title": "Multiple Neuritis",
+          "score": 0.8618690967559814
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-heat-exhaustion",
+          "title": "Heat Exhaustion",
+          "score": 0.8613643050193787
+        },
+        {
+          "rank": 5,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.8613362312316895
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "varicose veins mishipa kuvimba kwenye miguu",
+      "expected_id": "disease-general-varicose-veins",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-varicose-veins",
+          "title": "Varicose Veins",
+          "score": 0.8575799465179443
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-convulsions",
+          "title": "Convulsions",
+          "score": 0.8483872413635254
+        },
+        {
+          "rank": 3,
+          "id": "herb-cayenne",
+          "title": "Cayenne",
+          "score": 0.8482493758201599
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-muscle-cramps",
+          "title": "Muscle Cramps",
+          "score": 0.843410849571228
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-nail-problems",
+          "title": "Nail Problems",
+          "score": 0.8414548635482788
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "sciatica maumivu yanayoshuka mpaka mguuni",
+      "expected_id": "disease-general-sciatica",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-sciatica",
+          "title": "Sciatica",
+          "score": 0.8895210027694702
+        },
+        {
+          "rank": 2,
+          "id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+          "title": "Temporomandibular Joint Syndrome",
+          "score": 0.8709589242935181
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.8700541257858276
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.8696199655532837
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-tennis-elbow",
+          "title": "Tennis Elbow",
+          "score": 0.8693835735321045
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "carpal tunnel maumivu ya kifundo cha mkono na vidole kufa ganzi",
+      "expected_id": "disease-general-carpal-tunnel-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-carpal-tunnel-syndrome",
+          "title": "Carpal Tunnel Syndrome",
+          "score": 0.8955905437469482
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.8754003643989563
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-tennis-elbow",
+          "title": "Tennis Elbow",
+          "score": 0.8706135749816895
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-nervous-dyspepsia",
+          "title": "Nervous Dyspepsia",
+          "score": 0.8696614503860474
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-myelitis",
+          "title": "Myelitis",
+          "score": 0.8693888187408447
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "osteoporosis mifupa dhaifu na hatari ya kuvunjika",
+      "expected_id": "disease-general-osteoporosis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-osteoporosis",
+          "title": "Osteoporosis",
+          "score": 0.9017441868782043
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-rickets",
+          "title": "Rickets",
+          "score": 0.8931101560592651
+        },
+        {
+          "rank": 3,
+          "id": "disease-musculoskeletal-fracture",
+          "title": "Fracture",
+          "score": 0.8888707756996155
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-aging",
+          "title": "Aging",
+          "score": 0.8784129619598389
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-body-odor",
+          "title": "Body Odor",
+          "score": 0.8719432353973389
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "tezi ya thyroid kufanya kazi chini dalili za hypothyroidism",
+      "expected_id": "disease-general-hypothyroidism",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-hyperthyroidism",
+          "title": "Hyperthyroidism",
+          "score": 0.915298581123352
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-hypothyroidism",
+          "title": "Hypothyroidism",
+          "score": 0.8813215494155884
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-toxemia",
+          "title": "Toxemia",
+          "score": 0.8779017925262451
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.8755652904510498
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-neonatal-jaundice",
+          "title": "Neonatal Jaundice",
+          "score": 0.8738558292388916
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "food poisoning kutapika na kuharisha baada ya kula",
+      "expected_id": "disease-general-food-poisoning",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-food-poisoning",
+          "title": "Food Poisoning",
+          "score": 0.8815367817878723
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-cooking",
+          "title": "Cooking",
+          "score": 0.8808111548423767
+        },
+        {
+          "rank": 3,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8753264546394348
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-anorexia-nervosa",
+          "title": "Anorexia Nervosa",
+          "score": 0.872078537940979
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-post-polio-syndrome",
+          "title": "Post-Polio Syndrome",
+          "score": 0.8720663785934448
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "sumu ya lead au metali nzito mwilini",
+      "expected_id": "disease-general-lead-poisoning",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-lead-poisoning",
+          "title": "Lead Poisoning",
+          "score": 0.8786851167678833
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-body-odor",
+          "title": "Body Odor",
+          "score": 0.8705025911331177
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-chemical-poisoning",
+          "title": "Chemical Poisoning",
+          "score": 0.8684988021850586
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-cadmium-poisoning",
+          "title": "Cadmium Poisoning",
+          "score": 0.8618406057357788
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-miscellaneous-preventative-factors",
+          "title": "Miscellaneous Preventative Factors",
+          "score": 0.8601218461990356
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kuzuia cancer na kanuni za afya ya asili",
+      "expected_id": "disease-general-preventing-cancer",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-preventing-cancer",
+          "title": "Preventing Cancer",
+          "score": 0.8782426118850708
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-diet-and-nutrition",
+          "title": "Diet And Nutrition",
+          "score": 0.8755530118942261
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-protein",
+          "title": "Protein",
+          "score": 0.8705928325653076
+        },
+        {
+          "rank": 4,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.869917631149292
+        },
+        {
+          "rank": 5,
+          "id": "principle-maintaining-health",
+          "title": "Maintaining Health",
+          "score": 0.8695781230926514
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "maumivu ya sinus pua kuziba na pressure usoni",
+      "expected_id": "disease-head-sinusitis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-sinusitis",
+          "title": "Sinusitis",
+          "score": 0.882305383682251
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-bell-s-palsy",
+          "title": "Bell'S Palsy",
+          "score": 0.8786511421203613
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-pelvic-pain",
+          "title": "Pelvic Pain",
+          "score": 0.8760254979133606
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+          "title": "Temporomandibular Joint Syndrome",
+          "score": 0.8752443790435791
+        },
+        {
+          "rank": 5,
+          "id": "disease-reproductive-prostatitis",
+          "title": "Prostatitis",
+          "score": 0.8722240328788757
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "matatizo ya macho huduma ya asili na kuona vibaya",
+      "expected_id": "disease-head-eye-problems",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-eye-problems",
+          "title": "Eye Problems",
+          "score": 0.8702588081359863
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-eyestrain",
+          "title": "Eyestrain",
+          "score": 0.8655753135681152
+        },
+        {
+          "rank": 3,
+          "id": "disease-head-red-eyes",
+          "title": "Red Eyes",
+          "score": 0.8634952306747437
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-farsightedness",
+          "title": "Farsightedness",
+          "score": 0.8630850315093994
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-amblyopia",
+          "title": "Amblyopia",
+          "score": 0.8618627786636353
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "macho mekundu na muwasho wa macho",
+      "expected_id": "disease-head-red-eyes",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-red-eyes",
+          "title": "Red Eyes",
+          "score": 0.8703445792198181
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-eye-problems",
+          "title": "Eye Problems",
+          "score": 0.8690222501754761
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-keratomalacia",
+          "title": "Keratomalacia",
+          "score": 0.8680848479270935
+        },
+        {
+          "rank": 4,
+          "id": "disease-head-yellow-eyes",
+          "title": "Yellow Eyes",
+          "score": 0.8654844164848328
+        },
+        {
+          "rank": 5,
+          "id": "disease-head-eyestrain",
+          "title": "Eyestrain",
+          "score": 0.8634894490242004
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "macho kuwasha allergy na irritation",
+      "expected_id": "disease-head-itchy-eyes",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-itchy-eyes",
+          "title": "Itchy Eyes",
+          "score": 0.8848864436149597
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-photophobia",
+          "title": "Photophobia",
+          "score": 0.8759621977806091
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-rosacea",
+          "title": "Rosacea",
+          "score": 0.873156726360321
+        },
+        {
+          "rank": 4,
+          "id": "disease-head-mucous-in-eye",
+          "title": "Mucous In Eye",
+          "score": 0.8721470832824707
+        },
+        {
+          "rank": 5,
+          "id": "disease-head-eye-problems",
+          "title": "Eye Problems",
+          "score": 0.8712034225463867
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "pua kutoa damu huduma ya kwanza",
+      "expected_id": "disease-head-nosebleed",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-nosebleed",
+          "title": "Nosebleed",
+          "score": 0.8806182146072388
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.8606522083282471
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-postnasal-drip",
+          "title": "Postnasal Drip",
+          "score": 0.8603242635726929
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-hay-fever",
+          "title": "Hay Fever",
+          "score": 0.8597170114517212
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-fainting",
+          "title": "Fainting",
+          "score": 0.8594104051589966
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "earwax kuziba sikio na sikio kufungana",
+      "expected_id": "disease-head-earwax",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-earwax",
+          "title": "Earwax",
+          "score": 0.8464836478233337
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-ear-congestion",
+          "title": "Ear Congestion",
+          "score": 0.8426505327224731
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-stress-and-anxiety",
+          "title": "Stress And Anxiety",
+          "score": 0.8335118889808655
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+          "title": "Temporomandibular Joint Syndrome",
+          "score": 0.8297849893569946
+        },
+        {
+          "rank": 5,
+          "id": "disease-urinary-bladder-problems",
+          "title": "Bladder Problems",
+          "score": 0.8296678066253662
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "swimmer ear maji kuingia sikioni na maambukizi",
+      "expected_id": "disease-head-swimmer-s-ear",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-swimmer-s-ear",
+          "title": "Swimmer'S Ear",
+          "score": 0.88599693775177
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-ear-congestion",
+          "title": "Ear Congestion",
+          "score": 0.8528159260749817
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-toxemia",
+          "title": "Toxemia",
+          "score": 0.8490716814994812
+        },
+        {
+          "rank": 4,
+          "id": "disease-skin-sunburn",
+          "title": "Sunburn",
+          "score": 0.8485413193702698
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-fainting",
+          "title": "Fainting",
+          "score": 0.8481351137161255
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kupoteza uwezo wa kusikia au kusikia kidogo",
+      "expected_id": "disease-head-hearing-loss",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-hearing-loss",
+          "title": "Hearing Loss",
+          "score": 0.8447292447090149
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-dyslexia",
+          "title": "Dyslexia",
+          "score": 0.8421688675880432
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-autism",
+          "title": "Autism",
+          "score": 0.8354044556617737
+        },
+        {
+          "rank": 4,
+          "id": "principle-basic-03-take-small-bites",
+          "title": "Take small bites",
+          "score": 0.8349305391311646
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-aging",
+          "title": "Aging",
+          "score": 0.8344546556472778
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "koo kuuma na maumivu wakati wa kumeza",
+      "expected_id": "disease-head-sore-throat",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.8554489016532898
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-rocky-mountain-spotted-fever",
+          "title": "Rocky Mountain Spotted Fever",
+          "score": 0.8542090058326721
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8541062474250793
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-side-stitches",
+          "title": "Side Stitches",
+          "score": 0.853531539440155
+        },
+        {
+          "rank": 5,
+          "id": "disease-skin-sunburn",
+          "title": "Sunburn",
+          "score": 0.8535109162330627
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "meno kuoza cavities na matatizo ya meno",
+      "expected_id": "disease-head-tooth-decay",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-denture-troubles",
+          "title": "Denture Troubles",
+          "score": 0.8882285356521606
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-menke-s-syndrome",
+          "title": "Menke'S Syndrome",
+          "score": 0.8761569261550903
+        },
+        {
+          "rank": 3,
+          "id": "disease-head-tooth-decay",
+          "title": "Tooth Decay",
+          "score": 0.8738147020339966
+        },
+        {
+          "rank": 4,
+          "id": "disease-head-eye-problems",
+          "title": "Eye Problems",
+          "score": 0.8724753856658936
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-cheilosis",
+          "title": "Cheilosis",
+          "score": 0.8719935417175293
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "heartburn kifua kuwaka baada ya kula",
+      "expected_id": "disease-head-heartburn",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-head-heartburn",
+          "title": "Heartburn",
+          "score": 0.8913174867630005
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8819921016693115
+        },
+        {
+          "rank": 3,
+          "id": "disease-digestive-chronic-gastritis",
+          "title": "Chronic Gastritis",
+          "score": 0.8818962574005127
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-gangrene",
+          "title": "Gangrene",
+          "score": 0.8799030780792236
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-hydrochloric-acid-problems",
+          "title": "Hydrochloric Acid Problems",
+          "score": 0.8792650699615479
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mfupa kuvunjika fracture huduma ya kwanza na uponyaji",
+      "expected_id": "disease-musculoskeletal-fracture",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-fracture",
+          "title": "Fracture",
+          "score": 0.8861618041992188
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-pharyngitis",
+          "title": "Pharyngitis",
+          "score": 0.8560269474983215
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-broken-rib",
+          "title": "Broken Rib",
+          "score": 0.8503848314285278
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-menopause",
+          "title": "Menopause",
+          "score": 0.8501085042953491
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-age-spots",
+          "title": "Age Spots",
+          "score": 0.8491287231445312
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "heel spur au bone spur maumivu ya kisigino",
+      "expected_id": "disease-musculoskeletal-bone-spur",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-bone-spur",
+          "title": "Bone Spur",
+          "score": 0.8616582155227661
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-rectal-itching",
+          "title": "Rectal Itching",
+          "score": 0.8451777696609497
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-rocky-mountain-spotted-fever",
+          "title": "Rocky Mountain Spotted Fever",
+          "score": 0.8437001705169678
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-genital-herpes",
+          "title": "Genital Herpes",
+          "score": 0.8430075645446777
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-felon",
+          "title": "Felon",
+          "score": 0.8423053026199341
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "rheumatism ya muda mrefu na maumivu ya viungo",
+      "expected_id": "disease-musculoskeletal-chronic-rheumatism",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.9080384373664856
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-weakened-autoimmune-system",
+          "title": "Weakened Autoimmune System",
+          "score": 0.8879669904708862
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.885628879070282
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-ankylosing-spondylitis",
+          "title": "Ankylosing Spondylitis",
+          "score": 0.8849794864654541
+        },
+        {
+          "rank": 5,
+          "id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+          "title": "Temporomandibular Joint Syndrome",
+          "score": 0.884448766708374
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "maumivu ya taya na temporomandibular joint syndrome",
+      "expected_id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+          "title": "Temporomandibular Joint Syndrome",
+          "score": 0.9149616360664368
+        },
+        {
+          "rank": 2,
+          "id": "disease-musculoskeletal-muscle-cramps",
+          "title": "Muscle Cramps",
+          "score": 0.8803302645683289
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-cheilosis",
+          "title": "Cheilosis",
+          "score": 0.8764623403549194
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.8762508630752563
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-sjogren-s-syndrome",
+          "title": "Sjogren'S Syndrome",
+          "score": 0.874635636806488
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "misuli kukakamaa na cramps zenye maumivu",
+      "expected_id": "disease-musculoskeletal-muscle-cramps",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-muscle-cramps",
+          "title": "Muscle Cramps",
+          "score": 0.885340690612793
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8696866631507874
+        },
+        {
+          "rank": 3,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.8637047410011292
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-lymphangitis",
+          "title": "Lymphangitis",
+          "score": 0.8628230690956116
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-chronic-gastritis",
+          "title": "Chronic Gastritis",
+          "score": 0.8621252775192261
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "jeraha la misuli strain na soreness",
+      "expected_id": "disease-musculoskeletal-muscle-injuries",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-muscle-injuries",
+          "title": "Muscle Injuries",
+          "score": 0.8665884733200073
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-multiple-sclerosis",
+          "title": "Multiple Sclerosis",
+          "score": 0.8603267669677734
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-muscular-dystrophy",
+          "title": "Muscular Dystrophy",
+          "score": 0.8585578799247742
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-leg-ulcers",
+          "title": "Leg Ulcers",
+          "score": 0.8573043346405029
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-varicose-veins",
+          "title": "Varicose Veins",
+          "score": 0.8548706769943237
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "maumivu ya mgongo wa chini tiba ya asili",
+      "expected_id": "disease-musculoskeletal-backache",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-myelitis",
+          "title": "Myelitis",
+          "score": 0.8760455846786499
+        },
+        {
+          "rank": 2,
+          "id": "herb-garlic",
+          "title": "Garlic",
+          "score": 0.8715198040008545
+        },
+        {
+          "rank": 3,
+          "id": "disease-musculoskeletal-backache",
+          "title": "Backache",
+          "score": 0.8690657019615173
+        },
+        {
+          "rank": 4,
+          "id": "herb-goldenseal",
+          "title": "Goldenseal",
+          "score": 0.8664687871932983
+        },
+        {
+          "rank": 5,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.8655170202255249
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "rheumatic fever maumivu ya viungo na homa",
+      "expected_id": "disease-musculoskeletal-rheumatic-fever",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.9216347336769104
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-rocky-mountain-spotted-fever",
+          "title": "Rocky Mountain Spotted Fever",
+          "score": 0.8943772315979004
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8910491466522217
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-tularemia",
+          "title": "Tularemia",
+          "score": 0.8891288042068481
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-lymphangitis",
+          "title": "Lymphangitis",
+          "score": 0.8862439393997192
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "maumivu na usumbufu wa matiti kabla ya hedhi",
+      "expected_id": "disease-reproductive-breast-discomfort",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.8865537643432617
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-breast-discomfort",
+          "title": "Breast Discomfort",
+          "score": 0.8843557238578796
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-mastitis",
+          "title": "Mastitis",
+          "score": 0.8817195892333984
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-premature-labor",
+          "title": "Premature Labor",
+          "score": 0.8809797763824463
+        },
+        {
+          "rank": 5,
+          "id": "disease-reproductive-breast-inflammation",
+          "title": "Breast Inflammation",
+          "score": 0.8783645629882812
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "matiti kuvimba kuwa magumu na kuuma",
+      "expected_id": "disease-reproductive-breast-inflammation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8644787073135376
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-sunburn",
+          "title": "Sunburn",
+          "score": 0.8635760545730591
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-breast-discomfort",
+          "title": "Breast Discomfort",
+          "score": 0.8625391125679016
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-breast-inflammation",
+          "title": "Breast Inflammation",
+          "score": 0.8616318106651306
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-toxemia",
+          "title": "Toxemia",
+          "score": 0.859291136264801
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "breast cyst uvimbe au lump kwenye titi na maumivu",
+      "expected_id": "disease-reproductive-breast-cyst",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-breast-cyst",
+          "title": "Breast Cyst",
+          "score": 0.8920701742172241
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-breast-discomfort",
+          "title": "Breast Discomfort",
+          "score": 0.8895449638366699
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-breast-inflammation",
+          "title": "Breast Inflammation",
+          "score": 0.8887344598770142
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8754969835281372
+        },
+        {
+          "rank": 5,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.8695570230484009
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "PMS mabadiliko ya mood na maumivu ya matiti kabla ya hedhi",
+      "expected_id": "disease-reproductive-premenstrual-syndrome",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-premenstrual-syndrome",
+          "title": "Premenstrual Syndrome",
+          "score": 0.8688846230506897
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.86545729637146
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-breast-discomfort",
+          "title": "Breast Discomfort",
+          "score": 0.8642381429672241
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-menstrual-disorders",
+          "title": "Menstrual Disorders",
+          "score": 0.8589839339256287
+        },
+        {
+          "rank": 5,
+          "id": "disease-reproductive-premature-labor",
+          "title": "Premature Labor",
+          "score": 0.8575540781021118
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "matatizo ya hedhi na period kuwa irregular",
+      "expected_id": "disease-reproductive-menstrual-disorders",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.8839971423149109
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-pelvic-pain",
+          "title": "Pelvic Pain",
+          "score": 0.8776377439498901
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-pelvic-inflammatory-disease",
+          "title": "Pelvic Inflammatory Disease",
+          "score": 0.8773165941238403
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-menstrual-disorders",
+          "title": "Menstrual Disorders",
+          "score": 0.87297523021698
+        },
+        {
+          "rank": 5,
+          "id": "disease-reproductive-lack-of-menstruation",
+          "title": "Lack Of Menstruation",
+          "score": 0.8725237846374512
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "kukosa hedhi au period kuchelewa",
+      "expected_id": "disease-reproductive-lack-of-menstruation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-menstrual-disorders",
+          "title": "Menstrual Disorders",
+          "score": 0.8625515699386597
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.8599698543548584
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-cold-sores",
+          "title": "Cold Sores",
+          "score": 0.8548676371574402
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-pelvic-inflammatory-disease",
+          "title": "Pelvic Inflammatory Disease",
+          "score": 0.8546177744865417
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-hysterectomy",
+          "title": "Hysterectomy",
+          "score": 0.8533734083175659
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "maumivu makali ya hedhi cramps na tiba yake",
+      "expected_id": "disease-reproductive-painful-menstruation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.8761884570121765
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.8759638071060181
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8751845359802246
+        },
+        {
+          "rank": 4,
+          "id": "disease-musculoskeletal-muscle-cramps",
+          "title": "Muscle Cramps",
+          "score": 0.8745439052581787
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-pelvic-pain",
+          "title": "Pelvic Pain",
+          "score": 0.8738350868225098
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kutokwa damu kwenye uterus au bleeding isiyo ya kawaida",
+      "expected_id": "disease-reproductive-uterine-bleeding",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-uterine-bleeding",
+          "title": "Uterine Bleeding",
+          "score": 0.8605987429618835
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-painful-menstruation",
+          "title": "Painful Menstruation",
+          "score": 0.8547850847244263
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-leukemia",
+          "title": "Leukemia",
+          "score": 0.8491101861000061
+        },
+        {
+          "rank": 4,
+          "id": "disease-digestive-gallbladder-inflammation",
+          "title": "Gallbladder Inflammation",
+          "score": 0.8467511534690857
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-pelvic-pain",
+          "title": "Pelvic Pain",
+          "score": 0.8461676239967346
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "uterine fibroids na taarifa za afya ya asili",
+      "expected_id": "disease-reproductive-uterine-fibroids",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-uterine-fibroids",
+          "title": "Uterine Fibroids",
+          "score": 0.893273651599884
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-uterine-bleeding",
+          "title": "Uterine Bleeding",
+          "score": 0.877034068107605
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-renal-colic",
+          "title": "Renal Colic",
+          "score": 0.8739455342292786
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-special-risk-factors",
+          "title": "Special Risk Factors",
+          "score": 0.8726578950881958
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-insanities",
+          "title": "Insanities",
+          "score": 0.870073139667511
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "matatizo ya prostate kukojoa na afya ya mwanaume",
+      "expected_id": "disease-reproductive-prostate-disorders",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-prostate-cancer",
+          "title": "Prostate Cancer",
+          "score": 0.9118378162384033
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-prostate-disorders",
+          "title": "Prostate Disorders",
+          "score": 0.9039938449859619
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-psoriasis",
+          "title": "Psoriasis",
+          "score": 0.8752570152282715
+        },
+        {
+          "rank": 4,
+          "id": "disease-reproductive-prostatitis",
+          "title": "Prostatitis",
+          "score": 0.874279260635376
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-chlamydia",
+          "title": "Chlamydia",
+          "score": 0.870622456073761
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "prostatitis uvimbe wa prostate",
+      "expected_id": "disease-reproductive-prostatitis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-prostatitis",
+          "title": "Prostatitis",
+          "score": 0.8902149200439453
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-prostate-disorders",
+          "title": "Prostate Disorders",
+          "score": 0.8840276598930359
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-prostate-cancer",
+          "title": "Prostate Cancer",
+          "score": 0.8778853416442871
+        },
+        {
+          "rank": 4,
+          "id": "herb-cayenne",
+          "title": "Cayenne",
+          "score": 0.8641602396965027
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-pelvic-pain",
+          "title": "Pelvic Pain",
+          "score": 0.8632805943489075
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "matatizo yanayohusiana na ujauzito na huduma ya asili",
+      "expected_id": "disease-reproductive-pregnancy-related-problems",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-reproductive-pregnancy-related-problems",
+          "title": "Pregnancy Related Problems",
+          "score": 0.8677061796188354
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-aging",
+          "title": "Aging",
+          "score": 0.8616232872009277
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-growth-problems",
+          "title": "Growth Problems",
+          "score": 0.8600881695747375
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-mental-illness",
+          "title": "Mental Illness",
+          "score": 0.8596036434173584
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-miscarriage",
+          "title": "Miscarriage",
+          "score": 0.8578290939331055
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mafua pua kutiririka na koo kuuma",
+      "expected_id": "disease-respiratory-common-cold",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-tularemia",
+          "title": "Tularemia",
+          "score": 0.8502732515335083
+        },
+        {
+          "rank": 2,
+          "id": "disease-musculoskeletal-fracture",
+          "title": "Fracture",
+          "score": 0.8489178419113159
+        },
+        {
+          "rank": 3,
+          "id": "disease-reproductive-uterine-bleeding",
+          "title": "Uterine Bleeding",
+          "score": 0.8486400246620178
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-edema",
+          "title": "Edema",
+          "score": 0.8472829461097717
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-heat-exhaustion",
+          "title": "Heat Exhaustion",
+          "score": 0.8468681573867798
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "kikohozi tiba ya asili na muwasho wa kifua",
+      "expected_id": "disease-respiratory-coughs",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-garlic",
+          "title": "Garlic",
+          "score": 0.8811294436454773
+        },
+        {
+          "rank": 2,
+          "id": "disease-reproductive-prostate-disorders",
+          "title": "Prostate Disorders",
+          "score": 0.8796830177307129
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-bronchiectasis",
+          "title": "Bronchiectasis",
+          "score": 0.875560998916626
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.8746848702430725
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-nervous-dyspepsia",
+          "title": "Nervous Dyspepsia",
+          "score": 0.873542070388794
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "cold sores vidonda kuzunguka mdomo",
+      "expected_id": "disease-respiratory-cold-sores",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-cold-sores",
+          "title": "Cold Sores",
+          "score": 0.8652944564819336
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.8523029088973999
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-canker-sores",
+          "title": "Canker Sores",
+          "score": 0.850975513458252
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-infantile-convulsions",
+          "title": "Infantile Convulsions",
+          "score": 0.8492511510848999
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-genital-herpes",
+          "title": "Genital Herpes",
+          "score": 0.8471744060516357
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mikono na miguu kuwa baridi kutokana na mzunguko duni wa damu",
+      "expected_id": "disease-respiratory-cold-extremities",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-lung-congestion",
+          "title": "Lung Congestion",
+          "score": 0.875059187412262
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-toxemia",
+          "title": "Toxemia",
+          "score": 0.8702578544616699
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-chemical-poisoning",
+          "title": "Chemical Poisoning",
+          "score": 0.8695715665817261
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-chapped-hands",
+          "title": "Chapped Hands",
+          "score": 0.8673285245895386
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-hives",
+          "title": "Hives",
+          "score": 0.8672856092453003
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "miguu kuwa baridi na mzunguko mbaya wa damu",
+      "expected_id": "disease-respiratory-cold-feet",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-musculoskeletal-muscle-cramps",
+          "title": "Muscle Cramps",
+          "score": 0.8734204173088074
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-restless-leg-syndrome",
+          "title": "Restless Leg Syndrome",
+          "score": 0.8713533878326416
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.8704363107681274
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-buerger-s-disease",
+          "title": "Buerger'S Disease",
+          "score": 0.8700007200241089
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-claudication",
+          "title": "Claudication",
+          "score": 0.8698840141296387
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "bronchiectasis hali ya mapafu yenye kamasi nyingi",
+      "expected_id": "disease-respiratory-bronchiectasis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-pneumonia",
+          "title": "Pneumonia",
+          "score": 0.8945326805114746
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-bronchiectasis",
+          "title": "Bronchiectasis",
+          "score": 0.893352746963501
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-multiple-neuritis",
+          "title": "Multiple Neuritis",
+          "score": 0.8895217180252075
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-morning-sickness",
+          "title": "Morning Sickness",
+          "score": 0.8870839476585388
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-pharyngitis",
+          "title": "Pharyngitis",
+          "score": 0.8846725821495056
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "pneumonia maambukizi ya mapafu na homa",
+      "expected_id": "disease-respiratory-pneumonia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-pneumonia",
+          "title": "Pneumonia",
+          "score": 0.9125317335128784
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-broncho-pneumonia",
+          "title": "Broncho-Pneumonia",
+          "score": 0.8941633105278015
+        },
+        {
+          "rank": 3,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.892492413520813
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-bubonic-plague",
+          "title": "Bubonic Plague",
+          "score": 0.8917939066886902
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8902498483657837
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "broncho pneumonia maambukizi ya kupumua",
+      "expected_id": "disease-respiratory-broncho-pneumonia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-pneumonia",
+          "title": "Pneumonia",
+          "score": 0.9132283329963684
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-broncho-pneumonia",
+          "title": "Broncho-Pneumonia",
+          "score": 0.9035577774047852
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-mononucleosis",
+          "title": "Mononucleosis",
+          "score": 0.8971894979476929
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-bronchiectasis",
+          "title": "Bronchiectasis",
+          "score": 0.8957794904708862
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-legionnaire-s-disease",
+          "title": "Legionnaire'S Disease",
+          "score": 0.8904117941856384
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "lobar pneumonia uvimbe wa mapafu",
+      "expected_id": "disease-respiratory-lobar-pneumonia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-lobar-pneumonia",
+          "title": "Lobar Pneumonia",
+          "score": 0.8958695530891418
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-pneumonia",
+          "title": "Pneumonia",
+          "score": 0.8866457939147949
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-broncho-pneumonia",
+          "title": "Broncho-Pneumonia",
+          "score": 0.886136531829834
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-leprosy",
+          "title": "Leprosy",
+          "score": 0.8711866736412048
+        },
+        {
+          "rank": 5,
+          "id": "disease-respiratory-bronchiectasis",
+          "title": "Bronchiectasis",
+          "score": 0.8693103194236755
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "sumu ya fluoride na dalili zake",
+      "expected_id": "disease-respiratory-fluoride-poisoning",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-respiratory-fluoride-poisoning",
+          "title": "Fluoride Poisoning",
+          "score": 0.8997992873191833
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-chemical-poisoning",
+          "title": "Chemical Poisoning",
+          "score": 0.8791067600250244
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-bright-s-disease",
+          "title": "Bright'S Disease",
+          "score": 0.8620655536651611
+        },
+        {
+          "rank": 4,
+          "id": "disease-skin-boils",
+          "title": "Boils",
+          "score": 0.8617473840713501
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-body-odor",
+          "title": "Body Odor",
+          "score": 0.861311674118042
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "majipu kwenye ngozi yenye usaha",
+      "expected_id": "disease-skin-boils",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-chapped-hands",
+          "title": "Chapped Hands",
+          "score": 0.8533289432525635
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-skin-problems",
+          "title": "Skin Problems",
+          "score": 0.8471508026123047
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-corns-and-calluses",
+          "title": "Corns And Calluses",
+          "score": 0.8444876670837402
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-intertrigo",
+          "title": "Intertrigo",
+          "score": 0.8436721563339233
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-rosacea",
+          "title": "Rosacea",
+          "score": 0.8379256725311279
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "burns kuchomwa huduma ya kwanza na aloe vera",
+      "expected_id": "disease-skin-burns",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-burns",
+          "title": "Burns",
+          "score": 0.8906289339065552
+        },
+        {
+          "rank": 2,
+          "id": "herb-aloe-vera",
+          "title": "Aloe Vera",
+          "score": 0.8642034530639648
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-sunburn",
+          "title": "Sunburn",
+          "score": 0.8629605174064636
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-scarring",
+          "title": "Scarring",
+          "score": 0.8526319265365601
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-convulsions",
+          "title": "Convulsions",
+          "score": 0.8493697643280029
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "acne chunusi usoni",
+      "expected_id": "disease-skin-acne",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-acne",
+          "title": "Acne",
+          "score": 0.8628005981445312
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-leukorrhea",
+          "title": "Leukorrhea",
+          "score": 0.8570901155471802
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-swelling",
+          "title": "Swelling",
+          "score": 0.8547942042350769
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-chronic-fatigue",
+          "title": "Chronic Fatigue",
+          "score": 0.8547594547271729
+        },
+        {
+          "rank": 5,
+          "id": "disease-skin-spider-bite",
+          "title": "Spider Bite",
+          "score": 0.8542318344116211
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "warts vipele vigumu kwenye ngozi tiba ya asili",
+      "expected_id": "disease-skin-warts",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-warts",
+          "title": "Warts",
+          "score": 0.880826473236084
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-corns-and-calluses",
+          "title": "Corns And Calluses",
+          "score": 0.8663405179977417
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-skin-problems",
+          "title": "Skin Problems",
+          "score": 0.8661776185035706
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-vertigo",
+          "title": "Vertigo",
+          "score": 0.8657878637313843
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-viral-infections",
+          "title": "Viral Infections",
+          "score": 0.8656171560287476
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "heat rash upele wa joto na kuwasha",
+      "expected_id": "disease-skin-heat-rash",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-heat-rash",
+          "title": "Heat Rash",
+          "score": 0.8927347660064697
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-heat-exhaustion",
+          "title": "Heat Exhaustion",
+          "score": 0.8834437131881714
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-skin-rash",
+          "title": "Skin Rash",
+          "score": 0.8776260614395142
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-raynaud-s-disease",
+          "title": "Raynaud'S Disease",
+          "score": 0.8753141164779663
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-insanities",
+          "title": "Insanities",
+          "score": 0.8704406023025513
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "sunburn ngozi kuungua na jua",
+      "expected_id": "disease-skin-sunburn",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-sunburn",
+          "title": "Sunburn",
+          "score": 0.8700493574142456
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-skin-cancer",
+          "title": "Skin Cancer",
+          "score": 0.8657634258270264
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-skin-disorders",
+          "title": "Skin Disorders",
+          "score": 0.8551429510116577
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-tularemia",
+          "title": "Tularemia",
+          "score": 0.8522637486457825
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-heat-exhaustion",
+          "title": "Heat Exhaustion",
+          "score": 0.8485536575317383
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "upele wa ngozi kuwasha na wekundu",
+      "expected_id": "disease-skin-skin-rash",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-rosacea",
+          "title": "Rosacea",
+          "score": 0.8563684225082397
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-skin-rash",
+          "title": "Skin Rash",
+          "score": 0.8530838489532471
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-wrinkles",
+          "title": "Wrinkles",
+          "score": 0.8522331118583679
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-skin-cancer",
+          "title": "Skin Cancer",
+          "score": 0.8481786251068115
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-rabies",
+          "title": "Rabies",
+          "score": 0.8468881845474243
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "eczema ngozi kukauka na kuwasha",
+      "expected_id": "disease-skin-eczema",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-eczema",
+          "title": "Eczema",
+          "score": 0.8941125869750977
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-chemical-poisoning",
+          "title": "Chemical Poisoning",
+          "score": 0.877665638923645
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-skin-disorders",
+          "title": "Skin Disorders",
+          "score": 0.8756812810897827
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-skin-problems",
+          "title": "Skin Problems",
+          "score": 0.874332070350647
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-intertrigo",
+          "title": "Intertrigo",
+          "score": 0.8706282377243042
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "psoriasis mabaka ya ngozi yenye magamba",
+      "expected_id": "disease-skin-psoriasis",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-psoriasis",
+          "title": "Psoriasis",
+          "score": 0.9014664888381958
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-rosacea",
+          "title": "Rosacea",
+          "score": 0.8817449808120728
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-special-risk-factors",
+          "title": "Special Risk Factors",
+          "score": 0.8806129693984985
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-miscellaneous-preventative-factors",
+          "title": "Miscellaneous Preventative Factors",
+          "score": 0.8805731534957886
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-chemical-poisoning",
+          "title": "Chemical Poisoning",
+          "score": 0.8804464340209961
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "frostbite kutokana na baridi kali",
+      "expected_id": "disease-skin-frostbite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-frostbite",
+          "title": "Frostbite",
+          "score": 0.8617570400238037
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-insanities",
+          "title": "Insanities",
+          "score": 0.8600490093231201
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-swelling",
+          "title": "Swelling",
+          "score": 0.8573158979415894
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.8561944961547852
+        },
+        {
+          "rank": 5,
+          "id": "disease-respiratory-cold-sores",
+          "title": "Cold Sores",
+          "score": 0.8558511734008789
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "miguu kuwaka moto au burning feet",
+      "expected_id": "disease-skin-burning-feet",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-foot-odor",
+          "title": "Foot Odor",
+          "score": 0.8569114208221436
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-foot-problems",
+          "title": "Foot Problems",
+          "score": 0.8564033508300781
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-athlete-s-foot",
+          "title": "Athlete'S Foot",
+          "score": 0.8516908884048462
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-cold-feet",
+          "title": "Cold Feet",
+          "score": 0.8515400886535645
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-lung-congestion",
+          "title": "Lung Congestion",
+          "score": 0.8503988981246948
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "diaper rash upele wa nepi kwa mtoto",
+      "expected_id": "disease-skin-diaper-rash",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-diaper-rash",
+          "title": "Diaper Rash",
+          "score": 0.9017791748046875
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-reye-s-syndrome",
+          "title": "Reye'S Syndrome",
+          "score": 0.8773788809776306
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-skin-rash",
+          "title": "Skin Rash",
+          "score": 0.8744145035743713
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-sudden-infant-death-syndrome",
+          "title": "Sudden Infant Death Syndrome",
+          "score": 0.8685890436172485
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-menke-s-syndrome",
+          "title": "Menke'S Syndrome",
+          "score": 0.8677905797958374
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kuumwa na mdudu uvimbe na maumivu",
+      "expected_id": "disease-skin-insect-sting",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8474560976028442
+        },
+        {
+          "rank": 2,
+          "id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+          "title": "Temporomandibular Joint Syndrome",
+          "score": 0.8465917110443115
+        },
+        {
+          "rank": 3,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.8462802171707153
+        },
+        {
+          "rank": 4,
+          "id": "disease-respiratory-cold-sores",
+          "title": "Cold Sores",
+          "score": 0.8444241285324097
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-irritable-bowel-syndrome",
+          "title": "Irritable Bowel Syndrome",
+          "score": 0.842904269695282
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "kuumwa na mbu na kuwasha",
+      "expected_id": "disease-skin-mosquito-bite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-mononucleosis",
+          "title": "Mononucleosis",
+          "score": 0.8545154929161072
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-anorexia-nervosa",
+          "title": "Anorexia Nervosa",
+          "score": 0.8516780138015747
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-pneumonia",
+          "title": "Pneumonia",
+          "score": 0.8495303392410278
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.848106861114502
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-easy-bruising",
+          "title": "Easy Bruising",
+          "score": 0.8467498421669006
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "kuumwa na buibui huduma ya kwanza ya asili",
+      "expected_id": "disease-skin-spider-bite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-spider-bite",
+          "title": "Spider Bite",
+          "score": 0.866286039352417
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-convulsions",
+          "title": "Convulsions",
+          "score": 0.8606359362602234
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-boils",
+          "title": "Boils",
+          "score": 0.8573364019393921
+        },
+        {
+          "rank": 4,
+          "id": "disease-skin-sunburn",
+          "title": "Sunburn",
+          "score": 0.8556230068206787
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-rabies",
+          "title": "Rabies",
+          "score": 0.8547253608703613
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kuumwa na nyoka huduma ya dharura",
+      "expected_id": "disease-skin-snake-bite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-pharyngitis",
+          "title": "Pharyngitis",
+          "score": 0.8607639074325562
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-toxemia",
+          "title": "Toxemia",
+          "score": 0.8570691347122192
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-drug-withdrawal",
+          "title": "Drug Withdrawal",
+          "score": 0.8564234972000122
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-tetanus",
+          "title": "Tetanus",
+          "score": 0.8557331562042236
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-lung-congestion",
+          "title": "Lung Congestion",
+          "score": 0.8553972244262695
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "kuumwa na mbwa au mnyama huduma ya kwanza",
+      "expected_id": "disease-skin-dog-or-animal-bite",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-skin-dog-or-animal-bite",
+          "title": "Dog Or Animal Bite",
+          "score": 0.8730002641677856
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-rabies",
+          "title": "Rabies",
+          "score": 0.8660616874694824
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-spider-bite",
+          "title": "Spider Bite",
+          "score": 0.8640261888504028
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-tularemia",
+          "title": "Tularemia",
+          "score": 0.8602858185768127
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-body-odor",
+          "title": "Body Odor",
+          "score": 0.8577977418899536
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "matatizo ya figo na kusafisha figo",
+      "expected_id": "disease-urinary-kidney-problems",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.8858797550201416
+        },
+        {
+          "rank": 2,
+          "id": "disease-urinary-bladder-problems",
+          "title": "Bladder Problems",
+          "score": 0.8758429884910583
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-renal-colic",
+          "title": "Renal Colic",
+          "score": 0.8695425987243652
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-cystic-fibrosis",
+          "title": "Cystic Fibrosis",
+          "score": 0.8685485124588013
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-stress-and-anxiety",
+          "title": "Stress And Anxiety",
+          "score": 0.8675819635391235
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "renal colic maumivu makali ya figo",
+      "expected_id": "disease-urinary-renal-colic",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-urinary-renal-colic",
+          "title": "Renal Colic",
+          "score": 0.8986721038818359
+        },
+        {
+          "rank": 2,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.8815243244171143
+        },
+        {
+          "rank": 3,
+          "id": "disease-musculoskeletal-rheumatic-fever",
+          "title": "Rheumatic Fever",
+          "score": 0.875373363494873
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-colitis",
+          "title": "Colitis",
+          "score": 0.8708799481391907
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-pelvic-pain",
+          "title": "Pelvic Pain",
+          "score": 0.869950532913208
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "matatizo ya bladder na urinary infection",
+      "expected_id": "disease-urinary-bladder-problems",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-urine-problems",
+          "title": "Urine Problems",
+          "score": 0.8933143615722656
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-pelvic-pain",
+          "title": "Pelvic Pain",
+          "score": 0.8889291882514954
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-bladder-problems",
+          "title": "Bladder Problems",
+          "score": 0.8859950304031372
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-pelvic-congestion",
+          "title": "Pelvic Congestion",
+          "score": 0.8801586031913757
+        },
+        {
+          "rank": 5,
+          "id": "disease-digestive-gallbladder-inflammation",
+          "title": "Gallbladder Inflammation",
+          "score": 0.8798210620880127
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "autism taarifa za afya ya asili",
+      "expected_id": "disease-urinary-autism",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-urinary-autism",
+          "title": "Autism",
+          "score": 0.8957789540290833
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-aging",
+          "title": "Aging",
+          "score": 0.8674592971801758
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-kuru",
+          "title": "Kuru",
+          "score": 0.8662989139556885
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-mental-illness",
+          "title": "Mental Illness",
+          "score": 0.8659301400184631
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-special-risk-factors",
+          "title": "Special Risk Factors",
+          "score": 0.8653157949447632
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mkaa kwa sumu na poultice kwenye majeraha",
+      "expected_id": "herb-charcoal",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-nine-useful-poultices",
+          "title": "Nine Useful Poultices",
+          "score": 0.8519742488861084
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-blood-poisoning",
+          "title": "Blood Poisoning",
+          "score": 0.84007728099823
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-poisoning",
+          "title": "Poisoning",
+          "score": 0.8390635251998901
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-chemical-poisoning",
+          "title": "Chemical Poisoning",
+          "score": 0.838551938533783
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-rabies",
+          "title": "Rabies",
+          "score": 0.8383067846298218
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "cayenne pilipili kali kwa mzunguko wa damu na kuongeza joto",
+      "expected_id": "herb-cayenne",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-cayenne",
+          "title": "Cayenne",
+          "score": 0.8746458888053894
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-poor-circulation-and-chills",
+          "title": "Poor Circulation And Chills",
+          "score": 0.8731648325920105
+        },
+        {
+          "rank": 3,
+          "id": "disease-head-sore-throat",
+          "title": "Sore Throat",
+          "score": 0.869848906993866
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-raynaud-s-disease",
+          "title": "Raynaud'S Disease",
+          "score": 0.8678314685821533
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-age-spots",
+          "title": "Age Spots",
+          "score": 0.8627457618713379
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kitunguu saumu kwa kikohozi mafua na maambukizi",
+      "expected_id": "herb-garlic",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-lymphangitis",
+          "title": "Lymphangitis",
+          "score": 0.8685563206672668
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8631445169448853
+        },
+        {
+          "rank": 3,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.861925482749939
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-tetanus",
+          "title": "Tetanus",
+          "score": 0.8616209030151367
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-pharyngitis",
+          "title": "Pharyngitis",
+          "score": 0.860945463180542
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "goldenseal kama antiseptic herb kwa maambukizi",
+      "expected_id": "herb-goldenseal",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-goldenseal",
+          "title": "Goldenseal",
+          "score": 0.9112224578857422
+        },
+        {
+          "rank": 2,
+          "id": "herb-myrrh",
+          "title": "Myrrh",
+          "score": 0.8867531418800354
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-blood-poisoning",
+          "title": "Blood Poisoning",
+          "score": 0.8748825192451477
+        },
+        {
+          "rank": 4,
+          "id": "herb-garlic",
+          "title": "Garlic",
+          "score": 0.869728147983551
+        },
+        {
+          "rank": 5,
+          "id": "disease-head-sore-throat",
+          "title": "Sore Throat",
+          "score": 0.8674579858779907
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "peppermint tea kwa digestion na kutuliza tumbo",
+      "expected_id": "herb-peppermint",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-peppermint",
+          "title": "Peppermint",
+          "score": 0.9045867919921875
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.8755453824996948
+        },
+        {
+          "rank": 3,
+          "id": "herb-hops",
+          "title": "Hops",
+          "score": 0.8736974596977234
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-achlorhydria",
+          "title": "Achlorhydria",
+          "score": 0.8732738494873047
+        },
+        {
+          "rank": 5,
+          "id": "herb-catnip",
+          "title": "Catnip",
+          "score": 0.873021125793457
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "slippery elm kwa kutuliza tishu zilizokasirika",
+      "expected_id": "herb-slippery-elm",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-slippery-elm",
+          "title": "Slippery Elm",
+          "score": 0.8681477308273315
+        },
+        {
+          "rank": 2,
+          "id": "herb-flaxseed",
+          "title": "Flaxseed",
+          "score": 0.8578683137893677
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-emotional-fatigue-syndrome",
+          "title": "Emotional Fatigue Syndrome",
+          "score": 0.8524020910263062
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-bed-sores",
+          "title": "Bed Sores",
+          "score": 0.8512831926345825
+        },
+        {
+          "rank": 5,
+          "id": "disease-reproductive-breast-inflammation",
+          "title": "Breast Inflammation",
+          "score": 0.8494142889976501
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "aloe vera kwa burns na kuponya ngozi",
+      "expected_id": "herb-aloe-vera",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-aloe-vera",
+          "title": "Aloe Vera",
+          "score": 0.8912099003791809
+        },
+        {
+          "rank": 2,
+          "id": "disease-skin-burns",
+          "title": "Burns",
+          "score": 0.8817834854125977
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-sunburn",
+          "title": "Sunburn",
+          "score": 0.8656150102615356
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-scarring",
+          "title": "Scarring",
+          "score": 0.8646821975708008
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-shingles",
+          "title": "Shingles",
+          "score": 0.8607083559036255
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "corn silk tea kwa mtiririko wa mkojo na figo",
+      "expected_id": "herb-corn-silk",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-corn-silk",
+          "title": "Corn Silk",
+          "score": 0.8891831040382385
+        },
+        {
+          "rank": 2,
+          "id": "disease-urinary-renal-colic",
+          "title": "Renal Colic",
+          "score": 0.872938334941864
+        },
+        {
+          "rank": 3,
+          "id": "disease-urinary-kidney-problems",
+          "title": "Kidney Problems",
+          "score": 0.8624132871627808
+        },
+        {
+          "rank": 4,
+          "id": "herb-hops",
+          "title": "Hops",
+          "score": 0.8599119186401367
+        },
+        {
+          "rank": 5,
+          "id": "disease-urinary-bladder-problems",
+          "title": "Bladder Problems",
+          "score": 0.8597845435142517
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "echinacea kwa kusaidia kinga ya mwili",
+      "expected_id": "herb-echinacea",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-echinacea",
+          "title": "Echinacea",
+          "score": 0.8887103199958801
+        },
+        {
+          "rank": 2,
+          "id": "herb-cayenne",
+          "title": "Cayenne",
+          "score": 0.8733270764350891
+        },
+        {
+          "rank": 3,
+          "id": "disease-skin-acne",
+          "title": "Acne",
+          "score": 0.8717085719108582
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-shingles",
+          "title": "Shingles",
+          "score": 0.8703518509864807
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-rectal-itching",
+          "title": "Rectal Itching",
+          "score": 0.8666414022445679
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "tangawizi kwa kichefuchefu mafua na digestion",
+      "expected_id": "herb-ginger",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-digestive-indigestion",
+          "title": "Indigestion",
+          "score": 0.863600492477417
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-chronic-gastritis",
+          "title": "Chronic Gastritis",
+          "score": 0.8520681858062744
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-diet-and-nutrition",
+          "title": "Diet And Nutrition",
+          "score": 0.8510552644729614
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-nausea",
+          "title": "Nausea",
+          "score": 0.8491514921188354
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-motion-sickness",
+          "title": "Motion Sickness",
+          "score": 0.8473920822143555
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "comfrey kwa majeraha na uponyaji",
+      "expected_id": "herb-comfrey",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-comfrey",
+          "title": "Comfrey",
+          "score": 0.8530012369155884
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-bed-sores",
+          "title": "Bed Sores",
+          "score": 0.8394271731376648
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-debility",
+          "title": "Debility",
+          "score": 0.8370628952980042
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-pharyngitis",
+          "title": "Pharyngitis",
+          "score": 0.8348642587661743
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8320717811584473
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "flaxseed poultice na matumizi ya tiba ya asili",
+      "expected_id": "herb-flaxseed",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "herb-flaxseed",
+          "title": "Flaxseed",
+          "score": 0.9026587009429932
+        },
+        {
+          "rank": 2,
+          "id": "disease-head-sore-throat",
+          "title": "Sore Throat",
+          "score": 0.8782302737236023
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-corns-and-calluses",
+          "title": "Corns And Calluses",
+          "score": 0.8774628043174744
+        },
+        {
+          "rank": 4,
+          "id": "herb-nine-useful-poultices",
+          "title": "Nine Useful Poultices",
+          "score": 0.8748258948326111
+        },
+        {
+          "rank": 5,
+          "id": "herb-witch-hazel",
+          "title": "Witch Hazel",
+          "score": 0.8723570108413696
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "kanuni za msingi za kuishi kwa afya",
+      "expected_id": "principle-basic-principles-of-health",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-maintaining-health",
+          "title": "Maintaining Health",
+          "score": 0.9317213892936707
+        },
+        {
+          "rank": 2,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.910812258720398
+        },
+        {
+          "rank": 3,
+          "id": "principle-non-dietetic-factors",
+          "title": "Non-Dietetic Factors",
+          "score": 0.8922241926193237
+        },
+        {
+          "rank": 4,
+          "id": "herb-basic-herbal-principles",
+          "title": "Basic Herbal Principles",
+          "score": 0.8816444873809814
+        },
+        {
+          "rank": 5,
+          "id": "principle-fruits",
+          "title": "Fruits",
+          "score": 0.874727189540863
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "ratiba ya kawaida ya kula na muda wa milo",
+      "expected_id": "principle-basic-01-regularity-in-meals",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.896198034286499
+        },
+        {
+          "rank": 2,
+          "id": "disease-digestive-irritable-bowel-syndrome",
+          "title": "Irritable Bowel Syndrome",
+          "score": 0.8817927241325378
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-hydrochloric-acid-problems",
+          "title": "Hydrochloric Acid Problems",
+          "score": 0.8800148367881775
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-diet-and-nutrition",
+          "title": "Diet And Nutrition",
+          "score": 0.8800097703933716
+        },
+        {
+          "rank": 5,
+          "id": "principle-basic-01-regularity-in-meals",
+          "title": "Regularity in meals",
+          "score": 0.879485011100769
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "epuka kula kupita kiasi na tumia kiasi",
+      "expected_id": "principle-basic-02-moderation",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-underweight",
+          "title": "Underweight",
+          "score": 0.8793224096298218
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-emphysema",
+          "title": "Emphysema",
+          "score": 0.879080057144165
+        },
+        {
+          "rank": 3,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.8788789510726929
+        },
+        {
+          "rank": 4,
+          "id": "principle-basic-03-take-small-bites",
+          "title": "Take small bites",
+          "score": 0.8773638010025024
+        },
+        {
+          "rank": 5,
+          "id": "principle-basic-04-relax-and-eat-slowly",
+          "title": "Relax and eat slowly",
+          "score": 0.8769415616989136
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "tafuna chakula vizuri kabla ya kumeza",
+      "expected_id": "principle-basic-05-chew-your-food-well",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.8624910116195679
+        },
+        {
+          "rank": 2,
+          "id": "principle-fruits",
+          "title": "Fruits",
+          "score": 0.8596627712249756
+        },
+        {
+          "rank": 3,
+          "id": "principle-summary",
+          "title": "Summary",
+          "score": 0.8595975637435913
+        },
+        {
+          "rank": 4,
+          "id": "principle-grains",
+          "title": "Grains",
+          "score": 0.8574118614196777
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-diet-and-nutrition",
+          "title": "Diet And Nutrition",
+          "score": 0.8550194501876831
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "kunywa maji kati ya milo sio pamoja na chakula",
+      "expected_id": "principle-basic-12-aside-from-fresh-raw-juices-or-the-green-drink-drink-all-your-liquids-water-between-meals-not-with-your-meals",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.8570866584777832
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-hydrochloric-acid-problems",
+          "title": "Hydrochloric Acid Problems",
+          "score": 0.854150652885437
+        },
+        {
+          "rank": 3,
+          "id": "disease-head-sore-throat",
+          "title": "Sore Throat",
+          "score": 0.8523745536804199
+        },
+        {
+          "rank": 4,
+          "id": "principle-fruits",
+          "title": "Fruits",
+          "score": 0.851372241973877
+        },
+        {
+          "rank": 5,
+          "id": "principle-vegetables",
+          "title": "Vegetables",
+          "score": 0.8484658598899841
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "matunda katika lishe yenye afya",
+      "expected_id": "principle-fruits",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-bed-sores",
+          "title": "Bed Sores",
+          "score": 0.8593016862869263
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-shingles",
+          "title": "Shingles",
+          "score": 0.85776686668396
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-debility",
+          "title": "Debility",
+          "score": 0.8556876182556152
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-age-spots",
+          "title": "Age Spots",
+          "score": 0.8550052642822266
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-childhood-diseases",
+          "title": "Childhood Diseases",
+          "score": 0.8549169898033142
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    },
+    {
+      "query": "mboga kwa maisha yenye afya",
+      "expected_id": "principle-vegetables",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-good-foods",
+          "title": "Good Foods",
+          "score": 0.870658278465271
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-hypoglycemia",
+          "title": "Hypoglycemia",
+          "score": 0.8652182817459106
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-atherosclerosis",
+          "title": "Atherosclerosis",
+          "score": 0.864708423614502
+        },
+        {
+          "rank": 4,
+          "id": "principle-vegetables",
+          "title": "Vegetables",
+          "score": 0.8626435995101929
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-body-odor",
+          "title": "Body Odor",
+          "score": 0.858856201171875
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": true
+    },
+    {
+      "query": "vitamini na madini katika kanuni za afya",
+      "expected_id": "principle-vitamins-and-minerals",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-vitamins-and-minerals",
+          "title": "Vitamins And Minerals",
+          "score": 0.8880128860473633
+        },
+        {
+          "rank": 2,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.8846568465232849
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-vitamins",
+          "title": "Vitamins",
+          "score": 0.8801479935646057
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-miscarriage",
+          "title": "Miscarriage",
+          "score": 0.8787970542907715
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-viral-infections",
+          "title": "Viral Infections",
+          "score": 0.8759512901306152
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mambo ya kuepuka ili kuboresha afya",
+      "expected_id": "principle-things-to-avoid",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-emphysema",
+          "title": "Emphysema",
+          "score": 0.8937931060791016
+        },
+        {
+          "rank": 2,
+          "id": "principle-things-to-avoid",
+          "title": "Things To Avoid",
+          "score": 0.8905237913131714
+        },
+        {
+          "rank": 3,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.8832800388336182
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-wrinkles",
+          "title": "Wrinkles",
+          "score": 0.8799062967300415
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-hay-fever",
+          "title": "Hay Fever",
+          "score": 0.8794342279434204
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mambo yasiyo ya chakula yanayoathiri afya",
+      "expected_id": "principle-non-dietetic-factors",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "principle-basic-principles-of-health",
+          "title": "Basic Principles Of Health",
+          "score": 0.8927019238471985
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-diet-and-nutrition",
+          "title": "Diet And Nutrition",
+          "score": 0.8885738849639893
+        },
+        {
+          "rank": 3,
+          "id": "principle-non-dietetic-factors",
+          "title": "Non-Dietetic Factors",
+          "score": 0.8867932558059692
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-nightmares",
+          "title": "Nightmares",
+          "score": 0.886081337928772
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-aging",
+          "title": "Aging",
+          "score": 0.8853416442871094
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "pernicious anemia udhaifu na upungufu wa vitamini",
+      "expected_id": "disease-general-pernicious-anemia",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-pernicious-anemia",
+          "title": "Pernicious Anemia",
+          "score": 0.9293840527534485
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-pellagra",
+          "title": "Pellagra",
+          "score": 0.8903172612190247
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-beriberi",
+          "title": "Beriberi",
+          "score": 0.8886460661888123
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-dumping-syndrome",
+          "title": "Dumping Syndrome",
+          "score": 0.8867342472076416
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-chronic-fatigue",
+          "title": "Chronic Fatigue",
+          "score": 0.8799034357070923
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "blood poisoning maambukizi kusambaa mwilini",
+      "expected_id": "disease-general-blood-poisoning",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-blood-poisoning",
+          "title": "Blood Poisoning",
+          "score": 0.8895593881607056
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-copper-poisoning",
+          "title": "Copper Poisoning",
+          "score": 0.8805235624313354
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-inflammation",
+          "title": "Inflammation",
+          "score": 0.8795764446258545
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-toxemia",
+          "title": "Toxemia",
+          "score": 0.8749366998672485
+        },
+        {
+          "rank": 5,
+          "id": "disease-head-heartburn",
+          "title": "Heartburn",
+          "score": 0.8743756413459778
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "underweight mwili kuwa mwembamba sana",
+      "expected_id": "disease-general-underweight",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-underweight",
+          "title": "Underweight",
+          "score": 0.8732810616493225
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-emotional-fatigue-syndrome",
+          "title": "Emotional Fatigue Syndrome",
+          "score": 0.8615506887435913
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-aging",
+          "title": "Aging",
+          "score": 0.861526608467102
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-body-odor",
+          "title": "Body Odor",
+          "score": 0.8581380844116211
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-diet-and-nutrition",
+          "title": "Diet And Nutrition",
+          "score": 0.8567882776260376
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "minyoo na parasites wa matumbo",
+      "expected_id": "disease-general-worms",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-worms",
+          "title": "Worms",
+          "score": 0.86189866065979
+        },
+        {
+          "rank": 2,
+          "id": "disease-general-vaccination-problems",
+          "title": "Vaccination Problems",
+          "score": 0.8598823547363281
+        },
+        {
+          "rank": 3,
+          "id": "disease-general-halitosis",
+          "title": "Halitosis",
+          "score": 0.8589999675750732
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-ringworm",
+          "title": "Ringworm",
+          "score": 0.8584323525428772
+        },
+        {
+          "rank": 5,
+          "id": "disease-general-childhood-diseases",
+          "title": "Childhood Diseases",
+          "score": 0.858423113822937
+        }
+      ],
+      "hit_top_1": true,
+      "hit_top_3": true,
+      "hit_top_5": true
+    },
+    {
+      "query": "mzunguko mbaya wa damu na baridi mikononi na miguuni",
+      "expected_id": "disease-general-poor-circulation-and-chills",
+      "top_5_results": [
+        {
+          "rank": 1,
+          "id": "disease-general-lung-congestion",
+          "title": "Lung Congestion",
+          "score": 0.8857059478759766
+        },
+        {
+          "rank": 2,
+          "id": "disease-respiratory-cold-extremities",
+          "title": "Cold Extremities",
+          "score": 0.8805174827575684
+        },
+        {
+          "rank": 3,
+          "id": "disease-musculoskeletal-muscle-cramps",
+          "title": "Muscle Cramps",
+          "score": 0.879765510559082
+        },
+        {
+          "rank": 4,
+          "id": "disease-general-claudication",
+          "title": "Claudication",
+          "score": 0.8792805671691895
+        },
+        {
+          "rank": 5,
+          "id": "disease-respiratory-common-cold",
+          "title": "Common Cold",
+          "score": 0.8786730766296387
+        }
+      ],
+      "hit_top_1": false,
+      "hit_top_3": false,
+      "hit_top_5": false
+    }
+  ]
+}

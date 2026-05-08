@@ -1,0 +1,4752 @@
+[
+  {
+    "id": "disease-digestive-leg-ulcers",
+    "title": "Leg Ulcers",
+    "source_file": "diseases_digestive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-indigestion",
+    "title": "Indigestion",
+    "source_file": "diseases_digestive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-enlarged-stomach",
+    "title": "Enlarged Stomach",
+    "source_file": "diseases_digestive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-stomach-inflammation",
+    "title": "Stomach Inflammation",
+    "source_file": "diseases_digestive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-gastroenteritis",
+    "title": "Gastroenteritis",
+    "source_file": "diseases_digestive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-chronic-gastritis",
+    "title": "Chronic Gastritis",
+    "source_file": "diseases_digestive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-hepatitis",
+    "title": "Hepatitis",
+    "source_file": "diseases_digestive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-gallbladder-inflammation",
+    "title": "Gallbladder Inflammation",
+    "source_file": "diseases_digestive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-chronic-diarrhea",
+    "title": "Chronic Diarrhea",
+    "source_file": "diseases_digestive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-irritable-bowel-syndrome",
+    "title": "Irritable Bowel Syndrome",
+    "source_file": "diseases_digestive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-digestive-diarrhea-in-infants",
+    "title": "Diarrhea In Infants",
+    "source_file": "diseases_digestive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-debility",
+    "title": "Debility",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-emotional-fatigue-syndrome",
+    "title": "Emotional Fatigue Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chronic-fatigue",
+    "title": "Chronic Fatigue",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-epstein-barr-virus",
+    "title": "Epstein Barr Virus",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-candidiasis",
+    "title": "Candidiasis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-jet-lag",
+    "title": "Jet Lag",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-nausea",
+    "title": "Nausea",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-fainting",
+    "title": "Fainting",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-heat-exhaustion",
+    "title": "Heat Exhaustion",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-motion-sickness",
+    "title": "Motion Sickness",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-catarrh",
+    "title": "Catarrh",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chills",
+    "title": "Chills",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-viral-infections",
+    "title": "Viral Infections",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-inflammation",
+    "title": "Inflammation",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-fever",
+    "title": "Fever",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-malaria",
+    "title": "Malaria",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-typhoid-fever",
+    "title": "Typhoid Fever",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-weakened-autoimmune-system",
+    "title": "Weakened Autoimmune System",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-lupus",
+    "title": "Lupus",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-sjogren-s-syndrome",
+    "title": "Sjogren'S Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-aging",
+    "title": "Aging",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-skin-problems",
+    "title": "Skin Problems",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bruising",
+    "title": "Bruising",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-easy-bruising",
+    "title": "Easy Bruising",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-intertrigo",
+    "title": "Intertrigo",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-swelling",
+    "title": "Swelling",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-scarring",
+    "title": "Scarring",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-blisters",
+    "title": "Blisters",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-canker-sores",
+    "title": "Canker Sores",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bed-sores",
+    "title": "Bed Sores",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-moles",
+    "title": "Moles",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-blackheads",
+    "title": "Blackheads",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-age-spots",
+    "title": "Age Spots",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chapped-hands",
+    "title": "Chapped Hands",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chapped-lips",
+    "title": "Chapped Lips",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-scabies",
+    "title": "Scabies",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-wens",
+    "title": "Wens",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-oily-skin",
+    "title": "Oily Skin",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-prickly-heat",
+    "title": "Prickly Heat",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-rosacea",
+    "title": "Rosacea",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-enlarged-pores",
+    "title": "Enlarged Pores",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-wrinkles",
+    "title": "Wrinkles",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-night-sweats",
+    "title": "Night Sweats",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-body-odor",
+    "title": "Body Odor",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-skin-disorders",
+    "title": "Skin Disorders",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hives",
+    "title": "Hives",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-impetigo",
+    "title": "Impetigo",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-shingles",
+    "title": "Shingles",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-keratosis",
+    "title": "Keratosis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-leukoderma",
+    "title": "Leukoderma",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-numb-extremities",
+    "title": "Numb Extremities",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-felon",
+    "title": "Felon",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-erythromelalgia",
+    "title": "Erythromelalgia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-gangrene",
+    "title": "Gangrene",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-raynaud-s-disease",
+    "title": "Raynaud'S Disease",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-buerger-s-disease",
+    "title": "Buerger'S Disease",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-nail-problems",
+    "title": "Nail Problems",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-ingrown-nails",
+    "title": "Ingrown Nails",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-foot-problems",
+    "title": "Foot Problems",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-corns-and-calluses",
+    "title": "Corns And Calluses",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-foot-aches",
+    "title": "Foot Aches",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-foot-odor",
+    "title": "Foot Odor",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-flat-feet",
+    "title": "Flat Feet",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-athlete-s-foot",
+    "title": "Athlete'S Foot",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-dandruff",
+    "title": "Dandruff",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-oily-hair",
+    "title": "Oily Hair",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-dry-hair",
+    "title": "Dry Hair",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-gray-hair",
+    "title": "Gray Hair",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-ingrown-hair",
+    "title": "Ingrown Hair",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-farsightedness",
+    "title": "Farsightedness",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-amblyopia",
+    "title": "Amblyopia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-keratomalacia",
+    "title": "Keratomalacia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-color-blindness",
+    "title": "Color Blindness",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-night-blindness",
+    "title": "Night Blindness",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cataracts",
+    "title": "Cataracts",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-sty",
+    "title": "Sty",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-scotoma",
+    "title": "Scotoma",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-photophobia",
+    "title": "Photophobia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chalazion",
+    "title": "Chalazion",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-conjunctivitis",
+    "title": "Conjunctivitis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-glaucoma",
+    "title": "Glaucoma",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-anosmia",
+    "title": "Anosmia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-nasal-cuts-and-infections",
+    "title": "Nasal Cuts And Infections",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-meniere-s-syndrome",
+    "title": "Meniere'S Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tinnitus",
+    "title": "Tinnitus",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pharyngitis",
+    "title": "Pharyngitis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-snoring",
+    "title": "Snoring",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bruxism",
+    "title": "Bruxism",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-calculus",
+    "title": "Calculus",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-gingivitis",
+    "title": "Gingivitis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pyorrhea",
+    "title": "Pyorrhea",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-denture-troubles",
+    "title": "Denture Troubles",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-saliva-problems",
+    "title": "Saliva Problems",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-halitosis",
+    "title": "Halitosis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cheilosis",
+    "title": "Cheilosis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hiccup",
+    "title": "Hiccup",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-belching",
+    "title": "Belching",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bloating",
+    "title": "Bloating",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hiatal-hernia",
+    "title": "Hiatal Hernia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-vomiting",
+    "title": "Vomiting",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-dyspepsia",
+    "title": "Dyspepsia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-nervous-dyspepsia",
+    "title": "Nervous Dyspepsia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-achlorhydria",
+    "title": "Achlorhydria",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hydrochloric-acid-problems",
+    "title": "Hydrochloric Acid Problems",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pancreatitis",
+    "title": "Pancreatitis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-infectious-jaundice",
+    "title": "Infectious Jaundice",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-dumping-syndrome",
+    "title": "Dumping Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-turista",
+    "title": "Turista",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-colitis",
+    "title": "Colitis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-crohn-s-disease",
+    "title": "Crohn'S Disease",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-diverticulitis",
+    "title": "Diverticulitis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-rectal-fissures",
+    "title": "Rectal Fissures",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-rectal-itching",
+    "title": "Rectal Itching",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-anorexia-nervosa",
+    "title": "Anorexia Nervosa",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bulimia",
+    "title": "Bulimia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-celiac-disease",
+    "title": "Celiac Disease",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-lactose-intolerance",
+    "title": "Lactose Intolerance",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-wilson-s-disease",
+    "title": "Wilson'S Disease",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-emaciation",
+    "title": "Emaciation",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pica",
+    "title": "Pica",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-malabsorption-syndrome",
+    "title": "Malabsorption Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-beriberi",
+    "title": "Beriberi",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pellagra",
+    "title": "Pellagra",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-scurvy",
+    "title": "Scurvy",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-kwashiorkor",
+    "title": "Kwashiorkor",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-underweight",
+    "title": "Underweight",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cellulite",
+    "title": "Cellulite",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-urine-problems",
+    "title": "Urine Problems",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-urine-retention",
+    "title": "Urine Retention",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hematuria",
+    "title": "Hematuria",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bright-s-disease",
+    "title": "Bright'S Disease",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-edema",
+    "title": "Edema",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-postnasal-drip",
+    "title": "Postnasal Drip",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-suffocation",
+    "title": "Suffocation",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-lung-congestion",
+    "title": "Lung Congestion",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-emphysema",
+    "title": "Emphysema",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-legionnaire-s-disease",
+    "title": "Legionnaire'S Disease",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-q-fever",
+    "title": "Q Fever",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-arteriosclerosis",
+    "title": "Arteriosclerosis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-atherosclerosis",
+    "title": "Atherosclerosis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-varicose-veins",
+    "title": "Varicose Veins",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-poor-circulation-and-chills",
+    "title": "Poor Circulation And Chills",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chlorosis",
+    "title": "Chlorosis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pernicious-anemia",
+    "title": "Pernicious Anemia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hemorrhage",
+    "title": "Hemorrhage",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hemophilia",
+    "title": "Hemophilia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-blood-poisoning",
+    "title": "Blood Poisoning",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-vertigo",
+    "title": "Vertigo",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chorea",
+    "title": "Chorea",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-stress-and-anxiety",
+    "title": "Stress And Anxiety",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-neck-pain",
+    "title": "Neck Pain",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bell-s-palsy",
+    "title": "Bell'S Palsy",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tic-douloureux",
+    "title": "Tic Douloureux",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-sciatica",
+    "title": "Sciatica",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-brachial-neuralgia",
+    "title": "Brachial Neuralgia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-multiple-neuritis",
+    "title": "Multiple Neuritis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-seasonal-affective-syndrome",
+    "title": "Seasonal Affective Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tennis-elbow",
+    "title": "Tennis Elbow",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-carpal-tunnel-syndrome",
+    "title": "Carpal Tunnel Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-convulsions",
+    "title": "Convulsions",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-amyotrophic-lateral-sclerosis",
+    "title": "Amyotrophic Lateral Sclerosis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-locomotor-ataxia",
+    "title": "Locomotor Ataxia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-meningocele",
+    "title": "Meningocele",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-menke-s-syndrome",
+    "title": "Menke'S Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-multiple-sclerosis",
+    "title": "Multiple Sclerosis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-muscular-dystrophy",
+    "title": "Muscular Dystrophy",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-myasthenia-gravis",
+    "title": "Myasthenia Gravis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-parkinson-s-disease",
+    "title": "Parkinson'S Disease",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-polio",
+    "title": "Polio",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-post-polio-syndrome",
+    "title": "Post-Polio Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-kuru",
+    "title": "Kuru",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-memory-problems",
+    "title": "Memory Problems",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-korsakoff-s-syndrome",
+    "title": "Korsakoff'S Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-alzheimer-s-disease",
+    "title": "Alzheimer'S Disease",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-senility",
+    "title": "Senility",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-organic-brain-disorder",
+    "title": "Organic Brain Disorder",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hyperactivity",
+    "title": "Hyperactivity",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-dyslexia",
+    "title": "Dyslexia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-nightmares",
+    "title": "Nightmares",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hyperventilation",
+    "title": "Hyperventilation",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-depression",
+    "title": "Depression",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-manic-depression",
+    "title": "Manic Depression",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-mania",
+    "title": "Mania",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-mental-illness",
+    "title": "Mental Illness",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-insanities",
+    "title": "Insanities",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-schizophrenia",
+    "title": "Schizophrenia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-broken-rib",
+    "title": "Broken Rib",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-osteoporosis",
+    "title": "Osteoporosis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-rickets",
+    "title": "Rickets",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bursitis",
+    "title": "Bursitis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-ankylosing-spondylitis",
+    "title": "Ankylosing Spondylitis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-shin-splints",
+    "title": "Shin Splints",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tendonitis",
+    "title": "Tendonitis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-restless-leg-syndrome",
+    "title": "Restless Leg Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-claudication",
+    "title": "Claudication",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-side-stitches",
+    "title": "Side Stitches",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-fibromyalgia-syndrome",
+    "title": "Fibromyalgia Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-myelitis",
+    "title": "Myelitis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hernia",
+    "title": "Hernia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-umbilical-hernia",
+    "title": "Umbilical Hernia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pelvic-congestion",
+    "title": "Pelvic Congestion",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pelvic-pain",
+    "title": "Pelvic Pain",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hypoglycemia",
+    "title": "Hypoglycemia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-addison-s-disease",
+    "title": "Addison'S Disease",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cushing-s-disease",
+    "title": "Cushing'S Disease",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cystic-fibrosis",
+    "title": "Cystic Fibrosis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hypothyroidism",
+    "title": "Hypothyroidism",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hyperthyroidism",
+    "title": "Hyperthyroidism",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-swollen-glands",
+    "title": "Swollen Glands",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-lymphangitis",
+    "title": "Lymphangitis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hodgkin-s-disease",
+    "title": "Hodgkin'S Disease",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-mononucleosis",
+    "title": "Mononucleosis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-menopause",
+    "title": "Menopause",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-pelvic-inflammatory-disease",
+    "title": "Pelvic Inflammatory Disease",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-vaginitis",
+    "title": "Vaginitis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-leukorrhea",
+    "title": "Leukorrhea",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-toxic-shock-syndrome",
+    "title": "Toxic Shock Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hysterectomy",
+    "title": "Hysterectomy",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-frigidity",
+    "title": "Frigidity",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-female-stress-syndrome",
+    "title": "Female Stress Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-morning-sickness",
+    "title": "Morning Sickness",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-miscarriage",
+    "title": "Miscarriage",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-mastitis",
+    "title": "Mastitis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-birth-defects",
+    "title": "Birth Defects",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cerebral-palsy",
+    "title": "Cerebral Palsy",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-down-syndrome",
+    "title": "Down Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cradle-cap",
+    "title": "Cradle Cap",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-colic-in-infants",
+    "title": "Colic In Infants",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-teething",
+    "title": "Teething",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-neonatal-jaundice",
+    "title": "Neonatal Jaundice",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-infantile-convulsions",
+    "title": "Infantile Convulsions",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cholera-infantum",
+    "title": "Cholera Infantum",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-sudden-infant-death-syndrome",
+    "title": "Sudden Infant Death Syndrome",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-colic-in-children",
+    "title": "Colic In Children",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-ringworm",
+    "title": "Ringworm",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-childhood-diseases",
+    "title": "Childhood Diseases",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-adenoids",
+    "title": "Adenoids",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chickenpox",
+    "title": "Chickenpox",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-growing-pains",
+    "title": "Growing Pains",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-growth-problems",
+    "title": "Growth Problems",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-vaccination-problems",
+    "title": "Vaccination Problems",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-venereal-diseases",
+    "title": "Venereal Diseases",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-gonorrhea",
+    "title": "Gonorrhea",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-syphilis",
+    "title": "Syphilis",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chlamydia",
+    "title": "Chlamydia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-genital-herpes",
+    "title": "Genital Herpes",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-aids",
+    "title": "Aids",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-urticaria",
+    "title": "Urticaria",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chiggers",
+    "title": "Chiggers",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-itch-mite",
+    "title": "Itch Mite",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-lice",
+    "title": "Lice",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-typhus",
+    "title": "Typhus",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-rocky-mountain-spotted-fever",
+    "title": "Rocky Mountain Spotted Fever",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-lyme-disease",
+    "title": "Lyme Disease",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-bubonic-plague",
+    "title": "Bubonic Plague",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-rabies",
+    "title": "Rabies",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tularemia",
+    "title": "Tularemia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cat-coccidia",
+    "title": "Cat Coccidia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-allergies",
+    "title": "Allergies",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-hay-fever",
+    "title": "Hay Fever",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-food-poisoning",
+    "title": "Food Poisoning",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-poison-ivy",
+    "title": "Poison Ivy",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-worms",
+    "title": "Worms",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-fungus-growth",
+    "title": "Fungus Growth",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tetanus",
+    "title": "Tetanus",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-parrot-fever",
+    "title": "Parrot Fever",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-poisoning",
+    "title": "Poisoning",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chemical-poisoning",
+    "title": "Chemical Poisoning",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-aluminum-poisoning",
+    "title": "Aluminum Poisoning",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-arsenic-poisoning",
+    "title": "Arsenic Poisoning",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cadmium-poisoning",
+    "title": "Cadmium Poisoning",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-copper-poisoning",
+    "title": "Copper Poisoning",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-ddt-poisoning",
+    "title": "Ddt Poisoning",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-lead-poisoning",
+    "title": "Lead Poisoning",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-mercury-poisoning",
+    "title": "Mercury Poisoning",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-nickel-poisoning",
+    "title": "Nickel Poisoning",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-radiation-poisoning",
+    "title": "Radiation Poisoning",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-toxemia",
+    "title": "Toxemia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tobacco-withdrawal",
+    "title": "Tobacco Withdrawal",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-alcohol-withdrawal",
+    "title": "Alcohol Withdrawal",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-coffee-withdrawal",
+    "title": "Coffee Withdrawal",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-drug-withdrawal",
+    "title": "Drug Withdrawal",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cysts-and-polyps",
+    "title": "Cysts And Polyps",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-tumors",
+    "title": "Tumors",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-skin-cancer",
+    "title": "Skin Cancer",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cancer",
+    "title": "Cancer",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-leukemia",
+    "title": "Leukemia",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-leprosy",
+    "title": "Leprosy",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-special-risk-factors",
+    "title": "Special Risk Factors",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-miscellaneous-preventative-factors",
+    "title": "Miscellaneous Preventative Factors",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-general-preventative-factors",
+    "title": "General Preventative Factors",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-deep-breathing-and-exercise",
+    "title": "Deep Breathing And Exercise",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-organs-of-elimination",
+    "title": "Organs Of Elimination",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-chemical-food-additives",
+    "title": "Chemical Food Additives",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-other-chemicals",
+    "title": "Other Chemicals",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-radiation",
+    "title": "Radiation",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-protein",
+    "title": "Protein",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-meat",
+    "title": "Meat",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-dairy-products",
+    "title": "Dairy Products",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-fats-and-rancid-oil",
+    "title": "Fats And Rancid Oil",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-diet-and-nutrition",
+    "title": "Diet And Nutrition",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-cooking",
+    "title": "Cooking",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-problem-foods",
+    "title": "Problem Foods",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-good-foods",
+    "title": "Good Foods",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-vitamins",
+    "title": "Vitamins",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-minerals",
+    "title": "Minerals",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-other-nutrients",
+    "title": "Other Nutrients",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-amino-acids",
+    "title": "Amino Acids",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-general-preventing-cancer",
+    "title": "Preventing Cancer",
+    "source_file": "diseases_general.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-sinusitis",
+    "title": "Sinusitis",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-eye-problems",
+    "title": "Eye Problems",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-eye-inflammation",
+    "title": "Eye Inflammation",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-eyestrain",
+    "title": "Eyestrain",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-nearsightedness",
+    "title": "Nearsightedness",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-yellow-eyes",
+    "title": "Yellow Eyes",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-red-eyes",
+    "title": "Red Eyes",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-itchy-eyes",
+    "title": "Itchy Eyes",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-dry-tear-ducts",
+    "title": "Dry Tear Ducts",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-black-eye",
+    "title": "Black Eye",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-ulcerated-eye-and-lid",
+    "title": "Ulcerated Eye And Lid",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-mucous-in-eye",
+    "title": "Mucous In Eye",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-nosebleed",
+    "title": "Nosebleed",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-ear-congestion",
+    "title": "Ear Congestion",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-earwax",
+    "title": "Earwax",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-swimmer-s-ear",
+    "title": "Swimmer'S Ear",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-hearing-loss",
+    "title": "Hearing Loss",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-sore-throat",
+    "title": "Sore Throat",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-tooth-decay",
+    "title": "Tooth Decay",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-heartburn",
+    "title": "Heartburn",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-reye-s-syndrome",
+    "title": "Reye'S Syndrome",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-head-sorrow-of-the-heart",
+    "title": "Sorrow Of The Heart",
+    "source_file": "diseases_head.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-fracture",
+    "title": "Fracture",
+    "source_file": "diseases_musculoskeletal.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-bone-spur",
+    "title": "Bone Spur",
+    "source_file": "diseases_musculoskeletal.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-chronic-rheumatism",
+    "title": "Chronic Rheumatism",
+    "source_file": "diseases_musculoskeletal.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-temporomandibular-joint-syndrome",
+    "title": "Temporomandibular Joint Syndrome",
+    "source_file": "diseases_musculoskeletal.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-muscle-cramps",
+    "title": "Muscle Cramps",
+    "source_file": "diseases_musculoskeletal.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-muscle-injuries",
+    "title": "Muscle Injuries",
+    "source_file": "diseases_musculoskeletal.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-backache",
+    "title": "Backache",
+    "source_file": "diseases_musculoskeletal.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-musculoskeletal-rheumatic-fever",
+    "title": "Rheumatic Fever",
+    "source_file": "diseases_musculoskeletal.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-breast-discomfort",
+    "title": "Breast Discomfort",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-breast-inflammation",
+    "title": "Breast Inflammation",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-breast-cyst",
+    "title": "Breast Cyst",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-premenstrual-syndrome",
+    "title": "Premenstrual Syndrome",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-menstrual-disorders",
+    "title": "Menstrual Disorders",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-lack-of-menstruation",
+    "title": "Lack Of Menstruation",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-painful-menstruation",
+    "title": "Painful Menstruation",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-uterine-bleeding",
+    "title": "Uterine Bleeding",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-uterine-fibroids",
+    "title": "Uterine Fibroids",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-prostate-disorders",
+    "title": "Prostate Disorders",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-prostatitis",
+    "title": "Prostatitis",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-testicular-atrophy",
+    "title": "Testicular Atrophy",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-pregnancy-related-problems",
+    "title": "Pregnancy Related Problems",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-premature-labor",
+    "title": "Premature Labor",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-breast-cancer",
+    "title": "Breast Cancer",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-reproductive-prostate-cancer",
+    "title": "Prostate Cancer",
+    "source_file": "diseases_reproductive.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-common-cold",
+    "title": "Common Cold",
+    "source_file": "diseases_respiratory.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-coughs",
+    "title": "Coughs",
+    "source_file": "diseases_respiratory.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-cold-sores",
+    "title": "Cold Sores",
+    "source_file": "diseases_respiratory.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-cold-extremities",
+    "title": "Cold Extremities",
+    "source_file": "diseases_respiratory.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-cold-feet",
+    "title": "Cold Feet",
+    "source_file": "diseases_respiratory.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-bronchiectasis",
+    "title": "Bronchiectasis",
+    "source_file": "diseases_respiratory.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-pneumonia",
+    "title": "Pneumonia",
+    "source_file": "diseases_respiratory.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-broncho-pneumonia",
+    "title": "Broncho-Pneumonia",
+    "source_file": "diseases_respiratory.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-lobar-pneumonia",
+    "title": "Lobar Pneumonia",
+    "source_file": "diseases_respiratory.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-respiratory-fluoride-poisoning",
+    "title": "Fluoride Poisoning",
+    "source_file": "diseases_respiratory.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-boils",
+    "title": "Boils",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-burns",
+    "title": "Burns",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-acne",
+    "title": "Acne",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-warts",
+    "title": "Warts",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-heat-rash",
+    "title": "Heat Rash",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-sunburn",
+    "title": "Sunburn",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-skin-rash",
+    "title": "Skin Rash",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-eczema",
+    "title": "Eczema",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-psoriasis",
+    "title": "Psoriasis",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-frostbite",
+    "title": "Frostbite",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-burning-feet",
+    "title": "Burning Feet",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-diaper-rash",
+    "title": "Diaper Rash",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-insect-sting",
+    "title": "Insect Sting",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-mosquito-bite",
+    "title": "Mosquito Bite",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-jellyfish-sting",
+    "title": "Jellyfish Sting",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-spider-bite",
+    "title": "Spider Bite",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-snake-bite",
+    "title": "Snake Bite",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-dog-or-animal-bite",
+    "title": "Dog Or Animal Bite",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-drug-rash",
+    "title": "Drug Rash",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-skin-fasting",
+    "title": "Fasting",
+    "source_file": "diseases_skin.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-urinary-kidney-problems",
+    "title": "Kidney Problems",
+    "source_file": "diseases_urinary.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-urinary-renal-colic",
+    "title": "Renal Colic",
+    "source_file": "diseases_urinary.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-urinary-bladder-problems",
+    "title": "Bladder Problems",
+    "source_file": "diseases_urinary.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "disease-urinary-autism",
+    "title": "Autism",
+    "source_file": "diseases_urinary.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-the-most-important-herbs",
+    "title": "The Most Important Herbs",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-charcoal",
+    "title": "Charcoal",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-cayenne",
+    "title": "Cayenne",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-garlic",
+    "title": "Garlic",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-goldenseal",
+    "title": "Goldenseal",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-peppermint",
+    "title": "Peppermint",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-slippery-elm",
+    "title": "Slippery Elm",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-lobelia",
+    "title": "Lobelia",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-aloe-vera",
+    "title": "Aloe Vera",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-cascara-sagrada",
+    "title": "Cascara Sagrada",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-corn-silk",
+    "title": "Corn Silk",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-hops",
+    "title": "Hops",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-witch-hazel",
+    "title": "Witch Hazel",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-most-important-herbs",
+    "title": "Most Important Herbs",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-catnip",
+    "title": "Catnip",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-comfrey",
+    "title": "Comfrey",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-echinacea",
+    "title": "Echinacea",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-flaxseed",
+    "title": "Flaxseed",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-ginger",
+    "title": "Ginger",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-myrrh",
+    "title": "Myrrh",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-skullcap",
+    "title": "Skullcap",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-vervain",
+    "title": "Vervain",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-most-important-herbs",
+    "title": "Most Important Herbs",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-most-important-herbs",
+    "title": "Most Important Herbs",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-barberry-pleurisy",
+    "title": "Barberry Pleurisy",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-burdock-red",
+    "title": "Burdock Red",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-chickweed-squaw",
+    "title": "Chickweed Squaw",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-cramp-valerian",
+    "title": "Cramp Valerian",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-eyebright-wild",
+    "title": "Eyebright Wild",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-yellow",
+    "title": "Yellow",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-most-important-herbs",
+    "title": "Most Important Herbs",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-blessed",
+    "title": "Blessed",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-marshmallow",
+    "title": "Marshmallow",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-gentian",
+    "title": "Gentian",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-ginseng",
+    "title": "Ginseng",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-basic-herbal-principles",
+    "title": "Basic Herbal Principles",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-the-preparation-of-herbs",
+    "title": "The Preparation Of Herbs",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-nine-useful-poultices",
+    "title": "Nine Useful Poultices",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-the-healing-crisis",
+    "title": "The Healing Crisis",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-water-therapy-principles",
+    "title": "Water Therapy Principles",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-the-use-of-drugs",
+    "title": "The Use Of Drugs",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-the-air-you-breathe",
+    "title": "The Air You Breathe",
+    "source_file": "herbs.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-section-0",
+    "title": "Section 0",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-maintaining-health",
+    "title": "Maintaining Health",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-principles-of-health",
+    "title": "Basic Principles Of Health",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-01-regularity-in-meals",
+    "title": "Regularity in meals",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-02-moderation",
+    "title": "Moderation",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-03-take-small-bites",
+    "title": "Take small bites",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-04-relax-and-eat-slowly",
+    "title": "Relax and eat slowly",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-05-chew-your-food-well",
+    "title": "Chew your food well",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-06-do-not-eat-too-many-things-at-a-meal",
+    "title": "Do not eat too many things at a meal",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-07-avoid-complicated-mixtures",
+    "title": "Avoid complicated mixtures",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-08-avoid-peculiar-additives-such-as-vinegar-monosodium-glutamate-etc",
+    "title": "Avoid peculiar additives, such as vinegar, monosodium glutamate, etc",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-09-vary-your-diet-from-meal-to-meal",
+    "title": "Vary your diet from meal to meal",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-10-the-food-should-be-palatable",
+    "title": "The food should be palatable",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-11-never-eat-anything-prepared-in-aluminum",
+    "title": "Never eat anything prepared in aluminum",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-12-aside-from-fresh-raw-juices-or-the-green-drink-drink-all-your-liquids-water-between-meals-not-with-your-meals",
+    "title": "Aside from fresh, raw, juices or the green drink, drink all your liquids (water) between meals, not with your meals",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-13-as-a-rule-eat-your-fruits-at-one-meal-and-vegetables-at-another",
+    "title": "As a rule, eat your fruits at one meal and vegetables at another",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-14-greens-have-more-compacted-vitamins-and-minerals-than-other-type-of-food",
+    "title": "Greens have more compacted vitamins and minerals than other type of food",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-15-nova-scotia-dulse-and-norwegian-kelp-two-types-of-seaweed-are-the-only-rich-source-of-trace-minerals",
+    "title": "Nova scotia dulse and norwegian kelp (two types of seaweed) are the only rich source of trace minerals",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-16-blackstrap-molasses-is-the-only-very-rich-source-of-iron",
+    "title": "Blackstrap molasses is the only very rich source of iron",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-basic-17-the-best-pattern-is-to-rest-before-the-meal-and-walk-around-after-it-not-vice-versa",
+    "title": "The best pattern is to rest before the meal, and walk around after it, not vice versa",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-fruits",
+    "title": "Fruits",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-vegetables",
+    "title": "Vegetables",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-grains",
+    "title": "Grains",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-nuts-and-seeds",
+    "title": "Nuts And Seeds",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-fats",
+    "title": "Fats",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-sweetening",
+    "title": "Sweetening",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-other-nutrients",
+    "title": "Other Nutrients",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-vitamins-and-minerals",
+    "title": "Vitamins And Minerals",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-summary",
+    "title": "Summary",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-things-to-avoid",
+    "title": "Things To Avoid",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "principle-non-dietetic-factors",
+    "title": "Non-Dietetic Factors",
+    "source_file": "principles.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-ginger-overview",
+    "title": "Ginger — Overview",
+    "source_file": "sample.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  },
+  {
+    "id": "herb-cayenne-uses",
+    "title": "Cayenne — Uses",
+    "source_file": "sample.json",
+    "model": "assets\\models\\encoder.tflite",
+    "vocab": "assets\\models\\vocab.txt",
+    "output_tensor": "Identity_2",
+    "max_len": 128,
+    "vector_dim": 384
+  }
+]

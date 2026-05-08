@@ -1,0 +1,542 @@
+[
+  {
+    "query": "nini kinaweza kusaidia kumeza chakula vibaya na gesi tumboni baada ya kula",
+    "expected_id": "disease-digestive-indigestion"
+  },
+  {
+    "query": "tumbo langu linauma na linaonekana kuvimba",
+    "expected_id": "disease-digestive-stomach-inflammation"
+  },
+  {
+    "query": "msaada wa asili kwa gastroenteritis na tumbo kuharibika",
+    "expected_id": "disease-digestive-gastroenteritis"
+  },
+  {
+    "query": "tiba ya asili kwa gastritis ya muda mrefu",
+    "expected_id": "disease-digestive-chronic-gastritis"
+  },
+  {
+    "query": "nini husaidia hepatitis na maambukizi ya ini",
+    "expected_id": "disease-digestive-hepatitis"
+  },
+  {
+    "query": "tiba ya asili kwa uvimbe wa gallbladder au nyongo",
+    "expected_id": "disease-digestive-gallbladder-inflammation"
+  },
+  {
+    "query": "dawa ya kuharisha kwa muda mrefu na ushauri wa chakula",
+    "expected_id": "disease-digestive-chronic-diarrhea"
+  },
+  {
+    "query": "maumivu ya tumbo gesi na irritable bowel syndrome",
+    "expected_id": "disease-digestive-irritable-bowel-syndrome"
+  },
+  {
+    "query": "mtoto mchanga ana kuharisha nifanye nini",
+    "expected_id": "disease-digestive-diarrhea-in-infants"
+  },
+  {
+    "query": "vidonda vya wazi miguuni kutokana na mzunguko mbaya wa damu",
+    "expected_id": "disease-digestive-leg-ulcers"
+  },
+  {
+    "query": "uchovu wa kila wakati na udhaifu wa mwili",
+    "expected_id": "disease-general-chronic-fatigue"
+  },
+  {
+    "query": "msongo wa mawazo wasiwasi na uchovu wa mwili",
+    "expected_id": "disease-general-emotional-fatigue-syndrome"
+  },
+  {
+    "query": "maambukizi ya yeast candida na thrush tiba yake",
+    "expected_id": "disease-general-candidiasis"
+  },
+  {
+    "query": "nahisi kichefuchefu na tumbo haliko vizuri",
+    "expected_id": "disease-general-nausea"
+  },
+  {
+    "query": "nifanye nini mtu akizimia au kupoteza fahamu",
+    "expected_id": "disease-general-fainting"
+  },
+  {
+    "query": "uchovu wa joto kutokana na jua upungufu wa maji na udhaifu",
+    "expected_id": "disease-general-heat-exhaustion"
+  },
+  {
+    "query": "kichefuchefu wakati wa safari ugonjwa wa gari au bahari",
+    "expected_id": "disease-general-motion-sickness"
+  },
+  {
+    "query": "kamasi nyingi catarrh na pua kutiririka",
+    "expected_id": "disease-general-catarrh"
+  },
+  {
+    "query": "baridi kutetemeka na kuhisi baridi wakati wa maambukizi",
+    "expected_id": "disease-general-chills"
+  },
+  {
+    "query": "maambukizi ya virusi homa maumivu ya mwili na kichwa",
+    "expected_id": "disease-general-viral-infections"
+  },
+  {
+    "query": "uvimbe joto na maumivu katika tishu za mwili",
+    "expected_id": "disease-general-inflammation"
+  },
+  {
+    "query": "joto la mwili likiwa juu homa na huduma ya asili",
+    "expected_id": "disease-general-fever"
+  },
+  {
+    "query": "malaria baridi na kutokwa jasho kila baada ya muda",
+    "expected_id": "disease-general-malaria"
+  },
+  {
+    "query": "homa ya typhoid na taarifa za afya ya asili",
+    "expected_id": "disease-general-typhoid-fever"
+  },
+  {
+    "query": "kinga ya mwili kuwa dhaifu na kuugua mara kwa mara",
+    "expected_id": "disease-general-weakened-autoimmune-system"
+  },
+  {
+    "query": "stress wasiwasi mawazo mengi na tension ya neva",
+    "expected_id": "disease-general-stress-and-anxiety"
+  },
+  {
+    "query": "unyogovu huzuni na kupoteza hamu ya kufanya mambo",
+    "expected_id": "disease-general-depression"
+  },
+  {
+    "query": "sukari ya damu kuwa chini dalili za hypoglycemia",
+    "expected_id": "disease-general-hypoglycemia"
+  },
+  {
+    "query": "harufu mbaya ya mwili na tiba ya asili",
+    "expected_id": "disease-general-body-odor"
+  },
+  {
+    "query": "kutokwa jasho usiku wakati wa kulala",
+    "expected_id": "disease-general-night-sweats"
+  },
+  {
+    "query": "mba kichwani ngozi kuwasha na flakes",
+    "expected_id": "disease-general-dandruff"
+  },
+  {
+    "query": "athlete foot fangasi na kuwasha katikati ya vidole vya miguu",
+    "expected_id": "disease-general-athlete-s-foot"
+  },
+  {
+    "query": "harufu mbaya ya mdomo halitosis tiba yake",
+    "expected_id": "disease-general-halitosis"
+  },
+  {
+    "query": "tumbo kujaa gesi na kuvimba",
+    "expected_id": "disease-general-bloating"
+  },
+  {
+    "query": "kutapika mara kwa mara na kushindwa kuweka chakula tumboni",
+    "expected_id": "disease-general-vomiting"
+  },
+  {
+    "query": "colitis uvimbe wa utumbo na maumivu ya tumbo",
+    "expected_id": "disease-general-colitis"
+  },
+  {
+    "query": "ugonjwa wa figo unaoitwa bright disease",
+    "expected_id": "disease-general-bright-s-disease"
+  },
+  {
+    "query": "emphysema shida ya kupumua na uharibifu wa mapafu",
+    "expected_id": "disease-general-emphysema"
+  },
+  {
+    "query": "varicose veins mishipa kuvimba kwenye miguu",
+    "expected_id": "disease-general-varicose-veins"
+  },
+  {
+    "query": "sciatica maumivu yanayoshuka mpaka mguuni",
+    "expected_id": "disease-general-sciatica"
+  },
+  {
+    "query": "carpal tunnel maumivu ya kifundo cha mkono na vidole kufa ganzi",
+    "expected_id": "disease-general-carpal-tunnel-syndrome"
+  },
+  {
+    "query": "osteoporosis mifupa dhaifu na hatari ya kuvunjika",
+    "expected_id": "disease-general-osteoporosis"
+  },
+  {
+    "query": "tezi ya thyroid kufanya kazi chini dalili za hypothyroidism",
+    "expected_id": "disease-general-hypothyroidism"
+  },
+  {
+    "query": "food poisoning kutapika na kuharisha baada ya kula",
+    "expected_id": "disease-general-food-poisoning"
+  },
+  {
+    "query": "sumu ya lead au metali nzito mwilini",
+    "expected_id": "disease-general-lead-poisoning"
+  },
+  {
+    "query": "kuzuia cancer na kanuni za afya ya asili",
+    "expected_id": "disease-general-preventing-cancer"
+  },
+  {
+    "query": "maumivu ya sinus pua kuziba na pressure usoni",
+    "expected_id": "disease-head-sinusitis"
+  },
+  {
+    "query": "matatizo ya macho huduma ya asili na kuona vibaya",
+    "expected_id": "disease-head-eye-problems"
+  },
+  {
+    "query": "macho mekundu na muwasho wa macho",
+    "expected_id": "disease-head-red-eyes"
+  },
+  {
+    "query": "macho kuwasha allergy na irritation",
+    "expected_id": "disease-head-itchy-eyes"
+  },
+  {
+    "query": "pua kutoa damu huduma ya kwanza",
+    "expected_id": "disease-head-nosebleed"
+  },
+  {
+    "query": "earwax kuziba sikio na sikio kufungana",
+    "expected_id": "disease-head-earwax"
+  },
+  {
+    "query": "swimmer ear maji kuingia sikioni na maambukizi",
+    "expected_id": "disease-head-swimmer-s-ear"
+  },
+  {
+    "query": "kupoteza uwezo wa kusikia au kusikia kidogo",
+    "expected_id": "disease-head-hearing-loss"
+  },
+  {
+    "query": "koo kuuma na maumivu wakati wa kumeza",
+    "expected_id": "disease-head-sore-throat"
+  },
+  {
+    "query": "meno kuoza cavities na matatizo ya meno",
+    "expected_id": "disease-head-tooth-decay"
+  },
+  {
+    "query": "heartburn kifua kuwaka baada ya kula",
+    "expected_id": "disease-head-heartburn"
+  },
+  {
+    "query": "mfupa kuvunjika fracture huduma ya kwanza na uponyaji",
+    "expected_id": "disease-musculoskeletal-fracture"
+  },
+  {
+    "query": "heel spur au bone spur maumivu ya kisigino",
+    "expected_id": "disease-musculoskeletal-bone-spur"
+  },
+  {
+    "query": "rheumatism ya muda mrefu na maumivu ya viungo",
+    "expected_id": "disease-musculoskeletal-chronic-rheumatism"
+  },
+  {
+    "query": "maumivu ya taya na temporomandibular joint syndrome",
+    "expected_id": "disease-musculoskeletal-temporomandibular-joint-syndrome"
+  },
+  {
+    "query": "misuli kukakamaa na cramps zenye maumivu",
+    "expected_id": "disease-musculoskeletal-muscle-cramps"
+  },
+  {
+    "query": "jeraha la misuli strain na soreness",
+    "expected_id": "disease-musculoskeletal-muscle-injuries"
+  },
+  {
+    "query": "maumivu ya mgongo wa chini tiba ya asili",
+    "expected_id": "disease-musculoskeletal-backache"
+  },
+  {
+    "query": "rheumatic fever maumivu ya viungo na homa",
+    "expected_id": "disease-musculoskeletal-rheumatic-fever"
+  },
+  {
+    "query": "maumivu na usumbufu wa matiti kabla ya hedhi",
+    "expected_id": "disease-reproductive-breast-discomfort"
+  },
+  {
+    "query": "matiti kuvimba kuwa magumu na kuuma",
+    "expected_id": "disease-reproductive-breast-inflammation"
+  },
+  {
+    "query": "breast cyst uvimbe au lump kwenye titi na maumivu",
+    "expected_id": "disease-reproductive-breast-cyst"
+  },
+  {
+    "query": "PMS mabadiliko ya mood na maumivu ya matiti kabla ya hedhi",
+    "expected_id": "disease-reproductive-premenstrual-syndrome"
+  },
+  {
+    "query": "matatizo ya hedhi na period kuwa irregular",
+    "expected_id": "disease-reproductive-menstrual-disorders"
+  },
+  {
+    "query": "kukosa hedhi au period kuchelewa",
+    "expected_id": "disease-reproductive-lack-of-menstruation"
+  },
+  {
+    "query": "maumivu makali ya hedhi cramps na tiba yake",
+    "expected_id": "disease-reproductive-painful-menstruation"
+  },
+  {
+    "query": "kutokwa damu kwenye uterus au bleeding isiyo ya kawaida",
+    "expected_id": "disease-reproductive-uterine-bleeding"
+  },
+  {
+    "query": "uterine fibroids na taarifa za afya ya asili",
+    "expected_id": "disease-reproductive-uterine-fibroids"
+  },
+  {
+    "query": "matatizo ya prostate kukojoa na afya ya mwanaume",
+    "expected_id": "disease-reproductive-prostate-disorders"
+  },
+  {
+    "query": "prostatitis uvimbe wa prostate",
+    "expected_id": "disease-reproductive-prostatitis"
+  },
+  {
+    "query": "matatizo yanayohusiana na ujauzito na huduma ya asili",
+    "expected_id": "disease-reproductive-pregnancy-related-problems"
+  },
+  {
+    "query": "mafua pua kutiririka na koo kuuma",
+    "expected_id": "disease-respiratory-common-cold"
+  },
+  {
+    "query": "kikohozi tiba ya asili na muwasho wa kifua",
+    "expected_id": "disease-respiratory-coughs"
+  },
+  {
+    "query": "cold sores vidonda kuzunguka mdomo",
+    "expected_id": "disease-respiratory-cold-sores"
+  },
+  {
+    "query": "mikono na miguu kuwa baridi kutokana na mzunguko duni wa damu",
+    "expected_id": "disease-respiratory-cold-extremities"
+  },
+  {
+    "query": "miguu kuwa baridi na mzunguko mbaya wa damu",
+    "expected_id": "disease-respiratory-cold-feet"
+  },
+  {
+    "query": "bronchiectasis hali ya mapafu yenye kamasi nyingi",
+    "expected_id": "disease-respiratory-bronchiectasis"
+  },
+  {
+    "query": "pneumonia maambukizi ya mapafu na homa",
+    "expected_id": "disease-respiratory-pneumonia"
+  },
+  {
+    "query": "broncho pneumonia maambukizi ya kupumua",
+    "expected_id": "disease-respiratory-broncho-pneumonia"
+  },
+  {
+    "query": "lobar pneumonia uvimbe wa mapafu",
+    "expected_id": "disease-respiratory-lobar-pneumonia"
+  },
+  {
+    "query": "sumu ya fluoride na dalili zake",
+    "expected_id": "disease-respiratory-fluoride-poisoning"
+  },
+  {
+    "query": "majipu kwenye ngozi yenye usaha",
+    "expected_id": "disease-skin-boils"
+  },
+  {
+    "query": "burns kuchomwa huduma ya kwanza na aloe vera",
+    "expected_id": "disease-skin-burns"
+  },
+  {
+    "query": "acne chunusi usoni",
+    "expected_id": "disease-skin-acne"
+  },
+  {
+    "query": "warts vipele vigumu kwenye ngozi tiba ya asili",
+    "expected_id": "disease-skin-warts"
+  },
+  {
+    "query": "heat rash upele wa joto na kuwasha",
+    "expected_id": "disease-skin-heat-rash"
+  },
+  {
+    "query": "sunburn ngozi kuungua na jua",
+    "expected_id": "disease-skin-sunburn"
+  },
+  {
+    "query": "upele wa ngozi kuwasha na wekundu",
+    "expected_id": "disease-skin-skin-rash"
+  },
+  {
+    "query": "eczema ngozi kukauka na kuwasha",
+    "expected_id": "disease-skin-eczema"
+  },
+  {
+    "query": "psoriasis mabaka ya ngozi yenye magamba",
+    "expected_id": "disease-skin-psoriasis"
+  },
+  {
+    "query": "frostbite kutokana na baridi kali",
+    "expected_id": "disease-skin-frostbite"
+  },
+  {
+    "query": "miguu kuwaka moto au burning feet",
+    "expected_id": "disease-skin-burning-feet"
+  },
+  {
+    "query": "diaper rash upele wa nepi kwa mtoto",
+    "expected_id": "disease-skin-diaper-rash"
+  },
+  {
+    "query": "kuumwa na mdudu uvimbe na maumivu",
+    "expected_id": "disease-skin-insect-sting"
+  },
+  {
+    "query": "kuumwa na mbu na kuwasha",
+    "expected_id": "disease-skin-mosquito-bite"
+  },
+  {
+    "query": "kuumwa na buibui huduma ya kwanza ya asili",
+    "expected_id": "disease-skin-spider-bite"
+  },
+  {
+    "query": "kuumwa na nyoka huduma ya dharura",
+    "expected_id": "disease-skin-snake-bite"
+  },
+  {
+    "query": "kuumwa na mbwa au mnyama huduma ya kwanza",
+    "expected_id": "disease-skin-dog-or-animal-bite"
+  },
+  {
+    "query": "matatizo ya figo na kusafisha figo",
+    "expected_id": "disease-urinary-kidney-problems"
+  },
+  {
+    "query": "renal colic maumivu makali ya figo",
+    "expected_id": "disease-urinary-renal-colic"
+  },
+  {
+    "query": "matatizo ya bladder na urinary infection",
+    "expected_id": "disease-urinary-bladder-problems"
+  },
+  {
+    "query": "autism taarifa za afya ya asili",
+    "expected_id": "disease-urinary-autism"
+  },
+  {
+    "query": "mkaa kwa sumu na poultice kwenye majeraha",
+    "expected_id": "herb-charcoal"
+  },
+  {
+    "query": "cayenne pilipili kali kwa mzunguko wa damu na kuongeza joto",
+    "expected_id": "herb-cayenne"
+  },
+  {
+    "query": "kitunguu saumu kwa kikohozi mafua na maambukizi",
+    "expected_id": "herb-garlic"
+  },
+  {
+    "query": "goldenseal kama antiseptic herb kwa maambukizi",
+    "expected_id": "herb-goldenseal"
+  },
+  {
+    "query": "peppermint tea kwa digestion na kutuliza tumbo",
+    "expected_id": "herb-peppermint"
+  },
+  {
+    "query": "slippery elm kwa kutuliza tishu zilizokasirika",
+    "expected_id": "herb-slippery-elm"
+  },
+  {
+    "query": "aloe vera kwa burns na kuponya ngozi",
+    "expected_id": "herb-aloe-vera"
+  },
+  {
+    "query": "corn silk tea kwa mtiririko wa mkojo na figo",
+    "expected_id": "herb-corn-silk"
+  },
+  {
+    "query": "echinacea kwa kusaidia kinga ya mwili",
+    "expected_id": "herb-echinacea"
+  },
+  {
+    "query": "tangawizi kwa kichefuchefu mafua na digestion",
+    "expected_id": "herb-ginger"
+  },
+  {
+    "query": "comfrey kwa majeraha na uponyaji",
+    "expected_id": "herb-comfrey"
+  },
+  {
+    "query": "flaxseed poultice na matumizi ya tiba ya asili",
+    "expected_id": "herb-flaxseed"
+  },
+  {
+    "query": "kanuni za msingi za kuishi kwa afya",
+    "expected_id": "principle-basic-principles-of-health"
+  },
+  {
+    "query": "ratiba ya kawaida ya kula na muda wa milo",
+    "expected_id": "principle-basic-01-regularity-in-meals"
+  },
+  {
+    "query": "epuka kula kupita kiasi na tumia kiasi",
+    "expected_id": "principle-basic-02-moderation"
+  },
+  {
+    "query": "tafuna chakula vizuri kabla ya kumeza",
+    "expected_id": "principle-basic-05-chew-your-food-well"
+  },
+  {
+    "query": "kunywa maji kati ya milo sio pamoja na chakula",
+    "expected_id": "principle-basic-12-aside-from-fresh-raw-juices-or-the-green-drink-drink-all-your-liquids-water-between-meals-not-with-your-meals"
+  },
+  {
+    "query": "matunda katika lishe yenye afya",
+    "expected_id": "principle-fruits"
+  },
+  {
+    "query": "mboga kwa maisha yenye afya",
+    "expected_id": "principle-vegetables"
+  },
+  {
+    "query": "vitamini na madini katika kanuni za afya",
+    "expected_id": "principle-vitamins-and-minerals"
+  },
+  {
+    "query": "mambo ya kuepuka ili kuboresha afya",
+    "expected_id": "principle-things-to-avoid"
+  },
+  {
+    "query": "mambo yasiyo ya chakula yanayoathiri afya",
+    "expected_id": "principle-non-dietetic-factors"
+  },
+  {
+    "query": "pernicious anemia udhaifu na upungufu wa vitamini",
+    "expected_id": "disease-general-pernicious-anemia"
+  },
+  {
+    "query": "blood poisoning maambukizi kusambaa mwilini",
+    "expected_id": "disease-general-blood-poisoning"
+  },
+  {
+    "query": "underweight mwili kuwa mwembamba sana",
+    "expected_id": "disease-general-underweight"
+  },
+  {
+    "query": "minyoo na parasites wa matumbo",
+    "expected_id": "disease-general-worms"
+  },
+  {
+    "query": "mzunguko mbaya wa damu na baridi mikononi na miguuni",
+    "expected_id": "disease-general-poor-circulation-and-chills"
+  }
+]

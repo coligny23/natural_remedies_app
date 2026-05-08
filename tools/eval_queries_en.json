@@ -1,0 +1,542 @@
+[
+  {
+    "query": "what can help with indigestion and stomach gas after eating",
+    "expected_id": "disease-digestive-indigestion"
+  },
+  {
+    "query": "my stomach feels inflamed and painful",
+    "expected_id": "disease-digestive-stomach-inflammation"
+  },
+  {
+    "query": "natural care for gastroenteritis and upset stomach",
+    "expected_id": "disease-digestive-gastroenteritis"
+  },
+  {
+    "query": "long term gastritis natural remedy information",
+    "expected_id": "disease-digestive-chronic-gastritis"
+  },
+  {
+    "query": "what helps with hepatitis and liver infection",
+    "expected_id": "disease-digestive-hepatitis"
+  },
+  {
+    "query": "gallbladder inflammation natural treatment",
+    "expected_id": "disease-digestive-gallbladder-inflammation"
+  },
+  {
+    "query": "chronic diarrhea remedy and diet advice",
+    "expected_id": "disease-digestive-chronic-diarrhea"
+  },
+  {
+    "query": "irritable bowel syndrome stomach cramps and bowel trouble",
+    "expected_id": "disease-digestive-irritable-bowel-syndrome"
+  },
+  {
+    "query": "diarrhea in infants what should be done",
+    "expected_id": "disease-digestive-diarrhea-in-infants"
+  },
+  {
+    "query": "open sores on the legs due to poor circulation",
+    "expected_id": "disease-digestive-leg-ulcers"
+  },
+  {
+    "query": "constant tiredness and weakness natural health advice",
+    "expected_id": "disease-general-chronic-fatigue"
+  },
+  {
+    "query": "emotional stress anxiety and physical fatigue",
+    "expected_id": "disease-general-emotional-fatigue-syndrome"
+  },
+  {
+    "query": "yeast infection candida and thrush remedy",
+    "expected_id": "disease-general-candidiasis"
+  },
+  {
+    "query": "feeling sick in the stomach with nausea",
+    "expected_id": "disease-general-nausea"
+  },
+  {
+    "query": "what to do when someone faints or passes out",
+    "expected_id": "disease-general-fainting"
+  },
+  {
+    "query": "heat exhaustion from sun dehydration and weakness",
+    "expected_id": "disease-general-heat-exhaustion"
+  },
+  {
+    "query": "car sickness sea sickness nausea during travel",
+    "expected_id": "disease-general-motion-sickness"
+  },
+  {
+    "query": "excess mucus catarrh and runny nose",
+    "expected_id": "disease-general-catarrh"
+  },
+  {
+    "query": "chills shaking and feeling cold during infection",
+    "expected_id": "disease-general-chills"
+  },
+  {
+    "query": "viral infection fever body aches and headache",
+    "expected_id": "disease-general-viral-infections"
+  },
+  {
+    "query": "inflammation swelling heat and pain in body tissues",
+    "expected_id": "disease-general-inflammation"
+  },
+  {
+    "query": "high body temperature fever natural care",
+    "expected_id": "disease-general-fever"
+  },
+  {
+    "query": "malaria chills and sweating every few days",
+    "expected_id": "disease-general-malaria"
+  },
+  {
+    "query": "typhoid fever natural health information",
+    "expected_id": "disease-general-typhoid-fever"
+  },
+  {
+    "query": "weakened immune system and frequent sickness",
+    "expected_id": "disease-general-weakened-autoimmune-system"
+  },
+  {
+    "query": "stress anxiety worry and nervous tension",
+    "expected_id": "disease-general-stress-and-anxiety"
+  },
+  {
+    "query": "depression low mood and loss of interest",
+    "expected_id": "disease-general-depression"
+  },
+  {
+    "query": "low blood sugar hypoglycemia symptoms",
+    "expected_id": "disease-general-hypoglycemia"
+  },
+  {
+    "query": "body odor and unpleasant smell natural remedy",
+    "expected_id": "disease-general-body-odor"
+  },
+  {
+    "query": "night sweats while sleeping",
+    "expected_id": "disease-general-night-sweats"
+  },
+  {
+    "query": "dandruff itchy scalp and flakes",
+    "expected_id": "disease-general-dandruff"
+  },
+  {
+    "query": "athlete foot fungal itching between toes",
+    "expected_id": "disease-general-athlete-s-foot"
+  },
+  {
+    "query": "bad breath halitosis remedy",
+    "expected_id": "disease-general-halitosis"
+  },
+  {
+    "query": "bloating gas and swollen stomach",
+    "expected_id": "disease-general-bloating"
+  },
+  {
+    "query": "vomiting and throwing up repeatedly",
+    "expected_id": "disease-general-vomiting"
+  },
+  {
+    "query": "colitis bowel inflammation and abdominal pain",
+    "expected_id": "disease-general-colitis"
+  },
+  {
+    "query": "kidney disease called bright disease",
+    "expected_id": "disease-general-bright-s-disease"
+  },
+  {
+    "query": "emphysema breathing difficulty and lung damage",
+    "expected_id": "disease-general-emphysema"
+  },
+  {
+    "query": "varicose veins swollen veins in the legs",
+    "expected_id": "disease-general-varicose-veins"
+  },
+  {
+    "query": "sciatica pain down the leg",
+    "expected_id": "disease-general-sciatica"
+  },
+  {
+    "query": "carpal tunnel syndrome wrist pain and numb fingers",
+    "expected_id": "disease-general-carpal-tunnel-syndrome"
+  },
+  {
+    "query": "osteoporosis weak bones and fracture risk",
+    "expected_id": "disease-general-osteoporosis"
+  },
+  {
+    "query": "thyroid too low hypothyroidism symptoms",
+    "expected_id": "disease-general-hypothyroidism"
+  },
+  {
+    "query": "food poisoning vomiting diarrhea after food",
+    "expected_id": "disease-general-food-poisoning"
+  },
+  {
+    "query": "lead poisoning from toxic metals",
+    "expected_id": "disease-general-lead-poisoning"
+  },
+  {
+    "query": "cancer prevention and natural health factors",
+    "expected_id": "disease-general-preventing-cancer"
+  },
+  {
+    "query": "sinus pain blocked nose and facial pressure",
+    "expected_id": "disease-head-sinusitis"
+  },
+  {
+    "query": "eye problems natural care and poor vision",
+    "expected_id": "disease-head-eye-problems"
+  },
+  {
+    "query": "red eyes and eye irritation",
+    "expected_id": "disease-head-red-eyes"
+  },
+  {
+    "query": "itchy eyes allergy and irritation",
+    "expected_id": "disease-head-itchy-eyes"
+  },
+  {
+    "query": "nose bleeding first aid",
+    "expected_id": "disease-head-nosebleed"
+  },
+  {
+    "query": "earwax blockage and blocked ear",
+    "expected_id": "disease-head-earwax"
+  },
+  {
+    "query": "swimmer ear water in ear infection",
+    "expected_id": "disease-head-swimmer-s-ear"
+  },
+  {
+    "query": "hearing loss and reduced hearing",
+    "expected_id": "disease-head-hearing-loss"
+  },
+  {
+    "query": "sore throat pain when swallowing",
+    "expected_id": "disease-head-sore-throat"
+  },
+  {
+    "query": "tooth decay cavities and dental problems",
+    "expected_id": "disease-head-tooth-decay"
+  },
+  {
+    "query": "heartburn burning chest after eating",
+    "expected_id": "disease-head-heartburn"
+  },
+  {
+    "query": "broken bone fracture first aid and healing",
+    "expected_id": "disease-musculoskeletal-fracture"
+  },
+  {
+    "query": "heel spur bone spur pain",
+    "expected_id": "disease-musculoskeletal-bone-spur"
+  },
+  {
+    "query": "chronic rheumatism joint pain",
+    "expected_id": "disease-musculoskeletal-chronic-rheumatism"
+  },
+  {
+    "query": "jaw joint pain temporomandibular joint syndrome",
+    "expected_id": "disease-musculoskeletal-temporomandibular-joint-syndrome"
+  },
+  {
+    "query": "muscle cramps painful spasms",
+    "expected_id": "disease-musculoskeletal-muscle-cramps"
+  },
+  {
+    "query": "muscle injury strain and soreness",
+    "expected_id": "disease-musculoskeletal-muscle-injuries"
+  },
+  {
+    "query": "backache lower back pain natural remedy",
+    "expected_id": "disease-musculoskeletal-backache"
+  },
+  {
+    "query": "rheumatic fever joint pain and fever",
+    "expected_id": "disease-musculoskeletal-rheumatic-fever"
+  },
+  {
+    "query": "breast tenderness and discomfort before period",
+    "expected_id": "disease-reproductive-breast-discomfort"
+  },
+  {
+    "query": "swollen painful breast inflammation",
+    "expected_id": "disease-reproductive-breast-inflammation"
+  },
+  {
+    "query": "breast cyst lump and soreness",
+    "expected_id": "disease-reproductive-breast-cyst"
+  },
+  {
+    "query": "premenstrual syndrome mood changes breast tenderness",
+    "expected_id": "disease-reproductive-premenstrual-syndrome"
+  },
+  {
+    "query": "menstrual disorders irregular periods",
+    "expected_id": "disease-reproductive-menstrual-disorders"
+  },
+  {
+    "query": "lack of menstruation missed periods",
+    "expected_id": "disease-reproductive-lack-of-menstruation"
+  },
+  {
+    "query": "painful menstruation cramps remedy",
+    "expected_id": "disease-reproductive-painful-menstruation"
+  },
+  {
+    "query": "uterine bleeding abnormal bleeding",
+    "expected_id": "disease-reproductive-uterine-bleeding"
+  },
+  {
+    "query": "uterine fibroids natural health information",
+    "expected_id": "disease-reproductive-uterine-fibroids"
+  },
+  {
+    "query": "prostate disorders urinary and male health",
+    "expected_id": "disease-reproductive-prostate-disorders"
+  },
+  {
+    "query": "prostatitis prostate inflammation",
+    "expected_id": "disease-reproductive-prostatitis"
+  },
+  {
+    "query": "pregnancy related problems natural care",
+    "expected_id": "disease-reproductive-pregnancy-related-problems"
+  },
+  {
+    "query": "common cold runny nose and sore throat",
+    "expected_id": "disease-respiratory-common-cold"
+  },
+  {
+    "query": "cough natural remedy and chest irritation",
+    "expected_id": "disease-respiratory-coughs"
+  },
+  {
+    "query": "cold sores around mouth",
+    "expected_id": "disease-respiratory-cold-sores"
+  },
+  {
+    "query": "cold hands and feet poor circulation",
+    "expected_id": "disease-respiratory-cold-extremities"
+  },
+  {
+    "query": "cold feet problem and poor circulation",
+    "expected_id": "disease-respiratory-cold-feet"
+  },
+  {
+    "query": "bronchiectasis lung condition with mucus",
+    "expected_id": "disease-respiratory-bronchiectasis"
+  },
+  {
+    "query": "pneumonia lung infection and fever",
+    "expected_id": "disease-respiratory-pneumonia"
+  },
+  {
+    "query": "broncho pneumonia breathing infection",
+    "expected_id": "disease-respiratory-broncho-pneumonia"
+  },
+  {
+    "query": "lobar pneumonia lung inflammation",
+    "expected_id": "disease-respiratory-lobar-pneumonia"
+  },
+  {
+    "query": "fluoride poisoning symptoms",
+    "expected_id": "disease-respiratory-fluoride-poisoning"
+  },
+  {
+    "query": "boils pus filled bumps on skin",
+    "expected_id": "disease-skin-boils"
+  },
+  {
+    "query": "burns first aid and aloe vera",
+    "expected_id": "disease-skin-burns"
+  },
+  {
+    "query": "acne pimples on face",
+    "expected_id": "disease-skin-acne"
+  },
+  {
+    "query": "warts on skin natural remedy",
+    "expected_id": "disease-skin-warts"
+  },
+  {
+    "query": "heat rash itchy rash from heat",
+    "expected_id": "disease-skin-heat-rash"
+  },
+  {
+    "query": "sunburn skin burned by sun",
+    "expected_id": "disease-skin-sunburn"
+  },
+  {
+    "query": "skin rash itching and redness",
+    "expected_id": "disease-skin-skin-rash"
+  },
+  {
+    "query": "eczema dry itchy skin",
+    "expected_id": "disease-skin-eczema"
+  },
+  {
+    "query": "psoriasis scaly skin patches",
+    "expected_id": "disease-skin-psoriasis"
+  },
+  {
+    "query": "frostbite from extreme cold",
+    "expected_id": "disease-skin-frostbite"
+  },
+  {
+    "query": "burning feet sensation",
+    "expected_id": "disease-skin-burning-feet"
+  },
+  {
+    "query": "diaper rash in babies",
+    "expected_id": "disease-skin-diaper-rash"
+  },
+  {
+    "query": "insect sting swelling and pain",
+    "expected_id": "disease-skin-insect-sting"
+  },
+  {
+    "query": "mosquito bite itching",
+    "expected_id": "disease-skin-mosquito-bite"
+  },
+  {
+    "query": "spider bite natural first aid",
+    "expected_id": "disease-skin-spider-bite"
+  },
+  {
+    "query": "snake bite emergency care",
+    "expected_id": "disease-skin-snake-bite"
+  },
+  {
+    "query": "dog bite animal bite first aid",
+    "expected_id": "disease-skin-dog-or-animal-bite"
+  },
+  {
+    "query": "kidney problems and kidney cleansing",
+    "expected_id": "disease-urinary-kidney-problems"
+  },
+  {
+    "query": "renal colic kidney pain attack",
+    "expected_id": "disease-urinary-renal-colic"
+  },
+  {
+    "query": "bladder problems and urinary infection",
+    "expected_id": "disease-urinary-bladder-problems"
+  },
+  {
+    "query": "autism natural health information",
+    "expected_id": "disease-urinary-autism"
+  },
+  {
+    "query": "charcoal for poisoning and poultice on wounds",
+    "expected_id": "herb-charcoal"
+  },
+  {
+    "query": "cayenne for circulation and warming remedy",
+    "expected_id": "herb-cayenne"
+  },
+  {
+    "query": "garlic for coughs colds and infections",
+    "expected_id": "herb-garlic"
+  },
+  {
+    "query": "goldenseal antiseptic herb for infections",
+    "expected_id": "herb-goldenseal"
+  },
+  {
+    "query": "peppermint tea for digestion and stomach comfort",
+    "expected_id": "herb-peppermint"
+  },
+  {
+    "query": "slippery elm soothing herb for irritated tissues",
+    "expected_id": "herb-slippery-elm"
+  },
+  {
+    "query": "aloe vera for burns and skin healing",
+    "expected_id": "herb-aloe-vera"
+  },
+  {
+    "query": "corn silk tea for urine flow and kidneys",
+    "expected_id": "herb-corn-silk"
+  },
+  {
+    "query": "echinacea herb for immune support",
+    "expected_id": "herb-echinacea"
+  },
+  {
+    "query": "ginger for nausea colds and digestion",
+    "expected_id": "herb-ginger"
+  },
+  {
+    "query": "comfrey herb for wounds and healing",
+    "expected_id": "herb-comfrey"
+  },
+  {
+    "query": "flaxseed poultice and natural remedy use",
+    "expected_id": "herb-flaxseed"
+  },
+  {
+    "query": "basic principles of healthful living",
+    "expected_id": "principle-basic-principles-of-health"
+  },
+  {
+    "query": "regular meal times and eating schedule",
+    "expected_id": "principle-basic-01-regularity-in-meals"
+  },
+  {
+    "query": "avoid overeating and practice moderation",
+    "expected_id": "principle-basic-02-moderation"
+  },
+  {
+    "query": "chew food well before swallowing",
+    "expected_id": "principle-basic-05-chew-your-food-well"
+  },
+  {
+    "query": "drink water between meals not with meals",
+    "expected_id": "principle-basic-12-aside-from-fresh-raw-juices-or-the-green-drink-drink-all-your-liquids-water-between-meals-not-with-your-meals"
+  },
+  {
+    "query": "fruits and vegetables as part of healthy diet",
+    "expected_id": "principle-fruits"
+  },
+  {
+    "query": "vegetables for healthy living",
+    "expected_id": "principle-vegetables"
+  },
+  {
+    "query": "vitamins and minerals in health principles",
+    "expected_id": "principle-vitamins-and-minerals"
+  },
+  {
+    "query": "things to avoid for better health",
+    "expected_id": "principle-things-to-avoid"
+  },
+  {
+    "query": "non dietetic factors affecting health",
+    "expected_id": "principle-non-dietetic-factors"
+  },
+  {
+    "query": "pernicious anemia weakness and vitamin deficiency",
+    "expected_id": "disease-general-pernicious-anemia"
+  },
+  {
+    "query": "blood poisoning infection spreading in the body",
+    "expected_id": "disease-general-blood-poisoning"
+  },
+  {
+    "query": "underweight and being too thin",
+    "expected_id": "disease-general-underweight"
+  },
+  {
+    "query": "worms and intestinal parasites",
+    "expected_id": "disease-general-worms"
+  },
+  {
+    "query": "poor circulation and chills in hands and feet",
+    "expected_id": "disease-general-poor-circulation-and-chills"
+  }
+]
