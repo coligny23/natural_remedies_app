@@ -29,6 +29,7 @@ data-pipeline/__pycache__/
 *.pt
 *.zip
 *.7z
+*.data
 
 # OS
 .DS_Store
