@@ -23,7 +23,7 @@ def load_interpreter(model_path):
 
 
 def main():
-    model_path = Path("assets/models/encoder.tflite")
+    model_path = Path("assets/models_e5small/encoder_e5small_dynamic_quant.tflite")
 
     if not model_path.exists():
         raise FileNotFoundError(f"Missing model: {model_path}")

@@ -24,7 +24,6 @@ class E5Encoder(torch.nn.Module):
     def forward(self, input_ids, attention_mask):
         outputs = self.model(input_ids=input_ids, attention_mask=attention_mask)
         embeddings = self.average_pool(outputs.last_hidden_state, attention_mask)
-        embeddings = torch.nn.functional.normalize(embeddings, p=2, dim=1)
         return embeddings
 
 
