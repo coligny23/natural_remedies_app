@@ -21,6 +21,7 @@ data-pipeline/__pycache__/
 *.pyc
 .venv311/
 .venv_tflite/
+.venv_onnx2tf/
 
 # Raw data / large artifacts
 *.pdf

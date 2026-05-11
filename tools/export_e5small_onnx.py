@@ -58,8 +58,9 @@ def main():
         str(ONNX_OUT),
         input_names=["input_ids", "attention_mask"],
         output_names=["embeddings"],
-        opset_version=17,
+        opset_version=18,
         dynamic_axes=None,
+        
     )
 
     tokenizer.save_pretrained(OUT_DIR)
