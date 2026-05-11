@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart' show compute;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+
 import '../content/models/content_item.dart';
 import '../content/data/content_repository_assets.dart';
 import 'search_index.dart';

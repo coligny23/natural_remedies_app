@@ -24,7 +24,7 @@ dependencies:
   path_provider: ^2.1.4
 
   # On-device ML
-  tflite_flutter: 0.11.0
+  tflite_flutter: ^0.11.0
   
 
   # UI niceties
@@ -58,14 +58,16 @@ flutter:
   assets:
     - assets/corpus/en/
     - assets/corpus/sw/
-    - assets/ml/mobilebert_qa_float32.tflite
-    - assets/ml/vocab.txt
     - assets/images/articles_jpg/
     - assets/images/fallbacks/
-    - assets/models/encoder.tflite
+    - assets/models_e5small/encoder_e5small_dynamic_quant.tflite
+    - assets/models_e5small/tokenizer.json
+    - assets/models_e5small/tokenizer_config.json
+    - assets/embeddings_e5small/index_en_tflite.bin
+    - assets/embeddings_e5small/meta_en_tflite.json
+    - assets/embeddings_e5small/index_sw_tflite.bin
+    - assets/embeddings_e5small/meta_sw_tflite.json
     - assets/models/vocab.txt
-    - assets/embeddings/index.bin
-    - assets/embeddings/meta.json
     - assets/images/articles_jpg/imagetwo.jpg
     - assets/images/articles_jpg/imageone.jpg
     - assets/icon/app_icon.png

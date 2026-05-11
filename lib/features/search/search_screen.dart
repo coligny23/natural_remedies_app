@@ -11,6 +11,7 @@ import '../../l10n/app_strings.dart';
 import 'search_history_providers.dart';
 import '/features/qa/saved_answers_providers.dart';
 import 'search_providers.dart';
+import 'semantic/e5_search_providers.dart';
 import '../content/models/content_item.dart';
 import '../../shared/ml/qa_providers.dart';
 import '../../shared/telemetry/telemetry_providers.dart';
@@ -112,6 +113,8 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
 
     // Semantic scores
     final semScoresAsync = ref.watch(semanticScoresProvider(query));
+    final e5ResultsAsync =
+        query.isEmpty ? null : ref.watch(e5SearchResultsProvider(query));
 
     return Scaffold(
       backgroundColor: Colors.transparent,
@@ -169,7 +172,6 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                 ),
               ),
             ),
-
             if (history.isNotEmpty)
               Padding(
                 padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
@@ -193,7 +195,6 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                   ),
                 ),
               ),
-
             if (suggestionChips.isNotEmpty)
               Padding(
                 padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
@@ -224,9 +225,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                   ),
                 ),
               ),
-
             if (isLoading) const LinearProgressIndicator(),
-
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
@@ -238,13 +237,13 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               ),
             ),
             const SizedBox(height: 8),
-
             FutureBuilder<String>(
               future: rootBundle.loadString('AssetManifest.json'),
               builder: (context, snap) {
                 if (!snap.hasData) return const SizedBox.shrink();
-                final keys =
-                    (json.decode(snap.data!) as Map<String, dynamic>).keys.toList();
+                final keys = (json.decode(snap.data!) as Map<String, dynamic>)
+                    .keys
+                    .toList();
                 final sample = keys
                     .where((k) => k.contains('assets/corpus'))
                     .take(5)
@@ -265,7 +264,6 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               },
             ),
             const SizedBox(height: 4),
-
             if (query.isNotEmpty && answerAsync != null) ...[
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -318,24 +316,28 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                                       onPressed: hasText
                                           ? () async {
                                               await ref
-                                                  .read(savedQaListProvider.notifier)
+                                                  .read(savedQaListProvider
+                                                      .notifier)
                                                   .save(
                                                     question: query,
                                                     answerText: ans.text,
                                                     sourceId: ans.source?.id,
-                                                    sourceTitle: ans.source?.title,
+                                                    sourceTitle:
+                                                        ans.source?.title,
                                                   );
 
                                               if (!context.mounted) return;
                                               ScaffoldMessenger.of(context)
                                                   .showSnackBar(
                                                 SnackBar(
-                                                  content: Text(t.savedToAnswers),
+                                                  content:
+                                                      Text(t.savedToAnswers),
                                                 ),
                                               );
 
                                               await ref.logEvent('qa_saved', {
-                                                'has_source': ans.source != null,
+                                                'has_source':
+                                                    ans.source != null,
                                                 'q_len': query.length,
                                                 'a_len': ans.text.length,
                                               });
@@ -364,107 +366,106 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               ),
               const SizedBox(height: 8),
             ],
-
             Expanded(
-              child: resultsAsync.when(
-                loading: () => _LoadingOrEmpty(
-                  queryEmptyMessage: t.typeToSearch,
-                ),
-                error: (err, st) => Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Text('${t.searchError}: $err'),
-                ),
-                data: (keywordResults) {
-                  if (keywordResults.isEmpty) {
-                    return const _EmptyState();
-                  }
+              child: query.isEmpty
+                  ? _LoadingOrEmpty(queryEmptyMessage: t.typeToSearch)
+                  : e5ResultsAsync == null
+                      ? _LoadingOrEmpty(queryEmptyMessage: t.typeToSearch)
+                      : e5ResultsAsync.when(
+                          loading: () => const Center(
+                            child: CircularProgressIndicator(),
+                          ),
+                          error: (err, st) {
+                            // Safe fallback to existing keyword search if E5 fails
+                            return resultsAsync.when(
+                              loading: () => _LoadingOrEmpty(
+                                queryEmptyMessage: t.typeToSearch,
+                              ),
+                              error: (keywordErr, _) => Padding(
+                                padding: const EdgeInsets.all(16),
+                                child: Text('${t.searchError}: $keywordErr'),
+                              ),
+                              data: (keywordResults) {
+                                if (keywordResults.isEmpty) {
+                                  return const _EmptyState();
+                                }
 
-                  return semScoresAsync.when(
-                    loading: () {
-                      return _ResultsList(
-                        items: keywordResults,
-                        lang: lang,
-                        query: query,
-                        onTapLabel: t.openDetails,
-                        onTapAction: t.doubleTapToOpenDetails,
-                        blendedBadge: null,
-                        onTap: (it) async {
-                          await ref.logEvent('open_from_search', {
-                            'id': it.id,
-                            'title': it.title,
-                            'lang': lang,
-                          });
-                          if (!context.mounted) return;
-                          context.go('/article/${it.id}');
-                        },
-                      );
-                    },
-                    error: (_, __) {
-                      return _ResultsList(
-                        items: keywordResults,
-                        lang: lang,
-                        query: query,
-                        onTapLabel: t.openDetails,
-                        onTapAction: t.doubleTapToOpenDetails,
-                        blendedBadge: null,
-                        onTap: (it) async {
-                          await ref.logEvent('open_from_search', {
-                            'id': it.id,
-                            'title': it.title,
-                            'lang': lang,
-                          });
-                          if (!context.mounted) return;
-                          context.go('/article/${it.id}');
-                        },
-                      );
-                    },
-                    data: (semScores) {
-                      final n = keywordResults.length.toDouble();
-                      final blended =
-                          <({ContentItem item, double finalScore, double k, double s})>[];
+                                return _ResultsList(
+                                  items: keywordResults,
+                                  lang: lang,
+                                  query: query,
+                                  onTapLabel: t.openDetails,
+                                  onTapAction: t.doubleTapToOpenDetails,
+                                  blendedBadge: null,
+                                  onTap: (it) async {
+                                    await ref.logEvent('open_from_search', {
+                                      'id': it.id,
+                                      'title': it.title,
+                                      'lang': lang,
+                                      'mode': 'keyword_fallback',
+                                    });
+                                    if (!context.mounted) return;
+                                    context.go('/article/${it.id}');
+                                  },
+                                );
+                              },
+                            );
+                          },
+                          data: (e5Results) {
+                            if (e5Results.isEmpty) {
+                              return const _EmptyState();
+                            }
 
-                      for (var i = 0; i < keywordResults.length; i++) {
-                        final it = keywordResults[i];
-                        final k = (n - i) / n;
-                        final s = (semScores[it.id] ?? 0.0).clamp(0.0, 1.0);
-                        final score = 0.6 * k + 0.4 * s;
-                        blended.add((
-                          item: it,
-                          finalScore: score,
-                          k: k,
-                          s: s,
-                        ));
-                      }
+                            return itemsAsync.when(
+                              loading: () => const Center(
+                                child: CircularProgressIndicator(),
+                              ),
+                              error: (err, _) => Padding(
+                                padding: const EdgeInsets.all(16),
+                                child: Text('${t.searchError}: $err'),
+                              ),
+                              data: (allItems) {
+                                final byId = {
+                                  for (final item in allItems) item.id: item,
+                                };
 
-                      blended.sort((a, b) => b.finalScore.compareTo(a.finalScore));
-                      final ordered = blended.map((e) => e.item).toList();
+                                final orderedItems = e5Results
+                                    .map((r) => byId[r.id])
+                                    .whereType<ContentItem>()
+                                    .toList();
 
-                      String badgeOf(ContentItem it) {
-                        final b = blended.firstWhere((e) => e.item.id == it.id);
-                        return '★ ${b.finalScore.toStringAsFixed(2)}  k:${b.k.toStringAsFixed(2)} s:${b.s.toStringAsFixed(2)}';
-                      }
+                                if (orderedItems.isEmpty) {
+                                  return const _EmptyState();
+                                }
 
-                      return _ResultsList(
-                        items: ordered,
-                        lang: lang,
-                        query: query,
-                        onTapLabel: t.openDetails,
-                        onTapAction: t.doubleTapToOpenDetails,
-                        blendedBadge: badgeOf,
-                        onTap: (it) async {
-                          await ref.logEvent('open_from_search', {
-                            'id': it.id,
-                            'title': it.title,
-                            'lang': lang,
-                          });
-                          if (!context.mounted) return;
-                          context.go('/article/${it.id}');
-                        },
-                      );
-                    },
-                  );
-                },
-              ),
+                                String badgeOf(ContentItem item) {
+                                  final r = e5Results
+                                      .firstWhere((e) => e.id == item.id);
+                                  return 'E5 ${r.score.toStringAsFixed(2)}';
+                                }
+
+                                return _ResultsList(
+                                  items: orderedItems,
+                                  lang: lang,
+                                  query: query,
+                                  onTapLabel: t.openDetails,
+                                  onTapAction: t.doubleTapToOpenDetails,
+                                  blendedBadge: badgeOf,
+                                  onTap: (it) async {
+                                    await ref.logEvent('open_from_search', {
+                                      'id': it.id,
+                                      'title': it.title,
+                                      'lang': lang,
+                                      'mode': 'e5_tflite',
+                                    });
+                                    if (!context.mounted) return;
+                                    context.go('/article/${it.id}');
+                                  },
+                                );
+                              },
+                            );
+                          },
+                        ),
             ),
           ],
         ),
@@ -536,7 +537,13 @@ class _ResultsList extends StatelessWidget {
                       radius: 28,
                       child: Icon(Icons.eco),
                     ),
-              title: Text(item.title),
+              title: Text(
+                lang == 'sw' &&
+                        item.titleSw != null &&
+                        item.titleSw!.trim().isNotEmpty
+                    ? item.titleSw!
+                    : item.title,
+              ),
               subtitle: RichText(
                 text: TextSpan(
                   style: Theme.of(context).textTheme.bodyMedium,
@@ -547,10 +554,7 @@ class _ResultsList extends StatelessWidget {
                   ? null
                   : Text(
                       badge,
-                      style: Theme.of(context)
-                          .textTheme
-                          .labelSmall
-                          ?.copyWith(
+                      style: Theme.of(context).textTheme.labelSmall?.copyWith(
                             color: Theme.of(context).colorScheme.primary,
                           ),
                     ),
