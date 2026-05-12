@@ -17,7 +17,7 @@ import '../../shared/ml/qa_providers.dart';
 import '../../shared/telemetry/telemetry_providers.dart';
 
 // ✅ ML (semantic blending)
-import '../../shared/ml/ml_providers.dart';
+//import '../../shared/ml/ml_providers.dart';
 
 // ✅ Background wrapper
 import '../../widgets/app_background.dart';
@@ -112,7 +112,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     final lang = ref.watch(languageCodeProvider);
 
     // Semantic scores
-    final semScoresAsync = ref.watch(semanticScoresProvider(query));
+    //final semScoresAsync = ref.watch(semanticScoresProvider(query));
     final e5ResultsAsync =
         query.isEmpty ? null : ref.watch(e5SearchResultsProvider(query));
 
@@ -238,10 +238,10 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
             ),
             const SizedBox(height: 8),
             FutureBuilder<AssetManifest>(
-                future: AssetManifest.loadFromAssetBundle(rootBundle),
-                builder: (context, snap) {
-                  if (!snap.hasData) return const SizedBox.shrink();
-                  final keys = snap.data!.listAssets();
+              future: AssetManifest.loadFromAssetBundle(rootBundle),
+              builder: (context, snap) {
+                if (!snap.hasData) return const SizedBox.shrink();
+                final keys = snap.data!.listAssets();
                 final sample = keys
                     .where((k) => k.contains('assets/corpus'))
                     .take(5)
