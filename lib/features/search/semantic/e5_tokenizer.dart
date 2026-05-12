@@ -14,15 +14,24 @@ class E5TokenizedInput {
 class E5Tokenizer {
   static const int maxLen = 128;
 
-  late final dynamic _tokenizer;
+  late final SentencePieceTokenizer _tokenizer;
   bool _ready = false;
 
   Future<void> init() async {
     final jsonText =
         await rootBundle.loadString('assets/models_e5small/tokenizer.json');
 
-    // Hugging Face tokenizer.json loader.
-    _tokenizer = await Tokenizer.fromJson(jsonText);
+    _tokenizer = TokenizerJsonLoader.fromJsonString(jsonText);
+
+    _tokenizer
+      ..enablePadding(
+        length: maxLen,
+        direction: SpPaddingDirection.right,
+      )
+      ..enableTruncation(
+        maxLength: maxLen,
+        direction: SpTruncationDirection.right,
+      );
 
     _ready = true;
   }
@@ -34,21 +43,8 @@ class E5Tokenizer {
 
     final encoding = _tokenizer.encode(text);
 
-    final rawIds = List<int>.from(encoding.ids);
-
-    final ids = rawIds.take(maxLen).toList();
-
-    // If truncated, preserve EOS token if available from tokenizer output.
-    if (rawIds.length > maxLen && rawIds.isNotEmpty) {
-      ids[maxLen - 1] = rawIds.last;
-    }
-
-    final mask = List<int>.filled(ids.length, 1);
-
-    while (ids.length < maxLen) {
-      ids.add(0);
-      mask.add(0);
-    }
+    final ids = List<int>.from(encoding.ids);
+    final mask = List<int>.from(encoding.attentionMask);
 
     return E5TokenizedInput(
       inputIds: [ids],
