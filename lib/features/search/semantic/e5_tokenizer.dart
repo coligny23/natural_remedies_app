@@ -1,5 +1,5 @@
-import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:dart_sentencepiece_tokenizer/dart_sentencepiece_tokenizer.dart';
 
 class E5TokenizedInput {
   final List<List<int>> inputIds;
@@ -14,72 +14,39 @@ class E5TokenizedInput {
 class E5Tokenizer {
   static const int maxLen = 128;
 
-  late final Map<String, int> _vocab;
-
-  int _padId = 1;
-  int _unkId = 3;
-  int _bosId = 0; // <s>
-  int _eosId = 2; // </s>
+  late final dynamic _tokenizer;
+  bool _ready = false;
 
   Future<void> init() async {
-    final raw =
+    final jsonText =
         await rootBundle.loadString('assets/models_e5small/tokenizer.json');
-    final jsonMap = jsonDecode(raw) as Map<String, dynamic>;
 
-    final model = jsonMap['model'] as Map<String, dynamic>;
-    final modelType = model['type']?.toString();
+    // Hugging Face tokenizer.json loader.
+    _tokenizer = await Tokenizer.fromJson(jsonText);
 
-    if (modelType != 'Unigram') {
-      throw UnsupportedError(
-        'Expected Unigram tokenizer, but found $modelType',
-      );
-    }
-
-    final vocabList = model['vocab'] as List<dynamic>;
-    _vocab = <String, int>{};
-
-    for (var i = 0; i < vocabList.length; i++) {
-      final row = vocabList[i];
-
-      if (row is List && row.isNotEmpty) {
-        final token = row[0].toString();
-        _vocab[token] = i;
-      }
-    }
-
-    _padId = _vocab['<pad>'] ?? _padId;
-    _unkId = _vocab['<unk>'] ?? _unkId;
-    _bosId = _vocab['<s>'] ?? _bosId;
-    _eosId = _vocab['</s>'] ?? _eosId;
+    _ready = true;
   }
 
   E5TokenizedInput encode(String text) {
-    final pieces = <int>[];
-
-    pieces.add(_bosId);
-
-    final normalized = text.trim();
-    final words = normalized.split(RegExp(r'\s+'));
-
-    for (final word in words) {
-      if (word.trim().isEmpty) continue;
-
-      final metaspaceWord = '▁$word';
-      pieces.addAll(_encodePieceGreedy(metaspaceWord));
+    if (!_ready) {
+      throw StateError('E5Tokenizer has not been initialized.');
     }
 
-    pieces.add(_eosId);
+    final encoding = _tokenizer.encode(text);
 
-    final ids = pieces.take(maxLen).toList();
+    final rawIds = List<int>.from(encoding.ids);
 
-    if (ids.length == maxLen) {
-      ids[maxLen - 1] = _eosId;
+    final ids = rawIds.take(maxLen).toList();
+
+    // If truncated, preserve EOS token if available from tokenizer output.
+    if (rawIds.length > maxLen && rawIds.isNotEmpty) {
+      ids[maxLen - 1] = rawIds.last;
     }
 
     final mask = List<int>.filled(ids.length, 1);
 
     while (ids.length < maxLen) {
-      ids.add(_padId);
+      ids.add(0);
       mask.add(0);
     }
 
@@ -87,40 +54,5 @@ class E5Tokenizer {
       inputIds: [ids],
       attentionMask: [mask],
     );
-  }
-
-  List<int> _encodePieceGreedy(String text) {
-    final ids = <int>[];
-
-    var start = 0;
-
-    while (start < text.length) {
-      var end = text.length;
-      int? foundId;
-      int? foundEnd;
-
-      while (end > start) {
-        final sub = text.substring(start, end);
-        final id = _vocab[sub];
-
-        if (id != null) {
-          foundId = id;
-          foundEnd = end;
-          break;
-        }
-
-        end--;
-      }
-
-      if (foundId != null && foundEnd != null) {
-        ids.add(foundId);
-        start = foundEnd;
-      } else {
-        ids.add(_unkId);
-        start++;
-      }
-    }
-
-    return ids;
   }
 }
