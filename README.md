@@ -43,7 +43,7 @@ Get the latest version of the app:
 * **Flutter** — Cross-platform UI
 * **Riverpod** — State management
 * **Hive** — Local storage
-* **TensorFlow Lite** — On-device personalization
+* **TensorFlow Lite** — On-device semantic search
 
 ---
 

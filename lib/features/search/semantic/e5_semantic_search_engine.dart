@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:math';
 import 'dart:typed_data';
 
+import 'e5_tokenizer.dart';
 import 'package:flutter/services.dart';
 import 'package:tflite_flutter/tflite_flutter.dart';
 
@@ -9,6 +10,7 @@ import 'e5_search_result.dart';
 
 class E5SemanticSearchEngine {
   late final Interpreter _interpreter;
+  late final E5Tokenizer _tokenizer;
   late Float32List _indexVectors;
   late List<Map<String, dynamic>> _meta;
 
@@ -16,14 +18,18 @@ class E5SemanticSearchEngine {
   late int _dim;
 
   Future<void> init({
-    required String modelPath,
-    required String indexPath,
-    required String metaPath,
-  }) async {
-    _interpreter = await Interpreter.fromAsset(modelPath);
-    await _loadIndex(indexPath);
-    await _loadMeta(metaPath);
-  }
+  required String modelPath,
+  required String indexPath,
+  required String metaPath,
+}) async {
+  _interpreter = await Interpreter.fromAsset(modelPath);
+
+  _tokenizer = E5Tokenizer();
+  await _tokenizer.init();
+
+  await _loadIndex(indexPath);
+  await _loadMeta(metaPath);
+}
 
   Future<void> _loadIndex(String path) async {
     final data = await rootBundle.load(path);
@@ -64,8 +70,7 @@ class E5SemanticSearchEngine {
   Future<Float32List> encodeQuery(String query) async {
     final text = 'query: $query';
 
-    // TODO: replace this with real E5 tokenizer.
-    // Must return inputIds and attentionMask shaped [1, 128].
+// E5 query format. Tokenizer returns [1, 128] input IDs and attention mask.
     final tokenized = await _tokenize(text);
 
     final inputDetails = _interpreter.getInputTensors();
@@ -158,10 +163,13 @@ class E5SemanticSearchEngine {
   }
 
   Future<_E5TokenizedInput> _tokenize(String text) async {
-    throw UnimplementedError(
-      'Implement tokenizer.json-based E5 tokenizer here.',
-    );
-  }
+  final encoded = _tokenizer.encode(text);
+
+  return _E5TokenizedInput(
+    inputIds: encoded.inputIds,
+    attentionMask: encoded.attentionMask,
+  );
+}
 
   void close() {
     _interpreter.close();
