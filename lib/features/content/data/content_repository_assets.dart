@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter/services.dart';
 import 'package:path/path.dart' as p;
 
 import '../models/content_item.dart';
@@ -16,13 +16,15 @@ class AssetsContentRepository implements ContentRepository {
       {}; // lang -> {term: [aliases]}
 
   Future<List<String>> _listJsonAssetsUnder(String prefix) async {
-    // Scan AssetManifest.json for all JSON files under a language prefix
-    final manifest =
-        json.decode(await rootBundle.loadString('AssetManifest.json'))
-            as Map<String, dynamic>;
-    final keys =
-        manifest.keys.where((k) => k.startsWith(prefix) && k.endsWith('.json'));
-    return keys.toList()..sort();
+  final manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
+
+  final keys = manifest
+      .listAssets()
+      .where((k) => k.startsWith(prefix) && k.endsWith('.json'))
+      .toList()
+    ..sort();
+
+  return keys;
   }
 
   Future<List<ContentItem>> _loadLangItems(String lang) async {

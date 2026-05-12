@@ -2,7 +2,7 @@
 import 'dart:convert';
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:share_plus/share_plus.dart';
@@ -237,13 +237,11 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               ),
             ),
             const SizedBox(height: 8),
-            FutureBuilder<String>(
-              future: rootBundle.loadString('AssetManifest.json'),
-              builder: (context, snap) {
-                if (!snap.hasData) return const SizedBox.shrink();
-                final keys = (json.decode(snap.data!) as Map<String, dynamic>)
-                    .keys
-                    .toList();
+            FutureBuilder<AssetManifest>(
+                future: AssetManifest.loadFromAssetBundle(rootBundle),
+                builder: (context, snap) {
+                  if (!snap.hasData) return const SizedBox.shrink();
+                  final keys = snap.data!.listAssets();
                 final sample = keys
                     .where((k) => k.contains('assets/corpus'))
                     .take(5)
